@@ -24,21 +24,8 @@ CREATE EXTENSION IF NOT EXISTS timescaledb;
 CREATE EXTENSION IF NOT EXISTS vector;
 ```
 
-Add schema
+Stock ticks
 ```
-CREATE TABLE IF NOT EXISTS articles (
-                id SERIAL PRIMARY KEY,
-                symbol VARCHAR(5) NOT NULL REFERENCES stock_metadata(symbol),
-                title TEXT,
-                content TEXT,
-                author TEXT,
-                date TIMESTAMP,
-                url TEXT,
-                source TEXT,
-                embedding vector(4096)
-            );
-
-
 CREATE TABLE IF NOT EXISTS stock_metadata (
     symbol VARCHAR(5) PRIMARY KEY,
     name TEXT
@@ -73,3 +60,21 @@ for file in *; do
         --reporting-period 30s
 done
 ```
+
+
+Add schema for news articles. Change vector dimensions based on the sentence transformer
+```
+CREATE TABLE IF NOT EXISTS articles (
+                id SERIAL PRIMARY KEY,
+                symbol VARCHAR(5) NOT NULL REFERENCES stock_metadata(symbol),
+                title TEXT,
+                content TEXT,
+                author TEXT, 
+                date TIMESTAMP, 
+                url TEXT,
+                source TEXT,
+                embedding vector(4096)
+            );
+```
+Decide on what metadata we want to keep by elminating the above fields. should at least keep date, symbol and id
+
