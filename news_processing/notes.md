@@ -3,7 +3,7 @@ Optimisation Ideas
 2) Vary the sentence transformers used from MTEB
 3) Vary the type of meta data stored together with the vector embedding
 - Consider only essential metadata
-- Consider also a field with a summarised version of the aritcle
+- Consider also a field with a summarised version of the aritcle (failed)
 
 4) Varying the types of chunking methodologies
 - take note that chunking size is interrelated with embedding dimensions so pay close attention
