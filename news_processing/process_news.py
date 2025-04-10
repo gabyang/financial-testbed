@@ -71,10 +71,11 @@ def store_in_postgres(article_data, chunks, embeddings):
     try:
         # Insert article data and get article_id
         cur.execute("""
-            INSERT INTO articles (title, content, author, date, url, source)
-            VALUES (%s, %s, %s, %s, %s, %s)
+            INSERT INTO articles (symbol, title, content, author, date, url, source)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
             RETURNING id
         """, (
+            'AAPL',
             article_data['title'],
             article_data['content'],
             article_data['author'],
@@ -110,7 +111,7 @@ def process_news_files():
     print("Loading MTEB model...")
 
     # It is receommended for the laptop to have a 16GB ram for this model GG
-    model = SentenceTransformer("Linq-AI-Research/Linq-Embed-Mistral")
+    model = SentenceTransformer("all-MiniLM-L6-v2")
     
     # Ensure the articles table exists with pgvector extension
     # conn = psycopg2.connect(**DB_CONFIG)
@@ -153,7 +154,7 @@ def process_news_files():
         print("chunks: ", chunks)
         print("\n\n\n")
         # Store in database
-        # store_in_postgres(article_data, chunks, embeddings)
+        store_in_postgres(article_data, chunks, embeddings)
 
 if __name__ == "__main__":
     print("Starting script...")
