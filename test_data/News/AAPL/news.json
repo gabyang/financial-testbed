@@ -1,0 +1,67 @@
+[{
+  "category": "company",
+  "datetime": 1587667419,
+  "headline": "4 reasons retail in the US won't be bouncing back like in China",
+  "id": 647,
+  "image": "https://image.cnbcfm.com/api/v1/image/106386655-1581511783100gettyimages-1200173618.jpeg?v=1587396256",
+  "related": "AAPL",
+  "source": "CNBC",
+  "summary": "While America's retail industry is looking to China for clues about how shoppers are rebounding from the coronavirus pandemic, there are shortcomings to using the region as a blueprint.",
+  "url": "https://finnhub.io/api/news?id=819d7c8e7f89efc1f3018a883025d3bc39415428164243ab305ccc0e1a8ab92e"
+},
+{
+  "category": "company",
+  "datetime": 1587632890,
+  "headline": "Could Microsoft\u2019s climate crisis \u2018moonshot\u2019 plan really work?",
+  "id": 855,
+  "image": "https://i.guim.co.uk/img/media/c9cf2de705aec4246c89e45e4394a7e16f1a3e0b/0_0_3000_1800/master/3000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=35fd64eb409c162da069a2e420d462d2",
+  "related": "AAPL",
+  "source": "The Guardian",
+  "summary": "The tech giant\u2019s pledge to go carbon negative by 2030 leans heavily on nascent technology such as machines that suck carbon out of the air",
+  "url": "https://finnhub.io/api/news?id=0c9cf03dfc9abf156825f8a215213c40403b79f2194b2862222101fdc43c8763"
+},
+{
+  "category": "company",
+  "datetime": 1587214810,
+  "headline": "Fiona Apple: Fetch the Bolt Cutters review \u2013 a strange, exceptional record",
+  "id": 1307,
+  "image": "https://i.guim.co.uk/img/media/1e3fd876ece982f15214dd5efb3a82dee91815df/0_2_1283_770/master/1283.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTQucG5n&enable=upscale&s=d4eb1b5dba9419499c7162345dd40f94",
+  "related": "AAPL",
+  "source": "The Guardian",
+  "summary": "Offbeat, amusing and wistful, the New Yorker\u2019s long-awaited fifth album finds her in dazzling form",
+  "url": "https://finnhub.io/api/news?id=9ac6da8a2fa41d501ae63f86951f5dcc6d9e1b9055e67a63d62915c7230ba217"
+},
+{
+  "category": "company",
+  "datetime": 1586817053,
+  "headline": "Joe Biden defeats Bernie Sanders in Wisconsin Democratic primary, NBC News projects",
+  "id": 1390,
+  "image": "https://image.cnbcfm.com/api/v1/image/106487579-1586865001583gettyimages-1209800833.jpeg?v=1586865042",
+  "related": "AAPL",
+  "source": "CNBC",
+  "summary": "Biden defeated Sanders in the primary last week, which took place during the coronavirus pandemic and before Sanders dropped out.",
+  "url": "https://finnhub.io/api/news?id=8616c7623e77d1585232c1d15b678cd080288d239386eed71598298c214886ec"
+},
+{
+  "category": "company",
+  "datetime": 1587983440,
+  "headline": "How to avoid Amazon: the definitive guide to online shopping \u2013 without the retail titan",
+  "id": 2084,
+  "image": "https://i.guim.co.uk/img/media/4267654a948af234036b507a646ae88b9b911ced/0_227_6240_3744/master/6240.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b56ad3d70ea130e424791d298f4656a2",
+  "related": "AAPL",
+  "source": "The Guardian",
+  "summary": "Amazon is now making up to \u00a38,800 a second, while concerns persist about its tax affairs, treatment of staff and effect on small retailers. Here\u2019s how to buy everything from technology to beauty to books without it",
+  "url": "https://finnhub.io/api/news?id=803c387445df0a60c6f5bec17eb4de54976242c911868360ce1e06a46f9dd291"
+},
+{
+  "category": "company",
+  "datetime": 1588010460,
+  "headline": "Visa: Yes, COVID-19 Impacts, But 'War On Cash' Is Now In Overdrive",
+  "id": 3847,
+  "image": "https://static3.seekingalpha.com/assets/og_image_192-59bfd51c9fe6af025b2f9f96c807e46f8e2f06c5ae787b15bf1423e6c676d4db.png",
+  "related": "AAPL",
+  "source": "seekingalpha",
+  "summary": "COVID-19 will have negative impacts on Visa's business, depressing payment volume and cross-border transactions in particular. There will be many derivative, an",
+  "url": "https://finnhub.io/api/news?id=13702314a624256246b37ab9f535527ef20c4e4baa0b97956c1c78b1ff7c2136"
+}
+]

@@ -28,18 +28,24 @@ def preprocess_ohlc_data(file_path):
         print(f"Error preprocessing file {file_path}: {e}")
 
 def process_ohlc_files():
-    """Process all OHLC CSV files in the directory."""
-    ohlc_dir = 'test_data/ohlc'
+    """Process all OHLC CSV files in the directory by expanding into each symbol folder."""
+    ohlc_dir = 'test_data/OHLC'
     
-    # Process each directory (each representing a symbol)
+    # Loop over each directory (each representing a stock symbol)
     for symbol_dir in os.listdir(ohlc_dir):
-        print
-        file_path = os.path.join(ohlc_dir, symbol_dir)
+        symbol_path = os.path.join(ohlc_dir, symbol_dir)
+        
+        if os.path.isdir(symbol_path):
+            print(f"Processing symbol folder: {symbol_path}")
             
-        print(f"Processing file: {file_path}")
-        preprocess_ohlc_data(file_path)
-            
+            # Process each file within the symbol folder
+            for file in os.listdir(symbol_path):
+                file_path = os.path.join(symbol_path, file)
+
+                print(f"Processing file: {file_path}")
+                preprocess_ohlc_data(file_path)
+
 
 if __name__ == "__main__":
     print("Starting script...")
-    process_ohlc_files() 
+    process_ohlc_files()

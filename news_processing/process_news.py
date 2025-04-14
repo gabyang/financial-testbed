@@ -63,7 +63,7 @@ def create_embedding(text, model):
         print(f"Error creating embedding: {e}")
         return None
 
-def store_in_postgres(article_data, chunks, embeddings):
+def store_in_postgres(symbol, article_data, chunks, embeddings):
     """Store article data and embeddings in PostgreSQL."""
     conn = psycopg2.connect(**DB_CONFIG)
     cur = conn.cursor()
@@ -75,7 +75,7 @@ def store_in_postgres(article_data, chunks, embeddings):
             VALUES (%s, %s, %s, %s, %s, %s, %s)
             RETURNING id
         """, (
-            'AAPL',
+            symbol,
             article_data['title'],
             article_data['content'],
             article_data['author'],
@@ -94,7 +94,7 @@ def store_in_postgres(article_data, chunks, embeddings):
             """, (article_id, chunk, embedding))
         
         conn.commit()
-        print(f"Successfully stored article {article_id} with {len(chunks)} chunks")
+        print(f"Successfully stored article {article_id} with {len(chunks)} chunks under symbol {symbol}")
         
     except Exception as e:
         print(f"Error storing in database: {e}")
@@ -104,57 +104,55 @@ def store_in_postgres(article_data, chunks, embeddings):
         conn.close()
 
 def process_news_files():
-    """Process all news HTML files in the directory."""
-    news_dir = 'test_data/news'
+    """Process all news HTML files in the directory. 
+       Each stock symbol folder contains a 'news' subfolder where all HTML files reside.
+    """
+    news_dir = 'test_data/News'
     
     # Initialize the MTEB model
     print("Loading MTEB model...")
-
-    # It is receommended for the laptop to have a 16GB ram for this model GG
     model = SentenceTransformer("all-MiniLM-L6-v2")
     
-    # Ensure the articles table exists with pgvector extension
-    # conn = psycopg2.connect(**DB_CONFIG)
-    # cur = conn.cursor()
-    
-    # try:
-    #     conn.commit()
-    # finally:
-    #     cur.close()
-    #     conn.close()
-    
-    # Process each HTML file
-    for filename in os.listdir(news_dir):
-        # if filename.endswith('.html'):
-
-        file_path = os.path.join(news_dir, filename)
-        print(f"Processing {filename}...")
-        
-        # Extract content
-        article_data = extract_content(file_path)
-        if not article_data:
-            continue
-        
-        # Split content into chunks
-        chunks = chunk_text(article_data['content'])
-        print(f"Split article into {len(chunks)} chunks")
-        
-        # Create embeddings for each chunk
-        embeddings = []
-        for chunk in chunks:
-            embedding = create_embedding(chunk, model)
-            if embedding:
-                embeddings.append(embedding)
-        
-        if not embeddings:
-            print("Failed to create embeddings for any chunks")
-            continue
-        
-        # print("embeddings: ", embeddings)
-        print("chunks: ", chunks)
-        print("\n\n\n")
-        # Store in database
-        store_in_postgres(article_data, chunks, embeddings)
+    # Iterate over each stock symbol folder
+    for symbol in os.listdir(news_dir):
+        symbol_path = os.path.join(news_dir, symbol)
+        if os.path.isdir(symbol_path):
+            # Look for the 'news' subfolder inside the symbol folder
+            news_folder = os.path.join(symbol_path, 'news')
+            if os.path.isdir(news_folder):
+                print(f"Processing news for symbol: {symbol}")
+                # Process each HTML file in the 'news' folder
+                for filename in os.listdir(news_folder):
+                    if filename.lower().endswith('.html'):
+                        file_path = os.path.join(news_folder, filename)
+                        print(f"Processing {filename} for symbol {symbol}...")
+                        
+                        # Extract content
+                        article_data = extract_content(file_path)
+                        if not article_data:
+                            continue
+                        
+                        # Split content into chunks
+                        chunks = chunk_text(article_data['content'])
+                        print(f"Split article into {len(chunks)} chunks")
+                        
+                        # Create embeddings for each chunk
+                        embeddings = []
+                        for chunk in chunks:
+                            embedding = create_embedding(chunk, model)
+                            if embedding:
+                                embeddings.append(embedding)
+                        
+                        if not embeddings:
+                            print("Failed to create embeddings for any chunks")
+                            continue
+                        
+                        # Store in database, including the stock symbol
+                        store_in_postgres(symbol, article_data, chunks, embeddings)
+            else:
+                print(f"Warning: No 'news' folder found in {symbol_path}")
+        else:
+            print(f"Skipping non-directory entry: {symbol_path}")
 
 if __name__ == "__main__":
     print("Starting script...")

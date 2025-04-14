@@ -1,0 +1,68 @@
+[  
+  {
+  "category": "company",
+  "datetime": 1588255562,
+  "headline": "AbbVie : Form 8.3 - | MarketScreener",
+  "id": 25476,
+  "image": "https://www.marketscreener.com/images/twitter_MS_fdblanc.png",
+  "related": "ABBV",
+  "source": "marketscreener",
+  "summary": "",
+  "url": "https://finnhub.io/api/news?id=c708b6e8cc7e8762413ca4a3f21f6e92947a8d6dcc8164194d7a3f6a2d7dedb4"
+},
+{
+  "category": "company news",
+  "datetime": 1580821380,
+  "headline": "AbbVie (ABBV) to Report Q4 Earnings: What's in the Cards?",
+  "id": 63546,
+  "image": "https://staticx-tuner.zacks.com/images/articles/main/36/1919.jpg",
+  "related": "ABBV",
+  "source": "Zacks Investment Research",
+  "summary": "AbbVie's (ABBV) Q4 top-line results are expected to reflect biosimilar competition for Humira in international markets. However, oncology drugs might demonstrate strong growth.",
+  "url": "https://finnhub.io/api/news?id=b343fdbffaa47aa69f00ced5faa230a97cb48b1859d758134f603af8e98c7b10"
+},
+{
+  "category": "company news",
+  "datetime": 1582813823,
+  "headline": "The best places to work in 2020 have been revealed",
+  "id": 79747,
+  "image": "https://www.siliconrepublic.com/wp-content/uploads/2020/02/trophy.jpeg",
+  "related": "ABBV",
+  "source": "siliconrepublic.com",
+  "summary": "Biotech company AbbVie has been crowned the winner of the 2020 Great Place to Work Ireland rankings, knocking Workday into second place. The post The best places to work in 2020 have been revealed appeared first on Silicon Republic .",
+  "url": "https://finnhub.io/api/news?id=bc9653f6499542f0b83008560ac75fc316ebfd68c9c20cc395c1660557e971f2"
+},
+{
+  "category": "company news",
+  "datetime": 1583918220,
+  "headline": "AbbVie Backs Studies on HIV Drug Kaletra for Coronavirus Cure",
+  "id": 100905,
+  "image": "https://staticx-tuner.zacks.com/images/articles/main/36/1919.jpg",
+  "related": "ABBV",
+  "source": "Zacks Investment Research",
+  "summary": "AbbVie (ABBV) donates Kaletra/Aluvia to the government of China for experimental use in coronavirus treatment",
+  "url": "https://finnhub.io/api/news?id=088a766d8ea09341489296b3bc22a695a59592b1d204baef8db2927bde620377"
+},
+{
+  "category": "company news",
+  "datetime": 1584095760,
+  "headline": "Pharma Stock Roundup: ABBV, LLY Coronavirus Product Development Efforts, FDA Updates",
+  "id": 104117,
+  "image": "https://staticx-tuner.zacks.com/images/articles/main/ab/2180.jpg",
+  "related": "ABBV",
+  "source": "Zacks Investment Research",
+  "summary": "Lilly (LLY) signs deal with AbCellera to co-develop antibody therapies to treat COVID-19. AbbVie (ABBV) supports studies evaluating Kaletra for treating COVID-19.",
+  "url": "https://finnhub.io/api/news?id=43a0609fae1b50056ecf91a091ce0d3d1b2cec6e2ab9495d421345b87f5716f1"
+},
+{
+  "category": "company news",
+  "datetime": 1585502194,
+  "headline": "Top Insider Buys Highlight for the Week of March 27",
+  "id": 199351,
+  "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+  "related": "ABBV",
+  "source": "YAHOO",
+  "summary": "The largest Insider Buys this week were for Oracle Corp. (ORCL), Salesforce.com Inc. (CRM), AbbVie Inc. (ABBV) and FedEx Corp. (FDX) Continue reading...",
+  "url": "https://finnhub.io/api/news?id=ec7109dc6e1000e02cbce19ae4565dff4e8990d281c88f1621a075eb0b7e40dd"
+}
+]

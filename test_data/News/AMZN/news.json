@@ -1,0 +1,69 @@
+[
+  {
+    "category": "company",
+    "datetime": 1587502826,
+    "headline": "The Truth About Amazon review \u2013 a punters' guide to the retail giant's jungle",
+    "id": 63,
+    "image": "https://i.guim.co.uk/img/media/e98a166c364dcf9e7a2a6490d4bf8f34a3f0b2d4/136_294_2706_1624/master/2706.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTMucG5n&enable=upscale&s=34474bd0d36a5b9989fa817c4e58f103",
+    "related": "AMZN",
+    "source": "The Guardian",
+    "summary": "This Supershoppers special takes two Amazon-devoted families on an eye-opening tour of the retailers\u2019 tactics \u2013 with mixed results",
+    "url": "https://finnhub.io/api/news?id=467100087f3c2f89b7cbc43e078b984fc6c0ac3153d354722091e3be16c907fb"
+  },
+  {
+    "category": "company",
+    "datetime": 1581540826,
+    "headline": "\u2018The 100\u2019 Prequel: Iola Evans, Adain Bradley & Leo Howard Cast In CW Backdoor Pilot",
+    "id": 18817338,
+    "image": "https://pmcdeadline2.files.wordpress.com/2020/02/iola-evans-adain-bradley-leo-howard.jpg?w=1000",
+    "related": "AMZN",
+    "source": "https://deadline.com",
+    "summary": "EXCLUSIVE:\u00a0 Iola Evans (Carnival Row), Adain Bradley (Riverdale) and Leo Howard (Why Women Kill) are the first to be cast in CW\u2019s The 100 prequel backdoor pilot, from The 100 developer/execut\u2026",
+    "url": "https://finnhub.io/api/news?id=72693bbfa03621c26916844c09b5f6c546d7bcf5f95adc31dfe78552577e9370"
+  },
+  {
+    "category": "company",
+    "datetime": 1587990263,
+    "headline": "2020 NFL Draft proves it can work from home \u2014 and score record ratings",
+    "id": 2107,
+    "image": "https://image.cnbcfm.com/api/v1/image/106504819-1587740714762gettyimages-1220671356.jpeg?v=1587740794",
+    "related": "AMZN",
+    "source": "CNBC",
+    "summary": "Subbing out face-to-face contact with Microsoft Teams, the NFL streamed Commissioner Roger Goodell and coaches like Bill Belichick from their homes \u2014 and marked a 2020 NFL Draft ratings record.",
+    "url": "https://finnhub.io/api/news?id=744c8d8da90911354fdb7619d175f073a08c107ca5f7211739d2522a0f650914"
+  },
+  {
+    "category": "company",
+    "datetime": 1588031097,
+    "headline": "Covidsafe app: how to download Australia's coronavirus contact tracing app and how it works",
+    "id": 3371,
+    "image": "https://i.guim.co.uk/img/media/29aaf7da7135c9dc5e745447304b35540af988ef/360_437_2815_1689/master/2815.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=56588f6c4f798c776878c178c5230b39",
+    "related": "AMZN",
+    "source": "The Guardian",
+    "summary": "The app will ask for your name (or pseudonym), age range, postcode and phone number. Scott Morrison says the Australian government\u2019s covid safe tracking app won\u2019t be mandatory to download and install, but could play a part in easing Covid-19 restrictions",
+    "url": "https://finnhub.io/api/news?id=0f781f8851d0be2df722751ea2b3fe98c423acbf2012e11c06c3671702ce4bb1"
+  },
+  {
+    "category": "company",
+    "datetime": 1588003261,
+    "headline": "Google's Pixel Buds are a great AirPods alternative for people with Android phones",
+    "id": 3433,
+    "image": "https://image.cnbcfm.com/api/v1/image/106507673-1587996391299pixel-buds-9.png?v=1587996556",
+    "related": "AMZN",
+    "source": "CNBC",
+    "summary": "The Google Pixel Buds go on sale on Monday for $179. I've been testing them for the past several days, and I think they're a great buy for folks who want some of the features of AirPods but who use an Android phone instead of an iPhone.",
+    "url": "https://finnhub.io/api/news?id=e55f58a87edfbf8d268d11e6cc434767afc0257e97219a06942fa661293ce6b5"
+  },
+  {
+    "category": "company",
+    "datetime": 1586882202,
+    "headline": "Stocks making the biggest moves midday: Amazon, Roku, Tesla, JPMorgan and more",
+    "id": 6334,
+    "image": "https://image.cnbcfm.com/api/v1/image/106481041-1586380285519gettyimages-1124819793.jpeg?v=1586380408",
+    "related": "AMZN",
+    "source": "CNBC",
+    "summary": "These are the stocks posting the largest moves in midday trading.",
+    "url": "https://finnhub.io/api/news?id=203f7508dca5c8fe880eabc5a0fe817e399e794e7b1d74bd7cc1b7461cd3b179"
+  }
+
+]
