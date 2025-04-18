@@ -2,6 +2,7 @@ import re
 import os
 from typing import Optional
 import sec_parser as sp
+from pathlib import Path
 
 
 def extract_first_document_html(file_path: str) -> Optional[str]:
@@ -29,9 +30,6 @@ def extract_first_document_html(file_path: str) -> Optional[str]:
         print(f"Error reading file {file_path}: {e}")
         return None
 
-    # Use regex to find the first <DOCUMENT>...</DOCUMENT> block
-    # re.DOTALL makes '.' match newline characters as well
-    # The non-greedy '.*?' ensures we match the *first* closing tag
     match = re.search(r'<DOCUMENT>(.*?)</DOCUMENT>', content, re.IGNORECASE | re.DOTALL)
 
     if match:
@@ -55,13 +53,13 @@ def overwrite_file_with_content(file_path: str, content: str):
         with open(file_path, 'w', encoding='utf-8') as f_out:
             f_out.write(content)
         print(f"\nSuccessfully overwrote '{os.path.basename(file_path)}' with extracted content.")
+
+        return True
     except Exception as e:
         print(f"\nError overwriting file {file_path}: {e}")
 
 def parse_sec_content(content: str):
     print('starting parse')
-    # with open(file_path, 'r', encoding='utf-8') as f:
-    #     filing_content = f.read()
 
     elements = sp.Edgar10QParser().parse(content)
     parsed_arr = []
@@ -70,16 +68,68 @@ def parse_sec_content(content: str):
         parsed_arr.append(elem.text + '\n')
 
     return ''.join(parsed_arr)
-    # print(''.join(parsed_arr))
+
+def process_directory(root_dir: str):
+    """
+    Process all full-submission.txt files in the directory structure
+    Directory structure: /{symbol}/10-Q/{long_string}/full-submission.txt
+    """
+    root_path = Path(root_dir)
+    processed_count = 0
+    error_count = 0
+    
+    try:
+        # Traverse directory
+        for symbol_dir in root_path.iterdir():
+            if not symbol_dir.is_dir():
+                continue
+                
+            symbol = symbol_dir.name
+            quarterly_dir = symbol_dir / "10-Q"
+            
+            if not quarterly_dir.exists():
+                continue
+            
+            for filing_dir in quarterly_dir.iterdir():
+                if not filing_dir.is_dir():
+                    continue
+                    
+                submission_file = filing_dir / "full-submission.txt"
+                if not submission_file.exists():
+                    continue
+                
+                print(f"\nProcessing: Symbol={symbol}, Filing={filing_dir.name}")
+                
+                # Extract HTML content
+                extracted_content = extract_first_document_html(str(submission_file))
+                if not extracted_content:
+                    print(f"✗ Failed to extract HTML from {submission_file}")
+                    error_count += 1
+                    continue
+
+                # Parse the content
+                parsed_content = parse_sec_content(extracted_content)
+                if not parsed_content:
+                    print(f"✗ Failed to parse content from {submission_file}")
+                    error_count += 1
+                    continue
+
+                # Overwrite the file
+                if overwrite_file_with_content(str(submission_file), parsed_content):
+                    processed_count += 1
+                else:
+                    error_count += 1
+    
+    except Exception as e:
+        print(f"Error during directory processing: {e}")
+    
+    finally:
+        print("\n=== Processing Summary ===")
+        print(f"Total files processed successfully: {processed_count}")
+        print(f"Total files failed: {error_count}")
+
 
 if __name__ == "__main__":
-    input_file = '/test_data/sec/full-submission.txt'
-
-    extracted_content = extract_first_document_html(input_file)
-    # overwrite_file_with_content(input_file, extracted_content)
-
-    parsed_content = parse_sec_content(extracted_content)
-    overwrite_file_with_content(input_file, parsed_content)
-
-    if not parsed_content:    
-        print("\nNo content was extracted. Original file remains unchanged.")
+    # Replace with your actual root directory
+    input_directory = "/path/to/parent/dir"
+    process_directory(input_directory)
