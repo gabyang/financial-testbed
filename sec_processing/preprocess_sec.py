@@ -149,5 +149,5 @@ def process_directory(root_dir: str):
 
 if __name__ == "__main__":
     # Replace with your actual root directory
-    input_directory = "/Users/gabriel.yang/test/financial-testbed/test_data/sec"
+    input_directory = "./test_data/SEC-filings"
     process_directory(input_directory)

@@ -1,0 +1,1158 @@
+10-Q
+1
+tmus09302017form10-q.htm
+10-Q
+html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
+Document created using Wdesk 1
+Copyright 2017 Workiva
+Document
+
+
+
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+
+FORM 10-Q
+
+x QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the quarterly period ended September 30, 2017
+or
+¨ TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the transition period from     to
+
+Commission File Number: 1-33409
+
+T-MOBILE US, INC.
+(Exact name of registrant as specified in its charter)
+DELAWARE 20-0836269(State or other jurisdiction of incorporation or organization) (I.R.S. Employer Identification No.)   12920 SE 38th Street, Bellevue, Washington 98006-1350(Address of principal executive offices) (Zip Code)   (425) 378-4000(Registrant’s telephone number, including area code)
+
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes x No ¨
+Indicate by check mark whether the registrant has submitted electronically and posted on its corporate Web site, if any, every Interactive Data File required to be submitted and posted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit and post such files). Yes x No ¨
+Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, smaller reporting company, or an emerging growth company. See the definitions of “large accelerated filer,” “accelerated filer,” “smaller reporting company,” and “emerging growth company” in Rule 12b-2 of the Exchange Act.
+
+Large accelerated filer     x                        Accelerated filer             ¨
+Non-accelerated filer     ¨ (Do not check if a smaller reporting company)    Smaller reporting company     ¨
+Emerging growth company    ¨
+
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ¨
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act). Yes ¨ No x
+Indicate the number of shares outstanding of each of the issuer’s classes of common stock, as of the latest practicable date.
+
+Class Shares Outstanding as of October 19, 2017Common Stock, $0.00001 par value per share 831,964,098
+
+
+
+
+T-Mobile US, Inc.
+Form 10-Q
+For the Quarter Ended September 30, 2017
+
+Table of Contents
+PART I. FINANCIAL INFORMATION Item 1.Financial Statements3 Condensed Consolidated Balance Sheets3 Condensed Consolidated Statements of Comprehensive Income4 Condensed Consolidated Statements of Cash Flows5 Notes to the Condensed Consolidated Financial Statements6Item 2.Management’s Discussion and Analysis of Financial Condition and Results of Operations33Item 3.Quantitative and Qualitative Disclosures About Market Risk56Item 4.Controls and Procedures56PART II. OTHER INFORMATION Item 1.Legal Proceedings57Item 1A.Risk Factors57Item 2.Unregistered Sales of Equity Securities and Use of Proceeds57Item 3.Defaults Upon Senior Securities57Item 4.Mine Safety Disclosures57Item 5.Other Information57Item 6.Exhibits57 INDEX TO EXHIBITS58 SIGNATURE59
+
+
+
+
+Table of Contents
+
+PART I. FINANCIAL INFORMATION
+
+
+Item 1. Financial Statements
+
+
+T-Mobile US, Inc.
+Condensed Consolidated Balance Sheets
+(Unaudited)
+(in millions, except share and per share amounts)September 30, 2017 December 31, 2016Assets   Current assets   Cash and cash equivalents$739 $5,500Accounts receivable, net of allowances of $86 and $1021,734 1,896Equipment installment plan receivables, net2,136 1,930Accounts receivable from affiliates24 40Inventories999 1,111Asset purchase deposit— 2,203Other current assets1,817 1,537Total current assets7,449 14,217Property and equipment, net21,570 20,943Goodwill1,683 1,683Spectrum licenses35,007 27,014Other intangible assets, net256 376Equipment installment plan receivables due after one year, net1,100 984Other assets858 674Total assets$67,923 $65,891Liabilities and Stockholders' Equity   Current liabilities   Accounts payable and accrued liabilities$6,071 $7,152Payables to affiliates288 125Short-term debt558 354Deferred revenue790 986Other current liabilities396 405Total current liabilities8,103 9,022Long-term debt13,163 21,832Long-term debt to affiliates14,586 5,600Tower obligations2,599 2,621Deferred tax liabilities5,535 4,938Deferred rent expense2,693 2,616Other long-term liabilities967 1,026Total long-term liabilities39,543 38,633Commitments and contingencies (Note 10) Stockholders' equity   5.50% Mandatory Convertible Preferred Stock Series A, par value $0.00001 per share, 100,000,000 shares authorized; 20,000,000 and 20,000,000 shares issued and outstanding; $1,000 and $1,000 aggregate liquidation value— —Common Stock, par value $0.00001 per share, 1,000,000,000 shares authorized; 833,418,809 and 827,768,818 shares issued, 831,963,343 and 826,357,331 shares outstanding— —Additional paid-in capital39,058 38,846Treasury stock, at cost, 1,455,466 and 1,411,487 shares issued(4) (1)Accumulated other comprehensive income4 1Accumulated deficit(18,781) (20,610)Total stockholders' equity20,277 18,236Total liabilities and stockholders' equity$67,923 $65,891
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+3
+
+
+Table of Contents
+
+T-Mobile US, Inc.
+Condensed Consolidated Statements of Comprehensive Income
+(Unaudited)
+Three Months Ended September 30, Nine Months Ended September 30, 2017 2016 2017 2016(in millions, except share and per share amounts)  (As Adjusted - See Note 1)   (As Adjusted - See Note 1)Revenues       Branded postpaid revenues$4,920 $4,647 $14,465 $13,458Branded prepaid revenues2,376 2,182 7,009 6,326Wholesale revenues274 238 778 645Roaming and other service revenues59 66 151 170Total service revenues7,629 7,133 22,403 20,599Equipment revenues2,118 1,948 6,667 5,987Other revenues272 224 775 670Total revenues10,019 9,305 29,845 27,256Operating expenses       Cost of services, exclusive of depreciation and amortization shown separately below1,594 1,436 4,520 4,286Cost of equipment sales2,617 2,539 8,149 7,532Selling, general and administrative3,098 2,898 8,968 8,419Depreciation and amortization1,416 1,568 4,499 4,695Cost of MetroPCS business combination— 15 — 110Gains on disposal of spectrum licenses(29) (199) (67) (835)Total operating expense8,696 8,257 26,069 24,207Operating income1,323 1,048 3,776 3,049Other income (expense)       Interest expense(253) (376) (857) (1,083)Interest expense to affiliates(167) (76) (398) (248)Interest income2 3 15 9Other income (expense), net1 (1) (89) (6)Total other expense, net(417) (450) (1,329) (1,328)Income before income taxes906 598 2,447 1,721Income tax expense(356) (232) (618) (651)Net income550 366 1,829 1,070Dividends on preferred stock(13) (13) (41) (41)Net income attributable to common stockholders$537 $353 $1,788 $1,029        Net Income$550 $366 $1,829 $1,070Other comprehensive income, net of tax       Unrealized gain on available-for-sale securities, net of tax effect $0, $1, $2 and $11 2 3 2Other comprehensive income1 2 3 2Total comprehensive income$551 $368 $1,832 $1,072Earnings per share       Basic$0.65 $0.43 $2.15 $1.25Diluted$0.63 $0.42 $2.10 $1.24Weighted average shares outstanding       Basic831,189,779 822,998,697 829,974,146 821,626,675Diluted871,420,065 832,257,819 871,735,511 831,241,027
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+4
+
+
+Table of Contents
+
+T-Mobile US, Inc.
+Condensed Consolidated Statements of Cash Flows
+(Unaudited)
+Three Months Ended September 30, Nine Months Ended September 30,(in millions)2017 2016 2017 2016Operating activities       Net income$550 $366 $1,829 $1,070Adjustments to reconcile net income to net cash provided by operating activities      Depreciation and amortization1,416 1,568 4,499 4,695Stock-based compensation expense82 59 221 171Deferred income tax expense347 219 595 623Bad debt expense123 118 298 358Losses from sales of receivables67 59 242 157Deferred rent expense21 32 61 97Gains on disposal of spectrum licenses(29) (199) (67) (835)Changes in operating assets and liabilities       Accounts receivable(119) (155) (166) (462)Equipment installment plan receivables(154) 104 (520) 556Inventories113 301 (28) (497)Deferred purchase price from sales of receivables6 (16) (12) (199)Other current and long-term assets(184) (98) (330) 31Accounts payable and accrued liabilities(12) (731) (607) (1,568)Other current and long term liabilities60 112 (84) 326Other, net75 1 (27) 10Net cash provided by operating activities2,362 1,740 5,904 4,533Investing activities       Purchases of property and equipment, including capitalized interest of $29, $17, $111 and $71(1,441) (1,159) (4,316) (3,843)Purchases of spectrum licenses and other intangible assets, including deposits(15) (705) (5,820) (3,544)Sales of short-term investments— — — 2,998Other, net1 5 (2) 3Net cash used in investing activities(1,455) (1,859) (10,138) (4,386)Financing activities       Proceeds from issuance of long-term debt500 — 10,480 997Proceeds from borrowing on revolving credit facility1,055 — 2,910 —Repayments of revolving credit facility(1,735) — (2,910) —Repayments of capital lease obligations(141) (54) (350) (133)Repayments of short-term debt for purchases of inventory, property and equipment, net(4) — (296) (150)Repayments of long-term debt— (5) (10,230) (15)Tax withholdings on share-based awards(6) (3) (101) (52)Dividends on preferred stock(13) (13) (41) (41)Other, net(5) 8 11 17Net cash (used in) provided by financing activities(349) (67) (527) 623Change in cash and cash equivalents558 (186) (4,761) 770Cash and cash equivalents       Beginning of period181 5,538 5,500 4,582End of period$739 $5,352 $739 $5,352Supplemental disclosure of cash flow information       Interest payments, net of amounts capitalized, $0, $0, $79 and $0 of which recorded as debt discount (Note 7)$343 $478 $1,565 $1,292Income tax payments2 4 23 23Changes in accounts payable for purchases of property and equipment(141) (79) (458) (307)Leased devices transferred from inventory to property and equipment262 234 775 1,175Returned leased devices transferred from property and equipment to inventory(165) (186) (635) (422)Issuance of short-term debt for financing of property and equipment1 — 291 150Assets acquired under capital lease obligations138 384 735 679
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+5
+
+
+Table of Contents
+
+T-Mobile US, Inc.
+Index for Notes to the Condensed Consolidated Financial Statements
+
+Note 1Basis of Presentation7Note 2Significant Transactions10Note 3Equipment Installment Plan Receivables10Note 4Sales of Certain Receivables11Note 5Spectrum License Transactions14Note 6Fair Value Measurements15Note 7Debt16Note 8Income Taxes18Note 9Earnings Per Share19Note 10Commitments and Contingencies20Note 11Guarantor Financial Information21
+
+
+6
+
+
+Table of Contents
+
+T-Mobile US, Inc.
+Notes to the Condensed Consolidated Financial Statements
+(Unaudited)
+
+
+Note 1 – Basis of Presentation
+
+The unaudited condensed consolidated financial statements of T-Mobile US, Inc. (“T-Mobile,” “we,” “our,” “us” or the “Company”) include all adjustments of a normal recurring nature necessary for the fair presentation of the results for the interim periods presented. The results for the interim periods are not necessarily indicative of those for the full year. The condensed consolidated financial statements should be read in conjunction with our consolidated financial statements included in our Annual Report on Form 10-K for the year ended December 31, 2016.The condensed consolidated financial statements include the balances and results of operations of T-Mobile and our consolidated subsidiaries. We consolidate majority-owned subsidiaries over which we exercise control, as well as variable interest entities (“VIE”) where we are deemed to be the primary beneficiary and VIEs which cannot be deconsolidated, such as those related to Tower obligations (Tower obligations are included in VIEs related to the 2012 Tower Transaction. See Note 8 - Tower Obligations included in the Annual Report on Form 10-K for the year ended December 31, 2016). Intercompany transactions and balances have been eliminated in consolidation.The preparation of financial statements in conformity with United States (“U.S.”) generally accepted accounting principles (“GAAP”) requires our management to make estimates and assumptions which affect the financial statements and accompanying notes. Estimates are based on historical experience, where applicable, and other assumptions which our management believes are reasonable under the circumstances. These estimates are inherently subject to judgment and actual results could differ from those estimates.
+
+
+
+Change in Accounting Principle
+
+Effective January 1, 2017, the imputed discount on Equipment Installment Plan (“EIP”) receivables, which is amortized over the financed installment term using the effective interest method, and was previously presented within Interest income in our Condensed Consolidated Statements of Comprehensive Income, is now presented within Other revenues in our Condensed Consolidated Statements of Comprehensive Income. We believe this presentation is preferable because it provides a better representation of amounts earned from our major ongoing operations and aligns with industry practice thereby enhancing comparability. We have applied this change retrospectively and presented the effect on the three and nine months ended September 30, 2017 and 2016, in the tables below:
+Three Months Ended September 30, 2017 Three Months Ended September 30, 2016(in millions)Unadjusted Change in Accounting Principle As Adjusted As Filed Change in Accounting Principle As AdjustedOther revenues$198 $74 $272 $165 $59 $224Total revenues9,945 74 10,019 9,246 59 9,305Operating income1,249 74 1,323 989 59 1,048Interest income76 (74) 2 62 (59) 3Total other expense, net(343) (74) (417) (391) (59) (450)Net income550 — 550 366 — 366
+
+Nine Months Ended September 30, 2017 Nine Months Ended September 30, 2016(in millions)Unadjusted Change in Accounting Principle As Adjusted As Filed Change in Accounting Principle As AdjustedOther revenues$571 $204 $775 $481 $189 $670Total revenues29,641 204 29,845 27,067 189 27,256Operating income3,572 204 3,776 2,860 189 3,049Interest income219 (204) 15 198 (189) 9Total other expense, net(1,125) (204) (1,329) (1,139) (189) (1,328)Net income1,829 — 1,829 1,070 — 1,070
+
+
+7
+
+Table of Contents
+
+The change in accounting principle did not have an impact on basic or diluted earnings per share for the three and nine months ended September 30, 2017 and 2016, or Accumulated deficit as of September 30, 2017 or December 31, 2016.
+
+Accounting Pronouncements Not Yet Adopted
+
+In May 2014, the FASB issued ASU 2014-09, “Revenue from Contracts with Customers (Topic 606)” (“ASU 2014-09”), and has since modified the standard with several ASUs. The standard is effective for us, and we will adopt the standard, on January 1, 2018.The standard requires entities to recognize revenue through the application of a five-step model, which includes: identification of the contract; identification of the performance obligations; determination of the transaction price; allocation of the transaction price to the performance obligations; and recognition of revenue as the entity satisfies the performance obligations.The guidance permits two methods of adoption, the full retrospective method applying the standard to each prior reporting period presented, or the modified retrospective method with a cumulative effect of initially applying the guidance recognized at the date of initial application. The standard also allows entities to apply certain practical expedients at their discretion. We are adopting the standard using the modified retrospective method with a cumulative catch up adjustment and will provide additional disclosures comparing results to previous GAAP.We currently anticipate this standard will have a material impact on our consolidated financial statements. While we are continuing to assess all potential impacts of the standard, we currently believe the most significant potential impacts include the following items:•Whether our EIP contracts contain a significant financing component, which is similar to our current practice of imputing interest, and would similarly impact the amount of revenue recognized at the time of an EIP sale and whether or not a portion of the revenue is recognized as interest and included in other revenues, rather than equipment revenues. We currently expect to recognize the financing component in our EIP contracts, including those financing components that are not considered to be significant to the contract. We believe that this application will be consistent with our current practice of imputing interest.•As we currently expense contract acquisition costs, we believe that the requirement to defer incremental contract acquisition costs and recognize them over the term of the initial contract and anticipated renewal contracts to which the costs relate will have a significant impact to our consolidated financial statements. We plan to utilize the practical expedient permitting expensing of costs to obtain a contract when the expected amortization period is one year or less which we expect will typically result in expensing commissions paid to acquire branded prepaid service contracts. Currently, we believe that incremental contract acquisition costs of approximately $450 million to $550 million that were incurred during the nine months ended September 30, 2017, which consists primarily of commissions paid to acquire branded postpaid service contracts, would require capitalization and amortization under the new standard. We expect that deferred contract costs will have an average amortization period of approximately 24 months, subject to being monitored and updated every period to reflect any significant change in assumptions. In addition, the deferred contract cost asset will be assessed for impairment on a periodic basis.•We expect that promotional bill credits offered to customers on equipment sales that are paid over time and are contingent on the customer maintaining a service contract will result in extended service contracts, which impacts the allocation and timing of revenue recognition between service revenue and equipment revenue.•Overall, with the exception of the aforementioned impacts, we do not expect that the new standard will result in a substantive change to the method of allocation of contract revenues between various services and equipment, nor to the timing of when revenues are recognized for most of our service contracts.We are still in the process of evaluating these impacts, and our initial assessment may change due to changes in the terms and mix of the contractual arrangements we have with customers. New products or offerings, or changes to current offerings may yield significantly different impacts than currently expected.We are in the process of implementing significant new revenue accounting systems, processes and internal controls over revenue recognition which will assist us in the application of the new standard.In February 2016, the FASB issued ASU 2016-02, “Leases (Topic 842).” The standard requires all lessees to report a right-of-use asset and a lease liability for most leases. The income statement recognition is similar to existing lease accounting and is based on lease classification. The standard requires lessees and lessors to classify most leases using principles similar to existing lease accounting. For lessors, the standard modifies the classification criteria and the accounting for sales-type and direct financing leases. We are currently evaluating the standard, which will require recognizing and measuring leases at the beginning of the earliest period presented using a modified retrospective approach. We plan to adopt the standard when it becomes effective for us beginning January 1, 2019, and expect the adoption of the standard will result in the recognition of right of use assets and lease liabilities that have not previously been recorded, which will have a material impact on our condensed consolidated financial statements.We are in the process of implementing significant new lease accounting systems, processes and internal controls over lease recognition which will ultimately assist in the application of the new standard.In June 2016, the FASB issued ASU 2016-13, “Financial Instruments - Credit Losses (Topic 326): Measurement of Credit Losses on Financial Instruments.” The standard requires a financial asset (or a group of financial assets) measured at amortized cost basis to be presented at the net amount expected to be collected. The measurement of expected credit losses is based on relevant information about past events, including historical experience, current conditions and reasonable and supportable forecasts that affect the collectibility of the reported amount. The standard will become effective for us beginning January 1, 2020, and will require a cumulative-effect adjustment to Accumulated deficit as of the beginning of the first reporting period in which the guidance is effective (that is, a modified-retrospective approach). Early adoption is permitted for us as of January 1, 2019. We are currently evaluating the impact this guidance will have on our condensed consolidated financial statements and the timing of adoption.In August 2016, the FASB issued ASU 2016-15, “Statement of Cash Flows (Topic 230): Classification of Certain Cash Receipts and Cash Payments.” The standard is intended to reduce current diversity in practice and provides guidance on how certain cash receipts and payments are presented and classified in the statement of cash flows. The standard is effective for us, and we will adopt the standard, on January 1, 2018. The standard will require a retrospective approach. The standard will impact the presentation of cash flows related to beneficial interests in securitization transactions, which is the deferred purchase price, resulting in a reclassification of cash inflows from Operating activities to Investing activities of approximately $1.0 billion for the three months ended September 30, 2017 and 2016, and $2.8 billion for the nine months ended September 30, 2017 and 2016, in our condensed consolidated statement of cash flows. The standard will also impact the presentation of cash payments for debt prepayment or debt extinguishment costs, resulting in a reclassification of cash outflows from Operating activities to Financing activities of $188 million for the nine months ended September 30, 2017, in our condensed consolidated statement of cash flows. We had no cash payments for debt prepayment or debt extinguishment costs for the three months ended September 30, 2017.In October 2016, the FASB issued ASU 2016-16, “Accounting for Income Taxes: Intra-Entity Transfers of Assets Other Than Inventory.” The standard requires that the income tax impact of intra-entity sales and transfers of property, except for inventory, be recognized when the transfer occurs. The standard will become effective for us beginning January 1, 2018, and will require any deferred taxes not yet recognized on intra-entity transfers to be recorded to retained earnings under a modified retrospective approach. Early adoption is permitted. We are currently evaluating the standard, but expect that it will not have a material impact on our condensed consolidated financial statements.In November 2016, the FASB issued ASU 2016-18, “Statement of Cash Flows (Topic 230): Restricted Cash.” The standard requires entities to include in their cash and cash-equivalent balances in the statement of cash flows those amounts that are deemed to be restricted cash and restricted cash equivalents. The ASU does not define the terms “restricted cash” and “restricted cash equivalents.” The standard will be effective for us beginning January 1, 2018, and will require a retrospective approach. Early adoption is permitted. We are currently evaluating the standard, but expect that it will not have a material impact on our condensed consolidated financial statements.In January 2017, the FASB issued ASU 2017-04, “Intangibles - Goodwill and Other (Topic 350): Simplifying the Test for Goodwill Impairment.” The standard eliminates the requirement to measure the implied fair value of goodwill by assigning the fair value of a reporting unit to all assets and liabilities within that unit (“the Step 2 test”) from the goodwill impairment test. Instead, if the carrying amount of a reporting unit exceeds its fair value, an impairment loss is recognized in an amount equal to that excess, limited by the amount of goodwill in that reporting unit. The standard will become effective for us beginning January 1, 2020, and must be applied to any annual or interim goodwill impairment assessments after that date. Early adoption is permitted. We are currently evaluating the standard and timing of adoption, but expect that it will not have a material impact on our condensed consolidated financial statements.
+
+
+
+
+
+
+
+
+8
+
+Table of Contents
+
+
+
+
+
+
+
+
+
+9
+
+
+Table of Contents
+
+Note 2 – Significant Transactions
+
+Hurricane Impacts
+
+During the third quarter of 2017, our operations in Texas, Florida and Puerto Rico experienced losses related to hurricanes. Based on our preliminary assessment, the negative impact to operating income and net income for both the three and nine months ended September 30, 2017, from lost revenue, assets damaged or destroyed and other hurricane related costs incurred was $148 million and $90 million, respectively. As of September 30, 2017, our loss assessment is ongoing and we expect additional expenses to be incurred and customer activity to be impacted in the fourth quarter of 2017, primarily related to our operations in Puerto Rico. We have not recognized any potential insurance recoveries related to those hurricane losses as we continue to assess the damage and work with our insurance carriers.
+
+Purchase of Iowa Wireless
+
+On September 18, 2017, we entered into a Unit Purchase Agreement (“UPA”) to acquire the remaining equity in INS Wireless, Inc. (“INS”), a 54% owned unconsolidated subsidiary, for a purchase price of $25 million. We account for our existing investment in INS under the equity method as we have significant influence, but not control. Upon the close of the transaction, which is expected within the next six months, subject to regulatory approvals and customary closing conditions, INS will become a wholly-owned consolidated subsidiary.
+
+Spectrum Transactions
+
+During the nine months ended September 30, 2017, we entered into agreements with third parties for the exchange of certain spectrum licenses and were the winning bidder of 1,525 licenses in the 600 MHz spectrum auction. See Note 5 - Spectrum License Transactions for further information.
+
+Debt
+
+During the nine months ended September 30, 2017, we completed significant transactions with both third parties and affiliates related to the issuance, borrowing and redemption of debt. See Note 7 - Debt for further information.
+
+Power Purchase Agreements
+
+During the nine months ended September 30, 2017, we entered into two renewable energy purchase agreements with third parties. These agreements each consist of two components, an energy forward agreement that is net settled based on energy prices and the energy output generated by the facility and a commitment to purchase the energy credits associated with the energy output generated by the facility. See Note 10 – Commitments and Contingencies for further information.
+
+
+Note 3 – Equipment Installment Plan Receivables
+
+We offer certain retail customers the option to pay for their devices and accessories in installments over a period of up to 24 months using an EIP.The following table summarizes the EIP receivables:
+
+(in millions)September 30, 2017 December 31, 2016EIP receivables, gross$3,599 $3,230Unamortized imputed discount(233) (195)EIP receivables, net of unamortized imputed discount3,366 3,035Allowance for credit losses(130) (121)EIP receivables, net$3,236 $2,914    Classified on the balance sheet as:   Equipment installment plan receivables, net$2,136 $1,930Equipment installment plan receivables due after one year, net1,100 984EIP receivables, net$3,236 $2,914
+
+
+10
+
+Table of Contents
+
+We use a proprietary credit scoring model that measures the credit quality of a customer at the time of application for mobile communications service using several factors, such as credit bureau information, consumer credit risk scores and service plan characteristics. Based upon customer credit profiles, we classify EIP receivables into the credit categories of “Prime” and “Subprime.” Prime customer receivables are those with lower delinquency risk and Subprime customer receivables are those with higher delinquency risk. Subprime customers may be required to make a down payment on their equipment purchases. In addition, certain customers within the Subprime category are required to pay an advance deposit.EIP receivables for which invoices have not yet been generated for the customer are classified as Unbilled. EIP receivables for which invoices have been generated but which are not past the contractual due date are classified as Billed – Current. EIP receivables for which invoices have been generated and the payment is past the contractual due date are classified as Billed – Past Due.The balance and aging of the EIP receivables on a gross basis by credit category were as follows:
+
+
+September 30, 2017 December 31, 2016(in millions)Prime Subprime Total Prime Subprime TotalUnbilled$1,471 $1,903 $3,374 $1,343 $1,686 $3,029Billed – Current60 90 150 51 77 128Billed – Past Due25 50 75 25 48 73EIP receivables, gross$1,556 $2,043 $3,599 $1,419 $1,811 $3,230
+
+Activity for the nine months ended September 30, 2017 and 2016, in the unamortized imputed discount and allowance for credit losses balances for the EIP receivables was as follows:
+(in millions)September 30, 2017 September 30, 2016Imputed discount and allowance for credit losses, beginning of period$316 $333Bad debt expense215 185Write-offs, net of recoveries(205) (201)Change in imputed discount on short-term and long-term EIP receivables163 103Impacts from sales of EIP receivables(126) (133)Imputed discount and allowance for credit losses, end of period$363 $287
+
+The EIP receivables had weighted average effective imputed interest rates of 9.7% and 9.0% as of September 30, 2017 and December 31, 2016, respectively.
+
+
+Note 4 – Sales of Certain Receivables
+
+We have entered into transactions to sell certain service and EIP accounts receivables. The transactions, including our continuing involvement with the sold receivables and the respective impacts to our financial statements, are described below.
+
+Sales of Service Receivables
+
+Overview of the Transaction
+
+In 2014, we entered into an arrangement to sell certain service accounts receivables on a revolving basis and in November 2016, the arrangement was amended to increase the maximum funding commitment to $950 million (the “service receivable sale arrangement”) and extend the scheduled expiration date to March 2018. As of September 30, 2017 and December 31, 2016, the service receivable sale arrangement provided funding of $899 million and $907 million, respectively. Sales of receivables occur daily and are settled on a monthly basis. The receivables consist of service charges currently due from customers and are short-term in nature.In connection with the service receivable sale arrangement, we formed a wholly-owned subsidiary, which qualifies as a bankruptcy remote entity to sell service accounts receivables (the “Service BRE”). The Service BRE does not qualify as a VIE, and due to the significant level of control we exercise over the entity, it is consolidated. Pursuant to the arrangement, certain of our wholly-owned subsidiaries transfer selected receivables to the Service BRE. The Service BRE then sells the receivables to an unaffiliated entity (the “Service VIE”), which was established to facilitate the sale of beneficial ownership interests in the receivables to certain third parties.
+
+
+
+11
+
+Table of Contents
+
+Variable Interest Entity
+
+We determined that the Service VIE qualifies as a VIE as it lacks sufficient equity to finance its activities. We have a variable interest in the Service VIE, but are not the primary beneficiary as we lack the power to direct the activities that most significantly impact the Service VIE’s economic performance. Those activities include committing the Service VIE to legal agreements to purchase or sell assets, selecting which receivables are purchased in the service receivable sale arrangement, determining whether the Service VIE will sell interests in the purchased service receivables to other parties, funding of the entity and servicing of receivables. We do not hold the power to direct the key decisions underlying these activities. For example, while we act as the servicer of the sold receivables, which is considered a significant activity of the Service VIE, we are acting as an agent in our capacity as the servicer and the counterparty to the service receivable sale arrangement has the ability to remove us as the servicing agent of the receivables at will with no recourse available to us. As we have determined we are not the primary beneficiary, the results of the Service VIE are not consolidated into our condensed consolidated financial statements.The following table summarizes the carrying amounts and classification of assets, which consists primarily of the deferred purchase price and liabilities included in our Condensed Consolidated Balance Sheets that relate to our variable interest in the Service VIE:
+
+(in millions)September 30, 2017 December 31, 2016Other current assets$225 $207Accounts payable and accrued liabilities13 17Other current liabilities155 129
+
+Sales of EIP Receivables
+
+Overview of the Transaction
+
+In 2015, we entered into an arrangement to sell certain EIP accounts receivables on a revolving basis and in August 2017, the EIP sale arrangement was amended to reduce the maximum funding commitment to $1.2 billion (the “EIP sale arrangement”) and extend the scheduled expiration date to November 2018. As of both September 30, 2017 and December 31, 2016, the EIP sale arrangement provided funding of $1.2 billion. Sales of EIP receivables occur daily and are settled on a monthly basis. The receivables consist of customer EIP balances, which require monthly customer payments for up to 24 months.In connection with this EIP sale arrangement, we formed a wholly-owned subsidiary, which qualifies as a bankruptcy remote entity (the “EIP BRE”). Pursuant to the EIP sale arrangement, our wholly-owned subsidiary transfers selected receivables to the EIP BRE. The EIP BRE then sells the receivables to a non-consolidated and unaffiliated third-party entity for which we do not exercise any level of control, nor does the entity qualify as a VIE.
+
+
+Variable Interest Entity
+
+We determined that the EIP BRE is a VIE as its equity investment at risk lacks the obligation to absorb a certain portion of its expected losses. We have a variable interest in the EIP BRE and determined that we are the primary beneficiary based on our ability to direct the activities which most significantly impact the EIP BRE’s economic performance. Those activities include selecting which receivables are transferred into the EIP BRE and sold in the EIP sale arrangement and funding of the EIP BRE. Additionally, our equity interest in the EIP BRE obligates us to absorb losses and gives us the right to receive benefits from the EIP BRE that could potentially be significant to the EIP BRE. Accordingly, we determined that we are the primary beneficiary, and include the balances and results of operations of the EIP BRE in our condensed consolidated financial statements.The following table summarizes the carrying amounts and classification of assets, which consists primarily of the deferred purchase price and liabilities included in our Condensed Consolidated Balance Sheets that relate to the EIP BRE:
+
+(in millions)September 30, 2017 December 31, 2016Other current assets$357 $371Other assets90 83Other long-term liabilities2 4
+
+
+12
+
+Table of Contents
+
+In addition, the EIP BRE is a separate legal entity with its own separate creditors who will be entitled, prior to any liquidation of the EIP BRE, to be satisfied prior to any value in the EIP BRE becoming available to us. Accordingly, the assets of the EIP BRE may not be used to settle our general obligations and creditors of the EIP BRE have limited recourse to our general credit.
+
+Sales of Receivables
+
+The transfers of service receivables and EIP receivables to the non-consolidated entities are accounted for as sales of financial assets. Once identified for sale, the receivable is recorded at the lower of cost or fair value. Upon sale, we derecognize the net carrying amount of the receivables. We recognize the net cash proceeds in Net cash provided by operating activities in our Condensed Consolidated Statements of Cash Flows.The proceeds are net of the deferred purchase price, consisting of a receivable from the purchasers that entitles us to certain collections on the receivables. We recognize the collection of the deferred purchase price in Net cash provided by operating activities as it is dependent on collection of the customer receivables and is not subject to significant interest rate risk. The deferred purchase price represents a financial asset that is primarily tied to the creditworthiness of the customers and which can be settled in such a way that we may not recover substantially all of our recorded investment, due to default by the customers on the underlying receivables. We elected, at inception, to measure the deferred purchase price at fair value with changes in fair value included in Selling, general and administrative expense in our Condensed Consolidated Statements of Comprehensive Income. The fair value of the deferred purchase price is determined based on a discounted cash flow model which uses primarily unobservable inputs (Level 3 inputs), including customer default rates. As of September 30, 2017 and December 31, 2016, our deferred purchase price related to the sales of service receivables and EIP receivables was $671 million and $659 million, respectively.The following table summarizes the impacts of the sale of certain service receivables and EIP receivables in our Condensed Consolidated Balance Sheets:
+
+
+(in millions)September 30, 2017 December 31, 2016Derecognized net service receivables and EIP receivables$2,362 $2,502Other current assets582 578of which, deferred purchase price581 576Other long-term assets90 83of which, deferred purchase price90 83Accounts payable and accrued liabilities13 17Other current liabilities155 129Other long-term liabilities2 4Net cash proceeds since inception1,963 2,030Of which:   Change in net cash proceeds during the year-to-date period(67) 536Net cash proceeds funded by reinvested collections2,030 1,494
+
+We recognized losses from sales of receivables of $67 million and $59 million for the three months ended September 30, 2017 and 2016, respectively, and $242 million and $157 million for the nine months ended September 30, 2017 and 2016, respectively. These losses from sales of receivables were recognized in Selling, general and administrative expense in our Condensed Consolidated Statements of Comprehensive Income. Losses from sales of receivables include adjustments to the receivables’ fair values and changes in fair value of the deferred purchase price.
+
+Continuing Involvement
+
+Pursuant to the sale arrangements described above, we have continuing involvement with the service receivables and EIP receivables we sell as we service the receivables and are required to repurchase certain receivables, including ineligible receivables, aged receivables and receivables where write-off is imminent. We continue to service the customers and their related receivables, including facilitating customer payment collection, in exchange for a monthly servicing fee. As the receivables are sold on a revolving basis, the customer payment collections on sold receivables may be reinvested in new receivable sales. While servicing the receivables, we apply the same policies and procedures to the sold receivables as we apply to our owned receivables, and we continue to maintain normal relationships with our customers. Pursuant to the EIP sale arrangement, under certain circumstances, we are required to deposit cash or replacement EIP receivables primarily for contracts terminated by customers under our Just Upgrade My Phone (“JUMP!”) Program.In addition, we have continuing involvement with the sold receivables as we may be responsible for absorbing additional credit losses pursuant to the sale arrangements. Our maximum exposure to loss related to the involvement with the service receivables and EIP receivables sold under the sale arrangements was $1.2 billion as of September 30, 2017. The maximum exposure to loss, which is a required disclosure under GAAP, represents an estimated loss that would be incurred under severe, hypothetical circumstances whereby we would not receive the deferred purchase price portion of the contractual proceeds withheld by the purchasers and would also be required to repurchase the maximum amount of receivables pursuant to the sale arrangements without consideration for any recovery. As we believe the probability of these circumstances occurring is remote, the maximum exposure to loss is not an indication of our expected loss.
+
+13
+
+Table of Contents
+
+
+
+
+Note 5 – Spectrum License Transactions
+
+The following table summarizes our spectrum license activity during the nine months ended September 30, 2017:
+(in millions)Spectrum LicensesBalance at December 31, 2016$27,014Spectrum license acquisitions8,247Spectrum licenses transferred to held for sale(271)Costs to clear spectrum17Balance at September 30, 2017$35,007
+
+Spectrum License Exchange
+
+In March 2017, we closed on an agreement with a third party for the exchange of certain spectrum licenses. Upon closing of the transaction, we recorded the spectrum licenses received at their estimated fair value of approximately $123 million and recognized a gain of $37 million included in Gains on disposal of spectrum licenses in our Condensed Consolidated Statements of Comprehensive Income.In September 2017, we closed on an agreement with a third party for the exchange of certain AWS and PCS spectrum licenses. Upon closing of the transaction, we recorded the spectrum licenses received at their estimated fair value of approximately $115 million and recognized a gain of $29 million included in Gains on disposal of spectrum licenses in our Condensed Consolidated Statements of Comprehensive Income.In September 2017, we entered into an agreement with a third party for the exchange of certain AWS and PCS spectrum licenses. The transaction is expected to close during the first quarter of 2018, subject to regulatory approvals and customary closing conditions. Our spectrum licenses to be transferred as part of the exchange transaction were reclassified as assets held for sale and were included in Other current assets in our Condensed Consolidated Balance Sheets at their carrying value of $184 million as of September 30, 2017.
+
+
+
+Spectrum License Purchase
+
+In September 2017, we entered into a UPA to purchase the remaining equity of INS. We expect to receive the INS spectrum licenses at the close of the transaction within the next 6 months, subject to regulatory approvals and customary closing conditions. See Note 2 - Significant Transactions for further information.
+
+Broadcast Incentive Auction
+
+In April 2017, the Federal Communications Commission (the “FCC”) announced that we were the winning bidder of 1,525 licenses in the 600 MHz spectrum auction for an aggregate price of $8.0 billion. At inception of the auction in June 2016, we deposited $2.2 billion with the FCC which, based on the outcome of the auction, was sufficient to cover our down payment obligation due in April 2017. In May 2017, we paid the FCC the remaining $5.8 billion of the purchase price using cash reserves and by issuing debt to Deutsche Telekom AG (“DT”), our majority stockholder, pursuant to existing purchase commitments. See Note 7 - Debt for further information. The licenses are included in Spectrum licenses as of September 30, 2017, on our Condensed Consolidated Balance Sheets. We began deployment of these licenses on our network in the third quarter of 2017.
+
+
+14
+
+
+Table of Contents
+
+Note 6 – Fair Value Measurements
+
+The carrying values of cash and cash equivalents, short-term investments, accounts receivable, accounts receivable from affiliates, accounts payable, and borrowings under our senior secured revolving credit facility with DT approximate fair value due to the short-term maturities of these instruments.
+
+Assets and Liabilities Measured at Fair Value on a Recurring Basis
+
+The carrying amounts and fair values of our assets and liabilities measured at fair value on a recurring basis included in our Condensed Consolidated Balance Sheets were as follows:
+Level within the Fair Value Hierarchy September 30, 2017 December 31, 2016(in millions) Carrying Amount Fair Value Carrying Amount Fair ValueAssets:         Deferred purchase price assets3 $671 $671 $659 $659Liabilities:         Guarantee liabilities3 121 121 135 135
+
+The principal amounts and fair values of our long-term debt included in our Condensed Consolidated Balance Sheets were as follows:
+Level within the Fair Value Hierarchy September 30, 2017 December 31, 2016(in millions) Principal Amount Fair Value Principal Amount Fair ValueLiabilities:         Senior Notes to third parties1 $11,850 $12,605 $18,600 $19,584Senior Notes to affiliates2 7,500 7,897 — —Incremental Term Loan Facility to affiliates2 4,000 4,020 — —Senior Reset Notes to affiliates2 3,100 3,290 5,600 5,955Senior Secured Term Loans2 — — 1,980 2,005
+
+Long-term Debt
+
+The fair value of our Senior Notes to third parties was determined based on quoted market prices in active markets, and therefore was classified as Level 1 within the fair value hierarchy. The fair values of the Senior Notes to affiliates, Incremental Term Loan Facility to affiliates, Senior Reset Notes to affiliates and Senior Secured Term Loans were determined based on a discounted cash flow approach using quoted prices of instruments with similar terms and maturities and an estimate for our standalone credit risk. Accordingly, our Senior Notes to affiliates, Incremental Term Loan Facility to affiliates, Senior Reset Notes to affiliates and Senior Secured Term Loans were classified as Level 2 within the fair value hierarchy.Although we have determined the estimated fair values using available market information and commonly accepted valuation methodologies, considerable judgment was required in interpreting market data to develop fair value estimates for the Senior Notes to affiliates, Incremental Term Loan Facility to affiliates, Senior Reset Notes to affiliates and Senior Secured Term Loans to affiliates. The fair value estimates were based on information available as of September 30, 2017 and December 31, 2016. As such, our estimates are not necessarily indicative of the amount we could realize in a current market exchange.
+
+
+Deferred Purchase Price Assets
+
+In connection with the sales of certain service and EIP receivables pursuant to the sale arrangements, we have deferred purchase price assets measured at fair value that are based on a discounted cash flow model using unobservable Level 3 inputs, including customer default rates. See Note 4 – Sales of Certain Receivables for further information.
+
+Guarantee Liabilities
+
+We offer certain device trade-in programs, including JUMP!, which provide eligible customers a specified-price trade-in right to upgrade their device. For customers who are enrolled in a device trade-in program, we defer the portion of equipment revenues which represents the estimated fair value of the specified-price trade-in right guarantee incorporating the expected probability and timing of the handset upgrade and the estimated fair value of the used handset which is returned. Accordingly, our guarantee liabilities were classified as Level 3 within the fair value hierarchy. When customers upgrade their device, the difference between the trade-in credit to the customer and the fair value of the returned device is recorded against the guarantee liabilities. Guarantee liabilities are included in Other current liabilities in our Condensed Consolidated Balance Sheets.The total estimated remaining gross EIP receivable balances of all enrolled handset upgrade program customers, which are the remaining EIP amounts underlying the JUMP! guarantee, including EIP receivables that have been sold, was $2.2 billion as of September 30, 2017. This is not an indication of our expected loss exposure as it does not consider the expected fair value of the used handset or the probability and timing of the trade-in.
+
+15
+
+Table of Contents
+
+
+
+
+Note 7 – Debt
+
+The following table sets forth the debt balances and activity as of, and for the nine months ended, September 30, 2017:
+(in millions)December 31, 2016 Issuances and Borrowings (1) Note Redemptions (1) Extinguishments (1) Repayments Other (2) September 30, 2017Short-term debt$354 $— $— $(20) $— $224 $558Long-term debt21,832 1,495 (8,365) (1,947) — 148 13,163Total debt to third parties22,186 1,495 (8,365) (1,967) — 372 13,721Short-term debt to affiliates— 2,910 — — (2,910) — —Long-term debt to affiliates5,600 8,985 — — — 1 14,586Total debt to affiliates5,600 11,895 — — (2,910) 1 14,586Total debt$27,786 $13,390 $(8,365) $(1,967) $(2,910) $373 $28,307
+(1) Issuances and borrowings, note redemptions and extinguishments are recorded net of related issuance costs, discounts and premiums. Issuances and borrowings for Short-term debt to affiliates represent net outstanding borrowings on our senior secured revolving credit facility.(2) Other includes: $299 million of issuances of short-term debt related to vendor financing arrangements, of which $291 million is related to financing of property and equipment. During the nine months ended September 30, 2017, we repaid $296 million under the vendor financing arrangements. As of September 30, 2017, vendor financing arrangements totaled $3 million. Vendor financing arrangements are included in Short-term debt within Total current liabilities in our Condensed Consolidated Balance Sheets. Additional activity in Other includes capital leases and the amortization of discounts and premiums. As of September 30, 2017 and December 31, 2016, capital lease liabilities totaled $1.8 billion and $1.4 billion, respectively.
+
+Debt to Third Parties
+
+Issuances and Borrowings
+
+During the nine months ended September 30, 2017, we issued the following Senior Notes:
+(in millions)Principal Issuances Issuance Costs Net Proceeds from Issuance of Long-Term Debt4.000% Senior Notes due 2022$500 $2 $4985.125% Senior Notes due 2025500 2 4985.375% Senior Notes due 2027500 1 499Total of Senior Notes Issued$1,500 $5 $1,495
+
+On March 16, 2017, T-Mobile USA and certain of its affiliates, as guarantors, issued a total of $1.5 billion of public Senior Notes with various interest rates and maturity dates. Issuance costs related to the public debt issuance totaled $5 million for the nine months ended September 30, 2017. We used the net proceeds of $1.495 billion from the transaction to redeem callable high yield debt.
+
+
+16
+
+
+Notes Redemptions
+
+During the nine months ended September 30, 2017, we made the following note redemptions:
+(in millions)Principal Amount Write-off of Premiums, Discounts and Issuance Costs (1) Call Penalties (1) (2) Redemption Date Redemption Price 6.625% Senior Notes due 2020$1,000 $(45) $22 February 10, 2017 102.208%5.250% Senior Notes due 2018500 1 7 March 4, 2017 101.313%6.250% Senior Notes due 20211,750 (71) 55 April 1, 2017 103.125%6.464% Senior Notes due 20191,250 — — April 28, 2017 100.000%6.542% Senior Notes due 20201,250 — 21 April 28, 2017 101.636%6.633% Senior Notes due 20211,250 — 41 April 28, 2017 103.317%6.731% Senior Notes due 20221,250 — 42 April 28, 2017 103.366%Total note redemptions$8,250 $(115) $188
+(1)Write-off of premiums, discounts, issuance costs and call penalties are included in Other income (expense), net in our Condensed Consolidated Statements of Comprehensive Income. Write-off of premiums, discounts and issuance costs are included in Other, net within Net cash provided by operating activities in our Condensed Consolidated Statements of Cash Flows.(2)The call penalty is the excess paid over the principal amount. Call penalties are included within Net cash provided by operating activities in our Condensed Consolidated Statements of Cash Flows.
+
+Debt to Affiliates
+
+Issuances and Borrowings
+
+During the nine months ended September 30, 2017, we made the following borrowings:
+(in millions)Net Proceeds from Issuance of Long-Term Debt Extinguishments Write-off of Discounts and Issuance Costs (1)LIBOR plus 2.00% Senior Secured Term Loan due 2022$2,000 $— $—LIBOR plus 2.00% Senior Secured Term Loan due 20242,000 — —LIBOR plus 2.750% Senior Secured Term Loan (2)— (1,980) 13Total$4,000 $(1,980) $13
+(1) Write-off of discounts and issuance costs are included in Other income (expense), net in our Condensed Consolidated Statements of Comprehensive Income and Other, net within Net cash provided by operating activities in our Condensed Consolidated Statements of Cash Flows.(2) Our Senior Secured Term Loan extinguished during the nine months ended September 30, 2017 was Third Party debt.On January 25, 2017, T-Mobile USA, Inc. (“T-Mobile USA”), and certain of its affiliates, as guarantors, entered into an agreement to borrow $4.0 billion under a secured term loan facility (“Incremental Term Loan Facility”) with DT, our majority stockholder, to refinance $1.98 billion of outstanding senior secured term loans under its Term Loan Credit Agreement dated November 9, 2015, with the remaining net proceeds from the transaction used to redeem callable high yield debt. The Incremental Term Loan Facility increased DT’s incremental term loan commitment provided to T-Mobile USA under that certain First Incremental Facility Amendment dated as of December 29, 2016, from $660 million to $2.0 billion and provided T-Mobile USA with an additional $2.0 billion incremental term loan commitment.On January 31, 2017, the loans under the Incremental Term Loan Facility were drawn in two tranches: (i) $2.0 billion of which bears interest at a rate equal to a per annum rate of LIBOR plus a margin of 2.00% and matures on November 9, 2022, and (ii) $2.0 billion of which bears interest at a rate equal to a per annum rate of LIBOR plus a margin of 2.25% and matures on January 31, 2024. In July 2017, we repriced the $2.0 billion Incremental Term Loan Facility maturing on January 31, 2024, with DT by reducing the interest rate to a per annum rate of LIBOR plus a margin of 2.00%. No issuance fees were incurred related to this debt agreement for the nine months ended September 30, 2017.On March 31, 2017, the Incremental Term Loan Facility was amended to waive all interim principal payments. The outstanding principal balance will be due at maturity.During the nine months ended September 30, 2017, we issued the following Senior Notes to DT:
+
+
+
+
+
+17
+
+
+(in millions)Principal Issuances (Redemptions) Discounts (1) Net Proceeds from Issuance of Long-Term Debt4.000% Senior Notes due 2022$1,000 $(23) $9775.125% Senior Notes due 20251,250 (28) 1,2225.375% Senior Notes due 2027 (2)1,250 (28) 1,2226.288% Senior Reset Notes due 2019(1,250) — (1,250)6.366% Senior Reset Notes due 2020(1,250) — (1,250)Total$1,000 $(79) $921
+(1) Discounts reduce Proceeds from issuance of long-term debt and are included within Net cash (used in) provided by financing activities in our Condensed Consolidated Statements of Cash Flows.(2)In April 2017, we issued to DT $750 million in aggregate principal amount of the 5.375% Senior Notes due 2027, and in September 2017, we issued to DT the remaining $500 million in aggregate principal amount of the 5.375% Senior Notes due 2027.On March 13, 2017, DT agreed to purchase a total of $3.5 billion in aggregate principal amounts of Senior Notes with various interest rates and maturity dates (the “new DT Notes”).Through net settlement in April 2017, we issued to DT a total of $3.0 billion in aggregate principal amount of the new DT Notes and redeemed the $2.5 billion in outstanding aggregate principal amount of Senior Reset Notes with various interest rates and maturity dates (the “old DT Notes”).The redemption prices of the old DT Notes were 103.144% and 103.183%, resulting in a total of $79 million in early redemption fees. These early redemption fees were recorded as discounts on the issuance of the new DT Notes.In September 2017, we issued to DT $500 million in aggregate principal amount of 5.375% Senior Notes due 2027, which is the final tranche of the new DT Notes. We were not required to pay any underwriting fees or issuance costs in connection with the issuance of the notes.Net proceeds from the issuance of the new DT Notes were $921 million and are included in Proceeds from issuance of long-term debt in our Condensed Consolidated Statements of Cash Flows.On May 9, 2017, we exercised our option under existing purchase agreements and issued the following Senior Notes to DT:
+
+
+
+
+
+
+(in millions)Principal Issuances Premium Net Proceeds from Issuance of Long-Term Debt5.300% Senior Notes due 2021$2,000 $— $2,0006.000% Senior Notes due 20241,350 40 1,3906.000% Senior Notes due 2024650 24 674Total$4,000 $64 $4,064
+
+The proceeds were used to fund a portion of the purchase price of spectrum licenses won in the 600 MHz spectrum auction. Net proceeds from these issuances include $64 million in debt premiums. See Note 5 - Spectrum License Transactions for further information.
+
+Revolving Credit Facility
+
+We had no outstanding borrowings under our $1.5 billion senior secured revolving credit facility with DT as of September 30, 2017 and December 31, 2016. Proceeds and borrowings from the revolving credit facility are presented in Proceeds from borrowing on revolving credit facility and Repayments of revolving credit facility within Net cash (used in) provided by financing activities in our Condensed Consolidated Statements of Cash Flows.
+
+
+Note 8 – Income Taxes
+
+Within our Condensed Consolidated Statements of Comprehensive Income, we recorded an Income tax expense of $356 million and $232 million for the three months ended September 30, 2017 and 2016, respectively, and $618 million and $651 million for the nine months ended September 30, 2017 and 2016, respectively. The change for the three months ended September 30, 2017 was primarily from higher income before income taxes. The change for the nine months ended September 30, 2017 was primarily from a lower effective tax rate partially offset by higher income before income taxes. The effective tax rate was 39.3% and 38.8% for the three months ended September 30, 2017 and 2016, respectively, and 25.3% and 37.8% for the nine months ended September 30, 2017 and 2016, respectively. The change in the effective income tax rate for the nine months ended September 30, 2017, was primarily due to a reduction in the valuation allowance against deferred tax assets in certain state jurisdictions that resulted in the recognition of $270 million in tax benefits in the first quarter of 2017 and the recognition of an additional $19 million in tax benefits through the third quarter of 2017. Total tax benefits related to the reduction in the valuation allowance were $289 million through September 30, 2017. The effective tax rate was further decreased by the recognition of $62 million of excess tax benefits related to share-based payments for the nine months ended September 30, 2017, compared to $24 million for the same period in 2016.During the first quarter of 2017, due to ongoing analysis of positive and negative evidence related to the utilization of the deferred tax assets, we determined that a portion of the valuation allowance was no longer necessary. Positive evidence supporting the release of a portion of the valuation allowance included reaching a position of cumulative income over a three-year period in the state jurisdictions as well as projecting sustained earnings in those jurisdictions. Due to this positive evidence, we reduced the valuation allowance which resulted in a decrease to Deferred tax liabilities in our Condensed Consolidated Balance Sheets. We will continue to monitor positive and negative evidence related to the utilization of the remaining deferred tax assets for which a valuation allowance continues to be provided. It is possible that we may release additional portions of the remaining valuation allowance within the next three months.
+
+18
+
+Table of Contents
+
+
+
+
+Note 9 – Earnings Per Share
+
+The computation of basic and diluted earnings per share was as follows:
+Three Months Ended September 30, Nine Months Ended September 30,(in millions, except shares and per share amounts)2017 2016 2017 2016Net income$550 $366 $1,829 $1,070Less: Dividends on mandatory convertible preferred stock(13) (13) (41) (41)Net income attributable to common stockholders - basic537 353 1,788 1,029Add: Dividends related to mandatory convertible preferred stock13 — 41 —Net income attributable to common stockholders - diluted$550 $353 $1,829 $1,029        Weighted average shares outstanding - basic831,189,779 822,998,697 829,974,146 821,626,675Effect of dilutive securities:       Outstanding stock options and unvested stock awards7,992,286 9,259,122 9,523,365 9,614,352Mandatory convertible preferred stock32,238,000 — 32,238,000 —Weighted average shares outstanding - diluted871,420,065 832,257,819 871,735,511 831,241,027        Earnings per share - basic$0.65 $0.43 $2.15 $1.25Earnings per share - diluted$0.63 $0.42 $2.10 $1.24        Potentially dilutive securities:       Outstanding stock options and unvested stock awards— 278,675 4,760 287,375Mandatory convertible preferred stock— 32,238,000 — 32,238,000
+
+Unless converted earlier, each share of preferred stock will convert automatically on December 15, 2017 into between 1.6119 (the minimum conversion rate) and 1.9342 (the maximum conversion rate) shares of our common stock, subject to customary anti-dilution adjustments and depending on the applicable market value of our common stock. Using the minimum conversion rate, we would issue 32,238,000 shares of our common stock upon conversion. Potentially dilutive securities were not included in the computation of diluted earnings per share if to do so would have been anti-dilutive.
+
+
+
+19
+
+
+Table of Contents
+
+Note 10 – Commitments and Contingencies
+
+Commitments
+
+Operating Leases and Purchase Commitments
+
+During the nine months ended September 30, 2017, we entered into a purchase commitment with a handset Original Equipment Manufacturer, resulting in a material increase to the future minimum payments for purchase commitments summarized below.Future minimum payments for non-cancelable operating leases and purchase commitments are as follows:
+
+(in millions)Operating Leases Purchase CommitmentsYear ending September 30,   2018$2,397 $2,47720192,153 1,21020201,867 1,01520211,472 75920221,163 661Thereafter2,240 904Total$11,292 $7,026
+
+Renewable Energy Purchase Agreements
+
+In January 2017, T-Mobile USA entered into a REPA with Red Dirt Wind Project, LLC. The agreement is based on the expected operation of a wind energy-generating facility located in Oklahoma and will remain in effect until the twelfth anniversary of the facility’s entry into commercial operation. Commercial operation of the facility is expected to occur by the end of 2017. The REPA consists of two components: (1) an energy forward agreement that is net settled based on energy prices and the energy output generated by the facility and (2) a commitment to purchase the renewable energy credits (“RECs”) associated with the energy output generated by the facility. T-Mobile USA will net settle the forward agreement and acquire the RECs monthly by paying, or receiving, an aggregate net payment based on two variables (1) the facility’s energy output, which has an estimated maximum capacity of approximately 160 megawatts and (2) the difference between (a) an initial fixed price, subject to annual escalation, and (b) current local marginal energy prices during the monthly settlement period. We have determined that the REPA does not meet the definition of a derivative because the expected energy output of the facility may not be reliably estimated (the arrangement lacks a notional amount). The REPA does not contain any unconditional purchase obligations because amounts under the agreement are not fixed and determinable. Our participation in the REPA did not require an upfront investment or capital commitment. We do not control the activities that most significantly impact the energy-generating facility nor do we receive specific energy output from it. No amounts were settled under the agreement during the nine months ended September 30, 2017.In August 2017, T-Mobile USA entered into a REPA with Solomon Forks Wind Project, LLC. The agreement is based on the expected operation of a wind energy-generating facility located in Kansas and will remain in effect until the fifteenth anniversary of the facility’s entry into commercial operation. Commercial operation of the facility is expected to occur by the end of 2018. The REPA consists of two components: (1) an energy forward agreement that is net settled based on energy prices and the energy output generated by the facility and (2) a commitment to purchase the environmental attributes (“EACs”) associated with the energy output generated by the facility. T-Mobile USA will net settle the forward agreement and acquire the EACs monthly by paying, or receiving, an aggregate net payment based on two variables (1) the facility’s energy output, which has an estimated maximum capacity of approximately 160 megawatts and (2) the difference between (a) an initial fixed price, subject to annual escalation, and (b) current local marginal energy prices during the monthly settlement period. We have determined that the REPA does not meet the definition of a derivative because the expected energy output of the facility may not be reliably estimated (the arrangement lacks a notional amount). The REPA does not contain any unconditional purchase obligations because amounts under the agreement are not fixed and determinable. Our participation in the REPA did not require an upfront investment or capital commitment. We do not control the activities that most significantly impact the energy-generating facility nor do we receive specific energy output from it. No amounts were settled under the agreement during the nine months ended September 30, 2017.
+
+
+
+20
+
+Table of Contents
+
+Contingencies and Litigation
+
+We are involved in various lawsuits, claims, government agency investigations and enforcement actions, and other proceedings (“Litigation Matters”) that arise in the ordinary course of business, which include numerous court actions alleging that we are infringing various patents. Virtually all of the patent infringement cases are brought by non-practicing entities and effectively seek only monetary damages, although they occasionally seek injunctive relief as well. The Litigation Matters described above have progressed to various stages and some of them may proceed to trial, arbitration, hearing or other adjudication that could include an award of monetary or injunctive relief in the coming 12 months, if they are not otherwise resolved. We have established an accrual with respect to certain of these matters, where appropriate, which is reflected in the condensed consolidated financial statements but that we do not consider, individually or in the aggregate, material. An accrual is established when we believe it is both probable that a loss has been incurred and an amount can be reasonably estimated. For other matters, where we have not determined that a loss is probable or because the amount of loss cannot be reasonably estimated, we have not recorded an accrual due to various factors typical in contested proceedings, including but not limited to: uncertainty concerning legal theories and their resolution by courts or regulators; uncertain damage theories and demands; and a less than fully developed factual record. While we do not expect that the ultimate resolution of these proceedings, individually or in the aggregate, will have a material adverse effect on our financial position, an unfavorable outcome of some or all of these proceedings could have a material adverse impact on results of operations or cash flows for a particular period. This assessment is based on our current understanding of relevant facts and circumstances. As such, our view of these matters is subject to inherent uncertainties and may change in the future.
+
+
+Note 11 – Guarantor Financial Information
+
+Pursuant to the applicable indentures and supplemental indentures, the long-term debt to affiliates and third parties, excluding Senior Secured Term Loans and capital leases, issued by T-Mobile USA (“Issuer”) is fully and unconditionally guaranteed, jointly and severally, on a senior unsecured basis by T-Mobile (“Parent”) and certain of the Issuer’s 100% owned subsidiaries (“Guarantor Subsidiaries”).In January 2017, T-Mobile USA, and certain of its affiliates, as guarantors, borrowed $4.0 billion under the Incremental Term Loan Facility to refinance $1.98 billion of outstanding secured term loans under its Term Loan Credit Agreement dated November 9, 2015, with the remaining net proceeds from the transaction intended to be used to redeem callable high yield debt.In March 2017, T-Mobile USA and certain of its affiliates, as guarantors, (i) issued $500 million in aggregate principal amount of public 4.000% Senior Notes due 2022, (ii) issued $500 million in aggregate principal amount of public 5.125% Senior Notes due 2025 and (iii) issued $500 million in aggregate principal amount of public 5.375% Senior Notes due 2027.In April 2017, T-Mobile USA and certain of its affiliates, as guarantors, (i) issued $1.0 billion in aggregate principal amount of 4.000% Senior Notes due 2022, (ii) issued $1.25 billion in aggregate principal amount of 5.125% Senior Notes due 2025 and (iii) issued $750 million in aggregate principal amount of 5.375% Senior Notes due 2027. Additionally, T-Mobile USA and certain of its affiliates, as guarantors, redeemed through net settlement, the $1.25 billion outstanding aggregate principal amount of the 6.288% Senior Reset Notes to affiliates due 2019 and $1.25 billion in aggregate principal amount of the 6.366% Senior Reset Notes to affiliates due 2020.In May 2017, T-Mobile USA and certain of its affiliates, as guarantors, (i) issued $2.0 billion in aggregate principal amount of 5.300% Senior Notes due 2021, (ii) issued $1.35 billion in aggregate principal amount of 6.000% Senior Notes due 2024 and (iii) issued $650 million in aggregate principal amount of 6.000% Senior Notes due 2024.In September 2017, T-Mobile USA and certain of its affiliates, as guarantors, issued the remaining $500 million in aggregate principal amount of 5.375% Senior Notes due 2027.See Note 7 - Debt for further information.The guarantees of the Guarantor Subsidiaries are subject to release in limited circumstances only upon the occurrence of certain customary conditions. The indentures and credit facilities governing the long-term debt contain covenants that, among other things, limit the ability of the Issuer and the Guarantor Subsidiaries to: incur more debt; pay dividends and make distributions; make certain investments; repurchase stock; create liens or other encumbrances; enter into transactions with affiliates; enter into transactions that restrict dividends or distributions from subsidiaries; and merge, consolidate, or sell, or otherwise dispose of, substantially all of their assets. Certain provisions of each of the credit facilities, indentures and supplemental indentures relating to the long-term debt restrict the ability of the Issuer to loan funds or make payments to Parent. However, the Issuer and Guarantor Subsidiaries are allowed to make certain permitted payments to the Parent under the terms of the indentures and the supplemental indentures.Presented below is the condensed consolidating financial information as of September 30, 2017 and December 31, 2016, and for the three and nine months ended September 30, 2017 and 2016.
+
+
+
+
+
+
+
+
+21
+
+Table of Contents
+
+
+
+22
+
+Table of Contents
+
+Condensed Consolidating Balance Sheet Information
+September 30, 2017
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedAssets           Current assets           Cash and cash equivalents$29 $2 $678 $30 $— $739Accounts receivable, net— — 1,504 230 — 1,734Equipment installment plan receivables, net— — 2,136 — — 2,136Accounts receivable from affiliates— 6 24 — (6) 24Inventories— — 999 — — 999Other current assets— — 1,241 576 — 1,817Total current assets29 8 6,582 836 (6) 7,449Property and equipment, net (1)— — 21,248 322 — 21,570Goodwill— — 1,683 — — 1,683Spectrum licenses— — 35,007 — — 35,007Other intangible assets, net— — 256 — — 256Investments in subsidiaries, net19,823 37,943 — — (57,766) —Intercompany receivables and note receivables425 8,903 — — (9,328) —Equipment installment plan receivables due after one year, net— — 1,100 — — 1,100Other assets— 3 778 292 (215) 858Total assets$20,277 $46,857 $66,654 $1,450 $(67,315) $67,923Liabilities and Stockholders' Equity           Current liabilities           Accounts payable and accrued liabilities$— $201 $5,626 $244 $— $6,071Payables to affiliates— 250 38 — — 288Short-term debt— 3 555 — — 558Short-term debt to affiliates— — 6 — (6) —Deferred revenue— — 790 — — 790Other current liabilities— — 219 177 — 396Total current liabilities— 454 7,234 421 (6) 8,103Long-term debt— 11,913 1,250 — — 13,163Long-term debt to affiliates— 14,586 — — — 14,586Tower obligations (1)— — 395 2,204 — 2,599Deferred tax liabilities— — 5,750 — (215) 5,535Deferred rent expense— — 2,693 — — 2,693Negative carrying value of subsidiaries, net— — 596 — (596) —Intercompany payables and debt— — 9,119 209 (9,328) —Other long-term liabilities— 81 884 2 — 967Total long-term liabilities— 26,580 20,687 2,415 (10,139) 39,543Total stockholders' equity (deficit)20,277 19,823 38,733 (1,386) (57,170) 20,277Total liabilities and stockholders' equity$20,277 $46,857 $66,654 $1,450 $(67,315) $67,923
+(1)Assets and liabilities for Non-Guarantor Subsidiaries are primarily included in VIEs related to the 2012 Tower Transaction. See Note 8 – Tower Obligations included in the Annual Report on Form 10-K for the year ended December 31, 2016.
+
+
+23
+
+Table of Contents
+
+Condensed Consolidating Balance Sheet Information
+December 31, 2016
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedAssets           Current assets           Cash and cash equivalents$358 $2,733 $2,342 $67 $— $5,500Accounts receivable, net— — 1,675 221 — 1,896Equipment installment plan receivables, net— — 1,930 — — 1,930Accounts receivable from affiliates— — 40 — — 40Inventories— — 1,111 — — 1,111Asset purchase deposit— — 2,203 — — 2,203Other current assets— — 972 565 — 1,537Total current assets358 2,733 10,273 853 — 14,217Property and equipment, net (1)— — 20,568 375 — 20,943Goodwill— — 1,683 — — 1,683Spectrum licenses— — 27,014 — — 27,014Other intangible assets, net— — 376 — — 376Investments in subsidiaries, net17,682 35,095 — — (52,777) —Intercompany receivables and note receivables196 6,826 — — (7,022) —Equipment installment plan receivables due after one year, net— — 984 — — 984Other assets— 7 600 262 (195) 674Total assets$18,236 $44,661 $61,498 $1,490 $(59,994) $65,891Liabilities and Stockholders' Equity           Current liabilities           Accounts payable and accrued liabilities$— $423 $6,474 $255 $— $7,152Payables to affiliates— 79 46 — — 125Short-term debt— 20 334 — — 354Deferred revenue— — 986 — — 986Other current liabilities— — 258 147 — 405Total current liabilities— 522 8,098 402 — 9,022Long-term debt— 20,741 1,091 — — 21,832Long-term debt to affiliates— 5,600 — — — 5,600Tower obligations (1)— — 400 2,221 — 2,621Deferred tax liabilities— — 5,133 — (195) 4,938Deferred rent expense— — 2,616 — — 2,616Negative carrying value of subsidiaries, net— — 568 — (568) —Intercompany payables and debt— — 6,785 237 (7,022) —Other long-term liabilities— 116 906 4 — 1,026Total long-term liabilities— 26,457 17,499 2,462 (7,785) 38,633Total stockholders' equity (deficit)18,236 17,682 35,901 (1,374) (52,209) 18,236Total liabilities and stockholders' equity$18,236 $44,661 $61,498 $1,490 $(59,994) $65,891
+(1)Assets and liabilities for Non-Guarantor Subsidiaries are primarily included in VIEs related to the 2012 Tower Transaction. See Note 8 – Tower Obligations included in the Annual Report on Form 10-K for the year ended December 31, 2016.
+
+
+
+
+
+24
+
+Table of Contents
+
+Condensed Consolidating Statement of Comprehensive Income Information
+Three Months Ended September 30, 2017
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedRevenues           Service revenues$— $— $7,312 $527 $(210) $7,629Equipment revenues— — 2,160 — (42) 2,118Other revenues— — 224 55 (7) 272Total revenues— — 9,696 582 (259) 10,019Operating expenses           Cost of services, exclusive of depreciation and amortization shown separately below— — 1,588 6 — 1,594Cost of equipment sales— — 2,418 241 (42) 2,617Selling, general and administrative— — 3,106 209 (217) 3,098Depreciation and amortization— — 1,399 17 — 1,416Gains on disposal of spectrum licenses— — (29) — — (29)Total operating expense— — 8,482 473 (259) 8,696Operating income— — 1,214 109 — 1,323Other income (expense)           Interest expense— (176) (30) (47) — (253)Interest expense to affiliates— (167) (6) — 6 (167)Interest income— 7 1 — (6) 2Other expense, net— 1 1 (1) — 1Total other expense, net— (335) (34) (48) — (417)Income (loss) before income taxes— (335) 1,180 61 — 906Income tax expense— — (335) (21) — (356)Earnings of subsidiaries550 885 — — (1,435) —Net income550 550 845 40 (1,435) 550Dividends on preferred stock(13) — — — — (13)Net income attributable to common stockholders$537 $550 $845 $40 $(1,435) $537            Net Income$550 $550 $845 $40 $(1,435) $550Other comprehensive income (loss), net of tax           Other comprehensive income (loss), net of tax1 1 1 — (2) 1Total comprehensive income$551 $551 $846 $40 $(1,437) $551
+
+
+25
+
+Table of Contents
+
+Condensed Consolidating Statement of Comprehensive Income Information
+Three Months Ended September 30, 2016
+(in millions)Parent Issuer Guarantor Subsidiaries (As adjusted - See Note 1) Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments Consolidated (As adjusted - See Note 1)Revenues           Service revenues$— $— $6,822 $520 $(209) $7,133Equipment revenues— — 2,049 — (101) 1,948Other revenues— — 180(1)48 (4) 224Total revenues— — 9,051(1)568 (314) 9,305Operating expenses           Cost of services, exclusive of depreciation and amortization shown separately below— — 1,430 6 — 1,436Cost of equipment sales— — 2,340 300 (101) 2,539Selling, general and administrative— — 2,884 227 (213) 2,898Depreciation and amortization— — 1,549 19 — 1,568Cost of MetroPCS business combination— — 15 — — 15Gains on disposal of spectrum licenses— — (199) — — (199)Total operating expense— — 8,019 552 (314) 8,257Operating income— — 1,032(1)16 — 1,048Other income (expense)           Interest expense— (303) (26) (47) — (376)Interest expense to affiliates— (76) — — — (76)Interest income— 7 (4)(1)— — 3Other expense, net— — (1) — — (1)Total other expense, net— (372) (31)(1)(47) — (450)Income (loss) before income taxes— (372) 1,001 (31) — 598Income tax (expense) benefit— — (242) 10 — (232)Earnings (loss) of subsidiaries366 738 (4) — (1,100) —Net income (loss)366 366 755 (21) (1,100) 366Dividends on preferred stock(13) — — — — (13)Net income attributable to common stockholders$353 $366 $755 $(21) $(1,100) $353            Net Income (loss)$366 $366 $755 $(21) $(1,100) $366Other comprehensive income, net of tax           Other comprehensive income, net of tax2 2 2 2 (6) 2Total comprehensive income (loss)$368 $368 $757 $(19) $(1,106) $368
+(1) The amortized imputed discount on EIP receivables previously recognized as Interest income has been retrospectively reclassified as Other revenues. See Note 1 - Basis of Presentation for further detail.
+
+
+26
+
+Table of Contents
+
+Condensed Consolidating Statement of Comprehensive Income Information
+Nine Months Ended September 30, 2017
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedRevenues           Service revenues$— $— $21,457 $1,580 $(634) $22,403Equipment revenues— — 6,878 — (211) 6,667Other revenues— — 634 158 (17) 775Total revenues— — 28,969 1,738 (862) 29,845Operating expenses           Cost of services, exclusive of depreciation and amortization shown separately below— — 4,502 18 — 4,520Cost of equipment sales— — 7,622 738 (211) 8,149Selling, general and administrative— — 8,967 652 (651) 8,968Depreciation and amortization— — 4,446 53 — 4,499Gains on disposal of spectrum licenses— — (67) — — (67)Total operating expenses— — 25,470 1,461 (862) 26,069Operating income— — 3,499 277 — 3,776Other income (expense)           Interest expense— (634) (80) (143) — (857)Interest expense to affiliates— (398) (18) — 18 (398)Interest income— 24 9 — (18) 15Other expense, net— (87) (1) (1) — (89)Total other expense, net— (1,095) (90) (144) — (1,329)Income (loss) before income taxes— (1,095) 3,409 133 — 2,447Income tax expense— — (572) (46) — (618)Earnings (loss) of subsidiaries1,829 2,924 (17) — (4,736) —Net income1,829 1,829 2,820 87 (4,736) 1,829Dividends on preferred stock(41) — — — — (41)Net income attributable to common stockholders$1,788 $1,829 $2,820 $87 $(4,736) $1,788            Net Income$1,829 $1,829 $2,820 $87 $(4,736) $1,829Other comprehensive income, net of tax           Other comprehensive income, net of tax3 3 3 — (6) 3Total comprehensive income$1,832 $1,832 $2,823 $87 $(4,742) $1,832
+
+
+
+27
+
+Table of Contents
+
+Condensed Consolidating Statement of Comprehensive Income Information
+Nine Months Ended September 30, 2016
+(in millions)Parent Issuer Guarantor Subsidiaries (As adjusted - See Note 1) Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments Consolidated (As adjusted - See Note 1)Revenues           Service revenues$— $— $19,683 $1,500 $(584) $20,599Equipment revenues— — 6,328 — (341) 5,987Other revenues— — 538(1)145 (13) 670Total revenues— — 26,549(1)1,645 (938) 27,256Operating expenses           Cost of services, exclusive of depreciation and amortization shown separately below— — 4,268 18 — 4,286Cost of equipment sales— — 7,104 768 (340) 7,532Selling, general and administrative— — 8,372 645 (598) 8,419Depreciation and amortization— — 4,636 59 — 4,695Cost of MetroPCS business combination— — 110 — — 110Gains on disposal of spectrum licenses— — (835) — — (835)Total operating expenses— — 23,655 1,490 (938) 24,207Operating income— — 2,894(1)155 — 3,049Other income (expense)           Interest expense— (881) (61) (141) — (1,083)Interest expense to affiliates— (248) — — — (248)Interest income— 23 (14)(1)— — 9Other expense, net— — (6) — — (6)Total other expense, net— (1,106) (81)(1)(141) — (1,328)Income (loss) before income taxes— (1,106) 2,813 14 — 1,721Income tax expense— — (643) (8) — (651)Earnings (loss) of subsidiaries1,070 2,176 (15) — (3,231) —Net income1,070 1,070 2,155 6 (3,231) 1,070Dividends on preferred stock(41) — — — — (41)Net income attributable to common stockholders$1,029 $1,070 $2,155 $6 $(3,231) $1,029            Net income$1,070 $1,070 $2,155 $6 $(3,231) $1,070Other comprehensive income, net of tax           Other comprehensive income, net of tax2 2 2 2 (6) 2Total comprehensive income$1,072 $1,072 $2,157 $8 $(3,237) $1,072
+(1) The amortized imputed discount on EIP receivables previously recognized as Interest income has been retrospectively reclassified as Other revenues. See Note 1 - Basis of Presentation for further detail.
+
+
+
+28
+
+Table of Contents
+
+Condensed Consolidating Statement of Cash Flows Information
+Three Months Ended September 30, 2017
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedOperating activities           Net cash provided by (used in) operating activities$(2) $(1,554) $3,904 $14 $— $2,362            Investing activities           Purchases of property and equipment— — (1,441) — — (1,441)Purchases of spectrum licenses and other intangible assets, including deposits— — (15) — — (15)Other, net— — 1 — — 1Net cash used in investing activities— — (1,455) — — (1,455)            Financing activities           Proceeds from issuance of long-term debt— 500 — — — 500Proceeds from borrowing on revolving credit facility, net— 1,055 — — — 1,055Repayments of revolving credit facility— — (1,735) — — (1,735)Repayments of capital lease obligations— — (141) — — (141)Repayments of short-term debt for purchases of inventory, property and equipment, net— — (4) — — (4)Tax withholdings on share-based awards— — (6) — — (6)Dividends on preferred stock(13) — — — — (13)Other, net1 — (6) — — (5)Net cash (used in) provided by financing activities(12) 1,555 (1,892) — — (349)Change in cash and cash equivalents(14) 1 557 14 — 558Cash and cash equivalents           Beginning of period43 1 121 16 — 181End of period$29 $2 $678 $30 $— $739
+
+
+29
+
+Table of Contents
+
+Condensed Consolidating Statement of Cash Flows Information
+Three Months Ended September 30, 2016
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedOperating activities           Net cash provided by (used in) operating activities$1 $(84) $1,850 $8 $(35) $1,740            Investing activities           Purchases of property and equipment— — (1,159) — — (1,159)Purchases of spectrum licenses and other intangible assets, including deposits— — (705) — — (705)Other, net— — 5 — — 5Net cash used in investing activities— — (1,859) — — (1,859)            Financing activities           Repayments of capital lease obligations— — (54) — — (54)Repayments of long-term debt— — (5) — — (5)Tax withholdings on share-based awards— — (3) — — (3)Intercompany dividend paid— — — (35) 35 —Dividends on preferred stock(13) — — — — (13)Other, net11 — (3) — — 8Net cash used in financing activities(2) — (65) (35) 35 (67)Change in cash and cash equivalents(1) (84) (74) (27) — (186)Cash and cash equivalents           Beginning of period367 2,683 2,439 49 — 5,538End of period$366 $2,599 $2,365 $22 $— $5,352
+
+
+30
+
+Table of Contents
+
+Condensed Consolidating Statement of Cash Flows Information
+Nine Months Ended September 30, 2017
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedOperating activities           Net cash provided by (used in) operating activities$— $(16,429) $22,370 $43 $(80) $5,904            Investing activities           Purchases of property and equipment— — (4,316) — — (4,316)Purchases of spectrum licenses and other intangible assets, including deposits— — (5,820) — — (5,820)Equity investment in subsidiary(308) — — — 308 —Other, net— — (2) — — (2)Net cash used in investing activities(308) — (10,138) — 308 (10,138)            Financing activities           Proceeds from issuance of long-term debt— 10,480 — — — 10,480Proceeds from borrowing on revolving credit facility, net— 2,910 — — — 2,910Repayments of revolving credit facility— — (2,910) — — (2,910)Repayments of capital lease obligations— — (350) — — (350)Repayments of short-term debt for purchases of inventory, property and equipment, net— — (296) — — (296)Repayments of long-term debt— — (10,230) — — (10,230)Equity investment from parent— 308 — — (308) —Tax withholdings on share-based awards— — (101) — — (101)Intercompany dividend paid— — — (80) 80 —Dividends on preferred stock(41) — — — — (41)Other, net20 — (9) — — 11Net cash (used in) provided by financing activities(21) 13,698 (13,896) (80) (228) (527)Change in cash and cash equivalents(329) (2,731) (1,664) (37) — (4,761)Cash and cash equivalents           Beginning of period358 2,733 2,342 67 — 5,500End of period$29 $2 $678 $30 $— $739
+
+
+31
+
+Table of Contents
+
+Condensed Consolidating Statement of Cash Flows Information
+Nine Months Ended September 30, 2016
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedOperating activities           Net cash provided by (used in) operating activities$4 $(2,165) $6,745 $59 $(110) $4,533            Investing activities           Purchases of property and equipment— — (3,843) — — (3,843)Purchases of spectrum licenses and other intangible assets, including deposits— — (3,544) — — (3,544)Sales of short-term investments— 2,000 998 — — 2,998Other, net— — 3 — — 3Net cash provided by (used in) investing activities— 2,000 (6,386) — — (4,386)            Financing activities           Proceeds from issuance of long-term debt— 997 — — — 997Repayments of capital lease obligations— — (133) — — (133)Repayments of short-term debt for purchases of inventory, property and equipment, net— — (150) — — (150)Repayments of long-term debt— — (15) — — (15)Tax withholdings on share-based awards— — (52) — — (52)Intercompany dividend paid— — — (110) 110 —Dividends on preferred stock(41) — — — — (41)Other, net25 — (8) — — 17Net cash (used in) provided by financing activities(16) 997 (358) (110) 110 623Change in cash and cash equivalents(12) 832 1 (51) — 770Cash and cash equivalents           Beginning of period378 1,767 2,364 73 — 4,582End of period$366 $2,599 $2,365 $22 $— $5,352
+
+
+32
+
+
+Table of Contents
+
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+
+Cautionary Statement Regarding Forward-Looking Statements
+
+This Quarterly Report on Form 10-Q (“Form 10-Q”) includes forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. All statements, other than statements of historical fact, including information concerning our future results of operations, are forward-looking statements. These forward-looking statements are generally identified by the words “anticipate,” “believe,” “estimate,” “expect,” “intend,” “may,” “could” or similar expressions. Forward-looking statements are based on current expectations and assumptions, which are subject to risks and uncertainties and may cause actual results to differ materially from the forward-looking statements. The following important factors, along with the Risk Factors included in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2016, could affect future results and cause those results to differ materially from those expressed in the forward-looking statements:•adverse economic or political conditions in the U.S. and international markets;•competition in the wireless services market, including new competitors entering the industry as technologies converge; •the effects of any future merger or acquisition involving us, as well as the effects of mergers or acquisitions in the technology, media and telecommunications industry;•challenges in implementing our business strategies or funding our wireless operations, including payment for additional spectrum or network upgrades;•the possibility that we may be unable to renew our spectrum licenses on attractive terms or acquire new spectrum licenses at reasonable costs and terms;•difficulties in managing growth in wireless data services, including network quality;•material changes in available technology; •the timing, scope and financial impact of our deployment of advanced network and business technologies; •the impact on our networks and business from major technology equipment failures;•breaches of our and/or our third party vendors’ networks, information technology and data security;•natural disasters, terrorist attacks or similar incidents;•existing or future litigation; •any changes in the regulatory environments in which we operate, including any increase in restrictions on the ability to operate our networks; •any disruption or failure of our third parties’ or key suppliers’ provisioning of products or services; •material adverse changes in labor matters, including labor campaigns, negotiations or additional organizing activity, and any resulting financial, operational and/or reputational impact;•the ability to make payments on our debt or to repay our existing indebtedness when due;•adverse change in the ratings of our debt securities or adverse conditions in the credit markets;•changes in accounting assumptions that regulatory agencies, including the Securities and Exchange Commission (“SEC”), may require, which could result in an impact on earnings; and•changes in tax laws, regulations and existing standards and the resolution of disputes with any taxing jurisdictions.Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. We undertake no obligation to revise or publicly release the results of any revision to these forward-looking statements, except as required by law. In this Form 10-Q, unless the context indicates otherwise, references to “T-Mobile,” “T-Mobile US,” “our Company,” “the Company,” “we,” “our,” and “us” refer to T-Mobile US, Inc., a Delaware corporation, and its wholly-owned subsidiaries. Investors and others should note that we announce material financial and operational information to our investors using our investor relations website, press releases, SEC filings and public conference calls and webcasts. We intend to also use the @TMobileIR Twitter account (https://twitter.com/TMobileIR) and the @JohnLegere Twitter (https://twitter.com/JohnLegere), Facebook and Periscope accounts, which Mr. Legere also uses as means for personal communications and observations, as means of disclosing information about the Company and its services and for complying with its disclosure obligations under Regulation FD. The information we post through these social media channels may be deemed material. Accordingly, investors should monitor these social media channels in addition to following the Company’s press releases, SEC filings and public conference calls and webcasts. The social media channels that we intend to use as a means of disclosing the information described above may be updated from time to time as listed on the Company’s investor relations website.
+
+
+
+
+
+33
+
+
+Table of Contents
+
+Overview
+
+The objectives of our Management’s Discussion and Analysis of Financial Condition and Results of Operations (“MD&A”) are to provide users of our condensed consolidated financial statements with the following:•A narrative explanation from the perspective of management of our financial condition, results of operations, cash flows, liquidity and certain other factors that may affect future results;•Context to the financial statements; and•Information that allows assessment of the likelihood that past performance is indicative of future performance.Our MD&A is provided as a supplement to, and should be read together with, our unaudited condensed consolidated financial statements included in Part I, Item 1 of this Form 10-Q and audited Consolidated Financial Statements included in Part II, Item 8 of our Form 10-K for the year ended December 31, 2016. Except as expressly stated, the financial condition and results of operations discussed throughout our MD&A are those of T-Mobile US, Inc. and its consolidated subsidiaries.
+
+
+
+Business Overview
+
+Effective January 1, 2017, the imputed discount on EIP receivables, which is amortized over the financed installment term using the effective interest method and was previously recognized within Interest income in our Consolidated Statements of Comprehensive Income, is recognized within Other revenues in our Condensed Consolidated Statements of Comprehensive Income. We believe this presentation is preferable because it provides a better representation of amounts earned from the Company’s major ongoing operations and aligns with industry practice thereby enhancing comparability. We have applied this change retrospectively and the effect of this change for the three and nine months ended September 30, 2016, was a reclassification of $59 million and $189 million, respectively, from Interest income to Other revenues. The amortization of imputed discount on our EIP receivables for the three and nine months ended September 30, 2017, was $74 million and $204 million, respectively. For additional information, see Note 1 - Basis of Presentation of the Notes to the Condensed Consolidated Financial Statements.In January 2017, we introduced, Un-carrier Next, where monthly wireless service fees and sales taxes are included in the advertised monthly recurring charge for T-Mobile ONE. We also unveiled Kickback on T-Mobile ONE, where participating customers who use 2 GB or less of data in a month, will get up to a $10 credit per qualifying line on their next month’s bill. In addition, we introduced the Un-contract for T-Mobile ONE with the first-ever price guarantee on an unlimited 4G LTE plan which allows current T-Mobile ONE customers to keep their price for service until they decide to change it.In September 2017, we introduced, Un-carrier Next: Netflix On Us, through an exclusive new partnership with Netflix where a standard monthly Netflix service plan is included at no charge to qualifying T-Mobile ONE customers on family plans.During the third quarter of 2017, our operations in Texas, Florida and Puerto Rico experienced losses related to hurricanes. Based on our preliminary assessment, the approximate impacts for the three and nine months ended September 30, 2017, from lost revenue, assets damaged or destroyed and other hurricane related costs incurred are included in the table below. As of September 30, 2017, our loss assessment is ongoing and we expect additional expenses to be incurred and customer activity to be impacted in the fourth quarter of 2017, primarily related to our operations in Puerto Rico. We have not recognized any potential insurance recoveries related to those hurricane losses as we continue to assess the damage and work with our insurance carriers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34
+
+Table of Contents
+
+
+(in millions, except per share amounts, ARPU, ABPU, and bad debt expense and losses from sales of receivables as a percentage of total revenues)Three Months Ended September 30, Nine Months Ended September 30,2017 2017Increase (Decrease)   Revenues   Branded postpaid revenues$(20) $(20)Of which, branded postpaid phone revenues(19) (19)Branded prepaid revenues(11) (11)Total service revenues(31) (31)Equipment revenues(8) (8)Total revenues$(39) $(39)    Operating expenses   Cost of services$69 $69Cost of equipment sales4 4Selling, general and administrative36 36Of which, bad debt expense20 20Total operating expense$109 $109    Operating income$(148) $(148)Net income$(90) $(90)    Earnings per share - basic$(0.11) $(0.11)Earnings per share - diluted$(0.10) $(0.10)    Operating measures   Bad debt expense and losses from sales of receivables as a percentage of total revenues0.20% 0.07%Branded postpaid phone ARPU$(0.19) $(0.07)Branded postpaid ABPU$(0.18) $(0.06)Branded prepaid ARPU$(0.18) $(0.06)    Non-GAAP financial measures   Adjusted EBITDA$(148) $(148)
+
+
+35
+
+
+Table of Contents
+
+Results of Operations
+
+
+Highlights for the three months ended September 30, 2017, compared to the same period in 2016
+
+•Total revenues of $10.0 billion for the three months ended September 30, 2017, increased $714 million, or 8%. The increase was primarily driven by growth in service and equipment revenues as further discussed below. On September 1, 2016, we sold our marketing and distribution rights to certain existing T-Mobile co-branded customers to a current Mobile Virtual Network Operator (“MVNO”) partner for nominal consideration (the “MVNO Transaction”). The MVNO Transaction shifted Branded postpaid revenues to Wholesale revenues, but did not materially impact total revenues.•Service revenues of $7.6 billion for the three months ended September 30, 2017, increased $496 million, or 7%. The increase was primarily due to growth in our average branded customer base as a result of strong customer response to our Un-carrier initiatives, promotions and the success of our MetroPCS brand.•Equipment revenues of $2.1 billion for the three months ended September 30, 2017, increased $170 million, or 9%. The increase was primarily due to an increase from customer purchases of leased devices at the end of the lease term, the liquidation of returned customer handsets and a higher average revenue per device sold, partially offset by lower lease revenues. •Operating income of $1.3 billion for the three months ended September 30, 2017, increased $275 million, or 26%. The increase was primarily due to an increase in total service revenues and lower Depreciation and amortization, partially offset by higher Selling, general and administrative expenses, higher Cost of services expense and a decrease in Gains on disposal of spectrum licenses.•Net income of $550 million for the three months ended September 30, 2017, increased $184 million, or 50%. The increase was primarily due to higher operating income driven by the factors described above and a net decrease in interest expense, partially offset by higher income tax expense primarily due to an increase in income before income taxes and the negative impact from hurricanes. Net income included net, after-tax gains of $18 million and $122 million, for the three months ended September 30, 2017 and 2016, respectively.•Adjusted EBITDA (see “Performance Measures”), a non-GAAP financial measure, of $2.8 billion for the three months ended September 30, 2017, increased $133 million, or 5%. The increase was primarily due to higher operating income driven by the factors described above, partially offset by lower Gains on disposal of spectrum licenses. Adjusted EBITDA included pre-tax spectrum gains of $29 million and $199 million for the three months ended September 30, 2017 and 2016, respectively. •Net cash provided by operating activities of $2.4 billion for the three months ended September 30, 2017, increased $622 million, or 36% (see “Liquidity and Capital Resources”).•Free Cash Flow, a non-GAAP financial measure, of $921 million for the three months ended September 30, 2017, increased $340 million, or 59% (see “Liquidity and Capital Resources”).
+
+
+
+
+
+
+
+
+
+
+36
+
+Table of Contents
+
+Highlights for the nine months ended September 30, 2017, compared to the same period in 2016
+
+•Total revenues of $29.8 billion for the nine months ended September 30, 2017, increased $2.6 billion, or 9%. The increase was primarily driven by growth in service and equipment revenues as further discussed below. On September 1, 2016, we sold our marketing and distribution rights to certain existing T-Mobile co-branded customers to a current Mobile Virtual Network Operator (“MVNO”) partner for nominal consideration (the “MVNO Transaction”). The MVNO Transaction shifted Branded postpaid revenues to Wholesale revenues, but did not materially impact total revenues.•Service revenues of $22.4 billion for the nine months ended September 30, 2017, increased $1.8 billion, or 9%. The increase was primarily due to growth in our average branded customer base as a result of strong customer response to our Un-carrier initiatives, promotions and the success of our MetroPCS brand.•Equipment revenues of $6.7 billion for the nine months ended September 30, 2017, increased $680 million, or 11%. The increase was primarily due to higher average revenue per device sold and an increase from customer purchases of leased devices at the end of the lease term, partially offset by lower lease revenues. •Operating income of $3.8 billion for the nine months ended September 30, 2017, increased $727 million, or 24%. The increase was primarily due to higher Total service revenues and lower Depreciation and amortization, partially offset by lower Gains on disposal of spectrum licenses and higher Selling, general and administrative and Cost of services expenses.•Net income of $1.8 billion for the nine months ended September 30, 2017, increased $759 million, or 71%. The increase was primarily due to higher operating income driven by the factors described above, a lower tax rate primarily due to a reduction in the valuation allowance against deferred tax assets and a net decrease in interest expense, partially offset by the negative impact from hurricanes. Net income included net, after-tax gains of $41 million and $511 million, for the nine months ended September 30, 2017 and 2016, respectively.•Adjusted EBITDA, a non-GAAP financial measure, of $8.5 billion for the nine months ended September 30, 2017, increased $470 million, or 6%. The increase was primarily due to higher operating income driven by the factors described above, partially offset by lower Gains on disposal of spectrum licenses. Adjusted EBITDA included pre-tax spectrum gains of $67 million and $835 million for the nine months ended September 30, 2017 and 2016, respectively. •Net cash provided by operating activities of $5.9 billion for the nine months ended September 30, 2017, increased $1.4 billion, or 30% (see “Liquidity and Capital Resources”).•Free Cash Flow, a non-GAAP financial measure, of $1.6 billion for the nine months ended September 30, 2017, increased $898 million, or 130% (see “Liquidity and Capital Resources”).Set forth below is a summary of our consolidated results:
+
+
+
+
+
+
+
+
+
+37
+
+
+Table of Contents
+
+Three Months Ended September 30, Change Nine Months Ended September 30, Change 2017 2016 $ % 2017 2016 $ %(in millions)  (As Adjusted - See Note 1)     (As Adjusted - See Note 1)  Revenues               Branded postpaid revenues$4,920 $4,647 $273 6 % $14,465 $13,458 $1,007 7 %Branded prepaid revenues2,376 2,182 194 9 % 7,009 6,326 683 11 %Wholesale revenues274 238 36 15 % 778 645 133 21 %Roaming and other service revenues59 66 (7) (11)% 151 170 (19) (11)%Total service revenues7,629 7,133 496 7 % 22,403 20,599 1,804 9 %Equipment revenues2,118 1,948 170 9 % 6,667 5,987 680 11 %Other revenues272 224 48 21 % 775 670 105 16 %Total revenues10,019 9,305 714 8 % 29,845 27,256 2,589 9 %Operating expenses               Cost of services, exclusive of depreciation and amortization shown separately below1,594 1,436 158 11 % 4,520 4,286 234 5 %Cost of equipment sales2,617 2,539 78 3 % 8,149 7,532 617 8 %Selling, general and administrative3,098 2,898 200 7 % 8,968 8,419 549 7 %Depreciation and amortization1,416 1,568 (152) (10)% 4,499 4,695 (196) (4)%Cost of MetroPCS business combination— 15 (15) NM — 110 (110) NMGains on disposal of spectrum licenses(29) (199) 170 (85)% (67) (835) 768 (92)%Total operating expense8,696 8,257 439 5 % 26,069 24,207 1,862 8 %Operating income1,323 1,048 275 26 % 3,776 3,049 727 24 %Other income (expense)               Interest expense(253) (376) 123 (33)% (857) (1,083) 226 (21)%Interest expense to affiliates(167) (76) (91) 120 % (398) (248) (150) 60 %Interest income2 3 (1) (33)% 15 9 6 67 %Other income (expense), net1 (1) 2 NM (89) (6) (83) NMTotal other expense, net(417) (450) 33 (7)% (1,329) (1,328) (1) — %Income before income taxes906 598 308 52 % 2,447 1,721 726 42 %Income tax expense(356) (232) (124) 53 % (618) (651) 33 (5)%Net income$550 $366 $184 50 % $1,829 $1,070 $759 71 %                Net cash provided by operating activities$2,362 $1,740 $622 36 % $5,904 $4,533 $1,371 30 %Net cash used in investing activities(1,455) (1,859) 404 (22)% (10,138) (4,386) (5,752) 131 %Net cash (used in) provided by financing activities(349) (67) (282) 421 % (527) 623 (1,150) (185)%                Non-GAAP Financial Measures               Adjusted EBITDA$2,822 $2,689 $133 5 % $8,502 $8,032 $470 6 %Free Cash Flow921 581 340 59 % 1,588 690 898 130 %
+NM - Not Meaningful
+
+
+38
+
+
+Table of Contents
+
+The following discussion and analysis is for the three and nine months ended September 30, 2017, compared to the same periods in 2016 unless otherwise stated.
+
+Total revenues increased $714 million, or 8%, for the three months ended and $2.6 billion, or 9%, for the nine months ended September 30, 2017, primarily due to higher revenues from branded postpaid and prepaid customers as well as higher equipment revenues as discussed below. Branded postpaid revenues increased $273 million, or 6%, for the three months ended and $1.0 billion, or 7%, for the nine months ended September 30, 2017.•Growth in the customer base driven by strong customer response to our Un-carrier initiatives and promotions for services and devices; and•The positive impact from a decrease in the non-cash net revenue deferral for Data Stash; partially offset by•The MVNO Transaction;•Lower branded postpaid phone average revenue per user (“ARPU”); and•The negative impact from hurricanes of $20 million. •Growth in the customer base driven by strong customer response to our Un-carrier initiatives and promotions for services and devices, including the growing success of our business channel, T-Mobile for Business; and•The positive impact from a decrease in the non-cash net revenue deferral for Data Stash; partially offset by•The MVNO Transaction; and•The negative impact from hurricanes of $20 million. Branded prepaid revenues increased $194 million, or 9%, for the three months ended and $683 million, or 11%, for the nine months ended September 30, 2017, primarily from:•Higher average branded prepaid customers primarily driven by growth in the customer base; and•Higher branded prepaid ARPU from the success of our MetroPCS brand; partially offset by•The impact from the optimization of our third-party distribution channels; and•The negative impact from hurricanes of $11 million.Wholesale revenues increased $36 million, or 15%, for the three months ended and $133 million, or 21%, for the nine months ended September 30, 2017, primarily from the impact of increased Wholesale revenues resulting from the MVNO Transaction.Roaming and other service revenues decreased $7 million, or 11%, for the three months ended and $19 million, or 11%, for the nine months ended September 30, 2017.Equipment revenues increased $170 million, or 9%, for the three months ended and $680 million, or 11%, for the nine months ended September 30, 2017.•An increase of $137 million from the purchase of leased devices at the end of their lease term;•An increase of $116 million primarily related to proceeds from the liquidation of returned customer handsets in the third quarter of 2017; •An increase of $78 million in device sales revenues excluding purchased leased devices, primarily due to: •Higher average revenue per device sold primarily due to an Original Equipment Manufacturer (“OEM”) recall of its smartphone devices in the third quarter of 2016 and a decrease in promotional spending; partially offset by•A 5% decrease in the number of devices sold. Device sales revenue is recognized at the time of sale; and•An increase of $22 million in SIM and upgrade revenue; partially offset by •A decrease of $194 million in lease revenues from declining JUMP! On Demand population due to shifting focus to our EIP financing option beginning in the first quarter of 2016; and•The negative impact from hurricanes of $8 million. •An increase of $413 million in device sales revenues excluding purchased leased devices, primarily due to:•Higher average revenue per device sold primarily due to an increase in high-end device mix and an OEM recall of its smartphone devices in the third quarter of 2016, partially offset by an increase in promotional spending; partially offset by •A 1% decrease in the number of devices sold. Device sales revenue is recognized at the time of sale;•An increase of $366 million from the purchase of leased devices at the end of the lease term; •An increase of $137 million primarily related to proceeds from the liquidation of returned customer handsets in the third quarter of 2017; and•An increase of $117 million in SIM and upgrade revenue; partially offset by •A decrease of $345 million in lease revenues from declining JUMP! On Demand population due to shifting focus to our EIP financing option beginning in the first quarter of 2016; and•The negative impact from hurricanes of $8 million. Under our JUMP! On Demand program, upon device upgrade or at lease end, customers must return or purchase their device. Revenue for purchased leased devices is recorded as equipment revenues when revenue recognition criteria have been met. Gross EIP device financing to our customers increased by $115 million for the three months ended and $303 million for the nine months ended September 30, 2017, primarily due to growth in the gross amount of equipment financed on EIP. The increase was also due to certain customers on leased devices reaching the end of lease term who financed their devices over nine-month EIP. Operating expenses increased $439 million, or 5%, for the three months ended and $1.9 billion, or 8%, for the nine months ended September 30, 2017, primarily from higher Cost of services, Cost of equipment sales, Selling, general and administrative and lower Gains on disposal of spectrum licenses, partially offset by lower Depreciation and amortization as discussed below. Cost of services increased $158 million, or 11%, for the three months ended and $234 million, or 5%, for the nine months ended September 30, 2017.•Higher lease expenses associated with our network expansion; •The negative impact from hurricanes of $69 million; partially offset by•Lower regulatory expenses.•Higher lease expenses associated with network expansion; and •The negative impact from hurricanes of $69 million; partially offset by •Lower long distance and toll costs as we continue to renegotiate contracts with vendors; and •Lower regulatory expenses. Cost of equipment sales increased $78 million, or 3%, for the three months ended and $617 million, or 8%, for the nine months ended September 30, 2017. •An increase of $66 million in device cost of equipment sales, excluding purchased leased devices, primarily due to: •A higher average cost per device sold primarily from an OEM recall of its smartphone devices in the third quarter of 2016; partially offset by•A 5% decrease in the number of devices sold; and •An increase of $58 million in lease device cost of equipment sales, primarily due to: •An increase in lease buyouts as leases began reaching their term dates in 2017; partially offset by •A decrease in device upgrades from fewer customers in the handset lease program. •These increases are partially offset by a decrease of $31 million in cost of equipment related to an increase in proceeds from the liquidation of returned customer handsets under our insurance programs; and•The negative impact from hurricanes of $4 million. •An increase of $483 million in device cost of equipment sales, excluding purchased leased devices, primarily due to: •A higher average cost per device sold primarily from an increase in high-end device mix and an OEM recall of its smartphone devices in the third quarter of 2016; partially offset by •A 1% decrease in the number of devices sold; and •An increase of $245 million in lease device cost of equipment sales, primarily due to: •An increase in lease buyouts as leases began reaching their term dates in 2017; partially offset by •A decrease in device upgrades from fewer customers in the handset lease program. •These increases are partially offset by a decrease of $69 million primarily due to inventory adjustments related to obsolete inventory; and•The negative impact from hurricanes of $4 million. Under our JUMP! On Demand program, upon device upgrade or at the end of the lease term, customers must return or purchase their device. The cost of purchased leased devices is recorded as Cost of equipment sales. Returned devices transferred from Property and equipment, net are recorded as inventory and are valued at the lower of cost or market with any write-down to market recognized as Cost of equipment sales.Selling, general and administrative increased $200 million, or 7%, for the three months ended and $549 million, or 7%, for the nine months ended September 30, 2017, primarily from strategic investments to support our growing customer base including higher employee related costs, promotional costs, commissions, and higher costs related to managed services and outsourced functions, partially offset by lower external labor costs. Additionally, the negative impact from hurricanes of $36 million contributed to the increase. Depreciation and amortization decreased $152 million, or 10%, for the three months ended and $196 million, or 4%, for the nine months ended September 30, 2017, primarily from: •Lower depreciation expense related to our JUMP! On Demand program resulting from a lower number of devices under lease. Under our JUMP! On Demand program, the cost of a leased wireless device is depreciated over the lease term to its estimated residual value; partially offset by •The continued build-out of our 4G LTE network. Cost of MetroPCS business combination decreased $15 million for the three months ended and $110 million for the nine months ended September 30, 2017. On July 1, 2015, we officially completed the shutdown of the MetroPCS CDMA network. Network decommissioning costs primarily relate to the acceleration of lease costs for cell sites that would have otherwise been recognized as cost of services over the remaining lease term had we not decommissioned the cell sites. We do not expect to incur significant additional network decommissioning costs in 2017.Gains on disposal of spectrum licenses decreased $170 million, or 85%, for the three months ended and $768 million, or 92%, for the nine months ended September 30, 2017. The change for the nine months ended September 30, 2017 was primarily from a $636 million gain from a spectrum license transaction with AT&T during the first quarter of 2016.Net Income increased $184 million, or 50%, for the three months ended and $759 million, or 71%, for the nine months ended September 30, 2017, primarily from higher operating income and a net decrease in interest expense, partially offset by the negative impact from hurricanes of approximately $90 million. Net income for the three months ended September 30, 2017 was partially offset by higher income tax expense as discussed below. Net income for the nine months ended September 30, 2017 additionally included the impact from a lower tax rate as discussed below.•Operating income, the components of which are discussed above and include the negative impact from hurricanes, increased $275 million, or 26%, for the three months ended and $727 million, or 24%, for the nine months ended September 30, 2017. The negative impact from the hurricanes for the three and nine months ended September 30, 2017 was approximately $148 million.•Income tax expense increased $124 million, or 53%, for the three months ended and decreased $33 million, or 5%, for the nine months ended September 30, 2017. The change for the three months ended September 30, 2017 was primarily from higher income before income taxes. The effective tax rate was 39.3% and 38.8% for the three months ended September 30, 2017 and 2016, respectively. •A lower effective tax rate which was 25.3% and 37.8% for the nine months ended September 30, 2017 and 2016, respectively, primarily due to a reduction in the valuation allowance against deferred tax assets in certain state jurisdictions that resulted in the recognition of $270 million in tax benefits in the first quarter of 2017 and the recognition of an additional $19 million in tax benefits through the third quarter of 2017. Total tax benefits related to the reduction in the valuation allowance were $289 million through September 30, 2017. The effective tax rate was further decreased by the recognition of $62 million of excess tax benefits related to share-based payments for the nine months ended September 30, 2017, compared to $24 million for the same period in 2016; partially offset by •Higher income before income taxes.
+
+
+The change for the three months ended September 30, 2017 was primarily from:
+
+
+The change for the nine months ended September 30, 2017 was primarily from:
+
+
+
+
+
+
+
+The change for the three months ended September 30, 2017 was primarily from:
+
+
+39
+
+Table of Contents
+
+
+The change for the nine months ended September 30, 2017 was primarily from:
+
+
+
+
+
+
+The change for the three months ended September 30, 2017 was primarily from:
+
+
+The change for the nine months ended September 30, 2017 was primarily from:
+
+
+
+The change for the three months ended September 30, 2017 was primarily from:
+
+
+40
+
+Table of Contents
+
+
+The change for the nine months ended September 30, 2017 was primarily from:
+
+
+
+
+
+
+
+
+
+41
+
+Table of Contents
+
+
+
+
+
+The change for the nine months ended September 30, 2017 was primarily from:
+
+
+See Note 8 - Income Taxes of the Notes to the Condensed Consolidated Financial Statements.
+
+•Interest expense decreased $123 million, or 33%, for the three months ended and $226 million, or 21%, for the nine months ended September 30, 2017, primarily from: •The early extinguishment of our LIBOR plus 2.750% Senior Secured Term Loan and redemption of $8.3 billion of Senior Notes; partially offset by •The issuance of $1.5 billion of Senior Notes in March 2017. •The decrease for the nine months ended September 30, 2017 was also impacted by the issuance of $1.0 billion of Senior Notes in April 2016. •Interest expense to affiliates increased $91 million, or 120%, for the three months ended and $150 million, or 60%, for the nine months ended September 30, 2017, primarily from: •An increase in interest associated with a $4.0 billion secured Incremental Term Loan Facility with DT entered into in January 2017; •The issuance of $4.0 billion in Senior Notes to DT in May 2017; and •Draws on our Revolving Credit Facility; partially offset by •Lower interest rates achieved through refinancing $2.5 billion of Senior Reset Notes in April 2017.•The increase for the three months ended September 30, 2017, was also partially from the net issuance of $500 million in Senior Notes in April 2017.
+
+
+
+
+See Note 7 – Debt of the Notes to the Condensed Consolidated Financial Statements for additional details.
+
+•Other income (expense), net remained flat for the three months ended and increased $83 million for the nine months ended September 30, 2017. The change for the nine months ended September 30, 2017 was primarily from: •A $73 million net loss recognized from the early redemption of certain Senior Notes; and •A $13 million net loss recognized from the refinancing of our outstanding Senior Secured Term Loans.
+
+
+See Note 7 – Debt of the Notes to the Condensed Consolidated Financial Statements.
+
+
+42
+
+Table of Contents
+
+Net income included net, after-tax gains on disposal of spectrum licenses of $18 million and $122 million for the three months ended September 30, 2017 and 2016, respectively, and $41 million and $511 million for the nine months ended September 30, 2017 and 2016, respectively.
+
+Guarantor Subsidiaries
+
+The financial condition and results of operations of the Parent, Issuer and Guarantor Subsidiaries is substantially similar to our consolidated financial condition. The most significant components of the financial condition of our Non-Guarantor Subsidiaries were as follows:
+September 30, 2017 December 31, 2016 Change(in millions)  $ %Other current assets$576 $565 $11 2 %Property and equipment, net322 375 (53) (14)%Tower obligations2,204 2,221 (17) (1)%Total stockholders' deficit(1,386) (1,374) (12) 1 %
+
+The most significant components of the results of operations of our Non-Guarantor Subsidiaries were as follows:
+Three Months Ended September 30, Change Nine Months Ended September 30, Change(in millions)2017 2016$ %2017 2016$ %Service revenues$527 $520 $7 1 % $1,580 $1,500 $80 5 %Cost of equipment sales241 300 (59) (20)% 738 768 (30) (4)%Selling, general and administrative209 227 (18) (8)% 652 645 7 1 %Total comprehensive income (loss)40 (19) 59 (311)% 87 8 79 988 %
+
+The change to the results of operations of our Non-Guarantor Subsidiaries for the three months ended September 30, 2017 was primarily from:•Higher Service revenues primarily due to the result of an increase in activity of the non-guarantor subsidiary that provides device insurance, primarily driven by growth in our customer base;•Lower Cost of equipment sales expenses primarily due to decrease in claims activity and lower device costs used; and•Lower Selling, general and administrative expenses primarily due to a decrease in program service fees, partially offset by higher costs to support our growing customer base.The change to the results of operations of our Non-Guarantor Subsidiaries for the nine months ended September 30, 2017 was primarily from:•Higher Service revenues primarily due to the result of an increase in activity of the non-guarantor subsidiary that provides device insurance, primarily driven by growth in our customer base;•Lower Cost of equipment sales expenses primarily due to lower non-return fees charged to the customer; and•Higher Selling, general and administrative expenses primarily due to higher costs to support our growing customer base, partially offset by a decrease in program service fees.All other results of operations of the Parent, Issuer and Guarantor Subsidiaries are substantially similar to the Company’s consolidated results of operations. See Note 11 – Guarantor Financial Information of the Notes to the Condensed Consolidated Financial Statements.
+
+
+
+
+
+
+43
+
+
+Table of Contents
+
+Performance Measures
+
+In managing our business and assessing financial performance, we supplement the information provided by our financial statements with other operating or statistical data and non-GAAP financial measures. These operating and financial measures are utilized by our management to evaluate our operating performance and, in certain cases, our ability to meet liquidity requirements. Although companies in the wireless industry may not define each of these measures in precisely the same way, we believe that these measures facilitate comparisons with other companies in the wireless industry on key operating and financial measures.
+
+Total Customers
+
+A customer is generally defined as a SIM number with a unique T-Mobile identifier which is associated with an account that generates revenue. Branded customers generally include customers that are qualified either for postpaid service utilizing phones, mobile broadband devices (including tablets), or DIGITS, where they generally pay after receiving service, or prepaid service, where they generally pay in advance. Wholesale customers include Machine to Machine (“M2M”) and MVNO customers that operate on our network, but are managed by wholesale partners.The following table sets forth the number of ending customers:
+
+September 30, 2017 September 30, 2016 Change(in thousands)# %Customers, end of period       Branded postpaid phone customers (1)33,223 30,364 2,859 9 %Branded postpaid other customers (1)3,752 2,866 886 31 %Total branded postpaid customers36,975 33,230 3,745 11 %Branded prepaid customers20,519 19,272 1,247 6 %Total branded customers57,494 52,502 4,992 10 %Wholesale customers13,237 16,852 (3,615) (21)%Total customers, end of period70,731 69,354 1,377 2 %Adjustments to branded postpaid phone customers (2)— (1,365) 1,365 Adjustments to branded prepaid customers (2)— (326) 326 Adjustments to wholesale customers (2) (3)(160) 1,691 (1,851)
+(1)During the third quarter of 2017, we retitled our “Branded postpaid mobile broadband customers” category to “Branded postpaid other customers” and reclassified 253,000 DIGITS customers from our “Branded postpaid phone customers” category for the second quarter of 2017, when the DIGITS product was released.(2)The MVNO Transaction resulted in a transfer of branded postpaid phone customers and branded prepaid customers to wholesale customers on September 1, 2016. Prospectively from September 1, 2016, net customer additions for these customers are included within Wholesale customers.(3)We believe current and future regulatory changes have made the Lifeline program offered by our wholesale partners uneconomical. We will continue to support our wholesale partners offering the Lifeline program, but have excluded the Lifeline customers from our reported wholesale subscriber base resulting in the removal of 160,000 and 4,368,000 reported wholesale customers as of the beginning of the third quarter of 2017 and the beginning of the second quarter of 2017, respectively. No further Lifeline adjustments are expected in future periods.
+
+Branded Customers
+
+Total branded customers increased 4,992,000, or 10%, primarily from: •Higher branded postpaid phone customers driven by strong customer response to our Un-carrier initiatives and promotional activities and the growing success of our business channel, T-Mobile for Business, partially offset by increased competitive activity in the marketplace and less reliance on add a line promotions; •Higher branded prepaid customers driven by the continued success of our MetroPCS brand and continued growth from our distribution expansion, partially offset by the optimization of our third-party distribution channels; and •Higher branded postpaid other customers primarily due to the launch of SyncUP DRIVETM and DIGITS.
+
+
+Wholesale
+
+Wholesale customers decreased 3,615,000, or 21%, primarily due to Lifeline subscribers, which were excluded from our reported wholesale subscriber base as of the beginning of the second quarter of 2017. This decrease was partially offset by the continued success of our M2M partnerships.
+
+44
+
+Table of Contents
+
+
+Net Customer Additions
+
+The following table sets forth the number of net customer additions (losses):
+Three Months Ended September 30, Change Nine Months Ended September 30, Change(in thousands)2017 2016# %2017 2016# %Net customer additions (losses)               Branded postpaid phone customers (1)595 851 (256) (30)% 1,926 2,374 (448) (19)%Branded postpaid other customers (1)222 118 104 88 % 622 526 96 18 %Total branded postpaid customers817 969 (152) (16)% 2,548 2,900 (352) (12)%Branded prepaid customers226 684 (458) (67)% 706 1,967 (1,261) (64)%Total branded customers1,043 1,653 (610) (37)% 3,254 4,867 (1,613) (33)%Wholesale customers (2)286 317 (31) (10)% 550 1,205 (655) (54)%Total net customer additions1,329 1,970 (641) (33)% 3,804 6,072 (2,268) (37)%Adjustments to branded postpaid phone customers (1)— — —  (253) — (253) Adjustments to branded postpaid other customers (1)— — —  253 — 253
+(1)During the third quarter of 2017, we retitled our “Branded postpaid mobile broadband customers” category to “Branded postpaid other customers” and reclassified 253,000 DIGITS customer net additions from our “Branded postpaid phone customers” category for the second quarter of 2017, when the DIGITS product was released.(2)Net customer activity for Lifeline was excluded beginning in the second quarter of 2017 due to our determination based upon changes in the applicable government regulations that the Lifeline program offered by our wholesale partners is uneconomical.
+
+Branded Customers
+
+Total branded net customer additions decreased 610,000, or 37%, for the three months ended and 1,613,000, or 33%, for the nine months ended September 30, 2017.The decrease for the three months ended September 30, 2017 was primarily from:•Lower branded prepaid net customer additions primarily due to higher MetroPCS deactivations from a growing customer base and increased competitive activity in the marketplace, and•Lower branded postpaid phone net customer additions primarily due to lower gross customer additions from increased competitive activity in the marketplace, the split and shift in iPhone launch timing, and the negative impact from hurricanes; partially offset by•Higher branded postpaid other net customer additions primarily driven by strength of SyncUP DRIVETM launched in the fourth quarter of 2016 as well as the launch of DIGITS in the second quarter of 2017.The decrease for the nine months ended September 30, 2017 was primarily from:•Lower branded prepaid net customer additions primarily due to higher MetroPCS deactivations from a growing customer base and increased competitive activity in the marketplace. Additional decreases resulted from the optimization of our third party distribution channels, and•Lower branded postpaid phone net customer additions primarily due to lower gross customer additions from increased competitive activity in the marketplace and lower customer migrations, partially offset by lower deactivations; partially offset by•Higher branded postpaid other net customer additions primarily driven by strength of SyncUP DRIVETM launched in the fourth quarter of 2016 as well as the launch of DIGITS in the second quarter of 2017, partially offset by overall market softness of tablets.
+
+
+
+
+
+Wholesale
+
+Wholesale net customer additions decreased 31,000, or 10%, for the three months ended and 655,000, or 54%, for the nine months ended September 30, 2017 from lower gross customer additions, partially offset by lower customer deactivations. We believe current and future regulatory changes have made the Lifeline program offered by our wholesale partners uneconomical. We will continue to support our wholesale partners offering the Lifeline program, but have excluded the Lifeline customers from our reported wholesale subscriber base resulting in the removal of 160,000 and 4,368,000 reported wholesale customers as of the beginning of the third quarter of 2017 and beginning of the second quarter of 2017, respectively. No further Lifeline adjustments are expected in future periods.
+
+45
+
+Table of Contents
+
+
+Customers Per Account
+
+Customers per account is calculated by dividing the number of branded postpaid customers as of the end of the period by the number of branded postpaid accounts as of the end of the period. An account may include branded postpaid phone, mobile broadband, and DIGITS customers. We believe branded postpaid customers per account provides management, investors and analysts with useful information to evaluate our branded postpaid customer base on a per account basis. September 30, 2017 September 30, 2016 Change  # %Branded postpaid customers per account2.92 2.78 0.14 5%Branded postpaid customers per account increased 0.14 points, or 5%, primarily from growth of customers on family plan promotions.
+
+
+Churn
+
+Churn represents the number of customers whose service was disconnected as a percentage of the average number of customers during the specified period. The number of customers whose service was disconnected is presented net of customers that subsequently have their service restored within a certain period of time. We believe that churn provides management, investors and analysts with useful information to evaluate customer retention and loyalty.
+Three Months Ended September 30, Bps Change Nine Months Ended September 30, Bps Change2017 20162017 2016Branded postpaid phone churn1.23% 1.32% -9 bps 1.18% 1.30% -12 bpsBranded prepaid churn4.25% 3.82% 43 bps 4.06% 3.86% 20 bps
+
+Branded postpaid phone churn decreased 9 basis points for the three months ended and 12 basis points for the nine months ended September 30, 2017, primarily due to the MVNO Transaction as the customers transferred had a higher rate of churn.Branded prepaid churn increased 43 basis points for the three months ended and 20 basis points for the nine months ended September 30, 2017, primarily due to higher MetroPCS churn from increased competitive activity in the marketplace.
+
+
+Average Revenue Per User, Average Billings Per User
+
+ARPU represents the average monthly service revenue earned from customers. We believe ARPU provides management, investors and analysts with useful information to assess and evaluate our service revenue realization per customer and assist in forecasting our future service revenues generated from our customer base. Branded postpaid phone ARPU excludes mobile broadband and DIGITS customers and related revenues. Average Billings Per User (“ABPU”) represents the average monthly customer billings, including monthly lease revenues and EIP billings before securitization, per customer. We believe branded postpaid ABPU provides management, investors and analysts with useful information to evaluate average branded postpaid customer billings as it is indicative of estimated cash collections, including device financing payments, from our customers each month.The following tables illustrate the calculation of our operating measures ARPU and ABPU and reconcile these measures to the related service revenues:
+
+
+
+46
+
+Table of Contents
+
+(in millions, except average number of customers, ARPU and ABPU) Three Months Ended September 30, Change Nine Months Ended September 30, Change2017 2016 $ % 2017 2016 $ %Calculation of Branded Postpaid Phone ARPU               Branded postpaid service revenues$4,920 $4,647 $273 6 % $14,465 $13,458 $1,007 7 %Less: Branded postpaid other revenues(294) (193) (101) 52 % (774) (568) (206) 36 %Branded postpaid phone service revenues$4,626 $4,454 $172 4 % $13,691 $12,890 $801 6 %Divided by: Average number of branded postpaid phone customers (in thousands) and number of months in period32,852 30,836 2,016 7 % 32,248 30,364 1,884 6 %Branded postpaid phone ARPU (1)$46.93 $48.15 $(1.22) (3)% $47.17 $47.17 $— — %            Calculation of Branded Postpaid ABPU           Branded postpaid service revenues$4,920 $4,647 $273 6 % $14,465 $13,458 $1,007 7 %EIP billings1,481 1,394 87 6 % 4,285 4,062 223 5 %Lease revenues159 353 (194) (55)% 717 1,062 (345) (32)%Total billings for branded postpaid customers$6,560 $6,394 $166 3 % $19,467 $18,582 $885 5 %Divided by: Average number of branded postpaid customers (in thousands) and number of months in period36,505 33,632 2,873 9 % 35,627 32,966 2,661 8 %Branded postpaid ABPU$59.89 $63.38 $(3.49) (6)% $60.71 $62.63 $(1.92) (3)%            Calculation of Branded Prepaid ARPU           Branded prepaid service revenues$2,376 $2,182 $194 9 % $7,009 $6,326 $683 11 %Divided by: Average number of branded prepaid customers (in thousands) and number of months in period20,336 19,134 1,202 6 % 20,119 18,586 1,533 8 %Branded prepaid ARPU$38.93 $38.01 $0.92 2 % $38.71 $37.82 $0.89 2 %
+(1) Branded postpaid phone ARPU includes the reclassification of 43,000 DIGITS average customers and related revenue to the “Branded postpaid other customers” category for the second quarter of 2017.
+
+Branded Postpaid Phone ARPU
+
+Branded postpaid phone ARPU decreased $1.22, or 3%, for the three months ended and remained flat for the nine months ended September 30, 2017.•The continued adoption of T-Mobile ONE including taxes and fees and dilution from promotional activities; and•The negative impact from hurricanes of $0.19; partially offset by•The transfer of customers as part of the MVNO transaction as those customers had lower ARPU; and•A decrease in the non-cash net revenue deferral for Data Stash.Flat for the nine months ended September 30, 2017 primarily from:•A decrease in the non-cash net revenue deferral for Data Stash;•The transfer of customers as part of the MVNO transaction as those customers had lower ARPU; offset by•The continued adoption of T-Mobile ONE including taxes and fees and dilution from promotional activities; and•The negative impact from hurricanes of $0.07.T-Mobile continues to expect that Branded postpaid phone ARPU in full-year 2017 will be generally stable compared to full-year 2016, with some quarterly variations driven by the actual migrations to T-Mobile ONE rate plans, inclusive of Un-carrier Next promotions.
+
+The change for the three months ended September 30, 2017 was primarily from:
+
+
+
+
+
+
+47
+
+Table of Contents
+
+Branded Postpaid ABPU
+
+Branded postpaid ABPU decreased $3.49, or 6%, for the three months ended and $1.92, or 3%, for the nine months ended September 30, 2017.•Lower lease revenues;•Lower branded postpaid phone ARPU; •Growth in the branded postpaid other customer base with lower ARPU; and•The negative impact from hurricanes of $0.18. •Lower lease revenues; •Growth in the branded postpaid other customer base with lower ARPU; and•The negative impact from hurricanes of $0.06.
+
+The change for the three months ended September 30, 2017 was primarily from:
+
+
+The change for the nine months ended September 30, 2017 was primarily from:
+
+
+Branded Prepaid ARPU
+
+Branded prepaid ARPU increased $0.92, or 2%, for the three months ended and $0.89, or 2%, for the nine months ended September 30, 2017, compared to the same periods in 2016, primarily from continued growth of MetroPCS customers who generate higher ARPU. These increases were partially offset by the negative impact from hurricanes of $0.18 and $0.06 for the three and nine months ended September 30, 2017, respectively.
+
+Adjusted EBITDA
+
+Adjusted EBITDA represents earnings before Interest expense, net of Interest income, Income tax expense, Depreciation and amortization, non-cash Stock-based compensation and certain expenses not reflective of T-Mobile’s operating performance. Net income margin represents Net income divided by Service revenues. Adjusted EBITDA margin represents Adjusted EBITDA divided by Service revenues.Adjusted EBITDA is a non-GAAP financial measure utilized by our management to monitor the financial performance of our operations. We use Adjusted EBITDA internally as a metric to evaluate and compensate our personnel and management for their performance, and as a benchmark to evaluate our operating performance in comparison to our competitors. Management believes analysts and investors use Adjusted EBITDA as a supplemental measure to evaluate overall operating performance and facilitate comparisons with other wireless communications companies because it is indicative of our ongoing operating performance and trends by excluding the impact of interest expense from financing, non-cash depreciation and amortization from capital investments, non-cash stock-based compensation, network decommissioning costs as they are not indicative of our ongoing operating performance and certain other nonrecurring expenses. Adjusted EBITDA has limitations as an analytical tool and should not be considered in isolation or as a substitute for income from operations, net income or any other measure of financial performance reported in accordance with GAAP.The following table illustrates the calculation of Adjusted EBITDA and reconciles Adjusted EBITDA to Net income, which we consider to be the most directly comparable GAAP financial measure:
+
+
+
+48
+
+Table of Contents
+
+Three Months Ended September 30, Change Nine Months Ended September 30, Change(in millions)2017 2016 $ % 2017 2016 $ %Net income$550 $366 $184 50 % $1,829 $1,070 $759 71 %Adjustments:           Interest expense253 376 (123) (33)% 857 1,083 (226) (21)%Interest expense to affiliates167 76 91 120 % 398 248 150 60 %Interest income (1)(2) (3) 1 (33)% (15) (9) (6) 67 %Other (income) expense, net(1) 1 (2) (200)% 89 6 83 1,383 %Income tax expense356 232 124 53 % 618 651 (33) (5)%Operating income (1)1,323 1,048 275 26 % 3,776 3,049 727 24 %Depreciation and amortization1,416 1,568 (152) (10)% 4,499 4,695 (196) (4)%Cost of MetroPCS business combination (2)— 15 (15) (100)% — 110 (110) (100)%Stock-based compensation (3)83 57 26 46 % 222 171 51 30 %Other, net (3)— 1 (1) (100)% 5 7 (2) (29)%Adjusted EBITDA (1)$2,822 $2,689 $133 5 % $8,502 $8,032 $470 6 %Net income margin (Net income divided by service revenues)7% 5%  200 bps 8% 5%  300 bpsAdjusted EBITDA margin (Adjusted EBITDA divided by service revenues) (1)37% 38%  -100 bps 38% 39%  -100 bps
+(1)The amortized imputed discount on EIP receivables previously recognized as Interest income has been retrospectively re-classified as Other revenues. See Note 1 - Basis of Presentation of the Notes to the Condensed Consolidated Financial Statements and table below for further detail.(2)Beginning in the first quarter of 2017, the Company will no longer separately present Cost of MetroPCS business combination as it is insignificant.(3)Stock-based compensation includes payroll tax impacts and may not agree to stock-based compensation expense in the consolidated financial statements. Other, net may not agree to the Condensed Consolidated Statements of Comprehensive Income primarily due to certain non-routine operating activities, such as other special items that would not be expected to reoccur, and are therefore excluded in Adjusted EBITDA.Adjusted EBITDA increased $133 million, or 5%, for the three months ended and $470 million, or 6%, for the nine months ended September 30, 2017.•An increase in branded postpaid and prepaid service revenues primarily due to strong customer response to our Un-carrier initiatives, the ongoing success of our promotional activities, and the continued strength of our MetroPCS brand; and •Lower losses on equipment; partially offset by •Higher selling, general and administrative expenses;•Higher cost of services expense; •Lower gains on disposal of spectrum licenses of $170 million; gains on disposal were $29 million for the three months ended September 30, 2017, compared to $199 million in the same period in 2016; and •The negative impact from hurricanes of $148 million.•An increase in branded postpaid and prepaid service revenues primarily due to strong customer response to our Un-carrier initiatives, the ongoing success of our promotional activities, and the continued strength of our MetroPCS brand; and •Higher wholesale revenues; partially offset by •Lower gains on disposal of spectrum licenses of $768 million; gains on disposal were $67 million for the nine months ended September 30, 2017, compared to $835 million in the same period in 2016; •Higher selling, general and administrative expenses; •Higher cost of services expense; and•The negative impact from hurricanes of $148 million.Effective January 1, 2017, the imputed discount on EIP receivables, which was previously recognized within Interest income in our Condensed Consolidated Statements of Comprehensive Income, is recognized within Other revenues in our Condensed Consolidated Statements of Comprehensive Income. Due to this presentation, the imputed discount on EIP receivables is included in Adjusted EBITDA. See Note 1 - Basis of Presentation of Notes to the Condensed Consolidated Financial Statements for additional details.We have applied this change retrospectively and presented the effect on the three and nine months ended September 30, 2016, in the table below.
+
+
+The change for the three months ended September 30, 2017 was primarily from:
+
+
+The change for the nine months ended September 30, 2017 was primarily from:
+
+
+49
+
+Table of Contents
+
+
+
+Three Months Ended September 30, 2016 Nine Months Ended September 30, 2016(in millions)As Filed Change in Accounting Principle As Adjusted As Filed Change in Accounting Principle As AdjustedOperating income$989 $59 $1,048 $2,860 $189 $3,049Interest income62 (59) 3 198 (189) 9Net income366 — 366 1,070 — 1,070Net income as a percentage of service revenue5% —% 5% 5% —% 5%Adjusted EBITDA2,630 59 2,689 7,843 189 8,032Adjusted EBITDA margin (Adjusted EBITDA divided by service revenues)37% 1% 38% 38% 1% 39%
+
+
+Liquidity and Capital Resources
+
+Our principal sources of liquidity are our cash and cash equivalents and cash generated from operations, proceeds from issuance of long-term debt, capital leases, common and preferred stock, the sale of certain receivables, financing arrangements of vendor payables which effectively extend payment terms and secured and unsecured revolving credit facilities with DT.
+
+Cash Flows
+
+The following is an analysis of our cash flows for three and nine months ended September 30, 2017 and 2016:
+Three Months Ended September 30, Change Nine Months Ended September 30, Change(in millions)2017 2016 $ % 2017 2016 $ %Net cash provided by operating activities$2,362 $1,740 $622 36 % $5,904 $4,533 $1,371 30 %Net cash used in investing activities(1,455) (1,859) 404 (22)% (10,138) (4,386) (5,752) 131 %Net cash (used in) provided by financing activities(349) (67) (282) 421 % (527) 623 (1,150) (185)%
+
+Operating Activities
+
+Net cash provided by operating activities increased $622 million, or 36%, for the three months ended and $1.4 billion, or 30%, for the nine months ended September 30, 2017, compared to the same periods in 2016.•Higher net income and higher non-cash adjustments to net income and a lower net use from working capital changes.•Higher Net income and higher non-cash adjustments to net income including from lower Gains on disposal of spectrum licenses and Depreciation and amortization. In total, changes in working capital were relatively flat as improvements in Accounts payable and accrued liabilities and Inventories were partially offset by changes in Equipment installment plan receivables. The change in EIP receivables was primarily due to a decrease in net cash proceeds from the sale of EIP receivables as the nine months ended September 30, 2016 benefited from net cash proceeds of $366 million primarily related to upsizing of the EIP securitization facility as well as an increase in devices financed on EIP.
+
+The change for the three months ended September 30, 2017 was primarily from:
+
+
+The change for the nine months ended September 30, 2017 was primarily from:
+
+
+
+50
+
+Table of Contents
+
+Investing Activities
+
+Net cash used in investing activities decreased $404 million for the three months ended and increased $5.8 billion for the nine months ended September 30, 2017.•A $690 million decrease in Purchases of spectrum licenses and other intangible assets, including deposits; partially offset by•A $282 million increase in Purchases of property and equipment, including capitalized interest. •A $3.0 billion decrease in Sales of short-term investments; •A $2.3 billion increase in Purchases of spectrum licenses and other intangible assets, including deposits, primarily driven by our winning bid for 1,525 licenses in the 600 MHz spectrum auction during the second quarter of 2017; and •A $473 million increase in Purchases of property and equipment, including capitalized interest.
+
+The change for the three months ended September 30, 2017 was primarily from:
+
+
+The change for the nine months ended September 30, 2017 was primarily from:
+
+
+Financing Activities
+
+Net cash provided by and used in financing activities increased $282 million to a use of $349 million in the three months ended and increased $1.2 billion to a use of $527 million in the nine months ended September 30, 2017.The use of cash in the three months ended September 30, 2017 was primarily from: •$1.7 billion for Repayments of our revolving credit facility; partially offset by•$1.1 billion in Proceeds from borrowing on our revolving credit facility; and •$500 million in Proceeds from issuance of long-term debt.The use of cash in the nine months ended September 30, 2017 was primarily from: •$10.2 billion for Repayments of long-term debt;•$2.9 billion for Repayments of our revolving credit facility; •$350 million for Repayments of capital lease obligations; and •$296 million for Repayments of short-term debt for purchases of inventory, property and equipment, net; partially offset by •$10.5 billion in Proceeds from issuance of long-term debt; and •$2.9 billion in Proceeds from borrowing on our revolving credit facility.
+
+
+
+
+
+Cash and Cash Equivalents
+
+As of September 30, 2017, our Cash and cash equivalents were $739 million.
+
+Free Cash Flow
+
+Free Cash Flow represents net cash provided by operating activities less payments for purchases of property and equipment. Free Cash Flow is a non-GAAP financial measure utilized by our management, investors and analysts of T-Mobile’s financial information to evaluate cash available to pay debt and provide further investment in the business.The following table illustrates the calculation of Free Cash Flow and reconciles Free Cash Flow to Net cash provided by operating activities, which we consider to be the most directly comparable GAAP financial measure:
+
+
+51
+
+Table of Contents
+
+Three Months Ended September 30, Change Nine Months Ended September 30, Change(in millions)2017 2016 $ % 2017 2016 $ %Net cash provided by operating activities$2,362 $1,740 $622 36% $5,904 $4,533 $1,371 30%Cash purchases of property and equipment(1,441) (1,159) (282) 24% (4,316) (3,843) (473) 12%Free Cash Flow$921 $581 $340 59% $1,588 $690 $898 130%
+
+Free Cash Flow increased $340 million for the three months ended and $898 million for the nine months ended September 30, 2017 primarily from higher net cash provided by operating activities due to working capital changes, as described above, partially offset by higher purchases of property and equipment primarily due to new site development and capacity expansion.
+
+Debt
+
+As of September 30, 2017, our total debt was $28.3 billion, excluding our tower obligations, of which $27.7 billion was classified as long-term debt.The following table sets forth the debt balances and activity as of, and for the nine months ended, September 30, 2017:
+
+(in millions)December 31, 2016 Issuances and Borrowings (1) Note Redemptions (1) Extinguishments (1) Repayments Other (2) September 30, 2017Short-term debt$354 $— $— $(20) $— $224 $558Long-term debt21,832 1,495 (8,365) (1,947) — 148 13,163Total debt to third parties22,186 1,495 (8,365) (1,967) — 372 13,721Short-term debt to affiliates— 2,910 — — (2,910) — —Long-term debt to affiliates5,600 8,985 — — — 1 14,586Total debt to affiliates5,600 11,895 — — (2,910) 1 14,586Total debt$27,786 $13,390 $(8,365) $(1,967) $(2,910) $373 $28,307
+(1) Issuances and borrowings, note redemptions and extinguishments are recorded net of related issuance costs, discounts and premiums. Issuances and borrowings for Short-term debt to affiliates represent net outstanding borrowings on our senior secured revolving credit facility.(2) Other includes: $299 million issuances of short-term debt related to vendor financing arrangements, of which $291 million is related to financing of property and equipment. During the nine months ended September 30, 2017, we repaid $296 million under the vendor financing arrangements. As of September 30, 2017, vendor financing arrangements totaled $3 million. Vendor financing arrangements are included in Short-term debt within Total current liabilities in our Condensed Consolidated Balance Sheets. Additional activity in Other includes capital leases and the amortization of discounts and premiums. As of September 30, 2017 and December 31, 2016, capital lease liabilities totaled $1.8 billion and $1.4 billion, respectively.
+
+Debt to Third Parties
+
+Issuances and Borrowings
+
+During the nine months ended September 30, 2017, we issued the following Senior Notes:
+(in millions)Principal Issuances Issuance Costs Net Proceeds from Issuance of Long-Term Debt4.000% Senior Notes due 2022$500 $2 $4985.125% Senior Notes due 2025500 2 4985.375% Senior Notes due 2027500 1 499Total of Senior Notes Issued$1,500 $5 $1,495
+
+On March 16, 2017, T-Mobile USA and certain of its affiliates, as guarantors, issued a total of $1.5 billion of public Senior Notes with various interest rates and maturity dates. Issuance costs related to the public debt issuance totaled $5 million for the nine months ended September 30, 2017. We used the net proceeds of $1.495 billion from the transaction to redeem callable high yield debt.
+
+
+52
+
+Table of Contents
+
+Notes Redemptions
+
+During the nine months ended September 30, 2017, we made the following note redemptions:
+(in millions)Principal Amount Write-off of Premiums, Discounts and Issuance Costs (1) Call Penalties (1) (2) Redemption Date Redemption Price 6.625% Senior Notes due 2020$1,000 $(45) $22 February 10, 2017 102.208%5.250% Senior Notes due 2018500 1 7 March 4, 2017 101.313%6.250% Senior Notes due 20211,750 (71) 55 April 1, 2017 103.125%6.464% Senior Notes due 20191,250 — — April 28, 2017 100.000%6.542% Senior Notes due 20201,250 — 21 April 28, 2017 101.636%6.633% Senior Notes due 20211,250 — 41 April 28, 2017 103.317%6.731% Senior Notes due 20221,250 — 42 April 28, 2017 103.366%Total note redemptions$8,250 $(115) $188
+(1)Write-off of premiums, discounts, issuance costs and call penalties are included in Other income (expense), net in our Condensed Consolidated Statements of Comprehensive Income. Write-off of premiums, discounts and issuance costs are included in Other, net within Net cash provided by operating activities in our Condensed Consolidated Statements of Cash Flows.(2)The call penalty is the excess paid over the principal amount. Call penalties are included within Net cash provided by operating activities in our Condensed Consolidated Statements of Cash Flows.
+
+Debt to Affiliates
+
+Issuances and Borrowings
+
+During the nine months ended September 30, 2017, we made the following borrowings:
+(in millions)Net Proceeds From Issuance of Long-Term Debt Extinguishments Write-off of Discounts and Issuance Costs (1)LIBOR plus 2.00% Senior Secured Term Loan due 2022$2,000 $— $—LIBOR plus 2.00% Senior Secured Term Loan due 20242,000 — —LIBOR plus 2.750% Senior Secured Term Loan (2)— (1,980) 13Total$4,000 $(1,980) $13
+(1) Write-off of discounts and issuance costs are included in Other income (expense), net in our Condensed Consolidated Statements of Comprehensive Income and Other, net within Net cash provided by operating activities in our Condensed Consolidated Statements of Cash Flows.(2) Our Senior Secured Term Loan extinguished during the nine months ended September 30, 2017 was Third Party debt. On January 25, 2017, T-Mobile USA, Inc. (“T-Mobile USA”), and certain of its affiliates, as guarantors, entered into an agreement to borrow $4.0 billion under a secured term loan facility (“Incremental Term Loan Facility”) with DT, our majority stockholder, to refinance $1.98 billion of outstanding senior secured term loans under its Term Loan Credit Agreement dated November 9, 2015, with the remaining net proceeds from the transaction used to redeem callable high yield debt. The Incremental Term Loan Facility increased DT’s incremental term loan commitment provided to T-Mobile USA under that certain First Incremental Facility Amendment dated as of December 29, 2016, from $660 million to $2.0 billion and provided T-Mobile USA with an additional $2.0 billion incremental term loan commitment.On January 31, 2017, the loans under the Incremental Term Loan Facility were drawn in two tranches: (i) $2.0 billion of which bears interest at a rate equal to a per annum rate of LIBOR plus a margin of 2.00% and matures on November 9, 2022, and (ii) $2.0 billion of which bears interest at a rate equal to a per annum rate of LIBOR plus a margin of 2.25% and matures on January 31, 2024. In July 2017, we repriced the $2.0 billion Incremental Term Loan Facility maturing on January 31, 2024, with DT by reducing the interest rate to a per annum rate of LIBOR plus a margin of 2.00%. No issuance fees were incurred related to this debt agreement for the nine months ended September 30, 2017.On March 31, 2017, the Incremental Term Loan Facility was amended to waive all interim principal payments. The outstanding principal balance will be due at maturity.During the nine months ended September 30, 2017, we issued the following Senior Notes to DT:
+
+
+
+
+
+53
+
+Table of Contents
+
+(in millions)Principal Issuances (Redemptions) Discounts (1) Net proceeds from issuance of long-term debt4.000% Senior Notes due 2022$1,000 $(23) $9775.125% Senior Notes due 20251,250 (28) 1,2225.375% Senior Notes due 2027 (2)1,250 (28) 1,2226.288% Senior Reset Notes due 2019(1,250) — (1,250)6.366% Senior Reset Notes due 2020(1,250) — (1,250)Total$1,000 $(79) $921
+(1) Discounts reduce Proceeds from issuance of long-term debt and are included within Net cash (used in) provided by financing activities in our Condensed Consolidated Statements of Cash Flows.(2)In April 2017, we issued to DT $750 million in aggregate principal amount of the 5.375% Senior Notes due 2027, and in September 2017, we issued to DT the remaining $500 million in aggregate principal amount of the 5.375% Senior Notes due 2027.On March 13, 2017, DT agreed to purchase a total of $3.5 billion in aggregate principal amounts of Senior Notes with various interest rates and maturity dates (the “new DT Notes”).Through net settlement in April 2017, we issued to DT a total of $3.0 billion in aggregate principal amount of the new DT Notes and redeemed the $2.5 billion in outstanding aggregate principal amount of Senior Reset Notes with various interest rates and maturity dates (the “old DT Notes”).The redemption prices of the old DT Notes were 103.144% and 103.183%, resulting in a total of $79 million in early redemption fees. These early redemption fees were recorded as discounts on the issuance of the new DT Notes.In September 2017, we issued to DT $500 million in aggregate principal amount of 5.375% Senior Notes due 2027, which is the final tranche of the new DT Notes. We were not required to pay any underwriting fees or issuance costs in connection with the issuance of the notes.Net proceeds from the issuance of the new DT Notes were $921 million and are included in Proceeds from issuance of long-term debt in our Condensed Consolidated Statements of Cash Flows.On May 9, 2017, we exercised our option under existing purchase agreements and issued the following Senior Notes to DT:
+
+
+
+
+
+
+(in millions)Principal Issuances Premium Net proceeds from issuance of long-term debt5.300% Senior Notes due 2021$2,000 $— $2,0006.000% Senior Notes due 20241,350 40 1,3906.000% Senior Notes due 2024650 24 674Total$4,000 $64 $4,064
+
+The proceeds were used to fund a portion of the purchase price of spectrum licenses won in the 600 MHz spectrum auction. Net proceeds from these issuances include $64 million in debt premiums. See Note 5 - Spectrum License Transactions for further information.
+
+Revolving Credit Facility
+
+We had no outstanding borrowings under our $1.5 billion senior secured revolving credit facility with DT as of September 30, 2017 and December 31, 2016. Proceeds and borrowings from the revolving credit facility are presented in Proceeds from borrowing on revolving credit facility and Repayments of revolving credit facility within Net cash (used in) provided by financing activities in our Condensed Consolidated Statements of Cash Flows.We could seek additional sources of liquidity, including through the issuance of additional long-term debt in 2017, to continue to opportunistically acquire spectrum licenses or other assets in private party transactions or for the refinancing of existing long-term debt on an opportunistic basis. Excluding liquidity that could be needed for spectrum acquisitions or other assets, we expect our principal sources of funding to be sufficient to meet our anticipated liquidity needs for business operations for the next 12 months. Our intended use of any such funds is for general corporate purposes, including for capital expenditures, spectrum purchases, opportunistic investments and acquisitions and redemption of high yield callable debt.We determine future liquidity requirements, for both operations and capital expenditures, based in large part upon projected financial and operating performance, and opportunities to acquire additional spectrum. We regularly review and update these projections for changes in current and projected financial and operating results, general economic conditions, the competitive landscape and other factors. There are a number of risks and uncertainties that could cause our financial and operating results and capital requirements to differ materially from our projections, which could cause future liquidity to differ materially from our assessment.The indentures and credit facilities governing our long-term debt to affiliates and third parties, excluding capital leases, contain covenants that, among other things, limit the ability of the Issuer and the Guarantor Subsidiaries to: incur more debt; pay dividends and make distributions on our common stock; make certain investments; repurchase stock; create liens or other encumbrances; enter into transactions with affiliates; enter into transactions that restrict dividends or distributions from subsidiaries; and merge, consolidate, or sell, or otherwise dispose of, substantially all of their assets. Certain provisions of each of the credit facilities, indentures and supplemental indentures relating to the long-term debt to affiliates and third parties restrict the ability of the Issuer to loan funds or make payments to the Parent. However, the Issuer is allowed to make certain permitted payments to the Parent under the terms of each of the credit facilities, indentures and supplemental indentures relating to the long-term debt to affiliates and third parties. We were in compliance with all restrictive debt covenants as of September 30, 2017.
+
+
+54
+
+Table of Contents
+
+
+
+
+Capital Lease Facilities
+
+We have entered into uncommitted capital lease facilities with certain partners, which provide us with the ability to enter into capital leases for network equipment and services. As of September 30, 2017, we have committed to $2.0 billion of capital leases under these capital lease facilities, of which $138 million and $735 million was executed during the three and nine months ended September 30, 2017, respectively. We expect to enter into up to an additional $165 million in capital lease commitments during 2017.
+
+Capital Expenditures
+
+Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses and the construction, expansion and upgrading of our network infrastructure. Property and equipment capital expenditures primarily relate to our network transformation, including the build out of 700 MHz A-Block spectrum licenses. We expect cash purchases of property and equipment to be in the range of $4.8 billion to $5.1 billion in 2017, excluding capitalized interest. We expect to be at the high end of the range. This does not include property and equipment obtained through capital lease agreements, leased wireless devices transferred from inventory or any additional purchases of spectrum licenses.In April 2017, the Federal Communications Commission (the “FCC”) announced that we were the winning bidder of 1,525 licenses in the 600 MHz spectrum auction for an aggregate price of $8.0 billion. At the inception of the auction in June 2016, we deposited $2.2 billion with the FCC which, based on the outcome of the auction, was sufficient to cover our down payment obligation due in April 2017. In May 2017, we paid the FCC the remaining $5.8 billion of the purchase price using cash reserves and by issuing debt to Deutsche Telekom AG (“DT”), our majority stockholder, pursuant to existing debt purchase commitments. See Note 7 - Debt of the Notes to the Condensed Consolidated Financial Statements for further information.The $5.8 billion payment of the purchase price is included in Purchases of spectrum licenses and other intangible assets, including deposits within Net cash used in investing activities in our Condensed Consolidated Statements of Cash Flows. The licenses are included in Spectrum licenses as of September 30, 2017, on our Condensed Consolidated Balance Sheets. We began deployment of these licenses on our network in the third quarter of 2017. See Note 5 - Spectrum License Transactions of the Notes to the Condensed Consolidated Financial Statements for additional details.
+
+
+
+
+Off-Balance Sheet Arrangements
+
+In 2015, we entered into an arrangement, as amended, to sell certain EIP accounts receivable on a revolving basis through November 2017 as an additional source of liquidity. In August 2017, the arrangement was amended to reduce the maximum funding commitment to $1.2 billion and extend the scheduled expiration date to November 2018. In 2014, we entered into an arrangement, as amended, to sell certain service accounts receivable on a revolving basis through March 2017 as an additional source of liquidity. In November 2016, the arrangement was amended to increase the maximum funding commitment to $950 million and extend the scheduled expiration date to March 2018. As of September 30, 2017, T-Mobile derecognized net receivables of $2.4 billion upon sale through these arrangements. See Note 4 – Sales of Certain Receivables of the Notes to the Condensed Consolidated Financial Statements.
+
+55
+
+Table of Contents
+
+
+
+Related-Party Transactions
+
+During the nine months ended September 30, 2017, we entered into certain debt related transactions with affiliates. See Note 7 – Debt of the Notes to the Condensed Consolidated Financial Statements for additional details.We also have related party transactions associated with DT or its affiliates in the ordinary course of business, including intercompany servicing and licensing.
+
+
+Disclosure of Iranian Activities under Section 13(r) of the Securities Exchange Act of 1934
+
+Section 219 of the Iran Threat Reduction and Syria Human Rights Act of 2012 added Section 13(r) to the Exchange Act of 1934, as amended (“Exchange Act”). Section 13(r) requires an issuer to disclose in its annual or quarterly reports, as applicable, whether it or any of its affiliates knowingly engaged in certain activities, transactions or dealings relating to Iran or with designated natural persons or entities involved in terrorism or the proliferation of weapons of mass destruction. Disclosure is required even where the activities, transactions or dealings are conducted outside the U.S. by non-U.S. affiliates in compliance with applicable law, and whether or not the activities are sanctionable under U.S. law.As of the date of this report, we are not aware of any activity, transaction or dealing by us or any of our affiliates for the three months ended September 30, 2017, that requires disclosure in this report under Section 13(r) of the Exchange Act, except as set forth below with respect to affiliates that we do not control and that are our affiliates solely due to their common control with DT. We have relied upon DT for information regarding their activities, transactions and dealings.DT, through certain of its non-U.S. subsidiaries, is party to roaming and interconnect agreements with the following mobile and fixed line telecommunication providers in Iran, some of which are or may be government-controlled entities: Gostaresh Ertebatat Taliya, Irancell Telecommunications Services Company (“MTN Irancell”), Telecommunication Kish Company, Mobile Telecommunication Company of Iran, and Telecommunication Infrastructure Company of Iran. For the three months ended September 30, 2017, gross revenues of all DT affiliates generated by roaming and interconnection traffic with Iran were less than $1.0 million and estimated net profits were less than $1.0 million.In addition, DT, through certain of its non-U.S. subsidiaries, operating a fixed line network in their respective European home countries (in particular Germany), provides telecommunications services in the ordinary course of business to the Embassy of Iran in those European countries. Gross revenues and net profits recorded from these activities for the three months ended September 30, 2017 were less than $0.1 million. We understand that DT intends to continue these activities.
+
+
+
+
+
+Critical Accounting Policies and Estimates
+
+Preparation of our consolidated financial statements in accordance with U.S. GAAP requires us to make estimates and assumptions that affect the reported amounts of certain assets, liabilities, revenues and expenses, as well as related disclosure of contingent assets and liabilities. There have been no material changes to the critical accounting policies and estimates as previously disclosed in Part II, Item 8 of our Annual Report on Form 10-K for the year ended December 31, 2016.
+
+
+Accounting Pronouncements Not Yet Adopted
+
+See Note 1 – Basis of Presentation of the Notes to the Condensed Consolidated Financial Statements.
+
+
+Item 3. Quantitative and Qualitative Disclosures About Market Risk
+
+
+There have been no material changes to the interest rate risk as previously disclosed in Part II, Item 7A of our Annual Report on Form 10-K for the year ended December 31, 2016.
+
+
+Item 4. Controls and Procedures
+
+Evaluation of Disclosure Controls and Procedures
+
+We maintain disclosure controls and procedures designed to ensure information required to be disclosed in our periodic reports filed or submitted under the Exchange Act, is recorded, processed, summarized and reported within the time periods specified in the SEC’s rules and forms. Our disclosure controls are also designed to ensure that information required to be disclosed in the reports we file or submit under the Exchange Act is accumulated and communicated to our management, including our principal executive officer and principal financial officer, as appropriate, to allow timely decisions regarding required disclosure.Under the supervision and with the participation of our management, including our Chief Executive Officer and our Chief Financial Officer, we carried out an evaluation of the effectiveness of the design and operation of our disclosure controls and procedures, as defined in Rules 13a-15(e) and 15d-15(e) under the Exchange Act. Based upon that evaluation, our Chief Executive Officer and Chief Financial Officer concluded that our disclosure controls and procedures were effective, as of the end of the period covered by this Form 10-Q.The certifications required by Section 302 of the Sarbanes-Oxley Act of 2002 are filed as exhibits 31.1 and 31.2, respectively, to this Form 10-Q.
+
+56
+
+Table of Contents
+
+
+
+
+Changes in Internal Control over Financial Reporting
+
+There were no changes in our internal control over financial reporting, as defined in Rules 13a-15(f) and 15d-15(f) of the Exchange Act, during our most recently completed fiscal quarter that materially affected or are reasonably likely to materially affect our internal control over financial reporting.
+
+
+PART II. OTHER INFORMATION
+
+
+Item 1. Legal Proceedings
+
+See Note 10 - Commitments and Contingencies of the Notes to the Condensed Consolidated Financial Statements included in Part I, Item 1 of this Form 10-Q for information regarding certain legal proceedings in which we are involved.
+
+
+Item 1A. Risk Factors
+
+There have been no material changes in our risk factors as previously disclosed in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2016.
+
+
+Item 2. Unregistered Sales of Equity Securities and Use of Proceeds
+
+None.
+
+
+Item 3. Defaults Upon Senior Securities
+
+None.
+
+
+Item 4. Mine Safety Disclosures
+
+None.
+
+
+Item 5. Other Information
+
+None.
+
+
+Item 6. Exhibits
+
+See the Index to Exhibits immediately following this page.
+
+
+57
+
+
+Table of Contents
+
+INDEX TO EXHIBITS
+Incorporated by Reference  Exhibit No. Exhibit Description Form Date of First Filing Exhibit Number Filed/Furnished Herewith10.1 Fourth Amendment, dated as of July 25, 2017, to the Term Loan Credit Agreement, dated as of November 9, 2015, as amended, among T-Mobile USA, Inc., the lenders party thereto and Deutsche Bank AG New York Branch, as administrative agent and collateral agent. 8-K 7/27/2017 10.1 10.2 Second Amended and Restated Receivables Sale Agreement, dated as of August 21, 2017, by and between T-Mobile Financial LLC, as seller, and T-Mobile Handset Funding LLC, as purchaser.    X10.3 Second Amended and Restated Receivables Purchase and Administration Agreement, dated as of August 21, 2017, by and among T-Mobile Handset Funding LLC, as transferor, T-Mobile Financial LLC, as servicer, T-Mobile US, Inc. as performance guarantor, Royal Bank of Canada, as administrative agent, and certain financial institutions party thereto from time to time.    X31.1 Certifications of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002.    X31.2 Certifications of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002.    X32.1* Certification of Chief Executive Officer Pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.    X32.2* Certification of Chief Financial Officer Pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.    X101.INS XBRL Instance Document.    X101.SCH XBRL Taxonomy Extension Schema Document.    X101.CAL XBRL Taxonomy Extension Calculation Linkbase Document.    X101.DEF XBRL Taxonomy Extension Definition Linkbase Document.    X101.LAB XBRL Taxonomy Extension Label Linkbase Document.    X101.PRE XBRL Taxonomy Extension Presentation Linkbase Document.    X
+* Furnished herewith.
+
+
+58
+
+
+Table of Contents
+
+SIGNATURE
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned thereunto duly authorized.  T-MOBILE US, INC.     October 23, 2017 /s/ J. Braxton Carter   J. Braxton CarterExecutive Vice President and Chief Financial Officer (Principal Financial Officer and Authorized Signatory)
+
+
+
+59

@@ -1,0 +1,791 @@
+10-Q
+1
+tmus06302014form10-q.htm
+TMUS FORM 10-Q
+html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"
+Document created using Wdesk 1
+Copyright 2014 Workiva
+TMUS 06/30/2014 FORM 10-Q
+
+
+
+
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+WASHINGTON, D.C. 20549
+
+FORM 10-Q
+
+xQUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the quarterly period ended June 30, 2014
+or
+¨TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the transition period from     to
+
+Commission File Number: 1-33409
+
+T-MOBILE US, INC.
+(Exact name of registrant as specified in its charter)
+
+DELAWARE 20-0836269(State or other jurisdiction of incorporation or organization)  (I.R.S. Employer Identification No.)   12920 SE 38th Street, Bellevue, Washington 98006-1350(Address of principal executive offices) (Zip Code)   (425) 378-4000(Registrant’s telephone number, including area code)
+
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes x No ¨
+
+Indicate by check mark whether the registrant has submitted electronically and posted on its corporate Web site, if any, every Interactive Data File required to be submitted and posted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit and post such files).  Yes x No ¨
+
+Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, or a smaller reporting company. See the definitions of large accelerated filer, accelerated filer and smaller reporting company in Rule 12b-2 of the Exchange Act.
+
+Large accelerated filer     x                        Accelerated filer             ¨
+Non-accelerated filer     ¨ (Do not check if a smaller reporting company)     Smaller reporting company     ¨
+
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).
+Yes ¨ No x
+
+Indicate the number of shares outstanding of each of the issuer’s classes of common stock, as of the latest practicable date.
+Class Shares Outstanding as of July 28, 2014Common Stock, $0.00001 par value per share 807,165,830
+
+
+
+
+
+
+T-Mobile US, Inc.
+Form 10-Q
+For the Quarter Ended June 30, 2014
+
+Table of Contents
+
+PART I.  FINANCIAL INFORMATION Item 1.Financial Statements3 Condensed Consolidated Balance Sheets3 Condensed Consolidated Statements of Comprehensive Income (Loss)4 Condensed Consolidated Statements of Cash Flows5 Notes to the Condensed Consolidated Financial Statements6Item 2.Management’s Discussion and Analysis of Financial Condition and Results of Operations24Item 3.Quantitative and Qualitative Disclosures About Market Risk36Item 4.Controls and Procedures37PART II.  OTHER INFORMATION Item 1.Legal Proceedings37Item 1A.Risk Factors38Item 2.Unregistered Sales of Equity Securities and Use of Proceeds38Item 3.Defaults Upon Senior Securities38Item 4.Mine Safety Disclosures 38Item 5.Other Information38Item 6.Exhibits38 SIGNATURE39
+
+
+
+
+
+
+
+
+
+
+
+2
+
+
+Table of Contents
+
+PART I. FINANCIAL INFORMATION
+
+
+Item 1. Financial Statements
+
+
+T-Mobile US, Inc.
+Condensed Consolidated Balance Sheets
+(Unaudited)
+
+(in millions, except share and per share amounts)June 30, 2014 December 31, 2013Assets   Current assets   Cash and cash equivalents$3,080 $5,891Accounts receivable, net of deferred interest and allowances of $473 and $3813,939 3,619Accounts receivable from affiliates87 41Inventory791 586Current portion of deferred tax assets, net820 839Other current assets1,179 1,252Total current assets9,896 12,228Property and equipment, net of accumulated depreciation of $21,137 and $19,64915,537 15,349Goodwill1,683 1,683Spectrum licenses21,828 18,122Other intangible assets, net of accumulated amortization of $643 and $4761,040 1,204Other assets1,680 1,367Total assets$51,664 $49,953Liabilities and Stockholders' Equity   Current liabilities   Accounts payable and accrued liabilities$5,555 $4,567Current payables and short-term debt to affiliates236 199Short-term debt272 244Deferred revenue447 445Other current liabilities621 353Total current liabilities7,131 5,808Long-term debt to affiliates5,600 5,600Long-term debt14,369 14,345Long-term financial obligation2,502 2,496Deferred tax liabilities4,757 4,645Deferred rents2,237 2,113Other long-term liabilities505 701Total long-term liabilities29,970 29,900Commitments and contingencies Stockholders' equity   Preferred stock, par value $0.00001 per share, 100,000,000 shares authorized; no shares issued and outstanding— —Common stock, par value $0.00001 per share, 1,000,000,000 shares authorized; 808,508,529 and 803,262,309 shares issued, 807,126,024 and 801,879,804 shares outstanding— —Additional paid-in capital37,411 37,330Treasury stock, at cost, 1,382,505 and 1,382,505 shares issued— —Accumulated other comprehensive income— 3Accumulated deficit(22,848) (23,088)Total stockholders' equity14,563 14,245Total liabilities and stockholders' equity$51,664 $49,953
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+3
+
+
+Table of Contents
+
+T-Mobile US, Inc.
+Condensed Consolidated Statements of Comprehensive Income (Loss)
+(Unaudited)
+
+Three Months Ended June 30, Six Months Ended June 30,(in millions, except shares and per share amounts)2014 2013 2014 2013Revenues       Branded postpaid revenues$3,511 $3,284 $6,958 $6,547Branded prepaid revenues1,736 1,242 3,384 1,745Wholesale revenues172 143 346 293Roaming and other service revenues65 87 133 177Total service revenues5,484 4,756 10,821 8,762Equipment sales1,600 1,379 3,048 1,984Other revenues101 93 191 159Total revenues7,185 6,228 14,060 10,905Operating expenses       Cost of services, exclusive of depreciation and amortization shown separately below1,453 1,327 2,917 2,436Cost of equipment sales2,215 1,936 4,501 2,822Selling, general and administrative2,151 1,847 4,247 3,353Depreciation and amortization1,129 888 2,184 1,643MetroPCS transaction and integration costs22 26 34 39Restructuring costs— 23 — 54Other, net(747) — (757) (2)Total operating expenses6,223 6,047 13,126 10,345Operating income 962 181 934 560Other income (expense)       Interest expense to affiliates(85) (225) (103) (403)Interest expense(271) (109) (547) (160)Interest income83 40 158 75Other income (expense), net(12) 118 (18) 112Total other expense, net(285) (176) (510) (376)Income before income taxes677 5 424 184Income tax expense 286 21 184 93Net income (loss)$391 $(16) $240 $91Other comprehensive income (loss), net of tax       Net gain on cross currency interest rate swaps, net of tax effect of $0, $39, $0, and $13 — 66 — 23Net loss on foreign currency translation, net of tax effect of $0, ($62), $0 and ($37)— (104) — (62)Unrealized loss on available-for-sale securities, net of tax effect of $0, $0, ($1) and $0 — — (3) —Other comprehensive loss, net of tax— (38) (3) (39)Total comprehensive income (loss)$391 $(54) $237 $52Earnings (loss) per share       Basic$0.49 $(0.02) $0.30 $0.15Diluted0.48 (0.02) 0.30 0.15Weighted average shares outstanding       Basic803,923,913 664,603,682 803,226,194 600,302,111Diluted813,556,137 664,603,682 812,903,135 601,694,911
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+
+4
+
+
+Table of Contents
+
+T-Mobile US, Inc.
+Condensed Consolidated Statements of Cash Flows
+(Unaudited)
+
+Six Months Ended June 30,(in millions)2014 2013Operating activities   Net cash provided by operating activities$1,729 $1,715    Investing activities   Purchases of property and equipment(1,887) (2,126)Purchases of spectrum licenses and other intangible assets(2,367) (51)Short term affiliate loan receivable, net— 300Cash and cash equivalents acquired in MetroPCS business combination— 2,144Investments in unconsolidated affiliates, net(20) —Other, net(1) (5)Net cash provided by (used in) investing activities(4,275) 262    Financing activities   Repayments of short-term debt for purchases of property and equipment(231) —Repayments related to a variable interest entity— (40)Distribution to affiliate— (41)Taxes paid related to net share settlement of stock awards(72) —Excess tax benefit from stock-based compensation33 3Proceeds from exercise of stock options23 72Other, net(18) (3)Net cash used in financing activities(265) (9)    Change in cash and cash equivalents(2,811) 1,968Cash and cash equivalents   Beginning of period5,891 394End of period$3,080 $2,362
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+5
+
+
+Table of Contents
+
+T-Mobile US, Inc.
+Notes to the Condensed Consolidated Financial Statements
+
+
+Note 1 – Basis of Presentation
+
+The unaudited condensed consolidated financial statements of T-Mobile US, Inc. (“T-Mobile” or the “Company”) include all adjustments of a normal recurring nature necessary for the fair presentation of the results for the interim periods presented.  The results for the interim periods are not necessarily indicative of those for the full year.  The condensed consolidated financial statements should be read in conjunction with the Company’s consolidated financial statements included in the Annual Report on Form 10-K for the year ended December 31, 2013.The condensed consolidated financial statements include the balances and results of operations of T-Mobile and its consolidated subsidiaries.  T-Mobile consolidates all majority-owned subsidiaries over which it exercises control, as well as variable interest entities (“VIE”) where it is deemed to be the primary beneficiary and VIEs which cannot be deconsolidated.  Intercompany transactions and balances have been eliminated in consolidation.The preparation of financial statements in conformity with accounting principles generally accepted in the United States of America (“GAAP”) requires management to make estimates and assumptions that affect the financial statements and accompanying notes.  Actual results could differ from those estimates.
+
+
+
+Recently Issued Accounting Standards
+
+In May 2014, the Financial Accounting Standards Board (“FASB”) issued Accounting Standards Update (“ASU”) 2014-09, “Revenue from Contracts with Customers.”  The standard requires entities to recognize revenue through the application of a five-step model, which includes identification of the contract, identification of the performance obligations, determination of the transaction price, allocation of the transaction price to the performance obligations, and recognition of revenue as the entity satisfies the performance obligations.  The standard will become effective for T-Mobile beginning January 1, 2017.  The Company is currently evaluating the guidance to determine the potential impact on T-Mobile’s financial condition, results of operations and cash flows, and financial statement disclosures.
+
+
+Note 2 – Acquisitions and Other Transactions
+
+Spectrum License Transactions
+
+In January 2014, T-Mobile entered into agreements with Verizon Communications Inc. (“Verizon”) for the acquisition of 700 MHz A-Block spectrum licenses for cash and the transfer of certain Advanced Wireless Service (“AWS”) and Personal Communications Service (“PCS”) spectrum licenses.  Upon closing of the transaction in April 2014, T-Mobile paid Verizon $2.4 billion in cash and transferred certain AWS and PCS spectrum licenses.  T-Mobile recorded the 700 MHz A-Block spectrum licenses received at their fair value of $3.7 billion.  In addition, T-Mobile recognized a non-cash gain of $517 million included in other, net for the three and six months ended June 30, 2014. In November 2013, the Company entered into an agreement with Verizon to exchange certain AWS and PCS spectrum licenses.  Upon closing of the transaction in April 2014, T-Mobile transferred certain AWS and PCS spectrum licenses to Verizon.  T-Mobile recorded the AWS and PCS spectrum licenses received at their fair value of $792 million.  In addition, T-Mobile recognized a non-cash gain of $214 million included in other, net for the three and six months ended June 30, 2014.
+
+
+Factoring Arrangement
+
+Transaction Overview
+
+In February 2014, T-Mobile entered into a two-year factoring arrangement to sell certain service accounts receivable on a revolving basis, subject to a maximum funding limit of $500 million.  Sales of receivables occur daily and are settled on a monthly basis.  The receivables consist of service charges currently due from customers and are short-term in nature.  In connection with the factoring arrangement, the Company formed a wholly-owned subsidiary, which qualifies as a bankruptcy remote special purpose entity (“Factoring SPE”).  Pursuant to the factoring arrangement, certain subsidiaries of T-Mobile transfer selected receivables to the Factoring SPE.  The Factoring SPE then sells the receivables to an unaffiliated entity (“Factoring VIE”), which was established to facilitate the sale of ownership interest in the receivables to certain third parties.
+
+
+6
+
+Table of Contents
+
+Variable Interest Entity
+
+The Company determined the Factoring VIE is a VIE as it lacks sufficient equity to finance its activities.  The Company has a variable interest in the Factoring VIE, but is not the primary beneficiary as it lacks the power to direct the activities that most significantly impact the Factoring VIE’s economic performance.  As the Company has determined it is not the primary beneficiary and does not hold any equity interest, the results of the Factoring VIE are not consolidated into the Company’s condensed consolidated financial statements.
+
+Sales of Receivables
+
+The sales of receivables through the factoring arrangement are treated as sales of financial assets.  Upon sale, T-Mobile derecognizes the receivables, as well as the related allowances, and recognizes the net proceeds in cash provided by operating activities.  As of June 30, 2014, T-Mobile derecognized net receivables of $611 million through the factoring arrangement.  For the six months ended June 30, 2014, T-Mobile received net cash proceeds of $468 million.  The proceeds were net of a receivable for the remainder of the purchase price (“deferred purchase price”), which is received from collections on the service receivables.  The deferred purchase price is classified as a trading security and carried at fair value with unrealized gains and losses from changes in fair value included in selling, general and administrative expense.  The fair value of the deferred purchase price was determined based on a discounted cash flow model which uses unobservable inputs (Level 3 inputs), including customer default rates.  Due to the short-term nature of the underlying financial assets, the carrying value approximated fair value.  As of June 30, 2014, other current assets related to the factoring arrangement, which were held by the Factoring SPE and primarily consisted of the deferred purchase price, were $236 million.  In addition, T-Mobile recognized an obligation to the Factoring VIE primarily related to the timing of settlements for the sales of receivables through the factoring arrangement.  As of June 30, 2014, accounts payable and accrued liabilities and other current liabilities related to the factoring arrangement, which were held by the Factoring SPE, were $101 million and $23 million, respectively.Net expenses resulting from the sales of receivables are recognized in selling, general and administrative expense.  Prior to the sales of receivables, T-Mobile recognizes impairment charges, rather than bad debt expense, to reduce the receivables to fair value for estimated losses resulting from uncollectible balances.  Net expenses also include any resulting gains or losses from the sales of receivables, unrealized gains and losses related to the deferred purchase price, and factoring fees.  For the three and six months ended June 30, 2014, T-Mobile recognized net expenses of $77 million and $90 million, respectively.
+
+
+
+Continuing Involvement
+
+T-Mobile has continuing involvement with the sold receivables as it services the receivables and is required to repurchase certain receivables, including aged receivables and receivables where write-off is imminent, pursuant to the factoring arrangement.  T-Mobile will continue to service the customer and their related receivables, including facilitating customer payment collection, in exchange for a monthly servicing fee.  As the receivables are sold on a revolving basis, the customer payment collections are reinvested in new receivable sales.  While servicing the receivables the same policies and procedures are applied to the sold receivables that apply to owned receivables, and T-Mobile continues to maintain normal relationships with its customers.  In addition, T-Mobile has continuing involvement related to the sold receivables as it may be responsible for absorbing additional credit losses pursuant to the agreement.  The Company’s maximum exposure to loss related to the involvement with the Factoring VIE was $440 million as of June 30, 2014.  The maximum exposure to loss, which is required disclosure under GAAP, represents an estimated loss that would be incurred under severe, hypothetical circumstances whereby the Company would not receive the portion of the contractual proceeds withheld by the Factoring VIE and would also be required to repurchase the maximum amount of receivables pursuant to the agreement without consideration for any recovery.  As T-Mobile believes the probability of these circumstances occurring is very remote, the maximum exposure to loss is not an indication of the Company’s expected loss.
+
+
+Short-term Debt
+
+In June 2014, the Company entered into a handset financing arrangement with affiliates of Deutsche Bank AG which allows for up to $108 million in borrowings.  Under the arrangement, the Company can effectively extend payment terms for invoices payable to certain handset vendors.  The interest rate on the financing arrangement will be determined based on LIBOR plus a specified margin per the arrangement.  Obligations under the financing arrangement will be included in short-term debt.  As of June 30, 2014, there was no outstanding balance.
+
+7
+
+Table of Contents
+
+Transaction with MetroPCS
+
+On April 30, 2013, the business combination involving T-Mobile USA, Inc. (“T-Mobile USA”) and MetroPCS Communications, Inc. (“MetroPCS”) was completed.  In connection with the business combination, MetroPCS acquired all of the outstanding capital stock of T-Mobile USA beneficially owned by Deutsche Telekom AG (“Deutsche Telekom”) in consideration for the issuance of shares of common stock representing a majority of the fully diluted shares of the combined company.  MetroPCS was subsequently renamed T-Mobile US, Inc. and is the consolidated parent of the Company’s subsidiaries, including T-Mobile USA.  The business combination was accounted for as a reverse acquisition with T-Mobile USA as the accounting acquirer.  Accordingly, T-Mobile USA’s historical financial statements became the historical financial statements of the combined company.  The common shares outstanding and earnings (loss) per share presented for periods up to April 30, 2013 reflect the common shares issued to T-Mobile Global Holding GmbH, an indirect wholly-owned subsidiary of Deutsche Telekom, in connection with the reverse acquisition.  Additionally, the acquired assets and liabilities of MetroPCS were included in the condensed consolidated balance sheets as of April 30, 2013 and the results of its operations and cash flows are included in the condensed consolidated statements of comprehensive income (loss) and cash flows for periods beginning after May 1, 2013.
+
+
+Note 3 – Equipment Installment Plan Receivables
+
+T-Mobile offers certain retail customers the option to pay for their devices and other purchases in installments over a period of up to 24 months using an Equipment Installment Plan (“EIP”).  The carrying values of EIP receivables approximate fair value as the receivables are recorded at their present value, net of the deferred interest and additional allowance for credit losses.  At the time of sale, the Company imputes interest, inclusive of credit risk, on the EIP receivables and records the deferred interest as a reduction to equipment sales and as an allowance against the related accounts receivable.  Interest income is recognized over the financed installment term.The following table summarizes the EIP receivables:
+
+(in millions)June 30, 2014 December 31, 2013EIP receivables, gross$4,029 $2,882Deferred interest(320) (276)EIP receivables, net of deferred interest3,709 2,606Allowance for credit losses(126) (60)EIP receivables, net$3,583 $2,546 Classified on the balance sheet as:   Accounts receivable, net$2,190 $1,471Other assets1,393 1,075EIP receivables, net$3,583 $2,546
+
+Based upon customer credit profiles, T-Mobile classifies EIP receivables into the credit categories of “Prime” and “Subprime”.  T-Mobile uses proprietary scoring systems that measure the credit quality of the EIP receivables using several factors, such as credit bureau information, consumer credit risk scores and service plan characteristics.  Prime customer receivables are those with lower delinquency risk and Subprime customer receivables are those with higher delinquency risk.  Customers within the Subprime category may be required to pay a significant down payment on their equipment purchases.  In addition, certain customers within the Subprime category are required to pay an advance deposit.The balance and aging of the EIP receivables on a gross basis by credit category were as follows:
+
+June 30, 2014 December 31, 2013(in millions)Prime Subprime Total Prime Subprime TotalUnbilled$2,058 $1,798 $3,856 $1,482 $1,270 $2,752Billed - Current59 60 119 45 45 90Billed - Past Due20 34 54 15 25 40EIP receivables, gross$2,137 $1,892 $4,029 $1,542 $1,340 $2,882
+
+EIP receivables for which invoices have not yet been generated for the customer are classified as Unbilled.  EIP receivables for which invoices have been generated but which are not past the contractual due date are classified as Billed - Current.  EIP receivables for which invoices have been generated and the payment is past the contractual due date are classified as Billed - Past Due.  T-Mobile maintains an additional allowance for credit losses exceeding the credit risk recorded as deferred interest.  The allowance is based on a number of factors, including collection experience, aging of the accounts receivable portfolio, credit quality of the customer base, and other qualitative factors such as macro-economic conditions.  T-Mobile writes off account balances if collection efforts were unsuccessful and future collection is unlikely based on customer credit ratings and the length of time from the original billing date.  Equipment sales that are not reasonably assured to be collectible are recorded on a cash basis as payments are received.Activity in the deferred interest and allowance for credit losses for the EIP receivables was as follows:
+
+8
+
+Table of Contents
+
+
+
+(in millions)June 30, 2014Deferred interest and allowance for credit losses, beginning of period$336Bad debt expense187Write-offs, net of recoveries(121)Change in deferred interest on short-term and long-term EIP receivables44Deferred interest and allowance for credit losses, end of period$446
+
+Deferred interest and allowance for credit losses includes the long-term portion of deferred interest of $64 million as of June 30, 2014 and December 31, 2013, respectively.
+
+
+Note 4 – Fair Value Measurements and Derivative Instruments
+
+Derivative Financial Instruments
+
+Embedded Derivatives
+
+In connection with the business combination with MetroPCS, T-Mobile issued senior reset notes to Deutsche Telekom.  The interest rates are adjusted at the reset dates to rates defined in the applicable supplemental indentures to manage interest rate risk related to the senior reset notes.  The Company determined certain components of the reset feature are required to be bifurcated from the senior reset notes and separately accounted for as embedded derivative instruments not designated as hedges.  T-Mobile held five embedded derivatives as of June 30, 2014 and December 31, 2013, respectively.  The embedded derivatives are carried at fair value with unrealized gains and losses from changes in fair value included in interest expense to affiliates.  The fair value of the embedded derivatives was determined using a lattice-based valuation model by determining the fair value of the senior reset notes with and without the embedded derivatives included.  The fair value of the senior reset notes with the embedded derivatives utilizes the contractual term of each senior reset note, reset rates calculated based on the spread between specified yield curves and the yield curve on T-Mobile long-term debt adjusted pursuant to the applicable supplemental indentures, and interest rate volatility.  Interest rate volatility is a significant unobservable input (Level 3) as it is derived based on weighted risk-free rate volatility and credit spread volatility.  Significant increases or decreases in the weighting of risk-free volatility and credit spread volatility, in isolation, would result in a higher or lower fair value of the embedded derivatives.  The embedded derivatives were classified as Level 3 in the fair value hierarchy.
+
+
+Interest Rate Swaps
+
+Prior to the closing of the business combination with MetroPCS, T-Mobile managed interest rate risk related to its long-term debt to affiliates by entering into interest rate swap agreements.  T-Mobile held seven interest rate swaps with a total notional amount of $3.6 billion as of December 31, 2012.  These interest rate swap agreements were not designated as hedging instruments.  In April 2013, prior to the closing of the business combination with MetroPCS, Deutsche Telekom recapitalized T-Mobile by retiring the existing T-Mobile long-term debt to affiliates and all related derivative instruments, which included the interest rate swaps.  The related balance in accumulated other comprehensive income (“AOCI”) was reclassified into net income (loss).  As of June 30, 2014 and December 31, 2013, there were no outstanding interest rate swaps.
+
+
+
+9
+
+Table of Contents
+
+Cross Currency Interest Rate Swaps
+
+Prior to the closing of the business combination with MetroPCS, T-Mobile managed foreign currency risk along with interest rate risk through cross currency interest rate swap agreements related to its intercompany Euro denominated long-term debt to affiliates, which were entered into upon assumption of the notes to fix the future interest and principal payments in U.S. dollars, as well as to mitigate the impact of foreign currency transaction gains or losses over the terms of the long-term debt to affiliates extending to 2025.  T-Mobile had three cross currency interest rate swaps with a total notional amount of $2.3 billion as of December 31, 2012.  These cross currency interest rate swaps were designated as cash flow hedges and met the criteria for hedge accounting.  The hedges were evaluated as highly effective prior to the closing of the business combination with MetroPCS, thus no gains (losses) were recognized due to hedge ineffectiveness.  In April 2013, prior to the closing of the business combination with MetroPCS, Deutsche Telekom recapitalized T-Mobile by retiring the existing T-Mobile long-term debt to affiliates and all related derivative instruments, which included cross currency interest rate swaps.  The related balance in AOCI was reclassified into net income (loss).  As of June 30, 2014 and December 31, 2013, there were no outstanding cross currency interest rate swaps. Fair values of derivative instruments measured on a recurring basis by level were as follows:
+
+
+Balance Sheet Location June 30, 2014(in millions) Level 1 Level 2 Level 3 TotalEmbedded derivativesOther current assets $— $— $14 $14Embedded derivativesOther assets — — 27 27
+
+Balance Sheet Location December 31, 2013(in millions) Level 1 Level 2 Level 3 TotalEmbedded derivativesOther long-term liabilities $— $— $13 $13
+
+The following table summarizes the activity related to derivatives instruments:
+Three Months Ended June 30, Six Months Ended June 30,(in millions)2014 2013 2014 2013Gain (loss) recognized in other comprehensive loss:       Cross currency interest rate swaps$— $57 $— $(17)Gain (loss) recognized in interest expense to affiliates:       Embedded derivatives(7) (5) 54 (5)Interest rate swaps— 6 — 8Cross currency interest rate swaps— 48 — 53
+
+Long-term Debt
+
+The fair value of the Company’s long-term debt to affiliates was determined based on a discounted cash flow approach which considers the future cash flows discounted at current rates.  The approach includes an estimate for the stand-alone credit risk of T-Mobile.  The Company’s long-term debt to affiliates were classified as Level 2 in the fair value hierarchy.  The fair value of the Company’s long-term debt to third parties was determined based on quoted market prices in active markets, and therefore are classified as Level 1 in the fair value hierarchy.  The carrying amounts and fair values of the Company’s long-term debt were as follows:
+
+June 30, 2014 December 31, 2013(in millions)Carrying Amount Fair Value Carrying Amount Fair ValueLong-term debt to affiliates$5,600 $6,025 $5,600 $5,866Long-term debt to third parties principal, excluding capital leases13,600 14,597 13,600 14,251
+
+Although the Company has determined the estimated fair value amounts using available market information and commonly accepted valuation methodologies, considerable judgment is required in interpreting market data to develop fair value estimates for the long-term debt.  The fair value estimates are based on information available as of June 30, 2014 and December 31, 2013.  As such, the Company’s estimates are not necessarily indicative of the amount that the Company could realize in a current market exchange.
+
+10
+
+Table of Contents
+
+
+
+Note 5 – Commitments and Contingencies
+
+Purchase Commitments
+
+T-Mobile has commitments to purchase handsets, network services, equipment, software, marketing sponsorship agreements and other items in the ordinary course of business, with various terms through 2018.  These amounts are not reflective of the Company’s entire anticipated purchases under the related agreements, but are determined based on the non-cancelable quantities or termination amounts to which the Company was contractually obligated.  During the second quarter of 2014, T-Mobile entered into significant new commitments for the purchase of network services, equipment and software.Future minimum payments for non-cancelable purchase commitments, excluding non-dedicated transportation lines, are summarized below:
+
+(in millions)Purchase CommitmentsTwelve Months Ending June 30, 2015$1,38920161,69120171,25720182420192Thereafter—Total$4,363
+
+Guarantee Liabilities
+
+T-Mobile offers a handset upgrade program, Just Upgrade My Phone (“JUMP!”), that provides eligible customers a specified-price trade-in right to upgrade their handset.  Participating customers must finance their handset using an EIP.  Upon upgrading, the customer will receive a credit for up to 50% of their initially financed EIP balance provided they trade in their eligible used handset in good working condition and purchase a new handset from T-Mobile.For customers who enroll in the trade-in programs, the Company defers the portion of equipment sales revenue which represents the estimated value of the specified-price trade-in right guarantee.  The guarantee liabilities are valued based on various economic and customer behavioral assumptions, including the customer's estimated remaining EIP balance at trade-in, the expected fair value of the used handset at trade-in, and the probability and timing of trade-in.  When the customer upgrades their handset, the difference between the trade-in credit to the customer and the fair value of the returned handset is recorded against the guarantee liabilities.  Guarantee liabilities included in other current liabilities were $298 million and $191 million as of June 30, 2014 and December 31, 2013, respectively.  The estimated EIP receivable balance if all enrolled handset upgrade program customers were to claim their benefit, not including any trade-in value of the required used handset, was $2.1 billion as of June 30, 2014.  This is not an indication of the Company’s expected loss exposure because it does not consider the expected fair value of the used handset, which is required to be in good working condition at trade-in, nor does it consider the probability and timing of trade-in.
+
+
+Contingencies and Litigation
+
+T-Mobile is involved in various lawsuits, regulatory proceedings, and other similar matters, including class actions and intellectual property claims, including patent infringement claims, that arise in the ordinary course of business.  Specifically, T-Mobile faces actual and potential litigation and other legal and regulatory proceedings that challenge customer billing and other business practices, and seek awards of damages, restitution, injunctive relief, and/or penalties.  T-Mobile has established an accrual with respect to certain of these matters, where appropriate, which is reflected in the condensed consolidated financial statements but that T-Mobile does not consider, individually or in the aggregate, significant.  An accrual is established when T-Mobile believes it is both probable that a loss has been incurred and an amount can be reasonably estimated.  For other matters, where the Company has not determined that a loss is probable or because the amount of loss cannot be reasonably estimated, the Company has not recorded an accrual due to various factors typical in contested proceedings, including but not limited to:  uncertainty concerning legal theories and their resolution by courts or regulators; uncertain damage theories and demands; and a less than fully developed factual record.  While T-Mobile does not expect that the ultimate resolution of these proceedings, individually or in the aggregate, including the Federal Trade Commission (“FTC”) litigation and related matters described below, will have a material adverse effect on the Company’s financial position, an unfavorable outcome of some or all of these proceedings could have a material adverse impact on results of operations or cash flows for a particular period.  This assessment is based on T-Mobile’s current understanding of relevant facts and circumstances.  As such, T-Mobile’s view of these matters is subject to inherent uncertainties and may change in the future.As T-Mobile has previously disclosed, state Attorneys General and other government agencies have engaged in investigations and inquiries regarding third-party billing, a practice sometimes referred to as “cramming”, and are seeking restitution and changes in business practices.  In particular, these investigations and inquiries have focused on alleged unauthorized billing for premium Short Message Service (“SMS”) content.  Premium SMS content was provided to customers by third parties that sent text alerts on topics of interest, such as weather and sports scores, and ringtones.  T-Mobile, along with the other major wireless carriers, stopped billing for these services in late 2013.  In June 2014, T-Mobile announced a comprehensive refund program, under which T-Mobile will notify current and former customers who paid for premium SMS content and have not already received a refund how to request a summary of these charges and a refund for those charges customers assert to have been unauthorized.  T-Mobile recognized the estimated cost of the refund program as a reduction to service revenues during the second quarter of 2014.On July 1, 2014, the FTC filed a lawsuit alleging that T-Mobile allowed third-party merchants to include unauthorized premium SMS content charges on customer bills, and seeking restitution and changes in business practices (Federal Trade Commission v. T-Mobile USA, Inc., Case No. 2:14-cv-00967-JLR, W.D. Washington). This complaint does not seek a specified sum as monetary relief.  In addition, the Federal Communications Commission (“FCC”) and other government agencies have begun investigations and inquiries regarding billing for premium SMS content.  Although it is reasonably possible that T-Mobile may incur losses relating to the alleged unauthorized billing of customers for premium SMS content in excess of the amount already recognized in connection with the comprehensive refund program described above, T-Mobile cannot reasonably estimate the amount of the possible loss or the range of loss, if any, which may result from these matters given the procedural status of the disputes, the legal issues presented, T-Mobile’s legal and factual defenses, the inherent difficulty in predicting the potential for or amount of regulatory fines and penalties, and the various remedies and levels of judicial review available to T-Mobile in the event a monetary award, fine or penalty is assessed.  T-Mobile is vigorously defending these proceedings.
+
+11
+
+Table of Contents
+
+
+
+
+
+Note 6 – Additional Financial Information
+
+Supplemental Balance Sheet Information
+
+Cash and Cash Equivalents
+
+T-Mobile is required to restrict cash equivalents as collateral for certain agreements.  Restricted cash equivalents included in other current assets were $100 million as of June 30, 2014 and December 31, 2013, respectively.
+
+Accumulated Other Comprehensive Income
+
+There were no significant effects on net income (loss) of amounts reclassified from AOCI for the three and six months ended June 30, 2014.  The following table presents the effects on net income (loss) of amounts reclassified from AOCI (in millions):
+
+
+12
+
+Table of Contents
+
+Amount Reclassified from AOCI to IncomeAOCI Component Location Three Months Ended June 30, 2013 Six Months Ended June 30, 2013Cross Currency Interest Rate Swaps Interest expense to affiliates $(48) $(53)  Income tax effect 18 20  Net of tax (30) (33)       Foreign Currency Translation Other income, net 166 166  Income tax effect (62) (62)  Net of tax 104 104       Total reclassifications, net of tax   $74 $71
+
+Supplemental Statements of Comprehensive Income (Loss) Information
+
+Earnings (Loss) Per Share
+
+The computation of basic and diluted earnings (loss) per share was as follows:
+Three Months Ended June 30, Six Months Ended June 30,(in millions, except shares and per share amounts)2014 2013 2014 2013Basic and Diluted Earnings (Loss) Per Share:       Net income (loss)$391 $(16) $240 $91        Weighted average shares outstanding - basic803,923,913 664,603,682 803,226,194 600,302,111Dilutive effect of outstanding stock options and awards9,632,224 — 9,676,941 1,392,800Weighted average shares outstanding - diluted813,556,137 664,603,682 812,903,135 601,694,911        Earnings (loss) per share - basic$0.49 $(0.02) $0.30 $0.15Earnings (loss) per share - diluted0.48 (0.02) 0.30 0.15
+
+Potentially dilutive securities were not included in the computation of diluted earnings (loss) per share for certain periods if to do so would have been antidilutive.  For the three months ended June 30, 2014, potentially dilutive outstanding stock options of 1,631,748 and unvested stock awards of 65,108 as of June 30, 2014 were excluded.  As the Company incurred a net loss for the three months ended June 30, 2013, all outstanding stock options of 11,319,269 and unvested stock awards of 22,911,491 as of June 30, 2013 were excluded.  For the six months ended June 30, 2014 and 2013, potentially dilutive outstanding stock options of 1,631,748 and 8,460,878 and unvested stock awards of 87,816 and 22,911,491 as of June 30, 2014 and 2013, respectively, were excluded.  Unvested performance stock units were based on the number of shares ultimately expected to vest based on T-Mobile’s business performance against the specified performance goal.
+
+
+13
+
+Table of Contents
+
+Supplemental Statements of Cash Flows Information
+
+The following table summarizes T-Mobile’s supplemental cash flows information:
+Six Months Ended June 30,(in millions)2014 2013Interest and income tax payments:   Interest payments$639 $583Income tax payments23 14Noncash investing and financing activities:   Increase in accounts payable for purchases of property and equipment56 173Short-term debt outstanding for financing of property and equipment purchases250 193Retirement of long-term debt to affiliates— 14,450Elimination of net unamortized discounts and premiums on long-term debt to affiliates— 434Issuance of new long-term debt to affiliates— 11,200Settlement of accounts receivable from affiliates and other outstanding balances— 363Income tax benefit from debt recapitalization— 178Net assets acquired in MetroPCS business combination, excluding cash acquired— 827
+
+
+Note 7 – Guarantor Financial Information
+
+Pursuant to the applicable indentures and supplemental indentures, the long-term debt, excluding capital leases, issued by T-Mobile USA (“Issuer”) is fully and unconditionally guaranteed, jointly and severally, on a senior unsecured basis by T-Mobile (“Parent”) and certain of the Issuer’s wholly owned subsidiaries (“Guarantor Subsidiaries”).  The guarantees of the Guarantor Subsidiaries are subject to release in limited circumstances only upon the occurrence of certain customary conditions.  The indentures governing the long-term debt contain covenants that, among other things, limit the ability of the Issuer and the Guarantor Subsidiaries to: incur more debt; pay dividends and make distributions; make certain investments; repurchase stock; create liens or other encumbrances; enter into transactions with affiliates; enter into transactions that restrict dividends or distributions from subsidiaries; and merge, consolidate, or sell, or otherwise dispose of, substantially all of their assets.  Certain provisions of each of the indentures and the supplemental indentures relating to the long-term debt restrict the ability of the Issuer to loan funds or make payments to Parent.  However, the Issuer and Guarantor Subsidiaries are allowed to make certain permitted payments to the Parent under the terms of the indentures and the supplemental indentures.  In February 2014, T-Mobile entered into a factoring arrangement to sell certain service accounts receivable on a revolving basis.  In connection with the factoring arrangement, the Company formed the Factoring SPE, which is included in the Non-Guarantor Subsidiaries condensed consolidating financial information.  See Note 2 – Acquisitions and Other Transactions for further information regarding the factoring arrangement.In April 2014, Parent contributed $1.7 billion of cash to the Issuer in connection with the Verizon 700 MHz A-Block spectrum license acquisition.  The transaction was recorded as an equity contribution and reflected in investments in subsidiaries, net on the Parent’s condensed consolidating balance sheet information.  In addition, the contribution was presented as an investing activity from the Parent to the Issuer in the condensed consolidating statement of cash flows information. Presented below is the condensed consolidating financial information as of June 30, 2014 and December 31, 2013 and for the three and six months ended June 30, 2014 and 2013, respectively.   As the business combination was treated as a “reverse acquisition” and the Issuer was treated as the accounting acquirer, the Issuer’s historical financial statements are the historical financial statements of Parent for comparative purposes.  As a result the Parent column only reflects activity in the condensed consolidating financial statements presented below for periods subsequent to the consummation of the business combination on April 30, 2013.  The equity method of accounting is used to account for ownership interests in subsidiaries, where applicable.
+
+
+
+
+
+14
+
+Table of Contents
+
+Condensed Consolidating Balance Sheet Information
+As of June 30, 2014
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedAssets           Current assets           Cash and cash equivalents$1,288 $1,500 $61 $231 $— $3,080Accounts receivable, net— — 3,782 157 — 3,939Accounts receivable from affiliates— — 87 — — 87Inventory— — 791 — — 791Current portion of deferred tax assets, net— — 805 15 — 820Other current assets— 14 909 256 — 1,179Total current assets1,288 1,514 6,435 659 — 9,896Property and equipment, net of accumulated depreciation— — 14,982 555 — 15,537Goodwill— — 1,683 — — 1,683Spectrum licenses— — 21,828 — — 21,828Other intangible assets, net of accumulated amortization— — 1,040 — — 1,040Investments in subsidiaries, net13,455 29,942 112 — (43,509) —Intercompany receivables— 2,172 — — (2,172) —Other assets2 50 1,618 82 (72) 1,680Total assets$14,745 $33,678 $47,698 $1,296 $(45,753) $51,664Liabilities and Stockholders' Equity           Current liabilities           Accounts payable and accrued liabilities$— $334 $4,907 $314 $— $5,555Current payables and short-term debt to affiliates— 56 180 — — 236Short-term debt— 250 22 — — 272Deferred revenue— — 447 — — 447Other current liabilities— — 598 23 — 621Total current liabilities— 640 6,154 337 — 7,131Long-term debt to affiliates— 5,600 — — — 5,600Long-term debt— 13,983 386 — — 14,369Long-term financial obligation— — 367 2,135 — 2,502Deferred tax liabilities— — 4,829 — (72) 4,757Deferred rents— — 2,237 — — 2,237Negative carrying value of subsidiaries, net— — 804 — (804) —Intercompany payables182 — 1,929 61 (2,172) —Other long-term liabilities— — 505 — — 505 Total long-term liabilities182 19,583 11,057 2,196 (3,048) 29,970Total stockholders' equity14,563 13,455 30,487 (1,237) (42,705) 14,563Total liabilities and stockholders' equity$14,745 $33,678 $47,698 $1,296 $(45,753) $51,664
+
+
+15
+
+Table of Contents
+
+Condensed Consolidating Balance Sheet Information
+As of December 31, 2013
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedAssets           Current assets           Cash and cash equivalents$2,960 $2,698 $57 $176 $— $5,891Accounts receivable, net— — 3,541 78 — 3,619Accounts receivable from affiliates— — 41 — — 41Inventory— — 586 — — 586Current portion of deferred tax assets, net— — 824 15 — 839Other current assets— — 1,250 2 — 1,252Total current assets2,960 2,698 6,299 271 — 12,228Property and equipment, net of accumulated depreciation— — 14,754 595 — 15,349Goodwill— — 1,683 — — 1,683Spectrum licenses— — 18,122 — — 18,122Other intangible assets, net of accumulated amortization— — 1,204 — — 1,204Investments in subsidiaries, net11,484 29,123 — — (40,607) —Intercompany receivables— — 418 — (418) —Other assets2 24 1,292 93 (44) 1,367Total assets$14,446 $31,845 $43,772 $959 $(41,069) $49,953Liabilities and Stockholders' Equity           Current liabilities           Accounts payable and accrued liabilities$— $273 $4,218 $76 $— $4,567Current payables and short-term debt to affiliates— 56 143 — — 199Short-term debt— 226 18 — — 244Deferred revenue— — 445 — — 445Other current liabilities— — 313 40 — 353Total current liabilities— 555 5,137 116 — 5,808Long-term debt to affiliates— 5,600 — — — 5,600Long-term debt— 14,010 335 — — 14,345Long-term financial obligation— — 365 2,131 — 2,496Deferred tax liabilities— — 4,689 — (44) 4,645Deferred rents— — 2,113 — — 2,113Negative carrying value of subsidiaries, net— — 779 — (779) —Intercompany payables201 183 — 34 (418) —Other long-term liabilities— 13 688 — — 701 Total long-term liabilities201 19,806 8,969 2,165 (1,241) 29,900Total stockholders' equity14,245 11,484 29,666 (1,322) (39,828) 14,245Total liabilities and stockholders' equity$14,446 $31,845 $43,772 $959 $(41,069) $49,953
+
+
+16
+
+Table of Contents
+
+Condensed Consolidating Statement of Comprehensive Income (Loss) Information
+Three Months Ended June 30, 2014
+
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedRevenues           Service revenues$— $— $5,259 $323 $(98) $5,484Equipment sales— — 1,768 — (168) 1,600Other revenues— — 70 34 (3) 101Total revenues— — 7,097 357 (269) 7,185Operating expenses           Cost of services— — 1,447 6 — 1,453Cost of equipment sales— — 2,188 207 (180) 2,215Selling, general and administrative— — 2,116 124 (89) 2,151Depreciation and amortization— — 1,108 21 — 1,129MetroPCS transaction and integration costs— — 22 — — 22Restructuring costs— — — — — —Other, net— — (747) — — (747)Total operating expenses— — 6,134 358 (269) 6,223Operating income (loss)— — 963 (1) — 962Other income (expense)            Interest expense to affiliates— (85) — — — (85)Interest expense— (212) (15) (44) — (271)Interest income— — 83 — — 83Other income (expense), net— (14) 2 — — (12)Total other income (expense), net— (311) 70 (44) — (285)Income (loss) before income taxes— (311) 1,033 (45) — 677Income tax expense (benefit)— — 306 (20) — 286Earnings (loss) of subsidiaries391 702 (12) — (1,081) —Net income (loss)391 391 715 (25) (1,081) 391Other comprehensive loss, net of tax— — — — — —Total comprehensive income (loss)$391 $391 $715 $(25) $(1,081) $391
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17
+
+Table of Contents
+
+Condensed Consolidating Statement of Comprehensive Income (Loss) Information
+Three Months Ended June 30, 2013
+
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedRevenues           Service revenues$— $— $4,591 $191 $(26) $4,756Equipment sales— — 1,542 — (163) 1,379Other revenues— — 85 44 (36) 93Total revenues— — 6,218 235 (225) 6,228Operating expenses           Cost of services— — 1,342 21 (36) 1,327Cost of equipment sales— — 1,994 122 (180) 1,936Selling, general and administrative— — 1,821 35 (9) 1,847Depreciation and amortization— — 867 21 — 888MetroPCS transaction and integration costs— — 26 — — 26Restructuring costs— — 23 — — 23Total operating expenses— — 6,073 199 (225) 6,047Operating income — — 145 36 — 181Other income (expense)           Interest expense to affiliates— (225) — — — (225)Interest expense— (53) (13) (43) — (109)Interest income— — 40 — — 40Other income (expense), net— 120 (2) — — 118Total other income (expense), net— (158) 25 (43) — (176)Income (loss) before income taxes— (158) 170 (7) — 5Income tax expense (benefit)— — 28 (7) — 21Earnings (loss) of subsidiaries(47) 142 (15) — (80) —Net income (loss)(47) (16) 127 — (80) (16)Other comprehensive income (loss), net of tax— (38) 23 — (23) (38)Total comprehensive income (loss)$(47) $(54) $150 $— $(103) $(54)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18
+
+Table of Contents
+
+Condensed Consolidating Statement of Comprehensive Income (Loss) Information
+Six Months Ended June 30, 2014
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedRevenues           Service revenues$— $— $10,409 $588 $(176) $10,821Equipment sales— — 3,365 — (317) 3,048Other revenues— — 128 68 (5) 191Total revenues— — 13,902 656 (498) 14,060Operating expenses           Cost of services— — 2,907 10 — 2,917Cost of equipment sales— — 4,501 345 (345) 4,501Selling, general and administrative— — 4,176 224 (153) 4,247Depreciation and amortization— — 2,143 41 — 2,184MetroPCS transaction and integration costs— — 34 — — 34Other, net— — (757) — — (757)Total operating expenses— — 13,004 620 (498) 13,126Operating income— — 898 36 — 934Other income (expense)            Interest expense to affiliates— (103) — — — (103)Interest expense— (426) (33) (88) — (547)Interest income— — 158 — — 158Other income (expense), net— (22) 4 — — (18)Total other income (expense), net— (551) 129 (88) — (510)Income (loss) before income taxes— (551) 1,027 (52) — 424Income tax expense (benefit)— — 206 (22) — 184Earnings (loss) of subsidiaries240 791 (27) — (1,004) —Net income (loss)240 240 794 (30) (1,004) 240Other comprehensive loss, net of tax(3) (3) (3) — 6 (3)Total comprehensive income (loss)$237 $237 $791 $(30) $(998) $237
+
+
+19
+
+Table of Contents
+
+Condensed Consolidating Statement of Comprehensive Income (Loss) Information
+Six Months Ended June 30, 2013
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedRevenues           Service revenues$— $— $8,447 $367 $(52) $8,762Equipment sales— — 2,308 — (324) 1,984Other revenues— — 141 86 (68) 159Total revenues— — 10,896 453 (444) 10,905Operating expenses           Cost of services— — 2,464 40 (68) 2,436Cost of equipment sales— — 2,926 251 (355) 2,822Selling, general and administrative— — 3,303 71 (21) 3,353Depreciation and amortization— — 1,602 41 — 1,643MetroPCS transaction and integration costs— — 39 — — 39Restructuring costs— — 54 — — 54Other, net— — (2) — — (2)Total operating expenses— — 10,386 403 (444) 10,345Operating income — — 510 50 — 560Other income (expense)           Interest expense to affiliates— (403) — — — (403)Interest expense— (54) (20) (86) — (160)Interest income— — 75 — — 75Other income (expense), net— 114 (2) — — 112Total other income (expense), net— (343) 53 (86) — (376)Income (loss) before income taxes— (343) 563 (36) — 184Income tax expense (benefit)— — 109 (16) — 93Earnings (loss) of subsidiaries(47) 434 (29) — (358) —Net income (loss)(47) 91 425 (20) (358) 91Other comprehensive income (loss), net of tax— (39) 24 — (24) (39)Total comprehensive income (loss)$(47) $52 $449 $(20) $(382) $52
+
+
+
+
+
+
+
+20
+
+Table of Contents
+
+Condensed Consolidating Statement of Cash Flows Information
+Six Months Ended June 30, 2014
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedOperating activities           Net cash provided by (used in) operating activities$5 $(2,898) $4,567 $55 $— $1,729            Investing activities           Purchases of property and equipment— — (1,887) — — (1,887)Purchases of spectrum licenses and other intangible assets— — (2,367) — — (2,367)Investment in subsidiaries(1,700) — — — 1,700 —Investments in unconsolidated affiliates, net— — (20) — — (20)Other, net— — (1) — — (1)Net cash used in investing activities(1,700) — (4,275) — 1,700 (4,275)            Financing activities           Proceeds from capital contribution— 1,700 — — (1,700) —Repayments of short-term debt for purchases of property and equipment— — (231) — — (231)Taxes paid related to net share settlement of stock awards— — (72) — — (72)Excess tax benefit from stock-based compensation— — 33 — — 33Proceeds from exercise of stock options23 — — — — 23Other, net— — (18) — — (18)Net cash provided by (used in) financing activities23 1,700 (288) — (1,700) (265)            Change in cash and cash equivalents(1,672) (1,198) 4 55 — (2,811)Cash and cash equivalents           Beginning of period2,960 2,698 57 176 — 5,891End of period$1,288 $1,500 $61 $231 $— $3,080
+
+
+21
+
+Table of Contents
+
+Condensed Consolidating Statement of Cash Flows Information
+Six Months Ended June 30, 2013
+(in millions)Parent Issuer Guarantor Subsidiaries Non-Guarantor Subsidiaries Consolidating and Eliminating Adjustments ConsolidatedOperating activities           Net cash provided by (used in) operating activities$298 $(386) $1,769 $34 $— $1,715            Investing activities           Purchases of property and equipment— — (2,126) — — (2,126)Purchases of spectrum licenses and other intangible assets— — (51) — — (51)Short term affiliate loan receivable, net— — 300 — — 300Cash and cash equivalents acquired in MetroPCS business combination737 1,407 — — — 2,144Other, net— — (5) — — (5)Net cash provided by (used in) investing activities737 1,407 (1,882) — — 262            Financing activities           Repayments related to a variable interest entity— — (40) — — (40)Distribution to affiliate— — (41) — — (41)Excess tax benefit from stock-based compensation— — 3 — — 3Proceeds from exercise of stock options72 — — — — 72Other, net— — (3) — — (3)Net cash provided by (used in) financing activities72 — (81) — — (9)            Change in cash and cash equivalents1,107 1,021 (194) 34 — 1,968Cash and cash equivalents           Beginning of period— — 287 107 — 394End of period$1,107 $1,021 $93 $141 $— $2,362
+
+
+
+
+22
+
+Table of Contents
+
+Note 8 – Subsequent Events
+
+Contingencies and Litigation
+
+In July 2014, the FTC filed a lawsuit against T-Mobile alleging claims related to the inclusion of unauthorized charges by third-party merchants on T-Mobile customer bills.  In addition, the FCC and other government agencies have begun investigations and inquiries regarding third-party billing, such as for premium SMS content.  See Note 5 – Commitments and Contingencies for further information.
+
+Network Decommissioning Costs
+
+Prior to the closing of the business combination, T-Mobile developed integration plans which included the decommissioning of the MetroPCS Code Division Multiple Access (“CDMA”) network and certain other redundant network cell sites.  In July 2014, T-Mobile began decommissioning the MetroPCS CDMA network and redundant network cell sites.  During the second half of 2014, T-Mobile expects to incur network decommissioning costs between $250 million and $300 million for certain cell sites in three major metropolitan markets.  Network decommissioning costs primarily relate to the acceleration of lease costs for cell sites, which will result in cash expenditures that will continue to be made over the remaining lease terms, but for which T-Mobile will no longer receive any economic benefit.  Accrued liabilities for network decommissioning costs will be relieved as payments are made over the remaining lease terms.  Network decommissioning costs will be recognized in MetroPCS transaction and integration costs in the condensed consolidated statements of comprehensive income (loss).  T-Mobile expects to decommission certain cell sites in additional major metropolitan markets in 2015 and 2016.  Currently, T-Mobile is unable to estimate the expected network decommissioning costs and related future cash expenditures for those cell sites due to uncertainties regarding the specific sites to be decommissioned and the timing of such decommissioning.
+
+
+23
+
+
+Table of Contents
+
+Item 2.  Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+Cautionary Statement Regarding Forward-Looking Statements
+
+Certain statements in this report include forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995.  All statements, other than statements of historical fact, including information concerning our possible or assumed future results of operations, are forward-looking statements.  These forward-looking statements are generally identified by the words “anticipates,” “believes,” “estimates,” “expects,” or similar expressions. Forward-looking statements are based on current expectations and assumptions, which are subject to risks and uncertainties and may cause actual results to differ materially from the forward-looking statements.  The following important factors could affect future results and cause those results to differ materially from those expressed in the forward-looking statements:•adverse conditions in the U.S. and international economies or disruptions to the credit and financial markets;•competition in the wireless services market; •the ability to complete and realize expected synergies and other benefits of acquisitions; •the inability to implement our business strategies or ability to fund our wireless operations, including payment for additional spectrum, network upgrades, and technological advancements;•the ability to renew our spectrum licenses on attractive terms or acquire new spectrum licenses;•the ability to manage growth in wireless data services, including network quality and acquisition of adequate spectrum licenses at reasonable costs and terms;•material changes in available technology; •the timing, scope and financial impact of our deployment of 4G Long-Term Evolution (“LTE”) technology; •the impact on our networks and business from major technology equipment failures;•breaches of network or information technology security, natural disasters or terrorist attacks or existing or future litigation and any resulting financial impact not covered by insurance; •any changes in the regulatory environments in which we operate, including any increase in restrictions on the ability to operate our networks; •any disruption of our key suppliers’ provisioning of products or services;  •material adverse changes in labor matters, including labor negotiations or additional organizing activity, and any resulting financial and/or operational impact;•changes in accounting assumptions that regulatory agencies, including the Securities and Exchange Commission (“SEC”), may require or that result from changes in the accounting rules or their application, which could result in an impact on earnings; and,•changes in tax laws, regulations and existing standards and the resolution of disputes with any taxing jurisdictions.      Additional information concerning these and other risk factors is contained in the Risk Factors included in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2013.You should carefully read and consider the cautionary statements contained or referred to in this section in connection with any subsequent written or oral forward-looking statements that may be issued by us or persons acting on our behalf, and all future written and oral forward-looking statements attributable to us are expressly qualified in their entirety by the foregoing cautionary statements.Except as expressly stated, the financial condition and results of operations discussed throughout Management’s Discussion and Analysis of Financial Condition and Results of Operations (“MD&A”) are those of T-Mobile.
+
+
+
+
+
+
+
+Overview
+
+The MD&A is intended to provide a reader of our financial statements with a narrative explanation from the perspective of management of our financial condition, results of operations, liquidity and certain other factors that may affect future results.  The MD&A is provided as a supplement to, and should be read in conjunction with, our Consolidated Financial Statements included in Part II, Item 8 of our Form 10-K for the year ended December 31, 2013.  Unless expressly stated otherwise, the comparisons presented in this MD&A refer to the same period in the prior year.  T-Mobile’s MD&A is presented in the following sections: •Financial Highlights•Other Highlights•Results of Operations•Performance Measures•Liquidity and Capital Resources•Contractual Obligations•Off-Balance Sheet Arrangements•Related Party Transactions•Critical Accounting Policies and Estimates•Recently Issued Accounting Standards
+
+
+24
+
+Table of Contents
+
+
+Financial Highlights
+•Service revenues increased 15% to $5.5 billion for the three months ended June 30, 2014, compared to $4.8 billion for the same period in 2013.  Service revenues increased 23% to $10.8 billion for the six months ended June 30, 2014, compared to $8.8 billion for the same period in 2013.•Total net customer additions were 1,470,000 for the three months ended June 30, 2014, an increase compared to 1,130,000 net customer additions for the same period in 2013.  Total net customer additions were 3,861,000 for the six months ended June 30, 2014, compared to 1,709,000 net customer additions for the same period in 2013.•Branded postpaid phone churn was consistent at 1.5% for the three months ended June 30, 2014 and 2013.  Branded postpaid phone churn was 1.5% for the six months ended June 30, 2014, a 20 basis point improvement compared to 1.7% for the same period in 2013.•Adjusted EBITDA of $1.5 billion for the three months ended June 30, 2014, compared to $1.1 billion for the same period in 2013.  Adjusted EBITDA of $2.5 billion for the six months ended June 30, 2014, compared to $2.3 billion for the same period in 2013.•Cash capital expenditures for property and equipment were $1.9 billion for the six months ended June 30, 2014, compared to $2.1 billion for the same period in 2013.Note: Comparability of results in this Form 10-Q for the three and six months ended June 30, 2014 and 2013 is affected by the inclusion of MetroPCS results after the completion of the business combination on April 30, 2013.
+
+
+Other Highlights
+
+Un-carrier value proposition – In January 2014, we launched phase 4.0 of our Un-carrier value proposition or “Contract Freedom”, which reimburses customers’ early termination fees (“ETF”) when they switch from other carriers and trade in their eligible device.  The reimbursement of ETF is recorded as a reduction of equipment sales revenues, and accordingly had an impact on both revenue and Adjusted EBITDA for the three and six months ended June 30, 2014.  In April 2014, we announced that starting in May, for bills arriving in June, domestic overage charges will be abolished for all customers on our consumer plans.  In June 2014, we launched phase 5.0 of our Un-carrier value proposition, or “T-Mobile Test Drive”, which allows consumers to test our network and an iPhone 5s with unlimited nationwide service for seven days at no charge.  Also, in June 2014, we launched phase 6.0 of our Un-Carrier value proposition, or “Music Freedom”, which allows customers to stream music from popular music services without it counting against their data allotment.  Additionally, as part of phase 6.0 of our Un-carrier value proposition, we launched Rhapsody unRadio in partnership with Rhapsody for a limited time, which allows Simple Choice customers with unlimited 4G data service to stream music at no additional cost.  We are also offering Rhapsody unRadio at a discounted price for our eligible customers.Spectrum purchases – In November 2013 and January 2014, we entered into agreements with Verizon for the acquisition of 700 MHz A-Block, AWS and PCS spectrum licenses in exchange for cash and the transfer of certain AWS and PCS spectrum licenses.  These transactions further enhance our portfolio of U.S. nationwide broadband spectrum and enable the expansion of LTE coverage to new markets.  Upon closing of the transactions in April 2014, we received 700 MHz A-Block, AWS and PCS spectrum licenses and exchanged certain AWS and PCS spectrum licenses.  See Note 2 – Acquisitions and Other Transactions of the Notes to the Condensed Consolidated Financial Statements included in Part 1, Item 1 of this Form 10-Q for more information.Factoring arrangement – In February 2014, we entered into a two-year factoring arrangement to sell certain service accounts receivable on a revolving basis, subject to a maximum funding limit of $500 million at any given time.  See Note 2 – Acquisitions and Other Transactions of the Notes to the Condensed Consolidated Financial Statements included in Part 1, Item 1 of this Form 10-Q for more information.
+
+
+
+25
+
+
+Table of Contents
+
+Results of Operations
+
+Set forth below is a summary of consolidated results:
+Three Months Ended June 30, Six Months Ended June 30,(in millions)2014 2013 % Change 2014 2013 % ChangeRevenues           Branded postpaid revenues$3,511 $3,284 7 % $6,958 $6,547 6 %Branded prepaid revenues1,736 1,242 40 % 3,384 1,745 94 %Wholesale revenues172 143 20 % 346 293 18 %Roaming and other service revenues65 87 (25)% 133 177 (25)%Total service revenues5,484 4,756 15 % 10,821 8,762 23 %Equipment sales1,600 1,379 16 % 3,048 1,984 54 %Other revenues101 93 9 % 191 159 20 %Total revenues7,185 6,228 15 % 14,060 10,905 29 %Operating expenses           Cost of services, exclusive of depreciation and amortization shown separately below1,453 1,327 9 % 2,917 2,436 20 %Cost of equipment sales2,215 1,936 14 % 4,501 2,822 59 %Selling, general and administrative2,151 1,847 16 % 4,247 3,353 27 %Depreciation and amortization1,129 888 27 % 2,184 1,643 33 %MetroPCS transaction and integration costs22 26 (15)% 34 39 (13)%Restructuring costs— 23 NM — 54 NMOther, net(747) — NM (757) (2) NMTotal operating expenses6,223 6,047 3 % 13,126 10,345 27 %Operating income 962 181 NM 934 560 67 %Other income (expense)           Interest expense to affiliates(85) (225) (62)% (103) (403) (74)%Interest expense(271) (109) NM (547) (160) NMInterest income83 40 108 % 158 75 111 %Other income (expense), net(12) 118 NM (18) 112 NMTotal other expense, net(285) (176) 62 % (510) (376) 36 %Income before income taxes677 5 NM 424 184 NMIncome tax expense 286 21 NM 184 93 98 %Net income (loss)$391 $(16) NM $240 $91 NM
+NM – Not Meaningful
+
+Revenues
+
+Branded postpaid revenues increased $227 million, or 7%, for the three months ended and $411 million, or 6%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases were primarily attributable to growth in the number of average branded postpaid customers driven by the continued success of our Un-carrier value proposition along with an increase in revenues from the adoption of upgrade and insurance programs.  These increases were partially offset by lower branded postpaid phone average revenue per user (“ARPU”).  See “Performance Measures” for a description of ARPU.  Branded postpaid phone ARPU was negatively impacted by the growth of our Value and Simple Choice (“Simple Choice”) plans, which have lower monthly service charges compared to traditional bundled plans.  Branded postpaid customers on Value and Simple Choice plans increased over the past twelve months to 80% of the branded postpaid customer base as of June 30, 2014, compared to 50% as of June 30, 2013.  Additionally, non-recurring factors of a reduction in certain regulatory surcharges and a non-recurring revenue adjustment for expected customer refunds on premium SMS content charges together reduced branded postpaid revenues by $43 million for the three months ended June 30, 2014. Branded prepaid revenues increased $494 million, or 40%, for the three months ended and $1.6 billion, or 94%, for the six months ended June 30, 2014, compared to the same periods in 2013, primarily due to the inclusion of MetroPCS operating results since completion of the business combination and the subsequent expansion and growth of the MetroPCS customer base.  Wholesale revenues increased $29 million, or 20%, for the three months ended and $53 million, or 18%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increase was primarily attributable to growth of the average number of Mobile Virtual Network Operator (“MVNO”) customers for the period.  The increase in MVNO customers was primarily from MVNO growth in government subsidized Lifeline programs and monthly plans offered by our MVNO partners. Roaming and other service revenues decreased $22 million, or 25%, for the three months ended and $44 million, or 25%, for the six months ended June 30, 2014, compared to the same periods in 2013, primarily due to a decline in ETFs following our introduction of the no annual service contract feature of the Simple Choice plan launched in March 2013. Equipment sales increased $221 million, or 16%, for the three months ended and $1.1 billion, or 54%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases were primarily attributable to significant growth in the number of handsets sold due to higher gross customer additions and higher handset upgrade volumes, including JUMP! redemptions.  To a lesser extent, the increases resulted from the inclusion of MetroPCS operating results for the entire three and six months ended June 30, 2014.  These increases were partially offset by reductions to equipment sales revenues from the reimbursement of other carriers’ ETFs in connection with Un-carrier phase 4.0.We financed $1.3 billion of equipment sales revenues through equipment installment plans during the three months ended June 30, 2014, a significant increase from $811 million in the same period in 2013, resulting from growth of our Simple Choice plans.  Additionally, customers had associated equipment installment plan billings of $810 million in the three months ended June 30, 2014, compared to $314 million in the same period in 2013.  During the six months ended June 30, 2014, we financed $2.6 billion of equipment sales revenues through equipment installment plans, an increase from $1.1 billion in the six months ended June 30, 2013.  Additionally, customers had associated equipment installment plan billings of $1.5 billion in the six months ended June 30, 2014, compared to $508 million in the six months ended June 30, 2013.  We classify EIP receivables, gross into credit categories of “Prime” and “Subprime”.  Prime receivables, those with lower delinquency risk, were 53% of the EIP receivables on a gross basis as of June 30, 2014.  Other revenues increased $8 million, or 9%, for the three months ended and $32 million, or 20%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases were primarily due to higher co-location rental income from leasing space on T-Mobile-owned wireless communication towers to third parties and higher lease income associated with spectrum license lease agreements.
+
+
+
+26
+
+
+Table of Contents
+
+
+
+
+
+
+Operating Expenses
+
+Cost of services increased $126 million, or 9%, for the three months ended and $481 million, or 20%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases were primarily due to the inclusion of MetroPCS operating results for the entire three and six months ended June 30, 2014.  To a lesser extent, increases resulted from higher lease expense primarily relating to spectrum license lease agreements.  These increases were partially offset by a reduction of certain regulatory surcharges that also reduced branded postpaid revenues for the three and six months ended June 30, 2014Cost of equipment sales increased $279 million, or 14%, for the three months ended and $1.7 billion, or 59%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases were primarily attributable to significant growth in the number of handsets sold due to higher branded gross customer additions, higher handset upgrade volumes, including JUMP! redemptions, and an increase in the volume of smartphone sales of 41% and 99% for the three and six months ended June 30, 2014, respectively, compared to the same periods in 2013.  To a lesser extent, the increases resulted from the inclusion of MetroPCS operating results for the entire three and six months ended June 30, 2014.  Selling, general and administrative increased $304 million, or 16%, for the three months ended and $894 million, or 27%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases were primarily due to higher employee-related costs as a result of increases in the number of retail and customer support employees, as well as costs associated with stock-based compensation, and the inclusion of MetroPCS operating results for the entire three and six months ended June 30, 2014.  Additionally, higher promotional costs contributed to the increase for the six months ended June 30, 2014.Depreciation and amortization increased $241 million, or 27%, for the three months ended and $541 million, or 33%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases in depreciation and amortization were primarily associated with the build out of the T-Mobile LTE network, which increased the depreciable base, and the inclusion of MetroPCS operating results for the entire three and six months ended June 30, 2014, including accelerated depreciation related to the decommissioning of the MetroPCS CDMA network.  Additionally, depreciation expense was higher due to the shortening of useful lives of certain network equipment to be replaced in connection with network modernization efforts contributed to the increase.MetroPCS transaction and integration costs of $22 million and $34 million for the three and six months ended June 30, 2014, respectively, and $26 million and $39 million for the three and six months ended June 30, 2013, respectively, reflect personnel-related costs and professional services costs associated with the business combination.  In July 2014, we began decommissioning the MetroPCS CDMA network and certain other redundant network cell sites.  We expect to incur between $250 million and $300 million in network decommissioning costs during the second half of 2014, which will be excluded from Adjusted EBITDA.  These network decommissioning costs relate primarily to the acceleration of lease costs for cell sites that would have otherwise been recognized as cost of services over the remaining lease term had we not decommissioned the cell sites.  See Note 8 – Subsequent Events of the Notes to the Condensed Consolidated Financial Statements included in Part 1, Item 1 of this Form 10-Q for more information on the network decommissioning costs. Other, net for both the three and six months ended June 30, 2014 primarily consisted of a non-cash gain of $731 million from spectrum license transactions.  See Note 2 – Acquisitions and Other Transactions of the Notes to the Condensed Consolidated Financial Statements included in Part 1, Item 1 of this Form 10-Q for more information.
+
+
+
+
+27
+
+
+Table of Contents
+
+
+
+
+Other Income (Expense)
+
+Interest expense to affiliates decreased $140 million, or 62%, for the three months ended and $300 million, or 74%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The decreases were primarily due to lower debt balances with Deutsche Telekom in 2014, resulting from the recapitalization of T-Mobile prior to the business combination and Deutsche Telekom’s sale of non-reset notes in the aggregate principal amount of $5.6 billion in October 2013.  The decrease during the six months ended June 30, 2014, compared to the same period in 2013, was further impacted by fair value adjustments related to embedded derivative instruments associated with the senior reset notes issued to Deutsche Telekom in the recapitalization.  Additionally, interest expense to affiliates was higher during 2013 as a result of losses related to the retirement of derivative instruments associated with the extinguishment of the long-term debt to affiliates prior to the business combination.Interest expense increased $162 million for the three months ended and $387 million for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases were primarily the result of new senior notes issued during 2013, the assumption of MetroPCS long-term debt in connection with the business combination and the reclassification of non-reset notes from long-term debt to affiliates to long-term debt following Deutsche Telekom’s sale of the non-reset notes in October 2013.  Interest income increased $43 million, or 108%, for the three months ended and $83 million, or 111%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases were primarily the result of significant growth in handsets financed through our equipment installment plans.  Deferred interest associated with our EIP receivables is imputed at the time of sale and then recognized over the financed installment term.Other income (expense), net decreased $130 million for the three and six months ended June 30, 2014, compared to the same periods in 2013.  The decreases were primarily due to the recognition of foreign currency translation gains in 2013 related to the retirement of derivative instruments prior to the business combination in April 2013.
+
+
+
+
+Income Taxes
+
+Income tax expense increased $265 million for the three months ended and $91 million for the six months ended June 30, 2014, compared to the same periods in 2013, primarily due to higher pre-tax income.  The effective tax rate was 42.2% and 395.2% for the three months ended June 30, 2014 and 2013, respectively, and 43.4% and 50.5% for the six months ended June 30, 2014 and 2013.
+
+Guarantor Subsidiaries
+
+Pursuant to the applicable indentures and supplemental indentures, the long-term debt, excluding capital leases, are fully and unconditionally guaranteed, jointly and severally, on a senior unsecured basis by T-Mobile (“Parent”) and certain of T-Mobile USA’s (“Issuer”) 100% owned subsidiaries (“Guarantor Subsidiaries”).  In 2014, T-Mobile entered into a two-year factoring arrangement to sell certain service accounts receivable on a revolving basis.  In connection with the factoring arrangement, the Company formed the Factoring SPE, which is included in the Non-Guarantor Subsidiaries condensed consolidating financial information.  The financial condition of the Parent, Issuer and Guarantor Subsidiaries was substantially similar to the Company’s consolidated financial condition.  Additionally, the results of operations of the Parent, Issuer and Guarantor Subsidiaries were substantially similar to the Company’s consolidated results of operations.  The change in the financial condition of the Non-Guarantor Subsidiaries was primarily due to the inclusion of the net assets and results of operations of the Factoring SPE as a result of the factoring arrangement.  As of June 30, 2014 and December 31, 2013, the most significant components of the financial condition of the Non-Guarantor Subsidiaries were property and equipment of $555 million and $595 million, respectively, long-term financial obligations of $2.1 billion and $2.1 billion, respectively, and stockholders’ deficit of $1.2 billion and $1.3 billion, respectively.  The most significant components of the results of operations of our Non-Guarantor Subsidiaries for the three and six months ended June 30, 2014 were service revenues of $323 million and $588 million, respectively, offset by costs of equipment sales of $207 million and $345 million, respectively, resulting in a net comprehensive loss of $25 million and $30 million, respectively.  Similarly, for the three and six months ended June 30, 2013, service revenues of $191 million and $367 million, respectively, were offset by costs of equipment sales of $122 million and $251 million, respectively, resulting in a net comprehensive loss of none and $20 million, respectively.
+
+
+28
+
+
+Table of Contents
+
+
+
+Performance Measures
+
+In managing our business and assessing financial performance, we supplement the information provided by the financial statements with other operating or statistical data and non-GAAP financial measures.  These operating and financial measures are utilized by our management to evaluate our operating performance and, in certain cases, our ability to meet liquidity requirements.  Although companies in the wireless industry may not define each of these measures in precisely the same way, we believe that these measures facilitate key operating performance comparisons with other companies in the wireless industry.
+
+Total Customers
+
+A customer is generally defined as a SIM card with a unique T-Mobile identity number which is associated to an account that generates revenue.  Branded customers generally include customers that are qualified either for postpaid service, where they generally pay after incurring service, or prepaid service, where they generally pay in advance.  Wholesale customers include Machine-to-Machine (“M2M”) and MVNO customers that operate on our network, but are managed by wholesale partners.  The following table sets forth the number of ending customers:
+
+(in thousands)June 30, 2014 March 31, 2014 December 31, 2013Customers, end of period     Branded postpaid phone customers23,633 23,054 21,797Branded postpaid mobile broadband customers897 568 502Total branded postpaid customers24,530 23,622 22,299Branded prepaid customers15,639 15,537 15,072Total branded customers40,169 39,159 37,371M2M customers4,047 3,822 3,602MVNO customers6,329 6,094 5,711Total wholesale customers10,376 9,916 9,313Total customers, end of period50,545 49,075 46,684
+
+
+29
+
+Table of Contents
+
+The following table sets forth the number of net customer additions (losses):
+Three Months Ended June 30, Six Months Ended June 30,(in thousands)2014 2013 2014 2013Net customer additions (losses)       Branded postpaid phone customers579 685 1,835 496Branded postpaid mobile broadband customers329 3 396 (6)Total branded postpaid customers908 688 2,231 490Branded prepaid customers102 (10) 567 191Total branded customers1,010 678 2,798 681M2M customers225 133 445 333MVNO customers235 319 618 695Total wholesale customers460 452 1,063 1,028Total net customer additions 1,470 1,130 3,861 1,709Acquired customers — 8,918 — 8,918
+
+Net customer additions for the three months ended June 30, 2014 were 1,470,000, compared to net customer additions of 1,130,000 in the same period in 2013.  Net customer additions for the six months ended June 30, 2014 were 3,861,000, compared to net customer additions of 1,709,000 in the same period in 2013.  As of June 30, 2014, we had approximately 50.5 million customers, an 8% increase from the customer total as of December 31, 2013.  The increases were the result of growth in all customer categories, as described below.
+
+Branded Customers
+
+Branded postpaid phone net customer additions were 579,000 for the three months ended June 30, 2014, compared to branded postpaid phone net customer additions of 685,000 for the same period in 2013.  Branded postpaid phone net customer additions were 1,835,000 for the six months ended June 30, 2014, compared to branded postpaid phone net customer additions of 496,000 for the same period in 2013.  The decrease in branded postpaid phone net customer additions for the three months ended June 30, 2014 was primarily due to higher branded postpaid phone deactivations as described in the churn section below.  Also, postpaid phone net customer additions in the second quarter of 2013 benefited from our introduction of the Apple® iPhone®.  The significant improvement in customer development for the six months ended June 30, 2014 was attributable to increased new customer activations and improved branded postpaid phone churn.  Growth in branded postpaid phone gross customer additions for the six months ended June 30, 2014 resulted primarily from strong response to our Un-carrier value proposition and the sales of popular handsets.Branded postpaid mobile broadband net customer additions were 329,000 for the three months ended June 30, 2014, compared to branded postpaid mobile broadband net customer additions of 3,000 for the same period in 2013.  Branded postpaid mobile broadband net customer additions were 396,000 for the six months ended June 30, 2014, compared to branded postpaid mobile broadband net customer losses of 6,000 for the same period in 2013.  Growth in branded postpaid mobile broadband net customer additions resulted from positive customer response to “Operation Tablet Freedom”.  In April 2014, we launched Operation Tablet Freedom for a limited time, which provides customers with an existing voice line with up to 1.2 GB of free data per month for their tablet device until the end of the year.Branded prepaid net customer additions were 102,000 for the three months ended June 30, 2014, compared to branded prepaid net customer losses of 10,000 for the same period in 2013.  Branded prepaid net customer additions were 567,000 for the six months ended June 30, 2014, compared to branded prepaid net customer additions of 191,000 for the same period in 2013.  The improvements were attributable to higher branded prepaid gross customer additions primarily due to the acquisition and subsequent expansion of the MetroPCS brand, including the launch into 30 additional markets during 2013.
+
+
+
+Wholesale
+
+Wholesale net customer additions were 460,000 for the three months ended June 30, 2014, compared to wholesale net customer additions of 452,000 for the same period in 2013.  Wholesale net customer additions were 1,063,000 for the six months ended June 30, 2014, compared to wholesale net customer additions of 1,028,000 for the same period in 2013.  The increases in wholesale net customer additions resulted primarily from MVNO growth in government subsidized Lifeline programs and monthly plans offered by our MVNO partners.  Both MVNO and M2M customers continued to grow in the three and six months ended June 30, 2014.  MVNO partners often have relationships with multiple carriers and through steering their business towards carriers offering promotions can impact specific carriers’ results.
+
+30
+
+Table of Contents
+
+Churn
+
+Churn represents the number of customers whose service was discontinued as a percentage of the average number of customers during the specified period.  The number of customers whose service was discontinued is presented net of customers that subsequently have their service restored.  We believe that churn provides management with useful information to evaluate customer retention and loyalty.
+Three Months Ended June 30, Six Months Ended June 30,2014 20132014 2013Branded postpaid phone churn1.5% 1.5% 1.5% 1.7%Branded prepaid churn4.5% 5.4% 4.4% 6.0%
+
+Branded postpaid phone churn was stable for the three months ended June 30, 2014, compared to the same period in 2013, but decreased to 1.5% for the six months ended June 30, 2014, compared to 1.7% for the same period in 2013.  Branded postpaid phone churn was impacted by continued focus on churn reduction initiatives, such as improving network quality and total customer experience.  Additionally, the continued success of our Un-carrier value proposition and the introduction of popular handsets during 2013, including the Apple iPhone, improved customer retention.  For the three months ended June 30, 2014, while churn remained stable, deactivations increased due to a larger branded postpaid phone customer base. Branded prepaid churn was 4.5% for the three months ended June 30, 2014, compared to 5.4% for the same period in 2013.  Branded prepaid churn was 4.4% for the six months ended June 30, 2014, compared to 6.0% for the same period in 2013.  Branded prepaid churn was impacted positively by the inclusion of MetroPCS customers, which represent the largest portion of the branded prepaid customer base and have lower rates of churn than T-Mobile’s other branded prepaid customers.
+
+
+Average Revenue Per User (“ARPU”) and Average Billings Per User (“ABPU”)
+
+ARPU represents the average monthly service revenue earned from customers.  We believe ARPU provides management, investors and analysts with useful information to assess our per-customer service revenue realization, assist in forecasting our future service revenues, and evaluate the average monthly service revenues generated from our customer base.  Branded postpaid phone ARPU is reported for the first time in the quarterly reporting period ending June 30, 2014 in replacement of branded postpaid ARPU to exclude mobile broadband customers and related revenues and provide which is more comparable with other national carriers’ ARPU disclosures.ABPU represents the average monthly branded postpaid customer billings.  We believe ABPU provides management, investors and analysts with useful information to evaluate average per-branded postpaid customer billings as it approximates the estimated cash collections, including equipment installments, from our customers each month.The following tables illustrate the calculation of ARPU and ABPU and reconciles these measures to the related service revenues, which we consider to be the most directly comparable GAAP financial measure to ARPU and ABPU:
+
+
+31
+
+Table of Contents
+
+Three Months Ended June 30, Six Months Ended June 30,(in millions, except average number of customers, ARPU and ABPU)2014 2013 2014 2013Calculation of Branded Postpaid Phone ARPU:       Branded postpaid service revenues$3,511 $3,284 $6,958 $6,547Less: Branded postpaid mobile broadband revenues(54) (42) (101) (86)Branded postpaid phone service revenues$3,457 $3,242 $6,857 $6,461Divided by: Average number of branded postpaid phone customers (in thousands) and number of months in period 23,368 19,999 22,908 19,844Branded postpaid phone ARPU$49.32 $54.04 $49.89 $54.26        Calculation of Branded Postpaid ABPU:       Branded postpaid service revenues$3,511 $3,284 $6,958 $6,547Add: EIP billings810 314 1,467 508Total billings for branded postpaid customers$4,321 $3,598 $8,425 $7,055Divided by: Average number of branded postpaid customers (in thousands) and number of months in period24,092 20,425 23,533 20,271Branded postpaid ABPU$59.79 $58.72 $59.67 $58.01        Calculation of Branded Prepaid ARPU:       Branded prepaid service revenues$1,736 $1,242 $3,384 $1,745Divided by: Average number of branded prepaid customers (in thousands) and number of months in period  15,569 11,902 15,395 8,919Branded prepaid ARPU$37.16 $34.78 $36.63 $32.61
+
+Branded postpaid phone ARPU decreased $4.72, or 9%, for the three months ended and $4.37, or 8%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The decreases were primarily due to the continued growth of customers on Simple Choice plans, which have lower monthly service charges compared to traditional bundled plans.  As of June 30, 2014, branded postpaid customers on Simple Choice plans represented 80% of branded postpaid customers compared to 50% of branded postpaid customers at June 30, 2013.  Additionally, non-recurring factors of a reduction in certain regulatory surcharges and a non-recurring revenue adjustment for expected customer refunds on premium SMS content charges together reduced branded postpaid phone ARPU by $0.61 for the three months ended June 30, 2014.  Excluding these non-recurring factors, branded postpaid phone ARPU would have been $49.93 for the three months ended June 30, 2014.Branded postpaid ABPU increased $1.07, or 2%, for the three months ended and $1.66, or 3%, for the six months ended June 30, 2014, compared to the same periods in 2013.  Branded postpaid ABPU increased primarily due to growth in our EIP billings on a per user basis, offset in part by lower branded postpaid phone ARPU.  ABPU reflects the shift in customer billings from branded postpaid service revenues to equipment sales revenues. Branded prepaid ARPU increased $2.38, or 7%, for the three months ended and $4.02, or 12%, for the six months ended June 30, 2014, compared to the same periods in 2013.  The increases were primarily due to the inclusion and growth of the MetroPCS customer base, which generate higher ARPU than T-Mobile’s other branded prepaid customer base.
+
+
+
+Adjusted EBITDA
+
+Adjusted EBITDA represents earnings before interest expense (net of interest income), tax, depreciation, amortization, stock-based compensation and expenses not reflective of T-Mobile’s ongoing operating performance.  Adjusted EBITDA margin is Adjusted EBITDA divided by service revenues.  Adjusted EBITDA is a non-GAAP financial measure utilized by our management to monitor the financial performance of our operations.  We use Adjusted EBITDA internally as a metric to evaluate and compensate our personnel and management for their performance, and as a benchmark to evaluate our operating performance in comparison to our competitors.  Management also uses Adjusted EBITDA to measure our ability to provide cash flows to meet future debt services, capital expenditures and working capital requirements, and fund future growth.  We believe analysts and investors use Adjusted EBITDA as a supplemental measure to evaluate overall operating performance and facilitates comparisons with other wireless communications companies.  Adjusted EBITDA has limitations as an analytical tool and should not be considered in isolation or as a substitute for income from operations, net income, or any other measure of financial performance reported in accordance with GAAP.The following table illustrates the calculation of Adjusted EBITDA and reconciles Adjusted EBITDA to net income which we consider to be the most directly comparable GAAP financial measure to Adjusted EBITDA:
+
+
+32
+
+Table of Contents
+
+
+Three Months Ended June 30, Six Months Ended June 30,(in millions)2014 2013 2014 2013Net income (loss)$391 $(16) $240 $91Adjustments:       Interest expense to affiliates85 225 103 403Interest expense 271 109 547 160Interest income(83) (40) (158) (75)Other expense (income), net12 (118) 18 (112)Income tax expense 286 21 184 93Operating income962 181 934 560Depreciation and amortization1,129 888 2,184 1,643MetroPCS transaction and integration costs22 26 34 39Restructuring costs— 23 — 54Stock-based compensation63 6 112 6Other, net (1)(725) — (725) —Adjusted EBITDA$1,451 $1,124 $2,539 $2,302Adjusted EBITDA margin26% 24% 23% 26%
+(1)Other, net for the three and six months ended June 30, 2014 primarily consisted of a non-cash gain from spectrum license transactions.  Other, net transactions may not agree in total to the other, net in the condensed consolidated statements of comprehensive income (loss) primarily due to certain routine operating activities, such as insignificant routine spectrum license exchanges that would be expected to reoccur, and are therefore included in Adjusted EBITDA.Adjusted EBITDA increased 29% for the three months ended and 10% for the six months ended June 30, 2014, compared to the same periods in 2013.  Adjusted EBITDA was positively impacted by increased branded postpaid revenues resulting from growth in the branded postpaid customer base due to positive customer response to our Un-carrier value proposition.  In addition, the inclusion of MetroPCS operating results for the entire three and six months ended June 30, 2014 positively impacted Adjusted EBITDA for those periods compared to the prior year.  These increases were offset by higher selling, general and administrative expenses.  Additionally, Adjusted EBITDA for the six months ended June 30, 2014 was negatively impacted by an increase in loss on equipment sales.
+
+
+
+Liquidity and Capital Resources
+
+Our principal sources of liquidity are our cash and cash equivalents and cash generated from operations, proceeds from the sale of certain service receivables related to a factoring arrangement, financing arrangements which effectively extend payment terms, issuance of long-term debt and issuance of common stock in connection with public offerings.  As of June 30, 2014, our cash and cash equivalents were $3.1 billion.  In addition, we have entered into an unsecured revolving credit facility with Deutsche Telekom that allows for up to $500 million in borrowings.  We expect our current sources of funding to be sufficient to meet the anticipated liquidity requirements of the Company in the next 12 months and intend to use our current sources of funding for general corporate purposes, including capital investments, enhancing our financial flexibility and opportunistically acquiring additional spectrum in private party transactions and government auctions.  We may seek to raise additional debt or equity capital to the extent our projections regarding our liquidity requirements change or on an opportunistic basis when there are favorable market conditions.  Further, we may consider entering into factoring arrangements to sell certain EIP receivables as an additional source of liquidity.  Prior to the completion of the business combination with MetroPCS on April 30, 2013, our sources of liquidity were cash and cash equivalents and short-term investments with Deutsche Telekom included in accounts receivable from affiliates, and cash generated from operations.  In January 2014, we entered into agreements with Verizon for the acquisition of 700 MHz A-Block spectrum licenses for cash and the transfer of certain AWS and PCS spectrum licenses.  Upon closing the transaction in April 2014, we paid Verizon $2.4 billion with cash on hand and transferred certain AWS and PCS spectrum licenses.In February 2014, we entered into a two-year factoring arrangement to sell certain receivables on a revolving basis as an additional source of liquidity.  The factoring arrangement is subject to a maximum funding limit of $500 million.  We sold receivables related to the factoring arrangement for net cash proceeds of $468 million for the six months ended June 30, 2014.  See Note 2 – Acquisitions and Other Transactions of the Notes to the Condensed Consolidated Financial Statements included in Part 1, Item 1 of this Form 10-Q for more information on the factoring arrangement.The indentures governing the long-term debt, excluding capital leases, contain covenants that, among other things, limit our ability to: incur more debt; pay dividends and make distributions; make certain investments; repurchase stock; create liens or other encumbrances; enter into transactions with affiliates; enter into transactions that restrict dividends or distributions from subsidiaries; and merge, consolidate, or sell, or otherwise dispose of, substantially all of their assets.  Certain provisions of each of the indentures and the supplemental indentures relating to the long-term debt restrict the ability of the Issuer to loan funds or make payments to the Parent.  However, the Issuer is allowed to make certain permitted payments to the Parent under the terms of each of the indentures and the supplemental indentures relating to the long-term debt.  As of June 30, 2014, we were in compliance with all restrictive debt covenants.
+
+
+
+
+33
+
+Table of Contents
+
+
+
+Capital Expenditures
+
+Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses and the construction, expansion and upgrading of our network infrastructure.Property and equipment capital expenditures for the six months ended June 30, 2014 and 2013 primarily relate to our network modernization and deployment of 4G LTE.  We expect cash capital expenditures for property and equipment to be in the range of $4.3 billion to $4.6 billion for the year ending December 31, 2014.  This does not include purchases of spectrum licenses, including the acquisition of 700 MHz A-Block spectrum licenses from Verizon.
+
+
+Cash Flows
+
+The following table shows cash flow information:
+Six Months Ended June 30,(in millions)2014 2013Net cash provided by operating activities$1,729 $1,715Net cash provided by (used in) investing activities(4,275) 262Net cash used in financing activities(265) (9)
+
+The historical cash flows of T-Mobile USA should not be considered representative of the anticipated cash flows of T-Mobile US, Inc., the combined company resulting from the business combination on April 30, 2013.
+
+Operating Activities
+
+Cash provided by operating activities was $1.7 billion for the six months ended June 30, 2014 and 2013.  Consistent cash flow provided by operating activities was driven by several factors.  Our operating income, exclusive of non-cash items such as depreciation and amortization and gains from spectrum license transactions, increased slightly compared to the same period in the prior year.  This was primarily a result of higher selling, general and administrative costs partially offset by increases in branded postpaid revenues due to our acceleration of customer growth.  Net changes in working capital decreased slightly due to increases in EIP receivables.  This was offset in part by proceeds from the sales of receivables related to the factoring arrangement and increases in accounts payable and accrued liabilities due in part to timing of vendor payments.
+
+Investing Activities
+
+Cash used in investing activities was $4.3 billion for the six months ended June 30, 2014, compared to $262 million provided by investing activities for the same period in 2013.  For the six months ended June 30, 2014, cash used in investing activities primarily consisted of purchases of intangible assets of $2.4 billion relating to the acquisition of 700 MHz A-Block spectrum licenses and purchases of property and equipment of $1.9 billion as a result of our network modernization and deployment timing of 4G LTE.  For the six months ended June 30, 2013, cash provided by investing activities primarily consisted of cash and cash equivalents acquired in the business combination with MetroPCS of $2.1 billion and the settlement of a short-term loan receivable, net with Deutsche Telekom of $300 million.  This was partially offset by purchases of property and equipment of $2.1 billion as a result of our network modernization and deployment timing of 4G LTE.
+
+34
+
+Table of Contents
+
+Financing Activities
+
+Cash used in financing activities was $265 million for the six months ended June 30, 2014, compared to $9 million for the same period in 2013.  The increase was primarily due to repayments of short-term debt for purchases of property and equipment of $231 million and payments of employee taxes in connection with the net share settlement of stock awards of $72 million.  This was offset in part by excess tax benefit from stock based compensation of $33 million and proceeds from the exercise of stock options of $23 million.
+
+
+Contractual Obligations
+
+Current accounting standards require disclosure of material obligations and commitments to make future payments under contracts, such as debt, lease agreements, and purchase obligations.  See Note 5 – Commitments and Contingencies of the Notes to the Consolidated Financial Statements included in Part I, Item 1 of this Form 10-Q and Note 7 – Debt of the Notes to the Consolidated Financial Statements included in Part II, Item 8 of our Annual Report on Form 10-K for the year ended December 31, 2013
+.
+
+The following table provides aggregate information about T-Mobile's contractual obligations as of June 30, 2014
+:
+(in millions)Less Than 1 Year 1 - 3 Years 4 - 5 Years More Than 5 Years TotalLong-term debt (1)$— $— $4,000 $15,200 $19,200Interest expense on long-term debt1,233 2,429 2,397 2,604 8,663Financial obligation (2)164 328 328 1,221 2,041Non-dedicated transportation lines673 1,354 875 597 3,499Operating leases, including dedicated transportation lines2,250 4,017 3,307 4,675 14,249Capital lease obligations, including interest48 107 110 313 578Vendor financing arrangements250 — — — 250Purchase obligations (3)1,389 2,948 26 — 4,363Total contractual obligations$6,007 $11,183 $11,043 $24,610 $52,843
+(1)Represents principal amounts of long-term debt at maturity, excluding unamortized premium from purchase price allocation fair value adjustment, capital lease obligations and vendor financing arrangements.  (2)Future minimum payments, including principal and interest payments and imputed lease rental income, related to the long-term financial obligation recorded in connection with the Tower Transaction.  See Note 8 – Tower Transaction and Related Long-Term Financial Obligation of the Notes to the Consolidated Financial Statements included in Part II, Item 8 of our Annual Report on Form 10-K for the year ended December 31, 2013.(3)T-Mobile calculated the minimum obligation for certain agreements to purchase goods or services based on termination fees that can be paid to exit the contract.  Termination penalties are included in the above table as payments due in less than one year, as this is the earliest T-Mobile could exit these contracts.  For certain contracts that include fixed volume purchase commitments and fixed prices for various products, the purchase obligations are calculated using fixed volumes and contractually fixed prices for the products that are expected to be purchased.  This table does not include open purchase orders as of June 30, 2014 under normal business purposes.Certain commitments and obligations are included in the table based on the year of required payment or an estimate of the year of payment.  Other non-current liabilities have been excluded from the tables due to the uncertainty of the timing of payments, combined with the absence of historical trending to be used as a predictor of such payments.The purchase obligations reflected in the table above are primarily commitments to purchase handsets and accessories, equipment, software, programming and network services, and marketing activities, which will be used or sold in the ordinary course of business.  These amounts do not represent T-Mobile’s entire anticipated purchases in the future, but represent only those items for which T-Mobile is contractually committed.  The Company also has purchase obligations that vary with the level of the Company’s sales of certain products.  The future development of sales of those products could result in purchase obligations in excess of the amounts shown in the table above.  Where T-Mobile is committed to make a minimum payment to the supplier regardless of whether it takes delivery, T-Mobile has included only that minimum payment as a purchase obligation.
+
+
+
+
+Off-Balance Sheet Arrangements
+
+In February 2014, T-Mobile entered into a two-year factoring arrangement to sell certain service accounts receivable on a revolving basis as an additional source of liquidity.  As of June 30, 2014, T-Mobile derecognized net receivables of $611 million upon sale through the factoring arrangement.  See Note 2 – Acquisitions and Other Transactions of the Notes to the Condensed Consolidated Financial Statements included in Part 1, Item 1 of this Form 10-Q for more information on the factoring arrangement.
+
+35
+
+Table of Contents
+
+
+
+Related Party Transactions
+
+There have been no material changes in our related party transactions as previously disclosed in Part II, Item 7 of our Annual Report on Form 10-K for the year ended December 31, 2013.
+
+Disclosure of Iranian Activities under Section 13(r) of the Securities Exchange Act of 1934
+
+Section 219 of the Iran Threat Reduction and Syria Human Rights Act of 2012 added Section 13(r) to the Securities Exchange Act of 1934, as amended (“Exchange Act”).  Section 13(r) requires an issuer to disclose in its annual or quarterly reports, as applicable, whether it or any of its affiliates knowingly engaged in certain activities, transactions or dealings relating to Iran or with designated natural persons or entities involved in terrorism or the proliferation of weapons of mass destruction.  Disclosure is required even where the activities, transactions or dealings are conducted outside the U.S. by non-U.S. affiliates in compliance with applicable law, and whether or not the activities are sanctionable under U.S. law.  As of the date of this report, we are not aware of any activity, transaction or dealing by us or any of our affiliates for the three months ended June 30, 2014 that requires disclosure in this report under Section 13(r) of the Exchange Act, except as set forth below with respect to affiliates that we do not control and that are our affiliates solely due to their common control with Deutsche Telekom.  We have relied upon Deutsche Telekom for information regarding their activities, transactions and dealings.Deutsche Telekom, through certain of its non-U.S. subsidiaries, is party to roaming and interconnect agreements with the following mobile and fixed line telecommunication providers in Iran, some of which are or may be government-controlled entities: Gostaresh Ertebatat Taliya, Irancell Telecommunications Services Company, Telecommunication Kish Company, Mobile Telecommunication Company of Iran, and Telecommunication Infrastructure Company of Iran.  For the three months ended June 30, 2014, gross revenues of all Deutsche Telekom affiliates generated by roaming and interconnection traffic with Iran were less than $1 million and estimated net profits were less than $1 million. In addition, Deutsche Telekom, through certain of its non-U.S. subsidiaries, operating a fixed line network in their respective European home countries (in particular Germany), provides telecommunications services in the ordinary course of business to the Embassy of Iran in those European countries.  Gross revenues and net profits related to such activities recorded from these non-U.S. subsidiaries for the three months ended June 30, 2014 were less than $0.1 million.  We understand that Deutsche Telekom intends to continue these activities.
+
+
+
+
+
+Critical Accounting Policies and Estimates
+
+Preparation of our consolidated financial statements in accordance with GAAP requires us to make estimates and assumptions that affect the reported amounts of certain assets, liabilities, revenues and expenses, as well as related disclosure of contingent assets and liabilities.  There have been no material changes to the critical accounting policies and estimates as previously disclosed in Part II, Item 7 of our Annual Report on Form 10-K for the year ended December 31, 2013.
+
+
+Recently Issued Accounting Standards
+
+See Note 1 – Basis of Presentation of the Notes to the Condensed Consolidated Financial Statements included in Part 1, Item 1 of this Form 10-Q for more information on the recently issued accounting standards.
+
+
+Item 3.  Quantitative and Qualitative Disclosures About Market Risk
+
+We are exposed to economic risks in the normal course of business, primarily from changes in interest rates.  These risks, along with other business risks, impact our cost of capital.  Our policy is to manage exposure related to fluctuations in interest rates in order to manage capital costs, control financial risks and maintain financial flexibility over the long term.  We have established interest rate risk limits that are closely monitored by measuring interest rate sensitivities of our debt and interest rate derivatives portfolios.  We do not foresee significant changes in the strategies used to manage market risk in the near future.We are exposed to changes in interest rates, primarily on our long-term debt to affiliates.  As of June 30, 2014, we had $5.6 billion in long-term debt with Deutsche Telekom comprised of senior reset notes.  Changes in interest rates can lead to fluctuations in the fair value of our variable-rate debt instruments.  To perform the sensitivity analysis on the long-term debt to affiliates, we assessed the risk of a change in the fair value from the effect of a hypothetical interest rate change of 100 basis points.  As of June 30, 2014, the change in the fair value of our long-term debt to affiliates, based on this hypothetical change, is shown in the table below:
+
+
+36
+
+Table of Contents
+
+Fair Value Assuming(in millions)Fair Value +100 Basis Point Shift -100 Basis Point ShiftLong-term debt to affiliates$6,025 $5,976 $6,071
+
+To manage interest rate risk, the interest rates on the senior reset notes are adjusted at the reset dates to rates defined in the applicable supplemental indenture.  The Company determined certain components of the reset feature are required to be bifurcated from the senior reset notes and separately accounted for as embedded derivative instruments not designated as hedges.  As of June 30, 2014, we had $41 million in embedded derivatives related to the senior reset notes.  Changes in the spreads between the specified yield curves and the yield curve on T-Mobile long-term debt can lead to fluctuations in the fair value of our embedded derivatives.To perform sensitivity analysis on the embedded derivatives, we assessed the risk of loss in fair values from the effect of a hypothetical spread change between specified yield curves and the yield curve on T-Mobile long-term debt of 10 basis points on our portfolio of embedded derivatives.  As of June 30, 2014, the change in the fair value of our embedded derivatives, based on this hypothetical change, is shown in the table below:   Fair Value Assuming Fair Value +10 Basis Point Shift -10 Basis Point ShiftEmbedded derivatives$41 $64 $19
+
+
+
+Item 4.  Controls and Procedures
+
+Evaluation of Disclosure Controls and Procedures
+
+We maintain disclosure controls and procedures that are designed to ensure that information required to be disclosed in our periodic reports filed or submitted under the Exchange Act, is recorded, processed, summarized and reported within the time periods specified in the Securities and Exchange Commission’s rules and forms.  Our disclosure controls are also designed to ensure that information required to be disclosed in the reports we file or submit under the Exchange Act is accumulated and communicated to our management, including our Principal Executive Officer and Principal Financial Officer, as appropriate, to allow timely decisions regarding required disclosure.  Under the supervision and with the participation of our management, including our Chief Executive Officer and our Chief Financial Officer, we carried out an evaluation of the effectiveness of the design and operation of our disclosure controls and procedures, as defined in Rules 13a-15(e) and 15d-15(e) under the Exchange Act.  Based upon that evaluation, our Chief Executive Officer and Chief Financial Officer concluded that our disclosure controls and procedures were effective, as of the end of the period covered by this report. There were no changes in our internal control over financial reporting (as defined in Rules 13a-15(f) and 15d-15(f) of the Exchange Act) during our most recently completed fiscal quarter that materially affected or are reasonably likely to materially affect internal control over financial reporting. The certifications required by Section 302 of the Sarbanes-Oxley Act of 2002 are filed as exhibits 31.1 and 31.2 to this Form 10-Q.
+
+
+
+
+
+PART II. OTHER INFORMATION
+
+
+Item 1. Legal Proceedings
+
+See Note 5 – Commitments and Contingencies of the Notes to the Condensed Consolidated Financial Statements included in Part 1, Item 1 of this Form 10-Q for information regarding certain legal proceedings in which we are involved.
+
+
+37
+
+
+Table of Contents
+
+Item 1A. Risk Factors
+
+There have been no material changes in our risk factors as previously disclosed in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2013.
+
+
+Item 2. Unregistered Sales of Equity Securities and Use of Proceeds
+
+None.
+
+
+Item 3. Defaults Upon Senior Securities
+
+None.
+
+
+Item 4. Mine Safety Disclosures
+
+None.
+
+
+Item 5. Other Information
+
+None.
+
+
+Item 6. Exhibits
+Incorporated by Reference  Exhibit No. Exhibit Description Form Date of First Filing Exhibit Number Filed Herein10.1* Amended Director Compensation Program effective as of May 1, 2013 (amended June 4, 2014).    X10.2 Second Amendment to the Master Receivables Purchase Agreement dated as of June 12, 2014, by and among T-Mobile Airtime Funding LLC, as funding seller, Billing Gate One LLC, as purchaser, Landesbank Hessen-Thüringen Girozentrale, as bank purchasing agent and a bank purchaser, T-Mobile PCS Holdings LLC, as servicer and T-Mobile US, Inc. as performance guarantor.    X31.1 Certifications of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002.    X31.2 Certifications of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002.    X32.1** Certification of Chief Executive Officer Pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.    32.2** Certification of Chief Financial Officer Pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.    101.INS XBRL Instance Document.    X101.SCH XBRL Taxonomy Extension Schema Document.    X101.CAL XBRL Taxonomy Extension Calculation Linkbase Document.    X101.DEF XBRL Taxonomy Extension Definition Linkbase Document.    X101.LAB XBRL Taxonomy Extension Label Linkbase Document.    X101.PRE XBRL Taxonomy Extension Presentation Linkbase Document.    X
+*    Indicates a management contract or compensatory plan or arrangement.**    Furnished herein.
+
+
+38
+
+
+Table of Contents
+
+SIGNATURES
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this Report to be signed on its behalf by the undersigned thereunto duly authorized.   T-MOBILE US, INC.   July 31, 2014 /s/ J. Braxton Carter  J. Braxton CarterExecutive Vice President and Chief Financial Officer (Duly Authorized Officer)
+
+
+39

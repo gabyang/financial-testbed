@@ -1,0 +1,951 @@
+10-Q
+1
+tmus-20220331.htm
+TMUS FORM 10-Q
+xml version="1.0" ?
+XBRL Document Created with Wdesk from Workiva
+Copyright 2022 Workiva
+r:f2982adb-e771-439d-9687-0c5e861749d7,g:03970b3b-f272-43f0-99eb-2c5530384cad,d:0bd848b4a0724950bd70a0538e7ddfc3
+
+tmus-20220331
+0001283699false2022Q112-31P9MP1YP5YP5YP3Y00012836992022-01-012022-03-3100012836992022-04-29xbrli:shares00012836992022-03-31iso4217:USD00012836992021-12-31iso4217:USDxbrli:shares0001283699tmus:BrandedPostpaidRevenueMember2022-01-012022-03-310001283699tmus:BrandedPostpaidRevenueMember2021-01-012021-03-310001283699tmus:BrandedPrepaidRevenueMember2022-01-012022-03-310001283699tmus:BrandedPrepaidRevenueMember2021-01-012021-03-310001283699tmus:WholesaleAndOtherServiceRevenueMember2022-01-012022-03-310001283699tmus:WholesaleAndOtherServiceRevenueMember2021-01-012021-03-310001283699us-gaap:ServiceMember2022-01-012022-03-310001283699us-gaap:ServiceMember2021-01-012021-03-310001283699tmus:ProductEquipmentMember2022-01-012022-03-310001283699tmus:ProductEquipmentMember2021-01-012021-03-310001283699us-gaap:ProductAndServiceOtherMember2022-01-012022-03-310001283699us-gaap:ProductAndServiceOtherMember2021-01-012021-03-3100012836992021-01-012021-03-3100012836992020-12-3100012836992021-03-310001283699us-gaap:CommonStockMember2021-12-310001283699us-gaap:TreasuryStockMember2021-12-310001283699us-gaap:AdditionalPaidInCapitalMember2021-12-310001283699us-gaap:AccumulatedOtherComprehensiveIncomeMember2021-12-310001283699us-gaap:RetainedEarningsMember2021-12-310001283699us-gaap:RetainedEarningsMember2022-01-012022-03-310001283699us-gaap:AccumulatedOtherComprehensiveIncomeMember2022-01-012022-03-310001283699us-gaap:AdditionalPaidInCapitalMember2022-01-012022-03-310001283699us-gaap:CommonStockMember2022-01-012022-03-310001283699us-gaap:TreasuryStockMember2022-01-012022-03-310001283699us-gaap:CommonStockMember2022-03-310001283699us-gaap:TreasuryStockMember2022-03-310001283699us-gaap:AdditionalPaidInCapitalMember2022-03-310001283699us-gaap:AccumulatedOtherComprehensiveIncomeMember2022-03-310001283699us-gaap:RetainedEarningsMember2022-03-310001283699us-gaap:CommonStockMember2020-12-310001283699us-gaap:TreasuryStockMember2020-12-310001283699us-gaap:AdditionalPaidInCapitalMember2020-12-310001283699us-gaap:AccumulatedOtherComprehensiveIncomeMember2020-12-310001283699us-gaap:RetainedEarningsMember2020-12-310001283699us-gaap:RetainedEarningsMember2021-01-012021-03-310001283699us-gaap:AccumulatedOtherComprehensiveIncomeMember2021-01-012021-03-310001283699us-gaap:AdditionalPaidInCapitalMember2021-01-012021-03-310001283699us-gaap:CommonStockMember2021-01-012021-03-310001283699us-gaap:TreasuryStockMember2021-01-012021-03-310001283699us-gaap:CommonStockMember2021-03-310001283699us-gaap:TreasuryStockMember2021-03-310001283699us-gaap:AdditionalPaidInCapitalMember2021-03-310001283699us-gaap:AccumulatedOtherComprehensiveIncomeMember2021-03-310001283699us-gaap:RetainedEarningsMember2021-03-31tmus:segmenttmus:class0001283699tmus:EquipmentInstallmentPlanReceivableMember2022-01-012022-03-31xbrli:pure0001283699tmus:EquipmentInstallmentPlanReceivableMember2021-01-012021-12-310001283699tmus:EquipmentInstallmentPlanReceivablesNetMember2022-03-310001283699tmus:EquipmentInstallmentPlanReceivablesNetMember2021-12-310001283699tmus:EquipmentInstallmentPlanReceivablesDueAfterOneYearNetMember2022-03-310001283699tmus:EquipmentInstallmentPlanReceivablesDueAfterOneYearNetMember2021-12-310001283699us-gaap:PrimeMembertmus:FinancingReceivables1to30DaysPastDueMember2022-03-310001283699tmus:FinancingReceivables1to30DaysPastDueMemberus-gaap:SubprimeMember2022-03-310001283699tmus:FinancingReceivables1to30DaysPastDueMember2022-03-310001283699us-gaap:PrimeMembertmus:FinancingReceivables31to60DaysPastDueMember2022-03-310001283699us-gaap:SubprimeMembertmus:FinancingReceivables31to60DaysPastDueMember2022-03-310001283699tmus:FinancingReceivables31to60DaysPastDueMember2022-03-310001283699tmus:FinancingReceivables61to90DaysPastDueMemberus-gaap:PrimeMember2022-03-310001283699tmus:FinancingReceivables61to90DaysPastDueMemberus-gaap:SubprimeMember2022-03-310001283699tmus:FinancingReceivables61to90DaysPastDueMember2022-03-310001283699us-gaap:PrimeMemberus-gaap:FinancingReceivablesEqualToGreaterThan90DaysPastDueMember2022-03-310001283699us-gaap:SubprimeMemberus-gaap:FinancingReceivablesEqualToGreaterThan90DaysPastDueMember2022-03-310001283699us-gaap:FinancingReceivablesEqualToGreaterThan90DaysPastDueMember2022-03-310001283699us-gaap:PrimeMember2022-03-310001283699us-gaap:SubprimeMember2022-03-310001283699tmus:AccountsReceivablesGrossMember2021-12-310001283699tmus:EquipmentInstallmentPlanReceivableMember2021-12-310001283699tmus:AccountsReceivablesGrossMember2020-12-310001283699tmus:EquipmentInstallmentPlanReceivableMember2020-12-310001283699tmus:AccountsReceivablesGrossMember2022-01-012022-03-310001283699tmus:AccountsReceivablesGrossMember2021-01-012021-03-310001283699tmus:EquipmentInstallmentPlanReceivableMember2021-01-012021-03-310001283699tmus:AccountsReceivablesGrossMember2022-03-310001283699tmus:EquipmentInstallmentPlanReceivableMember2022-03-310001283699tmus:AccountsReceivablesGrossMember2021-03-310001283699tmus:EquipmentInstallmentPlanReceivableMember2021-03-310001283699tmus:EIPSecuritizationArrangementMember2021-12-310001283699tmus:EIPSecuritizationArrangementMember2022-03-310001283699us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMembertmus:FactoringArrangementMember2022-03-310001283699us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMembertmus:FactoringArrangementMember2021-12-310001283699tmus:FactoringandEIPSecuritizationArrangementMemberus-gaap:VariableInterestEntityPrimaryBeneficiaryMember2022-03-310001283699tmus:FactoringandEIPSecuritizationArrangementMemberus-gaap:VariableInterestEntityPrimaryBeneficiaryMember2021-12-310001283699tmus:FactoringandEIPSecuritizationArrangementMemberus-gaap:OtherCurrentAssetsMemberus-gaap:VariableInterestEntityPrimaryBeneficiaryMember2022-03-310001283699tmus:FactoringandEIPSecuritizationArrangementMemberus-gaap:OtherCurrentAssetsMemberus-gaap:VariableInterestEntityPrimaryBeneficiaryMember2021-12-310001283699us-gaap:OtherNoncurrentAssetsMembertmus:FactoringandEIPSecuritizationArrangementMemberus-gaap:VariableInterestEntityPrimaryBeneficiaryMember2022-03-310001283699us-gaap:OtherNoncurrentAssetsMembertmus:FactoringandEIPSecuritizationArrangementMemberus-gaap:VariableInterestEntityPrimaryBeneficiaryMember2021-12-310001283699tmus:FactoringandEIPSecuritizationArrangementMemberus-gaap:VariableInterestEntityPrimaryBeneficiaryMember2022-01-012022-03-310001283699tmus:FactoringandEIPSecuritizationArrangementMemberus-gaap:VariableInterestEntityPrimaryBeneficiaryMember2021-01-012021-03-310001283699us-gaap:LicensingAgreementsMember2021-12-310001283699us-gaap:LicensingAgreementsMember2022-01-012022-03-310001283699us-gaap:LicensingAgreementsMember2022-03-310001283699us-gaap:LicensingAgreementsMembertmus:Auction110Member2022-01-012022-01-31tmus:license0001283699us-gaap:LicensingAgreementsMembertmus:Auction110Member2022-01-012022-03-310001283699us-gaap:LicensingAgreementsMembertmus:Auction110Member2021-09-012021-09-300001283699us-gaap:LicensingAgreementsMembertmus:Auction110Member2022-02-012022-02-280001283699us-gaap:InterestRateContractMember2022-03-310001283699us-gaap:InterestRateContractMember2021-12-310001283699us-gaap:InterestExpenseMember2022-01-012022-03-310001283699us-gaap:InterestExpenseMember2021-01-012021-03-310001283699us-gaap:EstimateOfFairValueFairValueDisclosureMemberus-gaap:FairValueInputsLevel3Member2022-03-310001283699us-gaap:EstimateOfFairValueFairValueDisclosureMemberus-gaap:FairValueInputsLevel3Member2021-12-310001283699us-gaap:SeniorNotesMemberus-gaap:FairValueInputsLevel1Memberus-gaap:CarryingReportedAmountFairValueDisclosureMember2022-03-310001283699us-gaap:EstimateOfFairValueFairValueDisclosureMemberus-gaap:SeniorNotesMemberus-gaap:FairValueInputsLevel1Member2022-03-310001283699us-gaap:SeniorNotesMemberus-gaap:FairValueInputsLevel1Memberus-gaap:CarryingReportedAmountFairValueDisclosureMember2021-12-310001283699us-gaap:EstimateOfFairValueFairValueDisclosureMemberus-gaap:SeniorNotesMemberus-gaap:FairValueInputsLevel1Member2021-12-310001283699us-gaap:SeniorNotesMembersrt:AffiliatedEntityMemberus-gaap:CarryingReportedAmountFairValueDisclosureMemberus-gaap:FairValueInputsLevel2Member2022-03-310001283699us-gaap:EstimateOfFairValueFairValueDisclosureMemberus-gaap:SeniorNotesMembersrt:AffiliatedEntityMemberus-gaap:FairValueInputsLevel2Member2022-03-310001283699us-gaap:SeniorNotesMembersrt:AffiliatedEntityMemberus-gaap:CarryingReportedAmountFairValueDisclosureMemberus-gaap:FairValueInputsLevel2Member2021-12-310001283699us-gaap:EstimateOfFairValueFairValueDisclosureMemberus-gaap:SeniorNotesMembersrt:AffiliatedEntityMemberus-gaap:FairValueInputsLevel2Member2021-12-310001283699us-gaap:SeniorNotesMembertmus:ThirdPartyMemberus-gaap:FairValueInputsLevel1Memberus-gaap:CarryingReportedAmountFairValueDisclosureMember2022-03-310001283699us-gaap:EstimateOfFairValueFairValueDisclosureMemberus-gaap:SeniorNotesMembertmus:ThirdPartyMemberus-gaap:FairValueInputsLevel1Member2022-03-310001283699us-gaap:SeniorNotesMembertmus:ThirdPartyMemberus-gaap:FairValueInputsLevel1Memberus-gaap:CarryingReportedAmountFairValueDisclosureMember2021-12-310001283699us-gaap:EstimateOfFairValueFairValueDisclosureMemberus-gaap:SeniorNotesMembertmus:ThirdPartyMemberus-gaap:FairValueInputsLevel1Member2021-12-310001283699tmus:VendorFinancingArrangementMember2022-03-310001283699tmus:VendorFinancingArrangementMember2021-12-310001283699tmus:ThirdPartyMemberus-gaap:ShortTermDebtMember2021-12-310001283699tmus:ThirdPartyMemberus-gaap:ShortTermDebtMember2022-03-310001283699tmus:ThirdPartyMemberus-gaap:ShortTermDebtMember2022-01-012022-03-310001283699us-gaap:LongTermDebtMembertmus:ThirdPartyMember2021-12-310001283699us-gaap:LongTermDebtMembertmus:ThirdPartyMember2022-03-310001283699us-gaap:LongTermDebtMembertmus:ThirdPartyMember2022-01-012022-03-310001283699tmus:ThirdPartyMembertmus:TotalDebtMember2021-12-310001283699tmus:ThirdPartyMembertmus:TotalDebtMember2022-03-310001283699tmus:ThirdPartyMembertmus:TotalDebtMember2022-01-012022-03-310001283699srt:AffiliatedEntityMemberus-gaap:ShortTermDebtMember2021-12-310001283699srt:AffiliatedEntityMemberus-gaap:ShortTermDebtMember2022-03-310001283699srt:AffiliatedEntityMemberus-gaap:ShortTermDebtMember2022-01-012022-03-310001283699us-gaap:LongTermDebtMembersrt:AffiliatedEntityMember2021-12-310001283699us-gaap:LongTermDebtMembersrt:AffiliatedEntityMember2022-03-310001283699us-gaap:LongTermDebtMembersrt:AffiliatedEntityMember2022-01-012022-03-310001283699tmus:TotalDebtMember2021-12-310001283699tmus:TotalDebtMember2022-03-310001283699tmus:TotalDebtMember2022-01-012022-03-310001283699tmus:SeniorNotesDue20224.000Member2022-03-310001283699tmus:A4000SeniorNotesDue2022Memberus-gaap:SeniorNotesMember2022-03-310001283699tmus:A4000SeniorNotesDue2022Memberus-gaap:SeniorNotesMember2022-01-012022-03-310001283699srt:AffiliatedEntityMembertmus:SeniorNotesDue20224.000Member2022-03-310001283699us-gaap:SeniorNotesMembertmus:A4000SeniorNotesToAffiliatesDue2022Membersrt:AffiliatedEntityMember2022-03-310001283699us-gaap:SeniorNotesMembertmus:A4000SeniorNotesToAffiliatesDue2022Member2022-01-012022-03-310001283699us-gaap:SeniorNotesMembersrt:AffiliatedEntityMember2022-03-310001283699tmus:SeniorSecuredSeries20181A1NotesDue20254738Memberus-gaap:SeniorNotesMember2022-03-310001283699tmus:DebtOtherMemberMember2022-03-310001283699tmus:A5375SeniorNotesToAffiliatesDue2022Memberus-gaap:SeniorNotesMembersrt:AffiliatedEntityMemberus-gaap:SubsequentEventMember2022-04-152022-04-150001283699tmus:A5375SeniorNotesToAffiliatesDue2022Membersrt:AffiliatedEntityMemberus-gaap:SubsequentEventMember2022-04-150001283699tmus:TowerTransactionMembertmus:CrownCastleInternationalCorp.Member2012-01-012012-12-31tmus:towerSite0001283699tmus:TowerTransactionMembersrt:MinimumMember2012-12-310001283699tmus:TowerTransactionMembersrt:MaximumMember2012-12-310001283699tmus:TowerTransactionMember2012-01-012012-12-310001283699tmus:TowerTransactionMembertmus:CrownCastleInternationalCorp.Member2020-01-012020-03-310001283699tmus:TowerTransactionMembertmus:CrownCastleInternationalCorp.Member2020-03-310001283699tmus:TowerTransactionMembertmus:CrownCastleInternationalCorp.Member2020-04-010001283699tmus:SprintCorporationMember2020-04-012020-04-010001283699tmus:TowerTransactionMembertmus:TowerMember2022-01-012022-03-310001283699tmus:TowerTransactionMember2022-01-030001283699tmus:CrownCastleInternationalCorp.Member2022-01-032022-01-030001283699tmus:TowerTransactionMember2022-01-032022-01-030001283699tmus:CCITowerLeaseArrangementMembertmus:CrownCastleInternationalCorp.Member2022-01-032022-01-030001283699us-gaap:PropertyPlantAndEquipmentMember2022-03-310001283699us-gaap:PropertyPlantAndEquipmentMember2021-12-310001283699tmus:FailedSaleLeasebackTransactionTowerObligationsMember2022-03-310001283699tmus:FailedSaleLeasebackTransactionTowerObligationsMember2021-12-310001283699us-gaap:OtherNoncurrentLiabilitiesMember2022-03-310001283699us-gaap:OtherNoncurrentLiabilitiesMember2021-12-310001283699tmus:BrandedPostpaidRevenuePhoneMember2022-01-012022-03-310001283699tmus:BrandedPostpaidRevenuePhoneMember2021-01-012021-03-310001283699tmus:BrandedPostpaidRevenueOtherMember2022-01-012022-03-310001283699tmus:BrandedPostpaidRevenueOtherMember2021-01-012021-03-310001283699tmus:LeaseOfMobileCommunicationDevicesandAccessoriesMember2022-01-012022-03-310001283699tmus:LeaseOfMobileCommunicationDevicesandAccessoriesMember2021-01-012021-03-310001283699tmus:SprintCorporationMembertmus:WirelineServiceRevenueMember2022-01-012022-03-310001283699tmus:SprintCorporationMembertmus:WirelineServiceRevenueMember2021-01-012021-03-310001283699tmus:BrandedPostpaidRevenueMember2022-03-3100012836992022-04-012022-03-3100012836992023-01-012022-03-3100012836992024-01-012022-03-310001283699srt:MinimumMember2022-01-012022-03-310001283699srt:MaximumMember2022-01-012022-03-3100012836992020-01-012020-03-310001283699us-gaap:StockCompensationPlanMember2022-01-012022-03-310001283699us-gaap:StockCompensationPlanMember2021-01-012021-03-310001283699tmus:ContingentConsiderationForMergerMember2022-01-012022-03-310001283699tmus:ContingentConsiderationForMergerMember2021-01-012021-03-310001283699us-gaap:SeriesAPreferredStockMember2022-03-310001283699us-gaap:SeriesAPreferredStockMember2021-03-310001283699srt:MinimumMember2022-03-310001283699srt:MaximumMember2022-03-310001283699tmus:CrownAgreementMember2022-01-03tmus:renewalOption0001283699tmus:CrownAgreementMember2022-01-032022-01-0300012836992022-03-012022-03-310001283699us-gaap:ContractTerminationMember2022-01-012022-03-310001283699us-gaap:ContractTerminationMember2022-03-310001283699us-gaap:EmployeeSeveranceMember2022-01-012022-03-310001283699us-gaap:EmployeeSeveranceMember2022-03-310001283699tmus:NetworkingDecommissioningMember2022-01-012022-03-310001283699tmus:NetworkingDecommissioningMember2022-03-310001283699us-gaap:ContractTerminationMember2021-12-310001283699us-gaap:EmployeeSeveranceMember2021-12-310001283699tmus:NetworkingDecommissioningMember2021-12-310001283699us-gaap:AccountsPayableAndAccruedLiabilitiesMember2022-03-310001283699us-gaap:AccountsPayableAndAccruedLiabilitiesMember2021-12-310001283699tmus:A5375SeniorNotesToAffiliatesDue2022Memberus-gaap:SeniorNotesMembersrt:AffiliatedEntityMemberus-gaap:SubsequentEventMember2022-04-15
+
+Table of Contents
+
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+FORM 10-Q
+☒          QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the quarterly period ended March 31, 2022
+or
+☐          TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the transition period from    to
+Commission File Number: 1-33409
+
+T-MOBILE US, INC.
+(Exact name of registrant as specified in its charter)
+Delaware20-0836269(State or other jurisdiction of incorporation or organization)(I.R.S. Employer Identification No.)
+
+12920 SE 38th Street
+Bellevue, Washington
+(Address of principal executive offices)
+98006-1350
+(Zip Code)
+
+(425) 378-4000(Registrant’s telephone number, including area code) Securities registered pursuant to Section 12(b) of the Act:
+Title of each classTrading SymbolName of each exchange on which registeredCommon Stock, par value $0.00001 per shareTMUSThe NASDAQ Stock Market LLC
+
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes ☒ No ☐
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files). Yes ☒ No ☐
+Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of “large accelerated filer,” “accelerated filer,” “smaller reporting company,” and “emerging growth company” in Rule 12b-2 of the Exchange Act.
+Large accelerated filer ☒Accelerated filer☐Non-accelerated filer☐Smaller reporting company☐Emerging growth company☐
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).      Yes ☐ No ☒
+Indicate the number of shares outstanding of each of the issuer’s classes of common stock, as of the latest practicable date.
+ClassShares Outstanding as of April 29, 2022Common Stock, par value $0.00001 per share1,253,584,833
+
+
+
+1
+
+
+
+T-Mobile US, Inc.
+Form 10-Q
+For the Quarter Ended March 31, 2022
+
+Table of Contents
+PART I. FINANCIAL INFORMATIONItem 1.Financial Statements3Condensed Consolidated Balance Sheets3Condensed Consolidated Statements of Comprehensive Income4Condensed Consolidated Statements of Cash Flows5Condensed Consolidated Statement of Stockholders’ Equity6Notes to the Condensed Consolidated Financial Statements8Item 2.Management’s Discussion and Analysis of Financial Condition and Results of Operations24Item 3.Quantitative and Qualitative Disclosures About Market Risk41Item 4.Controls and Procedures41PART II. OTHER INFORMATIONItem 1.Legal Proceedings42Item 1A.Risk Factors42Item 2.Unregistered Sales of Equity Securities and Use of Proceeds43Item 3.Defaults Upon Senior Securities43Item 4.Mine Safety Disclosures43Item 5.Other Information43Item 6.Exhibits44Signatures45
+
+
+2
+
+
+Index for Notes to the Condensed Consolidated Financial Statements
+PART I. FINANCIAL INFORMATION
+
+Item 1. Financial Statements
+
+
+T-Mobile US, Inc.
+Condensed Consolidated Balance Sheets
+(Unaudited)
+
+(in millions, except share and per share amounts)March 31,2022December 31,2021AssetsCurrent assetsCash and cash equivalents$3,245 $6,631 Accounts receivable, net of allowance for credit losses of $164 and $1464,016 4,194 Equipment installment plan receivables, net of allowance for credit losses and imputed discount of $522 and $4945,061 4,748 Inventory2,715 2,567 Prepaid expenses727 746 Other current assets1,691 2,005 Total current assets17,455 20,891 Property and equipment, net40,006 39,803 Operating lease right-of-use assets31,449 26,959 Financing lease right-of-use assets3,287 3,322 Goodwill12,234 12,188 Spectrum licenses92,661 92,606 Other intangible assets, net4,448 4,733 Equipment installment plan receivables due after one year, net of allowance for credit losses and imputed discount of $127 and $1362,837 2,829 Other assets6,276 3,232 Total assets$210,653 $206,563 Liabilities and Stockholders' EquityCurrent liabilitiesAccounts payable and accrued liabilities$11,134 $11,405 Short-term debt2,865 3,378 Short-term debt to affiliates1,250 2,245 Deferred revenue842 856 Short-term operating lease liabilities3,252 3,425 Short-term financing lease liabilities1,121 1,120 Other current liabilities959 1,070 Total current liabilities21,423 23,499 Long-term debt66,861 67,076 Long-term debt to affiliates1,494 1,494 Tower obligations4,037 2,806 Deferred tax liabilities10,410 10,216 Operating lease liabilities31,187 25,818 Financing lease liabilities1,447 1,455 Other long-term liabilities3,818 5,097 Total long-term liabilities119,254 113,962 Commitments and contingencies (Note 11)Stockholders' equityCommon Stock, par value $0.00001 per share, 2,000,000,000 shares authorized; 1,254,917,883 and 1,250,751,148 shares issued, 1,253,352,700 and 1,249,213,681 shares outstanding— — Additional paid-in capital73,420 73,292 Treasury stock, at cost, 1,565,183 and 1,537,468 shares issued(16)(13)Accumulated other comprehensive loss(1,329)(1,365)Accumulated deficit(2,099)(2,812)Total stockholders' equity69,976 69,102 Total liabilities and stockholders' equity$210,653 $206,563
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+3
+
+
+Index for Notes to the Condensed Consolidated Financial Statements
+T-Mobile US, Inc.
+Condensed Consolidated Statements of Comprehensive Income
+(Unaudited)
+
+Three Months Ended March 31,(in millions, except share and per share amounts)20222021RevenuesPostpaid revenues$11,201 $10,303 Prepaid revenues2,455 2,351 Wholesale and other service revenues1,472 1,538 Total service revenues15,128 14,192 Equipment revenues4,694 5,346 Other revenues298 221 Total revenues20,120 19,759 Operating expensesCost of services, exclusive of depreciation and amortization shown separately below3,727 3,384 Cost of equipment sales, exclusive of depreciation and amortization shown separately below5,946 5,142 Selling, general and administrative5,056 4,805 Depreciation and amortization3,585 4,289 Total operating expenses18,314 17,620 Operating income1,806 2,139 Other expenseInterest expense, net(864)(835)Other expense, net(11)(125)Total other expense, net(875)(960)Income before income taxes931 1,179 Income tax expense(218)(246)Net income$713 $933 Net income$713 $933 Other comprehensive income (loss), net of taxUnrealized gain on cash flow hedges, net of tax effect of $13 and $1237 34 Unrealized (loss) gain on foreign currency translation adjustment, net of tax effect of $0 and $0(1)2 Other comprehensive income36 36 Total comprehensive income$749 $969 Earnings per shareBasic$0.57 $0.75 Diluted$0.57 $0.74 Weighted-average shares outstandingBasic1,250,505,999 1,243,520,026 Diluted1,255,368,592 1,252,783,564
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+4
+
+
+Index for Notes to the Condensed Consolidated Financial Statements
+T-Mobile US, Inc.
+Condensed Consolidated Statements of Cash Flows
+(Unaudited)
+
+Three Months Ended March 31,(in millions)20222021Operating activitiesNet income$713 $933 Adjustments to reconcile net income to net cash provided by operating activitiesDepreciation and amortization3,585 4,289 Stock-based compensation expense141 138 Deferred income tax expense185 211 Bad debt expense210 82 Losses (gains) from sales of receivables46 (18)Losses on redemption of debt— 101 Changes in operating assets and liabilitiesAccounts receivable(984)96 Equipment installment plan receivables(535)(727)Inventories(93)279 Operating lease right-of-use assets1,469 1,124 Other current and long-term assets(4)54 Accounts payable and accrued liabilities(59)(1,384)Short- and long-term operating lease liabilities(771)(1,369)Other current and long-term liabilities(163)(217)Other, net105 69 Net cash provided by operating activities3,845 3,661 Investing activitiesPurchases of property and equipment, including capitalized interest of ($15) and ($84)(3,381)(3,183)Purchases of spectrum licenses and other intangible assets, including deposits(2,843)(8,922)Proceeds related to beneficial interests in securitization transactions1,185 891 Acquisition of companies, net of cash and restricted cash acquired(52)(29)Other, net(1)4 Net cash used in investing activities(5,092)(11,239)Financing activitiesProceeds from issuance of long-term debt— 6,763 Repayments of financing lease obligations(302)(287)Repayments of short-term debt for purchases of inventory, property and equipment and other financial liabilities— (55)Repayments of long-term debt(1,632)(2,219)Tax withholdings on share-based awards(172)(218)Cash payments for debt prepayment or debt extinguishment costs— (65)Other, net(30)(45)Net cash (used in) provided by financing activities(2,136)3,874 Change in cash and cash equivalents, including restricted cash(3,383)(3,704)Cash and cash equivalents, including restricted cashBeginning of period6,703 10,463 End of period$3,320 $6,759
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+5
+
+
+Index for Notes to the Condensed Consolidated Financial Statements
+T-Mobile US, Inc.
+Condensed Consolidated Statement of Stockholders’ Equity
+(Unaudited)
+(in millions, except shares)Common Stock OutstandingTreasury Shares at CostPar Value and Additional Paid-in CapitalAccumulated Other Comprehensive LossAccumulated DeficitTotal Stockholders' EquityBalance as of December 31, 20211,249,213,681 $(13)$73,292 $(1,365)$(2,812)$69,102 Net income— — — — 713 713 Other comprehensive income— — — 36 — 36 Stock-based compensation— — 157 — — 157 Exercise of stock options49,647 — 2 — — 2 Stock issued for employee stock purchase plan1,276,725 — 138 — — 138 Issuance of vested restricted stock units4,210,669 — — — — — Shares withheld related to net share settlement of stock awards and stock options(1,370,306)— (172)— — (172)Transfers with NQDC plan(27,716)(3)3 — — — Balance as of March 31, 20221,253,352,700 $(16)$73,420 $(1,329)$(2,099)$69,976 Balance as of December 31, 20201,241,805,706 $(11)$72,772 $(1,581)$(5,836)$65,344 Net income— — — — 933 933 Other comprehensive income— — — 36 — 36 Stock-based compensation— — 154 — — 154 Exercise of stock options80,802 — 3 — — 3 Stock issued for employee stock purchase plan1,272,253 — 125 — — 125 Issuance of vested restricted stock units5,421,839 — — — — — Shares withheld related to net share settlement of stock awards and stock options(1,785,987)— (218)— — (218)Transfers with NQDC plan(21,438)(3)3 — — — Balance as of March 31, 20211,246,773,175 $(14)$72,839 $(1,545)$(4,903)$66,377
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+6
+
+
+Index for Notes to the Condensed Consolidated Financial Statements
+T-Mobile US, Inc.
+Index for Notes to the Condensed Consolidated Financial Statements
+
+Note 1Summary of Significant Accounting Policies8Note 2Receivables and Related Allowance for Credit Losses9Note 3Sales of Certain Receivables11Note 4 Spectrum License Transactions12Note 5Fair Value Measurements13Note 6Debt14Note 7Tower Obligations14Note 8Revenue from Contracts with Customers16Note 9Earnings Per Share18Note 10Leases18Note 11Commitments and Contingencies19Note 12Restructuring Costs22Note 13Additional Financial Information23Note 14Subsequent Events23
+
+7
+
+
+Index for Notes to the Condensed Consolidated Financial Statements
+T-Mobile US, Inc.
+Notes to the Condensed Consolidated Financial Statements
+
+
+Note 1 – Summary of Significant Accounting Policies
+
+Basis of Presentation
+
+The unaudited condensed consolidated financial statements of T-Mobile US, Inc. (“T-Mobile,” “we,” “our,” “us” or the “Company”) include all adjustments of a normal recurring nature necessary for the fair presentation of the results for the interim periods presented. The results for the interim periods are not necessarily indicative of those for the full year. The condensed consolidated financial statements should be read in conjunction with our consolidated financial statements included in our Annual Report on Form 10-K for the year ended December 31, 2021.The condensed consolidated financial statements include the balances and results of operations of T-Mobile and our consolidated subsidiaries. We consolidate majority-owned subsidiaries over which we exercise control, as well as variable interest entities (“VIEs”) where we are deemed to be the primary beneficiary and VIEs which cannot be deconsolidated, such as those related to our obligations to pay for the management and operation of certain of our wireless communications tower sites. Intercompany transactions and balances have been eliminated in consolidation.
+
+
+The preparation of financial statements in conformity with United States (“U.S.”) generally accepted accounting principles (“GAAP”) requires our management to make estimates and assumptions that affect the financial statements and accompanying notes. Estimates are based on historical experience, where applicable, and other assumptions that management believes are reasonable under the circumstances. Estimates are inherently subject to judgment and actual results could differ from those estimates.
+
+Accounting Pronouncements Adopted During the Current Year
+
+Reference Rate Reform
+
+In March 2020, the Financial Accounting Standards Board (“FASB”) issued Accounting Standards Update (“ASU”) 2020-04, “Reference Rate Reform (Topic 848): Facilitation of the Effects of Reference Rate Reform on Financial Reporting,” and has since modified the standard with ASU 2021-01, “Reference Rate Reform (Topic 848): Scope” (together, the “reference rate reform standard”). The reference rate reform standard provides temporary optional expedients and allows for certain exceptions to applying existing GAAP for contract modifications and hedging relationships, subject to meeting certain criteria, that reference LIBOR or another reference rate expected to be discontinued as a result of reference rate reform. The reference rate reform standard is available for adoption through December 31, 2022, and the optional expedients for contract modifications must be elected for all arrangements within a given Accounting Standards Codification (“ASC”) Topic or Industry Subtopic. As of January 1, 2022, we have elected to apply the practical expedients provided by the reference rate reform standard for all ASC Topics and Industry Subtopics related to eligible contract modifications as they occur. This election did not have a material impact on our condensed consolidated financial statements for the three months ended March 31, 2022, and the impact of applying the election to future eligible contract modifications that occur through December 31, 2022 is also not expected to be material.
+
+Contract Assets and Contract Liabilities Acquired in a Business Combination
+
+In October 2021, the FASB issued ASU 2021-08, “Business Combinations (Topic 805): Accounting for Contract Assets and Contract Liabilities from Contracts with Customers.” The standard amends ASC 805 such that contract assets and contract liabilities acquired in a business combination are added to the list of exceptions to the recognition and measurement principles such that they are recognized and measured in accordance with ASC 606. As of January 1, 2022, we have elected to adopt this standard, and it will be applied prospectively to all business combinations occurring after this date.
+
+Accounting Pronouncements Not Yet Adopted
+
+Troubled Debt Restructurings and Vintage Disclosures
+
+In March 2022, the FASB issued ASU 2022-02, “Financial Instruments—Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures.” The standard eliminates the accounting guidance within ASC 310-40 for troubled debt restructurings by creditors while enhancing disclosure requirements for certain loan refinancings and restructurings by
+8
+
+Index for Notes to the Condensed Consolidated Financial Statements
+creditors when a borrower is experiencing financial difficulty. Additionally, for public business entities, the standard requires disclosure of current-period gross write-offs by year of origination for financing receivables and net investments in leases within the scope of ASC 326-20. The standard will become effective for us beginning January 1, 2023, and should be applied prospectively, with an option for modified retrospective application for provisions related to recognition and measurement of troubled debt restructurings. Early adoption is permitted for us at any time. We are currently evaluating the impact of the standard on our future consolidated financial statements.
+
+
+Note 2 – Receivables and Related Allowance for Credit Losses
+
+We maintain an allowance for credit losses by applying an expected credit loss model. Each period, management assesses the appropriateness of the level of allowance for credit losses by considering credit risk inherent within each portfolio segment as of period end.We consider a receivable past due when a customer has not paid us by the contractually specified payment due date. Account balances are written off against the allowance for credit losses if collection efforts are unsuccessful and the receivable balance is deemed uncollectible (customer default), based on factors such as customer credit ratings as well as the length of time the amounts are past due.Our portfolio of receivables is comprised of two portfolio segments: accounts receivable and equipment installment plan (“EIP”) receivables.
+
+
+
+Accounts Receivable Portfolio Segment
+
+Accounts receivable balances are predominately composed of amounts currently due from customers (e.g., for wireless services and monthly device lease payments), device insurance administrators, wholesale partners, non-consolidated affiliates, other carriers and third-party retail channels. We estimate credit losses associated with our accounts receivable portfolio segment using an expected credit loss model, which utilizes an aging schedule methodology based on historical information and adjusted for asset-specific considerations, current economic conditions and reasonable and supportable forecasts. Our approach considers a number of factors, including our overall historical credit losses, net of recoveries, and timely payment experience, as well as current collection trends such as write-off frequency and severity. We also consider other qualitative factors such as macro-economic conditions.We consider the need to adjust our estimate of credit losses for reasonable and supportable forecasts of future economic conditions. To do so, we monitor external forecasts of changes in real U.S. gross domestic product and forecasts of consumer credit behavior for comparable credit exposures. We also periodically evaluate other economic indicators such as unemployment rates to assess their level of correlation with our historical credit loss statistics.
+
+
+
+
+EIP Receivables Portfolio Segment
+
+Based upon customer credit profiles at the time of customer origination, we classify the EIP receivables segment into two customer classes of “Prime” and “Subprime.” Prime customer receivables are those with lower credit risk and Subprime customer receivables are those with higher credit risk. Customers may be required to make a down payment on their equipment purchases if their assessed credit risk exceeds established underwriting thresholds. In addition, certain customers within the Subprime category may be required to pay a deposit.To determine a customer’s credit profile and assist in determining their credit class, we use a proprietary credit scoring model that measures the credit quality of a customer using several factors, such as credit bureau information, consumer credit risk scores and service and device plan characteristics. EIP receivables had a combined weighted-average effective interest rate of 5.7% and 5.6% as of March 31, 2022 and December 31, 2021, respectively.
+
+
+9
+
+Index for Notes to the Condensed Consolidated Financial Statements
+The following table summarizes the EIP receivables, including imputed discounts and related allowance for credit losses:
+(in millions)March 31,2022December 31,2021EIP receivables, gross$8,547 $8,207 Unamortized imputed discount(381)(378)EIP receivables, net of unamortized imputed discount8,166 7,829 Allowance for credit losses(268)(252)EIP receivables, net of allowance for credit losses and imputed discount$7,898 $7,577 Classified on the condensed consolidated balance sheets as:Equipment installment plan receivables, net of allowance for credit losses and imputed discount$5,061 $4,748 Equipment installment plan receivables due after one year, net of allowance for credit losses and imputed discount2,837 2,829 EIP receivables, net of allowance for credit losses and imputed discount$7,898 $7,577
+
+Many of our loss estimation techniques rely on delinquency-based models; therefore, delinquency is an important indicator of credit quality in the establishment of our allowance for credit losses for EIP receivables. We manage our EIP receivables portfolio segment using delinquency and customer credit class as key credit quality indicators.
+
+The following table presents the amortized cost of our EIP receivables by delinquency status, customer credit class and year of origination as of March 31, 2022:
+Originated in 2022Originated in 2021Originated prior to 2021Total EIP Receivables, net of unamortized imputed discounts(in millions)PrimeSubprimePrimeSubprimePrimeSubprimePrimeSubprimeGrand totalCurrent - 30 days past due$1,434 $1,053 $2,895 $1,736 $602 $294 $4,931 $3,083 $8,014 31 - 60 days past due8 8 25 33 5 6 38 47 85 61 - 90 days past due1 1 9 15 2 3 12 19 31 More than 90 days past due— 1 9 16 3 7 12 24 36 EIP receivables, net of unamortized imputed discount$1,443 $1,063 $2,938 $1,800 $612 $310 $4,993 $3,173 $8,166
+
+We estimate credit losses on our EIP receivables segment by applying an expected credit loss model, which relies on historical loss data adjusted for current conditions to calculate default probabilities or an estimate for the frequency of customer default. Our assessment of default probabilities includes receivables delinquency status, historical loss experience, how long the receivables have been outstanding and customer credit ratings, as well as customer tenure. We multiply these estimated default probabilities by our estimated loss given default, which is the estimated amount or severity of the default loss after adjusting for estimated recoveries.As we do for our accounts receivable portfolio segment, we consider the need to adjust our estimate of credit losses on EIP receivables for reasonable and supportable forecasts of economic conditions through monitoring external forecasts and periodic internal statistical analyses.
+
+
+Activity for the three months ended March 31, 2022 and 2021, in the allowance for credit losses and unamortized imputed discount balances for the accounts receivable and EIP receivables segments were as follows:
+March 31, 2022March 31, 2021(in millions)Accounts Receivable AllowanceEIP Receivables AllowanceTotalAccounts Receivable AllowanceEIP Receivables AllowanceTotalAllowance for credit losses and imputed discount, beginning of period$146 $630 $776 $194 $605 $799 Bad debt expense96 114 210 28 54 82 Write-offs, net of recoveries(78)(99)(177)(79)(54)(133)Change in imputed discount on short-term and long-term EIP receivablesN/A30 30 N/A66 66 Impact on the imputed discount from sales of EIP receivablesN/A(26)(26)N/A(35)(35)Allowance for credit losses and imputed discount, end of period$164 $649 $813 $143 $636 $779
+
+10
+
+Index for Notes to the Condensed Consolidated Financial Statements
+Off-Balance-Sheet Credit Exposures
+
+We do not have material, unmitigated off-balance-sheet credit exposures as of March 31, 2022. In connection with the sales of certain service and EIP accounts receivable pursuant to the sale arrangements, we have deferred purchase price assets included on our Condensed Consolidated Balance Sheets measured at fair value that are based on a discounted cash flow model using Level 3 inputs, including customer default rates and credit worthiness, dilutions and recoveries. See Note 3 – Sales of Certain Receivables for further information.
+
+
+Note 3 – Sales of Certain Receivables
+
+We regularly enter into transactions to sell certain service accounts receivable and EIP receivables. The transactions, including our continuing involvement with the sold receivables and the respective impacts to our condensed consolidated financial statements, are described below.
+
+Sales of EIP Receivables
+
+As of both March 31, 2022 and December 31, 2021, the EIP sale arrangement provided funding of $1.3 billion.In connection with this EIP sale arrangement, we formed a wholly owned subsidiary, which qualifies as a bankruptcy remote entity (the “EIP BRE”). We consolidate the EIP BRE under the VIE model.
+
+
+The following table summarizes the carrying amounts and classification of assets, which consist primarily of the deferred purchase price, and liabilities included on our Condensed Consolidated Balance Sheets with respect to the EIP BRE:
+(in millions)March 31,2022December 31,2021Other current assets$382 $424 Other assets108 125 Other long-term liabilities2 —
+
+Sales of Service Accounts Receivable
+
+The maximum funding commitment of the service receivable sale arrangement is $950 million and the facility expires in February 2023. As of both March 31, 2022 and December 31, 2021, the service receivable sale arrangement provided funding of $775 million.In connection with the service receivable sale arrangement, we formed a wholly owned subsidiary, which qualifies as a bankruptcy remote entity, to sell service accounts receivable (the “Service BRE”). We consolidate the Service BRE under the VIE model.
+
+
+The following table summarizes the carrying amounts and classification of assets, which consist primarily of the deferred purchase price, and liabilities included on our Condensed Consolidated Balance Sheets with respect to the Service BRE:
+(in millions)March 31,2022December 31,2021Other current assets$231 $231 Other current liabilities317 348
+
+11
+
+Index for Notes to the Condensed Consolidated Financial Statements
+Sales of Receivables
+
+The following table summarizes the impact of the sale of certain service receivables and EIP receivables on our Condensed Consolidated Balance Sheets:
+(in millions)March 31,2022December 31,2021Derecognized net service receivables and EIP receivables$2,480 $2,492 Other current assets613 655 of which, deferred purchase price611 654 Other long-term assets108 125 of which, deferred purchase price108 125 Other current liabilities317 348 Other long-term liabilities2 — Net cash proceeds since inception1,750 1,754 Of which:Change in net cash proceeds during the year-to-date period(4)39 Net cash proceeds funded by reinvested collections1,754 1,715
+
+At inception, we elected to measure the deferred purchase price at fair value with changes in fair value included in Selling, general and administrative expense on our Condensed Consolidated Statements of Comprehensive Income. The fair value of the deferred purchase price is determined based on a discounted cash flow model which uses primarily Level 3 inputs, including customer default rates. As of March 31, 2022 and December 31, 2021, our deferred purchase price related to the sales of service receivables and EIP receivables was $719 million and $779 million, respectively.We recognized a loss from sales of receivables, including changes in fair value of the deferred purchase price, of $46 million and a gain of $18 million for the three months ended March 31, 2022 and 2021, respectively, in Selling, general and administrative expense on our Condensed Consolidated Statements of Comprehensive Income.
+
+
+Continuing Involvement
+
+Pursuant to the sale arrangements described above, we have continuing involvement with the service receivables and EIP receivables we sell as we service the receivables, are required to repurchase certain receivables, including ineligible receivables, aged receivables and receivables where write-off is imminent, and may be responsible for absorbing credit losses through reduced collections on our deferred purchase price assets. We continue to service the customers and their related receivables, including facilitating customer payment collection, in exchange for a monthly servicing fee. As the receivables are sold on a revolving basis, the customer payment collections on sold receivables may be reinvested in new receivable sales. At the direction of the purchasers of the sold receivables, we apply the same policies and procedures while servicing the sold receivables as we apply to our owned receivables, and we continue to maintain normal relationships with our customers.
+
+
+Note 4 – Spectrum License Transactions
+
+The following table summarizes our spectrum license activity for the three months ended March 31, 2022:
+(in millions)2022Spectrum licenses, beginning of year$92,606 Spectrum license acquisitions55 Spectrum licenses, end of period$92,661
+
+In January 2022, the FCC announced that we were the winning bidder of 199 licenses in Auction 110 (mid-band spectrum) for an aggregate purchase price of $2.9 billion. At inception of Auction 110 in September 2021, we deposited $100 million. We paid the FCC the remaining $2.8 billion for the licenses won in the auction in February 2022.The aggregate cash payments made to the FCC are included in Other assets as of March 31, 2022 in our Condensed Consolidated Balance Sheets, and will remain there until the corresponding licenses are received. The timing of when the licenses will be issued will be determined by the FCC after all post-auction procedures have been completed, which we expect to occur in mid-2022. Cash payments to acquire spectrum licenses and payments for costs to clear spectrum are included in Purchases of spectrum licenses and other intangible assets, including deposits in our Condensed Consolidated Statements of Cash Flows for the three months ended March 31, 2022.
+
+12
+
+Index for Notes to the Condensed Consolidated Financial Statements
+
+
+Note 5 – Fair Value Measurements
+
+The carrying values of Cash and cash equivalents, Accounts receivable and Accounts payable and accrued liabilities approximate fair value due to the short-term maturities of these instruments.
+
+Derivative Financial Instruments
+
+Periodically, we use derivatives to manage exposure to market risk, such as interest rate risk. We designate certain derivatives as hedging instruments in a qualifying hedge accounting relationship (cash flow hedge) to help minimize significant, unplanned fluctuations in cash flows caused by interest rate volatility. We do not use derivatives for trading or speculative purposes. Cash flows associated with qualifying hedge derivative instruments are presented in the same category on the Condensed Consolidated Statements of Cash Flows as the item being hedged. We did not have any significant derivative instruments outstanding as of March 31, 2022 and December 31, 2021.
+
+Interest Rate Lock Derivatives
+In April 2020, we terminated our interest rate lock derivatives entered into in October 2018.Aggregate changes in the fair value of the interest rate lock derivatives, net of tax and amortization, of $1.4 billion and $1.5 billion are presented in Accumulated other comprehensive loss on our Condensed Consolidated Balance Sheets as of March 31, 2022 and December 31, 2021, respectively.For the three months ended March 31, 2022 and 2021, $50 million and $46 million, respectively, were amortized from Accumulated other comprehensive loss into Interest expense, net in the Condensed Consolidated Statements of Comprehensive Income. We expect to amortize $207 million of the Accumulated other comprehensive loss associated with the derivatives into Interest expense, net over the 12 months ended March 31, 2023.
+
+
+
+Deferred Purchase Price Assets
+In connection with the sales of certain service and EIP accounts receivable pursuant to the sale arrangements, we have deferred purchase price assets measured at fair value that are based on a discounted cash flow model using unobservable Level 3 inputs, including customer default rates. See Note 3 – Sales of Certain Receivables for further information.The carrying amounts of our deferred purchase price assets, which are measured at fair value on a recurring basis and are included on our Condensed Consolidated Balance Sheets, were $719 million and $779 million as of March 31, 2022 and December 31, 2021, respectively. Fair value was equal to the carrying amount at March 31, 2022 and December 31, 2021.
+
+
+Debt
+
+The fair value of our Senior Notes and Senior Secured Notes to third parties was determined based on quoted market prices in active markets, and therefore were classified as Level 1 within the fair value hierarchy. The fair value of our Senior Notes to affiliates was determined based on a discounted cash flow approach using market interest rates of instruments with similar terms and maturities and an estimate for our standalone credit risk. Accordingly, our Senior Notes to affiliates were classified as Level 2 within the fair value hierarchy.Although we have determined the estimated fair values using available market information and commonly accepted valuation methodologies, considerable judgment was required in interpreting market data to develop fair value estimates for the Senior Notes to affiliates. The fair value estimates were based on information available as of March 31, 2022 and December 31, 2021. As such, our estimates are not necessarily indicative of the amount we could realize in a current market exchange.
+
+
+13
+
+Index for Notes to the Condensed Consolidated Financial Statements
+The carrying amounts and fair values of our short-term and long-term debt included on our Condensed Consolidated Balance Sheets were as follows:
+Level within the Fair Value HierarchyMarch 31, 2022December 31, 2021(in millions)Carrying Amount (1)Fair Value (1)Carrying Amount (1)Fair Value (1)Liabilities:Senior Notes to third parties1$29,720 $29,682 $30,309 $32,093 Senior Notes to affiliates22,744 2,774 3,739 3,844 Senior Secured Notes to third parties139,964 38,274 40,098 42,393
+(1)     Excludes $42 million and $47 million as of March 31, 2022 and December 31, 2021, respectively, in other financial liabilities as the carrying values approximate fair value primarily due to the short-term maturities of these instruments.
+
+
+Note 6 – Debt
+
+The following table sets forth the debt balances and activity as of, and for the three months ended, March 31, 2022
+:
+(in millions)December 31,2021Note Redemptions (1)RepaymentsReclassifications (1)Other (2)March 31,2022Short-term debt$3,378 $(500)$(132)$132 $(13)$2,865 Long-term debt67,076 — — (132)(83)66,861 Total debt to third parties70,454 (500)(132)— (96)69,726 Short-term debt to affiliates2,245 (1,000)— — 5 1,250 Long-term debt to affiliates1,494 — — — — 1,494 Total debt$74,193 $(1,500)$(132)$— $(91)$72,470
+(1)Note redemptions and reclassifications are recorded net of related issuance costs, discounts and premiums.
+(2)Other includes the amortization of premiums, discounts, debt issuance costs and consent fees. Our effective interest rate, excluding the impact of derivatives and capitalized interest, was approximately 3.9% and 4.3% for the three months ended March 31, 2022 and 2021, respectively, on weighted-average debt outstanding of $73.7 billion for both the three months ended March 31, 2022 and 2021. The weighted-average debt outstanding was calculated by applying an average of the monthly ending balances of total short-term and long-term debt and short-term and long-term debt to affiliates, net of unamortized premiums, discounts, debt issuance costs and consent fees.
+
+
+Note Redemptions and Repayments
+
+During the three months ended March 31, 2022, we made the following note redemptions and repayments:
+(in millions)Principal AmountRedemption or Repayment DateRedemption Price4.000% Senior Notes due 2022$500 March 16, 2022100.000 %4.000% Senior Notes to affiliates due 20221,000 March 16, 2022100.000 %Total Redemptions$1,500 4.738% Secured Series 2018-1 A-1 Notes due 2025$131 VariousN/AOther debt1 VariousN/ATotal Repayments$132
+
+Subsequent to March 31, 2022, on April 15, 2022, we repaid at maturity $1.25 billion of our 5.375% Senior Notes to affiliates due 2022.
+
+
+Note 7 – Tower Obligations
+
+Existing CCI Tower Lease Arrangements
+
+In 2012, we conveyed to Crown Castle International Corp. (“CCI”) the exclusive right to manage and operate approximately 6,200 tower sites (“CCI Lease Sites”) via a master prepaid lease with site lease terms ranging from 23 to 37 years. CCI has fixed-price purchase options for the CCI Lease Sites totaling approximately $2.0 billion, exercisable annually on a per-tranche basis at the end of the lease term during the period from December 31, 2035 through December 31, 2049. If CCI exercises its purchase option for any tranche, it must purchase all the towers in the tranche. We lease back a portion of the space at certain tower sites.
+
+14
+
+Index for Notes to the Condensed Consolidated Financial Statements
+Assets and liabilities associated with the operation of the tower sites were transferred to special purpose entities (“SPEs”). Assets included ground lease agreements or deeds for the land on which the towers are situated, the towers themselves and existing subleasing agreements with other mobile network operator tenants that lease space at the tower sites. Liabilities included the obligation to pay ground lease rentals, property taxes and other executory costs.We determined the SPEs containing the CCI Lease Sites (“Lease Site SPEs”) are VIEs as they lack sufficient equity to finance their activities. We have a variable interest in the Lease Site SPEs but are not the primary beneficiary as we lack the power to direct the activities that most significantly impact the Lease Site SPEs’ economic performance. These activities include managing tenants and underlying ground leases, performing repair and maintenance on the towers, the obligation to absorb expected losses and the right to receive the expected future residual returns from the purchase option to acquire the CCI Lease Sites. As we determined that we are not the primary beneficiary and do not have a controlling financial interest in the Lease Site SPEs, the Lease Site SPEs are not included in our condensed consolidated financial statements.However, we also considered if this arrangement resulted in the sale of the CCI Lease Sites for which we would de-recognize the tower assets. By assessing whether control had transferred, we concluded that transfer of control criteria, as discussed in the revenue standard, were not met. Accordingly, we recorded this arrangement as a financing whereby we recorded debt, a financial obligation, and the CCI Lease Sites tower assets remained on our Condensed Consolidated Balance Sheets. We recorded long-term financial obligations in the amount of the net proceeds received and recognize interest on the tower obligations. The tower obligations are increased by interest expense and amortized through contractual leaseback payments made by us to CCI and through net cash flows generated and retained by CCI from operation of the tower sites.
+
+
+
+Acquired CCI Tower Lease Arrangements
+
+Prior to the merger (the “Merger”) with Sprint Corporation (“Sprint”), Sprint entered into a lease-out and leaseback arrangement with Global Signal Inc., a third party that was subsequently acquired by CCI, that conveyed to CCI the exclusive right to manage and operate approximately 6,400 tower sites (“Master Lease Sites”) via a master prepaid lease. These agreements were assumed upon the close of the Merger, at which point the remaining term of the lease-out was approximately 17 years with no renewal options. CCI has a fixed price purchase option for all (but not less than all) of the leased or subleased sites for approximately $2.3 billion, exercisable one year prior to the expiration of the agreement and ending 120 days prior to the expiration of the agreement. We lease back a portion of the space at certain tower sites.We considered if this arrangement resulted in the sale of the Master Lease Sites for which we would de-recognize the tower assets. By assessing whether control had transferred, we concluded that transfer of control criteria, as discussed in the revenue standard, were not met. Accordingly, we recorded this arrangement as a financing whereby we recorded debt, a financial obligation, and the Master Lease Sites tower assets remained on our Condensed Consolidated Balance Sheets.As of the closing date of the Merger, we recognized Property and equipment with a fair value of $2.8 billion and tower obligations related to amounts owed to CCI under the leaseback of $1.1 billion. Additionally, we recognized $1.7 billion in Other long-term liabilities associated with contract terms that are unfavorable to current market rates, which include unfavorable terms associated with the fixed-price purchase option in 2037.We recognize interest expense on the tower obligations. The tower obligations are increased by the interest expense and amortized through contractual leaseback payments made by us to CCI. The tower assets are reported in Property and equipment, net on our Condensed Consolidated Balance Sheets and are depreciated to their estimated residual values over the expected useful life of the towers, which is 20 years.
+
+
+
+
+Leaseback Arrangement
+
+On January 3, 2022, we entered into an agreement (the “Crown Agreement”) with CCI. The Crown Agreement extends the current term of the leasebacks by up to twelve years and modifies the leaseback payments for both the Existing CCI Tower Lease Arrangement and the Acquired CCI Tower Lease Arrangement. As a result of the Crown Agreement, there was an increase in our financing obligation as of the effective date of the agreement of approximately $1.2 billion, with a corresponding decrease to Other long-term liabilities associated with unfavorable contract terms. The modification resulted in a revised interest rate under the effective interest method for the tower obligations: 11.6% for the Existing CCI Tower Lease Arrangement and 5.3% for the Acquired CCI Tower Lease Arrangement. There were no changes made to either of our master prepaid leases with CCI.
+
+15
+
+Index for Notes to the Condensed Consolidated Financial Statements
+The following table summarizes the balances associated with both of the tower arrangements on our Condensed Consolidated Balance Sheets:
+(in millions)March 31,2022December 31,2021Property and equipment, net$2,505 $2,548 Tower obligations4,037 2,806 Other long-term liabilities554 1,712
+
+Future minimum payments related to the tower obligations are approximately $415 million for the 12-month period ending March 31, 2023, $848 million in total for the 12-month periods ending March 31, 2024 and 2025, $774 million in total for the 12-month periods ending March 31, 2026 and 2027, and $4.8 billion in total thereafter.
+
+
+Note 8 – Revenue from Contracts with Customers
+
+Disaggregation of Revenue
+
+We provide wireless communications services to three primary categories of customers: •Postpaid customers generally include customers who are qualified to pay after receiving wireless communications services utilizing phones, High Speed Internet, wearables, DIGITS or other connected devices, which include tablets and SyncUP products;•Prepaid customers generally include customers who pay for wireless communications services in advance; and•Wholesale customers include Machine-to-Machine and Mobile Virtual Network Operator customers that operate on our network but are managed by wholesale partners.
+
+
+Postpaid service revenues, including postpaid phone revenues and postpaid other revenues, were as follows:
+Three Months Ended March 31,(in millions)20222021Postpaid service revenuesPostpaid phone revenues$10,231 $9,483 Postpaid other revenues970 820 Total postpaid service revenues$11,201 $10,303
+
+We operate as a single operating segment. The balances presented in each revenue line item on our Condensed Consolidated Statements of Comprehensive Income represent categories of revenue from contracts with customers disaggregated by type of product and service. Service revenues also include revenues earned for providing premium services to customers, such as device insurance services and customer-based, third-party services. Revenue generated from the lease of mobile communication devices is included in Equipment revenues on our Condensed Consolidated Statements of Comprehensive Income.
+
+Equipment revenues from the lease of mobile communication devices were as follows:
+Three Months Ended March 31,(in millions)20222021Equipment revenues from the lease of mobile communication devices$487 $1,041
+
+We provide wireline communication services to domestic and international customers. Wireline service revenues were $146 million and $197 million for the three months ended March 31, 2022 and 2021, respectively. Wireline service revenues are presented in Wholesale and other service revenues on our Condensed Consolidated Statements of Comprehensive Income.
+
+16
+
+Index for Notes to the Condensed Consolidated Financial Statements
+Contract Balances
+
+The contract asset and contract liability balances from contracts with customers as of March 31, 2022 and December 31, 2021, were as follows:
+(in millions)Contract AssetsContract LiabilitiesBalance as of December 31, 2021$286 $763 Balance as of March 31, 2022275 768 Change$(11)$5
+
+Contract assets primarily represent revenue recognized for equipment sales with promotional bill credits offered to customers that are paid over time and are contingent on the customer maintaining a service contract.The change in the Contract asset balance includes customer activity related to new promotions, offset by billings on existing contracts and impairment which is recognized as bad debt expense. The current portion of our Contract assets of approximately $210 million and $219 million as of March 31, 2022 and December 31, 2021, respectively, was included in Other current assets on our Condensed Consolidated Balance Sheets.Contract liabilities are recorded when fees are collected, or we have an unconditional right to consideration (a receivable) in advance of delivery of goods or services. Changes in contract liabilities are primarily related to the activity of prepaid customers. Contract liabilities are primarily included in Deferred revenue on our Condensed Consolidated Balance Sheets.
+
+
+
+Revenues for the three months ended March 31, 2022 and 2021 include the following:
+Three Months Ended March 31,(in millions)20222021Amounts included in the beginning of year contract liability balance$654 $683
+
+Remaining Performance Obligations
+
+As of March 31, 2022, the aggregate amount of transaction price allocated to remaining service performance obligations for postpaid contracts with subsidized devices and promotional bill credits that result in an extended service contract is $798 million. We expect to recognize revenue as the service is provided on these postpaid contracts over an extended contract term of 24 months at the time of origination.Information about remaining performance obligations that are part of a contract that has an original expected duration of one year or less has been excluded from the above, which primarily consists of monthly service contracts.Certain of our wholesale, roaming and service contracts include variable consideration based on usage and performance. This variable consideration has been excluded from the disclosure of remaining performance obligations. As of March 31, 2022, the aggregate amount of the contractual minimum consideration for wholesale, roaming and service contracts is $936 million, $1.0 billion and $2.7 billion for 2022, 2023, and 2024 and beyond, respectively. These contracts have a remaining duration ranging from less than one year to eight years.
+
+
+
+Contract Costs
+
+The balance of deferred incremental costs to obtain contracts with customers was $1.6 billion and $1.5 billion as of March 31, 2022 and December 31, 2021, respectively, and is included in Other assets on our Condensed Consolidated Balance Sheets. Deferred contract costs incurred to obtain postpaid service contracts are amortized over a period of 24 months. The amortization period is monitored to reflect any significant change in assumptions. Amortization of deferred contract costs is included in Selling, general and administrative expenses on our Condensed Consolidated Statements of Comprehensive Income and were $324 million and $248 million for the three months ended March 31, 2022 and 2021, respectively.The deferred contract cost asset is assessed for impairment on a periodic basis. There were no impairment losses recognized on deferred contract cost assets for the three months ended March 31, 2022 and 2021.
+
+
+17
+
+
+Index for Notes to the Condensed Consolidated Financial Statements
+Note 9 – Earnings Per Share
+
+The computation of basic and diluted earnings per share was as follows:
+Three Months Ended March 31,(in millions, except shares and per share amounts)20222021Net income$713 $933 Weighted-average shares outstanding – basic1,250,505,999 1,243,520,026 Effect of dilutive securities:Outstanding stock options and unvested stock awards4,862,593 9,263,538 Weighted-average shares outstanding – diluted1,255,368,592 1,252,783,564 Earnings per share – basic$0.57 $0.75 Earnings per share – diluted$0.57 $0.74 Potentially dilutive securities:Outstanding stock options and unvested stock awards2,054,344 6 SoftBank contingent consideration (1)48,751,557 48,751,557
+(1)     Represents the weighted-average SoftBank Specified Shares that are contingently issuable from the acquisition date of April 1, 2020, pursuant to a letter agreement dated February 20, 2020 between T-Mobile, SoftBank and Deutsche Telekom AG (“DT”).
+
+As of March 31, 2022, we had authorized 100 million shares of preferred stock, with a par value of $0.00001 per share. There was no preferred stock outstanding as of March 31, 2022 and 2021. Potentially dilutive securities were not included in the computation of diluted earnings per share if to do so would have been anti-dilutive.
+
+The SoftBank Specified Shares Amount of 48,751,557 shares of T-Mobile common stock was determined to be contingent consideration for the Merger and is not dilutive until the defined volume-weighted average price per share is reached.
+
+
+Note 10 – Leases
+
+Lessee
+
+We are a lessee for non-cancelable operating and financing leases for cell sites, switch sites, retail stores, network equipment and office facilities with contractual terms that generally extend through 2035. Additionally, we lease dark fiber through non-cancelable operating leases with contractual terms that generally extend through 2041. The majority of cell site leases have a non-cancelable term of five to 15 years with several renewal options that can extend the lease term for five to 50 years. In addition, we have financing leases for network equipment that generally have a non-cancelable lease term of three to five years. The financing leases do not have renewal options and contain a bargain purchase option at the end of the lease.On January 3, 2022, we entered into the Crown Agreement with CCI that modified the terms of our leased towers from CCI. The Crown Agreement modifies the monthly rental payments we will pay for sites currently leased by us, extends the non-cancellable lease term for the majority of our sites through December 2033 and will allow us the flexibility to facilitate our network integration and decommissioning activities through new site builds and termination of duplicate tower locations. The initial non-cancellable term is through December 31, 2033, followed by three optional five-year renewals. As a result of this modification, we remeasured the associated right-of use assets and lease liabilities resulting in an increase of $5.3 billion to each on the effective date of the modification, with a corresponding gross increase to both deferred tax liabilities and assets of $1.3 billion.
+
+18
+
+Index for Notes to the Condensed Consolidated Financial Statements
+The components of lease expense were as follows:
+Three Months Ended March 31,(in millions)20222021Operating lease expense$1,748 $1,391 Financing lease expense:Amortization of right-of-use assets185 173 Interest on lease liabilities15 20 Total financing lease expense200 193 Variable lease expense127 95 Total lease expense$2,075 $1,679
+
+As of March 31, 2022, the weighted-average remaining lease term and discount rate for operating leases were 10 years and 3.9%, respectively.
+
+Maturities of lease liabilities as of March 31, 2022, were as follows:
+(in millions)Operating LeasesFinance LeasesTwelve Months Ending March 31,2023$4,199 $1,163 20244,479 835 20254,103 495 20263,553 101 20273,274 29 Thereafter23,509 25 Total lease payments43,117 2,648 Less: imputed interest8,678 80 Total$34,439 $2,568
+
+Interest payments for financing leases were $15 million and $19 million for the three months ended March 31, 2022 and 2021, respectively.As of March 31, 2022, we have additional operating leases for commercial properties that have not yet commenced with future lease payments of approximately $85 million.
+
+
+
+Note 11 – Commitments and Contingencies
+
+Purchase Commitments
+
+We have commitments for non-dedicated transportation lines with varying expiration terms that generally extend through 2038. In addition, we have commitments to purchase wireless devices, network services, equipment, software, marketing sponsorship agreements and other items in the ordinary course of business, with various terms through 2043.Our purchase commitments are approximately $4.4 billion for the twelve-month period ending March 31, 2023, $5.5 billion in total for each of the twelve-month periods ending March 31, 2024 and 2025, $2.4 billion in total for each of the twelve-month periods ending March 31, 2026 and 2027 and $3.1 billion in total thereafter. These amounts are not reflective of our entire anticipated purchases under the related agreements but are determined based on the non-cancelable quantities or termination amounts to which we are contractually obligated.
+
+
+Spectrum Leases
+
+We lease spectrum from various parties. These leases include service obligations to the lessors. Certain spectrum leases provide for minimum lease payments, additional charges, renewal options and escalation clauses. Leased spectrum agreements have varying expiration terms that generally extend through 2050. We expect that all renewal periods in our spectrum leases will be exercised by us. Certain spectrum leases also include purchase options and right-of-first refusal clauses in which we are provided the opportunity to exercise our purchase option if the lessor receives a purchase offer from a third party. The purchase of the leased spectrum is at our option and therefore the option price is not included in the commitments below.
+
+19
+
+Index for Notes to the Condensed Consolidated Financial Statements
+Our spectrum lease and service credit commitments, including renewal periods, are approximately $345 million for the twelve-month period ending March 31, 2023, $627 million in total for each of the twelve-month periods ending March 31, 2024 and 2025, $623 million in total for each of the twelve-month periods ending March 31, 2026 and 2027 and $4.9 billion in total thereafter.
+
+Contingencies and Litigation
+
+Litigation and Regulatory Matters
+
+We are involved in various lawsuits and disputes, claims, government agency investigations and enforcement actions, and other proceedings (“Litigation and Regulatory Matters”) that arise in the ordinary course of business, which include claims of patent infringement (most of which are asserted by non-practicing entities primarily seeking monetary damages), class actions, and proceedings to enforce FCC or other government agency rules and regulations. Those Litigation and Regulatory Matters are at various stages, and some of them may proceed to trial, arbitration, hearing, or other adjudication that could result in fines, penalties, or awards of monetary or injunctive relief in the coming 12 months if they are not otherwise resolved. We have established an accrual with respect to certain of these matters, where appropriate. The accruals are reflected in the condensed consolidated financial statements, but they are not considered to be, individually or in the aggregate, material. An accrual is established when we believe it is both probable that a loss has been incurred and an amount can be reasonably estimated. For other matters, where we have not determined that a loss is probable or because the amount of loss cannot be reasonably estimated, we have not recorded an accrual due to various factors typical in contested proceedings, including, but not limited to, uncertainty concerning legal theories and their resolution by courts or regulators, uncertain damage theories and demands, and a less than fully developed factual record. For Litigation and Regulatory Matters that may result in a contingent gain, we recognize such gains in the condensed consolidated financial statements when the gain is realized or realizable. We recognize legal costs expected to be incurred in connection with Litigation and Regulatory Matters as they are incurred. Except as otherwise specified below, we do not expect that the ultimate resolution of these Litigation and Regulatory Matters, individually or in the aggregate, will have a material adverse effect on our financial position, but we note that an unfavorable outcome of some or all of the specific matters identified below could have a material adverse impact on results of operations or cash flows for a particular period. This assessment is based on our current understanding of relevant facts and circumstances. As such, our view of these matters is subject to inherent uncertainties and may change in the future.On February 28, 2020, we received a Notice of Apparent Liability for Forfeiture and Admonishment from the FCC, which proposed a penalty against us for allegedly violating section 222 of the Communications Act and the FCC’s regulations governing the privacy of customer information. In the first quarter of 2020, we recorded an accrual for an estimated payment amount. We maintained the accrual as of March 31, 2022, and that accrual was included in Accounts payable and accrued liabilities on our Condensed Consolidated Balance Sheets.On April 1, 2020, in connection with the closing of the Merger, we assumed the contingencies and litigation matters of Sprint. Those matters include a wide variety of disputes, claims, government agency investigations and enforcement actions, and other proceedings. These matters include, among other things, certain ongoing FCC and state government agency investigations into Sprint’s Lifeline program. In September 2019, Sprint notified the FCC that it had claimed monthly subsidies for serving subscribers even though these subscribers may not have met usage requirements under Sprint's usage policy for the Lifeline program, due to an inadvertent coding issue in the system used to identify qualifying subscriber usage that occurred in July 2017 while the system was being updated. Sprint has made a number of payments to reimburse the federal government and certain states for excess subsidy payments.We note that pursuant to Amendment No. 2, dated as of February 20, 2020, to the Business Combination Agreement, dated as of April 29, 2018, by and among the Company, Sprint and the other parties named therein (as amended, the “Business Combination Agreement”), SoftBank agreed to indemnify us against certain specified matters and losses, including those relating to the Lifeline matters described above. Resolution of these matters could require making additional reimbursements and paying additional fines and penalties, which we do not expect to have a significant impact on our financial results. We expect that any additional liabilities related to these indemnified matters would be indemnified and reimbursed by SoftBank.On June 1, 2021, a putative shareholder class action and derivative lawsuit was filed in the Delaware Court of Chancery, Dinkevich v. Deutsche Telekom AG, et al., Case No. C.A. No. 2021-0479, against DT, SoftBank and certain of our current and former officers and directors, asserting breach of fiduciary duty claims relating to the repricing amendment to the Business Combination Agreement, and to SoftBank’s monetization of its T-Mobile shares. We are also named as a nominal defendant in the case. We are unable to predict the potential outcome of these claims. We intend to vigorously defend this lawsuit.In October 2020, we notified Mobile Virtual Network Operators (“MVNOs”) using the legacy Sprint CDMA network that we
+
+
+
+
+
+20
+
+Index for Notes to the Condensed Consolidated Financial Statements
+planned to sunset that network on December 31, 2021. In response to that notice, DISH Network Corporation (“DISH”), which has Boost Mobile customers who use the legacy Sprint CDMA network, made several efforts to prevent us from sunsetting the CDMA network until mid-2023, including by urging the U.S. Department of Justice to move for a finding of contempt under the April 1, 2020 Final Judgment entered by the U.S. District Court for the District of Columbia, and by pursuing a Petition for Modification and related proceedings pursuant to the California Public Utilities Commission’s (the “CPUC”) April 2020 decision concerning the Merger. We disagree with the merits of DISH’s positions and have opposed them. On October 22, 2021, we announced that we would delay the full decommissioning of the legacy Sprint CDMA network for three months, until March 31, 2022, to, among other things, help ensure that DISH and other MVNOs fulfill their contractual responsibilities and transition customers off the legacy Sprint CDMA network before the decommissioning. In March 2022, the CPUC denied DISH’s Petition for Modification. We cannot predict the outcome of the other proceedings described above, but we intend to vigorously oppose any efforts to further delay the sunset of the legacy Sprint CDMA network. The orderly decommissioning of the legacy Sprint CDMA network began as planned on March 31, 2022, and is expected to be completed during the second fiscal quarter of 2022, and we will continue to help ensure that DISH and other MVNOs fulfill their contractual responsibilities and transition customers off the legacy Sprint CDMA network before the decommissioning.On August 12, 2021, we became aware of a potential cybersecurity issue involving unauthorized access to T-Mobile’s systems (the “August 2021 cyberattack”). We immediately began an investigation and engaged cybersecurity experts to assist with the assessment of the incident and to help determine what data was impacted. Our investigation uncovered that the perpetrator had illegally gained access to certain areas of our systems on or about March 18, 2021, but only gained access to and took data of current, former, and prospective customers beginning on or about August 3, 2021. With the assistance of our outside cybersecurity experts, we located and closed the unauthorized access to our systems and identified current, former and prospective customers whose information was impacted and notified them, consistent with state and federal requirements. We also undertook a number of other measures to demonstrate our continued support and commitment to data privacy and protection. We also coordinated with law enforcement. Our forensic investigation is complete, and we believe we have a full view of the data compromised.As a result of the August 2021 cyberattack, we have become subject to numerous lawsuits, including mass arbitration claims and multiple class action lawsuits, that have been filed in numerous jurisdictions seeking unspecified monetary damages, costs and attorneys’ fees arising out of the August 2021 cyberattack. In December 2021, the Judicial Panel on Multidistrict Litigation consolidated the federal class action lawsuits in the U.S. District Court for the Western District of Missouri. In addition, in November 2021, a purported Company shareholder filed a derivative action in the U.S. District Court for the Western District of Washington, Litwin v. Sievert et al., No. 2:21-cv-01599, against our current directors, alleging several claims concerning the Company’s cybersecurity practices. In April 2022, the Litwin case was voluntarily dismissed without prejudice. We are unable to predict at this time the potential outcome of any of the other claims described above or whether we may be subject to further private litigation. We intend to vigorously defend all of these lawsuits.In addition, the Company has received inquiries from various government agencies, law enforcement and other governmental authorities related to the August 2021 cyberattack, which could result in fines or penalties. We are responding to these inquiries and cooperating fully with regulators. However, we cannot predict the timing or outcome of any of these inquiries, or whether we may be subject to further regulatory inquiries.In light of the inherent uncertainties involved in such matters and based on the information currently available to us, as of the date of this Quarterly Report, we have not recorded any accruals for losses related to the above proceedings and inquiries, as any such amounts (or ranges of amounts) are not probable or estimable at this time. We believe it is reasonably possible that we could incur losses associated with these proceedings and inquiries, and the Company will continue to evaluate information as it becomes known and will record an estimate for losses at the time or times when it is both probable that a loss has been incurred and the amount of the loss is reasonably estimable. Ongoing legal and other costs related to these proceedings and inquiries, as well as any potential future proceedings and inquiries, may be substantial, and losses associated with any adverse judgments, settlements, penalties or other resolutions of such proceedings and inquiries could be material to our business, reputation, financial condition, cash flows and operating results.In March 2022, we received $220 million in settlement of certain patent litigation. We recognized the settlement, net of legal fees, as a reduction to Selling, general and administrative expenses on our Condensed Consolidated Statements of Comprehensive Income.
+
+
+
+
+
+
+21
+
+
+Index for Notes to the Condensed Consolidated Financial Statements
+Note 12 – Restructuring Costs
+
+Upon close of the Merger, we began implementing restructuring initiatives to realize cost efficiencies and reduce redundancies. The major activities associated with the restructuring initiatives to date include contract termination costs associated with the rationalization of retail stores, distribution channels, duplicative network and backhaul services and other agreements, severance costs associated with the integration of redundant processes and functions and the decommissioning of certain small cell sites and distributed antenna systems to achieve synergies in network costs.
+
+The following table summarizes the expenses incurred in connection with our restructuring initiatives:
+(in millions)Three Months Ended March 31, 2022Incurred to DateContract termination costs$— $192 Severance costs4 406 Network decommissioning133 814 Total restructuring plan expenses$137 $1,412
+
+The expenses associated with the restructuring initiatives are included in Costs of services and Selling, general and administrative on our Condensed Consolidated Statements of Comprehensive Income. Our restructuring initiatives also include the acceleration or termination of certain of our operating and financing leases for cell sites, switch sites, retail stores, network equipment and office facilities. Incremental expenses associated with accelerating amortization of the right-of-use assets on lease contracts were $464 million and $123 million for the three months ended March 31, 2022 and 2021, respectively, and are included in Costs of services and Selling, general and administrative on our Condensed Consolidated Statements of Comprehensive Income.
+
+
+The changes in the liabilities associated with our restructuring initiatives, including expenses incurred and cash payments, are as follows:
+(in millions)December 31,2021Expenses IncurredCash PaymentsAdjustments for Non-Cash Items (1)March 31,2022Contract termination costs$14 $— $(5)$— $9 Severance costs1 4 (3)— 2 Network decommissioning71 133 (59)(5)140 Total$86 $137 $(67)$(5)$151
+(1)    Non-cash items consist of the write-off of assets within Network decommissioning. The liabilities accrued in connection with our restructuring initiatives are presented in Accounts payable and accrued liabilities on our Condensed Consolidated Balance Sheets. Our restructuring activities are expected to occur over the next two years with substantially all costs incurred by the end of fiscal year 2023. We are evaluating additional restructuring initiatives, which are dependent on consultations and negotiation with certain counterparties and the expected impact on our business operations, which could affect the amount or timing of the restructuring costs and related payments.
+
+
+
+22
+
+
+Index for Notes to the Condensed Consolidated Financial Statements
+Note 13 – Additional Financial Information
+
+Accounts Payable and Accrued Liabilities
+
+Accounts payable and accrued liabilities are summarized as follows:
+(in millions)March 31,2022December 31,2021Accounts payable$6,739 $6,499 Payroll and related benefits842 1,343 Property and other taxes, including payroll1,764 1,830 Accrued interest825 710 Commissions270 348 Toll and interconnect230 248 Advertising11 59 Other453 368 Accounts payable and accrued liabilities$11,134 $11,405
+
+Book overdrafts included in accounts payable were $405 million and $378 million as of March 31, 2022 and December 31, 2021, respectively.
+
+Supplemental Condensed Consolidated Statements of Cash Flows Information
+
+The following table summarizes T-Mobile’s supplemental cash flow information:
+Three Months Ended March 31,(in millions)20222021Interest payments, net of amounts capitalized$778 $945 Operating lease payments1,048 1,651 Income tax payments— 22 Non-cash investing and financing activitiesNon-cash beneficial interest obtained in exchange for securitized receivables1,018 1,381 Change in accounts payable and accrued liabilities for purchases of property and equipment(183)(173)Leased devices transferred from inventory to property and equipment129 485 Returned leased devices transferred from property and equipment to inventory(183)(445)Increase in Tower obligations from contract modification1,158 — Operating lease right-of-use assets obtained in exchange for lease obligations5,975 911 Financing lease right-of-use assets obtained in exchange for lease obligations298 109
+
+
+Note 14 – Subsequent Events
+
+Subsequent to March 31, 2022, on April 15, 2022, we repaid at maturity $1.25 billion of our 5.375% Senior Notes to affiliates due 2022.
+23
+
+
+Table of Contents
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations
+
+
+Cautionary Statement Regarding Forward-Looking Statements
+
+This Quarterly Report on Form 10-Q (“Form 10-Q”) of T-Mobile US, Inc. (“T-Mobile,” “we,” “our,” “us” or the “Company”) includes forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. All statements, other than statements of historical fact, including information concerning our future results of operations, are forward-looking statements. These forward-looking statements are generally identified by the words “anticipate,” “believe,” “estimate,” “expect,” “intend,” “may,” “could” or similar expressions. Forward-looking statements are based on current expectations and assumptions, which are subject to risks and uncertainties that may cause actual results to differ materially from the forward-looking statements. The following important factors, along with the Risk Factors included in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2021 and Part II, Item 1A of this Form 10-Q, could affect future results and cause those results to differ materially from those expressed in the forward-looking statements:•adverse impact caused by the COVID-19 pandemic (the “Pandemic”), including supply chain shortages;•competition, industry consolidation and changes in the market for wireless services;•disruption, data loss or other security breaches, such as the criminal cyberattack we became aware of in August 2021;•our inability to take advantage of technological developments on a timely basis;•our inability to retain or motivate key personnel, hire qualified personnel or maintain our corporate culture;•system failures and business disruptions, allowing for unauthorized use of or interference with our network and other systems;•the scarcity and cost of additional wireless spectrum, and regulations relating to spectrum use;•the impacts of the actions we have taken and conditions we have agreed to in connection with the regulatory proceedings and approvals of the Transactions (as defined below), including the acquisition by DISH Network Corporation (“DISH”) of the prepaid wireless business operated under the Boost Mobile and Sprint prepaid brands (excluding the Assurance brand Lifeline customers and the prepaid wireless customers of Shenandoah Personal Communications Company LLC and Swiftel Communications, Inc.), including customer accounts, inventory, contracts, intellectual property and certain other specified assets, and the assumption of certain related liabilities (collectively, the “Prepaid Transaction”), the complaint and proposed final judgment agreed to by us, Deutsche Telekom AG (“DT”), Sprint Corporation, now known as Sprint LLC (“Sprint”), SoftBank Group Corp. (“SoftBank”) and DISH with the U.S. District Court for the District of Columbia, which was approved by the Court on April 1, 2020, the proposed commitments filed with the Secretary of the Federal Communications Commission (“FCC”), which we announced on May 20, 2019, certain national security commitments and undertakings, and any other commitments or undertakings entered into, including but not limited to, those we have made to certain states and nongovernmental organizations (collectively, the “Government Commitments”), and the challenges in satisfying the Government Commitments in the required time frames and the significant cumulative costs incurred in tracking and monitoring compliance;•adverse economic, political or market conditions in the U.S. and international markets, including changes resulting from increases in inflation, impacts of current geopolitical instability caused by the war in Ukraine, and those caused by the Pandemic;•our inability to manage the ongoing commercial and transition services arrangements entered into in connection with the Prepaid Transaction, and known or unknown liabilities arising in connection therewith; •the effects of any future acquisition, investment, or merger involving us;•any disruption or failure of our third parties (including key suppliers) to provide products or services for the operation of our business;•our substantial level of indebtedness and our inability to service our debt obligations in accordance with their terms or to comply with the restrictive covenants contained therein;•changes in the credit market conditions, credit rating downgrades or an inability to access debt markets;•restrictive covenants including the agreements governing our indebtedness and other financings; •the risk of future material weaknesses we may identify while we continue to work to integrate and align policies, principles and practices of the two companies following the Merger (as defined below), or any other failure by us to maintain effective internal controls, and the resulting significant costs and reputational damage;•any changes in regulations or in the regulatory framework under which we operate;•laws and regulations relating to the handling of privacy and data protection;•unfavorable outcomes of existing or future legal proceedings, including these proceedings and inquiries relating to the criminal cyberattack we became aware of in August 2021;•the possibility that we may be unable to adequately protect our intellectual property rights or be accused of infringing the intellectual property rights of others;•our offering of regulated financial services products and exposure to a wide variety of state and federal regulations; •new or amended tax laws or regulations or administrative interpretations and judicial decisions affecting the scope or application of tax laws or regulations;•our exclusive forum provision as provided in our Certificate of Incorporation;•interests of our significant stockholders that may differ from the interests of other stockholders;•future sales of our common stock by DT and SoftBank and our inability to attract additional equity financing outside the United States due to foreign ownership limitations by the FCC;•failure to realize the expected benefits and synergies of the merger (the “Merger”) with Sprint, pursuant to the Business Combination Agreement with Sprint and the other parties named therein (as amended, the “Business Combination Agreement”) and the other transactions contemplated by the Business Combination Agreement (collectively, the “Transactions”) in the expected time frames or in the amounts anticipated;•any delay and costs of, or difficulties in, integrating our business and Sprint’s business and operations, and unexpected additional operating costs, customer loss and business disruptions, including challenges in maintaining relationships with employees, customers, suppliers or vendors; and•unanticipated difficulties, disruption, or significant delays in our long-term strategy to migrate Sprint’s legacy customers onto T-Mobile’s existing billing platforms. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. We undertake no obligation to revise or publicly release the results of any revision to these forward-looking statements, except as required by law.Investors and others should note that we announce material information to our investors using our investor relations website (https://investor.t-mobile.com), newsroom website (https://t-mobile.com/news), press releases, SEC filings and public conference calls and webcasts. We intend to also use certain social media accounts as means of disclosing information about us and our services and for complying with our disclosure obligations under Regulation FD (the @TMobileIR Twitter account (https://twitter.com/TMobileIR), the @MikeSievert Twitter account (https://twitter.com/MikeSievert), which Mr. Sievert also uses as a means for personal communications and observations, and the @TMobileCFO Twitter Account (https://twitter.com/tmobilecfo) and our Chief Financial Officer’s LinkedIn account (https://www.linkedin.com/in/peter-osvaldik-3887394), both of which Mr. Osvaldik also uses as a means for personal communication and observations). The information we post through these social media channels may be deemed material. Accordingly, investors should monitor these social media channels in addition to following our press releases, SEC filings and public conference calls and webcasts. The social media channels that we intend to use as a means of disclosing the information described above may be updated from time to time as listed on our Investor Relations website.
+24
+
+Table of Contents
+
+
+
+
+Overview
+
+The objectives of our Management’s Discussion and Analysis of Financial Condition and Results of Operations (“MD&A”) are to provide users of our condensed consolidated financial statements with the following:•A narrative explanation from the perspective of management of our financial condition, results of operations, cash flows, liquidity and certain other factors that may affect future results;•Context to the condensed consolidated financial statements; and•Information that allows assessment of the likelihood that past performance is indicative of future performance.
+
+
+Our MD&A is provided as a supplement to, and should be read together with, our unaudited condensed consolidated financial statements as of and for the three months ended March 31, 2022, included in
+Part I, Item 1
+of this Form 10-Q, and audited consolidated financial statements, included in Part II, Item 8 of our Annual Report on Form 10-K for the year ended December 31, 2021. Except as expressly stated, the financial condition and results of operations discussed throughout our MD&A are those of T-Mobile US, Inc. and its consolidated subsidiaries.
+25
+
+Table of Contents
+Sprint Merger and Integration Activities
+
+Merger-Related Costs
+
+Merger-related costs associated with the Merger and acquisitions of affiliates generally include:•Integration costs to achieve efficiencies in network, retail, information technology and back office operations, migrate customers to the T-Mobile network and billing systems and the impact of legal matters assumed as part of the Merger;•Restructuring costs, including severance, store rationalization and network decommissioning; and•Transaction costs, including legal and professional services related to the completion of the transactions.Restructuring costs are disclosed in Note 12 – Restructuring Costs of the Notes to the Condensed Consolidated Financial Statements. Merger-related costs have been excluded from our calculations of Adjusted EBITDA and Core Adjusted EBITDA, which are non-GAAP financial measures, as we do not consider these costs to be reflective of our ongoing operating performance. See “Adjusted EBITDA and Core Adjusted EBITDA” in the “Performance Measures” section of this MD&A. Net cash payments for Merger-related costs, including payments related to our restructuring plan, are included in Net cash provided by operating activities on our Condensed Consolidated Statements of Cash Flows.
+
+
+
+Merger-related costs are presented below:
+(in millions)Three Months Ended March 31,Change20222021$%Merger-related costsCost of services, exclusive of depreciation and amortization$607 $136 $471 346 %Cost of equipment sales, exclusive of depreciation and amortization751 17 734 NMSelling, general and administrative55 145 (90)(62)%Total Merger-related costs$1,413 $298 $1,115 374 %Net cash payments for Merger-related costs$893 $277 $616 222 %
+NM - Not MeaningfulWe expect to incur a total of $12.0 billion of Merger-related costs, excluding capital expenditures, of which $7.9 billion has been incurred since the beginning of 2018, including $700 million of costs incurred by Sprint prior to the Merger. We expect to incur the remaining $4.1 billion to complete our integration and restructuring activities over the next two years with substantially all costs incurred by the end of 2023.Total Merger related costs for the twelve months ended December 31, 2022 are expected to be between $4.5 billion to $5.0 billion, including $1.4 billion incurred during the three months ended March 31, 2022. We are evaluating additional restructuring initiatives which are dependent on consultations and negotiation with certain counterparties and the expected impact on our business operations, which could affect the amount or timing of the restructuring costs and related payments. We expect our principal sources of funding to be sufficient to meet our liquidity requirements and anticipated payments associated with the restructuring initiatives.
+
+
+
+Restructuring
+
+Upon the close of the Merger, we began implementing restructuring initiatives to realize cost efficiencies from the Merger. The major activities associated with the restructuring initiatives to date include:•Contract termination costs associated with rationalization of retail stores, distribution channels, duplicative network and backhaul services and other agreements;•Severance costs associated with the reduction of redundant processes and functions; and•The decommissioning of certain small cell sites and distributed antenna systems to achieve synergies in network costs.
+
+
+For more information regarding our restructuring activities, see Note 12 – Restructuring Costs of the Notes to the Condensed Consolidated Financial Statements.
+
+26
+
+Table of Contents
+Anticipated Impacts
+
+Synergies
+
+As a result of our ongoing restructuring activities, we expect to realize synergies by eliminating redundancies within our combined network as well as other business processes and operations. For full-year 2022, we expect synergies from Selling, general and administrative expense reductions of $2.3 billion to $2.4 billion and Cost of service expense reductions of $1.6 billion to $1.7 billion.
+
+Other Potential Impacts
+
+The operation of the legacy Sprint CDMA and LTE networks is partially supported by legacy Sprint’s Wireline network acquired through the Merger. We expect that the legacy Sprint CDMA and LTE networks will be decommissioned during 2022. In accordance with ASC 360-10, we assess long-lived assets for impairment when events or circumstances indicate that long-lived assets might be impaired. We expect that the decommissioning of the legacy Sprint CDMA and LTE networks will trigger impairments of certain Wireline long-lived assets as these assets will no longer support our wireless network and the associated customers and cash flows. The potential non-cash impairment charges are not expected to have a material impact on our condensed consolidated financial statements.
+
+Cyberattack
+
+As we previously reported, we were subject to a criminal cyberattack involving unauthorized access to T-Mobile’s systems. We promptly located and closed the unauthorized access to our systems. Our forensic investigation was completed in October 2021, although our overall investigation into the incident is ongoing. There are no material updates with respect to the August 2021 cyberattack and subsequent inquiries, investigations, litigations and remedial measures from our Annual Report on Form 10-K for the year ended December 31, 2021, except as disclosed in Note 11 – Commitment and Contingencies. We have incurred certain cyberattack-related expenses that were not material and expect to continue to incur additional expenses in future periods, including costs to remediate the attack, provide additional customer support and enhance customer protection, only some of which may be covered and reimbursable by insurance. We also intend to commit substantial additional resources towards cybersecurity initiatives over the next several years.
+
+COVID-19 Pandemic
+
+The Pandemic has resulted in a widespread health crisis that has adversely affected businesses, economies and financial markets worldwide, and has caused significant volatility in the U.S. and international debt and equity markets. In addition, the Pandemic has resulted in economic uncertainty, which could affect our customers’ purchasing decisions and ability to make timely payments. Current and future Pandemic-related restrictions on, or disruptions of, transportation networks and supply chain shortages could impact our ability to acquire handsets or other end user devices in amounts sufficient to meet customer demand and to obtain the equipment required to meet our current and future network build-out plans. We will continue to monitor the Pandemic and its impacts and may adjust our actions as needed to continue to provide our products and services to our communities and employees. As a critical communications infrastructure provider as designated by the government, our focus has been on providing crucial connectivity to our customers and impacted communities while ensuring the safety and well-being of our employees.
+
+27
+
+
+Table of Contents
+Results of Operations
+
+
+Set forth below is a summary of our consolidated financial results:
+Three Months Ended March 31,Change(in millions)20222021$%RevenuesPostpaid revenues$11,201 $10,303 $898 9 %Prepaid revenues2,455 2,351 104 4 %Wholesale and other service revenues1,472 1,538 (66)(4)%Total service revenues15,128 14,192 936 7 %Equipment revenues4,694 5,346 (652)(12)%Other revenues298 221 77 35 %Total revenues20,120 19,759 361 2 %Operating expensesCost of services, exclusive of depreciation and amortization shown separately below3,727 3,384 343 10 %Cost of equipment sales, exclusive of depreciation and amortization shown separately below5,946 5,142 804 16 %Selling, general and administrative5,056 4,805 251 5 %Depreciation and amortization3,585 4,289 (704)(16)%Total operating expenses18,314 17,620 694 4 %Operating income1,806 2,139 (333)(16)%Other income (expense)Interest expense, net(864)(835)(29)3 %Other expense, net(11)(125)114 (91)%Total other expense, net(875)(960)85 (9)%Income before income taxes931 1,179 (248)(21)%Income tax expense (218)(246)28 (11)%Net income$713 $933 $(220)(24)%Statement of Cash Flows DataNet cash provided by operating activities$3,845 $3,661 $184 5 %Net cash used in investing activities(5,092)(11,239)6,147 (55)%Net cash (used in) provided by financing activities(2,136)3,874 (6,010)(155)%Non-GAAP Financial MeasuresAdjusted EBITDA6,950 6,905 45 1 %Core Adjusted EBITDA6,463 5,864 599 10 %Free Cash Flow1,649 1,30434526 %
+
+28
+
+
+Table of Contents
+The following discussion and analysis is for the three months ended March 31, 2022, compared to the same period in 2021 unless otherwise stated.
+
+
+Total revenues increased $361 million, or 2%. The components of these changes are discussed below.Postpaid revenues increased $898 million, or 9%, primarily from:•Higher average postpaid accounts; and•Higher postpaid ARPA. See “Postpaid ARPA” in the “Performance Measures” section of this MD&A.Prepaid revenues increased $104 million, or 4%, primarily from:•Higher prepaid ARPU. See “Prepaid ARPU” in the “Performance Measures” section of this MD&A; and•Higher average prepaid customers.Wholesale and other service revenues were essentially flat.Equipment revenues decreased $652 million, or 12%, primarily from:•A decrease of $554 million in lease revenues and a decrease of $139 million in customer purchases of leased devices primarily due to a lower number of customer devices under lease as a result of the continued strategic shift from device financing from leasing to EIP; partially offset by•An increase of $67 million in device sales revenue, excluding purchased leased devices, primarily from:•An increase in the number of devices sold, including higher upgrade volume; partially offset by•Lower average revenue per device sold primarily due to higher promotions, which included promotions for Sprint customers to facilitate their migration to the T-Mobile network, partially offset by an increase in the high-end phone mix.Other revenues were essentially flat.Operating expenses increased $694 million, or 4%. The components of this change are discussed below.Cost of services, exclusive of depreciation and amortization, increased $343 million, or 10%, primarily from:•An increase of $471 million in Merger-related costs related to network decommissioning and integration costs; and•Higher lease expenses related to a new tower master lease agreement; partially offset by•Higher realized Merger synergies.Cost of equipment sales, exclusive of depreciation and amortization, increased $804 million, or 16%, primarily from: •An increase of $987 million in device cost of equipment sales, excluding purchased leased devices, primarily from:•An increase in the number of devices sold, including higher upgrade volume, primarily to facilitate the migration of Sprint customers to the T-Mobile network; and•Higher average costs per device sold due to an increase in the high-end device mix; partially offset by•A decrease of $284 million in customer purchases of leased devices primarily due to a lower number of customer devices under lease as a result of the continued strategic shift from device financing from leasing to EIP.•Merger-related costs, primarily to facilitate the migration of Sprint customers to the T-Mobile network, were $751 million for the three months ended March 31, 2022, compared to $17 million for the three months ended March 31, 2021.Selling, general and administrative expenses increased $251 million, or 5%, primarily from:•Higher bad debt expense primarily due to estimated credit losses normalizing from muted Pandemic levels, as well as higher EIP receivables driven by higher equipment sales and a mix shift in device financing; partially offset by•Lower Merger-related costs and higher realized Merger synergies.•Selling, general and administrative expenses for the three months ended March 31, 2022 included $55 million of Merger-related costs primarily related to integration, restructuring and legal-related expenses, offset by legal settlement gains, compared to $145 million of Merger-related costs for the three months ended March 31, 2021.Depreciation and amortization decreased $704 million, or 16%, primarily from:•Lower depreciation expense on leased devices resulting from a lower number of total customer devices under lease; and•Certain 4G-related network assets becoming fully depreciated; partially offset by•Higher depreciation expense, excluding leased devices, from the continued build-out of our nationwide 5G network.Operating income, the components of which are discussed above, decreased $333 million, or 16%.Interest expense, net was essentially flat.Other expense, net decreased $114 million, or 91%, primarily from lower losses on the extinguishment of debt.Income before income taxes, the components of which are discussed above, was $931 million and $1.2 billion for the three months ended March 31, 2022 and 2021, respectively. Income tax expense decreased $28 million, or 11%, primarily from:•Lower Income before income taxes; partially offset by•A higher effective tax rate, primarily from:•A decrease in excess tax benefits related to the vesting of restricted stock awards; and •Reduced benefits from tax credits.Our effective tax rate was 23.3% and 20.9% for the three months ended March 31, 2022 and 2021, respectively.Net income, the components of which are discussed above, decreased $220 million, or 24%, and included the following:•Merger-related costs, net of tax, of $1.1 billion for the three months ended March 31, 2022, compared to $220 million for the three months ended March 31, 2021.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+29
+
+Table of Contents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Guarantor Financial Information
+
+In connection with our Merger with Sprint, we assumed certain registered debt to third parties issued by Sprint, Sprint Communications LLC, formerly known as Sprint Communications, Inc. (“Sprint Communications”) and Sprint Capital Corporation (collectively, the “Sprint Issuers”).Pursuant to the applicable indentures and supplemental indentures, the Senior Notes to affiliates and third parties issued by T-Mobile USA, Inc. and the Sprint Issuers (collectively, the “Issuers”) are fully and unconditionally guaranteed, jointly and severally, on a senior unsecured basis by T-Mobile (“Parent”) and certain of Parent’s 100% owned subsidiaries (“Guarantor Subsidiaries”). Pursuant to the applicable indentures and supplemental indentures, the Senior Secured Notes to third parties issued by T-Mobile USA, Inc. are fully and unconditionally guaranteed, jointly and severally, on a senior secured basis by Parent and the Guarantor Subsidiaries, except for the guarantees of Sprint, Sprint Communications and Sprint Capital Corporation, which are provided on a senior unsecured basis.The guarantees of the Guarantor Subsidiaries are subject to release in limited circumstances only upon the occurrence of certain customary conditions. The indentures, supplemental indentures and credit agreements governing the long-term debt contain covenants that, among other things, limit the ability of the Issuers or borrowers and the Guarantor Subsidiaries to incur more debt, pay dividends and make distributions, make certain investments, repurchase stock, create liens or other encumbrances, enter into transactions with affiliates, enter into transactions that restrict dividends or distributions from subsidiaries, and merge, consolidate or sell, or otherwise dispose of, substantially all of their assets. Certain provisions of each of the credit agreements, indentures and supplemental indentures relating to the long-term debt restrict the ability of the Issuers or borrowers to loan funds or make payments to Parent. However, the Issuers or borrowers and Guarantor Subsidiaries are allowed to make certain permitted payments to Parent under the terms of the indentures, supplemental indentures and credit agreements.
+
+
+30
+
+Table of Contents
+
+
+Basis of Presentation
+
+The following tables include summarized financial information of the obligor groups of debt issued by T-Mobile USA, Inc., Sprint, Sprint Communications and Sprint Capital Corporation. The summarized financial information of each obligor group is presented on a combined basis with balances and transactions within the obligor group eliminated. Investments in and the equity in earnings of non-guarantor subsidiaries, which would otherwise be consolidated in accordance with GAAP, are excluded from the below summarized financial information pursuant to SEC Regulation S-X Rule 13-01.
+
+The summarized balance sheet information for the consolidated obligor group of debt issued by T-Mobile USA, Inc. is presented in the table below:
+(in millions)March 31, 2022December 31, 2021Current assets$16,068 $19,522 Noncurrent assets182,515 174,980 Current liabilities20,188 22,195 Noncurrent liabilities122,025 115,126 Due to non-guarantors8,554 8,208 Due to related parties2,815 3,842
+
+The summarized results of operations information for the consolidated obligor group of debt issued by T-Mobile USA, Inc. is presented in the table below:
+Three Months Ended March 31, 2022Year EndedDecember 31, 2021(in millions)Total revenues$19,477 $78,538 Operating income891 3,835 Net (loss) income(48)402 Revenue from non-guarantors578 1,769 Operating expenses to non-guarantors653 2,655 Other expense to non-guarantors(41)(148)
+
+The summarized balance sheet information for the consolidated obligor group of debt issued by Sprint and Sprint Communications is presented in the table below:
+(in millions)March 31, 2022December 31, 2021Current assets$7,992 $11,969 Noncurrent assets12,038 10,347 Current liabilities13,237 15,136 Noncurrent liabilities69,674 70,262 Due from non-guarantors88 1,787 Due to related parties2,815 3,842
+
+31
+
+Table of Contents
+The summarized results of operations information for the consolidated obligor group of debt issued by Sprint and Sprint Communications is presented in the table below:
+Three Months Ended March 31, 2022Year EndedDecember 31, 2021(in millions)Total revenues$1 $7 Operating loss(529)(751)Net loss(851)(2,161)Other income, net, from non-guarantors337 1,706
+
+The summarized balance sheet information for the consolidated obligor group of debt issued by Sprint Capital Corporation is presented in the table below:
+(in millions)March 31, 2022December 31, 2021Current assets$7,992 $11,969 Noncurrent assets21,043 19,375 Current liabilities13,307 15,208 Noncurrent liabilities75,125 75,753 Due from non-guarantors9,093 10,814 Due to related parties2,815 3,842
+
+The summarized results of operations information for the consolidated obligor group of debt issued by Sprint Capital Corporation is presented in the table below:
+Three Months Ended March 31, 2022Year EndedDecember 31, 2021(in millions)Total revenues$1 $7 Operating loss(529)(751)Net loss(832)(2,590)Other income, net, from non-guarantors430 2,076
+
+
+Affiliates Whose Securities Collateralize the Senior Secured Notes
+
+The collateral arrangements relating to securities of affiliates that collateralize the Senior Secured Notes are the same as those described in the section entitled “Affiliates Whose Securities Collateralize the Notes and the Guarantees” in the Company’s Registration Statement on Form S-4/A filed with the SEC on April 22, 2022, which section is incorporated herein by reference. The assets, liabilities and results of operations of the combined affiliates whose securities are pledged as collateral are not materially different than the corresponding amounts presented in the condensed consolidated financial statements of the Company.
+
+
+
+Performance Measures
+
+In managing our business and assessing financial performance, we supplement the information provided by our condensed consolidated financial statements with other operating or statistical data and non-GAAP financial measures. These operating and financial measures are utilized by our management to evaluate our operating performance and, in certain cases, our ability to meet liquidity requirements. Although companies in the wireless industry may not define each of these measures in precisely the same way, we believe that these measures facilitate comparisons with other companies in the wireless industry on key operating and financial measures.
+32
+
+Table of Contents
+
+Total Postpaid Accounts
+
+A postpaid account is generally defined as a billing account number that generates revenue. Postpaid accounts generally consist of customers that are qualified for postpaid service utilizing phones, High Speed Internet, wearables, DIGITS or other connected devices, which include tablets and SyncUp products, where they generally pay after receiving service.
+As of March 31,Change(in thousands)20222021#%Total postpaid customer accounts (1)(2)27,507 26,014 1,493 6 %
+(1)     Customers impacted by the decommissioning of the legacy Sprint CDMA network, who did not migrate to the T-Mobile network, have been excluded from our postpaid account base resulting in the removal of 57,000 postpaid accounts in the first quarter of 2022.(2)    In the first quarter of 2021, we acquired 4,000 postpaid accounts through our acquisition of an affiliate.Total postpaid customer accounts increased 1,493,000, or 6%, primarily due to the continued focus on growing new relationships with customers driven by higher switching activity and growth in new and under-penetrated segments, including High Speed Internet.
+
+
+Postpaid Net Account Additions
+
+The following table sets forth the number of postpaid net account additions:
+Three Months Ended March 31,Change(in thousands)20222021#%Postpaid net account additions348 257 91 35 %
+
+Postpaid net account additions increased 91,000, or 35%, primarily due to the continued focus on growing new relationships with customers driven by higher switching activity and growth in new and under-penetrated segments, including High Speed Internet.
+
+Customers
+
+A customer is generally defined as a SIM number with a unique T-Mobile identifier which is associated with an account that generates revenue. Customers are qualified either for postpaid service utilizing phones, High Speed Internet, wearables, DIGITS or other connected devices, which include tablets and SyncUp products, where they generally pay after receiving service, or prepaid service, where they generally pay in advance of receiving service.
+
+The following table sets forth the number of ending customers:
+As of March 31,Change(in thousands)20222021#%Customers, end of periodPostpaid phone customers (1) (2)70,656 67,402 3,254 5 %Postpaid other customers (1) (2)17,767 15,170 2,597 17 %Total postpaid customers88,423 82,572 5,851 7 %Prepaid customers21,118 20,865 253 1 %Total customers109,541 103,437 6,104 6 %Acquired customers, net of base adjustments (1) (2)(558)12 (570)NM
+(1)     Customers impacted by the decommissioning of the legacy Sprint CDMA network, who did not migrate to the T-Mobile network, have been excluded from our postpaid customer base resulting in the removal of 212,000 postpaid phone customers and 349,000 postpaid other customers in the first quarter of 2022. In connection with our acquisition of companies, we included a base adjustment in the first quarter of 2022 to increase postpaid phone customers by 17,000 and reduce postpaid other customers by 14,000.(2)     In the first quarter of 2021, we acquired 11,000 postpaid phone customers and 1,000 postpaid other customers through our acquisition of an affiliate. NM - Not MeaningfulTotal customers increased 6,104,000, or 6%, primarily from:•Higher postpaid phone customers, primarily due to the continued focus on growing new relationships with customers, driven by higher switching activity and growth in new and under-penetrated segments;•Higher postpaid other customers, primarily due to growth in other connected devices, including growth in High Speed Internet and wearable products; and•Higher prepaid customers, primarily due to the continued success of our prepaid business due to promotional activity and rate plan offers; partially offset by lower prepaid industry demand associated with continued industry shift to postpaid plans.Total customers included High Speed Internet customers of 984,000 and 193,000 as of March 31, 2022 and 2021, respectively.
+
+33
+
+Table of Contents
+
+
+
+Net Customer Additions
+
+The following table sets forth the number of net customer additions:
+Three Months Ended March 31,Change(in thousands)20222021#%Net customer additionsPostpaid phone customers 589 773 (184)(24)%Postpaid other customers729 437 292 67 %Total postpaid customers1,318 1,210 108 9 %Prepaid customers62 151 (89)(59)%Total customers1,380 1,361 19 1 %Acquired customers, net of base adjustments(558)12 (570)NM
+NM - Not MeaningfulTotal net customer additions increased 19,000, or 1%, primarily from: •Higher postpaid other net customer additions, primarily due to an increase in High Speed Internet customers, connected devices and wearables; partially offset by•Lower postpaid phone net customer additions driven by a focus on deepening Sprint customer relationships in the prior year in order to decrease churn, as Sprint customers historically had fewer lines per account, partially offset by higher industry switching activity and lower churn; and•Lower prepaid net customer additions associated with the continued industry shift to postpaid plans, partially offset by lower churn.•High Speed Internet net customer additions included in postpaid other net customer additions were 329,000 and 93,000 for the three months ended March 31, 2022 and 2021, respectively. High Speed Internet net customer additions included in prepaid net customer additions were 9,000 for the three months ended March 31, 2022. There were no prepaid High Speed Internet customer additions for the three months ended March 31, 2021.
+
+
+
+Churn
+
+Churn represents the number of customers whose service was disconnected as a percentage of the average number of customers during the specified period further divided by the number of months in the period. The number of customers whose service was disconnected is presented net of customers that subsequently have their service restored within a certain period of time. We believe that churn provides management, investors and analysts with useful information to evaluate customer retention and loyalty.
+
+The following table sets forth the churn:
+Three Months Ended March 31,Change20222021Postpaid phone churn0.93 %0.98 %-5 bpsPrepaid churn2.67 %2.78 %-11 bps
+
+34
+
+Table of Contents
+Postpaid phone churn decreased 5 basis points, primarily from:•Reduced Sprint churn as we progress through the integration process; partially offset by•More normalized switching activity relative to the muted Pandemic-driven conditions a year ago. Prepaid churn decreased 11 basis points, primarily from:•Promotional activity; partially offset by•More normalized switching activity relative to the muted Pandemic-driven conditions a year ago.
+
+
+
+
+Average Revenue Per Account
+
+Average Revenue per Account (“ARPA”) represents the average monthly postpaid service revenue earned per account. We believe postpaid ARPA provides management, investors and analysts with useful information to assess and evaluate our postpaid service revenue realization and assist in forecasting our future postpaid service revenues on a per account basis. We consider postpaid ARPA to be indicative of our revenue growth potential given the increase in the average number of postpaid phone customers per account and increases in postpaid other customers, including High Speed Internet, wearables, DIGITS or other connected devices, which include tablets and SyncUp products.
+
+The following table sets forth our operating measure ARPA:
+(in dollars)Three Months Ended March 31,Change20222021$%Postpaid ARPA$136.53 $132.91 $3.62 3 %
+
+Postpaid ARPA increased $3.62, or 3%, primarily from:•Higher premium services, including Magenta Max; and•An increase in customers per account, including from the success of High Speed Internet; partially offset by•Increased promotional activity.
+
+
+Average Revenue Per User
+
+ARPU represents the average monthly service revenue earned from customers. We believe ARPU provides management, investors and analysts with useful information to assess and evaluate our service revenue per customer and assist in forecasting our future service revenues generated from our customer base. Postpaid phone ARPU excludes postpaid other customers and related revenues, which include High Speed Internet, wearables, DIGITS and other connected devices such as tablets and SyncUp products.The following table sets forth our operating measure ARPU:
+
+(in dollars)Three Months Ended March 31,Change20222021$%Postpaid phone ARPU$48.41 $47.30 $1.11 2 %Prepaid ARPU$39.19 $37.81 $1.38 4 %
+
+Postpaid Phone ARPU
+
+Postpaid phone ARPU increased $1.11, or 2%, and was primarily impacted by:•Higher premium services, including Magenta Max; partially offset by•Increased promotional activity.
+
+
+Prepaid ARPU
+
+Prepaid ARPU increased $1.38, or 4%, primarily due to higher premium services.
+
+35
+
+Table of Contents
+Adjusted EBITDA and Core Adjusted EBITDA
+
+Adjusted EBITDA represents earnings before Interest expense, net of Interest income, Income tax expense, Depreciation and amortization, stock-based compensation and certain income and expenses not reflective of our ongoing operating performance. Core Adjusted EBITDA represents Adjusted EBITDA less device lease revenues. Adjusted EBITDA margin represents Adjusted EBITDA divided by Service revenues. Core Adjusted EBITDA margin represents Core Adjusted EBITDA divided by Service revenues.Adjusted EBITDA, Adjusted EBITDA margin, Core Adjusted EBITDA and Core Adjusted EBITDA margin are non-GAAP financial measures utilized by our management to monitor the financial performance of our operations. We use Adjusted EBITDA internally as a measure to evaluate and compensate our personnel and management for their performance. We use Adjusted EBITDA and Core Adjusted EBITDA as benchmarks to evaluate our operating performance in comparison to our competitors. Management believes analysts and investors use Adjusted EBITDA and Core Adjusted EBITDA as supplemental measures to evaluate overall operating performance and facilitate comparisons with other wireless communications services companies because they are indicative of our ongoing operating performance and trends by excluding the impact of interest expense from financing, non-cash depreciation and amortization from capital investments, stock-based compensation and Merger-related costs including network decommissioning costs, as they are not indicative of our ongoing operating performance, as well as certain nonrecurring income and expenses. Management believes analysts and investors use Core Adjusted EBITDA because it normalizes for the transition in the Company’s device financing strategy, by excluding the impact of device lease revenues from Adjusted EBITDA, to align with the exclusion of the related depreciation expense on leased devices from Adjusted EBITDA. Adjusted EBITDA, Adjusted EBITDA margin, Core Adjusted EBITDA and Core Adjusted EBITDA margin have limitations as analytical tools and should not be considered in isolation or as substitutes for income from operations, net income or any other measure of financial performance reported in accordance with GAAP.The following table illustrates the calculation of Adjusted EBITDA and Core Adjusted EBITDA and reconciles Adjusted EBITDA and Core Adjusted EBITDA to Net income, which we consider to be the most directly comparable GAAP financial measure:
+
+
+Three Months Ended March 31,Change(in millions)20222021$%Net income$713 $933 $(220)(24)%Adjustments:Interest expense, net864 835 29 3 %Other expense, net11 125 (114)(91)%Income tax expense218 246 (28)(11)%Operating income1,806 2,139 (333)(16)%Depreciation and amortization3,585 4,289 (704)(16)%Stock-based compensation (1)136 130 6 5 %Merger-related costs1,413 298 1,115 374 %Other, net (2)10 49 (39)(80)%Adjusted EBITDA6,950 6,905 45 1 %Lease revenues(487)(1,041)554 (53)%Core Adjusted EBITDA$6,463 $5,864 $599 10 %Net income margin (Net income divided by Service revenues)5 %7 %-200 bpsAdjusted EBITDA margin (Adjusted EBITDA divided by Service revenues)46 %49 %-300 bpsCore Adjusted EBITDA margin (Core Adjusted EBITDA divided by Service revenues)43 %41 %200 bps
+(1)Stock-based compensation includes payroll tax impacts and may not agree with stock-based compensation expense in the condensed consolidated financial statements. Additionally, certain stock-based compensation expenses associated with the Transactions have been included in Merger-related costs. (2)Other, net may not agree with the Condensed Consolidated Statements of Comprehensive Income primarily due to certain non-routine operating activities, such as other special items that would not be expected to reoccur or are not reflective of T-Mobile’s ongoing operating performance, and are, therefore, excluded from Adjusted EBITDA and Core Adjusted EBITDA. Core Adjusted EBITDA increased $599 million, or 10%, for the three months ended March 31, 2022. The components comprising Core Adjusted EBITDA are discussed further above. The increase was primarily due to:•Higher Total service revenues; and•Lower Cost of services, excluding Merger-related costs; partially offset by•Higher Selling, general and administrative expenses, excluding Merger-related costs; and•Lower Equipment revenues, excluding Lease revenues.Adjusted EBITDA increased $45 million, or 1%, for the three months ended March 31, 2022. The change was primarily due to the increase in Core Adjusted EBITDA, discussed above, partially offset by a decrease in Lease revenues of $554 million for the three months ended March 31, 2022.
+
+
+36
+
+Table of Contents
+
+
+
+
+Liquidity and Capital Resources
+
+Our principal sources of liquidity are our cash and cash equivalents and cash generated from operations, proceeds from issuance of debt and common stock, financing leases, the sale of certain receivables and the Revolving Credit Facility (as defined below). Further, the incurrence of additional indebtedness may inhibit our ability to incur new debt under the terms governing our existing and future indebtedness, which may make it more difficult for us to incur new debt in the future to finance our business strategy.
+
+Cash Flows
+
+The following is a condensed schedule of our cash flows:
+Three Months Ended March 31,Change(in millions)20222021$%Net cash provided by operating activities$3,845 $3,661 $184 5 %Net cash used in investing activities(5,092)(11,239)6,147 (55)%Net cash (used in) provided by financing activities(2,136)3,874 (6,010)(155)%
+
+Operating Activities
+
+Net cash provided by operating activities increased $184 million, or 5%, primarily from:•A $1.0 billion decrease in net cash outflows from changes in working capital, primarily due to lower use of cash from Accounts payable and accrued liabilities, Short- and long-term operating lease liabilities and Operating lease right-of-use assets, partially offset by higher use of cash from Accounts receivable and Inventories; partially offset by•An $820 million decrease in Net income, adjusted for non-cash income and expense.•Net cash provided by operating activities includes $893 million and $277 million in net payments for Merger-related costs for the three months ended March 31, 2022 and 2021, respectively.
+
+
+Investing Activities
+
+Net cash used in investing activities decreased $6.1 billion, or 55%. The use of cash was primarily from:•$3.4 billion in Purchases of property and equipment, including capitalized interest, from network integration related to the Merger and the accelerated build-out of our nationwide 5G network; •$2.8 billion in Purchases of spectrum licenses and other intangible assets, including deposits, primarily due to $2.8 billion paid for spectrum licenses won at the conclusion of Auction 110 in February 2022; partially offset by •$1.2 billion in Proceeds related to beneficial interests in securitization transactions.
+
+
+Financing Activities
+
+Net cash provided by financing activities decreased $6.0 billion, or 155%. The use of cash was primarily from:•$1.6 billion in Repayments of long-term debt;•$302 million in Repayments of financing lease obligations; and•$172 million in Tax withholdings on share-based awards.
+
+37
+
+Table of Contents
+
+Cash and Cash Equivalents
+
+As of March 31, 2022, our Cash and cash equivalents were $3.2 billion compared to $6.6 billion at December 31, 2021.
+
+Free Cash Flow
+
+Free Cash Flow represents Net cash provided by operating activities less cash payments for Purchases of property and equipment, including Proceeds related to beneficial interests in securitization transactions, less Cash payments for debt prepayment or debt extinguishment. Free Cash Flow is a non-GAAP financial measure utilized by management, investors and analysts of our financial information to evaluate cash available to pay debt and provide further investment in the business.The table below provides a reconciliation of Free Cash Flow to Net cash provided by operating activities, which we consider tobe the most directly comparable GAAP financial measure.
+
+Three Months Ended March 31,Change(in millions)20222021$%Net cash provided by operating activities$3,845 $3,661 $184 5 %Cash purchases of property and equipment(3,381)(3,183)(198)6 %Proceeds related to beneficial interests in securitization transactions1,185 891 294 33 %Cash payments for debt prepayment or debt extinguishment costs— (65)65 (100)%Free Cash Flow$1,649 $1,304 $345 26 %
+
+Free Cash Flow increased $345 million, or 26%. The increase was primarily impacted by the following:•Higher Proceeds related to beneficial interests in securitization transactions; and•Higher Net cash provided by operating activities, as described above; partially offset by•Higher Cash purchases of property and equipment, including capitalized interest.•Free Cash Flow includes $893 million and $277 million in net payments for Merger-related costs for the three months ended March 31, 2022 and 2021, respectively.
+
+
+Borrowing Capacity
+
+We maintain a revolving credit facility (the “Revolving Credit Facility”) with an aggregate commitment amount of $5.5 billion. As of March 31, 2022, there was no outstanding balance under the Revolving Credit Facility.
+
+Debt Financing
+
+As of March 31, 2022, our total debt and financing lease liabilities were $75.0 billion, excluding our tower obligations, of which $68.4 billion was classified as long-term debt and $1.4 billion was classified as long-term financing lease liabilities.During the three months ended March 31, 2022, we repaid short- and long-term debt with an aggregate principal amount of $1.6 billion. There were no new issuances or borrowings during the three months ended March 31, 2022.Subsequent to March 31, 2022, on April 15, 2022, we repaid at maturity $1.25 billion of our 5.375% Senior Notes to affiliates due 2022.
+
+
+
+For more information regarding our debt financing transactions, see Note 6 – Debt of the Notes to the Condensed Consolidated Financial Statements.
+
+38
+
+Table of Contents
+Spectrum Auction
+
+In January 2022, the FCC announced that we were the winning bidder of 199 licenses in Auction 110 (mid-band spectrum) for an aggregate purchase price of $2.9 billion. At the inception of Auction 110 in September 2021, we deposited $100 million. We paid the FCC the remaining $2.8 billion for the licenses won in the auction in February 2022.
+
+For more information regarding our spectrum licenses, see Note 4 – Spectrum License Transactions of the Notes to the Condensed Consolidated Financial Statements.
+
+Off-Balance Sheet Arrangements
+
+We have arrangements, as amended from time to time, to sell certain EIP accounts receivable and service accounts receivable on a revolving basis as a source of liquidity. As of March 31, 2022, we derecognized net receivables of $2.5 billion upon sale through these arrangements.
+
+For more information regarding these off-balance sheet arrangements, see Note 3 – Sales of Certain Receivables of the Notes to the Condensed Consolidated Financial Statements.
+
+Future Sources and Uses of Liquidity
+
+We may seek additional sources of liquidity, including through the issuance of additional debt, to continue to opportunistically acquire spectrum licenses or other assets in private party transactions or for the refinancing of existing long-term debt on an opportunistic basis. Excluding liquidity that could be needed for spectrum acquisitions, or for other assets, we expect our principal sources of funding to be sufficient to meet our anticipated liquidity needs for business operations for the next 12 months as well as our longer-term liquidity needs. Our intended use of any such funds is for general corporate purposes, including for capital expenditures, spectrum purchases, opportunistic investments and acquisitions, redemption of debt, tower obligations and the execution of our integration plan. We determine future liquidity requirements, for both operations and capital expenditures, based in large part upon projected financial and operating performance, and opportunities to acquire additional spectrum. We regularly review and update these projections for changes in current and projected financial and operating results, general economic conditions, the competitive landscape and other factors. We have incurred, and will incur, substantial expenses to comply with the Government Commitments, and we are also expected to incur substantial restructuring expenses in connection with integrating and coordinating T-Mobile’s and Sprint’s businesses, operations, policies and procedures. See “Restructuring” of this MD&A. While we have assumed that a certain level of Merger-related expenses will be incurred, factors beyond our control, including required consultation and negotiation with certain counterparties, could affect the total amount or the timing of these expenses. These expenses could exceed the costs historically borne by us and adversely affect our financial condition and results of operations. There are a number of additional risks and uncertainties, including those due to the impact of the Pandemic, that could cause our financial and operating results and capital requirements to differ materially from our projections, which could cause future liquidity to differ materially from our assessment. The indentures, supplemental indentures and credit agreements governing our long-term debt to affiliates and third parties, excluding financing leases, contain covenants that, among other things, limit the ability of the Issuers or borrowers and the Guarantor Subsidiaries to incur more debt, pay dividends and make distributions on our common stock, make certain investments, repurchase stock, create liens or other encumbrances, enter into transactions with affiliates, enter into transactions that restrict dividends or distributions from subsidiaries, and merge, consolidate or sell, or otherwise dispose of, substantially all of their assets. Certain provisions of each of the credit agreements, indentures and supplemental indentures relating to the long-term debt to affiliates and third parties restrict the ability of the Issuers or borrowers to loan funds or make payments to Parent. However, the Issuers or borrowers are allowed to make certain permitted payments to Parent under the terms of each of the credit agreements, indentures and supplemental indentures relating to the long-term debt to affiliates and third parties. We were in compliance with all restrictive debt covenants as of March 31, 2022.
+
+
+
+Financing Lease Facilities
+
+We have entered into uncommitted financing lease facilities with certain third parties that provide us with the ability to enter into financing leases for network equipment and services. As of March 31, 2022, we have committed to $6.6 billion of financing leases under these financing lease facilities, of which $299 million was executed during the three months ended March 31, 2022. We expect to enter into up to an additional $901 million in financing lease commitments during the year ending December 31, 2022.
+39
+
+Table of Contents
+
+Capital Expenditures
+
+Our liquidity requirements have been driven primarily by capital expenditures for spectrum licenses, the construction, expansion and upgrading of our network infrastructure and the integration of the networks, spectrum, technology, personnel, customer base and business practices of T-Mobile and Sprint. Property and equipment capital expenditures primarily relate to the integration of our network and spectrum licenses, including acquired Sprint PCS and 2.5 GHz spectrum licenses and existing 600 MHz spectrum licenses as we build out our nationwide 5G network. We expect the majority of our remaining capital expenditures related to these efforts to occur in 2022, after which we expect a reduction in capital expenditure requirements.
+
+For more information regarding our spectrum licenses, see Note 4 – Spectrum License Transactions of the Notes to the Condensed Consolidated Financial Statements.
+
+Stockholder Returns
+
+We have never declared or paid any cash dividends on our common stock, and we do not intend to declare or pay any cash dividends on our common stock in the foreseeable future.We may use cash to repurchase shares of our common stock, subject to, among other things, approval by the Board of Directors and our sufficient access to sources of liquidity, including potentially debt capital markets.
+
+
+
+Related Party Transactions
+
+We have related party transactions associated with DT, SoftBank or their affiliates in the ordinary course of business, including intercompany servicing and licensing.As of April 29, 2022, DT and SoftBank held, directly or indirectly, approximately 48.3% and 3.2%, respectively, of the outstanding T-Mobile common stock, with the remaining approximately 48.5% of the outstanding T-Mobile common stock held by other stockholders. As a result of the Proxy, Lock-Up and ROFR Agreement, dated April 1, 2020, by and between DT and SoftBank and the Proxy, Lock-Up and ROFR Agreement, dated June 22, 2020, by and among DT, Claure Mobile LLC, and Marcelo Claure, DT has voting control, as of April 29, 2022, over approximately 51.8% of the outstanding T-Mobile common stock.
+
+
+Disclosure of Iranian Activities under Section 13(r) of the Securities Exchange Act of 1934
+
+Section 219 of the Iran Threat Reduction and Syria Human Rights Act of 2012 added Section 13(r) to the Exchange Act of 1934, as amended (“Exchange Act”). Section 13(r) requires an issuer to disclose in its annual or quarterly reports, as applicable, whether it or any of its affiliates knowingly engaged in certain activities, transactions or dealings relating to Iran or with designated natural persons or entities involved in terrorism or the proliferation of weapons of mass destruction. Disclosure is required even where the activities, transactions or dealings are conducted outside the U.S. by non-U.S. affiliates in compliance with applicable law, and whether or not the activities are sanctionable under U.S. law.As of the date of this report, we are not aware of any activity, transaction or dealing by us or any of our affiliates for the three months ended March 31, 2022, that requires disclosure in this report under Section 13(r) of the Exchange Act, except as set forth below with respect to affiliates that we do not control and that are our affiliates solely due to their common control with either DT or SoftBank. We have relied upon DT and SoftBank for information regarding their respective activities, transactions and dealings.DT, through certain of its non-U.S. subsidiaries, is party to roaming and interconnect agreements with the following mobile and fixed line telecommunication providers in Iran, some of which are or may be government-controlled entities: Irancell Telecommunications Services Company, Telecommunication Kish Company, Mobile Telecommunication Company of Iran, and Telecommunication Infrastructure Company of Iran. In addition, during the three months ended March 31, 2022, DT, through certain of its non-U.S. subsidiaries, provided basic telecommunications services to four customers in Germany identified on the Specially Designated Nationals and Blocked Persons List maintained by the U.S. Department of Treasury’s Office of Foreign Assets Control: Bank Melli, Europäisch-Iranische Handelsbank, CPG Engineering & Commercial Services GmbH and Golgohar Trade and Technology GmbH. These services have been terminated or are in the process of being terminated. For the three months ended March 31, 2022, gross revenues of all DT affiliates generated by roaming and interconnection traffic and telecommunications services with the Iranian parties identified herein were less than $0.1 million, and the estimated net profits were less than $0.1 million.In addition, DT, through certain of its non-U.S. subsidiaries that operate a fixed-line network in their respective European home countries (in particular Germany), provides telecommunications services in the ordinary course of business to the Embassy of Iran in those European countries. Gross revenues and net profits recorded from these activities for the three months ended March 31, 2022 were less than $0.1 million. We understand that DT intends to continue these activities.Separately, SoftBank, through one of its non-U.S. subsidiaries, provides roaming services in Iran through Irancell Telecommunications Services Company. During the three months ended March 31, 2022, SoftBank had no gross revenues from such services and no net profit was generated. We understand that the SoftBank subsidiary intends to continue such services. This subsidiary also provides telecommunications services in the ordinary course of business to accounts affiliated with the Embassy of Iran in Japan. During the three months ended March 31, 2022, SoftBank estimates that gross revenues and net profit generated by such services were both under $0.1 million. We understand that the SoftBank subsidiary is obligated under contract and intends to continue such services.In addition, SoftBank, through one of its non-U.S. indirect subsidiaries, provides office supplies to the Embassy of Iran in Japan. SoftBank estimates that gross revenue and net profit generated by such services during the three months ended March 31, 2022, were both under $0.1 million. We understand that the SoftBank subsidiary intends to continue such activities.
+
+
+40
+
+Table of Contents
+
+
+
+
+
+Critical Accounting Policies and Estimates
+
+Preparation of our condensed consolidated financial statements in accordance with GAAP requires us to make estimates and assumptions that affect the reported amounts of certain assets, liabilities, revenues and expenses, as well as related disclosure of contingent assets and liabilities. There have been no material changes to the critical accounting policies and estimates as previously disclosed in Part II, Item 8 of our Annual Report on Form 10-K for the year ended December 31, 2021, and which are hereby incorporated by reference herein.
+
+
+Accounting Pronouncements Not Yet Adopted
+
+For information regarding recently issued accounting standards, see Note 1 – Summary of Significant Accounting Policies of the Notes to the Condensed Consolidated Financial Statements.
+
+
+Item 3. Quantitative and Qualitative Disclosures About Market Risk
+
+There have been no material changes to the market risk as previously disclosed in Part II, Item 7A of our Annual Report on Form 10-K for the year ended December 31, 2021.
+
+
+Item 4. Controls and Procedures
+
+Evaluation of Disclosure Controls and Procedures
+
+We maintain disclosure controls and procedures designed to ensure information required to be disclosed in our periodic reports filed or submitted under the Exchange Act, is recorded, processed, summarized and reported within the time periods specified in the SEC’s rules and forms. Our disclosure controls include the use of a Disclosure Committee which is comprised of representatives from our Accounting, Legal, Treasury, Technology, Risk Management, Government Affairs and Investor Relations functions and are designed to ensure that information required to be disclosed in the reports we file or submit under the Exchange Act is accumulated and communicated to our management, including our principal executive officer and principal financial officer, as appropriate, to allow timely decisions regarding required disclosure.Under the supervision and with the participation of our management, including our Chief Executive Officer and our Chief Financial Officer, we carried out an evaluation of the effectiveness of the design and operation of our disclosure controls and procedures, as defined in Rules 13a-15(e) and 15d-15(e) under the Exchange Act. Based upon that evaluation, our Chief Executive Officer and Chief Financial Officer concluded that our disclosure controls and procedures were effective, as of the end of the period covered by this Form 10-Q.The certifications required by Section 302 of the Sarbanes-Oxley Act of 2002 (the “Sarbanes-Oxley Act”) are filed as Exhibits 31.1 and 31.2, respectively, to this Form 10-Q.
+
+
+41
+
+Table of Contents
+
+Changes in Internal Control over Financial Reporting
+
+There were no changes in our internal control over financial reporting, as defined in Rules 13a-15(f) and 15d-15(f) of the Exchange Act, during our most recently completed fiscal quarter that materially affected or are reasonably likely to materially affect our internal control over financial reporting.
+
+
+PART II.
+
+
+Item 1. Legal Proceedings
+
+For more information regarding the legal proceedings in which we are involved, see Note 11 – Commitments and Contingencies of the Notes to the Condensed Consolidated Financial Statements.
+
+
+Item 1A. Risk Factors
+
+Other than the updated risk factor below, there have been no material changes in our risk factors as previously disclosed in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2021.
+
+We have experienced criminal cyberattacks and could in the future be further harmed by disruption, data loss or other security breaches, whether directly or indirectly through third parties.
+
+Our business involves the receipt, storage, and transmission of confidential information about our customers, such as sensitive personal, account and payment card information, confidential information about our employees and suppliers, and other sensitive information about our Company, such as our business plans, transactions, financial information, and intellectual property (collectively, “Confidential Information”). We are subject to persistent cyberattacks and threats to our networks, systems, and supply chain from a variety of bad actors, many of whom attempt to gain access to and compromise Confidential Information by exploiting bugs, errors, misconfigurations or other vulnerabilities in our networks and other systems (including purchased and third-party systems) or engaging in credential harvesting or social engineering. In some cases, these bad actors may obtain unauthorized access to Confidential Information utilizing credentials taken from our customers, employees, or third parties. Other bad actors aim to cause serious operational disruptions to our business or networks through other means, such as through ransomware or distributed denial of services attacks. Cyberattacks against companies like ours have increased in frequency and potential harm over time, and the methods used to gain unauthorized access constantly evolve, making it increasingly difficult to anticipate, prevent, and/or detect incidents successfully in every instance. They are perpetrated by a variety of groups and persons, including state-sponsored parties, malicious actors, employees, contractors, or other unrelated third parties. Some of these persons reside in jurisdictions where law enforcement measures to address such attacks are ineffective or unavailable, and such attacks may even be perpetrated by or at the behest of foreign governments.In addition, we routinely provide certain Confidential Information to third-party providers whose products and services are used in our business operations, including as part of our IT systems, such as cloud services. These third-party providers have experienced in the past, and will continue to experience in the future, cyberattacks that involve attempts to obtain unauthorized access to our Confidential Information and/or to create operational disruptions that could adversely affect our business, and these providers also face other security challenges common to all parties that collect and process information. In August 2021, we disclosed that our systems were subject to a criminal cyberattack that compromised certain data of millions of our current customers, former customers, and prospective customers, including, in some instances, social security numbers, names, addresses, dates of birth and driver’s license/identification numbers. With the assistance of outside cybersecurity experts, we located and closed the unauthorized access to our systems and identified current, former, and prospective customers whose information was impacted and notified them, consistent with state and federal requirements. We have incurred certain cyberattack-related expenses, including costs to remediate the attack, provide additional customer support and enhance customer protection, and expect to incur additional expense in future periods resulting from the attack. For more information, see “Cyberattack” in the Overview section of MD&A. As a result of the August 2021 cyberattack, we are subject to numerous claims, lawsuits and regulatory inquiries, the ongoing costs of which may be material, and we may be subject to further regulatory inquiries and private litigation. For more information, see “– Contingencies and Litigation – Litigation and Regulatory Matters” in Note 11 – Commitments and Contingencies of the Notes to the Consolidated Financial Statements.” As a result of the August 2021 cyberattack, we may incur significant costs or experience other material financial impacts, which may not be covered by, or may exceed the coverage limits of, our cyber insurance, and such costs and impacts may have a material adverse effect on our business, reputation, financial condition, cash flows and operating results.In addition to the August 2021 cyberattack, we have experienced other unrelated immaterial incidents involving unauthorized access to certain Confidential Information. Typically, these incidents have involved attempts to commit fraud by taking control of a customer’s phone line, often by using compromised credentials. In other cases, the incidents have involved unauthorized access to certain of our customers’ private information, including credit card information, financial data, social security numbers or passwords, and to certain of our intellectual property. Our procedures and safeguards to prevent unauthorized access to Confidential Information and to defend against cyberattacks seeking to disrupt our operations must be continually evaluated and enhanced to address the ever-evolving threat landscape and changing cybersecurity regulations. These preventative actions require the investment of significant resources and management time and attention. Additionally, we do not have control of the cybersecurity systems, breach prevention, and response protocols of our third-party providers. While T-Mobile may have contractual rights to assess the effectiveness of many of our providers’ systems and protocols, we do not have the means to know or assess the effectiveness of all of our providers’ systems and controls at all times. We cannot provide any assurances that actions taken by us, or our third-party providers will adequately repel a significant cyberattack or prevent or substantially mitigate the impacts of cybersecurity breaches or misuses of Confidential Information, unauthorized access to our networks or systems or exploits against third-party environments, or that we or our third-party providers, will be able to effectively identify, investigate, and remediate such incidents in a timely manner or at all. We expect to continue to be the target of cyberattacks, given the nature of our business, and we expect the same with respect to our third-party providers. Our inability to protect Confidential Information or to prevent operational disruptions from future cyberattacks may have a material adverse effect on our business, reputation, financial condition, cash flows, and operating results.
+
+
+
+42
+
+Table of Contents
+
+
+
+
+Item 2. Unregistered Sales of Equity Securities and Use of Proceeds
+
+None.
+
+
+Item 3. Defaults Upon Senior Securities
+
+None.
+
+
+Item 4. Mine Safety Disclosures
+
+Not applicable.
+
+
+Item 5. Other Information
+
+None.
+
+43
+
+
+Table of Contents
+Item 6. Exhibits
+Incorporated by ReferenceExhibit No.Exhibit DescriptionFormDate of First FilingExhibit NumberFiled Herein10.1*Employment Letter Agreement, effective October 11, 2021, between T-Mobile US, Inc. and Mark W. Nelson.X10.2First Amendment to First Amended and Restated Sale and Conveyancing Agreement, dated as of February 28, 2022, by and among T-Mobile West LLC, T-Mobile Central LLC, T-Mobile Northeast LLC and T-Mobile South LLC, as sellers, and T-Mobile USA, Inc. as purchaser.X10.3First Amendment to First Amended and Restated Receivables Sale and Contribution Agreement, dated as of February 28, 2022, by and between T-Mobile USA, Inc., as seller, and T-Mobile Airtime Funding LLC, as purchaser.X10.4Second Amendment to Fifth Amended and Restated Master Receivables Purchase Agreement, dated as of February 28, 2022, by and among T-Mobile Airtime Funding LLC, as transferor, T-Mobile USA, Inc., in its individual capacity and as servicer, T-Mobile US, Inc. and T-Mobile USA, Inc., as performance guarantors, The Toronto-Dominion Bank, as administrative agent, and certain financial institutions party thereto.X22.1Subsidiary Guarantors and Issuers of Guaranteed Securities and Affiliates Whose Securities Collateralize Securities of the Registrant.X31.1Certifications of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002.X31.2Certifications of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002.X32.1**Certification of Chief Executive Officer Pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.X32.2**Certification of Chief Financial Officer Pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.X101.INSXBRL Instance Document - the instance document does not appear in the Interactive Data File because its XBRL tags are embedded within the Inline XBRL document.101.SCHXBRL Taxonomy Extension Schema Document.X101.CALXBRL Taxonomy Extension Calculation Linkbase Document.X101.DEFXBRL Taxonomy Extension Definition Linkbase Document.X101.LABXBRL Taxonomy Extension Label Linkbase Document.X101.PREXBRL Taxonomy Extension Presentation Linkbase.X104Cover Page Interactive Data File (the cover page XBRL tags)
+*Indicates a management contract or compensatory plan or arrangement**Furnished herein.
+44
+
+Table of Contents
+
+
+SIGNATURES
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned thereunto duly authorized.T-MOBILE US, INC.May 6, 2022/s/ Peter OsvaldikPeter OsvaldikExecutive Vice President and Chief Financial Officer(Principal Financial Officer and Authorized Signatory)
+
+
+45

@@ -1,0 +1,12 @@
+[INFO] Terminal output is mirrored to /Users/Shankar/Downloads/cs4221/4221_final_project/financial-testbed/profiles_ingest.log
+
+[INFO] Loading JSON from /Users/Shankar/Downloads/cs4221/4221_final_project/financial-testbed/test_data/profile_estimate/profile.json
+[INFO] Parsed 1,096 JSON objects
+
+=== Ingestion summary ===
+JSON rows processed : 1,096
+New rows inserted   : 0
+Skipped (duplicates): 1,096
+Insert runtime      : 0.249 seconds
+=========================
+
