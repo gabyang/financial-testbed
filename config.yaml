@@ -1,0 +1,18 @@
+database:
+  database: financial_db
+  host: localhost
+  max_connections: 20
+  min_connections: 5
+  password: postgres
+  user: postgres
+models:
+  embedding: all-MiniLM-L6-v2
+  llm: llama3.2
+output:
+  directory: summaries
+  use_database: false
+processing:
+  batch_size: 50
+  max_workers: 4
+  top_n_articles: 5
+  top_n_chunks: 5

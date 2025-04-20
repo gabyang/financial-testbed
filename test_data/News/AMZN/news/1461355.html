@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+
+<!-- Anti-flicker snippet -->
+
+
+<!-- End anti-flicker snippet -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<link href="http://gmpg.org/xfn/11" rel="profile"/>
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+<meta content="max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<!-- This site is optimized with the Yoast SEO plugin v23.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>The Curious Rise of C#</title>
+<meta content="In the last year, C# is back. What’s driving the rise? The TIOBE Index, which is based on search traffic, and GitHub Octoverse, based on commits to public code repositories, both showed C# ticking up in usage. This article examines some of its popular uses." name="description">
+<link href="https://devm.io/csharp/curious-rise-of-c-sharp-171852" rel="canonical">
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type"/>
+<meta content="devmio - Software Know-How" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+
+<!-- / Yoast SEO plugin. -->
+<meta content="The Curious Rise of C#" property="og:title"/>
+<meta content="In the last year, C# is back. What’s driving the rise? The TIOBE Index, which is based on search traffic, and GitHub Octoverse, based on commits to public code repositories, both showed C# ticking up in usage. This article examines some of its popular uses." property="og:description"/>
+<meta content="https://devm.io/csharp/curious-rise-of-c-sharp-171852" property="og:url"/>
+<meta content="de_DE" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="devmio - Software Know-How" property="og:site_name"/>
+<meta content="Artikel" property="article:section"/>
+<meta content="900" property="og:image:width"/>
+<meta content="450" property="og:image:height"/>
+<meta content="02/06/2020 09:26:00" property="article:published_time"/>
+<meta content="https://s3.eu-west-1.amazonaws.com/redsys-prod/articles/7e5d8bb685a1c5282991c633/images/teaserImage_xx_croppedTeaserImage.jpg" property="og:image"/>
+<meta content="https://s3.eu-west-1.amazonaws.com/redsys-prod/articles/7e5d8bb685a1c5282991c633/images/teaserImage_xx_croppedTeaserImage.jpg" property="og:image:secure_url"/>
+<link href="//stats.wp.com" rel="dns-prefetch"/>
+<link href="//s3.eu-west-1.amazonaws.com" rel="dns-prefetch"/>
+<link href="//cdn.jsdelivr.net" rel="dns-prefetch"/>
+<link href="https://devm.io/feed/" rel="alternate" title="devmio - Software Know-How » Feed" type="application/rss+xml"/>
+<link href="https://devm.io/comments/feed/" rel="alternate" title="devmio - Software Know-How » Comments Feed" type="application/rss+xml"/>
+<link as="script" href="https://devm.io/wp-content/uploads/rcb_js_uploads/c347cfaf5eb5b69959c7a01e1969cf4e/dist/1901160979.js?x63112&amp;ver=5cd0d8dc8b7ba5be478ef3a36028f085" rel="preload"/>
+<link as="script" href="https://devm.io/wp-content/uploads/rcb_js_uploads/c347cfaf5eb5b69959c7a01e1969cf4e/dist/416860672.js?x63112&amp;ver=69bfc3e143214ce93d267833e18402cb" rel="preload"/>
+<link as="style" href="https://devm.io/wp-content/plugins/real-cookie-banner-pro/public/lib/animate.css/animate.min.css?x63112&amp;ver=4.1.1" rel="preload"/>
+
+
+
+
+<link href="https://devm.io/wp-content/plugins/real-cookie-banner-pro/public/lib/animate.css/animate.min.css?x63112&amp;ver=4.1.1" id="animate-css-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://devm.io/wp-content/plugins/cancellation-notice-for-woocommerce-subscriptions/css/subscription-status.css?x63112&amp;ver=1.0.0" id="subscription-status-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/woocommerce-pdf-invoice/assets/css/woocommerce-pdf-frontend-css.css?x63112&amp;ver=5.0.3" id="woocommerce-pdf-frontend-css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/build/index.css?x63112&amp;ver=7.0.0" id="wc-blocks-integration-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://devm.io/wp-includes/css/dist/block-library/style.min.css?x63112&amp;ver=6.5.2" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+<link consent-by="services" consent-id="3109" consent-original-href-_="https://devm.io/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.3" consent-required="3108" id="contact-form-7-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/sands_advanced_tickets_display/assets/css/sands_advanced_tickets_display.css?x63112&amp;ver=6.5.2" id="sands_advanced_tickets_display_css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/sands_advanced_tickets_display/assets/libs/jquery.bxslider/jquery.bxslider.min.css?x63112&amp;ver=6.5.2" id="jqbxslidercss-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?x63112&amp;ver=8.8.2" id="woocommerce-layout-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?x63112&amp;ver=8.8.2" id="woocommerce-smallscreen-css" media="only screen and (max-width: 768px)" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/woocommerce/assets/css/woocommerce.css?x63112&amp;ver=8.8.2" id="woocommerce-general-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://devm.io/wp-content/plugins/wt-import-export-for-woo/public/css/wt-import-export-for-woo-public.css?x63112&amp;ver=1.1.3" id="wt-import-export-for-woo-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//devm.io/wp-content/uploads/mc4wp-stylesheets/bundle.css?x63112&amp;ver=1682004338" id="mc4wp-form-styles-builder-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://s3.eu-west-1.amazonaws.com/redsys-prod/cssVersions/7tSgYsK8tcyinWTYJ/files/main.css?ver=6.5.2" id="epubhtml-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/themes/understrap-child/css/child-theme.min.css?x63112&amp;ver=2.11.95" id="child-understrap-styles-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css?ver=6.5.2" id="cookieconsent-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/themes/understrap-child/conferences-app-vue/walkuere_conferences_vue_app/dist/css/app.css?x63112&amp;ver=6.5.2" id="sands-walkuere-app-styles-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?x63112&amp;ver=5.29.0" id="elementor-icons-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/uploads/elementor/css/custom-frontend.min.css?x63112&amp;ver=1729668995" id="elementor-frontend-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://devm.io/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?x63112&amp;ver=5.3.6" id="swiper-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/uploads/elementor/css/custom-pro-frontend.min.css?x63112&amp;ver=1729668995" id="elementor-pro-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?x63112&amp;ver=3.21.2" id="font-awesome-5-all-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://devm.io/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?x63112&amp;ver=3.21.2" id="font-awesome-4-shim-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://devm.io/wp-json/" rel="https://api.w.org/"/><link href="https://devm.io/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<meta content="WordPress 6.5.2" name="generator"/>
+<meta content="WooCommerce 8.8.2" name="generator"/>
+<link href="https://devm.io/wp-json/oembed/1.0/embed?url" rel="alternate" type="application/json+oembed"/>
+<link href="https://devm.io/wp-json/oembed/1.0/embed?url&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="devmio - Software Know-How - Devmio" name="apple-mobile-web-app-title"/>
+<noscript></noscript>
+<meta content="Elementor 3.21.2; features: e_optimized_assets_loading, additional_custom_breakpoints; settings: css_print_method-internal, google_font-enabled, font_display-auto" name="generator"/>
+<meta content="wordpress-plugin" name="onesignal">
+
+
+<!-- or the reference on CDN -->
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" rel="stylesheet"/>
+
+<!-- or the reference on CDN -->
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" rel="stylesheet"/>
+<link href="https://devm.io/wp-content/uploads/2022/04/cropped-Devmio_Favicon_64x64_DEVM-52_v1-1-32x32.png?x63112" rel="icon" sizes="32x32">
+<link href="https://devm.io/wp-content/uploads/2022/04/cropped-Devmio_Favicon_64x64_DEVM-52_v1-1-192x192.png?x63112" rel="icon" sizes="192x192">
+<link href="https://devm.io/wp-content/uploads/2022/04/cropped-Devmio_Favicon_64x64_DEVM-52_v1-1-180x180.png?x63112" rel="apple-touch-icon"/>
+<meta content="https://devm.io/wp-content/uploads/2022/04/cropped-Devmio_Favicon_64x64_DEVM-52_v1-1-270x270.png" name="msapplication-TileImage">
+<link href="/wp-content/themes/understrap-child/src/images/Devmio_Favicon_purple_DEVM-52_v1.ico?x63112" rel="icon" sizes="any"/>
+<link href="/wp-content/themes/understrap-child/src/images/Devmio_Favicon_purple_512px_DEVM-52_v1.svg?x63112" rel="icon" type="image/svg+xml"/>
+<link href="/wp-content/themes/understrap-child/src/images/Devmio_Favicon_purple_DEVM-52_v1.ico?x63112" rel="apple-touch-icon"/>
+
+</meta></link></link></meta></link></meta></meta></head>
+<body class="-template-default single theme-understrap devmioapp devmio bdy-article-detail-main-body bdy-brand-slug-devmio bdy-brand-origin-BLOG woocommerce-no-js">
+<div class="site" id="page">
+<div class="d-none d-sm-none mobile-blog-ads col-auto p-0"><aside class="widget_text mobile-fpa-entwickler-widget widget widget_custom_html" id="custom_html-21"><div class="textwidget custom-html-widget"><!-- /21339274/devmio-mobile-header-ad -->
+<div id="div-gpt-ad-1656507057834-0" style="min-width: 300px; min-height: 50px; text-align:center;">
+
+</div>
+</div></aside></div><div class="d-none d-sm-none mobile-free-article-ads col-auto p-0"><aside class="widget_text widget widget_custom_html" id="custom_html-27"><div class="textwidget custom-html-widget"><!-- /21339274/devmio-mobile-header-ad -->
+<div id="div-gpt-ad-1656507057834-0" style="min-width: 300px; min-height: 50px; text-align:center;">
+
+</div></div></aside></div>
+<!-- ******************* The Navbar Area ******************* -->
+<div id="wrapper-navbar" itemscope="" itemtype="http://schema.org/WebSite">
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data-10-year-range.min.js"></script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main-search-popup-detail-container h-100 p-0 d-none container-fluid flex-column invisibleviewapp searchCatPopupId4973" id="searchCatPopupId4973">
+<div class="blury--bg d-flex justify-content-around mb-4 mb-5 pt-3 pupup-search-box">
+<form action="/" class="mb-3 sands-popup-search-form" method="GET">
+<input aria-label="Durchsuchen Sie den Inhalt der Website" class="form-control sands-search sands-search-popup" name="s" placeholder="Enter your search term" required="" style="width: 83%!important;" type="search"/>
+<button class="sands-search-botton sands-search-botton-popup" style="vertical-align: bottom;" type="submit">Search</button>
+</form>
+</div>
+<div class="close-search-popup blury--bg mt-3">
+<a class="close-search-popup-btn">
+<span class="cursorPointer text-primary">X</span>
+</a>
+</div>
+<div class="blury--bg mt-n5 mx-0 mx-md-n5 pb-2 pt-4 px-2 px-md-0">
+<div class="container">
+<div class="category-row row mb-3">
+<div class="category-row-border-color py-2 px-2 m-2 font-weight-bold" v-for="aCategory in loadedCategories" v-if="aCategory.slug">
+<a :href="'/'+ aCategory.slug" id="searchPopupCat" v-if="aCategory.slug">
+<div>
+<span>{{aCategory.name}}</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<a class="skip-link sr-only sr-only-focusable" href="#content">Skip to content</a>
+<nav class="d-flex flex-row justify-content-between navbar navbar-expand-md navbar-dark sands-nav fixed-on-scroll shadow">
+<div class="container-fluid">
+<!-- Mobile menu starts -->
+<div class="d-block d-xl-none">
+<div class="sands-mobile-menu">
+<div aria-label="Toggle navigation" class="nav" onclick="openMobileNav()">
+<h2 class="navbar-brand mb-0"><a rel="home" title="devmio – Software Know-How">devmio – Software Know-How</a>
+<!-- <i class="material-icons">keyboard_arrow_down</i> -->
+</h2>
+</div>
+</div>
+</div>
+<div class="d-block d-xl-none d-flex">
+<div class="sands-mobile-menu mr-3">
+<a class="badge-danger border-0 text-white py-1 mobile-nav-item rounded px-2" href="https://devm.io/our-offers/" style=" padding: .5rem 1rem; display: inline-block;margin: 0 0 0 20px;" title="Gratismonat beginnen">Test now</a> </div>
+<div class="sands-mobile-menu align-self-center d-flex mt-1">
+<div aria-label="Toggle navigation" class="nav" onclick="openMobileNav();showAndHideSearchPopup();">
+<!-- <h2 class="navbar-brand  mb-0"><a rel="home"  title="devmio &#8211; Software Know-How">devmio &#8211; Software Know-How</h2></a> -->
+<div class="animated-icon1">
+<span></span><span></span><span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mobile menu ends -->
+
+<div class="sidenav d-xl-none" id="mySidenav"><ul class="d-xl-none mob-nav-dropdown-menu first-nav-element-open" id="mobile_menu"><div class="d-flex justify-content-between"><a class="my-auto" href="/"><img src="/wp-content/themes/understrap-child/src/images/Devmio_New_logo.svg?x63112"/></a><a class="closebtn closebtn--mob" href="javascript:void(0)" onclick="closeMobileNav()" style="font-size:3rem; font-weight:100;">×</a></div><li class="nav-link first-nav-element-open menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-2142 nav-item" id="menu-item-2142" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" id="menu-item-dropdown-2142" title="Products">Products</a>
+<ul aria-labelledby="menu-item-dropdown-2142" class="dropdown-menu" role="menu">
+<li class="nav-item nav-link dropdown-item navbar-nav textColorSubmenu menu-item menu-item-type-post_type menu-item-object-page menu-item-2146 nav-item" id="menu-item-2146" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/fullstack-access/" title="For Individuals">For Individuals</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20852 nav-item" id="menu-item-20852" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/elevate/" title="For Teams">For Teams</a></li>
+<li class="kiosk-app-link nav-item nav-link dropdown-item navbar-nav textColorSubmenu menu-item menu-item-type-custom menu-item-object-custom menu-item-2143 nav-item" id="menu-item-2143" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="#" title="Download app">Download app</a></li>
+</ul>
+</li>
+<li class="nav-link dropdownArrow menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-2150 nav-item" id="menu-item-2150" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" id="menu-item-dropdown-2150" title="Products">Products</a>
+<ul aria-labelledby="menu-item-dropdown-2150" class="dropdown-menu" role="menu">
+<li class="nav-item nav-link dropdown-item navbar-nav textColorSubmenu menu-item menu-item-type-post_type menu-item-object-page menu-item-2151 nav-item" id="menu-item-2151" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/live-events/" title="Live Events">Live Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20850 nav-item" id="menu-item-20850" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/live-events/conferences/" title="Conferences">Conferences</a></li>
+<li class="nav-item nav-link dropdown-item navbar-nav textColorSubmenu menu-item menu-item-type-custom menu-item-object-custom menu-item-2154 nav-item" id="menu-item-2154" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="/magazines/" title="Magazines and Specials">Magazines and Specials</a></li>
+</ul>
+</li>
+<li class="nav-link dropdownArrow menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-2155 nav-item" id="menu-item-2155" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" id="menu-item-dropdown-2155" title="Features &amp; Services">Features &amp; Services</a>
+<ul aria-labelledby="menu-item-dropdown-2155" class="dropdown-menu" role="menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20849 nav-item" id="menu-item-20849" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/intelligence/" title="devintelligence">devintelligence</a></li>
+<li class="nav-item nav-link dropdown-item navbar-nav textColorSubmenu menu-item menu-item-type-post_type menu-item-object-page menu-item-12903 nav-item" id="menu-item-12903" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/faq/" title="FAQ">FAQ</a></li>
+<li class="nav-item nav-link dropdown-item navbar-nav textColorSubmenu menu-item menu-item-type-post_type menu-item-object-page menu-item-12902 nav-item" id="menu-item-12902" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/app/" title="Our App">Our App</a></li>
+<li class="nav-item nav-link dropdown-item navbar-nav textColorSubmenu menu-item menu-item-type-post_type menu-item-object-page menu-item-2159 nav-item" id="menu-item-2159" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/contact/" title="Contact">Contact</a></li>
+<li class="nav-item nav-link dropdown-item navbar-nav textColorSubmenu menu-item menu-item-type-post_type menu-item-object-page menu-item-2153 nav-item" id="menu-item-2153" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/blog/" title="Blog">Blog</a></li>
+</ul>
+</li>
+<li class="mobile-logged-in-user-invisible nav-item nav-link"><a class="nav-link" href="https://devm.io/wp-login.php?action=logout&amp;_wpnonce=eb5bd414aa">Logout</a></li><li class="mobile-non-logged-in-user-invisible nav-item nav-link"><a class="nav-link" href="https://devm.io/login">Login</a></li><li class="logged-in-user-invisible rounded sands-nav-login menu-item menu-item-type-post_type menu-item-object-page menu-item-1000 nav-item my-auto" id="menu-item-996" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-2 text-transform--none" href="https://devm.io/reader/">Login</a>
+</li><li class="has-admin-user-invisible d-none d-md-block sands-menu-free rounded sands-nav-free menu-item menu-item-type-post_type menu-item-object-page menu-item-999 nav-item my-auto" id="menu-item-995" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-2" href="https://devm.io/our-offers/">Test now</a>
+</li><li class="had-sub-user-invisible d-none d-md-block sands-menu-free rounded sands-nav-free menu-item menu-item-type-post_type menu-item-object-page menu-item-998 nav-item my-auto" id="menu-item-994" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-2" href="https://devm.io/our-offers/">Reactivate Subscription</a>
+</li><li class="has-not-sub-user-invisible d-none d-md-block sands-menu-free rounded sands-nav-free menu-item menu-item-type-post_type menu-item-object-page menu-item-999 nav-item my-auto" id="menu-item-1000" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-2" href="https://devm.io/our-offers/">Test now</a>
+</li><li class="non-logged-in-user-invisible border border-primary rounded menu-item menu-item-type-post_type menu-item-object-page menu-item-982 nav-item my-auto" id="menu-item-999" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-4 font-weight-bolder text-capitalize text-primary" href="https://devm.io/login">Login</a>
+</li><li class="non-logged-in-user-invisible badge-danger sands-menu-free rounded sands-nav-free menu-item menu-item-type-post_type menu-item-object-page menu-item-981 nav-item my-auto" id="menu-item-1000" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-4 text-white text-transform--none" href="https://devm.io/our-offers/">Test now</a>
+</li></ul></div> <h2 class="navbar-brand mb-0 d-none d-xl-block col-sm-auto"><a href="https://devm.io/" itemprop="url" rel="home" title="devmio – Software Know-How">devmio – Software Know-How</a></h2>
+<!-- end custom logo -->
+<!-- The WordPress Menu goes here -->
+<div class="collapse d-none d-xl-block menu-fidelio" id="navbarNavDropdown"><ul class="navbar-nav ml-auto d-xl-flex flex-sm-row float-right main-second-menu" id="main-second-menu"><li class="nav-cursor-default menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-18114 nav-item" id="menu-item-18114" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" id="menu-item-dropdown-18114" title="Solutions">Solutions</a>
+<ul aria-labelledby="menu-item-dropdown-18114" class="dropdown-menu" role="menu">
+<li class="nav-cursor-pointer menu-item menu-item-type-post_type menu-item-object-page menu-item-1228 nav-item" id="menu-item-1228" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/fullstack-access/" title="For Individuals - Fullstack Access">For Individuals – Fullstack Access</a></li>
+<li class="nav-cursor-pointer menu-item menu-item-type-post_type menu-item-object-page menu-item-18207 nav-item" id="menu-item-18207" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/elevate/" title="For Teams - Fullstack Elevate">For Teams – Fullstack Elevate</a></li>
+<li class="nav-cursor-pointer menu-item menu-item-type-post_type menu-item-object-page menu-item-18118 nav-item" id="menu-item-18118" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/students/" title="For Students - Conference Deals">For Students – Conference Deals</a></li>
+<li class="nav-cursor-pointer menu-item menu-item-type-post_type menu-item-object-page menu-item-18119 nav-item" id="menu-item-18119" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/event-partnerships/" title="For Partners - Event Support">For Partners – Event Support</a></li>
+</ul>
+</li>
+<li class="nav-cursor-default menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-18115 nav-item" id="menu-item-18115" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" id="menu-item-dropdown-18115" title="Products">Products</a>
+<ul aria-labelledby="menu-item-dropdown-18115" class="dropdown-menu" role="menu">
+<li class="nav-cursor-pointer menu-item menu-item-type-custom menu-item-object-custom menu-item-1231 nav-item" id="menu-item-1231" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="/magazines" title="Magazines and Specials">Magazines and Specials</a></li>
+<li class="nav-cursor-pointer menu-item menu-item-type-post_type menu-item-object-page menu-item-1232 nav-item" id="menu-item-1232" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/live-events/" title="Live Events">Live Events</a></li>
+<li class="nav-cursor-pointer menu-item menu-item-type-custom menu-item-object-custom menu-item-18116 nav-item" id="menu-item-18116" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/live-events/conferences/" title="Conferences - Add-on">Conferences – Add-on</a></li>
+</ul>
+</li>
+<li class="nav-cursor-default menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1230 nav-item" id="menu-item-1230" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="#" id="menu-item-dropdown-1230" title="Features &amp; Services">Features &amp; Services</a>
+<ul aria-labelledby="menu-item-dropdown-1230" class="dropdown-menu" role="menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20848 nav-item" id="menu-item-20848" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/intelligence/" title="devintelligence">devintelligence</a></li>
+<li class="nav-cursor-pointer menu-item menu-item-type-post_type menu-item-object-page menu-item-18112 nav-item" id="menu-item-18112" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/experts/" title="Experts">Experts</a></li>
+<li class="nav-cursor-pointer menu-item menu-item-type-post_type menu-item-object-page menu-item-18113 nav-item" id="menu-item-18113" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/insights/" title="Insights">Insights</a></li>
+<li class="nav-cursor-pointer menu-item menu-item-type-post_type menu-item-object-page menu-item-12900 nav-item" id="menu-item-12900" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/app/" title="Mobile App">Mobile App</a></li>
+<li class="blog-navitem nav-cursor-pointer menu-item menu-item-type-post_type menu-item-object-page menu-item-1234 nav-item" id="menu-item-1234" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"><a class="dropdown-item" href="https://devm.io/blog/" title="Blog">Blog</a></li>
+</ul>
+</li>
+</ul></div><div class="cursorPointer d-xl-block d-none show-search-popup show-search-popup-lens-icon"><img alt="search" src="/wp-content/themes/understrap-child/fidelio-templates/images/searchPurple1.svg?x63112"/></div><div class="col d-none d-xl-block global-main-menu" id="navbarNavDropdown"><ul class="navbar-nav ml-auto d-xl-flex flex-sm-row float-right" id="main-menu"><li class="logged-in-user-invisible rounded sands-nav-login menu-item menu-item-type-post_type menu-item-object-page menu-item-1000 nav-item my-auto" id="menu-item-996" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-2 text-transform--none" href="https://devm.io/reader/">Login</a>
+</li><li class="has-admin-user-invisible d-none d-md-block sands-menu-free rounded sands-nav-free menu-item menu-item-type-post_type menu-item-object-page menu-item-999 nav-item my-auto" id="menu-item-995" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-2" href="https://devm.io/our-offers/">Test now</a>
+</li><li class="had-sub-user-invisible d-none d-md-block sands-menu-free rounded sands-nav-free menu-item menu-item-type-post_type menu-item-object-page menu-item-998 nav-item my-auto" id="menu-item-994" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-2" href="https://devm.io/our-offers/">Reactivate Subscription</a>
+</li><li class="has-not-sub-user-invisible d-none d-md-block sands-menu-free rounded sands-nav-free menu-item menu-item-type-post_type menu-item-object-page menu-item-999 nav-item my-auto" id="menu-item-1000" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-2" href="https://devm.io/our-offers/">Test now</a>
+</li><li class="non-logged-in-user-invisible border border-primary rounded menu-item menu-item-type-post_type menu-item-object-page menu-item-982 nav-item my-auto" id="menu-item-999" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-4 font-weight-bolder text-capitalize text-primary" href="https://devm.io/login">Login</a>
+</li><li class="non-logged-in-user-invisible badge-danger sands-menu-free rounded sands-nav-free menu-item menu-item-type-post_type menu-item-object-page menu-item-981 nav-item my-auto" id="menu-item-1000" itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
+<a class="nav-link px-4 text-white text-transform--none" href="https://devm.io/our-offers/">Test now</a>
+</li></ul></div>
+</div><!-- .container -->
+</nav><!-- .site-navigation -->
+</div><!-- #wrapper-navbar end -->
+<!-- Sticky alert starts -->
+<!-- Banner for marketing campign starts -->
+<!-- Banner for marketing campign ends -->
+<main class="main">
+
+
+
+
+<div class="article-detail-center d-xl-flex mx-auto" style="max-width:1440px;"><div class="d-none d-xl-block left-ads col-auto pr-0 freeArticleLeft"><aside class="widget_text widget widget_custom_html" id="custom_html-23"><div class="textwidget custom-html-widget"><!-- /21339274/devmio-blog-fireplace-left -->
+<div id="div-gpt-ad-1655729295261-0" style="min-width: 120px; min-height: 600px; width: 120px;">
+
+</div>
+</div></aside></div><div class="col px-0"><div class="d-none d-xl-block top-ads col-auto px-0 text-center"><aside class="widget_text widget widget_custom_html" id="custom_html-22"><div class="textwidget custom-html-widget"><!-- /21339274/devmio-blog-fireplace-top -->
+<div class="resize-image-in-iframe" id="div-gpt-ad-1655729707129-0" style=" min-height: 110px; margin-bottom:15px;">
+
+</div>
+</div></aside></div><div class="container"></div> <div class="main-article-detail-container invisibleviewapp articleDetailAppID2534" id="articleDetailAppID2534">
+<div class="container v-cloak--hidden d-none" v-bind:class="{'d-block':!loading}" v-clock="" v-if="!loading">
+<div class="article-detail-header d-none d-md-block" style="padding-top: 10rem;" v-bind:style="{backgroundImage: 'url(' + loadedArticle.teaserImage.xxxx + ')', backgroundPositionX: 'center', backgroundSize: 'cover'}" v-if="loadedArticle.teaserImage &amp;&amp; loadedArticle.teaserImage.xxxx">
+<div class="bg-white col-md-8 epubhtml offset-md-2 sands-paywall-content">
+<div class="brand-logo paywall-content-issue-link d-flex flex-row flex-wrap mb-2" v-if="loadedArticle.brand &amp;&amp; loadedArticle.brand.logo &amp;&amp; loadedArticle.brand.logo.xx">
+<a :href="loadedArticle.brand.relUrl" v-if="loadedArticle.brand.relUrl">
+<img :alt="loadedArticle.brand.name" :src="loadedArticle.brand.logo.xx" style="max-width: 200px; min-height:80px;"/>
+</a>
+<img :alt="loadedArticle.brand.name" :src="loadedArticle.brand.logo.xx" style="max-width: 200px; min-height:80px;" v-else=""/>
+</div>
+<div class="article-subtitle font-weight-bold mb-4 paywall-content-subtitle" v-if="loadedArticle.subtitle">
+<p class="v-cloak--hidden">{{loadedArticle.subtitle}}</p>
+</div>
+<div class="article-title" v-bind:class="{ 'pb-lg-0 pb-md-0': loadedArticle.isFree, 'pb-lg-4 pb-md-3': !loadedArticle.isFree}" v-if="loadedArticle.name">
+<h1 class="mb-3 paywall-content-title font-weight-bolder">{{loadedArticle.name}}</h1>
+</div>
+<div class="pb-2"> <!-- v-if="loadedArticle.isFree" -->
+<div class="d-flex flex-wrap" v-if="getFilteredCategories &amp;&amp; getFilteredCategories.length">
+<div class="py-1 mr-3" v-for="category in getFilteredCategories">
+<a :href="'/'+ category.slug" class="px-2 font-weight-bold category-row-border-color" style=" font-family: 'Open Sans',sans-serif;" v-if="category.slug">
+<span v-if="category.name">{{category.name}}</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vue-free-article2" v-if="loadedArticle.isFree"></div>
+<div class="article-detail-body" v-bind:class="{'vue-free-article':loadedArticle.isFree}" v-clock="">
+<div class="d-md-none bg-white epubhtml sands-paywall-content">
+<div class="d-md-none" v-if="loadedArticle.teaserImage &amp;&amp; loadedArticle.teaserImage.xxxx">
+<img :alt="loadedArticle.name" :src="loadedArticle.teaserImage.xxxx" class="w-100" style="min-height: 150px;"/>
+</div>
+<div class="brand-logo paywall-content-issue-link d-flex flex-row flex-wrap mb-2" v-if="loadedArticle.brand &amp;&amp; loadedArticle.brand.logo &amp;&amp; loadedArticle.brand.logo.xx">
+<a :href="loadedArticle.brand.relUrl" v-if="loadedArticle.brand.relUrl">
+<img :alt="loadedArticle.brand.name" :src="loadedArticle.brand.logo.xx" style="max-width: 250px; min-height: 99px;" v-clock=""/>
+</a>
+<img :alt="loadedArticle.brand.name" :src="loadedArticle.brand.logo.xx" style="max-width: 250px; min-height: 99px;" v-clock="" v-else=""/>
+</div>
+<div class="article-subtitle font-weight-bold mb-4 paywall-content-subtitle" v-if="loadedArticle.subtitle">
+<p v-clock="">{{loadedArticle.subtitle}}</p>
+</div>
+<div class="article-title pb-md-2" v-if="loadedArticle.name">
+<h1 class="mb-3 paywall-content-title font-weight-bolder" v-clock="">{{loadedArticle.name}}</h1>
+</div>
+<div class="pb-2" v-if="loadedArticle.isFree">
+<div class="d-flex flex-wrap" v-if="getFilteredCategories &amp;&amp; getFilteredCategories.length">
+<div class="py-1 mr-3" v-for="category in getFilteredCategories">
+<a :href="'/'+ category.slug" class="px-2 font-weight-bold category-row-border-color" style="font-family: 'Open Sans',sans-serif;" v-if="category.slug">
+<span v-if="category.name">{{category.name}}</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="align-items-center bg-white col-md-8 d-md-flex epubhtml justify-content-between my-3 offset-md-2 flex-row px-md-3 px-0 sands-paywall-content">
+<div class="align-items-center article-detail-authors d-flex pb-3 pb-md-0 pl-0 flex-wrap">
+<div class="mb-1 mr-2" v-for="author in loadedArticle.authors">
+<img :alt="author.name" :src="author.avatarSquareSmall.x" class="rounded-circle" style="width: 60px;min-height: 60px;" v-if="author.avatarSquareSmall &amp;&amp; author.avatarSquareSmall.x">
+<a :href="author.relUrl" class="paywall-content-author" v-if="author.relUrl &amp;&amp; !author.isLegacy">{{author.name}}</a>
+<span class="paywall-content-author" v-else="">{{author.name}}</span>
+</img></div>
+</div>
+<div class="paywall-content-author col-auto" v-if="loadedArticle.brand &amp;&amp; loadedArticle.brand.slug &amp;&amp; loadedArticle.brand.slug !== 'jaxenter' &amp;&amp; loadedArticle.brand.slug !== 'devmio' &amp;&amp; loadedArticle.brand.slug !== 'entwickler' &amp;&amp; loadedArticle.issue &amp;&amp; loadedArticle.issue.designation">
+<a :href="loadedArticle.issue.relUrl" v-if="loadedArticle.issue.relUrl">Issues: {{loadedArticle.issue.designation}}</a>
+<span v-else="">Issues: {{loadedArticle.issue.designation}}</span>
+</div>
+<div class="font-weight-bold paywall-content-author col-auto" v-else-if="loadedArticle.publishedAt">
+<p>{{loadedArticle.publishedAt | daymonthyear}}</p>
+</div>
+</div>
+<hr class="offset-md-2 col-md-8 px-0 vue--article-header-divider" style="border-top: 3px solid #006884;"/>
+<div class="bg-white col-md-8 d-md-flex epubhtml offset-md-2 flex-column sands-paywall-content my-2" v-if="false &amp;&amp; loadedArticle.abstract &amp;&amp; loadedArticle.abstract.length">
+<p>
+<strong>{{loadedArticle.abstract }}</strong>
+</p>
+</div>
+<div class="bg-white col-md-8 d-md-flex epubhtml offset-md-2 flex-column sands-paywall-content my-2" v-if="loadedArticle.paywallContent || loadedArticle.content">
+<div class="epubhtml" v-html="changeTextAndImage(loadedArticle.paywallContent, loadedArticle.baseUrl)" v-if="!loadedArticle.isFree"></div>
+<div class="epubhtml" v-else="" v-html="changeTextAndImage(loadedArticle.content, loadedArticle.baseUrl)"></div>
+<div class="clear"></div>
+<div class="author-infos" v-if="loadedArticle.isFree">
+<div class="align-items-center d-flex flex-column flex-md-row my-2 row show-nl-slider" v-for="author in loadedArticle.authors">
+<div class="col-12 col-md-3">
+<img :alt="author.name" :src="author.avatarSquareLarge.xx" class="rounded-circle" v-if="author.avatarSquareLarge &amp;&amp; author.avatarSquareLarge.xx"></img></div>
+<div class="col-12 col-md-9">
+<a :href="author.relUrl" class="paywall-content-author" v-if="author.relUrl &amp;&amp; !author.isLegacy">{{author.name}}</a>
+<span class="text-primary paywall-content-author" v-else="">{{author.name}}</span>
+<p v-if="author.bio">{{author.bio}}</p>
+</div>
+</div>
+</div>
+</div>
+<div v-if="loadedArticle.isFree">
+<hr/>
+<div class="pb-2">
+<h3 class="pb-2 pt-2 font-weight-bolder">More articles on this topic</h3>
+<div class="row" v-if="relatedArticles &amp;&amp; relatedArticles.length">
+<div class="col-lg-3 col-12 pb-3 pb-lg-0" v-for="article of relatedArticles.slice(0,4)">
+<div>
+<a :href="article.slug" class="text-dark">
+<img :src="article.teaserImage.xx" alt="" class="shadow-sm rounded w-100"/>
+<div>
+<h6 class="pt-4 font-weight-bold pb-1">{{article.subtitle}}</h6>
+<h5 class="font-weight-bolder pb-1">{{article.name}}</h5>
+<div v-for="anAuthor in article.authors">
+<h6 class="font-weight-bold">{{anAuthor.name}}</h6>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="widget-below-free-blog-articles">
+<aside class="widget_text widget widget_custom_html" id="custom_html-17"><div class="textwidget custom-html-widget"><div class="test">
+<hr class="bg-primary mt-5" style="padding-top: 2px;"/>
+<h2 class="text-primary text-center">Start Your Journey to Software Know-How:</h2>
+<div class="d-flex justify-content-center my-3">
+<div class="col-12 col-md-9">
+<div class="bg-danger my-4 pb-1 rounded shadow">
+<h2 class="h3 px-2 py-3 text-center text-white">The Fullstack Experience</h2>
+<div class="bg-white m-2 row">
+<div class="col-12 col-lg-3 pt-3 text-center">
+<!-- Logo Fullstack Membership -->
+<img alt="Fullstack Experience Logo" src="https://devm.io/wp-content/uploads/2023/05/devmio_Logo_Abo_Fullstack.svg?x63112" style="height: 150px; width: auto;"/>
+</div>
+<div class="col-12 col-lg-9">
+<ul class="custom-check py-3">
+<li class="elementor-icon-list-item">
+<span class="elementor-icon-list-text">Experience our online live events, exclusive and interactive.</span>
+</li>
+<li class="elementor-icon-list-item">
+<span class="elementor-icon-list-text">Thousands technical articles, magazines, cheatsheet and more.</span>
+</li>
+<li class="elementor-icon-list-item">
+<span class="elementor-icon-list-text">Up to 25% discount for more than 30 conferences a year with international experts.</span>
+</li>
+<li class="elementor-icon-list-item">
+<span class="elementor-icon-list-text">Exclusive content from over 30+ renowned software brands.</span>
+</li>
+</ul>
+<h5 class="font-weight-bold mb-4">
+<span class="bg-danger p-2 rounded text-white">
+<a class="text-white" href="/fullstack-access/">GET STARTED</a>
+</span>
+</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></aside> </div>
+</div>
+<div class="sands-paywall" v-bind:class="{'d-block':!loadedArticle.isFree , 'd-none':loadedArticle.isFree}">
+<hr style="border-color: transparent;"/>
+<div class="are-you-interested" v-bind:class="{'d-block': !loadedArticle.isFree}">
+<div class="d-none" v-bind:class="{'d-block':!loading}">
+<div class="bg-white col-md-8 d-md-flex offset-md-2 flex-column sands-paywall-content my-2">
+<div class="sands-paywall-block" v-if="!loadedArticle.isFree">
+<!--  <div class="sands-paywall"></div> -->
+<div class="paywall-content">
+<!-- hr class="col-12" style="border-top: 3px solid #006884;" -->
+<!-- h2 class="text-primary"></h2 -->
+<aside class="widget_text widget widget_custom_html" id="custom_html-17"><div class="textwidget custom-html-widget"><div class="test">
+<hr class="bg-primary mt-5" style="padding-top: 2px;"/>
+<h2 class="text-primary text-center">Start Your Journey to Software Know-How:</h2>
+<div class="d-flex justify-content-center my-3">
+<div class="col-12 col-md-9">
+<div class="bg-danger my-4 pb-1 rounded shadow">
+<h2 class="h3 px-2 py-3 text-center text-white">The Fullstack Experience</h2>
+<div class="bg-white m-2 row">
+<div class="col-12 col-lg-3 pt-3 text-center">
+<!-- Logo Fullstack Membership -->
+<img alt="Fullstack Experience Logo" src="https://devm.io/wp-content/uploads/2023/05/devmio_Logo_Abo_Fullstack.svg?x63112" style="height: 150px; width: auto;"/>
+</div>
+<div class="col-12 col-lg-9">
+<ul class="custom-check py-3">
+<li class="elementor-icon-list-item">
+<span class="elementor-icon-list-text">Experience our online live events, exclusive and interactive.</span>
+</li>
+<li class="elementor-icon-list-item">
+<span class="elementor-icon-list-text">Thousands technical articles, magazines, cheatsheet and more.</span>
+</li>
+<li class="elementor-icon-list-item">
+<span class="elementor-icon-list-text">Up to 25% discount for more than 30 conferences a year with international experts.</span>
+</li>
+<li class="elementor-icon-list-item">
+<span class="elementor-icon-list-text">Exclusive content from over 30+ renowned software brands.</span>
+</li>
+</ul>
+<h5 class="font-weight-bold mb-4">
+<span class="bg-danger p-2 rounded text-white">
+<a class="text-white" href="/fullstack-access/">GET STARTED</a>
+</span>
+</h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></aside> <div class="mb-5 mt-3 p-3 sands-subscription-teaser shadow" v-if="false &amp;&amp; brandSubscriptionTeaser &amp;&amp; brandSubscriptionTeaser.coverFlowImage &amp;&amp; brandSubscriptionTeaser.coverFlowImage != 'false'">
+<div class="row">
+<div class="col-12 col-md-6 col-lg-6">
+<p class="text-primary">Print-Abo</p>
+<h4 class="text-primary" v-html="brandSubscriptionTeaser.headlineText" v-if="brandSubscriptionTeaser &amp;&amp; brandSubscriptionTeaser.headlineText"></h4>
+<div v-html="brandSubscriptionTeaser.brandPText" v-if="brandSubscriptionTeaser &amp;&amp; brandSubscriptionTeaser.brandPText"></div>
+</div>
+<div class="col-12 col-md-6 col-lg-6 justify-content-center">
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<div class="sands-subscription-teaser-cover" v-if="brandSubscriptionTeaser &amp;&amp; brandSubscriptionTeaser.coverFlowImage &amp;&amp; brandSubscriptionTeaser.coverFlowImage != 'false'">
+<img :src="brandSubscriptionTeaser.coverFlowImage" v-if="brandSubscriptionTeaser &amp;&amp; brandSubscriptionTeaser.coverFlowImage &amp;&amp; brandSubscriptionTeaser.coverFlowImage != 'false'"/>
+</div>
+</div>
+<div class="col-lg-12 col-md-12 mt-2 text-md-right" v-if="brandSubscriptionTeaser &amp;&amp; brandSubscriptionTeaser.relatedProductUrl">
+<a :href="brandSubscriptionTeaser.relatedProductUrl" aria-pressed="true" class="btn btn-primary" role="button" v-if="brandSubscriptionTeaser &amp;&amp; brandSubscriptionTeaser.relatedProductUrl">PRINT-ABO ABSCHLIESSEN</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pb-2 some-more-articles">
+<h3 class="pb-2 pt-2 font-weight-bolder">More articles on this topic</h3>
+<div class="row" v-if="relatedArticles &amp;&amp; relatedArticles.length">
+<div class="col-lg-3 col-12 pb-3 pb-lg-0" v-for="article of relatedArticles.slice(0,4)">
+<div>
+<a :href="article.slug" class="text-dark">
+<img :src="article.teaserImage.xx" alt="" class="shadow-sm rounded w-100"/>
+<div>
+<h6 class="pt-4 font-weight-bold pb-1">{{article.subtitle}}</h6>
+<h5 class="font-weight-bolder pb-1">{{article.name}}</h5>
+<div v-for="anAuthor in article.authors">
+<h6 class="font-weight-bold">{{anAuthor.name}}</h6>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="placeholder-animated-brightness" v-if="loading">
+<img alt="Desktop" class="d-none d-xl-block" src="/wp-content/themes/understrap-child/fidelio-templates/images/devmio/1680_Article detail-vue.svg?x63112" style="width: 100%; opacity:0.6;"/>
+<img alt="Tablet" class="d-none d-md-block d-xl-none" src="/wp-content/themes/understrap-child/fidelio-templates/images/devmio/992_Article detail-vue.svg?x63112" style="width: 100%; opacity:0.6;"/>
+<img alt="Mobile" class="d-md-none" src="/wp-content/themes/understrap-child/fidelio-templates/images/devmio/mobile_Article detail-vue.svg?x63112" style="width: 100%; opacity:0.6;"/>
+</div>
+</div>
+
+</div><div class="d-none d-xl-block left-ads col-auto pl-0"><aside class="widget_text widget widget_custom_html" id="custom_html-26"><div class="textwidget custom-html-widget"><!-- /21339274/devmio-blog-fireplace-right -->
+<div id="div-gpt-ad-1655729625115-0" style="min-width: 120px; min-height: 600px;">
+
+</div></div></aside></div></div></main>
+<!-- ******************* The Footer Full-width Widget Area ******************* -->
+<div class="wrapper hide-only-if-en-cookie" id="wrapper-footer-full">
+<div class="container" id="footer-full-content" tabindex="-1">
+<div class="global-top-footer-block row">
+<div class="col-12 col-md-4 footer-col"><aside class="widget widget_text" id="text-9"> <div class="textwidget"><div class="row left-footer-widget">
+<div class="col-10 mb-4">
+<h3 style="font-weight: bold; font-size: 1.5rem;">Social</h3>
+</div>
+</div>
+<div>
+<p style="font-size: 15px;">Follow us on social media for more news and content from our experts and events. Share your personal experience with us!</p>
+</div>
+<div class="mb-5">
+<p><a href="https://www.facebook.com/devmio.official/" rel="noopener" target="_blank" title="Facebook"><img decoding="async" src="https://devm.io/wp-content/uploads/2024/06/FB_Icon_2024.png?x63112" style="margin-right: 10px;"/></a><a href="https://twitter.com/devmio_official" rel="noopener" target="_blank" title="Twitter"><img decoding="async" src="https://devm.io/wp-content/uploads/2024/06/X_Ixon_2024.png?x63112" style="margin-right: 10px;"/></a><a href="https://www.linkedin.com/company/devmio" rel="noopener" target="_blank" title="LinkedIn"><img decoding="async" src="https://devm.io/wp-content/uploads/2023/10/linkedin-logo-icon-In-White-46.png?x63112" style="margin-right: 10px;"/></a><a href="https://www.instagram.com/devmio_official" rel="noopener" target="_blank" title="Instagram"><img decoding="async" src="https://devm.io/wp-content/uploads/2024/06/IG_Icon_2024.png?x63112"/></a></p>
+</div>
+</div>
+</aside></div>
+<div class="col-12 col-md-4 footer-col"><aside class="widget widget_text" id="text-7"> <div class="textwidget"><div class="mb-5">
+<div class="row center-footer-widget">
+<div class="col-10" style="margin-bottom: 1.5rem">
+<h3 style="font-weight: bold; font-size: 1.5rem;">App</h3>
+</div>
+</div>
+<p style="font-size: 15px;">Access your digital knowledge base everywhere with our mobile apps.</p>
+<div class="align-items-baseline d-flex">
+<div class=""><a href="https://apps.apple.com/us/app/devmio/id1618454378"><img class="app--image" decoding="async" src="https://devm.io/wp-content/uploads/2022/06/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg?x63112"/></a></div>
+<div class="">
+<p><a href="https://play.google.com/store/apps/details?id=com.sandsmedia.apps.android.devMio"><img class="app--image" decoding="async" src="https://devm.io/wp-content/uploads/2022/06/google-play-badge.png?x63112" style="height: 57px;"/></a></p>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</aside></div>
+<div class="col-12 col-md-4 footer-col"><aside class="widget widget_text" id="text-8"> <div class="textwidget"><div>
+<div class="row right-footer-widget">
+<div class="col-10 mb-4">
+<h3 style="font-weight: bold; font-size: 1.5rem;">Check Out Our Offers!</h3>
+</div>
+</div>
+<p style="font-size: 15px;">Not convinced yet? Check out our training portfolio for free!</p>
+<div><a class="btn edit btn-primary" href="/our-offers/" style="background-color: #ff6d05; border-color: #FF6D05; border-radius: 30px;">Learn more</a></div>
+</div>
+</div>
+</aside></div>
+</div>
+<div class="ea-top-footer-block row mx-md-3 mx-lg-5">
+<div class="col-12 col-md-6 col-lg-3 footer-col"></div>
+<div class="col-12 col-md-6 col-lg-3 footer-col"></div>
+<div class="col-12 col-md-12 col-lg-6 footer-col"></div>
+</div>
+</div>
+</div><!-- #wrapper-footer-full -->
+<div class="wrapper" id="wrapper-footer">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<footer class="site-footer" id="colophon">
+<div class="row d-flex justify-content-between site-info">
+<div class="cr-footer-left"><ul class="menu navbar-nav flex-row sands-footer-menu" id="menu-footer-left"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-79" id="menu-item-79"><a href="https://devm.io/privacy/" rel="privacy-policy">Privacy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169" id="menu-item-169"><a href="https://devm.io/terms-and-conditions/">Terms and Conditions</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81" id="menu-item-81"><a href="https://devm.io/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2149" id="menu-item-2149"><a href="https://devm.io/faq/">FAQ</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-991" id="menu-item-991"><a href="https://devm.io/imprint/">Imprint</a></li>
+<li class="d-md-none menu-item menu-item-type-custom menu-item-object-custom menu-item-173" id="menu-item-173"><a href="https://apps.apple.com/us/app/devmio/id1618454378?platform=iphone">iOS</a></li>
+<li class="d-md-none menu-item menu-item-type-custom menu-item-object-custom menu-item-174" id="menu-item-174"><a href="https://play.google.com/store/apps/details?id=com.sandsmedia.apps.android.devMio">Android</a></li>
+</ul></div><div class="cr-footer-right"><ul class="menu navbar-nav flex-row sands-footer-menu" id="menu-footer-right"><li class="d-none d-md-block menu-item menu-item-type-custom menu-item-object-custom menu-item-171" id="menu-item-171"><a href="https://apps.apple.com/us/app/devmio/id1618454378?platform=iphone">iOS</a></li>
+<li class="d-none d-md-block menu-item menu-item-type-custom menu-item-object-custom menu-item-172" id="menu-item-172"><a href="https://play.google.com/store/apps/details?id=com.sandsmedia.apps.android.devMio">Android</a></li>
+</ul></div> </div><!-- .site-info -->
+</footer><!-- #colophon -->
+</div>
+<!--col end -->
+</div><!-- row end -->
+</div><!-- container end -->
+</div><!-- wrapper end -->
+</div><!-- #page we need this extra closing tag here -->
+<div class="elementor elementor-19539 elementor-location-popup" data-elementor-id="19539" data-elementor-post-type="elementor_library" data-elementor-settings='{"entrance_animation":"slideInDown","exit_animation":"slideInDown","exit_animation_mobile":"none","entrance_animation_duration":{"unit":"px","size":0.5,"sizes":[]},"close_button_delay":2,"avoid_multiple_popups":"yes","a11y_navigation":"yes","triggers":{"page_load":"yes","scrolling_offset":5,"scrolling":"yes","page_load_delay":0,"scrolling_direction":"down"},"timing":{"times":"yes","logged_in":"yes","schedule_start_date":"2024-10-22 12:00","schedule_end_date":"2024-10-29 12:00","schedule":"yes","logged_in_users":"all","schedule_timezone":"site","schedule_server_datetime":"2024-11-21 17:06:02"}}' data-elementor-type="popup">
+<a class="elementor-element elementor-element-1ced6685 elementor-hidden-mobile e-flex e-con-boxed e-con e-parent" data-element_type="container" data-id="1ced6685" data-settings='{"background_background":"classic","sticky":"top","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0}' href="https://devm.io/back-to-school/">
+<div class="e-con-inner">
+<div class="elementor-element elementor-element-5510b3c4 elementor-widget-tablet__width-initial elementor-widget__width-initial elementor-hidden-mobile elementor-widget elementor-widget-image" data-element_type="widget" data-id="5510b3c4" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://devm.io/live-events/gen-ai-engineering-days/">
+<img alt="" class="attachment-full size-full wp-image-20146" height="235" loading="lazy" src="https://devm.io/wp-content/uploads/2024/09/Firefly_vector_graphic__illustrating_a_robot_having_a_great_idea_32075-removebg-preview-e1729588646716.png?x63112" width="92"></img></a>
+</div>
+</div>
+<div class="elementor-element elementor-element-c6e7298 e-con-full e-flex e-con e-child" data-element_type="container" data-id="c6e7298">
+<div class="elementor-element elementor-element-53d3ae3f elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="53d3ae3f" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>Gen AI Engineering Days 2024</p> </div>
+</div>
+<div class="elementor-element elementor-element-7d2d95b elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="7d2d95b" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>Live on 29 &amp; 30. October 2024 | 13:00 – 16:30 CEST</p> </div>
+</div>
+</div>
+<div class="elementor-element elementor-element-152c196 elementor-widget elementor-widget-button" data-element_type="widget" data-id="152c196" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://devm.io/live-events/gen-ai-engineering-days/">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Register here</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="elementor elementor-18255 elementor-location-popup" data-elementor-id="18255" data-elementor-post-type="elementor_library" data-elementor-settings='{"entrance_animation":"fadeIn","exit_animation":"fadeIn","entrance_animation_duration":{"unit":"px","size":"1","sizes":[]},"avoid_multiple_popups":"yes","a11y_navigation":"yes","triggers":{"scrolling_offset":70,"scrolling":"yes","scrolling_direction":"down"},"timing":{"page_views":"yes","times_times":2,"times_period":"month","times":"yes","logged_in":"yes","page_views_views":3,"logged_in_users":"all"}}' data-elementor-type="popup">
+<div class="elementor-element elementor-element-74ff79f1 e-con-full e-flex e-con e-parent" data-element_type="container" data-id="74ff79f1" data-settings='{"background_background":"classic"}'>
+<div class="elementor-element elementor-element-56008cad elementor-widget elementor-widget-heading" data-element_type="widget" data-id="56008cad" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">help us improve your experience</h2> </div>
+</div>
+<div class="elementor-element elementor-element-2fdc371b elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2fdc371b" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">give us your feedback</h1> </div>
+</div>
+<div class="elementor-element elementor-element-7b334207 elementor-align-center elementor-widget elementor-widget-button" data-element_type="widget" data-id="7b334207" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://us18.list-manage.com/survey?u=f4ea77a2c577e9ff569b14114&amp;id=2623616551&amp;attribution=false">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Take survey</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="" consent-skip-blocker="1" data-bg="background-color: rgba(0, 0, 0, 0.180);" id="addb2d986-9eae-4a49-8e09-57dfffe7f35e" style="background-color: rgba(0, 0, 0, 0.180); -moz-backdrop-filter:blur(0px);-o-backdrop-filter:blur(0px);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px); position:fixed;top:0;left:0;right:0;bottom:0;z-index:999999;pointer-events:all;display:none;filter:none;max-width:100vw;max-height:100vh;transform:translateZ(0);"></div> 
+<link href="https://devm.io/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?x63112&amp;ver=wc-8.8.2" id="wc-blocks-style-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Team licence information page -->
+<div class="d-none mr-3 shadow-lg bg-white show-only-Home rounded alert fade p-0 m-0 border-0 minus--index" id="visitEntwicklerKioskFurTeams" style="position:fixed; bottom:2%;right:0; width:320px;z-index:1023;">
+<!-- <div class="rounded-top badge-danger">
+			<div class="d-flex flex-row text-white justify-content-between px-3 py-1">
+				<p class="my-auto" style="font-size: 1.17em;">Angebote für Gewinner-Teams</p>
+				<a class="cursorPointer close text-white" data-dismiss="alert" aria-label="Close" onClick="setCookie('entwicklerKioskFurTeamsCookie','true','1')">
+					<span id="closeTeamBanner" aria-hidden="true">&times;</span>
+				</a>
+			</div>
+		</div> -->
+<!-- <div class="p-3 team--popup--bg-swing"> -->
+<!-- /wp-content/uploads/2021/03/EKiosk_21_Team_Popover_img.svg -->
+<!-- <p class="text-primary team--popup-text--margin">
+			Wir bieten <strong> Lizenz-Lösungen für Teams jeder Größe:</strong> Finden Sie heraus, welche Lösung am besten zu Ihnen passt.
+			</p> -->
+<!-- <div class="mx-2 d-none" style="color:#00a19a;">
+				<div class="d-flex flex-row mb-2">
+					<img style="width: 50px; height: 50px;" src="/wp-content/uploads/2019/08/E_Kiosk_Firmenkunden_IP.svg?x63112" alt="">
+					<p class="ml-3 my-auto">Das Library-Modell:<br /> IP-Zugang</p>
+				</div>
+				<div class="d-flex flex-row">
+					<img style="width: 50px; height: 50px;" src="/wp-content/uploads/2019/08/E_Kiosk_Firmenkunden_Domain.svg?x63112" alt="">
+					<p class="ml-3 my-auto">Das Company-Modell:<br /> Domain-Zugang</p>
+				</div>
+			</div> -->
+<!-- <div class="mt-3 text-center">
+				<a id="mehrErfahrenButton" href="/firmenkunde/" class="btn btn-danger font-weight-bold w-75">
+				Jetzt alles über <br> Team-Lizenzen erfahren
+				</a>
+			</div> -->
+<!-- </div> -->
+</div>
+<aside class="widget_text widget widget_custom_html" id="custom_html-28"><div class="textwidget custom-html-widget"><div class="mr-3 shadow-lg bg-white rounded alert p-0 m-0 border-0 slide-out" id="nlSubscriptionCookie" style="position:fixed; bottom:7%;right:0; width:320px;opacity:0;z-index:9999;">
+<div class="rounded-top bg-primary">
+<div class="d-flex flex-row text-white justify-content-between px-3 py-1">
+<p class="my-auto new-font">Subscribe our Newsletter</p>
+<a aria-label="Close" class="hide-nl-banner cursorPointer close text-white" data-dismiss="alert">
+<!-- -->
+<span aria-hidden="true" id="closeTeamBanner">×</span>
+</a>
+</div>
+</div>
+<div class="px-3 py-2">
+<!-- /wp-content/uploads/2021/03/EKiosk_21_Team_Popover_img.svg -->
+<!-- Mailchimp for WordPress v4.9.12 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form class="mc4wp-form mc4wp-form-987 mc4wp-ajax" data-id="987" data-name="NL on blog-free" id="mc4wp-form-1" method="post"><div class="mc4wp-form-fields"><p class="text-primary font-weight-normal">Sign Up:</p>
+<input class="w-100 p-2" name="EMAIL" placeholder="Email" required="" type="email">
+<input checked="true" name="INTERESTS[b533214edc][]" type="hidden" value="0df6ce745a"/>
+<input name="MMERGE23" type="hidden" value="NLBlog"/>
+<div class="mt-2 py-3">
+<input class="bg-primary text-white border-0 py-2 px-3 rounded text-uppercase input--btn-nl" type="submit" value="Submit"></input></div></input></div><label style="display: none !important;">Leave this field empty if you're human: <input autocomplete="off" name="_mc4wp_honeypot" tabindex="-1" type="text" value=""/></label><input name="_mc4wp_timestamp" type="hidden" value="1732205162"/><input name="_mc4wp_form_id" type="hidden" value="987"/><input name="_mc4wp_form_element_id" type="hidden" value="mc4wp-form-1"/><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin -->
+</div>
+</div>
+
+</div></aside>
+</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using Disk: Enhanced 
+
+Served from: devm.io @ 2024-11-21 17:06:02 by W3 Total Cache
+-->

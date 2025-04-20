@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+<!--
+Development:
+JULIO FOULQUIE, @j3j5@hachyderm.io, ✈Montevideo, UY
+MARC TORAL, ✈Amsterdam, NL
+JULIAN SZNAIDER, ✈Buenos Aires, AR
+——————————
+Concept and Design by:
+ALEXANDER GRIFFIOEN, @oscaralexander, ✈Amsterdam, NL
+SÄINA SEEDORF, ✈Amsterdam, NL
+——————————
+Alumni:
+JACK DUNN, ✈Amsterdam, NL
+JULIAN AIJAL, @Jaijal, ✈Amsterdam, NL
+SAM BLOK, ✈Amsterdam, NL
+LAURA GENNO, ✈Amsterdam, NL
+IRENE DE NICOLO, ✈Amsterdam, NL
+DANIEL TARA, ✈Amsterdam, NL
+EVGENY ASTAPOV, ✈Rotterdam, NL
+RONAN O'LEARY, @ro_oleary, ✈Amsterdam, NL
+PABLO ROMÁN, ✈Amsterdam, NL
+JAMES SCOTT, ✈Amsterdam, NL
+JELLE VAN WIJHE, ✈Amsterdam, NL
+MATTHEW ELWORTHY, ✈Amsterdam, NL
+OSCAR VAN ZIJVERDEN, ✈Amsterdam, NL
+STEPHAN LAGERWAARD, ✈Amsterdam, NL
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="unsafe-url" name="referrer"/>
+<meta content="The Next Web" name="apple-mobile-web-app-title"/>
+
+<link as="style" href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="script" href="//next.tnwcdn.com/assets/next/js/base.js?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="style" href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="font" crossorigin="anonymous" href="https://next.tnwcdn.com/assets/next/fonts/graphik-wide-black.woff2" rel="preload" type="font/woff2"/>
+<link as="image" href="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=f48cdfa834be9823e26a938c4e93b79f" imagesrcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=afa3a473258b062a374009cb6cbd64c2 576w,
+                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=48dd156b76fe86bcffaf76b1f47de030 1152w,
+                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=f48cdfa834be9823e26a938c4e93b79f 1280w" media="(min-width: 361px) and (min-height: 651px)" rel="preload"/>
+<title>Apple is seeking damages from Epic over Fortnite ban</title>
+<!-- OpenGraph -->
+<meta content="Rachel Kaser" name="author"/>
+<meta content="https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban" name="original-source">
+<meta content="TNW | Apple" property="og:site_name">
+<meta content="Apple is seeking damages from Epic over Fortnite ban" property="og:title">
+<meta content="In the continuing feud between Apple and Epic Games, Apple is seeking damages for Epic breaching its contract, which led to Fortnite being banned." name="description" property="description">
+<meta content="In the continuing feud between Apple and Epic Games, Apple is seeking damages for Epic breaching its contract, which led to Fortnite being banned." property="og:description">
+<meta content="https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban" property="og:url">
+<meta content="640" property="og:image:height">
+<meta content="1280" property="og:image:width"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=eff32a724282191c2698b85625fa5168" property="og:image"/>
+<meta content="article" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="2020-09-10T08:23:15+00:00" property="og:updated_time">
+<meta content="2020-09-09T23:47:08+00:00" property="article:published_time"/>
+<meta content="2020-09-10T08:23:15+00:00" property="article:modified_time"/>
+<meta content="Apple" property="article:section"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@thenextweb" name="twitter:site"/>
+<meta content="@thenextweb" name="twitter:creator"/>
+<meta content="Apple is seeking damages from Epic over Fortnite ban" name="twitter:title"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=eff32a724282191c2698b85625fa5168" name="twitter:image"/>
+<meta content="In the continuing feud between Apple and Epic Games, Apple is seeking damages for Epic breaching its contract, which led to Fortnite being banned." name="twitter:description"/>
+<!-- General Meta -->
+<meta content="max-image-preview:large" name="robots"/>
+<meta content="Apple is seeking damages from Epic over Fortnite ban" property="title">
+<meta content="In the continuing feud between Apple and Epic Games, Apple is seeking damages for Epic breaching its contract, which led to Fortnite being banned." property="description"/>
+<meta content="https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban" property="url"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon"/>
+
+<link href="/manifest.json" rel="manifest"/>
+
+
+
+
+<link href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<noscript>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+</noscript>
+<meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<link href="//cdn0.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//next.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//img-cdn.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//cdnjs.cloudflare.com/" rel="dns-prefetch"/>
+<link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+<link href="//cdn0.tnwcdn.com/" rel="preconnect"/>
+<link href="//next.tnwcdn.com/" rel="preconnect"/>
+<link href="//img-cdn.tnwcdn.com/" rel="preconnect"/>
+<link href="//www.googletagmanager.com" rel="preconnect"/>
+<link href="//cdnjs.cloudflare.com/" rel="preconnect"/>
+<link as="style" async="" crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet preload"/>
+<link href="https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban" rel="canonical">
+
+<!-- JSON-LD Breadcrumbs -->
+
+<!-- JSON-LD schema -->
+
+
+
+</link></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></head>
+<body class="site-tnwNext preload" id="next-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+<div id="fb-root"></div>
+<div class="apple" id="_progress"></div>
+<nav class="c-nav has-level2" id="nav" role="navigation" style="top: 0;">
+<div class="c-nav__level1">
+<button aria-controls="overlay__hook" aria-expanded="false" aria-haspopup="true" class="c-nav__menuToggle c-nav__menuToggle--level-1 js-menuToggleLevel" data-nav-level="1" id="nav-menuLevel1" type="button">
+<span class="visually-hidden">Toggle Navigation</span>
+</button>
+<div class="navLabel_dt">
+<a class="c-nav__logo" data-event-action="Navigation bar" data-event-category="Article" data-event-label="TNW Logo" data-event-non-interaction="false" href="/" name="TNW Logo">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path>
+</svg>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--1" id="overlay__hook">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="News" data-event-category="Navigation bar" data-event-label="/" data-event-non-interaction="false" href="/">News</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">Events</button>
+<ul class="c-nav__submenu" role="menu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false" href="/conference">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false">TNW Conference</span>
+<span class="c-nav__submenuLinkNote">June 19 &amp; 20, 2025</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false" href="https://thenextweb.com/conference/the-soonicorn-summit">
+<span class="c-nav__submenuLinkTitle" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false">The Soonicorn Summit</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false" href="https://thenextweb.com/conference/tnw-webinar-series">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false">TNW Webinars</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false" href="/events">
+<span class="c-nav__submenuLinkTitle" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false">All events</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+</ul>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Spaces" data-event-category="Navigation bar" data-event-label="/spaces" data-event-non-interaction="false" href="/spaces">Spaces</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Programs" data-event-category="Navigation bar" data-event-label="/programs" data-event-non-interaction="false" href="/programs">Programs</a>
+</li>
+</ul>
+<hr class="mobile_menu_divider"/>
+<ul class="c-nav__menu c-nav__icons">
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" data-event-action="Newsletter" data-event-category="Navigation bar" data-event-label="Newsletters top right - click" data-event-non-interaction="false" href="/newsletters">
+<span class="c-nav__iconsItem--label" data-event-action="Newsletters" data-event-category="Navigation bar" data-event-label="/newsletters" data-event-non-interaction="false">Newsletters</span>
+</a>
+</li>
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" href="/partnerships">
+<span class="c-nav__iconsItem--label" data-event-action="Partner with us" data-event-category="Navigation bar" data-event-label="/partnerships" data-event-non-interaction="false">Partner with us</span>
+</a>
+</li>
+</ul>
+<footer class="c-nav__footer">
+<ul class="c-nav__social">
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://facebook.com/thenextweb" name="Facebook Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://www.instagram.com/thenextweb" name="Instagram Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://twitter.com/thenextweb" name="Twitter Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://youtube.com/user/thenextweb" name="Youtube Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://flipboard.com/@thenextweb" name="Flipboard Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="/newsletters" name="Email Social Link">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</li>
+</ul>
+<ul class="c-nav__company">
+<li class="c-nav__companyItem">
+<a class="c-nav__companyLink" href="https://thenextweb.homerun.co/" rel="noopener noreferrer" target="_blank">Jobs</a>
+</li>
+<li class="c-nav__companyItem"><a class="c-nav__companyLink" href="mailto:conference@thenextweb.com">Contact</a></li>
+</ul>
+</footer>
+</div>
+</div>
+<div class="c-nav__level2 tnw news">
+<div class="c-nav__pwd">
+<a class="c-nav__pwdLogo" href="/"><svg class="tnwLogo__tnwNews"><title>The Next Web</title><use xlink:href="/assets/next/img/icons.svg#tnw"></use></svg></a>
+<a class="c-nav__pwdLogoUkraine" href="/ukraine">
+<img alt="We stand with Ukraine" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/companies/ukraine.png"/>
+</a>
+<span class="c-nav__pwdSection">News</span>
+<a class="c-nav__pwdSite" href="/" title="">
+<span class="sm:hidden" id="channelName_abbr">news</span>
+<span class="max-sm:hidden xl:hidden">news</span>
+<span class="max-xl:hidden" id="channelName_mob">news</span>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--2">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Latest" data-event-category="Navigation bar" data-event-label="/latest" data-event-non-interaction="false" href="/latest">Latest</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Deep tech" data-event-category="Navigation bar" data-event-label="/deep-tech" data-event-non-interaction="false" href="/deep-tech">Deep tech</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Sustainability" data-event-category="Navigation bar" data-event-label="/sustainability" data-event-non-interaction="false" href="/sustainability">Sustainability</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Ecosystems" data-event-category="Navigation bar" data-event-label="/ecosystems" data-event-non-interaction="false" href="/ecosystems">Ecosystems</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Data and security" data-event-category="Navigation bar" data-event-label="/data-security" data-event-non-interaction="false" href="/data-security">Data and security</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Fintech and ecommerce" data-event-category="Navigation bar" data-event-label="/fintech-ecommerce" data-event-non-interaction="false" href="/fintech-ecommerce">Fintech and ecommerce</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Future of work" data-event-category="Navigation bar" data-event-label="/future-of-work" data-event-non-interaction="false" href="/future-of-work">Future of work</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Podcast" data-event-category="Navigation bar" data-event-label="https://podcast.thenextweb.com" data-event-non-interaction="false" href="https://podcast.thenextweb.com">Podcast</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">More</button>
+<ul class="c-nav__submenu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="https://thenextweb.com/tnw-conference-2024">
+<span class="c-nav__submenuLinkTitle" data-event-action="Conference media hub" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/tnw-conference-2024" data-event-non-interaction="false">Conference media hub</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/startups-technology">
+<span class="c-nav__submenuLinkTitle" data-event-action="Startups and technology" data-event-category="Navigation bar" data-event-label="/startups-technology" data-event-non-interaction="false">Startups and technology</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/investors-funding">
+<span class="c-nav__submenuLinkTitle" data-event-action="Investors and funding" data-event-category="Navigation bar" data-event-label="/investors-funding" data-event-non-interaction="false">Investors and funding</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/government-policy">
+<span class="c-nav__submenuLinkTitle" data-event-action="Government and policy" data-event-category="Navigation bar" data-event-label="/government-policy" data-event-non-interaction="false">Government and policy</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/corporates-innovation">
+<span class="c-nav__submenuLinkTitle" data-event-action="Corporates and innovation" data-event-category="Navigation bar" data-event-label="/corporates-innovation" data-event-non-interaction="false">Corporates and innovation</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/plugged">
+<span class="c-nav__submenuLinkTitle" data-event-action="Gadgets &amp; apps" data-event-category="Navigation bar" data-event-label="/plugged" data-event-non-interaction="false">Gadgets &amp; apps</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<button aria-hidden="true" class="c-nav__menuScroller" type="button"></button>
+</div>
+</div>
+</nav>
+<a class="c-nav__yellow-bar" href="https://thenextweb.com/conference/tickets" id="cross-site-notification" rel="noopener" target="_blank">
+<div class="c-nav__message c-nav__message--global" data-event-action="Yellow bar" data-event-category="Yellow bar" data-event-label="Yellow bar - click">
+<p><strong>Save over 40% when you secure your tickets today to TNW Conference 💥 Prices will increase on November 22 →</strong></p>
+</div>
+</a>
+<div class="o-page" id="main">
+<div class="o-page__main">
+<main class="c-channel c-channel--latest o-page__main" id="article_container">
+<div class="c-articles">
+<div class="c-articles__backdrop"><div class="c-articles__backdrop--sticky"></div></div>
+<div class="c-nav__message c-nav__message--article news" style="top:0">
+<p>This article was published on <strong>September 9, 2020</strong></p>
+</div>
+<header class="c-header">
+<div class="o-wrapper">
+<div class="c-header__text">
+<ul class="c-header__tags c-tags c-tags--centered">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Apple" data-event-non-interaction="false" href="/apple">Apple</a>
+</li>
+</ul>
+<h1 class="c-header__heading">Apple is seeking damages from Epic over Fortnite ban</h1>
+<br/>
+<div>
+<time datetime="September 9, 2020 - 11:47 pm">September 9, 2020 - 11:47 pm</time>
+</div>
+</div>
+<div aria-hidden="true" class="c-share lg:hidden">
+<a class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Apple%20is%20seeking%20damages%20from%20Epic%20over%20Fortnite%20ban&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;u=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban&amp;t=Apple%20is%20seeking%20damages%20from%20Epic%20over%20Fortnite%20ban" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Apple%20is%20seeking%20damages%20from%20Epic%20over%20Fortnite%20ban" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-share__link c-share__link--mail" href="mailto:?subject=Apple is seeking damages from Epic over Fortnite ban&amp;body=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+</header>
+<div class="e-empty__hidden"></div>
+<div class="screen-size desktop-screen">
+<div class="tnw-ad tnw-ad--billboard tnw-ad--has-placeholder" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_HEADER","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[320,240],[300,250],[970,250],[970,90],[728,90],[320,50],[300,100],[300,50],[320,100]],"sizeMapping":[[[1024,0],[[970,250],[970,90],[728,90]]],[[0,0],[[300,250],[320,50],[300,50],[300,100],[320,100],[320,240]]]],"targeting":{"postID":["1317004"],"title":["Apple is seeking damages from Epic over Fortnite ban"],"category":["apple"],"isSponsored":["No"]},"lazyLoad":"true","refreshEvery":"","debugMode":false}' id="tnw-next-header"></div>
+</div>
+
+<div class="o-wrapper mb-4xl">
+<article class="c-article js-article mt-m" id="articleOutput" style="margin-top: 0px;">
+<div class="c-article__media c-article__growth-mobile">
+<figure class="o-media o-media--16:9">
+<img alt="Apple is seeking damages from Epic over Fortnite ban" class="js-lazy c-article__mediaImage w-full absolute top-0" data-src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=f48cdfa834be9823e26a938c4e93b79f" data-srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=afa3a473258b062a374009cb6cbd64c2 576w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=48dd156b76fe86bcffaf76b1f47de030 1152w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=f48cdfa834be9823e26a938c4e93b79f 1280w" sizes="(max-width: 1023px) 100vw
+                                               868px"/>
+<noscript>
+<img alt="Apple is seeking damages from Epic over Fortnite ban" class="c-article__mediaImage w-full absolute top-0" sizes="(max-width: 1023px) 100vw
+                                                   868px" src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=f48cdfa834be9823e26a938c4e93b79f" srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=afa3a473258b062a374009cb6cbd64c2 576w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=48dd156b76fe86bcffaf76b1f47de030 1152w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;signature=f48cdfa834be9823e26a938c4e93b79f 1280w"/>
+</noscript>
+</figure>
+</div>
+<div class="screen-size mobile-screen" style="text-align: center"></div>
+
+<div class="c-article__main max-lg:mb-xxl">
+<div class="c-richText c-richText--large" id="article-main-content">
+<p>It was sure nice to have a few days off from the Epic Games vs Apple conflict, wasn’t it? But grab your popcorn and maybe a fresh pretzel, because the show is not over. Now Apple is seeking damages from Epic’s breach of contract, and responded to Epic’s recent requests that it be forced to reinstate <em>Fortnite</em>. This is a juicy one, I’m not going to lie.</p>
+<p>If you want to see where this whole mess got started, I recommend reading <a href="https://thenextweb.com/news/apple-bans-fortnite-app-store-epic-declares-war" rel="noopener" target="_blank">this</a>, <a href="https://thenextweb.com/news/apple-cut-epic-off-from-dev-tools-epic-files-for-injunction" rel="noopener" target="_blank">this</a>, or <a href="https://thenextweb.com/news/apple-rips-into-epic-games-court-filing-about-fortnite-saga" rel="noopener" target="_blank">this</a>. Long story short: Epic tried to get around the App Store payment system within <em>Fortnite</em>, Apple banned <em>Fortnite</em>, and Epic’s claiming Apple is an unjust monopoly. When last we checked in with these two, Epic had <a href="https://thenextweb.com/news/judge-rules-apple-can-block-fortnite-not-epic-unreal-engine" rel="noopener" target="_blank">lost its bid</a> to get <em>Fortnite</em>back on the App Store via emergency restraining order, and a judge told Epic that it was essentially its own fault and no way were they going to give <em>Fortnite</em>a free ride. The same judge also told Apple it couldn’t remove Epic’s developer tools as a way of going scorched earth on Epic because of the case. Both sides got a legal fingerwag, as neither could claim to have clean hands. So now what?</p>
+<p><em>Read: <a href="https://thenextweb.com/news/these-tech-trends-defined-2020-so-far-according-to-5-founders" rel="noopener" target="_blank">These tech trends defined 2020 so far, according to 5 founders</a></em></p>
+<p>Well, now Apple is throwing some legal punches itself. The filing it entered earlier this week seeks damages for Epic breaching its agreement by instating its own payment system, and asks that Epic be kept from further unfair practices. It sums up Epic’s efforts thus: “Epic’s intention is thus straightforward: It seeks free access to the Apple-provided tools that it uses and—worse yet—it wishes to then charge <em>others</em> for access to Apple’s intellectual property and technologies.”</p>
+<p>Apple also responded to <a href="https://cdn2.unrealengine.com/2020-09-04---preliminary-injunction-filings-928657856.pdf" rel="nofollow noopener" target="_blank">Epic’s last legal filing</a>, in which it asked for an injunction that would force Apple to reinstate <em>Fortnite</em>. I’ll spare you the details… just kidding, no I won’t. Epic’s injunction asks that Apple be legally constrained from removing or modifying <em>Fortnite</em>on the App Store, and contends that “Fortnite is more than just a game.” It contends that Apple has “cleaved millions of users from their friends and family” by cutting off access to <em>Fortnite</em>on iOS. This is its argument in a nutshell:</p><div class="inarticle-wrapper latest channel-cta hs-embed-tnw"><div class="channel-cta-wrapper" id="hs-embed-tnw"><div class="channel-cta-img"><img class="js-lazy" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/visuals/tnw-newsletter.png"/></div><noscript><img src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/visuals/tnw-newsletter.png"/></noscript><div class="channel-cta-input"><p class="channel-cta-title">The 💜 of EU tech</p><p class="channel-cta-tagline">The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox. Sign up now!</p><div id="hs-inarticle-embed"><div id="latest-inarticle-embed"></div></div></div></div></div>
+<blockquote><p>Daily active users on iOS have declined by over 60% since Fortnite’s removal from the App Store. And removal already has resulted in a loss of goodwill and irreparable damage to Epic’s reputation. The continued loss of Fortnite as a gathering place for users on all platforms will lead Epic’s customers to defect. Epic may never see these users again. It will also be denied the opportunity to access even a single new user among the one-billion-plus iOS users for at least the next year.</p></blockquote>
+<p>My favorite part of Epic’s injunction is when it says “It is highly likely [Apple will] lose this case.” Yes, keep telling yourselves that. It also says, “The user outcry has been deafening” regarding the <em>Fortnite</em> ban, which is extra amusing because Epic’s been desperately trying to make user outcry happen, up to and including crafting its own hashtag accompanying that ridiculous “Nineteen Eighty-Fortnite” video.</p>
+<p>Apple’s response to this? <a href="https://www.documentcloud.org/documents/7203851-Epic-v-Apple-counterclaims.html" rel="nofollow noopener" target="_blank">According to its filing</a>, “Epic’s lawsuit is nothing more than a basic disagreement over money. Although Epic portrays itself as a modern corporate Robin Hood, in reality it is a multi-billion dollar enterprise that simply wants to pay nothing for the tremendous value it derives from the App Store.” And wow, get me the giant bottle of lotion for that burn. It also adds, “There is nothing anticompetitive about charging a commission for others to use one’s service.” It also added that Epic CEO Tim Sweeney asked for a “side letter” in June that would essentially allow it to run a competing app within the App Store and do “a complete end-run” around Apple’s fees. It also punctures a notion Epic proposed as an alternative to its current payment model, which is “charging a regressive ‘per download fee,’  leaving consumers and developers on the hook to pay for what otherwise would be billions of free app downloads.”</p>
+<p>This is my favorite part, if only because of the “just so done with this” attitude Apple’s copping:</p>
+<blockquote><p>While Epic and its CEO take issue with the terms on which Apple has since 2008 provided the App Store to all developers, this does not provide cover for Epic to breach binding contracts, dupe a long-time business partner, pocket commissions that rightfully belong to Apple, and then ask this Court to take a judicial sledgehammer to one of the 21st Century’s most innovative business platforms simply because it does not maximize Epic’s revenues. By any measure, the App Store has revolutionized the marketplace and greatly benefitted consumers and app developers like Epic. Apple looks forward to defending against Epic’s baseless claims.</p></blockquote>
+<p>I’m not trying to take sides in this dispute between big companies over a pile of money, but <em>dayum, son</em>.</p>
+<p>Much like Epic keeps repeating “Apple maintains an illegal monopoly” as its argument, Apple keeps repeating “Epic brought this on themselves with their nonsense” in response. I would not want to be the judge who has to read the many, many variations of those two sentences, honestly. I’m really lucky that I can be on the sidelines gobbling treats.</p>
+<p><a href="https://giphy.com/gifs/thriller-a9gu5GIJGJ9du" rel="nofollow noopener" target="_blank"><video autoplay="" class="gifsnomore" loop="" muted=""><source src="https://media2.giphy.com/media/a9gu5GIJGJ9du/giphy.mp4" type="video/mp4"/></video></a></p>
+<p>Meanwhile, if you were wondering where the heck Google is in all this — it’s apparently trying not to be in it at all. Google filed <a href="https://www.scribd.com/document/474753509/20-09-03-Google-Opposing-Combination-of-Both-Epic-App-Store-Cases" rel="nofollow noopener" target="_blank">its own injunction</a> essentially asking to keep the cases of Epic vs Apple and Epic vs Google separate, as its issues with Epic are different from Apple’s. It’s a legitimate reason, don’t get me wrong, but it somewhat comes across like Google is begging to be left out of the media circus this case has become (says one of the junior ringleaders).</p>
+<p>Epic has just over a week to respond to Apple’s filing.</p>
+</div>
+<aside class="c-contributor latest">
+<a data-event-action="Author" data-event-category="Article" data-event-label="Rachel Kaser" data-event-non-interaction="false" href="/author/rachelkaser" rel="noopener" target="_blank">
+<img alt="Rachel Kaser" class="c-contributor__photo js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fadb6caf5d6c8e24f12f5beb3edf8c236%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=b36998a1e7df30412b24258dafed2bdd"/>
+<noscript>
+<img alt="Rachel Kaser" class="c-contributor__photo" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fadb6caf5d6c8e24f12f5beb3edf8c236%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=b36998a1e7df30412b24258dafed2bdd"/>
+</noscript>
+</a>
+<div aria-label="Author Bio" class="c-contributor__main">
+<h2 class="c-contributor__wrapper">
+<span class="c-contributor__heading">Story by</span>
+<span class="c-contributor__name" style="margin-bottom: 0">
+<a class="latest" href="/author/rachelkaser">Rachel Kaser</a>
+</span>
+</h2>
+<span class="c-contributor__credentials">Internet Culture Writer</span>
+<p class="c-contributor__text">
+<input class="c-contributor__expandInput" id="contributorExpandInput123" name="expand" type="checkbox"/>
+<span class="c-contributor__bio c-contributor__bio--truncated">
+                                            Rachel is a writer and former game critic from Central Texas. She enjoys gaming, writing mystery stories, streaming on Twitch, and horseback
+
+                                                                                            <label class="c-contributor__expand apple" for="contributorExpandInput123">(show all)</label>
+</span>
+<span class="c-contributor__bio c-contributor__bio--full">Rachel is a writer and former game critic from Central Texas. She enjoys gaming, writing mystery stories, streaming on Twitch, and horseback riding. Check her Twitter for curmudgeonly criticisms.</span>
+</p>
+</div>
+</aside>
+<div class="c-channel__cta" id="nl-container">
+<h2 class="c-channel__ctaHeading text-dark">Get the TNW newsletter</h2>
+<p class="c-channel__ctaDescription text-white">Get the most important tech news in your inbox each week.</p>
+<div id="in-article-newsletter" style="color: #fff"></div>
+</div>
+<h2 class="alsoTaggedIn">Also tagged with</h2>
+<br/>
+<ul class="c-header__tags c-tags c-tags--left">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Play" data-event-non-interaction="false" href="/topic/play">Play</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Legal case" data-event-non-interaction="false" href="/topic/legal-case">Legal case</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Epic Games" data-event-non-interaction="false" href="/topic/epic-games">Epic Games</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Apple" data-event-non-interaction="false" href="/topic/apple">Apple</a>
+</li>
+</ul>
+<footer class="c-article__pubDate md:flex md:justify-between">
+<div>
+                                Published <time datetime="2019-02-11 12:07:00">September 9, 2020 - 11:47 pm UTC</time>
+</div>
+<a class="scrolly latest" data-event-action="Back to top" data-event-category="Article" data-event-label="Back to top - click" data-event-non-interaction="true" data-target="#next-top" href="#">Back to top</a>
+</footer>
+<div aria-label="Social share options" class="c-share lg:hidden">
+<a aria-label="Share on Facebook" class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Apple%20is%20seeking%20damages%20from%20Epic%20over%20Fortnite%20ban&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;u=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban&amp;t=Apple%20is%20seeking%20damages%20from%20Epic%20over%20Fortnite%20ban" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a aria-label="Share on Twitter" class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Apple%20is%20seeking%20damages%20from%20Epic%20over%20Fortnite%20ban" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a aria-label="Share on Flipboard" class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a aria-label="Share on Linkedin" class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a aria-label="Share on Telegram" class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a aria-label="Share via Email" class="c-share__link c-share__link--mail" href="mailto:?subject=Apple is seeking damages from Epic over Fortnite ban&amp;body=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+<aside aria-hidden="true" class="c-article__side">
+<aside class="c-article__author">
+<a class="apple" data-event-action="Author" data-event-category="Article" data-event-label="Rachel Kaser" data-event-non-interaction="false" href="/author/rachelkaser">
+<img alt="Rachel Kaser" class="c-article__authorImage blend-blue-dark js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fadb6caf5d6c8e24f12f5beb3edf8c236%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=b36998a1e7df30412b24258dafed2bdd" height="96" id="duotone" width="96"/>
+<noscript>
+<img alt="Rachel Kaser" class="c-article__authorImage blend-blue-dark" height="96" id="duotone" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fadb6caf5d6c8e24f12f5beb3edf8c236%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=b36998a1e7df30412b24258dafed2bdd" width="96"/>
+</noscript>
+<span class="c-article__authorHeading">Story by</span>
+<span class="c-article__authorName latest">Rachel Kaser</span>
+</a>
+</aside>
+<div class="c-engage">
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Facebook" data-event-non-interaction="false" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Apple%20is%20seeking%20damages%20from%20Epic%20over%20Fortnite%20ban&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F12%2FFortnite-Dance-Pic.jpg&amp;u=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban&amp;t=Apple%20is%20seeking%20damages%20from%20Epic%20over%20Fortnite%20ban" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Twitter" data-event-non-interaction="false" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Apple%20is%20seeking%20damages%20from%20Epic%20over%20Fortnite%20ban" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Linkedin" data-event-non-interaction="false" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Flipboard" data-event-non-interaction="false" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Telegram" data-event-non-interaction="false" href="https://t.me/share/url?url=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Email" data-event-non-interaction="false" href="mailto:?subject=Apple is seeking damages from Epic over Fortnite ban&amp;body=https://thenextweb.com/news/apple-seeking-damages-from-epic-over-fortnite-ban%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</aside>
+<aside class="c-split__side mb-m" id="sidebar">
+<div class="c-split__sticky channel_cta_if_subnav">
+<div class="tnw-ad tnw-ad--article-mpu" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_ATF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,50],[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1317004"],"title":["Apple is seeking damages from Epic over Fortnite ban"],"category":["apple"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-atf"></div>
+<div class="jobbioapp sticky top-4xl" id="sidebarJobbio"></div>
+<div class="tnw-ad tnw-ad--article-mpu-btf" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_BTF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1317004"],"title":["Apple is seeking damages from Epic over Fortnite ban"],"category":["apple"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-btf"></div>
+</div>
+</aside>
+</article>
+</div>
+</div>
+<aside aria-label="Related Articles" class="c-article__suggested">
+<div class="c-nextRelatedGrid">
+<section class="o-wrapper o-wrapper--wide">
+<header class="c-bodyNews__header">
+<h2 class="c-bodyNews__heading">Related Articles</h2>
+</header>
+<div class="c-showcase__grid">
+<section class="c-showcase__grid c-showcase__scroller js-parallaxRoot">
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/apple-eu-app-store-changes">
+<img alt="Apple begrudgingly allows EU customers to use rival app stores on iPhone" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=d8ff36bf277d6728ef6ea483d5317c05" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=e547846f4b29b71cf0e6233b89e7db48 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=75386eae3d6a992c0d84a4380c8b9191 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=731ffcb83a59fcf5c61f41b37e3b5891 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=bc3c58fd935d52cb140a2e3fc073ba91 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=d3cd4d38974228caf1b08d87bab828b2 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=5bb41288ec97cf1bc9d37ff7c8b15c31 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=98e6503f00cc1b2d6a36ae665241fd2f 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=67253e0f3710bedcc17a18ac4abdce11 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=85f91b4f6c6b330e9768b4a0982d61d6 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=6e47d9d862835203f015418db0c0652e 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=2e485c9256640d6436754e51aa729767 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=395bd540f6dae1da94fd7e2c5ac45860 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=180cf1b17eefa61443fa4d58e2567120 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=ca049367985304266ec8c7cd1545d565 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=d8ff36bf277d6728ef6ea483d5317c05 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="Apple begrudgingly allows EU customers to use rival app stores on iPhone" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=d8ff36bf277d6728ef6ea483d5317c05" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=e547846f4b29b71cf0e6233b89e7db48 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=75386eae3d6a992c0d84a4380c8b9191 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=731ffcb83a59fcf5c61f41b37e3b5891 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=bc3c58fd935d52cb140a2e3fc073ba91 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=d3cd4d38974228caf1b08d87bab828b2 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=5bb41288ec97cf1bc9d37ff7c8b15c31 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=98e6503f00cc1b2d6a36ae665241fd2f 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=67253e0f3710bedcc17a18ac4abdce11 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=85f91b4f6c6b330e9768b4a0982d61d6 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=6e47d9d862835203f015418db0c0652e 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=2e485c9256640d6436754e51aa729767 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=395bd540f6dae1da94fd7e2c5ac45860 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=180cf1b17eefa61443fa4d58e2567120 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=ca049367985304266ec8c7cd1545d565 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F01%2Fapple-app-store-eu-changes.jpg&amp;signature=d8ff36bf277d6728ef6ea483d5317c05 2361w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">ecosystems</span>
+<h3 class="c-card__heading">
+<a href="/news/apple-eu-app-store-changes" tabindex="-1">Apple begrudgingly allows EU customers to use rival app stores on iPhone</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/eu-apple-google-fines-back-taxes-ireland-2024">
+<img alt="EU brings Apple, Google to heel in €15.4B courtroom double-whammy" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=f7fc5f4659bd44ee1e383cbd4156e49e" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=4cf76cf7218b7c61ff0abc831466a2ff 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=38dfb511a22657dd20845aa82ecb5d1e 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=f07a42cca9d1e1c74acd224ab841026d 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=447085bcd53367a7c4525b766af7a08d 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=346a93ea4927bd52a7371314e79516ac 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=65f25e8e20e1c0ca40584779485d9264 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=78d3afc6667713405850cb247603c23f 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=004aaf1c72d2c8461252daa621ceca0b 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=255f0ba3199bd9f779a4c6aa80416d6c 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=6a515d2e72c5d9e37053cc68644e2e48 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=a6c9835c21ecebbab4f990a36fc47b69 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=3ed5329a25d828911ec5147d5ddd0fc7 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=a40c39458f14d9b41d05236ea29001a8 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=2e08533e537b15d05d63bceaff16606d 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=f7fc5f4659bd44ee1e383cbd4156e49e 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="EU brings Apple, Google to heel in €15.4B courtroom double-whammy" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=f7fc5f4659bd44ee1e383cbd4156e49e" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=4cf76cf7218b7c61ff0abc831466a2ff 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=38dfb511a22657dd20845aa82ecb5d1e 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=f07a42cca9d1e1c74acd224ab841026d 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=447085bcd53367a7c4525b766af7a08d 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=346a93ea4927bd52a7371314e79516ac 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=65f25e8e20e1c0ca40584779485d9264 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=78d3afc6667713405850cb247603c23f 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=004aaf1c72d2c8461252daa621ceca0b 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=255f0ba3199bd9f779a4c6aa80416d6c 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=6a515d2e72c5d9e37053cc68644e2e48 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=a6c9835c21ecebbab4f990a36fc47b69 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=3ed5329a25d828911ec5147d5ddd0fc7 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=a40c39458f14d9b41d05236ea29001a8 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=2e08533e537b15d05d63bceaff16606d 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F09%2F48865788377_34a1d6cedf_o.jpg&amp;signature=f7fc5f4659bd44ee1e383cbd4156e49e 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">ecosystems</span>
+<h3 class="c-card__heading">
+<a href="/news/eu-apple-google-fines-back-taxes-ireland-2024" tabindex="-1">EU brings Apple, Google to heel in €15.4B courtroom double-whammy</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/conference" tabindex="-1">
+<img alt="Discover TNW All Access" class="c-card__imageImage js-parallaxLayer o-parallax__layer" src="https://img-cdn.tnwcdn.com/image?fit=684%2C248&amp;url=https%3A%2F%2Fs3.eu-west-1.amazonaws.com%2Ftnw.events%2Fhardfork-2018%2Fuploads%2Fvisuals%2FConference-Nebula.png&amp;signature=1bb74f9f4b26d485f2fe5f2b8add03f8"></img></a>
+<header class="c-card__header advertPane">
+<h3 class="ad-title">Discover TNW All Access</h3>
+<span class="ad-description">Watch videos of our inspiring Talks for free</span>
+<a class="c-button adpanel c-button--rounded" data-event-action="Related articles Static Advert" data-event-category="Article" data-event-label="Article" data-event-non-interaction="false" href="https://thenextweb.com/auth/tnw/login-required" rel="noopener noreferrer" target="_blank">Sign up now</a>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/apple-director-swift-c-programming-language">
+<img alt="Apple director backs Swift to replace C++ as choice programming language" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=6cd7266eeaec0afff1a1ba28686984be" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=8e4adac8ecd25e7de3d2a789b5ca40ee 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=ac50899f3401392ebe4ea26e85d72944 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=5ba734bd9a34f84544fae67080bc3e2c 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=56ca31bdbf5a6b6c1024362515a6f2e0 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=a41a9976009369965d9ee85df88a17aa 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=bcaddc96098220958d32d7a62f422c33 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=199129bc310eedb3252b7ec00de621d7 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=00d2d75cd177db376251d2b027379063 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=3e6606b39703e922ee493961adcb5072 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=e0635d1a2d84d55113a331730b2b7038 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=466a0251947f3794fd26c9cdeb73b326 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=86c7e1577c884253b334ea75485e70f4 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=799d43f84e7a55850868baa597b42a5f 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=2a717390f0173bffbf44247577374f48 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=6cd7266eeaec0afff1a1ba28686984be 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="Apple director backs Swift to replace C++ as choice programming language" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=6cd7266eeaec0afff1a1ba28686984be" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=8e4adac8ecd25e7de3d2a789b5ca40ee 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=ac50899f3401392ebe4ea26e85d72944 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=5ba734bd9a34f84544fae67080bc3e2c 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=56ca31bdbf5a6b6c1024362515a6f2e0 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=a41a9976009369965d9ee85df88a17aa 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=bcaddc96098220958d32d7a62f422c33 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=199129bc310eedb3252b7ec00de621d7 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=00d2d75cd177db376251d2b027379063 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=3e6606b39703e922ee493961adcb5072 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=e0635d1a2d84d55113a331730b2b7038 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=466a0251947f3794fd26c9cdeb73b326 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=86c7e1577c884253b334ea75485e70f4 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=799d43f84e7a55850868baa597b42a5f 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=2a717390f0173bffbf44247577374f48 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F07%2FUntitled-design-6.jpg&amp;signature=6cd7266eeaec0afff1a1ba28686984be 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">future of work</span>
+<h3 class="c-card__heading">
+<a href="/news/apple-director-swift-c-programming-language" tabindex="-1">Apple director backs Swift to replace C++ as choice programming language</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/apple-intelligence-ai-word-processing">
+<img alt="Apple Intelligence will help AI become as commonplace as word processing" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=619201ee675f23336031d7cbd6898d0a" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=b0d6111f352706ae07536881724b35d9 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=3dc0d9a86858cabd7896f0e0b1f02972 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=0f9436b68499cb748251d250de012ec1 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=ecc37e8f1d716cde810220c4f688b2aa 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=406845bad37da4d9b8c58674e7ef5c71 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=73bf4d90502787cf62d36b4e1f46ce07 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=1b428d3f7a5ed5e540ea80b77d705eff 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=951c100b457a0d4e5319775287d7f6ad 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=6bff8f0fa41f191838d211fbe2412e87 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=76855e406bae921c827c8cdec08b6c23 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=c756f85681c8a1e6b0e30a80cd4a417a 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=578537aee50bdc274022b3b8cb619483 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=539b2e9f6da3378f867aa4c49d8b3e06 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=38a1e424ebb9b11b0cd6670b6ab99e5b 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=619201ee675f23336031d7cbd6898d0a 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="Apple Intelligence will help AI become as commonplace as word processing" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=619201ee675f23336031d7cbd6898d0a" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=b0d6111f352706ae07536881724b35d9 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=3dc0d9a86858cabd7896f0e0b1f02972 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=0f9436b68499cb748251d250de012ec1 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=ecc37e8f1d716cde810220c4f688b2aa 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=406845bad37da4d9b8c58674e7ef5c71 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=73bf4d90502787cf62d36b4e1f46ce07 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=1b428d3f7a5ed5e540ea80b77d705eff 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=951c100b457a0d4e5319775287d7f6ad 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=6bff8f0fa41f191838d211fbe2412e87 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=76855e406bae921c827c8cdec08b6c23 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=c756f85681c8a1e6b0e30a80cd4a417a 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=578537aee50bdc274022b3b8cb619483 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=539b2e9f6da3378f867aa4c49d8b3e06 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=38a1e424ebb9b11b0cd6670b6ab99e5b 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fappshunter-io-5FPlliLjV5k-unsplash.jpg&amp;signature=619201ee675f23336031d7cbd6898d0a 2361w  "/>
+</noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">future of work</span>
+<h3 class="c-card__heading">
+<a href="/news/apple-intelligence-ai-word-processing" tabindex="-1">Apple Intelligence will help AI become as commonplace as word processing</a>
+</h3>
+</header>
+</div>
+</article>
+</section>
+</div>
+</section>
+</div>
+</aside>
+</main>
+
+</div>
+</div>
+<footer class="c-footer">
+<div class="o-wrapper">
+<div class="o-grid o-grid--gap-l">
+<div class="o-grid__col lg:o-grid__col--1/2">
+<div class="c-footer__logoContact">
+<div>
+<a class="c-footer__logo" data-event-action="TNW Logo" data-event-category="Footer" data-event-label="Navigation" data-event-non-interaction="false" href="https://thenextweb.com/" tabindex="-1" title="TNW">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z" fill="#fff"></path>
+</svg>
+</a>
+<p class="c-footer__tagline">The heart of tech</p>
+</div>
+<div>
+<ul class="c-footer__contact">
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Faaaaebook" href="https://facebook.com/thenextweb" name="Facebook Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Instagram" href="https://www.instagram.com/thenextweb/" name="Instagram Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Twitter" href="https://twitter.com/thenextweb" name="Twitter Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Youtube" href="https://youtube.com/user/thenextweb" name="Youtube Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Flipboard" href="https://flipboard.com/@thenextweb" name="Flipboard Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Mail" href="/newsletters" name="Email Footer Link"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Linkedin" href="https://www.linkedin.com/company/the-next-web" name="LinkedIn Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg></a></li>
+</ul>
+</div>
+</div>
+</div>
+<br/>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 more">
+<h2 class="c-footer__heading">More TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Media" data-event-non-interaction="false" href="/latest">Media</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Events" data-event-non-interaction="false" href="/events">Events</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Programs" data-event-non-interaction="false" href="/programs">Programs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Spaces" data-event-non-interaction="false" href="/spaces">Spaces</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Newsletters" data-event-non-interaction="false" href="/newsletters">Newsletters</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://talent.thenextweb.com/job-board?source=footer&amp;utm_source=footer&amp;utm_medium=partner_referral" rel="noopener" target="_blank">Jobs in tech</a></li>
+</ul>
+</div>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 about">
+<h2 class="c-footer__heading">About TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Partner with us" data-event-non-interaction="false" href="/partnerships" name="Partner with us">Partner with us</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://thenextweb.homerun.co/" name="Jobs" rel="noopener noreferrer" target="_blank">Jobs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Terms &amp; Conditions" data-event-non-interaction="false" href="/terms-and-conditions" name="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Cookie Statement" data-event-non-interaction="false" href="/cookie-statement" name="Cookie Statement">Cookie Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Privacy Statement" data-event-non-interaction="false" href="/privacy-statement " name="Privacy Statement">Privacy Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Editorial Policy" data-event-non-interaction="false" href="https://s3.eu-west-1.amazonaws.com/tnw.uploads/uploads/FT-EDITORIAL-CODE-OF-PRACTICE-15-Jan-2024.pdf" name="Editorial Policy" rel="noopener noreferrer" target="_blank">Editorial Policy</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Masthead" data-event-non-interaction="false" href="/masthead" name="Editorial Policy" rel="noopener">Masthead</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="c-footer__legal max-md:px-l">
+<a class="feedback" data-event-action="Financial Times" data-event-category="Footer" data-event-label="Financial Times" data-event-non-interaction="false" href="https://www.ft.com/" rel="noopener nofollow" target="_blank">
+<svg viewbox="0 0 367 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.97826,19.58347H5.20213L2.77475,26H0L8.32426,4.7043H10.89L19.21428,26H16.43953ZM6.10446,17.19h6.97148L9.57254,8.1032Z" fill="#fff"></path><path d="M29.98145,26V4.7043h13.597V7.89421H33.58934v6.31344H42.919v3.156H33.58934V26Z" fill="#fff"></path><path d="M48.686,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,48.686,8.06789ZM50.42,26H46.95193V10.59977H50.42Z" fill="#fff"></path><path d="M54.72547,10.59977h3.46809V12.057a5.4558,5.4558,0,0,1,4.16284-1.80323c3.46808,0,5.445,2.289,5.445,5.72178V26H64.33332V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26275,3.26275,0,0,0-3.22521,2.46268V26H54.72547Z" fill="#fff"></path><path d="M80.43536,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38126-.97152-1.734-1.56036-3.12071-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12071-1.56036Z" fill="#fff"></path><path d="M87.86718,10.59977h3.46809V12.057a5.45578,5.45578,0,0,1,4.16283-1.80323c3.46809,0,5.445,2.289,5.445,5.72178V26H97.475V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26274,3.26274,0,0,0-3.22521,2.46268V26H87.86718Z" fill="#fff"></path><path d="M111.63545,10.25381a6.50162,6.50162,0,0,1,4.19672,1.28217v3.40031a5.4709,5.4709,0,0,0-3.95385-1.59566c-2.46268,0-4.4396,1.97692-4.4396,4.95925,0,2.98375,1.97692,4.96067,4.4396,4.96067a5.47663,5.47663,0,0,0,3.95385-1.59566v3.3989a6.50259,6.50259,0,0,1-4.19672,1.28358c-4.232,0-7.66623-3.12212-7.66623-8.04749S107.40342,10.25381,111.63545,10.25381Z" fill="#fff"></path><path d="M120.93828,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,120.93828,8.06789ZM122.67233,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M135.50962,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38127-.97152-1.73405-1.56036-3.12072-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12072-1.56036Z" fill="#fff"></path><path d="M146.40811,26H142.94V3.4546h3.46808Z" fill="#fff"></path><path d="M157.27413,4.7043h17.75842V7.89421h-7.076V26H164.3501V7.89421h-7.076Z" fill="#fff"></path><path d="M179.9678,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,179.9678,8.06789ZM181.70184,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M201.96248,10.25381c3.12072,0,4.99456,2.2198,4.99456,5.72178V26h-3.4695V16.53054c0-1.90632-.83172-3.156-2.53188-3.156a2.70093,2.70093,0,0,0-2.73945,2.289V26h-3.46809V16.53054c0-1.90632-.83313-3.156-2.53187-3.156a2.70231,2.70231,0,0,0-2.74086,2.289V26H186.0073V10.59977h3.46809v1.28359a4.67951,4.67951,0,0,1,3.85076-1.62955,5.07645,5.07645,0,0,1,4.05693,2.04611A5.6743,5.6743,0,0,1,201.96248,10.25381Z" fill="#fff"></path><path d="M217.61689,26.34737c-4.47349,0-7.63092-3.08682-7.63092-7.9091,0-4.78557,2.98374-8.18446,7.076-8.18446,4.232,0,6.48572,3.01763,6.48572,7.56032v1.24969H213.38627a4.36215,4.36215,0,0,0,4.71638,4.29981,7.11212,7.11212,0,0,0,4.4043-1.422v3.05293A8.13643,8.13643,0,0,1,217.61689,26.34737Zm-4.05834-9.91991h6.69471a3.10814,3.10814,0,0,0-3.156-3.26052A3.588,3.588,0,0,0,213.55855,16.42746Z" fill="#fff"></path><path d="M226.26311,21.213a7.9172,7.9172,0,0,0,5.20213,2.25511c1.49116,0,2.67026-.52106,2.67026-1.631,0-1.03929-.76253-1.38667-2.04612-1.80323l-1.66485-.51965c-2.63637-.83313-4.16142-2.01223-4.16142-4.64859,0-2.77476,2.49657-4.61188,5.79238-4.61188a8.38994,8.38994,0,0,1,4.61188,1.35278v3.502a6.95868,6.95868,0,0,0-4.61188-1.97692c-1.38808,0-2.46268.59025-2.46268,1.59566,0,1.00682.58884,1.35278,1.97692,1.76935l2.01082.62414c2.56717.83313,3.92,2.1845,3.92,4.5441,0,2.94844-2.63637,4.68248-6.07056,4.68248a8.48739,8.48739,0,0,1-5.16683-1.59566Z" fill="#fff"></path><path d="M249.82521,12.47361a7.08924,7.08924,0,0,1,5.27132-2.18591,6.30818,6.30818,0,0,1,4.12754,1.28358v2.63637a5.38989,5.38989,0,0,0-3.95385-1.59566,4.72822,4.72822,0,0,0-3.50339,1.52647,5.73715,5.73715,0,0,0-1.45728,4.16142,5.743,5.743,0,0,0,1.45728,4.16284,4.732,4.732,0,0,0,3.50339,1.52505,5.38853,5.38853,0,0,0,3.95385-1.59424v2.635a6.30813,6.30813,0,0,1-4.12754,1.28359,7.1933,7.1933,0,0,1-5.27132-2.15061,8.01492,8.01492,0,0,1-2.15061-5.86158A7.87619,7.87619,0,0,1,249.82521,12.47361Z" fill="#fff"></path><path d="M273.90272,24.057a6.93067,6.93067,0,0,1-10.232,0,8.56076,8.56076,0,0,1-1.94162-5.75709,8.56075,8.56075,0,0,1,1.94162-5.75708,6.93067,6.93067,0,0,1,10.232,0,8.41292,8.41292,0,0,1,1.97692,5.75708A8.41293,8.41293,0,0,1,273.90272,24.057Zm-5.099-11.48028c-2.77475,0-4.4396,2.39349-4.4396,5.72319s1.66485,5.7232,4.4396,5.7232,4.43961-2.39349,4.43961-5.7232S271.57842,12.57669,268.80367,12.57669Z" fill="#fff"></path><path d="M295.03462,10.2877c3.08682,0,4.85617,2.18591,4.85617,5.51561V26h-2.63637V16.21847c0-2.11531-.93621-3.57259-2.91314-3.57259a3.56186,3.56186,0,0,0-3.4003,2.74087V26h-2.60107V16.21847c0-2.11531-.93622-3.57259-2.91314-3.57259a3.5603,3.5603,0,0,0-3.39889,2.74087V26h-2.60107V10.59977h2.60107v1.80465a4.77136,4.77136,0,0,1,4.16142-2.11672,4.56953,4.56953,0,0,1,4.16283,2.46268A5.61944,5.61944,0,0,1,295.03462,10.2877Z" fill="#fff"></path><path d="M306.91028,31.89688h-2.60107V10.59977h2.60107v1.80465a5.47521,5.47521,0,0,1,4.33511-2.11672,5.97708,5.97708,0,0,1,5.16824,2.42879,9.16121,9.16121,0,0,1,1.76935,5.58339,9.34026,9.34026,0,0,1-1.76935,5.6187,6.039,6.039,0,0,1-5.16824,2.39349,5.4743,5.4743,0,0,1-4.33511-2.11531Zm0-10.47487a4.49749,4.49749,0,0,0,3.95385,2.53187c2.91313,0,4.68248-2.42879,4.68248-5.654s-1.76935-5.654-4.68248-5.654a4.4975,4.4975,0,0,0-3.95385,2.53188Z" fill="#fff"></path><path d="M330.29728,15.768c0-1.90773-1.422-3.08682-3.67708-3.08682a7.75913,7.75913,0,0,0-4.37041,1.35278V11.57128a8.82,8.82,0,0,1,4.787-1.28358c3.60647,0,5.79239,2.04611,5.79239,5.27273V26h-2.53188V24.8548a6.22354,6.22354,0,0,1-3.98915,1.422,6.54463,6.54463,0,0,1-4.05834-1.31748,4.33611,4.33611,0,0,1-1.66485-3.60647,4.1488,4.1488,0,0,1,1.70015-3.4695,6.8181,6.8181,0,0,1,8.01219-.10308Zm0,4.82087c-.41656-1.14379-1.943-1.90773-3.57258-1.90773a4.84209,4.84209,0,0,0-2.53188.65944,2.11057,2.11057,0,0,0-1.1452,2.01223,2.24887,2.24887,0,0,0,1.1452,2.08,4.82881,4.82881,0,0,0,2.53188.65945c1.62955,0,3.156-.76253,3.57258-1.90773Z" fill="#fff"></path><path d="M337.27723,10.59977h2.60107v1.943a5.69746,5.69746,0,0,1,4.5441-2.2551c3.46809,0,5.40971,2.289,5.40971,5.61869V26h-2.635V16.323c0-2.11531-1.076-3.64177-3.40031-3.64177a4.178,4.178,0,0,0-3.91854,2.87924V26h-2.60107Z" fill="#fff"></path><path d="M356.05094,31.89688l2.32289-5.79239-6-15.50472h2.81l4.54269,12.13972,4.47491-12.13972h2.70556l-8.29037,21.29711Z" fill="#fff"></path>
+</svg>
+</a>
+<p>
+                    Copyright © 2006—2024, The Next Web B.V.
+                    Made with &lt;3 in Amsterdam.
+                    <br/>
+</p>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<div class="cookie-consent-banner" data-args='{"cookieName":"__tnw_cookieConsent","cookieExpirationDays":"365","consentChoices":["ad_storage","analytics_storage"],"redirectOnSave":true,"honorDoNotTrack":false,"stylesheet":"https:\/\/thenextweb.com\/cpresources\/1abce43c\/style.css?v=1725957748","titleText":"Cookies","descriptionText":"&lt;p&gt;We use &lt;a href=\"\/cookie-statement\"&gt;cookies&lt;\/a&gt; and other data for a number of reasons, such as keeping TNW sites reliable and secure, personalizing content and ads, providing social media features and to analyze how our sites are used.&lt;\/p&gt;","linkColor":"6644ff","linkHoverColor":"7755ff","primaryBtnText":"Accept &amp; continue","primaryBtnBgColor":"","primaryBtnBgHoverColor":"","primaryBtnColor":"","primaryBtnHoverColor":"","secondaryBtnText":"Manage cookies","secondaryBtnURL":"\/cookie-statement","secondaryBtnRedirectURL":"https:\/\/thenextweb.com\/news\/apple-seeking-damages-from-epic-over-fortnite-ban","secondaryBtnColor":"6644ff","secondaryBtnHoverColor":"7755ff","debugMode":false}' id="cookie-consent-banner"></div>
+</body>
+</html>

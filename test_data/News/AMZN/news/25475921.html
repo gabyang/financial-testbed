@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link class="user" href="https://www.vmware.com/content/dam/vmwaredesigns/scrapercontent/responsive.css" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/management/wp-content/themes/vmware-blog-1.9.7/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<!-- This site is optimized with the Yoast SEO Premium plugin v20.8 (Yoast SEO v21.5) - https://yoast.com/wordpress/plugins/seo/ -->
+<title>vRealize Automation Cloud and VMware Cloud on AWS - VMware Cloud Management</title>
+<meta content="vRealize Automation Cloud and VMware Cloud on AWS delivers scalability, speed, flexibility and reliability through DevOps-for-infrastructure capabilities." name="description">
+<link href="https://blogs.vmware.com/management/2020/07/vrealize-automation-cloud-and-vmware-cloud-on-aws.html" rel="canonical"/>
+<meta content="en_US" property="og:locale">
+<meta content="article" property="og:type"/>
+<meta content="vRealize Automation Cloud and VMware Cloud on AWS" property="og:title"/>
+<meta content="vRealize Automation Cloud and VMware Cloud on AWS delivers scalability, speed, flexibility and reliability through DevOps-for-infrastructure capabilities." property="og:description"/>
+<meta content="https://blogs.vmware.com/management/2020/07/vrealize-automation-cloud-and-vmware-cloud-on-aws.html" property="og:url"/>
+<meta content="VMware Cloud Management" property="og:site_name"/>
+<meta content="2020-07-14T12:00:02+00:00" property="article:published_time"/>
+<meta content="2020-07-13T18:58:05+00:00" property="article:modified_time"/>
+<meta content="https://blogs.vmware.com/management/files/2020/07/300DPIx171019_02344.jpg" property="og:image"/>
+<meta content="2400" property="og:image:width"/>
+<meta content="1600" property="og:image:height"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="Alina Thylander" name="author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Written by" name="twitter:label1"/>
+<meta content="Alina Thylander" name="twitter:data1"/>
+<meta content="Est. reading time" name="twitter:label2"/>
+<meta content="4 minutes" name="twitter:data2"/>
+
+<!-- / Yoast SEO Premium plugin. -->
+
+
+<link href="https://blogs.vmware.com/management/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/management/wp-includes/css/classic-themes.min.css?ver=6.2.2" id="classic-theme-styles-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://blogs.vmware.com/management/wp-content/plugins/better-click-to-tweet/assets/css/styles.css?ver=3.0" id="bcct_style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/management/wp-content/plugins/onetrust-vmware-mu/css/g_onetrust.css?ver=6.2.2" id="g-onetrust-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/management/wp-content/plugins/ultimate-wp-query-search-filter/themes/default.css?ver=all" id="udefault-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/management/wp-content/plugins/contextual-related-posts/css/rounded-thumbs.min.css?ver=3.3.3" id="crp-style-rounded-thumbs-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://blogs.vmware.com/management/wp-content/plugins/meks-smart-author-widget/css/style.css?ver=1.1.1" id="meks-author-widget-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/management/wp-content/themes/vmware-blog-1.9.7/dist/styles/main-e628cfdf43.css" id="sage/css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/management?display_custom_css=css&amp;ver=6.2.2" id="wp-add-custom-css-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+<link href="https://blogs.vmware.com/management/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://blogs.vmware.com/management/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+<meta content="WordPress 6.2.2" name="generator"/>
+<link href="https://blogs.vmware.com/management/?p=30576" rel="shortlink"/>
+<link href="https://blogs.vmware.com/management/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogs.vmware.com%2Fmanagement%2F2020%2F07%2Fvrealize-automation-cloud-and-vmware-cloud-on-aws.html" rel="alternate" type="application/json+oembed"/>
+<link href="https://blogs.vmware.com/management/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogs.vmware.com%2Fmanagement%2F2020%2F07%2Fvrealize-automation-cloud-and-vmware-cloud-on-aws.html&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager --> 
+</meta></meta></meta></link></head>
+<body class="post-template-default single single-post postid-30576 single-format-standard vrealize-automation-cloud-and-vmware-cloud-on-aws.html sidebar-primary">
+<!--[if IE]>
+      <div class="alert alert-warning">
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
+    <![endif]-->
+<header class="banner">
+<nav class="global-nav no-menu">
+<div class="container">
+<div class="row">
+<div class="col-12 col-md-10 col-lg-8 col-xl-9">
+<div class="brand-links">
+<a href="https://www.vmware.com/"><img alt="VMware" src="//blogs.vmware.com/management/wp-content/themes/vmware-blog-1.9.7/dist/images/VMware-by-Broadcom-Logo_color.svg"/></a>
+<a class="name" href="https://blogs.vmware.com/management/">VMware Cloud Management</a>
+</div>
+</div>
+<div class="col-md-2 col-lg-4 col-xl-3 text-right right-nav">
+<div class="search-wrap">
+<form action="https://blogs.vmware.com/management/" class="search-form" method="get">
+<label class="sr-only" for="s">Search</label>
+<input class="search-field" name="s" placeholder="Search"/>
+<input class="search-submit btn" type="submit" value="Submit Search"/>
+</form>
+<button aria-expanded="false" aria-label="Toggle search" class="search-btn mobile-trigger" type="button">
+<span class="sr-only">Search</span>
+</button> </div>
+<button aria-controls="globalNavigation" aria-expanded="false" aria-label="Toggle menu" class="dots mobile-trigger" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="links-wrap" id="globalNavigation">
+<ul class="links">
+<li><a href="https://blogs.vmware.com/">VMware Blogs</a></li>
+<li><a href="https://communities.vmware.com/">Communities</a></li>
+</ul>
+<ul class="social-links d-lg-none">
+<li class="icon icon-rss">
+<a href="https://blogs.vmware.com/management/feed/" rel="noopener noreferrer" target="_rss">
+<span class="sr-only">RSS</span>
+</a>
+</li>
+<li class="icon icon-twitter">
+<a href="https://twitter.com/VMwareAria" rel="noopener noreferrer" target="_twitter">
+<span class="sr-only">Twitter</span>
+</a>
+</li>
+<li class="icon icon-linkedin">
+<a href="https://www.linkedin.com/showcase/vmware-cloud-management/" rel="noopener noreferrer" target="_linkedin">
+<span class="sr-only">LinkedIn</span>
+</a>
+</li>
+<li class="icon icon-youtube">
+<a href="https://www.youtube.com/c/vmwarecloudmanagement" rel="noopener noreferrer" target="_youtube">
+<span class="sr-only">YouTube</span>
+</a>
+</li>
+<li class="icon icon-fb">
+<a href="https://www.facebook.com/vmwarecloudmgmt/" rel="noopener noreferrer" target="_facebook">
+<span class="sr-only">Facebook</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav> <nav class="primary-nav no-menu" role="navigation">
+<div class="container">
+<div class="row">
+<div aria-label="Main Menu" class="col-12 col-lg-9 main-nav" id="primaryNavigation">
+<div class="gradient-mask-wrap">
+<div class="gradient-menu-wrap">
+<div class="menu-top-nav"><ul>
+<li class="menu-item-34089" id="menu-item-34089"><a role="menuitem"></a><div class="gradient-mask"><div class="arrow"></div></div></li>
+<li class="menu-item-9" id="menu-item-9"><a role="menuitem"></a><div class="gradient-mask"><div class="arrow"></div></div></li>
+<li class="menu-item-11" id="menu-item-11"><a role="menuitem"></a><div class="gradient-mask"><div class="arrow"></div></div></li>
+<li class="menu-item-32069" id="menu-item-32069"><a role="menuitem"></a><div class="gradient-mask"><div class="arrow"></div></div></li>
+</ul></div>
+</div>
+<div class="gradient-menu-mask"></div>
+</div>
+</div>
+<div class="col-12 col-lg-3">
+<ul class="social-links">
+<li class="icon icon-rss">
+<a href="https://blogs.vmware.com/management/feed/" rel="noopener noreferrer" target="_rss">
+<span class="sr-only">RSS</span>
+</a>
+</li>
+<li class="icon icon-twitter">
+<a href="https://twitter.com/VMwareAria" rel="noopener noreferrer" target="_twitter">
+<span class="sr-only">Twitter</span>
+</a>
+</li>
+<li class="icon icon-linkedin">
+<a href="https://www.linkedin.com/showcase/vmware-cloud-management/" rel="noopener noreferrer" target="_linkedin">
+<span class="sr-only">LinkedIn</span>
+</a>
+</li>
+<li class="icon icon-youtube">
+<a href="https://www.youtube.com/c/vmwarecloudmanagement" rel="noopener noreferrer" target="_youtube">
+<span class="sr-only">YouTube</span>
+</a>
+</li>
+<li class="icon icon-fb">
+<a href="https://www.facebook.com/vmwarecloudmgmt/" rel="noopener noreferrer" target="_facebook">
+<span class="sr-only">Facebook</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="gradient-bar">
+<div class="container">
+<div class="row">
+<div class="col-9">
+<div class="gradient-mask"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="wrap" role="document">
+<div class="content">
+<main>
+<div class="progress" style="display: none;">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" role="progressbar"></div>
+</div>
+<article class="background-off-white">
+<div class="container background-white mb-4">
+<div class="row">
+<div class="col-12">
+<header class="post-header">
+<div class="post-header-inner">
+<div class="post-featured-image">
+<img alt="" class="img-fluid" src="https://blogs.vmware.com/management/files/2020/07/300DPIx171019_02344-576x324.jpg"/>
+</div>
+<div class="post-headline">
+<a class="category-label" href="https://blogs.vmware.com/management/usecases/application_agility/automate-it/aria-automation">Aria Automation</a>
+<a class="category-label" href="https://blogs.vmware.com/management/usecases/application_agility/automate-it">Automate IT</a>
+<a class="category-label" href="https://blogs.vmware.com/management/usecases/application_agility/automate-it/cloud-automation">Cloud Automation</a>
+<a class="category-label" href="https://blogs.vmware.com/management/cloud-management-platform">Cloud Management Platform</a>
+<a class="category-label" href="https://blogs.vmware.com/management/vmware">Vmware</a>
+<a class="category-label" href="https://blogs.vmware.com/management/cloud-management-platform/vrealize">vRealize</a>
+<a class="category-label" href="https://blogs.vmware.com/management/cloud-management-platform/vrealize-suite">vRealize Suite</a>
+<h1 class="entry-title">vRealize Automation Cloud and VMware Cloud on AWS</h1>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//blogs.vmware.com/management/files/2021/02/Alina-Thylander-scaled-30x30.jpg"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/management/author/alina_plingu" rel="author">Alina Thylander</a>
+</div>
+<time class="updated" datetime="2020-07-14" pubdate="">July 14, 2020</time>
+</div> </div>
+</div>
+<div class="gradient-border"></div>
+</header> </div>
+</div>
+<div class="row">
+<div class="col-md-4 col-lg-2">
+<aside class="sharing d-none d-md-block">
+<strong>Share on:</strong>
+<ul class="social-links">
+<li class="icon icon-twitter">
+<a href="https://twitter.com/intent/tweet?url=https://blogs.vmware.com/management/2020/07/vrealize-automation-cloud-and-vmware-cloud-on-aws.html&amp;text=vRealize Automation Cloud and VMware Cloud on AWS" rel="noopener noreferrer" target="_blank">
+<span class="sr-only">Share on Twitter</span>
+</a>
+</li>
+<li class="icon icon-linkedin">
+<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://blogs.vmware.com/management/2020/07/vrealize-automation-cloud-and-vmware-cloud-on-aws.html" target="_blank">
+<span class="sr-only">Share on LinkedIn</span>
+</a>
+</li>
+<li class="icon icon-fb">
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://blogs.vmware.com/management/2020/07/vrealize-automation-cloud-and-vmware-cloud-on-aws.html" target="_blank">
+<span class="sr-only">Share on Facebook</span>
+</a>
+</li>
+<li class="icon icon-mail">
+<a href="/cdn-cgi/l/email-protection#fec18d8b9c949b9d8ac388ac9b9f9297849bdebf8b8a91939f8a979190debd92918b9ade9f909adea8b3899f8c9bdebd92918b9ade9190debfa9add89c919a87c3968a8a8e8dc4d1d19c9291998dd08893899f8c9bd09d9193d1939f909f999b939b908ad1ccceccced1cec9d1888c9b9f9297849bd39f8b8a91939f8a979190d39d92918b9ad39f909ad38893899f8c9bd39d92918b9ad39190d39f898dd0968a9392" target="_blank">
+<span class="sr-only">Email this post</span>
+</a>
+</li>
+</ul>
+</aside> </div>
+<div class="col-md-8">
+<div class="entry-content" data-langdir="">
+<p></p>
+<p><img alt="A picture containing toy, clockDescription automatically generated" class="wp-image-30577" decoding="async" height="960" sizes="(max-width: 1430px) 100vw, 1430px" src="http://blogs.vmware.com/management/files/2020/07/a-picture-containing-toy-clock-description-autom.png" srcset="https://blogs.vmware.com/management/files/2020/07/a-picture-containing-toy-clock-description-autom.png 1430w, https://blogs.vmware.com/management/files/2020/07/a-picture-containing-toy-clock-description-autom-220x148.png 220w, https://blogs.vmware.com/management/files/2020/07/a-picture-containing-toy-clock-description-autom-1024x687.png 1024w, https://blogs.vmware.com/management/files/2020/07/a-picture-containing-toy-clock-description-autom-768x516.png 768w, https://blogs.vmware.com/management/files/2020/07/a-picture-containing-toy-clock-description-autom-600x403.png 600w, https://blogs.vmware.com/management/files/2020/07/a-picture-containing-toy-clock-description-autom-283x190.png 283w" width="1430"/><em>Looking for a modern self-service hybrid cloud with DevOps? Discover how vRealize Automation Cloud can rapidly implement a self-service hybrid cloud infrastructure to increase productivity and deployment flexibility.</em></p>
+<p></p>
+<p>Automation has become increasingly important for simplifying the management of hybrid cloud infrastructure. As such, organizations are looking for an infrastructure automation solution that spans across the hybrid cloud environment and addresses the automation needs of their current infrastructure and applications. VMware vRealize Automation Cloud, a software-as-a-service offering for VMware Cloud on AWS, helps customers on this journey.</p>
+<p></p>
+<h3>What is vRealize Automation Cloud and VMware Cloud on AWS?</h3>
+<p>VMware vRealize Automation Cloud is a modern infrastructure automation platform with powerful IaaS capabilities and automation, infrastructure as code (IaC), and DevOps for infrastructure. Deployed on AWS Global Infrastructure and utilizing DevOps principles, vRealize Automation Cloud delivers a powerful IaC platform and infrastructure pipelining capabilities to enable self-service provisioning and delivery of hybrid cloud infrastructure resources.</p>
+<p><img alt="A screenshot of a cell phoneDescription automatically generated" class="wp-image-30578" decoding="async" height="570" loading="lazy" sizes="(max-width: 1808px) 100vw, 1808px" src="http://blogs.vmware.com/management/files/2020/07/a-screenshot-of-a-cell-phone-description-automati-4.png" srcset="https://blogs.vmware.com/management/files/2020/07/a-screenshot-of-a-cell-phone-description-automati-4.png 1808w, https://blogs.vmware.com/management/files/2020/07/a-screenshot-of-a-cell-phone-description-automati-4-220x69.png 220w, https://blogs.vmware.com/management/files/2020/07/a-screenshot-of-a-cell-phone-description-automati-4-1024x323.png 1024w, https://blogs.vmware.com/management/files/2020/07/a-screenshot-of-a-cell-phone-description-automati-4-768x242.png 768w, https://blogs.vmware.com/management/files/2020/07/a-screenshot-of-a-cell-phone-description-automati-4-1536x484.png 1536w, https://blogs.vmware.com/management/files/2020/07/a-screenshot-of-a-cell-phone-description-automati-4-290x91.png 290w" width="1808"/></p>
+<h3></h3>
+<h3>Solution Overview</h3>
+<p>vRealize Automation Cloud with VMware Cloud on AWS provides a highly flexible yet simple hybrid automation solution, with self-service APIs, governance and policy configuration, connected workflows and collaboration, good lifecycle management, and capacity and usage trend monitoring. It delivers scalability, speed, flexibility and reliability through DevOps-for-infrastructure capabilities. With vRealize Automation Cloud and VMware Cloud on AWS, customers can seamlessly consume IaaS, PaaS, FaaS and deliver VMware-based infrastructure environments across private and hybrid clouds.</p>
+<p></p>
+<h3>Key Capabilities</h3>
+<ol>
+<li><strong>Self-service catalog</strong> – Take advantage of the self-service capabilities available in the vRealize Automation Cloud catalog portal via VMware Service Broker. Via the out-of-the-box integration with VMware Cloud on AWS, publish content to the self-service catalog, and use project-based policies, governance and costing to manage resource access and utilization centrally. VMware Service Broker has the ability to bring together VMware Cloud on AWS machine blueprints, AWS native services and AWS CloudFormation Template (CFT) sourced items. There are various content sources for VMware Service Broker, such as VMware Code Stream pipelines, AWS CFTs, VMware Cloud Assembly™ blueprints, vRealize Orchestrator workflows, and Action Based Extensibility (ABX) actions.</li>
+<li><strong>Consumption of the software-defined data center</strong> – Utilize the out-of-the-box VMware Cloud on AWS cloud account as an endpoint within vRealize Automation Cloud to quickly and easily set up catalog items. With a single click, users can automatically apply the appropriate security groups and storage policies and proceed to deploying the VM. VMware Cloud on AWS uses VMware vSphere, VMware NSX and VMware vSAN as the underlying software-defined data center (SDDC) infrastructure, and vRealize Automation Cloud automates these constructs similarly to how it is done for on-premises SDDC environments.</li>
+<li><strong>Infrastructure as code</strong> – Build IaaS blueprints using IaC via the YAML editor or graphical interface, and source control with GitLab and GitHub integration. The vRealize Automation Cloud blueprint visual designer is a low-code graphical interface approach to building blueprints, catering to users ramping up their IaC skills. vRealize Automation Cloud offers VMware Cloud on AWS customers the benefit of using both methods to effortlessly drag and drop objects in the blueprint canvas, and then configure them with the YAML editor.</li>
+<li><strong>DevOps for infrastructure</strong> – Speed up applications and infrastructure delivery. vRealize Automation Cloud allows infrastructure and app pipelines in the VMware Code Stream service to be presented as items in the service catalog. Users can leverage the easy-to-use self-service content request process in the service catalog to launch pipelines. DevOps for infrastructure is at the heart of how vRealize Automation Cloud helps customers transform their infrastructure. For VMware Cloud on AWS customers, vRealize Automation Cloud provides a modern and integrated infrastructure DevOps automation solution across private hybrid cloud environments.</li>
+</ol>
+<p></p>
+<h3>Why vRealize Automation Cloud and VMware Cloud on AWS?</h3>
+<ul>
+<li><strong>Portability</strong> – Leverage a unified self-service provisioning and catalog layer with seamless workload portability across private and hybrid cloud infrastructure.</li>
+<li><strong>Flexibility</strong> – Enable automated infrastructure provisioning by providing a self-service catalog and pipelining infrastructure for cloud admins and manage it with governance policies for better insight and control.</li>
+<li><strong>Choice</strong> – Build designs from scratch using a rich set of building blocks (cloud-agnostic provisioning, AWS infrastructure as a service, AWS services), or request designs and images from third-party platforms via the self-service catalog.</li>
+<li><strong>Agility</strong> – Enable a fast response to business needs with accelerated development and delivery of complex workload topologies with IaC.</li>
+<li><strong>Consistency</strong> – Apply the same self-service catalog, content and policies in vRealize Automation Cloud across private and hybrid cloud environments. Provide centralized and streamlined operations with unified visibility and management across the hybrid cloud environment.</li>
+<li><strong>Ease of use</strong> – Utilize the vRealize Automation Cloud add-on tile on the VMware Cloud on AWS console to streamline customer onboarding.</li>
+</ul>
+<p></p>
+<p>Curious to learn more? Get started with these resources below:</p>
+<ul>
+<li>Want to learn the goodness of vRealize Automation Cloud when deployed on VMware Cloud on AWS? Read this <a href="https://blogs.vmware.com/management/2020/05/self-service-vmware-cloud-aws-vrealize-automation-part1.html">blog</a> and be on the lookout for the entire series</li>
+<li>Website: <a href="https://cloud.vmware.com/vmware-vrealize-automation-cloud?utm_expid=.YyPyVydKQEyZMXjNVhLv8w.1&amp;utm_referrer=https:%2F%2Fcloud.vmware.com%2Fvmc-aws%2Fsolutions">vRealize Automation Cloud</a></li>
+<li>Website: <a href="https://cloud.vmware.com/vmc-aws/solutions#vmware-solutions">vRealize Automation Cloud and VMware Cloud on AWS</a></li>
+<li>Solution Brief: <a href="https://assets.contentstack.io/v3/assets/blt58b49a8a0e43b5ff/blt555a5ea43acc2df3/5f07adf225b6aa6efeb896c5/vRealize_Automation_Cloud_and_VMware_Cloud_on_AWS_Solution_Brief_vF.pdf">vRealize Automation Cloud and VMware Cloud on AWS</a></li>
+<li><a href="https://cloud.vmware.com/vrealize-automation-cloud#get-started">Try vRealize Automation Cloud</a>, free for 45 days, or check out the <a href="https://labs.hol.vmware.com/HOL/catalogs/lab/7500">Hands-on Lab</a></li>
+<li>Connect with a VMware expert for a tailored vRealize Automation Cloud <a href="https://cloud.vmware.com/vrealize-automation-cloud#request-demo">demo</a> for you and your team</li>
+<li>Read more on <a href="https://blogs.vmware.com/management/">vRealize Automation Cloud Blog</a> and  <a id="post-30576-&amp;lpos=apps_scodevmw_:_109"></a><a href="http://vmwa.re/vmc-blog">VMware Cloud on AWS Blog</a></li>
+<li>Follow us on Twitter: <a href="https://twitter.com/vmwarecloudaws">@vmwarecloudaws</a> and <a href="https://twitter.com/vrealizeauto">@vRealizeAuto</a> and give us a shout with #vRealizeAutomationCloud, #vRAC, #VMWonAWS and #vRACforVMConAWS</li>
+</ul>
+<p></p>
+<p></p>
+<p></p>
+<div class="crp_related crp-rounded-thumbs"><h3>Related Posts:</h3><ul><li><a class="crp_link post-46631" href="https://blogs.vmware.com/management/2023/12/image-mapping-management-in-aria-automation-with-idem-provider-for-aria-automation.html"><figure><img alt="Image mapping management in Aria Automation with idem provider for Aria Automation." class="crp_thumb crp_firstcorrect" height="150" loading="lazy" sizes="(max-width: 150px) 100vw, 150px" src="https://blogs.vmware.com/management/files/2023/12/0-150x150.png" srcset="https://blogs.vmware.com/management/files/2023/12/0-150x150.png 150w, https://blogs.vmware.com/management/files/2023/12/0-85x85.png 85w, https://blogs.vmware.com/management/files/2023/12/0-360x360.png 360w" title="Image mapping management in Aria Automation with idem provider for Aria Automation." width="150"/></figure><span class="crp_title">Image mapping management in Aria Automation with idem…</span></a></li><li><a class="crp_link post-46469" href="https://blogs.vmware.com/management/2023/12/aria-automation-content-staging.html"><figure><img alt="Aria Automation Content Staging" class="crp_thumb crp_first" height="150" loading="lazy" src="https://lh7-us.googleusercontent.com/s1xnF265QVtCRH8ZfnmQDLUqz27MZBFBXKXiNFFkBYTEl63agry_rZjrcXZ46XggPFutvzWwdOTJuQuEtMl5l9wA_CVrDW-c257esrl2TPVA18DPrYgSPU3MY-wj7rmcZbzI-xTrwfZOx1OxrNP4gK8" title="Aria Automation Content Staging" width="150"/></figure><span class="crp_title">Aria Automation Content Staging</span></a></li><li><a class="crp_link post-46549" href="https://blogs.vmware.com/management/2023/12/vmware-tanzu-transformer-at-aws-reinvent-2023.html"><figure><img alt="VMware Tanzu Transformer at AWS re:Invent 2023" class="crp_thumb crp_featured" height="150" loading="lazy" sizes="(max-width: 150px) 100vw, 150px" src="https://blogs.vmware.com/management/files/2023/10/300DPIxvmw-lgo-tanzu-transformer-print_k-150x150.jpg" srcset="https://blogs.vmware.com/management/files/2023/10/300DPIxvmw-lgo-tanzu-transformer-print_k-150x150.jpg 150w, https://blogs.vmware.com/management/files/2023/10/300DPIxvmw-lgo-tanzu-transformer-print_k-85x85.jpg 85w, https://blogs.vmware.com/management/files/2023/10/300DPIxvmw-lgo-tanzu-transformer-print_k-360x360.jpg 360w" title="VMware Tanzu Transformer at AWS re:Invent 2023" width="150"/></figure><span class="crp_title">VMware Tanzu Transformer at AWS re:Invent 2023</span></a></li></ul><div class="crp_clear"></div></div> </div>
+<footer class="entry-footer">
+<div class="author-footer">
+<div class="author-avatar">
+<a href="https://blogs.vmware.com/management/author/alina_plingu">
+<img alt="" class="rounded-circle img-fluid" src="//blogs.vmware.com/management/files/2021/02/Alina-Thylander-scaled-70x70.jpg"/>
+</a>
+</div>
+<div class="author-details">
+<h4><a href="https://blogs.vmware.com/management/author/alina_plingu">Alina Thylander</a></h4>
+<p>Alina Thylander is a Senior Product Line Marketing Manager in VMware’s Modern Apps and Management Business Group. In this role, Alina drives messaging, positioning and consumption for Aria Automation. She…</p>
+<ul class="social-links">
+<li class="icon icon-twitter mr-1">
+<a href="https://twitter.com/AlinaThylander" target="_blank">
+<span class="sr-only">twitter</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+<div class="container background-white pl-4 pr-4 related-posts">
+<div class="row">
+<div class="col-12">
+<h2 class="mt-4 mb-3">Related Articles</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-12 col-md-4 stacked-posts">
+<article class="card post-30576 post type-post status-publish format-standard has-post-thumbnail hentry category-aria-automation category-automate-it category-cloud-automation category-cloud-management-platform category-vmware category-vrealize category-vrealize-suite tag-automation tag-cloud tag-cloud-automation tag-cloud-management tag-cloud-management-platform tag-vmware tag-vmware-cloud-management tag-vra tag-vrealize tag-vrealize-automation use-case-self-service-hybrid-cloud">
+<div class="image-wrap">
+<a href="https://blogs.vmware.com/management/2024/03/introducing-vmware-identity-manager-cluster-auto-recovery-in-vmware-aria-suite-lifecycle-8-14.html" title="Introducing VMware Identity Manager Cluster Auto-Recovery in VMware Aria Suite Lifecycle 8.14">
+<picture>
+<source media="(max-width: 768px)" srcset="https://blogs.vmware.com/management/files/2024/02/vmw-prod-ico-aria-rgb_vert-576x324.png"/>
+<source media="(max-width: 992px)" srcset="https://blogs.vmware.com/management/files/2024/02/vmw-prod-ico-aria-rgb_vert-752x423.png"/>
+<img alt="VMware Aria" class="" src="https://blogs.vmware.com/management/files/2024/02/vmw-prod-ico-aria-rgb_vert-576x324.png"></img></picture>
+</a>
+</div>
+<div class="content-wrap">
+<div class="content-inner">
+<a class="category-label" href="https://blogs.vmware.com/management/vmware-aria/vmware-aria-suite-lifecycle">VMware Aria Suite Lifecycle</a>
+<h2 class="title"><a href="https://blogs.vmware.com/management/2024/03/introducing-vmware-identity-manager-cluster-auto-recovery-in-vmware-aria-suite-lifecycle-8-14.html">Introducing VMware Identity Manager Cluster Auto-Recovery in VMware Aria Suite Lifecycle 8.14</a></h2>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//blogs.vmware.com/management/files/2023/01/me-30x30.png"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/management/author/smcdermott" rel="author">Scott McDermott</a>
+</div>
+<time class="updated" datetime="2024-03-01" pubdate="">March 1, 2024</time>
+</div> </div>
+</div>
+</article>
+</div>
+<div class="col-12 col-md-4 stacked-posts">
+<article class="card post-30576 post type-post status-publish format-standard has-post-thumbnail hentry category-aria-automation category-automate-it category-cloud-automation category-cloud-management-platform category-vmware category-vrealize category-vrealize-suite tag-automation tag-cloud tag-cloud-automation tag-cloud-management tag-cloud-management-platform tag-vmware tag-vmware-cloud-management tag-vra tag-vrealize tag-vrealize-automation use-case-self-service-hybrid-cloud">
+<div class="image-wrap">
+<a href="https://blogs.vmware.com/management/2024/02/deploy-avi-load-balancer-with-aria-automation-templates.html" title="Deploying VMware Avi Load Balancer resources with VMware Aria Automation Templates">
+<picture>
+<source media="(max-width: 768px)" srcset="https://blogs.vmware.com/management/files/2023/01/Aria-Automation-Logo-Blog-576x324.jpg"/>
+<source media="(max-width: 992px)" srcset="https://blogs.vmware.com/management/files/2023/01/Aria-Automation-Logo-Blog-752x423.jpg"/>
+<img alt="Aria Automation" class="" src="https://blogs.vmware.com/management/files/2023/01/Aria-Automation-Logo-Blog-576x324.jpg"/>
+</picture>
+</a>
+</div>
+<div class="content-wrap">
+<div class="content-inner">
+<a class="category-label" href="https://blogs.vmware.com/management/usecases/application_agility/automate-it/aria-automation">Aria Automation</a>
+<h2 class="title"><a href="https://blogs.vmware.com/management/2024/02/deploy-avi-load-balancer-with-aria-automation-templates.html">Deploying VMware Avi Load Balancer resources with VMware Aria Automation Templates</a></h2>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//blogs.vmware.com/management/files/2023/01/me-30x30.png"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/management/author/smcdermott" rel="author">Scott McDermott</a>
+</div>
+<time class="updated" datetime="2024-02-21" pubdate="">February 21, 2024</time>
+</div> </div>
+</div>
+</article>
+</div>
+<div class="col-12 col-md-4 stacked-posts">
+<article class="card post-30576 post type-post status-publish format-standard has-post-thumbnail hentry category-aria-automation category-automate-it category-cloud-automation category-cloud-management-platform category-vmware category-vrealize category-vrealize-suite tag-automation tag-cloud tag-cloud-automation tag-cloud-management tag-cloud-management-platform tag-vmware tag-vmware-cloud-management tag-vra tag-vrealize tag-vrealize-automation use-case-self-service-hybrid-cloud">
+<div class="image-wrap">
+<a href="https://blogs.vmware.com/management/2024/02/vmware-aria-automation-8-16-1-load-balancer-as-a-service.html" title="Enabling Load Balancer as a Service for VCF-based Private Cloud">
+<picture>
+<source media="(max-width: 768px)" srcset="https://blogs.vmware.com/management/files/2024/02/LBaaS-w-VCF-Aria-Automation-Avi-1.png"/>
+<source media="(max-width: 992px)" srcset="https://blogs.vmware.com/management/files/2024/02/LBaaS-w-VCF-Aria-Automation-Avi-1.png"/>
+<img alt="" class="" src="https://blogs.vmware.com/management/files/2024/02/LBaaS-w-VCF-Aria-Automation-Avi-1.png"/>
+</picture>
+</a>
+</div>
+<div class="content-wrap">
+<div class="content-inner">
+<a class="category-label" href="https://blogs.vmware.com/management/usecases/application_agility/automate-it/aria-automation">Aria Automation</a>
+<h2 class="title"><a href="https://blogs.vmware.com/management/2024/02/vmware-aria-automation-8-16-1-load-balancer-as-a-service.html">Enabling Load Balancer as a Service for VCF-based Private Cloud</a></h2>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//secure.gravatar.com/avatar/0aead249a516fd7bb7feeb726ff750eb?s=30&amp;d=https%3A%2F%2Fuser-images.githubusercontent.com%2F969755%2F61500768-7d535780-a981-11e9-8578-dc6bf989ffb2.png&amp;r=g"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/management/author/taka_uenishi" rel="author">Taka Uenishi</a>
+</div>
+<time class="updated" datetime="2024-02-21" pubdate="">February 21, 2024</time>
+</div> </div>
+</div>
+</article>
+</div>
+<div class="col-12 col-md-4 stacked-posts">
+<article class="card post-30576 post type-post status-publish format-standard has-post-thumbnail hentry category-aria-automation category-automate-it category-cloud-automation category-cloud-management-platform category-vmware category-vrealize category-vrealize-suite tag-automation tag-cloud tag-cloud-automation tag-cloud-management tag-cloud-management-platform tag-vmware tag-vmware-cloud-management tag-vra tag-vrealize tag-vrealize-automation use-case-self-service-hybrid-cloud">
+<div class="image-wrap">
+<a href="https://blogs.vmware.com/management/2024/02/whats-new-for-vmware-cloud-foundation-offering-vmware-aria-operations-for-networks-6-12.html" title="What’s New for VMware Cloud Foundation offering VMware Aria Operations for Networks 6.12">
+<picture>
+<source media="(max-width: 768px)" srcset="https://blogs.vmware.com/management/files/2024/02/vRNI-6-2-blog-fit2-576x324.png"/>
+<source media="(max-width: 992px)" srcset="https://blogs.vmware.com/management/files/2024/02/vRNI-6-2-blog-fit2-637x423.png"/>
+<img alt="" class="" src="https://blogs.vmware.com/management/files/2024/02/vRNI-6-2-blog-fit2-576x324.png"/>
+</picture>
+</a>
+</div>
+<div class="content-wrap">
+<div class="content-inner">
+<a class="category-label" href="https://blogs.vmware.com/management/vmware-aria-operations-for-networks">VMware Aria Operations for Networks</a>
+<h2 class="title"><a href="https://blogs.vmware.com/management/2024/02/whats-new-for-vmware-cloud-foundation-offering-vmware-aria-operations-for-networks-6-12.html">What’s New for VMware Cloud Foundation offering VMware Aria Operations for Networks 6.12</a></h2>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//blogs.vmware.com/management/files/2016/11/image07-3-30x30.png"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/management/author/sehjungh" rel="author">Sehjung Hah</a>
+</div>
+<time class="updated" datetime="2024-02-06" pubdate="">February 6, 2024</time>
+</div> </div>
+</div>
+</article>
+</div>
+<div class="col-12 col-md-4 stacked-posts">
+<article class="card post-30576 post type-post status-publish format-standard has-post-thumbnail hentry category-aria-automation category-automate-it category-cloud-automation category-cloud-management-platform category-vmware category-vrealize category-vrealize-suite tag-automation tag-cloud tag-cloud-automation tag-cloud-management tag-cloud-management-platform tag-vmware tag-vmware-cloud-management tag-vra tag-vrealize tag-vrealize-automation use-case-self-service-hybrid-cloud">
+<div class="image-wrap">
+<a href="https://blogs.vmware.com/management/2024/01/announcing-vmware-aria-automation-8-16-0-release.html" title="Announcing VMware Aria Automation 8.16.0 Release">
+<picture>
+<source media="(max-width: 768px)" srcset="https://blogs.vmware.com/management/files/2023/01/Aria-Automation-Logo-Blog-576x324.jpg"/>
+<source media="(max-width: 992px)" srcset="https://blogs.vmware.com/management/files/2023/01/Aria-Automation-Logo-Blog-752x423.jpg"/>
+<img alt="Aria Automation" class="" src="https://blogs.vmware.com/management/files/2023/01/Aria-Automation-Logo-Blog-576x324.jpg"/>
+</picture>
+</a>
+</div>
+<div class="content-wrap">
+<div class="content-inner">
+<a class="category-label" href="https://blogs.vmware.com/management/usecases/application_agility/automate-it/aria-automation">Aria Automation</a>
+<h2 class="title"><a href="https://blogs.vmware.com/management/2024/01/announcing-vmware-aria-automation-8-16-0-release.html">Announcing VMware Aria Automation 8.16.0 Release</a></h2>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//secure.gravatar.com/avatar/68f2076df88236cc88eda40330c5997a?s=30&amp;d=https%3A%2F%2Fuser-images.githubusercontent.com%2F969755%2F61500768-7d535780-a981-11e9-8578-dc6bf989ffb2.png&amp;r=g"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/management/author/jisabel" rel="author">Yang Isabel Jiang</a>
+</div>
+<time class="updated" datetime="2024-01-18" pubdate="">January 18, 2024</time>
+</div> </div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</article>
+</main><!-- /.main -->
+</div><!-- /.content -->
+</div><!-- /.wrap -->
+<footer class="content-info">
+<div id="page-footer"></div>
+</footer>
+<div class="personalization_div_1" style="min-height: 1px;"></div><div class="personalization_div_2" style="min-height: 1px;"></div>
+
+
+
+
+</body>
+</html>

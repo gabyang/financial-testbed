@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<!-- be_ixf, sdk, gho-->
+<meta content="php_sdk_1.4.26" id="be:sdk"/>
+<meta content="18ms" id="be:timer"/>
+<meta content="https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F" id="be:orig_url"/>
+<meta content="https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F" id="be:norm_url"/>
+<meta content="http%3A%2F%2Fixfd-api.bc0a.com%2Fapi%2Fixf%2F1.0.0%2Fget_capsule%2Ff00000000164305%2F1182154324%3Fclient%3Dphp_sdk%26client_version%3D1.4.26%26base_url%3Dhttps%253A%252F%252Fbanyanhill.com%252Fend-of-era-magnificent-7%252F%26orig_url%3Dhttps%253A%252F%252Fbanyanhill.com%252Fend-of-era-magnificent-7%252F%26user_agent%3Dmeta-externalagent%252F1.1%2B%2528%252Bhttps%253A%252F%252Fdevelopers.facebook.com%252Fdocs%252Fsharing%252Fwebmasters%252Fcrawler%2529" id="be:capsule_url"/>
+<meta content="1641235771513" id="be:api_dt_epoch"/>
+<meta content="1641235771513" id="be:mod_dt_epoch"/>
+<meta content="CbPYa/PFbEuxtKNrNyCeuIheLR1doxirhJ7bW2o42HUhMpl0+dl0K7CvH39h9GaHYsYpWSimNi7RG9iSUL/7M/VJC2SfEQt/cZcPWz1pb3ykED7QiquBhKNn6fctuBN9ERANA0MRXBaPYcSRDV6HeNu7i5QXhtAYjM7jv8RlMoztwZXMTrf65mJmL7LcxWPc3CpG66Oz8nGIu/onoQN9efYqZi2dH8htKk9AOueHtIXIHN+kVojmbeiln/SE5Oy20fO2+NysvVVV+boJ/ycZg4O6uRZp9eXYxKi+HfI+YSGusRUP/WLKae6/s3+73yUsZjOdgekSyHzjzJ3c9LDzpz/800LeBtGk8WiY8rKMaxCru3PeUsvQ56rEMapQSWRPPOCSMVFDy6Dr2Yq86CvgbRYAzenwnJAPA2z7X6bphnOXRT//QTxqtKQ3WGGDAglfZ1nT/k1o2W01d48zOoSvlADvz0CJ6kqCMfiYi+DQwPl+FFZbnvfbygTQnMRxMhSUrxls5Un9kbjeongr56gZVVwLg0ieeHlrTCs3/6UVnWwd5ABnp7JRr4jTjndm/pJgB8SGl8ml+G03fWH939j0lM/TDgeYGkwkNtqjsToDsuQDWFcjhTVdNKGDQnPPzwsBjwwxC771nPvlacJx3lnEufmd+SJDBFraDkG+jbmJtkMIG7/UMrR8V7HrJxlhi0uEs7PYLudaPwtBHv3N8ZffAmPCZ8kac60k3T95dp2g8Vf8wTchFO7loM4ewmxM1kP4HtCS0i9NebRzJwNrZEHfz/q3fsrYYXYLyzhZkot5N5ksIvN/6P/FK6JJ45U1+zuL5z7qLsiQN3pS1fK2MF/BYvRgGlk9rGqNKTLjDSYUulXkMXU40UBLrVpUZLnodA6TD45EWIQd5j01qK66c6HctsnKCuY5Gu9WtIsLEJwlVZPM4Wl+83Mxz6U7co//QVRlIF2GEV2HZdCtp8fXeoQTvHLKuh3QmIjB3Q+JVElZZBkgKzob11V1rM4XgiXZbIYkqtvFGqy/ifm1XBH4lzbXR4Ceuoz5uTeECCFCdny86BjbgHQwHqqXChVb+YIFjWeoBV5RdKdtU5REIP0jw6I+pLUjhE1K0XDPI6cLSU3CFrjiPiUnye695wGoJ00m8SBj98N9TPZYIwf/4qxtneDvAFn/UbbIlAMMzHerjoW8r2GVwi84rdrn/iqYSjsR0X6CIu90r9EGd7w+1u61vUK4lBhJImNXXW70YqbvrMa5kCpoWiknENNYmfRJF7zL9njSKh2h5Z68qyZPJGc7S5hXIL6TEIptGIWPsBmEqi8gqEr6jm2qn8WxnaK5it4g69+fOoOEZJoDmVd4E6neSQryT7g0eG80wQTsflnbYxSaMYER/TnQmqbujAWBotSc4VHwwJJHmAW7OBxMPGky8+NJ3IJc2rI2gF9cusqntLhZsz2r5zzQmBfxxXTcPEmtTcs4axmlzDcZOXAWJ3APPd4BHryr7SZhySIwnZOBYqvi2qTi1hhzfpjcJKXjxZDlDhCU6ILDu1qCB4KX0R+89Y4oMP1TYASL55kebsKpk+YL54BsOYdI84nDPuxVPqmYwm/G2Jk7Arg1KrykybuCOALz2qde1TwrLjV9MCMj86Va7/nQ4LaQT6YuSAfXiMmQ8M1SGF3jW5p3/aNdwCVStOWG3teF8NXh/NpHaZ3KJMNbidgj6mgk1Uzv1M9guCaF3mszdn6IiPc/DGV3Kr1FumTVw+qqje1MGg9UEJje2xUjY5KjRUO2Am3qwjHNBZWOqsef319CJ/HpH7x/w7U+GyRSs7RtxxPNtdB/wVYBpepXVKwZR/JiMGzEZQ5EKGncFUUpAK9wwxMseST30kb8O7CT7wpdaVdxlaFZn0/5OtF9BI5pSjOaR5f0bt7j/oeXYJU05ZEKSJ+dp6qRERiZXbEFfjYkbkMXfMS/Ezh9gkxNMkQzBUxV58ZxJGvDTIAd9ztTUBAN52stPXj5y8foccQUyKZniOEwKEQYgn339VOmEqYgRm716IQMQQJToiC+VWL5UQKtM4jgAjRN/EkuZygEli4R04eWcr+R5GTkkj5KatBnHU+0GnW7ihfu8kDANegzT0wVivxCK3jRy2D+qFgUKJn07ZAbkoqxq06U0PxLffHc48jAAQz2Dz454eT1oEFLWRQmuxCSBkzHBVSyIdx/sxUa4K76ksuD01FwcSrjWWgoVKL++wIonYSrfRBbAUVwZn9UUNpjZ/dgZtxyCyEF+SPVk1owE0CSWqPrHR/SRhVAC1BwZOKymizqKGqx53Spfb9QyfhVUJCscUySPzwmdiJyK7LAAGnBZNaMEKn0i4IYzv1fhZoagKGgn79z9DUQOdL49Lc1FX5hoXkKpgpc3uRCc83l4sl8VU7Q3KYgbf0Xf6f5J2+a1URjoS6K7zvCdZTmNlvGl+fVWcobcXW56CzP/c+9x2DUMsH8KjdRHbI=" id="be:diag"/>
+<meta content="false" id="be:messages"/>
+
+
+
+<meta charset="utf-8"/>
+<meta content="Evk1ArEBLA7juoIU9zNj5CZ78id4FLPFSfrZ-a7tBJw" name="google-site-verification"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<link href="https://banyanhill.com/xmlrpc.php" rel="pingback"/>
+<!--[if lt IE 9]>
+	<script src="https://banyanhill.com/wp-content/themes/Extra/scripts/ext/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+<link as="style" href="//s3.amazonaws.com/cdn.banyanhill.com/wp-content/themes/BanyanHill_3_0/css/bootstrap-grid.min.css" onload='this.onload=null; this.rel="stylesheet"' rel="preload"/>
+<link as="style" href="/wp-content/plugins/Customer-Service-Extension/assets/vendor/css/font-awesome.min.css?ver=5.6" onload='this.onload=null; this.rel="stylesheet"' rel="preload"/>
+<link as="font" crossorigin="" href="/wp-content/themes/Extra/fonts/ET-Extra.woff" rel="preload" type="font/ttf"/>
+<link as="font" crossorigin="" href="/wp-content/plugins/monarch/css/fonts/monarch.ttf" rel="preload" type="font/ttf"/>
+
+<meta content="2024 investing, adam o'dell, mag 7, Magnificent 7, Technology Sector" property="lytics:topics">
+<meta content="Adam O'Dell" property="lytics:author"/>
+<meta content="https://banyanhill.com/end-of-era-magnificent-7" property="lytics:url"/>
+
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v19.6 (Yoast SEO v19.13) - https://yoast.com/wordpress/plugins/seo/ -->
+<title>End of an Era for “Magnificent 7” Tech Stocks</title><link as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C700%7COpen%20Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C800italic%2C400%2C300%2C600%2C700%2C800&amp;subset=latin%2Clatin-ext&amp;display=swap" rel="preload"><link href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C700%7COpen%20Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C800italic%2C400%2C300%2C600%2C700%2C800&amp;subset=latin%2Clatin-ext&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"><noscript><link href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C700%7COpen%20Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C800italic%2C400%2C300%2C600%2C700%2C800&amp;subset=latin%2Clatin-ext&amp;display=swap" rel="stylesheet"/></noscript>
+<meta content="Magnificent 7 stocks dominated S&amp;P 500 returns in 2023. But Monday's downturn marks a critical moment as these stocks become &quot;dead money&quot;" name="description"/>
+<link href="https://banyanhill.com/end-of-era-magnificent-7/" rel="canonical"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="End of an Era for “Magnificent 7” Tech Stocks" property="og:title"/>
+<meta content="Last year belonged to Magnificent Seven stocks. Each posted impressive gains, with even the biggest laggard of the bunch delivering twice the return posted by the S&amp;P 500 index. But now, with interest rates set to fall, these dominant stocks may soon be passing the torch to a whole new generation of tech breakouts." property="og:description"/>
+<meta content="https://banyanhill.com/end-of-era-magnificent-7/" property="og:url"/>
+<meta content="Banyan Hill Publishing" property="og:site_name"/>
+<meta content="2024-08-08T18:00:03+00:00" property="article:published_time"/>
+<meta content="2024-08-08T16:53:52+00:00" property="article:modified_time"/>
+<meta content="https://cdn.banyanhill.com/wp-content/uploads/2024/08/08123452/shutterstock_354231302-scaled.jpg" property="og:image"/>
+<meta content="2560" property="og:image:width"/>
+<meta content="1707" property="og:image:height"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="Adam O'Dell" name="author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+
+<!-- / Yoast SEO Premium plugin. -->
+<link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+<link href="//a.b0e8.com" rel="dns-prefetch"/>
+<link href="//cdn.b0e8.com" rel="dns-prefetch"/>
+<link href="//api.lytics.io" rel="dns-prefetch"/>
+<link href="//banyanhill.s3.amazonaws.com" rel="dns-prefetch"/>
+<link href="//bat.bing.com" rel="dns-prefetch"/>
+<link href="//c.lytics.io" rel="dns-prefetch"/>
+<link href="//cdn.banyanhill.com" rel="dns-prefetch"/>
+<link href="//connect.facebook.net" rel="dns-prefetch"/>
+<link href="//fonts.gstatic.com" rel="dns-prefetch"/>
+<link href="//myalphaspace1.com" rel="dns-prefetch"/>
+<link href="//s3.amazonaws.com" rel="dns-prefetch"/>
+<link href="//script.crazyegg.com" rel="dns-prefetch"/>
+<link href="//static.adzerk.net" rel="dns-prefetch"/>
+<link href="//tags.srv.stackadapt.com" rel="dns-prefetch"/>
+<link href="//www.facebook.com" rel="dns-prefetch"/>
+<link href="//www.google-analytics.com" rel="dns-prefetch"/>
+<link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://banyanhill.com/feed/" rel="alternate" title="Banyan Hill Publishing » Feed" type="application/rss+xml"/>
+<link href="https://banyanhill.com/comments/feed/" rel="alternate" title="Banyan Hill Publishing » Comments Feed" type="application/rss+xml"/>
+<link href="https://banyanhill.com/end-of-era-magnificent-7/feed/" rel="alternate" title="Banyan Hill Publishing » End of an Era for “Magnificent 7” Tech Stocks Comments Feed" type="application/rss+xml"/>
+<meta content="Banyanhill v.3.0" name="generator"/><link as="style" href="https://banyanhill.com/wp-content/plugins/Customer-Service-Extension/assets/css/styles.css?ver=1604667205" id="plugin-css-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/Customer-Service-Extension/assets/vendor/css/font-awesome.min.css?ver=1543606887" id="font-awesome-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/agora-live-content//assets/agora_live_content_elements_styles.css?ver=1638534428" id="agora-live-content-elements-styles-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/bh_extras/css/bh-extras-shared.css?date=2021-05-07-000&amp;ver=1620389497" id="bh-extras-shared-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-includes/css/dist/block-library/style.min.css?ver=1649190991" id="wp-block-library-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/highlight-and-share/dist/has-cts-style.css?ver=1629866954" id="has-style-frontend-css-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+
+<link as="style" href="https://banyanhill.com/wp-content/plugins/magic-link-wp-plugin-fix-frontend_bootstrap_remove@86c923f21fa/src/../assets/css/main.css?ver=1710950303" id="agora_magic_link_main-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/popular-post-widget/inc/style.css?ver=1543840053" id="stylesheet-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/tfs-customer-self-service-v2-master@41661ea2cbd_bh/assets/vendor/css/featherlight.min.css?ver=1709658112" id="featherlight-css-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/tfs-customer-self-service-v2-master@41661ea2cbd_bh/assets/css/tfs-css-plugin-sitewide.css?ver=1709658104" id="tfs-css-css-sitewide-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/middleware-authentication-master@c47cc9e7a27/css/remodal.css?ver=1709658462" id="middleware-authentication-master@c47cc9e7a27/plugin.phpstyles_remodal-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/middleware-authentication-master@c47cc9e7a27/css/frontend.css?ver=1709901511" id="mw_auth_frontend-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/monarch/css/style.css?ver=1619692124" id="et_monarch-css-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/themes/Extra/style.min.css?ver=1647391823" id="extra-style-parent-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+
+<link as="style" href="https://banyanhill.com/wp-content/plugins/highlight-and-share/css/highlight-and-share-emails.css?ver=1629866954" id="highlight-and-share-email-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/plugins/highlight-and-share/css/highlight-and-share.css?ver=1629866954" id="highlight-and-share-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/themes/BanyanHill_3_0/css/modal-styles.css?ver=1547574038" id="modal-styles-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+<link as="style" href="https://banyanhill.com/wp-content/themes/BanyanHill_3_0/style.css?ver=1543951242" id="extra-style-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://banyanhill.com/wp-json/" rel="https://api.w.org/"/><link href="https://banyanhill.com/wp-json/wp/v2/posts/811563" rel="alternate" type="application/json"/><link href="https://banyanhill.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://banyanhill.com/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+<meta content="WordPress 5.9.10" name="generator"/>
+<link href="https://banyanhill.com/?p=811563" rel="shortlink"/>
+<link href="https://banyanhill.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F" rel="alternate" type="application/json+oembed"/>
+<link href="https://banyanhill.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" rel="stylesheet"/>
+
+
+
+<link as="font" crossorigin="" href="https://banyanhill.com/wp-content/themes/Extra/fonts/ET-Extra.woff" rel="preload"/>
+<link as="font" crossorigin="" href="https://banyanhill.com/wp-content/plugins/monarch/css/fonts/monarch.ttf" rel="preload"/>
+<link as="font" crossorigin="" href="https://banyanhill.com/wp-content/plugins/Customer-Service-Extension/assets/vendor/fonts/fontawesome-webfont.woff2" rel="preload"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport"/><link href="https://banyanhill.com/end-of-era-magnificent-7/amp/" rel="amphtml"/><!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+<!-- Facebook Pixel Code -->
+
+<noscript><img height="1" src="https://www.facebook.com/tr?id=269110233792003&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
+<!-- End Facebook Pixel Code -->
+<meta content="MreErLuryDAlILMF0Ws36KSVVCfK7lHx7f2u-ANT_QQ" name="google-site-verification"/><meta content="gVbqA9sLjJ8THVf5mCY2XAJ5gDpNWN62bY7nGH9BG0A" name="google-site-verification"/><link href="https://cdn.banyanhill.com/wp-content/uploads/2021/05/05110622/cropped-180x180_BanyanFavicon-32x32.jpg" rel="icon" sizes="32x32">
+<link href="https://cdn.banyanhill.com/wp-content/uploads/2021/05/05110622/cropped-180x180_BanyanFavicon-192x192.jpg" rel="icon" sizes="192x192">
+<link href="https://cdn.banyanhill.com/wp-content/uploads/2021/05/05110622/cropped-180x180_BanyanFavicon-180x180.jpg" rel="apple-touch-icon">
+<meta content="https://cdn.banyanhill.com/wp-content/uploads/2021/05/05110622/cropped-180x180_BanyanFavicon-270x270.jpg" name="msapplication-TileImage"></meta></link></link></link></link></link></meta></head>
+<body class="post-template-default single single-post postid-811563 single-format-standard et_monarch et_extra et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav boxed_layout et_pb_gutters3 et_primary_nav_dropdown_animation_Default et_secondary_nav_dropdown_animation_Default with_sidebar with_sidebar_right et_includes_sidebar et-db load-more-single has-body">
+<!-- be_ixf, bodystr, _body_open -->
+<!-- be_ixf, sdk, is -->
+<span id="be:sdk_is" style="display:none!important">be_ixf;ym_202411 d_16; ct_50</span>
+<ul id="be_sdkms_capsule" style="display:none!important">
+<li class="be_sdkms_sdk_version">be_ixf; php_sdk; php_sdk_1.4.26</li>
+<li id="be_sdkms_original_url">https://banyanhill.com/end-of-era-magnificent-7/</li>
+<li id="be_sdkms_normalized_url">https://banyanhill.com/end-of-era-magnificent-7/</li>
+</ul>
+<div class="page-container" id="page-container">
+<!-- Header -->
+<header class="header left-right">
+
+<div id="native-site-header">
+<!-- native-site-links -->
+<div id="native-site-links">
+<ul>
+<li class="site-mam">
+<a href="
+https://moneyandmarkets.com/">Money and Markets</a>
+</li>
+<li class="site-twf" style=" ">
+<a href="
+https://totalwealthfellowship.com/">Total Wealth Fellowship</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- #top-header -->
+<div id="top-header" style="">
+<div class="container">
+<!-- Secondary Nav -->
+<div class="" id="et-secondary-nav">
+<ul class="nav" id="et-secondary-menu"><li class="menu-item login-logout"><a href="/customer-login?redirect_to=/end-of-era-magnificent-7/"><i class="fa fa-lock"></i> Login</a></li></ul> </div>
+<!-- #et-info -->
+<div id="et-info">
+<!-- .et-top-search -->
+<!-- cart -->
+</div>
+</div><!-- /.container -->
+</div><!-- /#top-header -->
+<!-- Main Header -->
+<div id="main-header-wrapper">
+<div data-fixed-height="60" id="main-header">
+<div class="container">
+<!-- ET Ad -->
+<!-- Logo -->
+<a class="logo" data-fixed-height="51" href="https://banyanhill.com/">
+<img alt="Banyan Hill Publishing" id="logo" src="https://cdn.banyanhill.com/wp-content/uploads/2014/10/06072331/banyan-logo-New.png"></img></a>
+<!-- ET Navigation -->
+<div class="" id="et-navigation">
+<ul class="nav" id="et-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-128599" id="menu-item-128599"><a href="https://banyanhill.com/category/investing/">Investing</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-449886" id="menu-item-449886"><a href="/stock" title="Market Research">Market Research</a></li>
+<li class="experts-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children mega-menu menu-item-has-children mega-menu-cols menu-item-313836" id="menu-item-313836"><a href="https://banyanhill.com/meet-our-experts/">Meet Our Experts</a>
+<ul class="sub-menu">
+<li class="charles-mizrahi menu-item menu-item-type-post_type menu-item-object-expert menu-item-358904" id="menu-item-358904"><a href="https://banyanhill.com/expert/charles-mizrahi/" title="Charles Mizrahi">Charles Mizrahi</a></li>
+<li class="ian-king menu-item menu-item-type-post_type menu-item-object-expert menu-item-348352" id="menu-item-348352"><a href="https://banyanhill.com/expert/ian-king/" title="Ian King">Ian King</a></li>
+<li class="adam-odell menu-item menu-item-type-post_type menu-item-object-expert menu-item-794493" id="menu-item-794493"><a href="https://banyanhill.com/expert/adam-odell/">Adam O’Dell</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760862" id="menu-item-760862"><a href="https://banyanhill.com/banyan-edge/">Free Newsletter</a></li>
+<li class="standard-nav-item premium-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-763067" id="menu-item-763067"><a href="https://banyanhill.com/premium-services/">Premium Services</a></li>
+<li class="experts-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children mega-menu menu-item-has-children mega-menu-cols menu-item-372010" id="menu-item-372010"><a href="https://banyanhill.com/about-us/">About Us</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685877" id="menu-item-685877"><a href="https://banyanhill.com/about-us/">Our Vision</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685874" id="menu-item-685874"><a href="https://banyanhill.com/culture/">Our Goals &amp; Values</a></li>
+</ul>
+</li>
+<li class="et-top-search-primary-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-348319" id="menu-item-348319"><a><span class="search-icon" id="et-search-icon"></span><div class="et-top-search"><form action="/" class="et-search-form" method="get" role="search"><input class="et-search-field" name="s" placeholder="Search" title="Search for:" type="search" value=""/><button aria-label="Search Submit" class="et-search-submit" title="Search Submit"></button></form></div></a></li>
+<li class="standard-nav-item contact-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-336532" id="menu-item-336532"><a href="https://banyanhill.com/contact-us/">Contact Us</a></li>
+<li class="menu-item login-logout"><a href="/customer-login?redirect_to=/end-of-era-magnificent-7/"><i class="fa fa-lock"></i> Login</a></li></ul> <div id="et-mobile-navigation">
+<span class="show-menu">
+<div class="show-menu-button">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<p>Select Page</p>
+</span>
+<nav></nav>
+</div> <!-- /#et-mobile-navigation --> </div><!-- /#et-navigation -->
+</div><!-- /.container -->
+</div><!-- /#main-header -->
+</div><!-- /#main-header-wrapper -->
+</header>
+<div id="main-content">
+<div class="container">
+<div class="clearfix" id="content-area">
+<div class="et_pb_extra_column_main">
+<p id="breadcrumbs"><span><span><a href="https://banyanhill.com/">Home</a></span> » <span><a href="https://banyanhill.com/category/banyan-edge/">Banyan Edge</a></span> » <span aria-current="page" class="breadcrumb_last">End of an Era for “Magnificent 7” Tech Stocks</span></span></p> <article class="module single-post-module post-811563 post type-post status-publish format-standard has-post-thumbnail hentry category-banyan-edge category-technology category-trending tag-2024-investing tag-adam-odell tag-mag-7 tag-magnificent-7 tag-technology-sector et-has-post-format-content et_post_format-et-post-format-standard" data-category="Banyan Edge" data-scroll-posts="" data-title="End of an Era for “Magnificent 7” Tech Stocks" data-url="end-of-era-magnificent-7" id="post-811563">
+<div class="post-header">
+<h1 class="entry-title">End of an Era for “Magnificent 7” Tech Stocks</h1>
+<div class="post-meta vcard">
+<p class="post-meta-author-avatar"><img alt="Adam O’Dell" src="https://cdn.banyanhill.com/wp-content/uploads/2022/12/29072008/600x700_AdamOdell-1-150x150.jpg"/></p>
+<div>
+<p>Posted by <a class="url fn" href="https://banyanhill.com/author/adamodell/" rel="author" title="Posts by Adam O'Dell">Adam O'Dell</a><span class="post-meta-separator">|</span><span class="updated">Aug 8, 2024</span><span class="post-meta-separator">|</span><a href="https://banyanhill.com/category/banyan-edge/" rel="tag">Banyan Edge</a>, <a href="https://banyanhill.com/category/technology/" rel="tag">Technology</a>, <a href="https://banyanhill.com/category/trending/" rel="tag">Trending</a></p>
+<p>3 minute, 2 second read</p>
+</div>
+</div>
+</div>
+<div class="post-thumbnail header">
+<img alt="End of an Era for “Magnificent 7” Tech Stocks" class="loading" data-src="https://cdn.banyanhill.com/wp-content/uploads/2024/08/08123452/shutterstock_354231302-440x264.jpg" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDBweCIgIGhlaWdodD0iNDBweCIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0ibGRzLWVjbGlwc2UiIHN0eWxlPSJhbmltYXRpb24tcGxheS1zdGF0ZTogcnVubmluZzsgYW5pbWF0aW9uLWRlbGF5OiAwczsgYmFja2dyb3VuZDogbm9uZTsiPjxwYXRoIG5nLWF0dHItZD0ie3tjb25maWcucGF0aENtZH19IiBuZy1hdHRyLWZpbGw9Int7Y29uZmlnLmNvbG9yfX0iIHN0cm9rZT0ibm9uZSIgZD0iTTEwIDUwQTQwIDQwIDAgMCAwIDkwIDUwQTQwIDQzIDAgMCAxIDEwIDUwIiBmaWxsPSJyZ2JhKDAlLDAlLDAlLDAuNikiIHRyYW5zZm9ybT0icm90YXRlKDM2MCAtOC4xMDg3OGUtOCAtOC4xMDg3OGUtOCkiIGNsYXNzPSIiIHN0eWxlPSJhbmltYXRpb24tcGxheS1zdGF0ZTogcnVubmluZzsgYW5pbWF0aW9uLWRlbGF5OiAwczsiPjxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBjYWxjTW9kZT0ibGluZWFyIiB2YWx1ZXM9IjAgNTAgNTEuNTszNjAgNTAgNTEuNSIga2V5VGltZXM9IjA7MSIgZHVyPSIwLjVzIiBiZWdpbj0iMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBjbGFzcz0iIiBzdHlsZT0iYW5pbWF0aW9uLXBsYXktc3RhdGU6IHJ1bm5pbmc7IGFuaW1hdGlvbi1kZWxheTogMHM7Ij48L2FuaW1hdGVUcmFuc2Zvcm0+PC9wYXRoPjwvc3ZnPg=="/> </div>
+<div class="post-wrap">
+<div class="post-content entry-content">
+<div class="has-content-area" data-hashtags="" data-title="End of an Era for “Magnificent 7” Tech Stocks" data-url="https://banyanhill.com/end-of-era-magnificent-7/"><p>In the long run, Monday’s pullback is little more than a blip on the radar.</p>
+<p>Stocks are already recovering and investors seem cautiously optimistic about the months ahead.</p>
+<p>But Monday also marked a critical turning point for some of the market’s top stocks … the so-called “Magnificent Seven.”</p>
+<p>If you look at the market reaction following the July 11 CPI report and during this most recent sell-off, you see that investors don’t seem to be as interested in those seven Big Tech stocks anymore.</p>
+<p>Tech stocks in general are struggling to keep up, along with most other large-cap growth stocks.</p>
+<p>Let’s zoom in for a closer look at this week’s market action, and identify whether this marks a major turning point for America’s most popular stocks…</p>
+<h2><strong>No Longer a Magnificent World for Mega-Cap Stocks</strong></h2>
+<p>Last year belonged to Magnificent Seven stocks.</p>
+<p>Each posted impressive gains, with even the biggest laggard of the bunch delivering twice the return posted by the S&amp;P 500 index:</p>
+<p><img alt="Magnificent 7 Stocks Soar" class="aligncenter wp-image-811567" height="702" loading="lazy" sizes="(max-width: 702px) 100vw, 702px" src="https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122654/mag71.jpg" srcset="https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122654/mag71.jpg 1200w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122654/mag71-150x150.jpg 150w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122654/mag71-768x768.jpg 768w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122654/mag71-575x575.jpg 575w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122654/mag71-1080x1080.jpg 1080w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122654/mag71-440x440.jpg 440w" width="702"/></p>
+<p>This surge was all about artificial intelligence (AI).</p>
+<p>ChatGPT’s release in November 2022 unleashed a tidal wave of demand for next-generation AI gadgets and innovations.</p>
+<p>But AI research can be extremely expensive.</p>
+<p>And at the time, interest rates and borrowing costs were still too high for many smaller companies to feasibly compete.</p>
+<p>Meanwhile, mega-cap tech stocks like Apple Inc. (Nasdaq: <span class="chart-display" data-ticker="APPL">APPL<span class="rwc-container" data-symbol="APPL"><span class="rwc-ticker-title"></span><span class="rwc-ticker-time"></span><span class="rwc-ticker-chart"></span><span class="rwc-ticker-footer"></span></span></span>) and Microsoft Corp. (Nasdaq: <span class="chart-display" data-ticker="MSFT">MSFT<span class="rwc-container" data-symbol="MSFT"><span class="rwc-ticker-title"></span><span class="rwc-ticker-time"></span><span class="rwc-ticker-chart"></span><span class="rwc-ticker-footer"></span></span></span>) can comfortably fund those new developments through existing revenue. They can pour billions into risky AI projects, even if those projects take years to bear fruit. Apple spent 10 years developing its now defunct “AI Car,” for example.</p>
+<p>Mag 7 stocks also have the critical advantage of feeling “safe” to the average investor. These companies are household names and established blue-chip stocks. And with the growing popularity of index investing, many investors ended up buying shares automatically (whether they knew it or not).</p>
+<p>Unfortunately, all this continued buying has driven Mag 7 valuations into the stratosphere.</p>
+<p>I’ve repeatedly warned <em>Money &amp; Markets Daily</em>readers about these dangerously high valuations for <a href="https://moneyandmarkets.com/magnificent-7-nasdaq-rebalance/?cid=08e36c3b-aa7b-4f1f-9506-469f4ad82e40" rel="noopener" target="_blank">over a year now</a>, and the problem has only gotten worse.</p>
+<p>As recently as this March, Mag 7 valuations were nearly <em>twice as high</em>as the S&amp;P 500 by equal weight:</p>
+<p style="text-align: center;"><strong>Magnificent Seven Stock Valuations Remain Sky-High (P/E ratio)</strong></p>
+<p><img alt="Magnificent 7 reach sky-high valuations" class="wp-image-811566 aligncenter" height="379" loading="lazy" sizes="(max-width: 706px) 100vw, 706px" src="https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122601/mag72.png" srcset="https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122601/mag72.png 2641w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122601/mag72-768x412.png 768w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122601/mag72-1536x824.png 1536w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122601/mag72-2048x1098.png 2048w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122601/mag72-575x308.png 575w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/08122601/mag72-1080x579.png 1080w" width="706"/></p>
+<p>Mag 7 stocks certainly will always carry a premium to reflect their dominance and strong future prospects.</p>
+<p>But they don’t deserve a price that’s twice as high for every dollar they earn. Especially now that interest rates are coming down, opening the door for small-cap stocks to bring on more competition.</p>
+<p>So … where do we go from here?</p>
+<p>Is a crash or correction inevitable for the Magnificent Seven?</p>
+<h2><strong>From Market Darlings to “Dead Money”</strong></h2>
+<p>Tech stocks already seem to be on the rebound. But Magnificent Seven stocks will likely be “dead money” for the foreseeable future.</p>
+<p>That means we won’t see a protracted crash that drives each stock 15 to 20% lower from here. But we also won’t see a “V-shaped” recovery that sends AAPL and MSFT to new highs over the next few weeks.</p>
+<p>Instead, you can expect volatile range trading for the Mag 7 in the months ahead. With valuations still quite high, traders will look to these stocks as a great opportunity for profit-taking.</p>
+<p>So shares will likely move sideways in the months ahead — unless unexpected bad news drives them lower.</p>
+<p>Personally, I wouldn’t want to be caught in a leveraged position in any of the Magnificent Seven stocks right now.</p>
+<p></p>
+<p>To good profits,</p>
+<p><img alt="" class="alignnone size-full wp-image-810834" height="96" loading="lazy" src="https://cdn.banyanhill.com/wp-content/uploads/2024/07/25142348/AOD-sig.png" width="175"/></p>
+<p><a href="https://banyanhill.com/expert/adam-odell/" rel="noopener" target="_blank"><strong>Adam O’Dell</strong></a></p>
+<p>Chief Investment Strategist, Money &amp; Markets</p>
+</div><span class="et_social_bottom_trigger"></span> </div>
+<!-- Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v4.1.4 -->
+<!--ins data-revive-zoneid="22" data-revive-id="623abf93e179094d5059d128355ac65e" data-revive-keyword=""></ins-->
+
+</div>
+</article>
+<nav class="post-nav">
+<div class="nav-links clearfix">
+<div class="nav-link nav-link-prev"><a href="https://banyanhill.com/how-to-make-money-in-stocks-when-fear-reigns/" rel="prev"><span class="text"><span>«</span> Previous</span><span class="title"><img alt="" class="attachment-extra-image-small size-extra-image-small loading wp-post-image" data-src="https://cdn.banyanhill.com/wp-content/uploads/2024/08/07140215/shutterstock_2455089681-150x150.jpg" height="150" loading="lazy" sizes="(max-width: 150px) 100vw, 150px" srcset="https://cdn.banyanhill.com/wp-content/uploads/2024/08/07140215/shutterstock_2455089681-150x150.jpg 150w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/07140215/shutterstock_2455089681-440x440.jpg 440w" width="150"/>How to Make Money in Stocks When Fear Reigns</span></a></div>
+<div class="nav-link nav-link-next"><a href="https://banyanhill.com/formula-1-stock-stalls/" rel="next"><span class="text">Next <span>»</span></span><span class="title">Formula 1 Stock Stalls in Race to the Finish Line<img alt="Formula 1 Racing Action 2024" class="attachment-extra-image-small size-extra-image-small loading wp-post-image" data-src="https://cdn.banyanhill.com/wp-content/uploads/2024/08/12142646/shutterstock_2312310499-150x150.jpg" height="150" loading="lazy" sizes="(max-width: 150px) 100vw, 150px" srcset="https://cdn.banyanhill.com/wp-content/uploads/2024/08/12142646/shutterstock_2312310499-150x150.jpg 150w, https://cdn.banyanhill.com/wp-content/uploads/2024/08/12142646/shutterstock_2312310499-440x440.jpg 440w" width="150"/></span></a></div>
+</div>
+</nav>
+<!-- Related Posts -->
+<div class="et_extra_other_module related-posts" name="related">
+<div class="related-posts-header"><h3>Recommended For You</h3></div>
+<div class="related-posts-content clearfix">
+<div class="related-post">
+<div class="featured-image">
+<a class="post-thumbnail" href="https://banyanhill.com/why-election-day-will-always-be-about-more-than-just-voting/" rel="bookmark" title="Why Election Day Will Always Be About More Than Just Voting">
+<img alt="" class="attachment-extra-image-small size-extra-image-small loading wp-post-image" data-src="https://cdn.banyanhill.com/wp-content/uploads/2024/10/30115939/shutterstock_2517604077-440x264.jpg" height="264" loading="lazy" sizes="(max-width: 440px) 100vw, 440px" srcset="https://cdn.banyanhill.com/wp-content/uploads/2024/10/30115939/shutterstock_2517604077-440x264.jpg 440w, https://cdn.banyanhill.com/wp-content/uploads/2024/10/30115939/shutterstock_2517604077-1280x768.jpg 1280w, https://cdn.banyanhill.com/wp-content/uploads/2024/10/30115939/shutterstock_2517604077-627x376.jpg 627w" width="440"/> <span class="et_pb_extra_overlay"></span>
+</a>
+</div>
+<h4 class="title">
+<a href="https://banyanhill.com/why-election-day-will-always-be-about-more-than-just-voting/" rel="bookmark" title="Why Election Day Will Always Be About More Than Just Voting">Why Election Day Will Always Be About More Than Just Voting</a>
+</h4>
+</div>
+<!--ins class="related-post" data-revive-zoneid="29" data-revive-id="623abf93e179094d5059d128355ac65e"></ins-->
+<div class="related-post">
+<div class="featured-image">
+<a class="post-thumbnail" href="https://banyanhill.com/election-results-are-in-time-to-change-our-approach/" rel="bookmark" title="Election Results Are IN: Time to Change Our Approach?">
+<img alt="" class="attachment-extra-image-small size-extra-image-small loading wp-post-image" data-src="https://cdn.banyanhill.com/wp-content/uploads/2024/11/06130722/shutterstock_2529055697-440x264.jpg" height="264" loading="lazy" sizes="(max-width: 440px) 100vw, 440px" srcset="https://cdn.banyanhill.com/wp-content/uploads/2024/11/06130722/shutterstock_2529055697-440x264.jpg 440w, https://cdn.banyanhill.com/wp-content/uploads/2024/11/06130722/shutterstock_2529055697-1280x768.jpg 1280w, https://cdn.banyanhill.com/wp-content/uploads/2024/11/06130722/shutterstock_2529055697-627x376.jpg 627w" width="440"/> <span class="et_pb_extra_overlay"></span>
+</a>
+</div>
+<h4 class="title">
+<a href="https://banyanhill.com/election-results-are-in-time-to-change-our-approach/" rel="bookmark" title="Election Results Are IN: Time to Change Our Approach?">Election Results Are IN: Time to Change Our Approach?</a>
+</h4>
+</div>
+<!--ins class="related-post" data-revive-zoneid="30" data-revive-id="623abf93e179094d5059d128355ac65e"></ins-->
+</div>
+</div>
+<div id="disqus_thread" name="comments"></div>
+<!-- You can start editing here. -->
+<section id="comment-wrap">
+<h2 class="page_title" id="comments">1 Comment</h2>
+<ol class="commentlist clearfix">
+<li class="comment even thread-even depth-1" id="li-comment-16234">
+<article class="comment-body clearfix" id="comment-16234">
+<div class="comment_avatar">
+<img alt="SONJA MASTOVICH" class="avatar avatar-80 photo" height="80" loading="lazy" src="https://secure.gravatar.com/avatar/804f93e2f1d20e42ce29ff6cbdcb81c4?s=80&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/804f93e2f1d20e42ce29ff6cbdcb81c4?s=160&amp;d=mm&amp;r=g 2x" width="80"/> </div>
+<div class="comment_postinfo">
+<span class="fn">SONJA MASTOVICH</span> <span class="comment_date">on August 26, 2024 at 2:08 PM</span>
+</div>
+<div class="comment_area">
+<div class="comment-content clearfix">
+<p>i enjoy your newsletter very much</p>
+</div>
+</div>
+</article>
+</li><!-- #comment-## -->
+</ol>
+</section>
+</div><!-- /.et_pb_extra_column.et_pb_extra_column_main -->
+
+</div> <!-- #content-area -->
+</div> <!-- .container -->
+</div> <!-- #main-content -->
+<div class="agora_live_content_shortcode" id="agora_live_content_shortcode">
+<div class="agora_live_content_shortcode_BHPRODARTICLEPAGE_content" id="agora_live_content_shortcode_BHPRODARTICLEPAGE_content">
+<!-- LIVE CONTENT DISPLAYS HERE -->
+</div>
+</div>
+
+<!--IXF: The following <div> block needs to be placed in the location where the link equity block will be displayed-->
+<!--IXF: For your website, the location is  before footer -->
+<div class="be-ix-link-block">Link Equity Target Div</div>
+<!--IXF: end-->
+<footer class="footer_columns_3" id="footer">
+<div class="container">
+<div class="et_pb_extra_row container-width-change-notify">
+<div class="et_pb_extra_column odd column-1">
+<div class="et_pb_widget widget_text" id="text-23"><h4 class="widgettitle">Footer Information</h4> <div class="textwidget"><div class="footer_image"><img alt="banyan-logo-New" class="size-full wp-image-257270 loading" data-src="https://banyanhill.com/wp-content/uploads/2018/12/banyan-logo-New_white.png" width="200"/></div>
+<div class="footer_contact_info">
+<p>702 Cathedral Street<br/>
+Baltimore, MD 21201 US</p>
+<p><strong>Toll-Free Phone:</strong> <a href="tel:1-866-584-4096">1-866-584-4096</a></p>
+<p style="font-size: 9px; display: block; line-height: 14px !important;"><strong>Disclaimer</strong><br/>
+Nothing herein should be considered personalized investment advice. The advice we provide is published generally, is not personal to you and does not take account of your personal circumstances. You should not base investment decisions solely on this document.</p>
+</div>
+</div>
+</div> <!-- end .et_pb_widget --><div class="et_pb_widget widget_text" id="text-24"><h4 class="widgettitle">Social Media</h4> <div class="textwidget"><ul class="footer-social-nav">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+</div> <!-- end .et_pb_widget --> </div>
+<div class="et_pb_extra_column even column-2">
+<div class="et_pb_widget widget_nav_menu" id="nav_menu-2"><h4 class="widgettitle">ABOUT US</h4><div class="menu-nav-footer-container"><ul class="menu" id="menu-nav-footer"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150553" id="menu-item-150553"><a href="https://banyanhill.com/about-us/">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307748" id="menu-item-307748"><a href="https://banyanhill.com/meet-our-experts/">Meet Experts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427715" id="menu-item-427715"><a href="https://banyanhill.com/testimonials/">Testimonials</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-318480" id="menu-item-318480"><a href="https://recruiting.ultipro.com/WAD1002WADM/JobBoard/ff5a9a46-ec0b-45c4-a0c3-6b5d2350dbbc/?q=&amp;o=postedDateDesc" rel="noopener" target="_blank">Careers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-349867" id="menu-item-349867"><a href="/disclaimer/">Terms &amp; Conditions</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554546" id="menu-item-554546"><a href="https://banyanhill.com/sms-terms-and-conditions/">SMS Terms &amp; Conditions</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-187347" id="menu-item-187347"><a href="https://banyanhill.com/privacy-policy/">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-815193" id="menu-item-815193"><a href="https://banyanhill.com/cookie-policy/">Cookie Policy</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-483374" id="menu-item-483374"><a href="https://privacyportal-cdn.onetrust.com/dsarwebform/90ddaa87-9d70-4282-9d4f-d6cbd96bd224/3c18808a-ad77-4f45-953c-5e4a84d8dcf1.html" rel="noopener" target="_blank">Do Not Sell or Share My Personal Information</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-283878" id="menu-item-283878"><a href="https://banyanhill.com/contact-us/">Contact Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-481890" id="menu-item-481890"><a href="https://banyanhill.com/faq/">FAQ</a></li>
+</ul></div></div> <!-- end .et_pb_widget --> </div>
+<div class="et_pb_extra_column even column-4">
+<div class="widget_text et_pb_widget widget_custom_html" id="custom_html-9"><h4 class="widgettitle">Newsletter Sign Up</h4><div class="textwidget custom-html-widget"><div class="Newsletter_new"><h2 class="widget-title">Get the best of Banyan Hill, straight to your inbox today for FREE!</h2>
+<p>Subscribe to our <em>Banyan Edge</em> newsletter to get financial insights and tips from our top investment experts. Start investing with an edge today!</p>
+<iframe class="loading" data-src="/wp-content/signup/?buttontext=Sign Up&amp;emailtext=Enter Email Address&amp;xcode=X190YC02&amp;position=footer&amp;" width="100%"></iframe></div>
+</div></div> <!-- end .et_pb_widget --> </div>
+</div>
+</div>
+<div id="footer-bottom">
+<div class="container">
+<!-- Footer Info
+				<p id="footer-info">Designed by <a href="https://banyanhill.com" title="Banyan Hill Publishing">Banyan Hill Publishing</a> | Powered by <a href="http://www.wordpress.org">WordPress</a></p> -->
+<p id="footer-info">©2024 <strong>Banyan Hill Publishing</strong></p>
+<!-- Footer Navigation -->
+</div>
+</div>
+</footer>
+</div> <!-- #page-container -->
+<span id="back_to_top" title="Back To Top"></span>
+<div class="et_social_sidebar_networks et_social_visible_sidebar et_social_slideright et_social_animated et_social_rectangle et_social_sidebar_flip et_social_mobile_on">
+<ul class="et_social_icons_container"><li class="et_social_facebook">
+<a class="et_social_share" data-location="sidebar" data-post_id="811563" data-social_name="facebook" data-social_type="share" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F&amp;t=End%20of%20an%20Era%20for%20%E2%80%9CMagnificent%207%E2%80%9D%20Tech%20Stocks" rel="nofollow">
+<i class="et_social_icon et_social_icon_facebook"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_twitter">
+<a class="et_social_share" data-location="sidebar" data-post_id="811563" data-social_name="twitter" data-social_type="share" href="http://twitter.com/share?text=End%20of%20an%20Era%20for%20%E2%80%9CMagnificent%207%E2%80%9D%20Tech%20Stocks&amp;url=https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F" rel="nofollow">
+<i class="et_social_icon et_social_icon_twitter"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_linkedin">
+<a class="et_social_share" data-location="sidebar" data-post_id="811563" data-social_name="linkedin" data-social_type="share" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F&amp;title=End%20of%20an%20Era%20for%20%E2%80%9CMagnificent%207%E2%80%9D%20Tech%20Stocks" rel="nofollow">
+<i class="et_social_icon et_social_icon_linkedin"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li></ul>
+<span class="et_social_hide_sidebar et_social_icon"></span>
+</div><div class="et_social_mobile_button"></div>
+<div class="et_social_mobile et_social_fadein">
+<div class="et_social_heading">Share This</div>
+<span class="et_social_close"></span>
+<div class="et_social_networks et_social_simple et_social_rounded et_social_left">
+<ul class="et_social_icons_container"><li class="et_social_facebook">
+<a class="et_social_share" data-location="sidebar" data-post_id="811563" data-social_name="facebook" data-social_type="share" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F&amp;t=End%20of%20an%20Era%20for%20%E2%80%9CMagnificent%207%E2%80%9D%20Tech%20Stocks" rel="nofollow">
+<i class="et_social_icon et_social_icon_facebook"></i>
+<div class="et_social_network_label"><div class="et_social_networkname">https://www.facebook.com/BanyanHillPublishingFL/</div></div>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_twitter">
+<a class="et_social_share" data-location="sidebar" data-post_id="811563" data-social_name="twitter" data-social_type="share" href="http://twitter.com/share?text=End%20of%20an%20Era%20for%20%E2%80%9CMagnificent%207%E2%80%9D%20Tech%20Stocks&amp;url=https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F" rel="nofollow">
+<i class="et_social_icon et_social_icon_twitter"></i>
+<div class="et_social_network_label"><div class="et_social_networkname">https://twitter.com/BanyanHill/</div></div>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_linkedin">
+<a class="et_social_share" data-location="sidebar" data-post_id="811563" data-social_name="linkedin" data-social_type="share" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbanyanhill.com%2Fend-of-era-magnificent-7%2F&amp;title=End%20of%20an%20Era%20for%20%E2%80%9CMagnificent%207%E2%80%9D%20Tech%20Stocks" rel="nofollow">
+<i class="et_social_icon et_social_icon_linkedin"></i>
+<div class="et_social_network_label"><div class="et_social_networkname">https://www.linkedin.com/company/banyanhillpublishing/</div></div>
+<span class="et_social_overlay"></span>
+</a>
+</li></ul>
+</div>
+</div>
+<div class="et_social_mobile_overlay"></div> 
+<div class="highlight-and-share-wrapper-inline highlight-and-share-wrapper"><div class="has_twitter" data-type="twitter" style="display: none;"><a href="https://twitter.com/intent/tweet?url=%url%&amp;text=%prefix%%text%%suffix%" target="_blank"><svg class="has-icon"><use xlink:href="#has-twitter-icon"></use></svg><span class="has-text">Tweet</span></a></div><div class="has_facebook" data-type="facebook" style="display: none;"><a href="https://www.facebook.com/dialog/share?app_id=2188475931415722&amp;display=popup&amp;quote=%prefix%%text%%suffix%&amp;href=%url%" target="_blank"><svg class="has-icon"><use xlink:href="#has-facebook-icon"></use></svg><span class="has-text">Share</span></a></div><div class="has_email" data-title="%title%" data-type="email" data-url="%url%" style="display: none;"><a href="https://banyanhill.com/wp-admin/admin-ajax.php" target="_blank"><svg class="has-icon"><use xlink:href="#has-email-icon"></use></svg><span class="has-text">E-mail</span></a></div></div><div class="highlight-and-share-wrapper-cts highlight-and-share-wrapper"><div class="has_twitter" data-type="twitter" style="display: none;"><a href="https://twitter.com/intent/tweet?url=%url%&amp;text=%prefix%%text%%suffix%" target="_blank"><svg class="has-icon"><use xlink:href="#has-twitter-icon"></use></svg><span class="has-text">Tweet</span></a></div><div class="has_facebook" data-type="facebook" style="display: none;"><a href="https://www.facebook.com/dialog/share?app_id=2188475931415722&amp;display=popup&amp;quote=%prefix%%text%%suffix%&amp;href=%url%" target="_blank"><svg class="has-icon"><use xlink:href="#has-facebook-icon"></use></svg><span class="has-text">Share</span></a></div><div class="has_email" data-title="%title%" data-type="email" data-url="%url%" style="display: none;"><a href="https://banyanhill.com/wp-admin/admin-ajax.php" target="_blank"><svg class="has-icon"><use xlink:href="#has-email-icon"></use></svg><span class="has-text">E-mail</span></a></div></div><div class="highlight-and-share-wrapper"><div class="has_twitter" data-type="twitter" style="display: none;"><a href="https://twitter.com/intent/tweet?url=%url%&amp;text=%prefix%%text%%suffix%" target="_blank"><svg class="has-icon"><use xlink:href="#has-twitter-icon"></use></svg><span class="has-text">Tweet</span></a></div><div class="has_facebook" data-type="facebook" style="display: none;"><a href="https://www.facebook.com/dialog/share?app_id=2188475931415722&amp;display=popup&amp;quote=%prefix%%text%%suffix%&amp;href=%url%" target="_blank"><svg class="has-icon"><use xlink:href="#has-facebook-icon"></use></svg><span class="has-text">Share</span></a></div><div class="has_email" data-title="%title%" data-type="email" data-url="%url%" style="display: none;"><a href="https://banyanhill.com/wp-admin/admin-ajax.php" target="_blank"><svg class="has-icon"><use xlink:href="#has-email-icon"></use></svg><span class="has-text">E-mail</span></a></div></div><!-- #highlight-and-share-wrapper --> <svg class="hidden" height="0" style="display: none;" width="0">
+<symbol aria-hidden="true" data-icon="twitter" data-prefix="fas" id="has-twitter-icon" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="facebook" data-prefix="fas" id="has-facebook-icon" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="at" data-prefix="fas" id="has-email-icon" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M256 8C118.941 8 8 118.919 8 256c0 137.059 110.919 248 248 248 48.154 0 95.342-14.14 135.408-40.223 12.005-7.815 14.625-24.288 5.552-35.372l-10.177-12.433c-7.671-9.371-21.179-11.667-31.373-5.129C325.92 429.757 291.314 440 256 440c-101.458 0-184-82.542-184-184S154.542 72 256 72c100.139 0 184 57.619 184 160 0 38.786-21.093 79.742-58.17 83.693-17.349-.454-16.91-12.857-13.476-30.024l23.433-121.11C394.653 149.75 383.308 136 368.225 136h-44.981a13.518 13.518 0 0 0-13.432 11.993l-.01.092c-14.697-17.901-40.448-21.775-59.971-21.775-74.58 0-137.831 62.234-137.831 151.46 0 65.303 36.785 105.87 96 105.87 26.984 0 57.369-15.637 74.991-38.333 9.522 34.104 40.613 34.103 70.71 34.103C462.609 379.41 504 307.798 504 232 504 95.653 394.023 8 256 8zm-21.68 304.43c-22.249 0-36.07-15.623-36.07-40.771 0-44.993 30.779-72.729 58.63-72.729 22.292 0 35.601 15.241 35.601 40.77 0 45.061-33.875 72.73-58.161 72.73z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="linkedin" data-prefix="fas" id="has-linkedin-icon" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="xing" data-prefix="fas" id="has-xing-icon" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M162.7 210c-1.8 3.3-25.2 44.4-70.1 123.5-4.9 8.3-10.8 12.5-17.7 12.5H9.8c-7.7 0-12.1-7.5-8.5-14.4l69-121.3c.2 0 .2-.1 0-.3l-43.9-75.6c-4.3-7.8.3-14.1 8.5-14.1H100c7.3 0 13.3 4.1 18 12.2l44.7 77.5zM382.6 46.1l-144 253v.3L330.2 466c3.9 7.1.2 14.1-8.5 14.1h-65.2c-7.6 0-13.6-4-18-12.2l-92.4-168.5c3.3-5.8 51.5-90.8 144.8-255.2 4.6-8.1 10.4-12.2 17.5-12.2h65.7c8 0 12.3 6.7 8.5 14.1z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="whatsapp" data-prefix="fas" id="has-whatsapp-icon" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="copy" data-prefix="fas" id="has-copy-icon" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="share" data-prefix="fas" id="has-share-icon" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="reddit" data-prefix="fab" id="has-reddit-icon" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="telegram" data-prefix="fab" id="has-telegram-icon" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z" fill="currentColor"></path>
+</symbol>
+<symbol aria-hidden="true" data-icon="signal" data-prefix="fab" id="has-signal-icon" viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M97.2800192,3.739673 L100.160021,15.3787704 C88.8306631,18.1647705 77.9879854,22.6484879 68.0000023,28.6777391 L61.8399988,18.3985363 C72.8467373,11.7537029 84.7951803,6.81153332 97.2800192,3.739673 Z M158.720055,3.739673 L155.840053,15.3787704 C167.169411,18.1647705 178.012089,22.6484879 188.000072,28.6777391 L194.200075,18.3985363 C183.180932,11.7499974 171.218739,6.80771878 158.720055,3.739673 L158.720055,3.739673 Z M18.3999736,61.8351679 C11.7546212,72.8410466 6.81206547,84.7885562 3.73996516,97.2724198 L15.3799719,100.152197 C18.1661896,88.8237238 22.6502573,77.981893 28.6799796,67.9946902 L18.3999736,61.8351679 Z M11.9999699,127.990038 C11.9961044,122.172725 12.4306685,116.363392 13.2999707,110.611385 L1.43996383,108.811525 C-0.479938607,121.525138 -0.479938607,134.454937 1.43996383,147.168551 L13.2999707,145.36869 C12.4306685,139.616684 11.9961044,133.807351 11.9999699,127.990038 L11.9999699,127.990038 Z M194.160075,237.581539 L188.000072,227.302336 C178.024494,233.327885 167.195565,237.811494 155.880053,240.601305 L158.760055,252.240403 C171.231048,249.164732 183.165742,244.222671 194.160075,237.581539 L194.160075,237.581539 Z M244.000104,127.990038 C244.00397,133.807351 243.569406,139.616684 242.700103,145.36869 L254.56011,147.168551 C256.480013,134.454937 256.480013,121.525138 254.56011,108.811525 L242.700103,110.611385 C243.569406,116.363392 244.00397,122.172725 244.000104,127.990038 Z M252.260109,158.707656 L240.620102,155.827879 C237.833884,167.156352 233.349817,177.998183 227.320094,187.985385 L237.6001,194.184905 C244.249159,183.166622 249.191823,171.205364 252.260109,158.707656 L252.260109,158.707656 Z M145.380047,242.701142 C133.858209,244.43447 122.141865,244.43447 110.620027,242.701142 L108.820026,254.560223 C121.534632,256.479975 134.465442,256.479975 147.180048,254.560223 L145.380047,242.701142 Z M221.380091,196.804701 C214.461479,206.174141 206.175877,214.452354 196.800077,221.362797 L203.920081,231.022048 C214.262958,223.418011 223.404944,214.303705 231.040097,203.984145 L221.380091,196.804701 Z M196.800077,34.6172785 C206.177345,41.5338058 214.463023,49.8188367 221.380091,59.1953726 L231.040097,51.9959309 C223.429284,41.6822474 214.31457,32.5682452 204.000081,24.9580276 L196.800077,34.6172785 Z M34.619983,59.1953726 C41.5370506,49.8188367 49.8227288,41.5338058 59.1999972,34.6172785 L51.9999931,24.9580276 C41.6855038,32.5682452 32.5707896,41.6822474 24.9599774,51.9959309 L34.619983,59.1953726 Z M237.6001,61.8351679 L227.320094,67.9946902 C233.346114,77.969489 237.830073,88.7975718 240.620102,100.1122 L252.260109,97.2324229 C249.184198,84.7624043 244.241751,72.8286423 237.6001,61.8351679 L237.6001,61.8351679 Z M110.620027,13.2989317 C122.141865,11.5656035 133.858209,11.5656035 145.380047,13.2989317 L147.180048,1.43985134 C134.465442,-0.479901112 121.534632,-0.479901112 108.820026,1.43985134 L110.620027,13.2989317 Z M40.7799866,234.201801 L15.9999722,239.981353 L21.7799756,215.203275 L10.0999688,212.463487 L4.3199655,237.241566 C3.3734444,241.28318 4.58320332,245.526897 7.51859925,248.462064 C10.4539952,251.39723 14.6980441,252.606895 18.7399738,251.660448 L43.4999881,245.980888 L40.7799866,234.201801 Z M12.5999703,201.764317 L24.279977,204.484106 L28.2799793,187.305438 C22.4496684,177.507146 18.1025197,166.899584 15.3799719,155.827879 L3.73996516,158.707656 C6.34937618,169.311891 10.3154147,179.535405 15.539972,189.125297 L12.5999703,201.764317 Z M68.6000027,227.762301 L51.4199927,231.761991 L54.1399943,243.441085 L66.7800016,240.501313 C76.3706428,245.725462 86.5949557,249.691191 97.2000192,252.300398 L100.080021,240.6613 C89.0307035,237.906432 78.4495684,233.532789 68.6800027,227.682307 L68.6000027,227.762301 Z M128.000037,23.9980665 C90.1565244,24.0177003 55.3105242,44.590631 37.01511,77.715217 C18.7196958,110.839803 19.8628631,151.287212 39.9999861,183.325747 L29.9999803,225.982439 L72.660005,215.983214 C110.077932,239.548522 158.307237,236.876754 192.892851,209.322653 C227.478464,181.768552 240.856271,135.358391 226.242944,93.6248278 C211.629616,51.8912646 172.221191,23.9617202 128.000037,23.9980665 Z" fill="currentColor"></path>
+</g>
+</symbol>
+<symbol aria-hidden="true" data-icon="logo" data-prefix="ok" id="has-ok-icon" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M357.1,324.5c-24.1,15.3-57.2,21.4-79.1,23.6l18.4,18.1l67,67c24.5,25.1-15.4,64.4-40.2,40.2c-16.8-17-41.4-41.6-67-67.3
+						l-67,67.2c-24.8,24.2-64.7-15.5-39.9-40.2c17-17,41.4-41.6,67-67l18.1-18.1c-21.6-2.3-55.3-8-79.6-23.6
+						c-28.6-18.5-41.2-29.3-30.1-51.8c6.5-12.8,24.3-23.6,48-5c0,0,31.9,25.4,83.4,25.4s83.4-25.4,83.4-25.4c23.6-18.5,41.4-7.8,48,5
+						C398.3,295.1,385.7,305.9,357.1,324.5L357.1,324.5z M142,145c0-63,51.2-114,114-114s114,51,114,114c0,62.7-51.2,113.7-114,113.7
+						S142,207.7,142,145L142,145z M200,145c0,30.8,25.1,56,56,56s56-25.1,56-56c0-31.1-25.1-56.2-56-56.2S200,113.9,200,145z" fill="currentColor"></path>
+</g>
+</symbol>
+<symbol aria-hidden="true" data-icon="logo" data-prefix="vk" id="has-vk-icon" viewbox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+<g style="fill:none;fill-rule:evenodd" transform="translate(0,664)">
+<path d="m 1073.3513,-606.40537 h 196.278 c 179.2103,0 221.8795,42.66915 221.8795,221.8795 v 196.27799 c 0,179.2103512 -42.6692,221.879451 -221.8795,221.879451 h -196.278 c -179.21038,0 -221.87951,-42.6691298 -221.87951,-221.879451 v -196.27801 c 0,-179.21035 42.66913,-221.87946 221.87951,-221.87948 z" fill="currentColor"></path>
+<path d="m 1375.0576,-393.98425 c 2.9513,-9.7072 0,-16.85429 -14.1342,-16.85429 h -46.6693 c -11.8763,0 -17.3521,6.16927 -20.3212,12.97854 0,0 -23.7347,56.82106 -57.3544,93.74763 -10.8806,10.66728 -15.8232,14.08081 -21.7613,14.08081 -2.969,0 -7.2715,-3.39577 -7.2715,-13.12075 v -90.83194 c 0,-11.66288 -3.4491,-16.85429 -13.3341,-16.85429 h -73.3553 c -7.4138,0 -11.8763,5.40476 -11.8763,10.54286 0,11.0406 16.8188,13.60078 18.5433,44.67814 v 67.52388 c 0,14.80973 -2.7202,17.49433 -8.6583,17.49433 -15.8231,0 -54.3143,-57.08773 -77.16,-122.40705 -4.4447,-12.71185 -8.9427,-17.83214 -20.8723,-17.83214 h -46.68718 c -13.3341,0 -16.0009,6.16925 -16.0009,12.97852 0,12.12515 15.8232,72.35973 73.69318,152.02656 38.58,54.40315 92.8942,83.89819 142.3726,83.89819 29.6729,0 33.3353,-6.54262 33.3353,-17.83216 v -41.12238 c 0,-13.10297 2.809,-15.71646 12.214,-15.71646 6.9338,0 18.7922,3.41353 46.4916,29.63728 31.6463,31.09512 36.8555,45.03372 54.6698,45.03372 h 46.6694 c 13.3341,0 20.0189,-6.54262 16.1787,-19.46781 -4.2313,-12.88962 -19.3433,-31.57515 -39.38,-53.74532 -10.8807,-12.62294 -27.2016,-26.22375 -32.1441,-33.03302 -6.9338,-8.72941 -4.9603,-12.62294 0,-20.39227 0,0 56.8566,-78.68897 62.7947,-105.41058 z" fill="currentColor"></path>
+<path d="m 567.69877,-429.06912 c 3.15618,-10.38133 0,-18.0247 -15.11579,-18.0247 h -49.91013 c -12.70096,0 -18.55706,6.59763 -21.73232,13.87977 0,0 -25.38286,60.76685 -61.33724,100.25768 -11.63627,11.40806 -16.92197,15.05863 -23.27242,15.05863 -3.17519,0 -7.77644,-3.63156 -7.77644,-14.0319 v -97.13948 c 0,-12.47278 -3.68869,-18.0247 -14.26014,-18.0247 h -78.44923 c -7.92857,0 -12.70097,5.78005 -12.70097,11.27491 0,11.80736 17.98666,14.54527 19.83094,47.78071 v 72.21293 c 0,15.83815 -2.9091,18.70918 -9.25948,18.70918 -16.92197,0 -58.08598,-61.05206 -82.51817,-130.90731 -4.75337,-13.59458 -9.56381,-19.07042 -22.32175,-19.07042 h -49.92915 c -14.26014,0 -17.11213,6.59763 -17.11213,13.87977 0,12.96714 16.92197,77.38454 78.81059,162.58363 41.25909,58.18101 99.34506,89.72424 152.25931,89.72424 31.73343,0 35.65018,-6.99691 35.65018,-19.07043 v -43.978 c 0,-14.01288 3.00405,-16.80786 13.0622,-16.80786 7.41521,0 20.09716,3.65057 49.71998,31.69536 33.84387,33.25443 39.41486,48.16093 58.46622,48.16093 h 49.91026 c 14.26,0 21.40913,-6.99691 17.30216,-20.81966 -4.5252,-13.78473 -20.68653,-33.76783 -42.11468,-57.47752 -11.63621,-13.49953 -29.09043,-28.04479 -34.37631,-35.32694 -7.41508,-9.33557 -5.30458,-13.4995 0,-21.80835 0,0 60.80491,-84.15334 67.15549,-112.73048 z" fill="currentColor"></path>
+</g>
+</symbol>
+</svg>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NQ793K8" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Userway ADA Compliance -->
+
+<!-- End Userway ADA Compliance --><link as="style" href="https://banyanhill.com/wp-content/plugins/symbols-widget/css/chart-display.css?ver=1571401869" id="chart-display-css" media="all" onload='this.onload=null; this.rel="stylesheet"' rel="preload" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NQ793K8" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Start of LiveChat (www.livechat.com) code -->
+
+<noscript><a href="https://www.livechat.com/chat-with/15684612/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+
+
+</link></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1731744072 -->

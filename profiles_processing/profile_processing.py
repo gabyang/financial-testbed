@@ -19,32 +19,7 @@ import psycopg2
 from psycopg2.extras import execute_batch   # faster than row‑by‑row
 
 # ──────────────────────────────────────────────────────────────────────
-# 0.  Simple "tee" so stdout & stderr go to console **and** log file
-# ──────────────────────────────────────────────────────────────────────
-LOG_FILE = Path("profiles_ingest.log").resolve()
-log_fh   = LOG_FILE.open("w")              # use "a" to append across runs
-
-
-class Tee:
-    def __init__(self, *streams):
-        self.streams = streams
-
-    def write(self, data):
-        for s in self.streams:
-            s.write(data)
-
-    def flush(self):
-        for s in self.streams:
-            s.flush()
-
-
-sys.stdout = Tee(sys.__stdout__, log_fh)
-sys.stderr = Tee(sys.__stderr__, log_fh)
-
-print(f"[INFO] Terminal output is mirrored to {LOG_FILE}\n")
-
-# ──────────────────────────────────────────────────────────────────────
-# 1.  DB settings  (⚠️ edit to match your environment)
+# 1.  DB settings 
 # ──────────────────────────────────────────────────────────────────────
 DB_CONFIG = {
     "host": "localhost",
@@ -133,9 +108,7 @@ def insert_profiles(json_path: str | Path):
 # 4.  CLI entry‑point
 # ──────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
-    try:
-        # Default path can be overridden via CLI:  python ingest_profiles.py /path/to/file.json
-        arg_path = sys.argv[1] if len(sys.argv) > 1 else "test_data/profile_estimate/profile.json"
-        insert_profiles(arg_path)
-    finally:
-        log_fh.close()
+    # Default path can be overridden via CLI:  python ingest_profiles.py /path/to/file.json
+    arg_path = sys.argv[1] if len(sys.argv) > 1 else "test_data/profile_estimate/profile.json"
+    insert_profiles(arg_path)
+

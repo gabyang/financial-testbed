@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<!--
+Development:
+JULIO FOULQUIE, @j3j5@hachyderm.io, ✈Montevideo, UY
+MARC TORAL, ✈Amsterdam, NL
+JULIAN SZNAIDER, ✈Buenos Aires, AR
+——————————
+Concept and Design by:
+ALEXANDER GRIFFIOEN, @oscaralexander, ✈Amsterdam, NL
+SÄINA SEEDORF, ✈Amsterdam, NL
+——————————
+Alumni:
+JACK DUNN, ✈Amsterdam, NL
+JULIAN AIJAL, @Jaijal, ✈Amsterdam, NL
+SAM BLOK, ✈Amsterdam, NL
+LAURA GENNO, ✈Amsterdam, NL
+IRENE DE NICOLO, ✈Amsterdam, NL
+DANIEL TARA, ✈Amsterdam, NL
+EVGENY ASTAPOV, ✈Rotterdam, NL
+RONAN O'LEARY, @ro_oleary, ✈Amsterdam, NL
+PABLO ROMÁN, ✈Amsterdam, NL
+JAMES SCOTT, ✈Amsterdam, NL
+JELLE VAN WIJHE, ✈Amsterdam, NL
+MATTHEW ELWORTHY, ✈Amsterdam, NL
+OSCAR VAN ZIJVERDEN, ✈Amsterdam, NL
+STEPHAN LAGERWAARD, ✈Amsterdam, NL
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="unsafe-url" name="referrer"/>
+<meta content="The Next Web" name="apple-mobile-web-app-title"/>
+
+<link as="style" href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="script" href="//next.tnwcdn.com/assets/next/js/base.js?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="style" href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="font" crossorigin="anonymous" href="https://next.tnwcdn.com/assets/next/fonts/graphik-wide-black.woff2" rel="preload" type="font/woff2"/>
+<link as="image" href="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=3188568f718696d5f4ba6b218e654786" imagesrcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=9e514cbd195d1a0d28a6b58cc71a3409 576w,
+                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=003c63798f29809cc54074e375447cb0 1152w,
+                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=3188568f718696d5f4ba6b218e654786 1280w" media="(min-width: 361px) and (min-height: 651px)" rel="preload"/>
+<title>Why can’t I fix my own phone, toaster, or tractor?</title>
+<!-- OpenGraph -->
+<meta content="The Markup" name="author"/>
+<meta content="https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication" name="original-source">
+<meta content="TNW | Plugged" property="og:site_name">
+<meta content="Why can’t I fix my own phone, toaster, or tractor?" property="og:title">
+<meta content="
+As critically ill COVID-19 patients started showing up in droves at emergency rooms around the world, ventilators became a crucial technology keeping patients alive. When hospitals’ own resources became overwhelmed, the Strategic National " name="description" property="description">
+<meta content="
+As critically ill COVID-19 patients started showing up in droves at emergency rooms around the world, ventilators became a crucial technology keeping patients alive. When hospitals’ own resources became overwhelmed, the Strategic National " property="og:description">
+<meta content="https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication" property="og:url">
+<meta content="640" property="og:image:height">
+<meta content="1280" property="og:image:width"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=f1f0e03cdafab0b52ed8fee1c2209147" property="og:image"/>
+<meta content="article" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="2020-10-21T12:50:29+00:00" property="og:updated_time">
+<meta content="2020-10-24T17:00:43+00:00" property="article:published_time"/>
+<meta content="2020-10-21T12:50:29+00:00" property="article:modified_time"/>
+<meta content="Plugged" property="article:section"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@thenextweb" name="twitter:site"/>
+<meta content="@thenextweb" name="twitter:creator"/>
+<meta content="Why can&amp;#8217;t I fix my own phone, toaster, or tractor?" name="twitter:title"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=f1f0e03cdafab0b52ed8fee1c2209147" name="twitter:image"/>
+<meta content="
+As critically ill COVID-19 patients started showing up in droves at emergency rooms around the world, ventilators became a crucial technology keeping patients alive. When hospitals’ own resources became overwhelmed, the Strategic National " name="twitter:description"/>
+<!-- General Meta -->
+<meta content="max-image-preview:large" name="robots"/>
+<meta content="Why can&amp;#8217;t I fix my own phone, toaster, or tractor?" property="title">
+<meta content="
+As critically ill COVID-19 patients started showing up in droves at emergency rooms around the world, ventilators became a crucial technology keeping patients alive. When hospitals’ own resources became overwhelmed, the Strategic National " property="description"/>
+<meta content="https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication" property="url"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon"/>
+
+<link href="/manifest.json" rel="manifest"/>
+
+
+
+
+<link href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<noscript>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+</noscript>
+<meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<link href="//cdn0.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//next.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//img-cdn.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//cdnjs.cloudflare.com/" rel="dns-prefetch"/>
+<link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+<link href="//cdn0.tnwcdn.com/" rel="preconnect"/>
+<link href="//next.tnwcdn.com/" rel="preconnect"/>
+<link href="//img-cdn.tnwcdn.com/" rel="preconnect"/>
+<link href="//www.googletagmanager.com" rel="preconnect"/>
+<link href="//cdnjs.cloudflare.com/" rel="preconnect"/>
+<link as="style" async="" crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet preload"/>
+<link href="https://themarkup.org/ask-the-markup/2020/10/20/0-electronics-right-to-repair-ventilators-iphone" rel="canonical">
+
+<!-- JSON-LD Breadcrumbs -->
+
+<!-- JSON-LD schema -->
+
+
+
+</link></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></head>
+<body class="site-tnwNext preload" id="next-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+<div id="fb-root"></div>
+<div class="plugged" id="_progress"></div>
+<nav class="c-nav has-level2" id="nav" role="navigation" style="top: 0;">
+<div class="c-nav__level1">
+<button aria-controls="overlay__hook" aria-expanded="false" aria-haspopup="true" class="c-nav__menuToggle c-nav__menuToggle--level-1 js-menuToggleLevel" data-nav-level="1" id="nav-menuLevel1" type="button">
+<span class="visually-hidden">Toggle Navigation</span>
+</button>
+<div class="navLabel_dt">
+<a class="c-nav__logo" data-event-action="Navigation bar" data-event-category="Article" data-event-label="TNW Logo" data-event-non-interaction="false" href="/" name="TNW Logo">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path>
+</svg>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--1" id="overlay__hook">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="News" data-event-category="Navigation bar" data-event-label="/" data-event-non-interaction="false" href="/">News</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">Events</button>
+<ul class="c-nav__submenu" role="menu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false" href="/conference">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false">TNW Conference</span>
+<span class="c-nav__submenuLinkNote">June 19 &amp; 20, 2025</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false" href="https://thenextweb.com/conference/the-soonicorn-summit">
+<span class="c-nav__submenuLinkTitle" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false">The Soonicorn Summit</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false" href="https://thenextweb.com/conference/tnw-webinar-series">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false">TNW Webinars</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false" href="/events">
+<span class="c-nav__submenuLinkTitle" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false">All events</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+</ul>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Spaces" data-event-category="Navigation bar" data-event-label="/spaces" data-event-non-interaction="false" href="/spaces">Spaces</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Programs" data-event-category="Navigation bar" data-event-label="/programs" data-event-non-interaction="false" href="/programs">Programs</a>
+</li>
+</ul>
+<hr class="mobile_menu_divider"/>
+<ul class="c-nav__menu c-nav__icons">
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" data-event-action="Newsletter" data-event-category="Navigation bar" data-event-label="Newsletters top right - click" data-event-non-interaction="false" href="/newsletters">
+<span class="c-nav__iconsItem--label" data-event-action="Newsletters" data-event-category="Navigation bar" data-event-label="/newsletters" data-event-non-interaction="false">Newsletters</span>
+</a>
+</li>
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" href="/partnerships">
+<span class="c-nav__iconsItem--label" data-event-action="Partner with us" data-event-category="Navigation bar" data-event-label="/partnerships" data-event-non-interaction="false">Partner with us</span>
+</a>
+</li>
+</ul>
+<footer class="c-nav__footer">
+<ul class="c-nav__social">
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://facebook.com/thenextweb" name="Facebook Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://www.instagram.com/thenextweb" name="Instagram Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://twitter.com/thenextweb" name="Twitter Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://youtube.com/user/thenextweb" name="Youtube Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://flipboard.com/@thenextweb" name="Flipboard Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="/newsletters" name="Email Social Link">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</li>
+</ul>
+<ul class="c-nav__company">
+<li class="c-nav__companyItem">
+<a class="c-nav__companyLink" href="https://thenextweb.homerun.co/" rel="noopener noreferrer" target="_blank">Jobs</a>
+</li>
+<li class="c-nav__companyItem"><a class="c-nav__companyLink" href="mailto:conference@thenextweb.com">Contact</a></li>
+</ul>
+</footer>
+</div>
+</div>
+<div class="c-nav__level2 tnw news">
+<div class="c-nav__pwd">
+<a class="c-nav__pwdLogo" href="/"><svg class="tnwLogo__tnwNews"><title>The Next Web</title><use xlink:href="/assets/next/img/icons.svg#tnw"></use></svg></a>
+<a class="c-nav__pwdLogoUkraine" href="/ukraine">
+<img alt="We stand with Ukraine" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/companies/ukraine.png"/>
+</a>
+<span class="c-nav__pwdSection">News</span>
+<a class="c-nav__pwdSite" href="/" title="">
+<span class="sm:hidden" id="channelName_abbr">news</span>
+<span class="max-sm:hidden xl:hidden">news</span>
+<span class="max-xl:hidden" id="channelName_mob">news</span>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--2">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Latest" data-event-category="Navigation bar" data-event-label="/latest" data-event-non-interaction="false" href="/latest">Latest</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Deep tech" data-event-category="Navigation bar" data-event-label="/deep-tech" data-event-non-interaction="false" href="/deep-tech">Deep tech</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Sustainability" data-event-category="Navigation bar" data-event-label="/sustainability" data-event-non-interaction="false" href="/sustainability">Sustainability</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Ecosystems" data-event-category="Navigation bar" data-event-label="/ecosystems" data-event-non-interaction="false" href="/ecosystems">Ecosystems</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Data and security" data-event-category="Navigation bar" data-event-label="/data-security" data-event-non-interaction="false" href="/data-security">Data and security</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Fintech and ecommerce" data-event-category="Navigation bar" data-event-label="/fintech-ecommerce" data-event-non-interaction="false" href="/fintech-ecommerce">Fintech and ecommerce</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Future of work" data-event-category="Navigation bar" data-event-label="/future-of-work" data-event-non-interaction="false" href="/future-of-work">Future of work</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Podcast" data-event-category="Navigation bar" data-event-label="https://podcast.thenextweb.com" data-event-non-interaction="false" href="https://podcast.thenextweb.com">Podcast</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">More</button>
+<ul class="c-nav__submenu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="https://thenextweb.com/tnw-conference-2024">
+<span class="c-nav__submenuLinkTitle" data-event-action="Conference media hub" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/tnw-conference-2024" data-event-non-interaction="false">Conference media hub</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/startups-technology">
+<span class="c-nav__submenuLinkTitle" data-event-action="Startups and technology" data-event-category="Navigation bar" data-event-label="/startups-technology" data-event-non-interaction="false">Startups and technology</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/investors-funding">
+<span class="c-nav__submenuLinkTitle" data-event-action="Investors and funding" data-event-category="Navigation bar" data-event-label="/investors-funding" data-event-non-interaction="false">Investors and funding</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/government-policy">
+<span class="c-nav__submenuLinkTitle" data-event-action="Government and policy" data-event-category="Navigation bar" data-event-label="/government-policy" data-event-non-interaction="false">Government and policy</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/corporates-innovation">
+<span class="c-nav__submenuLinkTitle" data-event-action="Corporates and innovation" data-event-category="Navigation bar" data-event-label="/corporates-innovation" data-event-non-interaction="false">Corporates and innovation</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/plugged">
+<span class="c-nav__submenuLinkTitle" data-event-action="Gadgets &amp; apps" data-event-category="Navigation bar" data-event-label="/plugged" data-event-non-interaction="false">Gadgets &amp; apps</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<button aria-hidden="true" class="c-nav__menuScroller" type="button"></button>
+</div>
+</div>
+</nav>
+<a class="c-nav__yellow-bar" href="https://thenextweb.com/conference/tickets" id="cross-site-notification" rel="noopener" target="_blank">
+<div class="c-nav__message c-nav__message--global" data-event-action="Yellow bar" data-event-category="Yellow bar" data-event-label="Yellow bar - click">
+<p><strong>Save over 40% when you secure your tickets today to TNW Conference 💥 Prices will increase on November 22 →</strong></p>
+</div>
+</a>
+<div class="o-page" id="main">
+<div class="o-page__main">
+<main class="c-channel c-channel--latest o-page__main" id="article_container">
+<div class="c-articles">
+<div class="c-articles__backdrop"><div class="c-articles__backdrop--sticky"></div></div>
+<div class="c-nav__message c-nav__message--article news" style="top:0">
+<p>This article was published on <strong>October 24, 2020</strong></p>
+</div>
+<header class="c-header">
+<div class="o-wrapper">
+<div class="c-header__text">
+<ul class="c-header__tags c-tags c-tags--centered">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Plugged" data-event-non-interaction="false" href="/plugged">Plugged</a>
+</li>
+</ul>
+<h1 class="c-header__heading">Why can’t I fix my own phone, toaster, or tractor?</h1>
+<p class="c-header__intro">Manufacturers in a broad range of industries have a monopoly on who repairs machines—and when devices are deemed unfixable</p>
+<br/>
+<div>
+<time datetime="October 24, 2020 - 5:00 pm">October 24, 2020 - 5:00 pm</time>
+</div>
+</div>
+<div aria-hidden="true" class="c-share lg:hidden">
+<a class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Why%20can%E2%80%99t%20I%20fix%20my%20own%20phone%2C%20toaster%2C%20or%20tractor%3F&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;u=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication&amp;t=Why%20can%E2%80%99t%20I%20fix%20my%20own%20phone%2C%20toaster%2C%20or%20tractor%3F" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Why%20can%E2%80%99t%20I%20fix%20my%20own%20phone%2C%20toaster%2C%20or%20tractor%3F" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-share__link c-share__link--mail" href="mailto:?subject=Why can&amp;#8217;t I fix my own phone, toaster, or tractor?&amp;body=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+</header>
+<div class="e-empty__hidden"></div>
+<div class="screen-size desktop-screen">
+<div class="tnw-ad tnw-ad--billboard tnw-ad--has-placeholder" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_HEADER","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[320,240],[300,250],[970,250],[970,90],[728,90],[320,50],[300,100],[300,50],[320,100]],"sizeMapping":[[[1024,0],[[970,250],[970,90],[728,90]]],[[0,0],[[300,250],[320,50],[300,50],[300,100],[320,100],[320,240]]]],"targeting":{"postID":["1324689"],"title":["Why can’t I fix my own phone, toaster, or tractor?"],"category":["plugged"],"isSponsored":["No"]},"lazyLoad":"true","refreshEvery":"","debugMode":false}' id="tnw-next-header"></div>
+</div>
+
+<div class="o-wrapper mb-4xl">
+<article class="c-article js-article mt-m" id="articleOutput" style="margin-top: 0px;">
+<div class="c-article__media c-article__growth-mobile">
+<figure class="o-media o-media--16:9">
+<img alt="Why can’t I fix my own phone, toaster, or tractor?" class="js-lazy c-article__mediaImage w-full absolute top-0" data-src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=3188568f718696d5f4ba6b218e654786" data-srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=9e514cbd195d1a0d28a6b58cc71a3409 576w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=003c63798f29809cc54074e375447cb0 1152w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=3188568f718696d5f4ba6b218e654786 1280w" sizes="(max-width: 1023px) 100vw
+                                               868px"/>
+<noscript>
+<img alt="Why can’t I fix my own phone, toaster, or tractor?" class="c-article__mediaImage w-full absolute top-0" sizes="(max-width: 1023px) 100vw
+                                                   868px" src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=3188568f718696d5f4ba6b218e654786" srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=9e514cbd195d1a0d28a6b58cc71a3409 576w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=003c63798f29809cc54074e375447cb0 1152w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;signature=3188568f718696d5f4ba6b218e654786 1280w"/>
+</noscript>
+<a class="c-article__mediaCredit" href="https://unsplash.com/@lastly">
+<svg class="c-article__mediaCreditIcon"><use xlink:href="/assets/next/img/icons.svg#camera"></use></svg>
+<span class="c-article__mediaCreditText">Image by: Unsplash</span>
+</a>
+</figure>
+</div>
+<div class="screen-size mobile-screen" style="text-align: center"></div>
+
+<div class="c-article__main max-lg:mb-xxl">
+<div class="c-richText c-richText--large" id="article-main-content">
+<p>Creative Commons Attribution-NonCommercial-NoDerivatives https://creativecommons.org/licenses/by-nc-nd/4.0/</p>
+<p>As critically ill COVID-19 patients started showing up in droves at emergency rooms around the world, ventilators became a crucial technology keeping patients alive. When hospitals’ own resources became overwhelmed, the Strategic National Stockpile dusted off and distributed thousands of the life-support machines throughout the country.</p>
+<p>But <a href="https://apnews.com/article/f43781b64bacd6aa094d9404f4ab91a4" rel="nofollow noopener" target="_blank">not all</a> were in working condition.</p>
+<p>J. Scot Mackeil, a biomedical technician with more than 40 years of experience, worked on a team tasked with inspecting machines sent to Massachusetts’s Emergency Management Agency. In mid-April, while performing spot checks on hundreds of ventilators packed in freight pods, Mackeil discovered one with a damaged power connector.</p>
+<div class="inarticle-wrapper channel-cta"><div class="ica-text"><a data-event-action="In Article Block" data-event-category="Article" data-event-label="Webinar: Unicorn DNA: The Blueprint for Scaling Success" href="https://thenextweb.com/conference/tnw-webinar-series?utm_source=google&amp;utm_medium=display&amp;utm_campaign=global_tnw_media_leads_retargeting_bau_2025-tnw-conference-amsterdam_TNW" target="_blank"><p class="ica-text__title">Webinar: Unicorn DNA: The Blueprint for Scaling Success</p><p>What does it take to build a unicorn? On November 19, 3pm CET, top executives of unicorn companies will reveal the mindset, strategies, and innovative thinking that propelled their companies to the top.</p></a></div><div class="ica-button">
+<a class="c-button c-button--primary" data-event-action="In Article Block" data-event-category="Article" data-event-label="Register Now" href="https://thenextweb.com/conference/tnw-webinar-series?utm_source=google&amp;utm_medium=display&amp;utm_campaign=global_tnw_media_leads_retargeting_bau_2025-tnw-conference-amsterdam_TNW" target="_blank">Register Now</a>
+</div></div><p>But when he asked the manufacturer to send him a replacement part, he was surprised to receive the manufacturer’s response: “ ‘Absolutely no.’ ”</p>
+<p>“I had just expected, ‘Oh, no problem. Where can we send it?’ ” he said. “I wasn’t expecting them to dig their heels in.”</p>
+<p>Mackeil was well aware of what’s become a common obstacle for hospitals: Manufacturers not only have a monopoly over even simple replacement parts, but they also often allow only their authorized service technicians to repair equipment.</p>
+<p>Mackeil told The Markup that over his career, manufacturers resisting hospitals doing their own repairs has become the norm.</p>
+<p>“Medical equipment manufacturers look at the service phase of the device life as a huge profit center,” Mackeil said.</p>
+<p>With the ventilator, he had thought they might relent.</p>
+<p>“It was just a shame,” he said.</p>
+<p>It’s not just medical device manufacturers who keep a tight grip on the inner workings of the products they sell—<a href="http://www.cultofmac.com/411395/everything-you-need-to-know-about-ios-crippling-error-53/" rel="nofollow noopener" target="_blank">mobile phones</a>, <a href="https://www.polygon.com/2018/4/13/17231520/ftc-warning-video-game-console-makers" rel="nofollow noopener" target="_blank">game consoles</a>, <a href="https://www.facebook.com/photo.php?fbid=10207166763521072&amp;set=a.1771733506766.94455.1642136739&amp;type=3&amp;theater" rel="nofollow noopener" target="_blank">coffee makers</a>, and <a href="https://www.vice.com/en_us/article/kzp7ny/tractor-hacking-right-to-repair" rel="nofollow noopener" target="_blank">farm equipment</a> all share examples of the same sort of repair restrictions that advocates calling for “right to repair” laws seek to eliminate.</p>
+<p>And though you might technically own your camera, game console, blender, or phone, you repair it at your own peril. Going outside the official route for fixes is either impractical without repair manuals and proprietary tools or could void the machine’s warranty (though consumers <a href="https://www.ftc.gov/news-events/press-releases/2018/04/ftc-staff-warns-companies-it-illegal-condition-warranty-coverage" rel="nofollow noopener" target="_blank">have some protections</a> on that front).</p>
+<p>“We are no longer able to fix the things we buy,” said Gay Gordon-Byrne, who is the executive director of <a href="https://repair.org/" rel="nofollow noopener" target="_blank">The Repair Association</a>, a coalition of businesses and organizations seeking legislation across the country that would give consumers the right to repair their own machines.</p>
+<p>The right-to-repair movement has drawn an unusual coalition of stakeholders, including environmentalists, libertarians, engineers, independent repair shop owners, gamers, hobbyists, and farmers.</p>
+<p>Groups like The Repair Association have helped push consumer electronic right-to-repair bills introduced in dozens of states. None, however, have become law in recent years.</p>
+<p>Lobbyists for the electronics manufacturers have also raised concerns that unqualified repairs could lead to <a href="http://technet-6360de.webflow.io/state-policy/privacy-security" rel="nofollow noopener" target="_blank">dangerous failures of their products</a> and that states with right-to-repair laws could become <a href="https://www.vice.com/en_us/article/pgxgpg/apple-tells-lawmaker-that-right-to-repair-iphones-will-turn-nebraska-into-a-mecca-for-hackers" rel="nofollow noopener" target="_blank">havens for hackers</a>.</p>
+<p>Such laws could eliminate a manufacturer’s monopoly on not only who can fix a product—but also on when a product is essentially deemed unfixable.</p>
+<h2><strong>Why won’t Apple fix my phone? Can someone else do it?</strong></h2>
+<p>Today’s mobile phone is a marvel of precision engineering—watertight seams, sealed batteries, and a lack of visible fasteners that would make most consumers unsure of how you would even go about opening it. To get inside requires detailed schematics, diagrams, and specialized tools.</p>
+<p>Apple has all of those, of course, but in July 2019, Apple VP Kyle Andeer <a href="https://docs.house.gov/meetings/JU/JU05/20190716/109793/HHRG-116-JU05-20190716-SD036.pdf" rel="nofollow noopener" target="_blank">testified to Congress</a> that the company and its authorized service providers perform only four types of iPhone repair: display, battery, speaker, and camera. If your phone dies (when it is no longer covered by warranty or optional AppleCare coverage) and it can’t be fixed by one of those repairs, Apple may suggest you buy another phone.</p>
+<p>Jessa Jones, founder of iPad Rehab, a mobile device repair shop in Honeoye Falls, N.Y., says that’s disingenuous.</p>
+<p>“I think that my customers are largely unaware that what they’re being told by the manufacturer of the device, about the problem that they’re having and about the repairability of that problem, is false,” she told The Markup.</p>
+<p>“We aim to avoid the need for repair in the first place,” Apple spokesperson Keri Fulton said in a statement to The Markup. “But when a repair is needed, there should be safe, dependable options available to bring a device back to its best possible performance.”</p>
+<p>Jones runs a popular <a href="https://www.youtube.com/channel/UCPjp41qeXe1o_lp1US9TpWA" rel="nofollow noopener" target="_blank">YouTube channel</a> on which she <a href="https://www.youtube.com/watch?v=NPKI5Y_kn4s" rel="nofollow noopener" target="_blank">uses her soldering skills</a> under a microscope to perform several repairs that Apple does not offer.</p>
+<p>She particularly specializes in restoring data from dead phones—often helping people recover precious photos of loved ones.</p>
+<p>“There’s a chip on the board that is soldered on there that contains all of your memories, and those memories are encrypted by default,” Jones said, and it’s time-consuming though entirely possible to retrieve.</p>
+<p>“The only way to decrypt that and get them back out is you’ve got to get a multi-meter out and solve problems on that logic board,” she said.</p>
+<p>Jones also noted that there are many relatively simple repairs that shouldn’t require a trip to the Apple Store or an authorized dealer.</p>
+<p>Tips are easy to find online, and sites like <a href="https://www.ifixit.com/" rel="nofollow noopener" target="_blank">iFixit</a> offer detailed repair guides, tools, and replacement parts. Independent phone repair shops can be found in towns large and small, but they often operate without official manufacturer certifications to repair devices. These shops may use unofficial aftermarket parts from overseas, or replacement parts harvested from inoperable phones.</p>
+<p>But like many other device manufacturers, Apple increasingly employs strict digital controls over the hardware that the device detects, making non-Apple repairs of some components impossible without Apple diagnostic tools.</p>
+<p>“Our ability to just take something from the junkyard of iPhone parts and plug it into your new phone is becoming increasingly limited, because the parts are now serialized, meaning there’s a serial number in the part that the phone refuses to operate [without],” said Jones.</p>
+<p>Fulton from Apple declined to comment but pointed The Markup to the company’s <a href="https://www.apple.com/environment/pdf/Apple_Environmental_Progress_Report_2020.pdf" rel="nofollow noopener" target="_blank">2020 Environment Report</a>, which says products are becoming easier to repair.</p>
+<p>“For our iPhone devices, we’ve utilized stretch release adhesives, which securely hold the battery during use yet can be swiftly debonded by service partners to install replacements,” the report says.</p>
+<p>Apple is not alone in making devices that are hard to repair. Jones said manufacturers of Android devices employ manufacturing techniques that make repairs difficult. iFixit CEO Kyle Wiens told The Markup, though, that there are manufacturers who are voluntarily adopting <a href="https://www.ifixit.com/Manifesto" rel="nofollow noopener" target="_blank">right-to-repair principles</a>.</p>
+<p>“Motorola is the first smartphone manufacturer that stepped up and is basically complying with right to repair,” he said. “They have worked with us.”</p>
+<h2><strong>There’s a diverse, growing movement behind the right to repair — but it faces hurdles</strong></h2>
+<p>Some of the earliest calls for right-to-repair legislation came from farmers, who’ve been struggling for the ability to fix their own John Deere tractors for years. John Deere equipment is sold with software restrictions that only authorized technicians can bypass, <a href="https://www.vice.com/en/article/xykkkd/why-american-farmers-are-hacking-their-tractors-with-ukrainian-firmware" rel="nofollow noopener" target="_blank">frustrating traditionally self-reliant farmers</a>.</p>
+<p>During their campaigns for president, both Elizabeth Warren and Bernie Sanders <a href="https://medium.com/@teamwarren/leveling-the-playing-field-for-americas-family-farmers-823d1994f067" rel="nofollow noopener" target="_blank">cited the plight of these farmers</a> <a href="https://gizmodo.com/hell-yeah-bernie-sanders-just-endorsed-a-national-righ-1834550743" rel="nofollow noopener" target="_blank">unable to repair</a> their own equipment and called for a national right-to-repair law as part of a host of proposals to help American farmers that ended up being adopted as <a href="https://democrats.org/where-we-stand/party-platform/building-a-stronger-fairer-economy/" rel="nofollow noopener" target="_blank">a plank in the Democratic platform</a> for 2020.</p>
+<p>A spokesperson for John Deere declined to comment.</p>
+<p>The company has recently made an effort to smooth things over, <a href="https://r2rsolutions.org/" rel="nofollow noopener" target="_blank">offering a program</a> with diagnostics, training, and documentation for farmers wanting to do their own repairs, starting in 2021.</p>
+<p>In 2018, an <a href="https://www.ifixit.com/News/11951/1201-copyright-final-rule" rel="nofollow noopener" target="_blank">alliance of right-to-repair advocates</a> won long-sought exemptions to the Digital Millennium Copyright Act to allow farmers and other consumers to <a href="https://www.theverge.com/circuitbreaker/2018/10/25/18024332/us-copyright-office-right-to-repair-dcma-exemptions" rel="nofollow noopener" target="_blank">break software locks on the products they own</a>—without breaking the law. These <a href="https://www.copyright.gov/1201/2018/" rel="nofollow noopener" target="_blank">latest exemptions</a> (which are considered every three years under the law) enable the legal “jailbreaking” of new phones, voice assistants, and software locks on tractors, cars, and home appliances—though not on video game consoles. Importantly, they also allow you to hire someone to do this breaking for you.</p>
+<p>Massachusetts, where a voter-initiative <a href="https://malegislature.gov/Laws/SessionLaws/Acts/2013/Chapter165" rel="nofollow noopener" target="_blank">automotive right-to-repair law passed in 2012</a> with <a href="http://archive.boston.com/news/special/politics/2012/general/mass-ballot-question-1-election-results-2012.html" rel="nofollow noopener" target="_blank">86 percent voting</a> in favor, shows the potential popularity of expanding such laws.</p>
+<p>This November, Massachusetts voters will consider an <a href="https://ballotpedia.org/Massachusetts_Question_1,_%22Right_to_Repair_Law%22_Vehicle_Data_Access_Requirement_Initiative_(2020)" rel="nofollow noopener" target="_blank">update to the automotive law</a>, which would allow consumers to access and control the automobile diagnostic and telemetric data that’s increasingly sent directly to car manufacturers via cellular radios.</p>
+<p>Massachusetts also has a consumer electronics right-to-repair bill that advocates say is the furthest along of any in the country, though it’s currently awaiting a vote by both chambers of the state legislature.</p>
+<p>The Massachusetts bill has served as a template for proposed automotive and consumer electronic right-to-repair legislation around the country—some of which has come close to becoming law, only to be killed at the last minute by <a href="https://medium.com/u-s-pirg/how-big-tech-stopped-right-to-repair-in-new-york-9109a7565596" rel="nofollow noopener" target="_blank">lobbying from electronics and automobile manufacturers</a>. New York State <a href="https://www.documentcloud.org/documents/7232115-NY-State-Lobbying.html" rel="nofollow noopener" target="_blank">lobbying disclosures</a> for 2018, for instance, show that Apple, Verizon, Facebook, AT&amp;T, Toyota, Caterpillar, and others all successfully lobbied against a proposed “<a href="https://nyassembly.gov/leg/?default_fld=&amp;leg_video=&amp;bn=A08192&amp;term=2017&amp;Summary=Y&amp;Actions=Y&amp;Committee%26nbspVotes=Y&amp;Text=Y" rel="nofollow noopener" target="_blank">Fair Repair Act</a>.”</p>
+<p>Industry groups opposing right to repair include Consumer Technology Association, <a href="https://www.aem.org/advocacy-old/right-to-repair" rel="nofollow noopener" target="_blank">Association of Equipment Manufacturers</a>, and TechNet (a large industry group whose members include Apple, Amazon, Google, Facebook, and Comcast).</p>
+<p>In 2019, TechNet’s then Northeast executive director, <a href="https://youtu.be/QHpXJzjin7k?t=5994" rel="nofollow noopener" target="_blank">Christina Fisher, testified</a> before the Massachusetts state legislature’s Joint Committee on Consumer Protection and Professional Licensure in opposition to the proposed <a href="https://malegislature.gov/Bills/191/H218" rel="nofollow noopener" target="_blank">digital right-to-repair bill</a>.</p>
+<p>Fisher argued that the bill was “legislation in search of a problem”—that consumers already have plenty of choices for repairs and that such laws would hurt innovation.</p>
+<p>TechNet declined to comment for this story, pointing The Markup to the group’s previous statements.</p>
+<p>An all-star list of engineers and cyber security professionals founded <a href="https://securepairs.org/" rel="nofollow noopener" target="_blank">Securepairs</a> in 2018 to counter these arguments, which the group says are <a href="https://securepairs.org/statement-of-principles/#FUD" rel="nofollow noopener" target="_blank">without merit</a>.</p>
+<h2><strong>What comes next?</strong></h2>
+<p>If Massachusetts were to pass the nation’s first consumer electronic right-to-repair law, it could have national influence. When the Massachusetts Automotive Right to Repair bill passed in 2012, all major car manufacturers signed a <a href="https://www.nastf.org/files/public/OtherReference/MOU_SIGNED_1_15_14.pdf" rel="nofollow noopener" target="_blank">memorandum of understanding</a> voluntarily adopting the requirements of the Massachusetts law nationwide.</p>
+<p>Aside from legislation, Apple does appear to be moving forward with several efforts at <a href="https://www.reuters.com/article/us-apple-repair/apple-expands-independent-repair-shop-program-to-mac-computers-idUSKCN25D1F7" rel="nofollow noopener" target="_blank">increasing the availability of parts and repairs</a> for its products, but recent <a href="https://judiciary.house.gov/UploadedFiles/011550.pdf" rel="nofollow noopener" target="_blank">internal</a> <a href="https://judiciary.house.gov/UploadedFiles/011774.pdf" rel="nofollow noopener" target="_blank">emails</a>, disclosed as part of a U.S. House antitrust subcommittee hearing in July, show internal confusion surrounding these initiatives.</p>
+<p>“What is our repair strategy? Are we comfortable releasing our repair manuals for all products moving forward?” read one email from Lori Lodes, Apple’s former director of corporate communications, from March 2019.</p>
+<p>Apple declined to comment on these emails directly and referred The Markup back to its 2020 Environment Report, in which the company says it has “broadened the reach of Apple authorized service repair. Through a partnership with Best Buy, we added 1000 more AASP locations in 2019, tripling the number of U.S. AASP locations compared to three years ago.”</p>
+<p>Meanwhile, prompted by the pandemic, there’s a bit of a guerrilla movement afoot, at least when it comes to medical devices.</p>
+<p>When Wiens, CEO of repair website <a href="https://www.ifixit.com/" rel="nofollow noopener" target="_blank">iFixit</a>, heard about the crisis of the shortage of ventilators in Italy as that country struggled at the height of its first wave of COVID-19 cases, he wanted to help. Aside from selling replacement parts and repair tools, iFixit offers <a href="https://www.ifixit.com/Guide" rel="nofollow noopener" target="_blank">detailed documentation</a> for repairing electronics—and Wiens decided they could do something similar for crucial medical equipment.</p>
+<p><a href="https://www.ifixit.com/News/41634/how-ifixit-built-its-free-medical-database" rel="nofollow noopener" target="_blank">Wiens and his team collaborated</a> with volunteers to collect and organize a free library of more than <a href="https://www.ifixit.com/News/41440/introducing-the-worlds-largest-medical-repair-database-free-for-everyone" rel="nofollow noopener" target="_blank">13,000 service and maintenance manuals</a> for lifesaving medical equipment. The move was potentially <a href="https://www.eff.org/deeplinks/2020/05/balanced-copyright-rules-can-help-save-lives-during-covid-19-crisis" rel="nofollow noopener" target="_blank">legally risky, but</a>so far, the materials remain online.</p>
+<hr/>
+<p><a href="https://themarkup.org/ask-the-markup/2020/10/20/0-electronics-right-to-repair-ventilators-iphone" rel="nofollow noopener" target="_blank"><img alt="Originally published on themarkup.org" class="js-lazy" data-src="https://mrkp-static-production.themarkup.org/static/img/republish-logo.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/><noscript><img alt="Originally published on themarkup.org" class="" src="https://mrkp-static-production.themarkup.org/static/img/republish-logo.png" srcset=""/></noscript></a></p>
+<p><em>This article was <a href="https://themarkup.org/ask-the-markup/2020/10/20/0-electronics-right-to-repair-ventilators-iphone" rel="nofollow noopener" target="_blank">originally published on The Markup</a> by Jon Keegan and was republished under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="nofollow noopener" target="_blank">Creative Commons Attribution-NonCommercial-NoDerivatives</a><a>license.</a></em></p>
+</div>
+<aside class="c-contributor latest">
+<a data-event-action="Author" data-event-category="Article" data-event-label="The Markup" data-event-non-interaction="false" href="/author/the-markup" rel="noopener" target="_blank">
+<img alt="The Markup" class="c-contributor__photo js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%233399FF&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Ff842b5f7495e34a8aaabc6408759d146%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=6c5585f5d86f20a74694832abdcd241a"/>
+<noscript>
+<img alt="The Markup" class="c-contributor__photo" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%233399FF&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Ff842b5f7495e34a8aaabc6408759d146%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=6c5585f5d86f20a74694832abdcd241a"/>
+</noscript>
+</a>
+<div aria-label="Author Bio" class="c-contributor__main">
+<h2 class="c-contributor__wrapper">
+<span class="c-contributor__heading">Story by</span>
+<span class="c-contributor__name">
+<a class="latest" href="/author/the-markup">The Markup</a>
+</span>
+</h2>
+</div>
+</aside>
+<div class="c-channel__cta" id="nl-container">
+<h2 class="c-channel__ctaHeading text-dark">Get the TNW newsletter</h2>
+<p class="c-channel__ctaDescription text-white">Get the most important tech news in your inbox each week.</p>
+<div id="in-article-newsletter" style="color: #fff"></div>
+</div>
+<h2 class="alsoTaggedIn">Also tagged with</h2>
+<br/>
+<ul class="c-header__tags c-tags c-tags--left">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Computer hardware" data-event-non-interaction="false" href="/topic/computer-hardware">Computer hardware</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="IPhone" data-event-non-interaction="false" href="/topic/iphone-2">IPhone</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Programming tool" data-event-non-interaction="false" href="/topic/programming-tool">Programming tool</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Performance" data-event-non-interaction="false" href="/topic/performance">Performance</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Maintenance, repair, and operations" data-event-non-interaction="false" href="/topic/maintenance-repair-and-operations">Maintenance, repair, and operations</a>
+</li>
+</ul>
+<footer class="c-article__pubDate md:flex md:justify-between">
+<div>
+                                Published <time datetime="2019-02-11 12:07:00">October 24, 2020 - 5:00 pm UTC</time>
+</div>
+<a class="scrolly latest" data-event-action="Back to top" data-event-category="Article" data-event-label="Back to top - click" data-event-non-interaction="true" data-target="#next-top" href="#">Back to top</a>
+</footer>
+<div aria-label="Social share options" class="c-share lg:hidden">
+<a aria-label="Share on Facebook" class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Why%20can%E2%80%99t%20I%20fix%20my%20own%20phone%2C%20toaster%2C%20or%20tractor%3F&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;u=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication&amp;t=Why%20can%E2%80%99t%20I%20fix%20my%20own%20phone%2C%20toaster%2C%20or%20tractor%3F" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a aria-label="Share on Twitter" class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Why%20can%E2%80%99t%20I%20fix%20my%20own%20phone%2C%20toaster%2C%20or%20tractor%3F" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a aria-label="Share on Flipboard" class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a aria-label="Share on Linkedin" class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a aria-label="Share on Telegram" class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a aria-label="Share via Email" class="c-share__link c-share__link--mail" href="mailto:?subject=Why can&amp;#8217;t I fix my own phone, toaster, or tractor?&amp;body=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+<aside aria-hidden="true" class="c-article__side">
+<aside class="c-article__author">
+<a class="plugged" data-event-action="Author" data-event-category="Article" data-event-label="The Markup" data-event-non-interaction="false" href="/author/the-markup">
+<img alt="The Markup" class="c-article__authorImage blend-blue-dark js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%233399FF&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Ff842b5f7495e34a8aaabc6408759d146%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=6c5585f5d86f20a74694832abdcd241a" height="96" id="duotone" width="96"/>
+<noscript>
+<img alt="The Markup" class="c-article__authorImage blend-blue-dark" height="96" id="duotone" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%233399FF&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Ff842b5f7495e34a8aaabc6408759d146%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=6c5585f5d86f20a74694832abdcd241a" width="96"/>
+</noscript>
+<span class="c-article__authorHeading">Story by</span>
+<span class="c-article__authorName latest">The Markup</span>
+</a>
+</aside>
+<div class="c-engage">
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Facebook" data-event-non-interaction="false" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Why%20can%E2%80%99t%20I%20fix%20my%20own%20phone%2C%20toaster%2C%20or%20tractor%3F&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fimage-4-6.png&amp;u=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication&amp;t=Why%20can%E2%80%99t%20I%20fix%20my%20own%20phone%2C%20toaster%2C%20or%20tractor%3F" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Twitter" data-event-non-interaction="false" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Why%20can%E2%80%99t%20I%20fix%20my%20own%20phone%2C%20toaster%2C%20or%20tractor%3F" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Linkedin" data-event-non-interaction="false" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Flipboard" data-event-non-interaction="false" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Telegram" data-event-non-interaction="false" href="https://t.me/share/url?url=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Email" data-event-non-interaction="false" href="mailto:?subject=Why can&amp;#8217;t I fix my own phone, toaster, or tractor?&amp;body=https://thenextweb.com/news/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</aside>
+<aside class="c-split__side mb-m" id="sidebar">
+<div class="c-split__sticky channel_cta_if_subnav">
+<div class="tnw-ad tnw-ad--article-mpu" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_ATF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,50],[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1324689"],"title":["Why can’t I fix my own phone, toaster, or tractor?"],"category":["plugged"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-atf"></div>
+<div class="jobbioapp sticky top-4xl" id="sidebarJobbio"></div>
+<div class="tnw-ad tnw-ad--article-mpu-btf" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_BTF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1324689"],"title":["Why can’t I fix my own phone, toaster, or tractor?"],"category":["plugged"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-btf"></div>
+</div>
+</aside>
+</article>
+</div>
+</div>
+<aside aria-label="Related Articles" class="c-article__suggested">
+<div class="c-nextRelatedGrid">
+<section class="o-wrapper o-wrapper--wide">
+<header class="c-bodyNews__header">
+<h2 class="c-bodyNews__heading">Related Articles</h2>
+</header>
+<div class="c-showcase__grid">
+<section class="c-showcase__grid c-showcase__scroller js-parallaxRoot">
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/apples-lockdown-mode-is-largest-arrow-in-its-security-quiver">
+<img alt="Apple’s ‘Lockdown Mode’ is the sharpest arrow in its security quiver" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=c9e51ddaab793992649c8d34cffd4f9d" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=215e3cfa0278b59cfa0a5b44b5f4e878 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=c18de36ece2ff30015828029916a4cc1 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=ed894dfc82c940b3f9e8e96ce92f28be 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=fda350fe383223a41aa9dba4a18cf6d0 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=9afd8f7ada62a764f936ce44ca1e2576 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=6e57e765f7aecc116aafd67b51e8f7cb 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=16b74b991075064b742c72f6c4e0d91e 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=b9821692d97e2289fb89df52ed00748e 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=104ed18d56048c8582a6078df4e513ab 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=cc0551a20e590d5a6b7d69e09af1dbf4 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=59b9b839d70b064459a5e46e07239a0d 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=a482e3476394471b698cb5c21e3418c4 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=d07654324510975c9821d91b60bfe7a8 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=e58f8711a846334312d0f84e0ed481de 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=c9e51ddaab793992649c8d34cffd4f9d 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="Apple’s ‘Lockdown Mode’ is the sharpest arrow in its security quiver" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=c9e51ddaab793992649c8d34cffd4f9d" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=215e3cfa0278b59cfa0a5b44b5f4e878 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=c18de36ece2ff30015828029916a4cc1 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=ed894dfc82c940b3f9e8e96ce92f28be 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=fda350fe383223a41aa9dba4a18cf6d0 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=9afd8f7ada62a764f936ce44ca1e2576 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=6e57e765f7aecc116aafd67b51e8f7cb 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=16b74b991075064b742c72f6c4e0d91e 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=b9821692d97e2289fb89df52ed00748e 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=104ed18d56048c8582a6078df4e513ab 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=cc0551a20e590d5a6b7d69e09af1dbf4 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=59b9b839d70b064459a5e46e07239a0d 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=a482e3476394471b698cb5c21e3418c4 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=d07654324510975c9821d91b60bfe7a8 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=e58f8711a846334312d0f84e0ed481de 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-92-4.jpg&amp;signature=c9e51ddaab793992649c8d34cffd4f9d 2361w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">plugged</span>
+<h3 class="c-card__heading">
+<a href="/news/apples-lockdown-mode-is-largest-arrow-in-its-security-quiver" tabindex="-1">Apple’s ‘Lockdown Mode’ is the sharpest arrow in its security quiver</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/apple-dutch-dating-apps-27-app-store-analysis">
+<img alt="Devs are mad at Apple’s ‘reduction’ in Dutch App Store fees — and rightly so" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=4f7627667937a05dfa3e21014d5f5bc3" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=95943b9677d85db995c6b5f8c6b7c426 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=57a5e44671afb520761260208bdad536 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=5455c62da1b0251ea965eeb6b8546639 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=ec7f77cf5e79962707cb074a7437d84f 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=b5aefb7f0e4227e904e675b2f86b978e 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=f0e4c336d2659350be07ea62a4e5bd61 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=f2383a7968b74a8317831f86b3cc2b1c 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=0f47ecf25c0fbf9994a8e4735a871791 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=9925e81a0cc08a06d64eb032bfa8d6f1 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=a29005e8c1f5490f7149c1ff10958b3f 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=dbb34ff614753f2f71e212fb3fef80ac 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=ed5f0636f8c51104fb0ca43674e97240 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=79dbeab180610783878d7a34d8bb5144 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=b8af6e951d240a2f83056cc98d9f1d5b 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=4f7627667937a05dfa3e21014d5f5bc3 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="Devs are mad at Apple’s ‘reduction’ in Dutch App Store fees — and rightly so" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=4f7627667937a05dfa3e21014d5f5bc3" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=95943b9677d85db995c6b5f8c6b7c426 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=57a5e44671afb520761260208bdad536 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=5455c62da1b0251ea965eeb6b8546639 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=ec7f77cf5e79962707cb074a7437d84f 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=b5aefb7f0e4227e904e675b2f86b978e 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=f0e4c336d2659350be07ea62a4e5bd61 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=f2383a7968b74a8317831f86b3cc2b1c 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=0f47ecf25c0fbf9994a8e4735a871791 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=9925e81a0cc08a06d64eb032bfa8d6f1 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=a29005e8c1f5490f7149c1ff10958b3f 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=dbb34ff614753f2f71e212fb3fef80ac 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=ed5f0636f8c51104fb0ca43674e97240 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=79dbeab180610783878d7a34d8bb5144 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=b8af6e951d240a2f83056cc98d9f1d5b 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTim-Tinder.jpg&amp;signature=4f7627667937a05dfa3e21014d5f5bc3 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">plugged</span>
+<h3 class="c-card__heading">
+<a href="/news/apple-dutch-dating-apps-27-app-store-analysis" tabindex="-1">Devs are mad at Apple’s ‘reduction’ in Dutch App Store fees — and rightly so</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/conference" tabindex="-1">
+<img alt="Discover TNW All Access" class="c-card__imageImage js-parallaxLayer o-parallax__layer" src="https://img-cdn.tnwcdn.com/image?fit=684%2C248&amp;url=https%3A%2F%2Fs3.eu-west-1.amazonaws.com%2Ftnw.events%2Fhardfork-2018%2Fuploads%2Fvisuals%2FConference-Nebula.png&amp;signature=1bb74f9f4b26d485f2fe5f2b8add03f8"></img></a>
+<header class="c-card__header advertPane">
+<h3 class="ad-title">Discover TNW All Access</h3>
+<span class="ad-description">Watch videos of our inspiring Talks for free</span>
+<a class="c-button adpanel c-button--rounded" data-event-action="Related articles Static Advert" data-event-category="Article" data-event-label="Article" data-event-non-interaction="false" href="https://thenextweb.com/auth/tnw/login-required" rel="noopener noreferrer" target="_blank">Sign up now</a>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/iphone-other-storage-why-taking-up-space-how-clear-it-syndication">
+<img alt="Why is ‘Other’ in my iPhone storage taking up so much space and how do I clear it?" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=8590da3e76ff5d6615a4dcffba235b00" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=7e5ce27672e51c7b9fc6fb3b51caf9c4 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=61b69112797559d2def203d0c7347462 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=82d6e14595f3bb961a8e12ee715b47bc 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=1b2ec6f1eeae635bab596bbd9469bcc1 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=5a87975582c311d553f09435a2dba5cf 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=49bef78f72d69dead486344ddec3ee10 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=654faed06f913ed4f83d90c515d4db0d 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=c0cf0b2e4db246a0f6e675d455952952 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=a8e603224d53def50ab8b5f7c42e0f95 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=54e5e0b01256f899404c970e0c6e242c 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=eb62470133d99e80f14e81a1c2531d7d 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=cf1483246af0635f83b491b483716948 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=cc91ec8dc545da18749a47e95547bf13 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=0a1bb12a8a6a769c446faf64de4839c5 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=8590da3e76ff5d6615a4dcffba235b00 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="Why is ‘Other’ in my iPhone storage taking up so much space and how do I clear it?" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=8590da3e76ff5d6615a4dcffba235b00" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=7e5ce27672e51c7b9fc6fb3b51caf9c4 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=61b69112797559d2def203d0c7347462 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=82d6e14595f3bb961a8e12ee715b47bc 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=1b2ec6f1eeae635bab596bbd9469bcc1 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=5a87975582c311d553f09435a2dba5cf 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=49bef78f72d69dead486344ddec3ee10 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=654faed06f913ed4f83d90c515d4db0d 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=c0cf0b2e4db246a0f6e675d455952952 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=a8e603224d53def50ab8b5f7c42e0f95 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=54e5e0b01256f899404c970e0c6e242c 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=eb62470133d99e80f14e81a1c2531d7d 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=cf1483246af0635f83b491b483716948 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=cc91ec8dc545da18749a47e95547bf13 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=0a1bb12a8a6a769c446faf64de4839c5 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F05%2FiPhone-Other-storage-hed.jpg&amp;signature=8590da3e76ff5d6615a4dcffba235b00 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">plugged</span>
+<h3 class="c-card__heading">
+<a href="/news/iphone-other-storage-why-taking-up-space-how-clear-it-syndication" tabindex="-1">Why is ‘Other’ in my iPhone storage taking up so much space and how do I clear it?</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/apple-event-march-8-2022">
+<img alt="Everything Apple announced at its March 8 event" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=f43ec90cbdec4a93d3b2d77bcf37cf14" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=37c0fbfda4d05ae153bf654ad496c3ca 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=c64625345f785767a2bcb9a5dc3d1ca6 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=625a79e9e4aba60f045287258e72bd38 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=0d9161fae2fc29a3b1117f327fe892cf 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=c14a7371e64077625e502d71a0026c77 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=224345cddfa4cab566ac2dc2e5bc8aaf 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=f15dd83cf07c3b1adf831040785ee162 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=b2fdbfce79cd5036b270acfff3b31188 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=bebe892389b6991e260ea5132aef4a50 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=aaa456b01a1ffe2202085ed943a108d8 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=b2a3fd9b733056fab709ba1c271f0da1 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=70bcbc73d89d49e7af18a585f0288890 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=d3cce84f4ce3377be104b94f30453157 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=7424cbdb571c5aec1df7f4bacab91fb4 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=f43ec90cbdec4a93d3b2d77bcf37cf14 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="Everything Apple announced at its March 8 event" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=f43ec90cbdec4a93d3b2d77bcf37cf14" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=37c0fbfda4d05ae153bf654ad496c3ca 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=c64625345f785767a2bcb9a5dc3d1ca6 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=625a79e9e4aba60f045287258e72bd38 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=0d9161fae2fc29a3b1117f327fe892cf 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=c14a7371e64077625e502d71a0026c77 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=224345cddfa4cab566ac2dc2e5bc8aaf 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=f15dd83cf07c3b1adf831040785ee162 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=b2fdbfce79cd5036b270acfff3b31188 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=bebe892389b6991e260ea5132aef4a50 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=aaa456b01a1ffe2202085ed943a108d8 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=b2a3fd9b733056fab709ba1c271f0da1 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=70bcbc73d89d49e7af18a585f0288890 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=d3cce84f4ce3377be104b94f30453157 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=7424cbdb571c5aec1df7f4bacab91fb4 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-event-copy.jpg&amp;signature=f43ec90cbdec4a93d3b2d77bcf37cf14 2361w  "/>
+</noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">plugged</span>
+<h3 class="c-card__heading">
+<a href="/news/apple-event-march-8-2022" tabindex="-1">Everything Apple announced at its March 8 event</a>
+</h3>
+</header>
+</div>
+</article>
+</section>
+</div>
+</section>
+</div>
+</aside>
+</main>
+
+</div>
+</div>
+<footer class="c-footer">
+<div class="o-wrapper">
+<div class="o-grid o-grid--gap-l">
+<div class="o-grid__col lg:o-grid__col--1/2">
+<div class="c-footer__logoContact">
+<div>
+<a class="c-footer__logo" data-event-action="TNW Logo" data-event-category="Footer" data-event-label="Navigation" data-event-non-interaction="false" href="https://thenextweb.com/" tabindex="-1" title="TNW">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z" fill="#fff"></path>
+</svg>
+</a>
+<p class="c-footer__tagline">The heart of tech</p>
+</div>
+<div>
+<ul class="c-footer__contact">
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Faaaaebook" href="https://facebook.com/thenextweb" name="Facebook Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Instagram" href="https://www.instagram.com/thenextweb/" name="Instagram Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Twitter" href="https://twitter.com/thenextweb" name="Twitter Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Youtube" href="https://youtube.com/user/thenextweb" name="Youtube Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Flipboard" href="https://flipboard.com/@thenextweb" name="Flipboard Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Mail" href="/newsletters" name="Email Footer Link"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Linkedin" href="https://www.linkedin.com/company/the-next-web" name="LinkedIn Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg></a></li>
+</ul>
+</div>
+</div>
+</div>
+<br/>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 more">
+<h2 class="c-footer__heading">More TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Media" data-event-non-interaction="false" href="/latest">Media</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Events" data-event-non-interaction="false" href="/events">Events</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Programs" data-event-non-interaction="false" href="/programs">Programs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Spaces" data-event-non-interaction="false" href="/spaces">Spaces</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Newsletters" data-event-non-interaction="false" href="/newsletters">Newsletters</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://talent.thenextweb.com/job-board?source=footer&amp;utm_source=footer&amp;utm_medium=partner_referral" rel="noopener" target="_blank">Jobs in tech</a></li>
+</ul>
+</div>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 about">
+<h2 class="c-footer__heading">About TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Partner with us" data-event-non-interaction="false" href="/partnerships" name="Partner with us">Partner with us</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://thenextweb.homerun.co/" name="Jobs" rel="noopener noreferrer" target="_blank">Jobs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Terms &amp; Conditions" data-event-non-interaction="false" href="/terms-and-conditions" name="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Cookie Statement" data-event-non-interaction="false" href="/cookie-statement" name="Cookie Statement">Cookie Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Privacy Statement" data-event-non-interaction="false" href="/privacy-statement " name="Privacy Statement">Privacy Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Editorial Policy" data-event-non-interaction="false" href="https://s3.eu-west-1.amazonaws.com/tnw.uploads/uploads/FT-EDITORIAL-CODE-OF-PRACTICE-15-Jan-2024.pdf" name="Editorial Policy" rel="noopener noreferrer" target="_blank">Editorial Policy</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Masthead" data-event-non-interaction="false" href="/masthead" name="Editorial Policy" rel="noopener">Masthead</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="c-footer__legal max-md:px-l">
+<a class="feedback" data-event-action="Financial Times" data-event-category="Footer" data-event-label="Financial Times" data-event-non-interaction="false" href="https://www.ft.com/" rel="noopener nofollow" target="_blank">
+<svg viewbox="0 0 367 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.97826,19.58347H5.20213L2.77475,26H0L8.32426,4.7043H10.89L19.21428,26H16.43953ZM6.10446,17.19h6.97148L9.57254,8.1032Z" fill="#fff"></path><path d="M29.98145,26V4.7043h13.597V7.89421H33.58934v6.31344H42.919v3.156H33.58934V26Z" fill="#fff"></path><path d="M48.686,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,48.686,8.06789ZM50.42,26H46.95193V10.59977H50.42Z" fill="#fff"></path><path d="M54.72547,10.59977h3.46809V12.057a5.4558,5.4558,0,0,1,4.16284-1.80323c3.46808,0,5.445,2.289,5.445,5.72178V26H64.33332V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26275,3.26275,0,0,0-3.22521,2.46268V26H54.72547Z" fill="#fff"></path><path d="M80.43536,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38126-.97152-1.734-1.56036-3.12071-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12071-1.56036Z" fill="#fff"></path><path d="M87.86718,10.59977h3.46809V12.057a5.45578,5.45578,0,0,1,4.16283-1.80323c3.46809,0,5.445,2.289,5.445,5.72178V26H97.475V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26274,3.26274,0,0,0-3.22521,2.46268V26H87.86718Z" fill="#fff"></path><path d="M111.63545,10.25381a6.50162,6.50162,0,0,1,4.19672,1.28217v3.40031a5.4709,5.4709,0,0,0-3.95385-1.59566c-2.46268,0-4.4396,1.97692-4.4396,4.95925,0,2.98375,1.97692,4.96067,4.4396,4.96067a5.47663,5.47663,0,0,0,3.95385-1.59566v3.3989a6.50259,6.50259,0,0,1-4.19672,1.28358c-4.232,0-7.66623-3.12212-7.66623-8.04749S107.40342,10.25381,111.63545,10.25381Z" fill="#fff"></path><path d="M120.93828,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,120.93828,8.06789ZM122.67233,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M135.50962,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38127-.97152-1.73405-1.56036-3.12072-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12072-1.56036Z" fill="#fff"></path><path d="M146.40811,26H142.94V3.4546h3.46808Z" fill="#fff"></path><path d="M157.27413,4.7043h17.75842V7.89421h-7.076V26H164.3501V7.89421h-7.076Z" fill="#fff"></path><path d="M179.9678,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,179.9678,8.06789ZM181.70184,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M201.96248,10.25381c3.12072,0,4.99456,2.2198,4.99456,5.72178V26h-3.4695V16.53054c0-1.90632-.83172-3.156-2.53188-3.156a2.70093,2.70093,0,0,0-2.73945,2.289V26h-3.46809V16.53054c0-1.90632-.83313-3.156-2.53187-3.156a2.70231,2.70231,0,0,0-2.74086,2.289V26H186.0073V10.59977h3.46809v1.28359a4.67951,4.67951,0,0,1,3.85076-1.62955,5.07645,5.07645,0,0,1,4.05693,2.04611A5.6743,5.6743,0,0,1,201.96248,10.25381Z" fill="#fff"></path><path d="M217.61689,26.34737c-4.47349,0-7.63092-3.08682-7.63092-7.9091,0-4.78557,2.98374-8.18446,7.076-8.18446,4.232,0,6.48572,3.01763,6.48572,7.56032v1.24969H213.38627a4.36215,4.36215,0,0,0,4.71638,4.29981,7.11212,7.11212,0,0,0,4.4043-1.422v3.05293A8.13643,8.13643,0,0,1,217.61689,26.34737Zm-4.05834-9.91991h6.69471a3.10814,3.10814,0,0,0-3.156-3.26052A3.588,3.588,0,0,0,213.55855,16.42746Z" fill="#fff"></path><path d="M226.26311,21.213a7.9172,7.9172,0,0,0,5.20213,2.25511c1.49116,0,2.67026-.52106,2.67026-1.631,0-1.03929-.76253-1.38667-2.04612-1.80323l-1.66485-.51965c-2.63637-.83313-4.16142-2.01223-4.16142-4.64859,0-2.77476,2.49657-4.61188,5.79238-4.61188a8.38994,8.38994,0,0,1,4.61188,1.35278v3.502a6.95868,6.95868,0,0,0-4.61188-1.97692c-1.38808,0-2.46268.59025-2.46268,1.59566,0,1.00682.58884,1.35278,1.97692,1.76935l2.01082.62414c2.56717.83313,3.92,2.1845,3.92,4.5441,0,2.94844-2.63637,4.68248-6.07056,4.68248a8.48739,8.48739,0,0,1-5.16683-1.59566Z" fill="#fff"></path><path d="M249.82521,12.47361a7.08924,7.08924,0,0,1,5.27132-2.18591,6.30818,6.30818,0,0,1,4.12754,1.28358v2.63637a5.38989,5.38989,0,0,0-3.95385-1.59566,4.72822,4.72822,0,0,0-3.50339,1.52647,5.73715,5.73715,0,0,0-1.45728,4.16142,5.743,5.743,0,0,0,1.45728,4.16284,4.732,4.732,0,0,0,3.50339,1.52505,5.38853,5.38853,0,0,0,3.95385-1.59424v2.635a6.30813,6.30813,0,0,1-4.12754,1.28359,7.1933,7.1933,0,0,1-5.27132-2.15061,8.01492,8.01492,0,0,1-2.15061-5.86158A7.87619,7.87619,0,0,1,249.82521,12.47361Z" fill="#fff"></path><path d="M273.90272,24.057a6.93067,6.93067,0,0,1-10.232,0,8.56076,8.56076,0,0,1-1.94162-5.75709,8.56075,8.56075,0,0,1,1.94162-5.75708,6.93067,6.93067,0,0,1,10.232,0,8.41292,8.41292,0,0,1,1.97692,5.75708A8.41293,8.41293,0,0,1,273.90272,24.057Zm-5.099-11.48028c-2.77475,0-4.4396,2.39349-4.4396,5.72319s1.66485,5.7232,4.4396,5.7232,4.43961-2.39349,4.43961-5.7232S271.57842,12.57669,268.80367,12.57669Z" fill="#fff"></path><path d="M295.03462,10.2877c3.08682,0,4.85617,2.18591,4.85617,5.51561V26h-2.63637V16.21847c0-2.11531-.93621-3.57259-2.91314-3.57259a3.56186,3.56186,0,0,0-3.4003,2.74087V26h-2.60107V16.21847c0-2.11531-.93622-3.57259-2.91314-3.57259a3.5603,3.5603,0,0,0-3.39889,2.74087V26h-2.60107V10.59977h2.60107v1.80465a4.77136,4.77136,0,0,1,4.16142-2.11672,4.56953,4.56953,0,0,1,4.16283,2.46268A5.61944,5.61944,0,0,1,295.03462,10.2877Z" fill="#fff"></path><path d="M306.91028,31.89688h-2.60107V10.59977h2.60107v1.80465a5.47521,5.47521,0,0,1,4.33511-2.11672,5.97708,5.97708,0,0,1,5.16824,2.42879,9.16121,9.16121,0,0,1,1.76935,5.58339,9.34026,9.34026,0,0,1-1.76935,5.6187,6.039,6.039,0,0,1-5.16824,2.39349,5.4743,5.4743,0,0,1-4.33511-2.11531Zm0-10.47487a4.49749,4.49749,0,0,0,3.95385,2.53187c2.91313,0,4.68248-2.42879,4.68248-5.654s-1.76935-5.654-4.68248-5.654a4.4975,4.4975,0,0,0-3.95385,2.53188Z" fill="#fff"></path><path d="M330.29728,15.768c0-1.90773-1.422-3.08682-3.67708-3.08682a7.75913,7.75913,0,0,0-4.37041,1.35278V11.57128a8.82,8.82,0,0,1,4.787-1.28358c3.60647,0,5.79239,2.04611,5.79239,5.27273V26h-2.53188V24.8548a6.22354,6.22354,0,0,1-3.98915,1.422,6.54463,6.54463,0,0,1-4.05834-1.31748,4.33611,4.33611,0,0,1-1.66485-3.60647,4.1488,4.1488,0,0,1,1.70015-3.4695,6.8181,6.8181,0,0,1,8.01219-.10308Zm0,4.82087c-.41656-1.14379-1.943-1.90773-3.57258-1.90773a4.84209,4.84209,0,0,0-2.53188.65944,2.11057,2.11057,0,0,0-1.1452,2.01223,2.24887,2.24887,0,0,0,1.1452,2.08,4.82881,4.82881,0,0,0,2.53188.65945c1.62955,0,3.156-.76253,3.57258-1.90773Z" fill="#fff"></path><path d="M337.27723,10.59977h2.60107v1.943a5.69746,5.69746,0,0,1,4.5441-2.2551c3.46809,0,5.40971,2.289,5.40971,5.61869V26h-2.635V16.323c0-2.11531-1.076-3.64177-3.40031-3.64177a4.178,4.178,0,0,0-3.91854,2.87924V26h-2.60107Z" fill="#fff"></path><path d="M356.05094,31.89688l2.32289-5.79239-6-15.50472h2.81l4.54269,12.13972,4.47491-12.13972h2.70556l-8.29037,21.29711Z" fill="#fff"></path>
+</svg>
+</a>
+<p>
+                    Copyright © 2006—2024, The Next Web B.V.
+                    Made with &lt;3 in Amsterdam.
+                    <br/>
+</p>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<div class="cookie-consent-banner" data-args='{"cookieName":"__tnw_cookieConsent","cookieExpirationDays":"365","consentChoices":["ad_storage","analytics_storage"],"redirectOnSave":true,"honorDoNotTrack":false,"stylesheet":"https:\/\/thenextweb.com\/cpresources\/1abce43c\/style.css?v=1725957748","titleText":"Cookies","descriptionText":"&lt;p&gt;We use &lt;a href=\"\/cookie-statement\"&gt;cookies&lt;\/a&gt; and other data for a number of reasons, such as keeping TNW sites reliable and secure, personalizing content and ads, providing social media features and to analyze how our sites are used.&lt;\/p&gt;","linkColor":"6644ff","linkHoverColor":"7755ff","primaryBtnText":"Accept &amp; continue","primaryBtnBgColor":"","primaryBtnBgHoverColor":"","primaryBtnColor":"","primaryBtnHoverColor":"","secondaryBtnText":"Manage cookies","secondaryBtnURL":"\/cookie-statement","secondaryBtnRedirectURL":"https:\/\/thenextweb.com\/news\/why-cant-i-fix-my-own-phone-toaster-or-tractor-syndication","secondaryBtnColor":"6644ff","secondaryBtnHoverColor":"7755ff","debugMode":false}' id="cookie-consent-banner"></div>
+</body>
+</html>

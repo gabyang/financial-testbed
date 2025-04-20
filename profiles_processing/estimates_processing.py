@@ -65,7 +65,7 @@ def ingest_json_data(file_path, conn):
         # Insert data into the database
         with conn.cursor() as cur:
             insert_query = """
-            INSERT INTO earnings_data 
+            INSERT INTO historic_estimates 
             (symbol, date, eps_estimated, time, revenue_estimated, updated_from_date, fiscal_date_ending)
             VALUES %s
             """
@@ -83,7 +83,7 @@ def ingest_json_data(file_path, conn):
         conn.rollback()
 
 def main():
-    file_path = "test_data/profile_estimate/historical_earning_estimates.json"  # Update this to your actual file path
+    file_path = "test_data/profile_estimate/historical_earning_estimates.json" 
     
     try:
         # Connect to PostgreSQL

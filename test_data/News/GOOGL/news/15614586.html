@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+<!--
+Development:
+JULIO FOULQUIE, @j3j5@hachyderm.io, ✈Montevideo, UY
+MARC TORAL, ✈Amsterdam, NL
+JULIAN SZNAIDER, ✈Buenos Aires, AR
+——————————
+Concept and Design by:
+ALEXANDER GRIFFIOEN, @oscaralexander, ✈Amsterdam, NL
+SÄINA SEEDORF, ✈Amsterdam, NL
+——————————
+Alumni:
+JACK DUNN, ✈Amsterdam, NL
+JULIAN AIJAL, @Jaijal, ✈Amsterdam, NL
+SAM BLOK, ✈Amsterdam, NL
+LAURA GENNO, ✈Amsterdam, NL
+IRENE DE NICOLO, ✈Amsterdam, NL
+DANIEL TARA, ✈Amsterdam, NL
+EVGENY ASTAPOV, ✈Rotterdam, NL
+RONAN O'LEARY, @ro_oleary, ✈Amsterdam, NL
+PABLO ROMÁN, ✈Amsterdam, NL
+JAMES SCOTT, ✈Amsterdam, NL
+JELLE VAN WIJHE, ✈Amsterdam, NL
+MATTHEW ELWORTHY, ✈Amsterdam, NL
+OSCAR VAN ZIJVERDEN, ✈Amsterdam, NL
+STEPHAN LAGERWAARD, ✈Amsterdam, NL
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="unsafe-url" name="referrer"/>
+<meta content="The Next Web" name="apple-mobile-web-app-title"/>
+
+<link as="style" href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="script" href="//next.tnwcdn.com/assets/next/js/base.js?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="style" href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="font" crossorigin="anonymous" href="https://next.tnwcdn.com/assets/next/fonts/graphik-wide-black.woff2" rel="preload" type="font/woff2"/>
+<link as="image" href="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=606b33c36f095d30b409acc5d73de3aa" imagesrcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=7afd8106e746c88a8676a84200b5f64a 576w,
+                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=61bce6e53001c4822afc262c03833034 1152w,
+                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=606b33c36f095d30b409acc5d73de3aa 1280w" media="(min-width: 361px) and (min-height: 651px)" rel="preload"/>
+<title>Here’s how to make your virtual meetings more efficient</title>
+<!-- OpenGraph -->
+<meta content="Andrea Hak" name="author"/>
+<meta content="https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient" name="original-source">
+<meta content="TNW | Startups-Technology" property="og:site_name">
+<meta content="Here’s how to make your virtual meetings more efficient" property="og:title">
+<meta content="Ineffective meetings were a huge problem before coronavirus, but now watercooler chats have become scheduled 30-minute Zoom calls — and we need to fix it." name="description" property="description">
+<meta content="Ineffective meetings were a huge problem before coronavirus, but now watercooler chats have become scheduled 30-minute Zoom calls — and we need to fix it." property="og:description">
+<meta content="https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient" property="og:url">
+<meta content="640" property="og:image:height">
+<meta content="1280" property="og:image:width"/>
+<meta content="https://img-cdn.tnwcdn.com/image?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=97343dd43d8b89a11a2e7de19bf36dc0" property="og:image"/>
+<meta content="article" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="2020-07-13T12:52:26+00:00" property="og:updated_time">
+<meta content="2020-05-27T14:24:30+00:00" property="article:published_time"/>
+<meta content="2020-07-13T12:52:26+00:00" property="article:modified_time"/>
+<meta content="Startups and technology" property="article:section"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@thenextweb" name="twitter:site"/>
+<meta content="@thenextweb" name="twitter:creator"/>
+<meta content="Here’s how to make your virtual meetings more efficient" name="twitter:title"/>
+<meta content="https://img-cdn.tnwcdn.com/image?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=97343dd43d8b89a11a2e7de19bf36dc0" name="twitter:image"/>
+<meta content="Ineffective meetings were a huge problem before coronavirus, but now watercooler chats have become scheduled 30-minute Zoom calls — and we need to fix it." name="twitter:description"/>
+<!-- General Meta -->
+<meta content="max-image-preview:large" name="robots"/>
+<meta content="Here’s how to make your virtual meetings more efficient" property="title">
+<meta content="Ineffective meetings were a huge problem before coronavirus, but now watercooler chats have become scheduled 30-minute Zoom calls — and we need to fix it." property="description"/>
+<meta content="https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient" property="url"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon"/>
+
+<link href="/manifest.json" rel="manifest"/>
+
+
+
+
+<link href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<noscript>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+</noscript>
+<meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<link href="//cdn0.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//next.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//img-cdn.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//cdnjs.cloudflare.com/" rel="dns-prefetch"/>
+<link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+<link href="//cdn0.tnwcdn.com/" rel="preconnect"/>
+<link href="//next.tnwcdn.com/" rel="preconnect"/>
+<link href="//img-cdn.tnwcdn.com/" rel="preconnect"/>
+<link href="//www.googletagmanager.com" rel="preconnect"/>
+<link href="//cdnjs.cloudflare.com/" rel="preconnect"/>
+<link as="style" async="" crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet preload"/>
+<link href="https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient" rel="canonical">
+
+<!-- JSON-LD Breadcrumbs -->
+
+<!-- JSON-LD schema -->
+
+
+
+</link></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></head>
+<body class="site-tnwNext preload" id="next-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+<div id="fb-root"></div>
+<div class="startups-technology" id="_progress"></div>
+<nav class="c-nav has-level2" id="nav" role="navigation" style="top: 0;">
+<div class="c-nav__level1">
+<button aria-controls="overlay__hook" aria-expanded="false" aria-haspopup="true" class="c-nav__menuToggle c-nav__menuToggle--level-1 js-menuToggleLevel" data-nav-level="1" id="nav-menuLevel1" type="button">
+<span class="visually-hidden">Toggle Navigation</span>
+</button>
+<div class="navLabel_dt">
+<a class="c-nav__logo" data-event-action="Navigation bar" data-event-category="Article" data-event-label="TNW Logo" data-event-non-interaction="false" href="/" name="TNW Logo">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path>
+</svg>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--1" id="overlay__hook">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="News" data-event-category="Navigation bar" data-event-label="/" data-event-non-interaction="false" href="/">News</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">Events</button>
+<ul class="c-nav__submenu" role="menu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false" href="/conference">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false">TNW Conference</span>
+<span class="c-nav__submenuLinkNote">June 19 &amp; 20, 2025</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false" href="https://thenextweb.com/conference/the-soonicorn-summit">
+<span class="c-nav__submenuLinkTitle" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false">The Soonicorn Summit</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false" href="https://thenextweb.com/conference/tnw-webinar-series">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false">TNW Webinars</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false" href="/events">
+<span class="c-nav__submenuLinkTitle" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false">All events</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+</ul>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Spaces" data-event-category="Navigation bar" data-event-label="/spaces" data-event-non-interaction="false" href="/spaces">Spaces</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Programs" data-event-category="Navigation bar" data-event-label="/programs" data-event-non-interaction="false" href="/programs">Programs</a>
+</li>
+</ul>
+<hr class="mobile_menu_divider"/>
+<ul class="c-nav__menu c-nav__icons">
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" data-event-action="Newsletter" data-event-category="Navigation bar" data-event-label="Newsletters top right - click" data-event-non-interaction="false" href="/newsletters">
+<span class="c-nav__iconsItem--label" data-event-action="Newsletters" data-event-category="Navigation bar" data-event-label="/newsletters" data-event-non-interaction="false">Newsletters</span>
+</a>
+</li>
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" href="/partnerships">
+<span class="c-nav__iconsItem--label" data-event-action="Partner with us" data-event-category="Navigation bar" data-event-label="/partnerships" data-event-non-interaction="false">Partner with us</span>
+</a>
+</li>
+</ul>
+<footer class="c-nav__footer">
+<ul class="c-nav__social">
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://facebook.com/thenextweb" name="Facebook Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://www.instagram.com/thenextweb" name="Instagram Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://twitter.com/thenextweb" name="Twitter Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://youtube.com/user/thenextweb" name="Youtube Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://flipboard.com/@thenextweb" name="Flipboard Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="/newsletters" name="Email Social Link">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</li>
+</ul>
+<ul class="c-nav__company">
+<li class="c-nav__companyItem">
+<a class="c-nav__companyLink" href="https://thenextweb.homerun.co/" rel="noopener noreferrer" target="_blank">Jobs</a>
+</li>
+<li class="c-nav__companyItem"><a class="c-nav__companyLink" href="mailto:conference@thenextweb.com">Contact</a></li>
+</ul>
+</footer>
+</div>
+</div>
+<div class="c-nav__level2 tnw news">
+<div class="c-nav__pwd">
+<a class="c-nav__pwdLogo" href="/"><svg class="tnwLogo__tnwNews"><title>The Next Web</title><use xlink:href="/assets/next/img/icons.svg#tnw"></use></svg></a>
+<a class="c-nav__pwdLogoUkraine" href="/ukraine">
+<img alt="We stand with Ukraine" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/companies/ukraine.png"/>
+</a>
+<span class="c-nav__pwdSection">News</span>
+<a class="c-nav__pwdSite" href="/" title="">
+<span class="sm:hidden" id="channelName_abbr">news</span>
+<span class="max-sm:hidden xl:hidden">news</span>
+<span class="max-xl:hidden" id="channelName_mob">news</span>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--2">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Latest" data-event-category="Navigation bar" data-event-label="/latest" data-event-non-interaction="false" href="/latest">Latest</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Deep tech" data-event-category="Navigation bar" data-event-label="/deep-tech" data-event-non-interaction="false" href="/deep-tech">Deep tech</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Sustainability" data-event-category="Navigation bar" data-event-label="/sustainability" data-event-non-interaction="false" href="/sustainability">Sustainability</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Ecosystems" data-event-category="Navigation bar" data-event-label="/ecosystems" data-event-non-interaction="false" href="/ecosystems">Ecosystems</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Data and security" data-event-category="Navigation bar" data-event-label="/data-security" data-event-non-interaction="false" href="/data-security">Data and security</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Fintech and ecommerce" data-event-category="Navigation bar" data-event-label="/fintech-ecommerce" data-event-non-interaction="false" href="/fintech-ecommerce">Fintech and ecommerce</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Future of work" data-event-category="Navigation bar" data-event-label="/future-of-work" data-event-non-interaction="false" href="/future-of-work">Future of work</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Podcast" data-event-category="Navigation bar" data-event-label="https://podcast.thenextweb.com" data-event-non-interaction="false" href="https://podcast.thenextweb.com">Podcast</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">More</button>
+<ul class="c-nav__submenu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="https://thenextweb.com/tnw-conference-2024">
+<span class="c-nav__submenuLinkTitle" data-event-action="Conference media hub" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/tnw-conference-2024" data-event-non-interaction="false">Conference media hub</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/startups-technology">
+<span class="c-nav__submenuLinkTitle" data-event-action="Startups and technology" data-event-category="Navigation bar" data-event-label="/startups-technology" data-event-non-interaction="false">Startups and technology</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/investors-funding">
+<span class="c-nav__submenuLinkTitle" data-event-action="Investors and funding" data-event-category="Navigation bar" data-event-label="/investors-funding" data-event-non-interaction="false">Investors and funding</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/government-policy">
+<span class="c-nav__submenuLinkTitle" data-event-action="Government and policy" data-event-category="Navigation bar" data-event-label="/government-policy" data-event-non-interaction="false">Government and policy</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/corporates-innovation">
+<span class="c-nav__submenuLinkTitle" data-event-action="Corporates and innovation" data-event-category="Navigation bar" data-event-label="/corporates-innovation" data-event-non-interaction="false">Corporates and innovation</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/plugged">
+<span class="c-nav__submenuLinkTitle" data-event-action="Gadgets &amp; apps" data-event-category="Navigation bar" data-event-label="/plugged" data-event-non-interaction="false">Gadgets &amp; apps</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<button aria-hidden="true" class="c-nav__menuScroller" type="button"></button>
+</div>
+</div>
+</nav>
+<a class="c-nav__yellow-bar" href="https://thenextweb.com/conference/tickets" id="cross-site-notification" rel="noopener" target="_blank">
+<div class="c-nav__message c-nav__message--global" data-event-action="Yellow bar" data-event-category="Yellow bar" data-event-label="Yellow bar - click">
+<p><strong>Save over 40% when you secure your tickets today to TNW Conference 💥 Prices will increase on November 22 →</strong></p>
+</div>
+</a>
+<div class="o-page" id="main">
+<div class="o-page__main">
+<main class="c-channel c-channel--latest o-page__main" id="article_container">
+<div class="c-articles">
+<div class="c-articles__backdrop"><div class="c-articles__backdrop--sticky"></div></div>
+<div class="c-nav__message c-nav__message--article news" style="top:0">
+<p>This article was published on <strong>May 27, 2020</strong></p>
+</div>
+<header class="c-header">
+<div class="o-wrapper">
+<div class="c-header__text">
+<ul class="c-header__tags c-tags c-tags--centered">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Startups and technology" data-event-non-interaction="false" href="/startups-technology">Startups and technology</a>
+</li>
+</ul>
+<h1 class="c-header__heading">Here’s how to make your virtual meetings more efficient</h1>
+<br/>
+<div>
+<time datetime="May 27, 2020 - 2:24 pm">May 27, 2020 - 2:24 pm</time>
+</div>
+</div>
+<div aria-hidden="true" class="c-share lg:hidden">
+<a class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Here%E2%80%99s%20how%20to%20make%20your%20virtual%20meetings%20more%20efficient&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;u=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient&amp;t=Here%E2%80%99s%20how%20to%20make%20your%20virtual%20meetings%20more%20efficient" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Here%E2%80%99s%20how%20to%20make%20your%20virtual%20meetings%20more%20efficient" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-share__link c-share__link--mail" href="mailto:?subject=Here’s how to make your virtual meetings more efficient&amp;body=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+</header>
+<div class="e-empty__hidden"></div>
+
+<div class="o-wrapper mb-4xl">
+<article class="c-article js-article mt-m" id="articleOutput" style="margin-top: 0px;">
+<div class="c-article__media c-article__growth-mobile">
+<figure class="o-media o-media--16:9">
+<img alt="Here’s how to make your virtual meetings more efficient" class="js-lazy c-article__mediaImage w-full absolute top-0" data-src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=606b33c36f095d30b409acc5d73de3aa" data-srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=7afd8106e746c88a8676a84200b5f64a 576w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=61bce6e53001c4822afc262c03833034 1152w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=606b33c36f095d30b409acc5d73de3aa 1280w" sizes="(max-width: 1023px) 100vw
+                                               868px"/>
+<noscript>
+<img alt="Here’s how to make your virtual meetings more efficient" class="c-article__mediaImage w-full absolute top-0" sizes="(max-width: 1023px) 100vw
+                                                   868px" src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=606b33c36f095d30b409acc5d73de3aa" srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=7afd8106e746c88a8676a84200b5f64a 576w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=61bce6e53001c4822afc262c03833034 1152w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;signature=606b33c36f095d30b409acc5d73de3aa 1280w"/>
+</noscript>
+</figure>
+</div>
+<div class="screen-size mobile-screen" style="text-align: center"></div>
+
+<div class="c-article__main max-lg:mb-xxl">
+<div class="c-richText c-richText--large" id="article-main-content">
+<p><span style="font-weight: 400;">Not to be dramatic but… ineffectual meetings were a huge problem</span><i><span style="font-weight: 400;">before</span></i><span style="font-weight: 400;">coronavirus. Meetings during lockdown are getting even more out of hand: what was once a quick chat by the water cooler is now a scheduled 30-minute Zoom call. Our work calendars are filling up with unwieldy video chats, which are actually slowing us down.</span></p>
+<p><span style="font-weight: 400;">On March 31st, 2020 Microsoft Teams recorded a record-breaking</span><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/09/remote-work-trend-report-meetings/?wt.mc_id=AID2409697_QSG_SCL_424041&amp;ocid=AID2409697_QSG_SCL_424041&amp;ranMID=24542&amp;ranEAID=nOD/rLJHOac&amp;ranSiteID=nOD_rLJHOac-XPR3rXK8WkoYqI32tUm0Vw&amp;epi=nOD_rLJHOac-XPR3rXK8WkoYqI32tUm0Vw&amp;irgwc=1&amp;OCID=AID2000142_aff_7593_1243925&amp;tduid=%28ir__juwn1ogxkckftyupkk0sohz3xm2xnr1ci6g1wg2d00%29%287593%29%281243925%29%28nOD_rLJHOac-XPR3rXK8WkoYqI32tUm0Vw%29%28%29&amp;irclickid=_juwn1ogxkckftyupkk0sohz3xm2xnr1ci6g1wg2d00" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">2.7 billion meeting minutes</span></a><span style="font-weight: 400;">in one single day. Zoom downloads</span><a href="https://www.businessinsider.com/app-downloads-increases-because-of-coronavirus-zoom-google-meet-houseparty-2020-4?r=US&amp;IR=T#video-chat-app-zoom-saw-downloads-grow-1330-9" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">increased by 1330%</span></a><span style="font-weight: 400;">from February to March. On Slack the average number of</span><a href="https://www.marketwatch.com/story/these-charts-show-how-much-slack-use-has-skyrocketed-with-millions-now-working-from-home-2020-03-26" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">messages sent per user per day is up 20%</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">‘Zoom fatigue’ is now a trending search topic. This phenomenon is alive and well and it’s eating away at both our sanity and our ability to actually get shit done. According to studies, it takes roughly</span><a href="https://www.google.com/search?q=how+long+does+it+take+to+get+back+into+deep+work+after+being+disturbed&amp;oq=how+long+does+it+take+to+get+back+into+deep+work+after+being+disturbed&amp;aqs=chrome..69i57.19159j0j7&amp;sourceid=chrome&amp;ie=UTF-8" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">23 minutes to refocus</span></a><span style="font-weight: 400;">after being distracted at work, meaning that, when you only have 30-minute time slots open between virtual meetings, it’s not really enough time to get any meaningful work done.</span></p>
+<p><span style="font-weight: 400;">At the same time, many are feeling the pressure to prove they’re actually working at home by constantly being connected and attending all meetings that come their way.</span></p>
+<div class="inarticle-wrapper latest channel-cta hs-embed-tnw"><div class="channel-cta-wrapper" id="hs-embed-tnw"><div class="channel-cta-img"><img class="js-lazy" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/visuals/tnw-newsletter.png"/></div><noscript><img src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/visuals/tnw-newsletter.png"/></noscript><div class="channel-cta-input"><p class="channel-cta-title">The 💜 of EU tech</p><p class="channel-cta-tagline">The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox. Sign up now!</p><div id="hs-inarticle-embed"><div id="latest-inarticle-embed"></div></div></div></div></div><p><span style="font-weight: 400;">Basically, the need for virtual meetings has now magnified the defects of bad meeting practices and added new challenges, forcing us to a breaking point.</span></p>
+<p><span style="font-weight: 400;">But could this actually be a golden opportunity to finally evolve and get rid of ineffective meetings?</span></p>
+<h2><b>No meetings and no pants: the dream vs. the reality</b></h2>
+<p><span style="font-weight: 400;">A relatively new trend called asynchronous communication is being eyed by teams struggling under a mountain of meetings and disruptions. The practice had already gained a cult following amongst remote teams like Buffer, Doist, Basecamp, and Zapier.</span></p>
+<p><span style="font-weight: 400;">In an</span><a href="https://qz.com/work/1853725/why-asynchronous-communication-works-for-teams/" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">article</span></a><span style="font-weight: 400;">for Quartz, CEO of Doist, Amir Salihefendić, explained: “(async) communication is when you send a message without expecting an immediate response. For example, you send an email; I open and respond to the email several hours later.”</span></p>
+<p><span style="font-weight: 400;">Rather than being constantly connected, async teams prioritize ‘deep work’ over collaboration by turning notifications off and eliminating meetings as much as possible. Instead, tech tools are used to align and coordinate across team members.</span></p>
+<p><span style="font-weight: 400;">The great thing about this way of working is that people have genuine autonomy over their schedules. They decide when it’s time to concentrate and when they need to check in on emails and messages. By focusing on output, rather than synced time frames, people can more easily manage complicated work-life balances.</span></p>
+<p><span style="font-weight: 400;">Check-in meetings can be (almost) eliminated by switching all check-ins over to text-based status updates. This increases transparency and creates documented updates that can be referenced when needed.</span></p>
+<p><span style="font-weight: 400;">For example, when one of</span><a href="https://open.buffer.com/asynchronous-meetings/" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Buffer</span></a><span style="font-weight: 400;">’s team members moved to Taiwan, they suddenly had trouble finding a timezone-friendly hour for their weekly sync up. Instead, they decided to test out different options to replace their virtual meetings. Now they’re using a tool called</span><a href="https://threads.com/" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Threads</span></a><span style="font-weight: 400;">to self document their updates. The nice thing is, they say it’s also allowed them to level the communication field for people who are less likely to speak up in traditional meetings.</span></p>
+<p><span style="font-weight: 400;">While Buffer seems to be relatively happy with the switch, they do admit that what’s missing is face time with the team.</span></p>
+<h2><b>Is it time to ditch meetings altogether?</b></h2>
+<p><span style="font-weight: 400;">llija Studen, founder of team collaboration platform</span><a href="https://activecollab.com/" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">ActiveCollab</span></a><span style="font-weight: 400;">, doesn’t think so.</span></p>
+<p><span style="font-weight: 400;">“There’s a strong push towards asynchronized communication. There are advantages to that type of work, for example, for teams that are spread across time zones. The problem is, if you take it to the extreme, there is no team. This can be people working on the same problem but a team has to have a sync time when they’re trying to solve it together.”</span></p>
+<p><span style="font-weight: 400;">In fact,</span><a href="https://www.jneurosci.org/content/32/45/16064?ijkey=e9549b220368e1d828233d15a677ec02302b6587&amp;keytype2=tf_ipsecsha" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">studies</span></a><span style="font-weight: 400;">show that face-to-face communication has important neural features that other types of communication lack, including the important influences of body language and turn-taking. This means neural synchronization between two people is higher when speaking face-to-face, thereby improving understanding and communication flows in a way that can’t be replicated in email or voice calls.</span></p>
+<p><span style="font-weight: 400;">“You cannot build trust with people without talking to them face-to-face. We as a species like to share and gossip so we know what to expect from one another. That’s hard to do if everyone has their own schedule. It’s not that you can’t get good output with that setup, but then don’t call them a team, call them high-performing individuals.”</span></p>
+<p><span style="font-weight: 400;">A</span><a href="https://www.forbes.com/sites/bryanrobinson/2020/04/04/what-7-studies-show-about-social-distancing-and-remote-working-during-covid-19/#206863b6757e" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">study</span></a><span style="font-weight: 400;">by Blind found that 52.9% of employees from companies including Apple, Intel, and Facebook were feeling increasingly lonely while working from home. Although Zoom fatigue is getting us down, for some, it can be a much-needed link to the outside world.</span><a href="https://www.researchgate.net/publication/323524525_Video-calls_to_reduce_loneliness_and_social_isolation_within_care_environments_for_older_people_An_implementation_study_using_collaborative_action_research" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Studies</span></a><span style="font-weight: 400;">show that video calls can reduce loneliness and social isolation.</span></p>
+<p><span style="font-weight: 400;">“The whole async thing is great, we should take good bits, but it cannot replace sync. In order to have good, high-performing teams they have to spend time together, whether virtual or in a physical space,” Ilija said.</span></p>
+<h2><b>This meeting shouldn’t even be an email</b></h2>
+<p><span style="font-weight: 400;">While we may still need meetings, what we can do is start by cutting out any meeting that’s simply a waste of time and making those we do have as efficient, useful, and, dare I say,</span><i><span style="font-weight: 400;">pleasant</span></i><span style="font-weight: 400;">as possible.</span></p>
+<p><span style="font-weight: 400;">Let’s start with what should be cut.</span></p>
+<p><span style="font-weight: 400;">According to Ilija, we shouldn’t have meetings simply “to give a status report or because the CTO thinks they’re a great idea. We shouldn’t be there because the CEO had an epiphany at three am on Sunday night and wants everyone to discuss it the next morning. Every meeting has to be about solving a problem or having an important conversation in which everyone’s input is needed.”</span></p>
+<p><span style="font-weight: 400;">Brainstorms? As long as they’re focused on finding a solution to a specific problem, ok. Retrospectives? Sure, if the purpose is clear: to gather feedback and discuss how sprints can be improved in the future.</span></p>
+<p><span style="font-weight: 400;">Daily standups?…</span></p>
+<p><span style="font-weight: 400;">I know a lot of companies have daily standups… but really? Who hasn’t been in a standup where more than half the people listed off the meetings they have that day? There are tools you can use to keep up-to-date on what everyone is working on virtually. If you still feel a stand up is necessary, limit it to one or two times a week.</span></p>
+<h2><b>When you do have virtual meetings …</b></h2>
+<p><strong>1. End the sudden outbursts and awkward silences with a facilitator</strong></p>
+<p><span style="font-weight: 400;">Meetings can sometimes feel like a free-for-all. You start off on one topic then someone hijacks the discussion and takes it in a different direction. “People should be trained in basic meeting facilitation techniques,” Ilija said. Every meeting should have a facilitator who provides an agenda, makes sure everyone contributes, and prevents the meeting from going off-topic. They should also make sure action items are written down and followed up afterward.</span></p>
+<p><a href="https://otter.ai/" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Otter.ai</span></a><span style="font-weight: 400;">is a tool that can help facilitators easily transcribe meeting recordings. If you want to step things up a notch,</span><a href="https://hendrix.ai/" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Hendrix</span></a><span style="font-weight: 400;">is an AI meeting assistant that takes smart meeting notes, creates action items, and provides meeting stats.</span></p>
+<p><strong>2. Cut them down until you find the right fit</strong></p>
+<p><span style="font-weight: 400;">According to Parkinson’s Law, “work expands to fill the time available for its completion.”</span></p>
+<p><span style="font-weight: 400;">Basically, if you schedule a certain amount of time for a meeting, you will use all the time you’ve scheduled, whether you need to or not. Don’t take automatic one hour time blocks for granted. Instead, estimate how much time each meeting will actually take you and schedule accordingly. Each time you have a meeting see if you can cut the time down more and more until you find the right fit.</span></p>
+<p><span style="font-weight: 400;">At ActiveCollab, IIija told TNW, “We kept cutting down the time we took for meetings until we felt we were rushing. Then we knew we’d found the right balance.”</span></p>
+<p><span style="font-weight: 400;">One method for staying on schedule is timeboxing. This technique is all about dedicating blocks of time in your schedule to a specific effort and then</span><span style="font-weight: 400;">sticking</span><span style="font-weight: 400;">to it. “For example, meetings should have a strict timebox and we should remind ourselves when we’re reaching the end of that timebox so we can assess whether we’ve reached the goal of the meeting,” he said.</span></p>
+<p><span style="font-weight: 400;">But what happens if you’ve gotten to the end of your meeting and you’re still not done?</span></p>
+<p><span style="font-weight: 400;">“If the timebox ends and the goal is not achieved, don’t automatically extend the meeting. Decide as a team what to do next: extend the meeting (by how long and for what reason?), schedule a new meeting, or decide to conclude via email,” Ilija explained.</span></p>
+<p><a href="https://www.leancoffeetable.com/About" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Lean Coffee Table</span></a><span style="font-weight: 400;">is a neat tool that allows people to suggest and vote on topics to discuss. At the end of each timed session everyone can vote on whether they want to continue the discussion or not. Tools like this can actually help democratize meetings by leveling the playing field between managers and employees and between extroverts and introverts in the team.</span></p>
+<p><strong>3. Keep your sanity and focus intact by embracing timeboxing</strong></p>
+<p><span style="font-weight: 400;">Remember the days when you could drop out of a meeting by pretending you were in a very long tunnel, or ‘just stepped into an elevator’? Sadly that’s not going to fly when you’re stuck at home.</span></p>
+<p><span style="font-weight: 400;">It’s ok to say no to a meeting when you don’t need to be there. It’s ok to decline a call when you’re deeply focused on a task.</span></p>
+<p><span style="font-weight: 400;">The best way to politely decline these last-minute requests for your attention is to start timeboxing. Instead of using your calendar just for scheduling meetings, also use it to block out ‘meeting-free time’ to get deep work done.</span></p>
+<p><span style="font-weight: 400;">For example, Ilija explained, “it’s also useful when you work on creative tasks. When you’re working on a bug that you don’t fully understand, it’s recommended that you set a timebox – four hours for example. When that time passes it’s either completed or you’ll have a better understanding of the problem and can decide what to do next – invest another timebox, delegate to someone else, schedule time for more research, etc.”</span></p>
+<p><span style="font-weight: 400;">If you like using the Pomodoro Technique,</span><a href="https://www.ticktick.com/about/upgrade?utm_source=zapier.com&amp;utm_medium=referral&amp;utm_campaign=zapier&amp;utm_source=zapier.com&amp;utm_medium=referral&amp;utm_campaign=zapier" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">TickTick Premium</span></a><span style="font-weight: 400;">helps you easily makeup to-do lists and block time in your calendar.</span></p>
+<p><strong>4. Forget all the rules and create your own</strong></p>
+<p><span style="font-weight: 400;">When you look up ‘how to run an efficient virtual meeting’ these days, you’ll find tons of conflicting advice from business leaders, psychologists, and other professionals.</span></p>
+<p><span style="font-weight: 400;">Some say</span><a href="https://hbr.org/2020/03/what-it-takes-to-run-a-great-virtual-meeting" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">using video</span></a><span style="font-weight: 400;">and banning the mute button will make people pay more attention and avoid getting distracted. (According to Doodle, 25% of people have seen teammates take selfies, watch videos, or</span><a href="https://landing.doodle.com/worklifereport" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">fall asleep during meetings</span></a><span style="font-weight: 400;">… oops.)</span></p>
+<p><span style="font-weight: 400;">Yet</span><a href="https://hbr.org/2020/04/how-to-combat-zoom-fatigue" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">others quite rightly point out</span></a><span style="font-weight: 400;">that the awkwardness of having to constantly stare back at people (and ourselves) during a call is draining and exactly what leads to Zoom fatigue.</span></p>
+<p><span style="font-weight: 400;">What we can agree on is that virtual meetings are by nature awkward and full of mishaps, from time lags to</span><a href="https://www.vice.com/en_us/article/dyzg4a/who-flush" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">unmuted toilet flushes</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Every team is different so there are no rules that work 100% of the time.</span></p>
+<p><span style="font-weight: 400;">The best thing you can do is to treat meetings just as you would any marketing campaign or engineering sprint. Experiment, analyze, and iterate until you find a meeting format that works best for your team. Using polling tools like</span><a href="https://nl.surveymonkey.com/" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">SurveyMonkey</span></a><span style="font-weight: 400;">,</span><a href="https://www.typeform.com/" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Typeform</span></a><span style="font-weight: 400;">, and Google Forms can help.</span></p>
+<h2><b>The way we work and manage teams will change</b></h2>
+<p><span style="font-weight: 400;">Despite the rise of teleworking and freelancing, before the pandemic many workplaces were still on the fence about letting their employees leave their offices in favor of home comforts and sweatpants. Now that the majority have been forced to try out this new workstyle, it seems many aren’t in a hurry to come back to the office.</span></p>
+<p><span style="font-weight: 400;">A</span><a href="https://newsroom.ibm.com/2020-05-01-IBM-Study-COVID-19-Is-Significantly-Altering-U-S-Consumer-Behavior-and-Plans-Post-Crisis" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">study</span></a><span style="font-weight: 400;">by IBM found that 54% of people would like to continue primarily working from home after the quarantine ends. Twitter has already announced its employees can work from home indefinitely, while Google, Facebook, and Microsoft have said they’ll continue working remotely at least until the end of 2020.</span></p>
+<p><span style="font-weight: 400;">Historian Margaret O’Mara recently wrote an opinion piece in The New York Times titled ‘</span><a href="https://www.nytimes.com/2020/05/19/opinion/twitter-work-from-home.html" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Twitter could end the office as we know it</span></a><span style="font-weight: 400;">’, ironically pointing out Silicon Valley was the first to pour money into new office designs that would make workplaces better centers for collaboration. Now they might be the first to drop the idea of offices altogether.</span></p>
+<p><span style="font-weight: 400;">We still don’t know how the pandemic will impact the world of work in the long term. (Although I personally support Jacinda Ardern’s suggestion for a</span><a href="https://www.google.com/search?q=4+day+work+week+new+zealand+coronavirus&amp;oq=4+day+work+week+new+zealand+coronavirus&amp;aqs=chrome..69i57.11465j0j7&amp;sourceid=chrome&amp;ie=UTF-8" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">four-day workweek</span></a><span style="font-weight: 400;">.) What we can say is that remote working options will be more common and workplaces will need to adapt by taking a fresh look at what’s working and what’s not in this new environment.</span></p>
+</div>
+<aside class="c-contributor latest">
+<a data-event-action="Author" data-event-category="Article" data-event-label="Andrea Hak" data-event-non-interaction="false" href="/author/andrea-hak" rel="noopener" target="_blank">
+<img alt="Andrea Hak" class="c-contributor__photo js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F10%2Fandrea.jpeg&amp;signature=4f2f136bc8787c587a6906bbaee748ae"/>
+<noscript>
+<img alt="Andrea Hak" class="c-contributor__photo" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F10%2Fandrea.jpeg&amp;signature=4f2f136bc8787c587a6906bbaee748ae"/>
+</noscript>
+</a>
+<div aria-label="Author Bio" class="c-contributor__main">
+<h2 class="c-contributor__wrapper">
+<span class="c-contributor__heading">Story by</span>
+<span class="c-contributor__name">
+<a class="latest" href="/author/andrea-hak">Andrea Hak</a>
+</span>
+</h2>
+<p class="c-contributor__text">
+<input class="c-contributor__expandInput" id="contributorExpandInput123" name="expand" type="checkbox"/>
+<span class="c-contributor__bio c-contributor__bio--truncated">
+                                            Andrea Hak is a writer and editor specialising in emerging technology trends and their impact on society. With a keen eye for innovation, sh
+
+                                                                                            <label class="c-contributor__expand startups-technology" for="contributorExpandInput123">(show all)</label>
+</span>
+<span class="c-contributor__bio c-contributor__bio--full">Andrea Hak is a writer and editor specialising in emerging technology trends and their impact on society. With a keen eye for innovation, she explores how advancements in tech are transforming industries, influencing culture, and shaping the future.</span>
+</p>
+</div>
+</aside>
+<div class="c-channel__cta" id="nl-container">
+<h2 class="c-channel__ctaHeading text-dark">Get the TNW newsletter</h2>
+<p class="c-channel__ctaDescription text-white">Get the most important tech news in your inbox each week.</p>
+<div id="in-article-newsletter" style="color: #fff"></div>
+</div>
+<div class="sponsored_legal">
+<div class="sponsorDisclaimer latest">
+<p>This post is brought to you by <a href="https://activecollab.com/" onclick="ga('primary.send', 'event', 'Article', 'Sponsored Post', 'Link');" rel="nofollow">ActiveCollab</a>.</p>
+<br/>
+<img class="js-lazy" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/image-11.png">
+<noscript>
+<img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/image-11.png"/>
+</noscript>
+</img></div>
+</div>
+<h2 class="alsoTaggedIn">Also tagged with</h2>
+<br/>
+<ul class="c-header__tags c-tags c-tags--left">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Chief executive officer" data-event-non-interaction="false" href="/topic/chief-executive-officer">Chief executive officer</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Company" data-event-non-interaction="false" href="/topic/company">Company</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Collaboration" data-event-non-interaction="false" href="/topic/collaboration">Collaboration</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Email" data-event-non-interaction="false" href="/topic/email-2">Email</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Team" data-event-non-interaction="false" href="/topic/team-2">Team</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Home" data-event-non-interaction="false" href="/topic/home">Home</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Office" data-event-non-interaction="false" href="/topic/office">Office</a>
+</li>
+</ul>
+<footer class="c-article__pubDate md:flex md:justify-between">
+<div>
+                                Published <time datetime="2019-02-11 12:07:00">May 27, 2020 - 2:24 pm UTC</time>
+</div>
+<a class="scrolly latest" data-event-action="Back to top" data-event-category="Article" data-event-label="Back to top - click" data-event-non-interaction="true" data-target="#next-top" href="#">Back to top</a>
+</footer>
+<div aria-label="Social share options" class="c-share lg:hidden">
+<a aria-label="Share on Facebook" class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Here%E2%80%99s%20how%20to%20make%20your%20virtual%20meetings%20more%20efficient&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;u=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient&amp;t=Here%E2%80%99s%20how%20to%20make%20your%20virtual%20meetings%20more%20efficient" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a aria-label="Share on Twitter" class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Here%E2%80%99s%20how%20to%20make%20your%20virtual%20meetings%20more%20efficient" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a aria-label="Share on Flipboard" class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a aria-label="Share on Linkedin" class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a aria-label="Share on Telegram" class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a aria-label="Share via Email" class="c-share__link c-share__link--mail" href="mailto:?subject=Here’s how to make your virtual meetings more efficient&amp;body=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+<aside aria-hidden="true" class="c-article__side">
+<aside class="c-article__author">
+<a class="startups-technology" data-event-action="Author" data-event-category="Article" data-event-label="Andrea Hak" data-event-non-interaction="false" href="/author/andrea-hak">
+<img alt="Andrea Hak" class="c-article__authorImage blend-blue-dark js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F10%2Fandrea.jpeg&amp;signature=4f2f136bc8787c587a6906bbaee748ae" height="96" id="duotone" width="96"/>
+<noscript>
+<img alt="Andrea Hak" class="c-article__authorImage blend-blue-dark" height="96" id="duotone" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F10%2Fandrea.jpeg&amp;signature=4f2f136bc8787c587a6906bbaee748ae" width="96"/>
+</noscript>
+<span class="c-article__authorHeading">Story by</span>
+<span class="c-article__authorName latest">Andrea Hak</span>
+</a>
+</aside>
+<div class="c-engage">
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Facebook" data-event-non-interaction="false" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Here%E2%80%99s%20how%20to%20make%20your%20virtual%20meetings%20more%20efficient&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F05%2Ficons8-video-meeting-dog-gq.png&amp;u=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient&amp;t=Here%E2%80%99s%20how%20to%20make%20your%20virtual%20meetings%20more%20efficient" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Twitter" data-event-non-interaction="false" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Here%E2%80%99s%20how%20to%20make%20your%20virtual%20meetings%20more%20efficient" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Linkedin" data-event-non-interaction="false" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Flipboard" data-event-non-interaction="false" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Telegram" data-event-non-interaction="false" href="https://t.me/share/url?url=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Email" data-event-non-interaction="false" href="mailto:?subject=Here’s how to make your virtual meetings more efficient&amp;body=https://thenextweb.com/news/click-here-if-your-virtual-meetings-are-insanely-inefficient%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</aside>
+<aside class="c-split__side mb-m" id="sidebar">
+<div class="c-split__sticky channel_cta_if_subnav">
+<div class="tnw-ad tnw-ad--article-mpu" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_ATF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,50],[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1294393"],"title":["Here\u2019s how to make your virtual meetings more efficient"],"category":["startups-technology"],"isSponsored":["startups-technology"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-atf"></div>
+<div class="jobbioapp sticky top-4xl" id="sidebarJobbio"></div>
+<div class="tnw-ad tnw-ad--article-mpu-btf" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_BTF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1294393"],"title":["Here\u2019s how to make your virtual meetings more efficient"],"category":["startups-technology"],"isSponsored":["startups-technology"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-btf"></div>
+</div>
+</aside>
+</article>
+</div>
+</div>
+<aside aria-label="Related Articles" class="c-article__suggested">
+<div class="c-nextRelatedGrid">
+<section class="o-wrapper o-wrapper--wide">
+<header class="c-bodyNews__header">
+<h2 class="c-bodyNews__heading">Related Articles</h2>
+</header>
+<div class="c-showcase__grid">
+<section class="c-showcase__grid c-showcase__scroller js-parallaxRoot">
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/what-is-grievance-officer-do-social-networks-india">
+<img alt="Why social networks need a grievance officer in India" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=7658beeee8d84d15063468547928525f" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=712cf4cc2eac30791b2a34219942c94a 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=109294f93b4f150a56a72957ea2e1780 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=3db5664af989bf9ccff769fe0b210fb1 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=acb797ba786c09290b1d6f4559f975dc 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=1a009e5f60a5bbcb014472991f6b251b 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=43aa41b6a4532dfe3c7e9545666d65f0 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=0284496fcfddc897be659c06da569445 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=d14660a2f822545fac9b2f693f62e181 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=f1ae846d428072b13e8fca4e69423313 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=f95244b954124689c5a824c0c07bb9b1 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=790aa625cc16a614436a84a4e0a19bc7 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=a34c61dca057bf9043c8c55ab10672c6 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=89855977cf1d1ac8f1451432653fe173 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=1d501b7551ca73b9a3077182273fa4df 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=7658beeee8d84d15063468547928525f 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="Why social networks need a grievance officer in India" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=7658beeee8d84d15063468547928525f" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=712cf4cc2eac30791b2a34219942c94a 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=109294f93b4f150a56a72957ea2e1780 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=3db5664af989bf9ccff769fe0b210fb1 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=acb797ba786c09290b1d6f4559f975dc 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=1a009e5f60a5bbcb014472991f6b251b 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=43aa41b6a4532dfe3c7e9545666d65f0 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=0284496fcfddc897be659c06da569445 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=d14660a2f822545fac9b2f693f62e181 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=f1ae846d428072b13e8fca4e69423313 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=f95244b954124689c5a824c0c07bb9b1 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=790aa625cc16a614436a84a4e0a19bc7 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=a34c61dca057bf9043c8c55ab10672c6 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=89855977cf1d1ac8f1451432653fe173 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=1d501b7551ca73b9a3077182273fa4df 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fnaveed-ahmed-9Dt4WutvwDs-unsplash-e1626323858101.jpg&amp;signature=7658beeee8d84d15063468547928525f 2361w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">in</span>
+<h3 class="c-card__heading">
+<a href="/news/what-is-grievance-officer-do-social-networks-india" tabindex="-1">Why social networks need a grievance officer in India</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/science-corp-neuralink-co-founder-brain-hacking-company">
+<img alt="WTF is Science Corp? Neuralink co-founder creates secretive brain-hacking company" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=1f2a4dc4d9a40e40a895507571d783c1" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=8d54da4bbe538c26f1961ff9b941736d 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=51618d2eb5d548eb5396c605877f712c 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=5088000e916d757ededf11df236650f6 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=30db8f383edca14d530477729d0de277 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=568f204cacaf9c7251daa4395ddf1322 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=60a893c83d42e4a14c3fd3caebdaf813 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=de547f07cbc1efe9015088546c5ef20c 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=89116429b20ad1aceeefea29a67e4b46 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=dda5eea2b2033372c8faa966804ff9e2 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=1f4c254f491754aa9b5991639e6b25fb 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=b9ff1574dd63b2bbd73054322950da0b 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=fe7d0b9a2c0589ee1aedf9c45fd85d39 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=798777122d5355a905d5d66540fd2977 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=7b694ef0deb8b70bd615c5bc080daefd 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=1f2a4dc4d9a40e40a895507571d783c1 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="WTF is Science Corp? Neuralink co-founder creates secretive brain-hacking company" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=1f2a4dc4d9a40e40a895507571d783c1" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=8d54da4bbe538c26f1961ff9b941736d 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=51618d2eb5d548eb5396c605877f712c 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=5088000e916d757ededf11df236650f6 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=30db8f383edca14d530477729d0de277 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=568f204cacaf9c7251daa4395ddf1322 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=60a893c83d42e4a14c3fd3caebdaf813 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=de547f07cbc1efe9015088546c5ef20c 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=89116429b20ad1aceeefea29a67e4b46 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=dda5eea2b2033372c8faa966804ff9e2 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=1f4c254f491754aa9b5991639e6b25fb 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=b9ff1574dd63b2bbd73054322950da0b 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=fe7d0b9a2c0589ee1aedf9c45fd85d39 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=798777122d5355a905d5d66540fd2977 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=7b694ef0deb8b70bd615c5bc080daefd 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2Fbrainhacker.jpg&amp;signature=1f2a4dc4d9a40e40a895507571d783c1 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">deep tech</span>
+<h3 class="c-card__heading">
+<a href="/news/science-corp-neuralink-co-founder-brain-hacking-company" tabindex="-1">WTF is Science Corp? Neuralink co-founder creates secretive brain-hacking company</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/conference" tabindex="-1">
+<img alt="Discover TNW All Access" class="c-card__imageImage js-parallaxLayer o-parallax__layer" src="https://img-cdn.tnwcdn.com/image?fit=684%2C248&amp;url=https%3A%2F%2Fs3.eu-west-1.amazonaws.com%2Ftnw.events%2Fhardfork-2018%2Fuploads%2Fvisuals%2FConference-Nebula.png&amp;signature=1bb74f9f4b26d485f2fe5f2b8add03f8"></img></a>
+<header class="c-card__header advertPane">
+<h3 class="ad-title">Discover TNW All Access</h3>
+<span class="ad-description">Watch videos of our inspiring Talks for free</span>
+<a class="c-button adpanel c-button--rounded" data-event-action="Related articles Static Advert" data-event-category="Article" data-event-label="Article" data-event-non-interaction="false" href="https://thenextweb.com/auth/tnw/login-required" rel="noopener noreferrer" target="_blank">Sign up now</a>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/hybrid-work-not-perfect-science-success-syndication">
+<img alt="Hybrid work isn’t perfect, but SCIENCE can help us improve it" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=490758e534e70922c6e60424958b0d31" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=e9b068de5f4c643c012d4c46f96a940e 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=873856ef92b5e563f107788d84ff156d 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=366567e12d40a1eba22b9b7facfd33da 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=b3e1288dd3b3b12205f267769c164637 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=090fd072482231d595c0fdd0fe974da4 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=2e105e7c5b6f48b311d19d6d774dbf01 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=61de609b13de2e9cccbd3dfc36c35667 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=f9046ceeb6f1527647914f84fb2f8bcd 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=c20a5da2b62e1200a216f270fc6bfb2b 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=81057de3cb641f2468915ce5c45569ba 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=515690872f5b9a8286a8d84fcd6ebd9e 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=e5c333138597776e37727c611b74c8f8 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=038cd41b05d4c3dbab6b995ebdb8c5c6 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=fb2dfa6b6601b5e9757aa4cc9783f3eb 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=490758e534e70922c6e60424958b0d31 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="Hybrid work isn’t perfect, but SCIENCE can help us improve it" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=490758e534e70922c6e60424958b0d31" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=e9b068de5f4c643c012d4c46f96a940e 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=873856ef92b5e563f107788d84ff156d 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=366567e12d40a1eba22b9b7facfd33da 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=b3e1288dd3b3b12205f267769c164637 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=090fd072482231d595c0fdd0fe974da4 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=2e105e7c5b6f48b311d19d6d774dbf01 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=61de609b13de2e9cccbd3dfc36c35667 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=f9046ceeb6f1527647914f84fb2f8bcd 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=c20a5da2b62e1200a216f270fc6bfb2b 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=81057de3cb641f2468915ce5c45569ba 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=515690872f5b9a8286a8d84fcd6ebd9e 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=e5c333138597776e37727c611b74c8f8 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=038cd41b05d4c3dbab6b995ebdb8c5c6 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=fb2dfa6b6601b5e9757aa4cc9783f3eb 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F10%2Fhybrid-work-office-gq.jpg&amp;signature=490758e534e70922c6e60424958b0d31 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">startups technology</span>
+<h3 class="c-card__heading">
+<a href="/news/hybrid-work-not-perfect-science-success-syndication" tabindex="-1">Hybrid work isn’t perfect, but SCIENCE can help us improve it</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/facebook-calling-main-app-test-messengar">
+<img alt="Facebook is bringing calling back to the main app" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=156c4aa300ebe750dae6cbe76a3caf4a" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=437acce7a3f9a175b74b9fb0d550c8da 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=e8acab486be939e68645fa8dec6b40dd 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=8d57a967b2b194774e38d09fadae4c41 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=e73bf0d061e8a648edd4e9d5ca0c8093 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=df5f3abbf6d7106e91ad0313b903684a 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=6df5c31d5c8b5c35debafbd2752ef39d 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=40176abc817cbc5d3e6cdcaa0885a894 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=925bf91ace36d0a6ff1bdc90dd831a99 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=0ef8e5deb9be992b33279032e42ce207 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=79ed2569874ae27de266fc6df0dc8913 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=6ec6dbb40f913daba3424bdd70e116f3 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=2b3c2b2c7e6bd35589c6f37648209218 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=6213a7d77189746cbfecba2ad58295e5 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=2b6a1abdf74567472881faa8ba18dd70 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=156c4aa300ebe750dae6cbe76a3caf4a 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="Facebook is bringing calling back to the main app" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=156c4aa300ebe750dae6cbe76a3caf4a" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=437acce7a3f9a175b74b9fb0d550c8da 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=e8acab486be939e68645fa8dec6b40dd 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=8d57a967b2b194774e38d09fadae4c41 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=e73bf0d061e8a648edd4e9d5ca0c8093 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=df5f3abbf6d7106e91ad0313b903684a 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=6df5c31d5c8b5c35debafbd2752ef39d 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=40176abc817cbc5d3e6cdcaa0885a894 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=925bf91ace36d0a6ff1bdc90dd831a99 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=0ef8e5deb9be992b33279032e42ce207 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=79ed2569874ae27de266fc6df0dc8913 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=6ec6dbb40f913daba3424bdd70e116f3 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=2b3c2b2c7e6bd35589c6f37648209218 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=6213a7d77189746cbfecba2ad58295e5 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=2b6a1abdf74567472881faa8ba18dd70 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FFacebook-calling.jpg&amp;signature=156c4aa300ebe750dae6cbe76a3caf4a 2361w  "/>
+</noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">plugged</span>
+<h3 class="c-card__heading">
+<a href="/news/facebook-calling-main-app-test-messengar" tabindex="-1">Facebook is bringing calling back to the main app</a>
+</h3>
+</header>
+</div>
+</article>
+</section>
+</div>
+</section>
+</div>
+</aside>
+</main>
+
+</div>
+</div>
+<footer class="c-footer">
+<div class="o-wrapper">
+<div class="o-grid o-grid--gap-l">
+<div class="o-grid__col lg:o-grid__col--1/2">
+<div class="c-footer__logoContact">
+<div>
+<a class="c-footer__logo" data-event-action="TNW Logo" data-event-category="Footer" data-event-label="Navigation" data-event-non-interaction="false" href="https://thenextweb.com/" tabindex="-1" title="TNW">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z" fill="#fff"></path>
+</svg>
+</a>
+<p class="c-footer__tagline">The heart of tech</p>
+</div>
+<div>
+<ul class="c-footer__contact">
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Faaaaebook" href="https://facebook.com/thenextweb" name="Facebook Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Instagram" href="https://www.instagram.com/thenextweb/" name="Instagram Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Twitter" href="https://twitter.com/thenextweb" name="Twitter Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Youtube" href="https://youtube.com/user/thenextweb" name="Youtube Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Flipboard" href="https://flipboard.com/@thenextweb" name="Flipboard Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Mail" href="/newsletters" name="Email Footer Link"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Linkedin" href="https://www.linkedin.com/company/the-next-web" name="LinkedIn Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg></a></li>
+</ul>
+</div>
+</div>
+</div>
+<br/>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 more">
+<h2 class="c-footer__heading">More TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Media" data-event-non-interaction="false" href="/latest">Media</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Events" data-event-non-interaction="false" href="/events">Events</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Programs" data-event-non-interaction="false" href="/programs">Programs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Spaces" data-event-non-interaction="false" href="/spaces">Spaces</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Newsletters" data-event-non-interaction="false" href="/newsletters">Newsletters</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://talent.thenextweb.com/job-board?source=footer&amp;utm_source=footer&amp;utm_medium=partner_referral" rel="noopener" target="_blank">Jobs in tech</a></li>
+</ul>
+</div>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 about">
+<h2 class="c-footer__heading">About TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Partner with us" data-event-non-interaction="false" href="/partnerships" name="Partner with us">Partner with us</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://thenextweb.homerun.co/" name="Jobs" rel="noopener noreferrer" target="_blank">Jobs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Terms &amp; Conditions" data-event-non-interaction="false" href="/terms-and-conditions" name="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Cookie Statement" data-event-non-interaction="false" href="/cookie-statement" name="Cookie Statement">Cookie Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Privacy Statement" data-event-non-interaction="false" href="/privacy-statement " name="Privacy Statement">Privacy Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Editorial Policy" data-event-non-interaction="false" href="https://s3.eu-west-1.amazonaws.com/tnw.uploads/uploads/FT-EDITORIAL-CODE-OF-PRACTICE-15-Jan-2024.pdf" name="Editorial Policy" rel="noopener noreferrer" target="_blank">Editorial Policy</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Masthead" data-event-non-interaction="false" href="/masthead" name="Editorial Policy" rel="noopener">Masthead</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="c-footer__legal max-md:px-l">
+<a class="feedback" data-event-action="Financial Times" data-event-category="Footer" data-event-label="Financial Times" data-event-non-interaction="false" href="https://www.ft.com/" rel="noopener nofollow" target="_blank">
+<svg viewbox="0 0 367 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.97826,19.58347H5.20213L2.77475,26H0L8.32426,4.7043H10.89L19.21428,26H16.43953ZM6.10446,17.19h6.97148L9.57254,8.1032Z" fill="#fff"></path><path d="M29.98145,26V4.7043h13.597V7.89421H33.58934v6.31344H42.919v3.156H33.58934V26Z" fill="#fff"></path><path d="M48.686,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,48.686,8.06789ZM50.42,26H46.95193V10.59977H50.42Z" fill="#fff"></path><path d="M54.72547,10.59977h3.46809V12.057a5.4558,5.4558,0,0,1,4.16284-1.80323c3.46808,0,5.445,2.289,5.445,5.72178V26H64.33332V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26275,3.26275,0,0,0-3.22521,2.46268V26H54.72547Z" fill="#fff"></path><path d="M80.43536,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38126-.97152-1.734-1.56036-3.12071-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12071-1.56036Z" fill="#fff"></path><path d="M87.86718,10.59977h3.46809V12.057a5.45578,5.45578,0,0,1,4.16283-1.80323c3.46809,0,5.445,2.289,5.445,5.72178V26H97.475V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26274,3.26274,0,0,0-3.22521,2.46268V26H87.86718Z" fill="#fff"></path><path d="M111.63545,10.25381a6.50162,6.50162,0,0,1,4.19672,1.28217v3.40031a5.4709,5.4709,0,0,0-3.95385-1.59566c-2.46268,0-4.4396,1.97692-4.4396,4.95925,0,2.98375,1.97692,4.96067,4.4396,4.96067a5.47663,5.47663,0,0,0,3.95385-1.59566v3.3989a6.50259,6.50259,0,0,1-4.19672,1.28358c-4.232,0-7.66623-3.12212-7.66623-8.04749S107.40342,10.25381,111.63545,10.25381Z" fill="#fff"></path><path d="M120.93828,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,120.93828,8.06789ZM122.67233,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M135.50962,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38127-.97152-1.73405-1.56036-3.12072-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12072-1.56036Z" fill="#fff"></path><path d="M146.40811,26H142.94V3.4546h3.46808Z" fill="#fff"></path><path d="M157.27413,4.7043h17.75842V7.89421h-7.076V26H164.3501V7.89421h-7.076Z" fill="#fff"></path><path d="M179.9678,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,179.9678,8.06789ZM181.70184,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M201.96248,10.25381c3.12072,0,4.99456,2.2198,4.99456,5.72178V26h-3.4695V16.53054c0-1.90632-.83172-3.156-2.53188-3.156a2.70093,2.70093,0,0,0-2.73945,2.289V26h-3.46809V16.53054c0-1.90632-.83313-3.156-2.53187-3.156a2.70231,2.70231,0,0,0-2.74086,2.289V26H186.0073V10.59977h3.46809v1.28359a4.67951,4.67951,0,0,1,3.85076-1.62955,5.07645,5.07645,0,0,1,4.05693,2.04611A5.6743,5.6743,0,0,1,201.96248,10.25381Z" fill="#fff"></path><path d="M217.61689,26.34737c-4.47349,0-7.63092-3.08682-7.63092-7.9091,0-4.78557,2.98374-8.18446,7.076-8.18446,4.232,0,6.48572,3.01763,6.48572,7.56032v1.24969H213.38627a4.36215,4.36215,0,0,0,4.71638,4.29981,7.11212,7.11212,0,0,0,4.4043-1.422v3.05293A8.13643,8.13643,0,0,1,217.61689,26.34737Zm-4.05834-9.91991h6.69471a3.10814,3.10814,0,0,0-3.156-3.26052A3.588,3.588,0,0,0,213.55855,16.42746Z" fill="#fff"></path><path d="M226.26311,21.213a7.9172,7.9172,0,0,0,5.20213,2.25511c1.49116,0,2.67026-.52106,2.67026-1.631,0-1.03929-.76253-1.38667-2.04612-1.80323l-1.66485-.51965c-2.63637-.83313-4.16142-2.01223-4.16142-4.64859,0-2.77476,2.49657-4.61188,5.79238-4.61188a8.38994,8.38994,0,0,1,4.61188,1.35278v3.502a6.95868,6.95868,0,0,0-4.61188-1.97692c-1.38808,0-2.46268.59025-2.46268,1.59566,0,1.00682.58884,1.35278,1.97692,1.76935l2.01082.62414c2.56717.83313,3.92,2.1845,3.92,4.5441,0,2.94844-2.63637,4.68248-6.07056,4.68248a8.48739,8.48739,0,0,1-5.16683-1.59566Z" fill="#fff"></path><path d="M249.82521,12.47361a7.08924,7.08924,0,0,1,5.27132-2.18591,6.30818,6.30818,0,0,1,4.12754,1.28358v2.63637a5.38989,5.38989,0,0,0-3.95385-1.59566,4.72822,4.72822,0,0,0-3.50339,1.52647,5.73715,5.73715,0,0,0-1.45728,4.16142,5.743,5.743,0,0,0,1.45728,4.16284,4.732,4.732,0,0,0,3.50339,1.52505,5.38853,5.38853,0,0,0,3.95385-1.59424v2.635a6.30813,6.30813,0,0,1-4.12754,1.28359,7.1933,7.1933,0,0,1-5.27132-2.15061,8.01492,8.01492,0,0,1-2.15061-5.86158A7.87619,7.87619,0,0,1,249.82521,12.47361Z" fill="#fff"></path><path d="M273.90272,24.057a6.93067,6.93067,0,0,1-10.232,0,8.56076,8.56076,0,0,1-1.94162-5.75709,8.56075,8.56075,0,0,1,1.94162-5.75708,6.93067,6.93067,0,0,1,10.232,0,8.41292,8.41292,0,0,1,1.97692,5.75708A8.41293,8.41293,0,0,1,273.90272,24.057Zm-5.099-11.48028c-2.77475,0-4.4396,2.39349-4.4396,5.72319s1.66485,5.7232,4.4396,5.7232,4.43961-2.39349,4.43961-5.7232S271.57842,12.57669,268.80367,12.57669Z" fill="#fff"></path><path d="M295.03462,10.2877c3.08682,0,4.85617,2.18591,4.85617,5.51561V26h-2.63637V16.21847c0-2.11531-.93621-3.57259-2.91314-3.57259a3.56186,3.56186,0,0,0-3.4003,2.74087V26h-2.60107V16.21847c0-2.11531-.93622-3.57259-2.91314-3.57259a3.5603,3.5603,0,0,0-3.39889,2.74087V26h-2.60107V10.59977h2.60107v1.80465a4.77136,4.77136,0,0,1,4.16142-2.11672,4.56953,4.56953,0,0,1,4.16283,2.46268A5.61944,5.61944,0,0,1,295.03462,10.2877Z" fill="#fff"></path><path d="M306.91028,31.89688h-2.60107V10.59977h2.60107v1.80465a5.47521,5.47521,0,0,1,4.33511-2.11672,5.97708,5.97708,0,0,1,5.16824,2.42879,9.16121,9.16121,0,0,1,1.76935,5.58339,9.34026,9.34026,0,0,1-1.76935,5.6187,6.039,6.039,0,0,1-5.16824,2.39349,5.4743,5.4743,0,0,1-4.33511-2.11531Zm0-10.47487a4.49749,4.49749,0,0,0,3.95385,2.53187c2.91313,0,4.68248-2.42879,4.68248-5.654s-1.76935-5.654-4.68248-5.654a4.4975,4.4975,0,0,0-3.95385,2.53188Z" fill="#fff"></path><path d="M330.29728,15.768c0-1.90773-1.422-3.08682-3.67708-3.08682a7.75913,7.75913,0,0,0-4.37041,1.35278V11.57128a8.82,8.82,0,0,1,4.787-1.28358c3.60647,0,5.79239,2.04611,5.79239,5.27273V26h-2.53188V24.8548a6.22354,6.22354,0,0,1-3.98915,1.422,6.54463,6.54463,0,0,1-4.05834-1.31748,4.33611,4.33611,0,0,1-1.66485-3.60647,4.1488,4.1488,0,0,1,1.70015-3.4695,6.8181,6.8181,0,0,1,8.01219-.10308Zm0,4.82087c-.41656-1.14379-1.943-1.90773-3.57258-1.90773a4.84209,4.84209,0,0,0-2.53188.65944,2.11057,2.11057,0,0,0-1.1452,2.01223,2.24887,2.24887,0,0,0,1.1452,2.08,4.82881,4.82881,0,0,0,2.53188.65945c1.62955,0,3.156-.76253,3.57258-1.90773Z" fill="#fff"></path><path d="M337.27723,10.59977h2.60107v1.943a5.69746,5.69746,0,0,1,4.5441-2.2551c3.46809,0,5.40971,2.289,5.40971,5.61869V26h-2.635V16.323c0-2.11531-1.076-3.64177-3.40031-3.64177a4.178,4.178,0,0,0-3.91854,2.87924V26h-2.60107Z" fill="#fff"></path><path d="M356.05094,31.89688l2.32289-5.79239-6-15.50472h2.81l4.54269,12.13972,4.47491-12.13972h2.70556l-8.29037,21.29711Z" fill="#fff"></path>
+</svg>
+</a>
+<p>
+                    Copyright © 2006—2024, The Next Web B.V.
+                    Made with &lt;3 in Amsterdam.
+                    <br/>
+</p>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<div class="cookie-consent-banner" data-args='{"cookieName":"__tnw_cookieConsent","cookieExpirationDays":"365","consentChoices":["ad_storage","analytics_storage"],"redirectOnSave":true,"honorDoNotTrack":false,"stylesheet":"https:\/\/thenextweb.com\/cpresources\/1abce43c\/style.css?v=1725957748","titleText":"Cookies","descriptionText":"&lt;p&gt;We use &lt;a href=\"\/cookie-statement\"&gt;cookies&lt;\/a&gt; and other data for a number of reasons, such as keeping TNW sites reliable and secure, personalizing content and ads, providing social media features and to analyze how our sites are used.&lt;\/p&gt;","linkColor":"6644ff","linkHoverColor":"7755ff","primaryBtnText":"Accept &amp; continue","primaryBtnBgColor":"","primaryBtnBgHoverColor":"","primaryBtnColor":"","primaryBtnHoverColor":"","secondaryBtnText":"Manage cookies","secondaryBtnURL":"\/cookie-statement","secondaryBtnRedirectURL":"https:\/\/thenextweb.com\/news\/click-here-if-your-virtual-meetings-are-insanely-inefficient","secondaryBtnColor":"6644ff","secondaryBtnHoverColor":"7755ff","debugMode":false}' id="cookie-consent-banner"></div>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<!-- For third-generation iPad with high-resolution Retina display: -->
+<link href="https://insideainews.com/wp-content/themes/iai-2023/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+<link href="https://insideainews.com/wp-content/themes/iai-2023/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+<link href="https://insideainews.com/wp-content/themes/iai-2023/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<!-- For first- and second-generation iPad: -->
+<link href="https://insideainews.com/wp-content/themes/iai-2023/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="https://insideainews.com/wp-content/themes/iai-2023/images/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link href="https://insideainews.com/wp-content/themes/iai-2023/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://insideainews.com/wp-content/themes/iai-2023/images/favicon.png" rel="shortcut icon" type="image/x-icon"> <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<!-- This site is optimized with the Yoast SEO plugin v23.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Deep Learning vs. Machine Learning for Business Outcomes: A Data Scientist’s Perspective - insideAI News</title>
+<link href="https://insideainews.com/2017/10/27/deep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective/" rel="canonical">
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Deep Learning vs. Machine Learning for Business Outcomes: A Data Scientist’s Perspective - insideAI News" property="og:title"/>
+<meta content="In this special guest feature, Arvin Hsu, Senior Director of Data Science and Machine Learning for GoodData, discusses that despite the two terms being used interchangeably, deep learning and machine learning are very different in terms of the business problems they solve and the outcomes they enable." property="og:description"/>
+<meta content="https://insideainews.com/2017/10/27/deep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective/" property="og:url"/>
+<meta content="insideAI News" property="og:site_name"/>
+<meta content="http://www.facebook.com/insidebigdata" property="article:publisher"/>
+<meta content="2017-10-27T15:30:37+00:00" property="article:published_time"/>
+<meta content="2017-10-26T17:08:59+00:00" property="article:modified_time"/>
+<meta content="https://insideAINews.com/wp-content/uploads/2017/10/Arvin-Hsu.jpg" property="og:image"/>
+<meta content="Editorial Team" name="author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@insideBigData" name="twitter:creator"/>
+<meta content="@insideBigData" name="twitter:site"/>
+<meta content="Written by" name="twitter:label1"/>
+<meta content="Editorial Team" name="twitter:data1"/>
+<meta content="Est. reading time" name="twitter:label2"/>
+<meta content="4 minutes" name="twitter:data2"/>
+
+<!-- / Yoast SEO plugin. -->
+<link href="//secure.gravatar.com" rel="dns-prefetch">
+<link href="//stats.wp.com" rel="dns-prefetch">
+<link href="//use.fontawesome.com" rel="dns-prefetch"/>
+<link href="//v0.wordpress.com" rel="dns-prefetch"/>
+<link href="https://insideainews.com/feed/" rel="alternate" title="insideAI News » Feed" type="application/rss+xml"/>
+<link href="https://insideainews.com/comments/feed/" rel="alternate" title="insideAI News » Comments Feed" type="application/rss+xml"/>
+
+<link href="https://insideainews.com/wp-content/plugins/jetpack/modules/related-posts/related-posts.css?ver=20240116" id="jetpack_related-posts-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-content/themes/iai-2023/style.css?b-modified=1719276432&amp;ver=0.1" id="insideai-2023-child-theme-of-genesis-framework-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://insideainews.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17" id="mediaelement-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.6.2" id="wp-mediaelement-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+<link href="https://insideainews.com/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=6.6.2" id="tm_clicktotweet-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.8" id="contact-form-7-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?ver=6.6.2" id="wpdm-font-awesome-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-content/plugins/download-manager/assets/bootstrap/css/bootstrap.min.css?ver=6.6.2" id="wpdm-bootstrap-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-content/plugins/download-manager/assets/css/front.css?ver=6.6.2" id="wpdm-front-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-content/plugins/term-and-category-based-posts-widget/js/bxslider/jquery.bxslider.tiptop.css?ver=4.9.13" id="category-posts-pro-bxslider-css-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-content/themes/genesis/style.css?ver=6.6.2" id="parent-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-content/themes/iai-2023/css/main.css?ver=6.6.2" id="child-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://insideainews.com/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=14.2.1.2" id="__EPYT__style-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://insideainews.com/wp-content/plugins/simplr-registration-form/assets/skins/default.css?ver=6.6.2" id="simplr-forms-style-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://insideainews.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3-b-modified-1683586155" id="html5shiv-js"></script>
+<![endif]-->
+
+
+
+<link href="https://insideainews.com/wp-json/" rel="https://api.w.org/"/><link href="https://insideainews.com/wp-json/wp/v2/posts/19241" rel="alternate" title="JSON" type="application/json"/><link href="https://insideainews.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://wp.me/p9eA3j-50l" rel="shortlink"/>
+<link href="https://insideainews.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="https://insideainews.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+
+<link href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+
+
+
+<link href="https://insideainews.com/wp-content/plugins/google-mp3-audio-player/style.css" rel="stylesheet"/>
+
+
+<!--[if gte IE 9]>
+		<style type="text/css">
+			.gradient {
+				filter: none;
+			}
+		</style>
+	<![endif]-->
+<!-- Twitter Cards Meta - V 2.5.4 -->
+<meta content="photo" name="twitter:card"/>
+<meta content="@insidebigdata" name="twitter:site"/>
+<meta content="@insidebigdata" name="twitter:creator"/>
+<meta content="https://insideainews.com/2017/10/27/deep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective/" name="twitter:url"/>
+<meta content="Deep Learning vs. Machine Learning for Business Outcomes: A Data Scientist’s Perspective" name="twitter:title"/>
+<meta content="In this special guest feature, Arvin Hsu, Senior Director of Data Science and Machine Learning for GoodData, discusses that despite the two terms being [...]" name="twitter:description"/>
+<meta content="https://insideAINews.com/wp-content/uploads/2017/10/Arvin-Hsu.jpg" name="twitter:image"/>
+<!-- Twitter Cards Meta By WPDeveloper.net -->
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&amp;family=Source+Sans+Pro:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://insideainews.com/wp-content/themes/iai-2023/css/fontawesome/css/fontawesome.css" rel="stylesheet"/>
+<link href="https://insideainews.com/wp-content/themes/iai-2023/css/fontawesome/css/brands.css" rel="stylesheet"/>
+<link href="https://insideainews.com/wp-content/themes/iai-2023/cssfontawesome/css/solid.css" rel="stylesheet"/>
+<!-- Google tag (gtag.js) -->
+
+
+
+<!-- Meta Pixel Code -->
+
+<noscript><img height="1" src="https://www.facebook.com/tr?id=1257573094783134&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
+<!-- End Meta Pixel Code -->
+<link href="https://insideainews.com/feed/event-list" rel="alternate" title="insideAI News » Eventlist Feed" type="application/rss+xml"><link href="https://insideainews.com/wp-content/uploads/2024/06/iain-favicon.png" rel="icon" sizes="32x32">
+<link href="https://insideainews.com/wp-content/uploads/2024/06/iain-favicon.png" rel="icon" sizes="192x192">
+<link href="https://insideainews.com/wp-content/uploads/2024/06/iain-favicon.png" rel="apple-touch-icon">
+<meta content="https://insideainews.com/wp-content/uploads/2024/06/iain-favicon.png" name="msapplication-TileImage"/>
+<meta content="WordPress Download Manager 4.9.7" name="generator"/>
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"/>
+
+
+</link></link></link></link></link></link></link></link></link></head>
+<body class="post-template-default single single-post postid-19241 single-format-standard header-full-width sidebar-content-sidebar news-ibd"><div id="wrap"><div id="header"><div class="wrap"><div class="main-header">
+<div class="logo-col">
+<div class="logo-image"><a href="/"><img alt="insideAI News" src="https://insideainews.com/wp-content/themes/iai-2023/images/logo-no-tagline.png"/></a></div>
+<div class="logo-tagline">
+<div class="tagline">Illuminating AI's Frontiers: Your Go-To News Destination.</div>
+</div>
+</div>
+<div class="buttons-col">
+<div class="widget-odd widget-last widget-first widget-1 widget widget_text enhanced-text-widget" id="enhancedtextwidget-29"><div class="widget-wrap"><div class="textwidget widget-text"><ul class="social-networks">
+<li class="facebook wpsnw-3x display-icons">
+<a href="https://www.facebook.com/insideBIGDATANOW" rel="external" target="_blank" title="facebook"><i class="fa-brands fa-facebook"></i></a>
+</li>
+<li class="x-twitter wpsnw-3x display-icons">
+<a href="https://twitter.com/insideBigData1" rel="external" target="_blank" title="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+</li>
+<li class="linkedin wpsnw-3x display-icons">
+<a href="https://www.linkedin.com/company/insidebigdata/" rel="external" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+</li>
+</ul></div></div></div> <a class="button" href="/newsletter/">Subscribe</a>
+</div>
+<div class="mobile-menu-icon">
+<div class="mm-icon"></div>
+</div>
+</div>
+
+</div></div><div id="nav"><div class="wrap"><ul class="menu genesis-nav-menu menu-primary js-superfish" id="menu-main-navigation"><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-17123" id="menu-item-17123"><a href="https://insideainews.com/category/channels/enterprise-ai/">Enterprise AI</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35456" id="menu-item-35456"><a href="https://insideainews.com/category/channels/genai-llms/">GenAI/LLMs</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-9933" id="menu-item-9933"><a href="https://insideainews.com/category/channels/" title="channels">Channels</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-9923" id="menu-item-9923"><a href="https://insideainews.com/category/channels/big-data/">Big Data</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9924" id="menu-item-9924"><a href="https://insideainews.com/category/channels/data-science-topics/">Data Science</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35455" id="menu-item-35455"><a href="https://insideainews.com/category/channels/deep-learning/">Deep Learning</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3350" id="menu-item-3350"><a href="https://insideainews.com/category/channels/machine-learning/">Machine Learning</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-35457" id="menu-item-35457"><a href="https://insideainews.com/category/industries/">Industries</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35458" id="menu-item-35458"><a href="https://insideainews.com/category/industries/ai-for-agriculture/">AI for Agriculture</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35459" id="menu-item-35459"><a href="https://insideainews.com/category/industries/ai-for-financial/">AI for Financial</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35463" id="menu-item-35463"><a href="https://insideainews.com/category/industries/ai-for-healthcare-medical-and-life-sciences/">AI for Healthcare, Medical and Life Sciences</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35460" id="menu-item-35460"><a href="https://insideainews.com/category/industries/ai-for-manufacturing/">AI for Manufacturing</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35461" id="menu-item-35461"><a href="https://insideainews.com/category/industries/ai-for-security/">AI for Security</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35462" id="menu-item-35462"><a href="https://insideainews.com/category/industries/ai-for-transportation/">AI for Transportation</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15795" id="menu-item-15795"><a href="https://insideainews.com/insideai-news-white-papers/">White Papers</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-3365" id="menu-item-3365"><a href="https://insideainews.com/category/resources/" title="resources">Resources</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32340" id="menu-item-32340"><a href="https://insideainews.com/category/resources/annual-predictions/">Annual Predictions</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32341" id="menu-item-32341"><a href="https://insideainews.com/category/resources/book-reviews/">Book Reviews</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33096" id="menu-item-33096"><a href="/events-calendar/">Events Calendar</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32344" id="menu-item-32344"><a href="https://insideainews.com/category/resources/impact-50/">IMPACT 50</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-32370" id="menu-item-32370"><a href="https://insideainews.com/category/resources/industry-perspectives/">Industry Perspectives</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9937" id="menu-item-9937"><a href="https://insideainews.com/category/resources/interviews/">Interviews</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3369" id="menu-item-3369"><a href="https://insideainews.com/category/resources/podcast/">Podcasts</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32349" id="menu-item-32349"><a href="https://insideainews.com/category/resources/research-reports/">Reports</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3371" id="menu-item-3371"><a href="https://insideainews.com/category/resources/video/">Video</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32350" id="menu-item-32350"><a href="https://insideainews.com/newsletter/" title="Subscribe">Subscribe</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32351" id="menu-item-32351"><a href="#" title="Search">Search</a></li>
+</ul></div></div><div id="inner"><div id="skins-ad-left"><!-- /125766567/iBD_ROS_SkinLeft -->
+<div id="div-gpt-ad-1663026455827-0" style="min-width: 250px; min-height: 950px;">
+
+</div>
+</div><div id="skins-ad-right"><!-- /125766567/iBD_ROS_SkinRight -->
+<div id="div-gpt-ad-1663026588497-0" style="min-width: 250px; min-height: 950px;">
+
+</div>
+</div>
+<div id="search-modal">
+<div class="search">
+<form action="/" class="searchform search-form" method="get" role="search">
+<label class="visuallyhidden" for="search-text">Search:</label>
+<input class="s search-input" id="search-text" name="s" onblur="if (this.value == '') {this.value = 'Search this website…';}" onfocus="if (this.value == 'Search this website…') {this.value = '';}" type="text" value="Search this website…"/>
+<input class="button searchsubmit search-submit" type="submit" value="Search"/>
+</form>
+</div>
+</div>
+<div id="content-sidebar-wrap"><div class="hfeed" id="content"><div class="post-19241 post type-post status-publish format-standard hentry category-big-data category-enterprise-ai category-google-news-feed category-industry-perspectives category-machine-learning category-news-analysis category-opinion category-uncategorized entry"><div id="before-post">
+<div class="widget-odd widget-last widget-first widget-1 widget widget_text enhanced-text-widget" id="enhancedtextwidget-24"><div class="widget-wrap"><div class="textwidget widget-text"><!-- /125766567/iBD_ROS_Top -->
+<div id="div-gpt-ad-1683649927169-0" style="min-width: 320px; min-height: 50px;">
+
+</div>
+</div></div></div></div>
+<h1 class="entry-title">Deep Learning vs. Machine Learning for Business Outcomes: A Data Scientist’s Perspective</h1>
+<div class="post-info"><span class="date published time" title="2017-10-27T08:30:37-07:00">October 27, 2017</span>  by <span class="author vcard"><span class="fn"><a href="https://insideainews.com/author/editorial/" rel="author">Editorial Team</a></span></span> </div><div class="post-image-wrapper"></div>
+<div class="post-pre-info">
+<div class="printfriendly pf-button pf-alignleft">
+<a href="#" onclick="window.print(); return false;" rel="nofollow" title="Printer Friendly, PDF &amp; Email">
+<img alt="Print Friendly, PDF &amp; Email" class="pf-button-img" src="https://insidebigdata.com/wp-content/themes/news-bigdata/images/print-icon.gif" style=""/>
+</a>
+</div>
+<div class="shariff shariff-align-flex-start shariff-widget-align-flex-start shariff-buttonstretch" data-backendurl="https://insideainews.com/wp-json/shariff/v1/share_counts?" data-hidezero="1" data-services="facebook%7Creddit" data-timestamp="1509012539" data-url="https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F"><ul class="shariff-buttons theme-color orientation-horizontal buttonsize-medium"><li class="shariff-button twitter shariff-nocustomcolor" style="background-color:#32bbf5"><a aria-label="Share on Twitter" class="shariff-link" href="https://twitter.com/share?url=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F&amp;text=Deep%20Learning%20vs.%20Machine%20Learning%20for%20Business%20Outcomes%3A%20A%20Data%20Scientist%E2%80%99s%20Perspective" rel="noopener nofollow" role="button" style="; background-color:#55acee; color:#fff" target="_blank" title="Share on Twitter"><span class="shariff-icon" style=""><svg height="20px" viewbox="0 0 30 32" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M29.7 6.8q-1.2 1.8-3 3.1 0 0.3 0 0.8 0 2.5-0.7 4.9t-2.2 4.7-3.5 4-4.9 2.8-6.1 1q-5.1 0-9.3-2.7 0.6 0.1 1.5 0.1 4.3 0 7.6-2.6-2-0.1-3.5-1.2t-2.2-3q0.6 0.1 1.1 0.1 0.8 0 1.6-0.2-2.1-0.4-3.5-2.1t-1.4-3.9v-0.1q1.3 0.7 2.8 0.8-1.2-0.8-2-2.2t-0.7-2.9q0-1.7 0.8-3.1 2.3 2.8 5.5 4.5t7 1.9q-0.2-0.7-0.2-1.4 0-2.5 1.8-4.3t4.3-1.8q2.7 0 4.5 1.9 2.1-0.4 3.9-1.5-0.7 2.2-2.7 3.4 1.8-0.2 3.5-0.9z" fill="#55acee"></path></svg></span><span class="shariff-text">tweet</span> </a></li><li class="shariff-button linkedin shariff-nocustomcolor" style="background-color:#1488bf"><a aria-label="Share on LinkedIn" class="shariff-link" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F" rel="noopener nofollow" role="button" style="; background-color:#0077b5; color:#fff" target="_blank" title="Share on LinkedIn"><span class="shariff-icon" style=""><svg height="20px" viewbox="0 0 27 32" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M6.2 11.2v17.7h-5.9v-17.7h5.9zM6.6 5.7q0 1.3-0.9 2.2t-2.4 0.9h0q-1.5 0-2.4-0.9t-0.9-2.2 0.9-2.2 2.4-0.9 2.4 0.9 0.9 2.2zM27.4 18.7v10.1h-5.9v-9.5q0-1.9-0.7-2.9t-2.3-1.1q-1.1 0-1.9 0.6t-1.2 1.5q-0.2 0.5-0.2 1.4v9.9h-5.9q0-7.1 0-11.6t0-5.3l0-0.9h5.9v2.6h0q0.4-0.6 0.7-1t1-0.9 1.6-0.8 2-0.3q3 0 4.9 2t1.9 6z" fill="#0077b5"></path></svg></span><span class="shariff-text">share</span> </a></li><li class="shariff-button facebook shariff-nocustomcolor" style="background-color:#4273c8"><a aria-label="Share on Facebook" class="shariff-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F" rel="nofollow" role="button" style="; background-color:#3b5998; color:#fff" target="_blank" title="Share on Facebook"><span class="shariff-icon" style=""><svg height="20px" viewbox="0 0 18 32" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 0.2v4.7h-2.8q-1.5 0-2.1 0.6t-0.5 1.9v3.4h5.2l-0.7 5.3h-4.5v13.6h-5.5v-13.6h-4.5v-5.3h4.5v-3.9q0-3.3 1.9-5.2t5-1.8q2.6 0 4.1 0.2z" fill="#3b5998"></path></svg></span><span class="shariff-text">share</span> <span class="shariff-count shariff-hidezero" data-service="facebook" style="color:#3b5998"></span> </a></li><li class="shariff-button reddit shariff-nocustomcolor" style="background-color:#ff5700"><a aria-label="Share on Reddit" class="shariff-link" href="https://www.reddit.com/submit?url=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F" rel="noopener nofollow" role="button" style="; background-color:#ff4500; color:#fff" target="_blank" title="Share on Reddit"><span class="shariff-icon" style=""><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z" fill="#ff4500"></path></svg></span><span class="shariff-text">share</span> <span class="shariff-count shariff-hidezero" data-service="reddit" style="color:#ff4500"></span> </a></li><li class="shariff-button mailto shariff-nocustomcolor" style="background-color:#a8a8a8"><a aria-label="Send by email" class="shariff-link" href="mailto:?body=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F&amp;subject=Deep%20Learning%20vs.%20Machine%20Learning%20for%20Business%20Outcomes%3A%20A%20Data%20Scientist%E2%80%99s%20Perspective" rel="noopener nofollow" role="button" style="; background-color:#999; color:#fff" title="Send by email"><span class="shariff-icon" style=""><svg height="20px" viewbox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M32 12.7v14.2q0 1.2-0.8 2t-2 0.9h-26.3q-1.2 0-2-0.9t-0.8-2v-14.2q0.8 0.9 1.8 1.6 6.5 4.4 8.9 6.1 1 0.8 1.6 1.2t1.7 0.9 2 0.4h0.1q0.9 0 2-0.4t1.7-0.9 1.6-1.2q3-2.2 8.9-6.1 1-0.7 1.8-1.6zM32 7.4q0 1.4-0.9 2.7t-2.2 2.2q-6.7 4.7-8.4 5.8-0.2 0.1-0.7 0.5t-1 0.7-0.9 0.6-1.1 0.5-0.9 0.2h-0.1q-0.4 0-0.9-0.2t-1.1-0.5-0.9-0.6-1-0.7-0.7-0.5q-1.6-1.1-4.7-3.2t-3.6-2.6q-1.1-0.7-2.1-2t-1-2.5q0-1.4 0.7-2.3t2.1-0.9h26.3q1.2 0 2 0.8t0.9 2z" fill="#999"></path></svg></span><span class="shariff-text">email</span> </a></li></ul></div></div><div class="entry-content"><p><i><img alt="" class="alignright size-full wp-image-19242" decoding="async" height="266" sizes="(max-width: 200px) 100vw, 200px" src="https://insideAINews.com/wp-content/uploads/2017/10/Arvin-Hsu.jpg" srcset="https://insideainews.com/wp-content/uploads/2017/10/Arvin-Hsu.jpg 200w, https://insideainews.com/wp-content/uploads/2017/10/Arvin-Hsu-113x150.jpg 113w" width="200"/>In this special guest feature, Arvin Hsu, Senior Director of Data Science and Machine Learning for <a href="http://www.gooddata.com/" rel="noopener" target="_blank">GoodData</a>, discusses that despite the two terms being used interchangeably, deep learning and machine learning are very different in terms of the business problems they solve and the outcomes they enable. Arvin has over 15 years of experience in the field of Data Science and Data Modeling, including 6 years building Machine Learning based data products with both enterprise companies like Disney and startups.  He’s passionate about the innovations being created at the intersection of Big Data, Machine Learning, and Enterprise Data.  He’s also fascinated by how new technology will merge with ancient wisdoms to shift the way the world works.<br/>
+</i></p>
+<p>As artificial intelligence (AI) works its way into mainstream business practices, various different applications are coming up in conversations about how to best leverage the technology. In observing these conversations, I notice some writers using the terms machine learning (ML) and deep learning (DL) interchangeably. The two are actually different concepts in terms of the business problems they solve and the resources they require, and confusing them could lead to unwanted — and costly — results. Let’s take a moment to set the record straight.</p>
+<p>When we see AI making headlines — for things like Apple using facial recognition for iPhone security or the fabricated videos that mimic President Obama’s speech patterns — those applications usually fall into the category of deep learning. DL has actually been around for decades, but only in the last few years has it become computationally feasible on a large enough scale to make it an effective option.</p>
+<p>Deep learning is considered a subset of machine learning as a whole, an approach to AI that enables applications to more accurately predict outcomes without being specifically programmed. A good example of ML at work is your email spam filter. Behind the filter is an algorithm that continuously “learns” about red flags that indicate possible spam or phishing messages. As a result, most apps are able to reduce spam to 1–3 percent of all emails received. About 15 years ago, spam filters started shifting from a rules-based system (e.g. “Move emails from Nigerian Princes into the spam folder.”) to machine learning–based filters. A simple Bayesian ML algorithm could learn from a large “spam” training set in which words, headlines, and IP addresses were most likely to indicate that an email was spam.</p><div class="in-article-ad-divider">
+<!-- /125766567/iBD_InArticle_728x90-300x250_1 -->
+<div id="div-gpt-ad-1683043210496-0" style="min-width: 300px; min-height: 90px;">
+
+</div>
+</div>
+<p>For differentiation purposes, I’ll refer to simple ML algorithms that have been commercially feasible for the past 15–20 years as “classic machine learning.” These comprise a set of machine learning algorithms that a data scientist can run on a small data set with relative ease to create predictions and forecasts, cluster, detect outliers, and more.</p>
+<p>Deep learning comes into play when the desired objective requires analyzing a massive number of factors linked by a complex web of interrelationships. To understand the difference, think about a car approaching an intersection. A classic machine-learning algorithm can determine whether the traffic signal is red, yellow, or green, even under different weather conditions. But as any driver knows, making decisions at an intersection requires understanding much more than whether the light is red or green — we must also consider pedestrians, other cars, which lane we’re in, etc., and how all these factors relate to each other. Absorbing and processing all this data to make an optimized decision is a job for deep learning, which is why it’s being used for self-driving cars.</p>
+<p>While deep learning has worked its way into the mainstream business world, it’s neither cheap nor simple to implement. On the personnel side, you would need a team of specially trained data scientists and engineers with advanced expertise in deep learning techniques. There aren’t many of these specialists around, and those who are available command top salaries. On the hardware side, you would need a host of computers with high-end graphics processing units (GPUs), which drives up the cost exponentially.</p>
+<p>Fortunately, for most business purposes, classic machine learning serves us perfectly well. I like to think of classic ML as an “80/20” solution — it lets you achieve 80 percent of what you could do with deep learning at just 20 percent of the cost. It all depends on your objectives.</p>
+<p>For a real-world example, let’s go back to email spam filters. As I mentioned earlier, most classic machine learning–enabled filters are able to get spam rates down to 1–3 percent. Recently the leadership at Google decided that this rate, low as it may be, was unacceptable for Gmail users. They launched an initiative to <a href="https://www.wired.com/2015/07/google-says-ai-catches-99-9-percent-gmail-spam/" rel="noopener" target="_blank">integrate deep-learning approaches into the Gmail filter</a>, which now boasts a spam rate of 0.1 percent, with a false-positive rate of 0.05 percent. Was this outcome worth the huge investment of people, resources, and budgetary dollars it required? Google believes it was; another organization may have seen it differently.</p>
+<p>So before you launch a task force to decide whether deep learning is a wise direction for your organization, devote some time and energy to deciding what it is you want to achieve. Chances are good that classic machine learning will get you where you want to go. And if it can’t, the deep learning door is always open.</p><div class="in-article-ad-divider">
+<!-- /125766567/iBD_InArticle_728x90-300x250_2 -->
+<div id="div-gpt-ad-1683043267119-0" style="min-width: 300px; min-height: 90px;">
+
+</div>
+</div>
+<p></p>
+<p><em>Sign up for the free insideAI News <a href="http://insideAINews.com/newsletter/" rel="noopener noreferrer" target="_blank">newsletter</a>.</em></p>
+<div class="shariff shariff-align-flex-start shariff-widget-align-flex-start shariff-buttonstretch" data-backendurl="https://insideainews.com/wp-json/shariff/v1/share_counts?" data-hidezero="1" data-services="facebook%7Creddit" data-timestamp="1509012539" data-url="https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F"><ul class="shariff-buttons theme-color orientation-horizontal buttonsize-medium"><li class="shariff-button twitter shariff-nocustomcolor" style="background-color:#32bbf5"><a aria-label="Share on Twitter" class="shariff-link" href="https://twitter.com/share?url=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F&amp;text=Deep%20Learning%20vs.%20Machine%20Learning%20for%20Business%20Outcomes%3A%20A%20Data%20Scientist%E2%80%99s%20Perspective" rel="noopener nofollow" role="button" style="; background-color:#55acee; color:#fff" target="_blank" title="Share on Twitter"><span class="shariff-icon" style=""><svg height="20px" viewbox="0 0 30 32" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M29.7 6.8q-1.2 1.8-3 3.1 0 0.3 0 0.8 0 2.5-0.7 4.9t-2.2 4.7-3.5 4-4.9 2.8-6.1 1q-5.1 0-9.3-2.7 0.6 0.1 1.5 0.1 4.3 0 7.6-2.6-2-0.1-3.5-1.2t-2.2-3q0.6 0.1 1.1 0.1 0.8 0 1.6-0.2-2.1-0.4-3.5-2.1t-1.4-3.9v-0.1q1.3 0.7 2.8 0.8-1.2-0.8-2-2.2t-0.7-2.9q0-1.7 0.8-3.1 2.3 2.8 5.5 4.5t7 1.9q-0.2-0.7-0.2-1.4 0-2.5 1.8-4.3t4.3-1.8q2.7 0 4.5 1.9 2.1-0.4 3.9-1.5-0.7 2.2-2.7 3.4 1.8-0.2 3.5-0.9z" fill="#55acee"></path></svg></span><span class="shariff-text">tweet</span> </a></li><li class="shariff-button linkedin shariff-nocustomcolor" style="background-color:#1488bf"><a aria-label="Share on LinkedIn" class="shariff-link" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F" rel="noopener nofollow" role="button" style="; background-color:#0077b5; color:#fff" target="_blank" title="Share on LinkedIn"><span class="shariff-icon" style=""><svg height="20px" viewbox="0 0 27 32" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M6.2 11.2v17.7h-5.9v-17.7h5.9zM6.6 5.7q0 1.3-0.9 2.2t-2.4 0.9h0q-1.5 0-2.4-0.9t-0.9-2.2 0.9-2.2 2.4-0.9 2.4 0.9 0.9 2.2zM27.4 18.7v10.1h-5.9v-9.5q0-1.9-0.7-2.9t-2.3-1.1q-1.1 0-1.9 0.6t-1.2 1.5q-0.2 0.5-0.2 1.4v9.9h-5.9q0-7.1 0-11.6t0-5.3l0-0.9h5.9v2.6h0q0.4-0.6 0.7-1t1-0.9 1.6-0.8 2-0.3q3 0 4.9 2t1.9 6z" fill="#0077b5"></path></svg></span><span class="shariff-text">share</span> </a></li><li class="shariff-button facebook shariff-nocustomcolor" style="background-color:#4273c8"><a aria-label="Share on Facebook" class="shariff-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F" rel="nofollow" role="button" style="; background-color:#3b5998; color:#fff" target="_blank" title="Share on Facebook"><span class="shariff-icon" style=""><svg height="20px" viewbox="0 0 18 32" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 0.2v4.7h-2.8q-1.5 0-2.1 0.6t-0.5 1.9v3.4h5.2l-0.7 5.3h-4.5v13.6h-5.5v-13.6h-4.5v-5.3h4.5v-3.9q0-3.3 1.9-5.2t5-1.8q2.6 0 4.1 0.2z" fill="#3b5998"></path></svg></span><span class="shariff-text">share</span> <span class="shariff-count shariff-hidezero" data-service="facebook" style="color:#3b5998"></span> </a></li><li class="shariff-button reddit shariff-nocustomcolor" style="background-color:#ff5700"><a aria-label="Share on Reddit" class="shariff-link" href="https://www.reddit.com/submit?url=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F" rel="noopener nofollow" role="button" style="; background-color:#ff4500; color:#fff" target="_blank" title="Share on Reddit"><span class="shariff-icon" style=""><svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z" fill="#ff4500"></path></svg></span><span class="shariff-text">share</span> <span class="shariff-count shariff-hidezero" data-service="reddit" style="color:#ff4500"></span> </a></li><li class="shariff-button mailto shariff-nocustomcolor" style="background-color:#a8a8a8"><a aria-label="Send by email" class="shariff-link" href="mailto:?body=https%3A%2F%2Finsideainews.com%2F2017%2F10%2F27%2Fdeep-learning-vs-machine-learning-business-outcomes-data-scientists-perspective%2F&amp;subject=Deep%20Learning%20vs.%20Machine%20Learning%20for%20Business%20Outcomes%3A%20A%20Data%20Scientist%E2%80%99s%20Perspective" rel="noopener nofollow" role="button" style="; background-color:#999; color:#fff" title="Send by email"><span class="shariff-icon" style=""><svg height="20px" viewbox="0 0 32 32" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M32 12.7v14.2q0 1.2-0.8 2t-2 0.9h-26.3q-1.2 0-2-0.9t-0.8-2v-14.2q0.8 0.9 1.8 1.6 6.5 4.4 8.9 6.1 1 0.8 1.6 1.2t1.7 0.9 2 0.4h0.1q0.9 0 2-0.4t1.7-0.9 1.6-1.2q3-2.2 8.9-6.1 1-0.7 1.8-1.6zM32 7.4q0 1.4-0.9 2.7t-2.2 2.2q-6.7 4.7-8.4 5.8-0.2 0.1-0.7 0.5t-1 0.7-0.9 0.6-1.1 0.5-0.9 0.2h-0.1q-0.4 0-0.9-0.2t-1.1-0.5-0.9-0.6-1-0.7-0.7-0.5q-1.6-1.1-4.7-3.2t-3.6-2.6q-1.1-0.7-2.1-2t-1-2.5q0-1.4 0.7-2.3t2.1-0.9h26.3q1.2 0 2 0.8t0.9 2z" fill="#999"></path></svg></span><span class="shariff-text">email</span> </a></li></ul></div></div><div class="post-meta"><span class="categories">Filed Under: <a href="https://insideainews.com/category/channels/big-data/" rel="category tag">Big Data</a>, <a href="https://insideainews.com/category/channels/enterprise-ai/" rel="category tag">Enterprise AI</a>, <a href="https://insideainews.com/category/news-analysis/google-news-feed/" rel="category tag">Google News Feed</a>, <a href="https://insideainews.com/category/resources/industry-perspectives/" rel="category tag">Industry Perspectives</a>, <a href="https://insideainews.com/category/channels/machine-learning/" rel="category tag">Machine Learning</a>, <a href="https://insideainews.com/category/news-analysis/" rel="category tag">News / Analysis</a>, <a href="https://insideainews.com/category/topics/opinion/" rel="category tag">Opinion</a>, <a href="https://insideainews.com/category/uncategorized/" rel="category tag">Uncategorized</a></span> </div></div></div><div class="sidebar widget-area" id="sidebar"><div class="widget-odd widget-first widget-1 widget widget_text enhanced-text-widget" id="enhancedtextwidget-9"><div class="widget-wrap"><div class="textwidget widget-text"><!-- /125766567/iBD_ROS_RightRail1 -->
+<div id="div-gpt-ad-1663027724989-0" style="min-width: 300px; min-height: 250px;">
+
+</div></div></div></div>
+<div class="widget-even widget-2 sidebar-sponsored-content widget cat-post-widget" id="category-posts-7"><div class="widget-wrap"><h4 class="widget-title widgettitle">Sponsored Guest Articles</h4>
+<ul class="category-posts-internal" id="category-posts-7-internal">
+<li class="cat-post-item"><div><div class="image"><a class="cat-post-thumbnail" href="https://insideainews.com/2024/07/05/webinar-getting-started-with-llama-3-on-amd-radeon-and-instinct-gpus/" title="Webinar: Getting Started with Llama 3 on AMD Radeon and Instinct GPUs"><span class="cat-post-crop cat-post-format cat-post-format-standard"><img alt="" class="attachment- size- wp-post-image" data-cat-posts-height="149" data-cat-posts-width="300" decoding="async" height="149" loading="lazy" sizes="(max-width: 300px) 100vw, 300px" src="https://insideainews.com/wp-content/uploads/2023/08/Generative_AI_shutterstock_2273007347_special.jpg" srcset="https://insideainews.com/wp-content/uploads/2023/08/Generative_AI_shutterstock_2273007347_special.jpg 1100w, https://insideainews.com/wp-content/uploads/2023/08/Generative_AI_shutterstock_2273007347_special-300x150.jpg 300w, https://insideainews.com/wp-content/uploads/2023/08/Generative_AI_shutterstock_2273007347_special-1024x512.jpg 1024w, https://insideainews.com/wp-content/uploads/2023/08/Generative_AI_shutterstock_2273007347_special-150x75.jpg 150w, https://insideainews.com/wp-content/uploads/2023/08/Generative_AI_shutterstock_2273007347_special-768x384.jpg 768w" width="300"/></span></a></div>
+<div class="title"><h3><a class="cat-post-title" href="https://insideainews.com/2024/07/05/webinar-getting-started-with-llama-3-on-amd-radeon-and-instinct-gpus/" rel="bookmark">Webinar: Getting Started with Llama 3 on AMD Radeon and Instinct GPUs</a></h3><p class="cpwp-excerpt-text">[Sponsored Post] This webinar: “Getting Started with Llama 3 on AMD Radeon and Instinct GPUs” provides a guide to installing Hugging Face transformers, Meta’s Llama 3 weights, and the necessary dependencies for running Llama locally on AMD systems with ROCm™ 6.0.</p>
+</div></div></li></ul>
+</div></div>
+<div class="widget-odd widget-3 widget widget_download_manager_widget" id="download_manager_widget-2"><div class="widget-wrap"><h4 class="widget-title widgettitle">White Papers</h4>
+<div class="download-manager-widget-inner"> <div class="download-manager-widget ml-context-row post-item">
+<div class="image-col">
+<a href="https://insideainews.com/white-paper/powering-innovation-idc-spotlight-private-ai-infrastructure-in-the-enterprise/"><img alt="" class="attachment-large size-large wp-post-image" decoding="async" height="729" loading="lazy" sizes="(max-width: 564px) 100vw, 564px" src="https://insideainews.com/wp-content/uploads/2024/09/penguinidc.jpg" srcset="https://insideainews.com/wp-content/uploads/2024/09/penguinidc.jpg 564w, https://insideainews.com/wp-content/uploads/2024/09/penguinidc-116x150.jpg 116w, https://insideainews.com/wp-content/uploads/2024/09/penguinidc-232x300.jpg 232w" width="564"/></a>
+</div>
+<div class="content-col">
+<h3><a class="ml-context-link" href="https://insideainews.com/white-paper/powering-innovation-idc-spotlight-private-ai-infrastructure-in-the-enterprise/">Powering Innovation: IDC Spotlight: Private AI Infrastructure in the Enterprise</a></h3>
+<div class="excerpt"><p>AI is rapidly transforming industries, becoming a critical driver of innovation. As AI’s influence expands, organizations are increasingly turning to private AI solutions to maintain control over their data, ensure regulatory compliance, and customize AI models to meet specific needs. According to IDC’s Spotlight report Powering Innovation: Private AI Infrastructure in the Enterprise, experienced organizations […]</p>
+</div>
+<div class="button-download"><a class="button" href="https://insideainews.com/white-paper/powering-innovation-idc-spotlight-private-ai-infrastructure-in-the-enterprise/">Download</a></div>
+</div>
+</div>
+</div><a class="cat-post-footer-link" href="https://insideainews.com/insideai-news-white-papers/">More White Papers</a></div></div>
+<div class="widget-even widget-last widget-4 ad-unit widget widget_text enhanced-text-widget" id="enhancedtextwidget-7"><div class="widget-wrap"><div class="textwidget widget-text"><!-- /125766567/iBD_ROS_RightRail2 -->
+<div id="div-gpt-ad-1663027888563-0" style="min-width: 300px; min-height: 250px;">
+
+</div></div></div></div>
+</div></div><div id="after-post">
+<div class="widget-odd widget-last widget-first widget-1 ad-divider widget widget_text enhanced-text-widget" id="enhancedtextwidget-25"><div class="widget-wrap"><div class="textwidget widget-text"><div class="after-post-ad">
+<!-- /125766567/iBD_ROS_Anchor -->
+<div id="div-gpt-ad-1683649743366-0" style="min-width: 320px; min-height: 50px;">
+
+</div>
+</div>
+<div class="social">
+<div class="widget-title"><h4>Join Us On Social Media</h4></div>
+<ul class="social-networks">
+<li class="facebook wpsnw-3x display-icons">
+<a href="https://www.facebook.com/insideBIGDATANOW" rel="external" target="_blank" title="facebook"><i class="fa-brands fa-facebook"></i></a>
+</li>
+<li class="x-twitter wpsnw-3x display-icons">
+<a href="https://twitter.com/insideBigData1" rel="external" target="_blank" title="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+</li>
+<li class="linkedin wpsnw-3x display-icons">
+<a href="https://www.linkedin.com/company/insidebigdata/" rel="external" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+</li>
+</ul>
+</div></div></div></div></div>
+<div class="sidebar widget-area" id="sidebar-alt"></div><div id="prefooter">
+<div id="pre-footer-left">
+<div class="rss-feed-title-logo widget-odd widget-first widget-1 widget widget_text enhanced-text-widget" id="enhancedtextwidget-21"><div class="rss-feed-title-logo widget-wrap"><div class="textwidget widget-text"><div class="box-title">Featured From</div>
+<div class="rss-logo"><a href="http://insidehpc.com"><img alt="InsideHPC" src="https://insidehpc.com/wp-content/uploads/2022/04/iHPC-tagline-72dpi-500x191-1.png"/></a></div></div></div></div><div class="widget-even widget-2 rss-feed-featured widget widget_rss" id="rss-4"><div class="widget-wrap"><h4 class="widget-title widgettitle"><a class="rsswidget rss-widget-feed" href="http://insidehpc.com/category/featured/feed/"><img alt="RSS" class="rss-widget-icon" height="14" loading="lazy" src="https://insideainews.com/wp-includes/images/rss.png" style="border:0" width="14"/></a> <a class="rsswidget rss-widget-title" href="https://insidehpc.com/category/featured/">Featured RSS Feed</a></h4>
+<ul><li><a class="rsswidget" href="https://insidehpc.com/2024/11/hpcpodcast-an-analysis-of-the-new-top500-list-of-top-supercomputers/">@HPCpodcast: An Analysis of the New TOP500 List of Top Supercomputers</a><div class="rssSummary">SC24 here in Atlanta is off to a great start with more than 17,000 attendees (a 21 percent increase over 2023), 480 exhibitors from 29 countries and .... The post @HPCpodcast: An Analysis of the New TOP500 List of Top Supercomputers appeared first on High-Performance Computing News Analysis | insideHPC.</div></li></ul></div></div><div class="widget-odd widget-last widget-3 rss-feed-additional-titles widget widget_rss" id="rss-5"><div class="widget-wrap"><h4 class="widget-title widgettitle"><a class="rsswidget rss-widget-feed" href="http://feeds.feedburner.com/InsideHPC"><img alt="RSS" class="rss-widget-icon" height="14" loading="lazy" src="https://insideainews.com/wp-includes/images/rss.png" style="border:0" width="14"/></a> <a class="rsswidget rss-widget-title" href="https://insidehpc.com/">More News from insideHPC</a></h4>
+<ul><li><a class="rsswidget" href="https://insidehpc.com/2024/11/introducing-the-insidehpc-vanguards-tomorrows-hpc-ai-leaders-taking-on-todays-big-challenges/">Introducing the insideHPC Vanguards: Tomorrow’s HPC-AI Leaders Taking on Today’s Big Challenges</a></li><li><a class="rsswidget" href="https://insidehpc.com/2024/11/hpcpodcast-an-analysis-of-the-new-top500-list-of-top-supercomputers/">@HPCpodcast: An Analysis of the New TOP500 List of Top Supercomputers</a></li><li><a class="rsswidget" href="https://insidehpc.com/2024/11/luminary-cloud-uses-nvidia-omniverse-blueprint-for-real-time-cae-digital-twins/">Luminary Cloud Uses NVIDIA Omniverse Blueprint for Real-Time CAE Digital Twins</a></li><li><a class="rsswidget" href="https://insidehpc.com/2024/11/el-cap-on-top-of-top500/">TOP500 at SC24: El Cap on Top, U.S. Now Has 3 Exascale Supercomputers</a></li><li><a class="rsswidget" href="https://insidehpc.com/2024/11/95176/">HPC News Bytes 20241118: On the Scene at SC24, TSMC and the CHIPS Act, Cerebras at Sandia</a></li><li><a class="rsswidget" href="https://insidehpc.com/2024/11/dell-technologies-ai-for-enterprises-with-dell-ai-factory/">Dell Technologies: AI for Enterprises with Dell AI Factory</a></li><li><a class="rsswidget" href="https://insidehpc.com/2024/11/penguin-solutions-accelerates-time-to-value-for-ai-factories/">Penguin Solutions Accelerates Time to Value for AI Factories</a></li></ul></div></div> </div>
+<div id="pre-footer-right">
+<div class="widget-odd widget-last widget-first widget-1 widget widget_text enhanced-text-widget" id="enhancedtextwidget-8"><div class="widget-wrap"><div class="textwidget widget-text"><!-- /125766567/iBD_ROS_RightRail3 -->
+<div id="div-gpt-ad-1663028222304-0" style="min-width: 300px; min-height: 250px;">
+
+</div></div></div></div> </div>
+</div></div><div class="footer" id="footer"><div class="wrap"><div class="menu-footer-nav-middle-container"><ul class="menu" id="menu-footer-nav-middle"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3404" id="menu-item-3404"><a href="https://insideainews.com/about/">About insideAI News</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3402" id="menu-item-3402"><a href="https://insideainews.com/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3403" id="menu-item-3403"><a href="https://insideainews.com/advertise/">Advertise with insideAI News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32334" id="menu-item-32334"><a href="https://insidehpc.com/">Visit Our Other Site – insideHPC</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32335" id="menu-item-32335"><a href="https://insideainews.com/terms-of-service-copyright/">Terms of Service &amp; Copyright</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32336" id="menu-item-32336"><a href="https://insideainews.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div>
+<div class="logo-image">
+<a href="/"><img alt="insideAI News" src="https://insideainews.com/wp-content/themes/iai-2023/images/logo-no-tagline.png"/></a>
+</div>
+<div class="copyright">Copyright © 2024</div></div></div></div> 
+<div id="fb-root"></div>
+<broadstreet-zone zone-id="59514"></broadstreet-zone> 
+
+<link href="https://insideainews.com/wp-content/plugins/shariff/css/shariff.min.css?ver=4.6.14" id="shariffcss-css" media="all" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</link></body></html>

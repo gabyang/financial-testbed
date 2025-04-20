@@ -1,0 +1,57 @@
+STOCK ANALYSIS: AAPL
+Date Range: 2015-08-03 00:00:00+08:00 (1 week)
+Price Change: -5.34%
+Previous Avg Close: $122.65070723160242
+Current Avg Close: $116.10348973607039
+
+COMPANY: Apple Inc.
+Sector: Technology
+Industry: Consumer Electronics
+Market Cap: 3401055000000
+CEO: Mr. Timothy D. Cook
+
+==================================================
+
+ANALYSIS:
+
+**Comprehensive Analysis**
+
+**1. News Articles Reflecting Change in Stock Price:**
+
+The news articles suggest that the recent weakness in Apple's stock price (AAPL) and the Nasdaq Composite Index (QQQ) presents an opportunity for investors to buy at a discount. The authors of the articles argue that the current price drop is temporary and that the underlying fundamentals of the companies are still strong.
+
+* Article 1: "Apple Earnings Offer Investors Opportunity To Buy At Discount" (July 22, 2015)
+* Article 2: "Apple Earnings Offer Investors Opportunity To Buy At Discount" (July 22, 2015)
+* Article 3: "Apple Earnings Offer Investors Opportunity To Buy At Discount" (July 22, 2015)
+* Article 4: "Apple Earnings Offer Investors Opportunity To Buy At Discount" (July 22, 2015)
+
+**2. Financial Results and Metrics Impacting Investor Sentiment:**
+
+The SEC filing excerpts reveal that Apple's revenue and earnings per share (EPS) have been increasing steadily over the years.
+
+* Date: July 21, 2015
+* Statistic: Apple's Q2 FY2015 EPS was $1.85, up 10% from the same period last year.
+* Date: July 22, 2015
+* Statistic: The Nasdaq Composite Index (QQQ) closed at 4,855.38, down 0.7% from the previous day.
+
+**3. Market Conditions or Industry Trends Affecting the Company:**
+
+The market conditions and industry trends suggest that the technology sector is experiencing a period of consolidation, with some investors becoming nervous about the valuations of certain stocks.
+
+* Date: July 22, 2015
+* Statistic: The Nasdaq Composite Index (QQQ) has been trading near all-time highs, sparking concerns among some investors.
+* Date: July 7, 2015
+* Statistic: The ProShares UltraPro Short Russell2000 ETF (SRTY) experienced a significant outflow of units, indicating that some investors are becoming bearish on the technology sector.
+
+**4. Forward Guidance or Outlook Changes:**
+
+There is no explicit forward guidance or outlook change mentioned in the news articles or SEC filing excerpts.
+
+**5. Other Material Information:**
+
+The SEC filing excerpts reveal that Apple's cash and equivalents were $187 billion as of June 27, 2015, indicating a strong financial position for the company.
+
+* Date: July 21, 2015
+* Statistic: Apple's cash and equivalents were $187 billion.
+* Date: July 22, 2015
+* Statistic: The Nasdaq Composite Index (QQQ) has been trading near all-time highs, sparking concerns among some investors.

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+<!--
+Development:
+JULIO FOULQUIE, @j3j5@hachyderm.io, ✈Montevideo, UY
+MARC TORAL, ✈Amsterdam, NL
+JULIAN SZNAIDER, ✈Buenos Aires, AR
+——————————
+Concept and Design by:
+ALEXANDER GRIFFIOEN, @oscaralexander, ✈Amsterdam, NL
+SÄINA SEEDORF, ✈Amsterdam, NL
+——————————
+Alumni:
+JACK DUNN, ✈Amsterdam, NL
+JULIAN AIJAL, @Jaijal, ✈Amsterdam, NL
+SAM BLOK, ✈Amsterdam, NL
+LAURA GENNO, ✈Amsterdam, NL
+IRENE DE NICOLO, ✈Amsterdam, NL
+DANIEL TARA, ✈Amsterdam, NL
+EVGENY ASTAPOV, ✈Rotterdam, NL
+RONAN O'LEARY, @ro_oleary, ✈Amsterdam, NL
+PABLO ROMÁN, ✈Amsterdam, NL
+JAMES SCOTT, ✈Amsterdam, NL
+JELLE VAN WIJHE, ✈Amsterdam, NL
+MATTHEW ELWORTHY, ✈Amsterdam, NL
+OSCAR VAN ZIJVERDEN, ✈Amsterdam, NL
+STEPHAN LAGERWAARD, ✈Amsterdam, NL
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="unsafe-url" name="referrer"/>
+<meta content="The Next Web" name="apple-mobile-web-app-title"/>
+
+<link as="style" href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="script" href="//next.tnwcdn.com/assets/next/js/base.js?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="style" href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="font" crossorigin="anonymous" href="https://next.tnwcdn.com/assets/next/fonts/graphik-wide-black.woff2" rel="preload" type="font/woff2"/>
+<link as="image" href="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=44d92b912386ac09168f197cebf9d8cf" imagesrcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=d528512c835085de9eeaa4ab175ad700 576w,
+                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=5f0ddcd3d5e75da5f9b6393c15ebbe9d 1152w,
+                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=44d92b912386ac09168f197cebf9d8cf 1280w" media="(min-width: 361px) and (min-height: 651px)" rel="preload"/>
+<title>Report: Apple servers ‘intercept’ emails to find child abuse imagery</title>
+<!-- OpenGraph -->
+<meta content="Cara Curtis" name="author"/>
+<meta content="https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery" name="original-source">
+<meta content="TNW | Tech" property="og:site_name">
+<meta content="Report: Apple servers ‘intercept’ emails to find child abuse imagery" property="og:title">
+<meta content="A Forbes report published today revealed how Apple servers scan and read emails to find child abuse imagery using the process of 'hashing.'" name="description" property="description">
+<meta content="A Forbes report published today revealed how Apple servers scan and read emails to find child abuse imagery using the process of 'hashing.'" property="og:description">
+<meta content="https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery" property="og:url">
+<meta content="640" property="og:image:height">
+<meta content="1280" property="og:image:width"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=802051aad316b6e3fcc223a2a2e2fcf4" property="og:image"/>
+<meta content="article" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="2020-02-11T13:57:20+00:00" property="og:updated_time">
+<meta content="2020-02-11T13:57:18+00:00" property="article:published_time"/>
+<meta content="2020-02-11T13:57:20+00:00" property="article:modified_time"/>
+<meta content="Tech" property="article:section"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@thenextweb" name="twitter:site"/>
+<meta content="@thenextweb" name="twitter:creator"/>
+<meta content="Report: Apple servers &amp;#8216;intercept&amp;#8217; emails to find child abuse imagery" name="twitter:title"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=802051aad316b6e3fcc223a2a2e2fcf4" name="twitter:image"/>
+<meta content="A Forbes report published today revealed how Apple servers scan and read emails to find child abuse imagery using the process of 'hashing.'" name="twitter:description"/>
+<!-- General Meta -->
+<meta content="max-image-preview:large" name="robots"/>
+<meta content="Report: Apple servers &amp;#8216;intercept&amp;#8217; emails to find child abuse imagery" property="title">
+<meta content="A Forbes report published today revealed how Apple servers scan and read emails to find child abuse imagery using the process of 'hashing.'" property="description"/>
+<meta content="https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery" property="url"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon"/>
+
+<link href="/manifest.json" rel="manifest"/>
+
+
+
+
+<link href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<noscript>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+</noscript>
+<meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<link href="//cdn0.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//next.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//img-cdn.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//cdnjs.cloudflare.com/" rel="dns-prefetch"/>
+<link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+<link href="//cdn0.tnwcdn.com/" rel="preconnect"/>
+<link href="//next.tnwcdn.com/" rel="preconnect"/>
+<link href="//img-cdn.tnwcdn.com/" rel="preconnect"/>
+<link href="//www.googletagmanager.com" rel="preconnect"/>
+<link href="//cdnjs.cloudflare.com/" rel="preconnect"/>
+<link as="style" async="" crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet preload"/>
+<link href="https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery" rel="canonical">
+
+<!-- JSON-LD Breadcrumbs -->
+
+<!-- JSON-LD schema -->
+
+
+
+</link></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></head>
+<body class="site-tnwNext preload" id="next-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+<div id="fb-root"></div>
+<div class="tech" id="_progress"></div>
+<nav class="c-nav has-level2" id="nav" role="navigation" style="top: 0;">
+<div class="c-nav__level1">
+<button aria-controls="overlay__hook" aria-expanded="false" aria-haspopup="true" class="c-nav__menuToggle c-nav__menuToggle--level-1 js-menuToggleLevel" data-nav-level="1" id="nav-menuLevel1" type="button">
+<span class="visually-hidden">Toggle Navigation</span>
+</button>
+<div class="navLabel_dt">
+<a class="c-nav__logo" data-event-action="Navigation bar" data-event-category="Article" data-event-label="TNW Logo" data-event-non-interaction="false" href="/" name="TNW Logo">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path>
+</svg>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--1" id="overlay__hook">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="News" data-event-category="Navigation bar" data-event-label="/" data-event-non-interaction="false" href="/">News</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">Events</button>
+<ul class="c-nav__submenu" role="menu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false" href="/conference">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false">TNW Conference</span>
+<span class="c-nav__submenuLinkNote">June 19 &amp; 20, 2025</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false" href="https://thenextweb.com/conference/the-soonicorn-summit">
+<span class="c-nav__submenuLinkTitle" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false">The Soonicorn Summit</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false" href="https://thenextweb.com/conference/tnw-webinar-series">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false">TNW Webinars</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false" href="/events">
+<span class="c-nav__submenuLinkTitle" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false">All events</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+</ul>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Spaces" data-event-category="Navigation bar" data-event-label="/spaces" data-event-non-interaction="false" href="/spaces">Spaces</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Programs" data-event-category="Navigation bar" data-event-label="/programs" data-event-non-interaction="false" href="/programs">Programs</a>
+</li>
+</ul>
+<hr class="mobile_menu_divider"/>
+<ul class="c-nav__menu c-nav__icons">
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" data-event-action="Newsletter" data-event-category="Navigation bar" data-event-label="Newsletters top right - click" data-event-non-interaction="false" href="/newsletters">
+<span class="c-nav__iconsItem--label" data-event-action="Newsletters" data-event-category="Navigation bar" data-event-label="/newsletters" data-event-non-interaction="false">Newsletters</span>
+</a>
+</li>
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" href="/partnerships">
+<span class="c-nav__iconsItem--label" data-event-action="Partner with us" data-event-category="Navigation bar" data-event-label="/partnerships" data-event-non-interaction="false">Partner with us</span>
+</a>
+</li>
+</ul>
+<footer class="c-nav__footer">
+<ul class="c-nav__social">
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://facebook.com/thenextweb" name="Facebook Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://www.instagram.com/thenextweb" name="Instagram Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://twitter.com/thenextweb" name="Twitter Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://youtube.com/user/thenextweb" name="Youtube Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://flipboard.com/@thenextweb" name="Flipboard Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="/newsletters" name="Email Social Link">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</li>
+</ul>
+<ul class="c-nav__company">
+<li class="c-nav__companyItem">
+<a class="c-nav__companyLink" href="https://thenextweb.homerun.co/" rel="noopener noreferrer" target="_blank">Jobs</a>
+</li>
+<li class="c-nav__companyItem"><a class="c-nav__companyLink" href="mailto:conference@thenextweb.com">Contact</a></li>
+</ul>
+</footer>
+</div>
+</div>
+<div class="c-nav__level2 tnw news">
+<div class="c-nav__pwd">
+<a class="c-nav__pwdLogo" href="/"><svg class="tnwLogo__tnwNews"><title>The Next Web</title><use xlink:href="/assets/next/img/icons.svg#tnw"></use></svg></a>
+<a class="c-nav__pwdLogoUkraine" href="/ukraine">
+<img alt="We stand with Ukraine" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/companies/ukraine.png"/>
+</a>
+<span class="c-nav__pwdSection">News</span>
+<a class="c-nav__pwdSite" href="/" title="">
+<span class="sm:hidden" id="channelName_abbr">news</span>
+<span class="max-sm:hidden xl:hidden">news</span>
+<span class="max-xl:hidden" id="channelName_mob">news</span>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--2">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Latest" data-event-category="Navigation bar" data-event-label="/latest" data-event-non-interaction="false" href="/latest">Latest</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Deep tech" data-event-category="Navigation bar" data-event-label="/deep-tech" data-event-non-interaction="false" href="/deep-tech">Deep tech</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Sustainability" data-event-category="Navigation bar" data-event-label="/sustainability" data-event-non-interaction="false" href="/sustainability">Sustainability</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Ecosystems" data-event-category="Navigation bar" data-event-label="/ecosystems" data-event-non-interaction="false" href="/ecosystems">Ecosystems</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Data and security" data-event-category="Navigation bar" data-event-label="/data-security" data-event-non-interaction="false" href="/data-security">Data and security</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Fintech and ecommerce" data-event-category="Navigation bar" data-event-label="/fintech-ecommerce" data-event-non-interaction="false" href="/fintech-ecommerce">Fintech and ecommerce</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Future of work" data-event-category="Navigation bar" data-event-label="/future-of-work" data-event-non-interaction="false" href="/future-of-work">Future of work</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Podcast" data-event-category="Navigation bar" data-event-label="https://podcast.thenextweb.com" data-event-non-interaction="false" href="https://podcast.thenextweb.com">Podcast</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">More</button>
+<ul class="c-nav__submenu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="https://thenextweb.com/tnw-conference-2024">
+<span class="c-nav__submenuLinkTitle" data-event-action="Conference media hub" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/tnw-conference-2024" data-event-non-interaction="false">Conference media hub</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/startups-technology">
+<span class="c-nav__submenuLinkTitle" data-event-action="Startups and technology" data-event-category="Navigation bar" data-event-label="/startups-technology" data-event-non-interaction="false">Startups and technology</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/investors-funding">
+<span class="c-nav__submenuLinkTitle" data-event-action="Investors and funding" data-event-category="Navigation bar" data-event-label="/investors-funding" data-event-non-interaction="false">Investors and funding</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/government-policy">
+<span class="c-nav__submenuLinkTitle" data-event-action="Government and policy" data-event-category="Navigation bar" data-event-label="/government-policy" data-event-non-interaction="false">Government and policy</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/corporates-innovation">
+<span class="c-nav__submenuLinkTitle" data-event-action="Corporates and innovation" data-event-category="Navigation bar" data-event-label="/corporates-innovation" data-event-non-interaction="false">Corporates and innovation</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/plugged">
+<span class="c-nav__submenuLinkTitle" data-event-action="Gadgets &amp; apps" data-event-category="Navigation bar" data-event-label="/plugged" data-event-non-interaction="false">Gadgets &amp; apps</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<button aria-hidden="true" class="c-nav__menuScroller" type="button"></button>
+</div>
+</div>
+</nav>
+<a class="c-nav__yellow-bar" href="https://thenextweb.com/conference/tickets" id="cross-site-notification" rel="noopener" target="_blank">
+<div class="c-nav__message c-nav__message--global" data-event-action="Yellow bar" data-event-category="Yellow bar" data-event-label="Yellow bar - click">
+<p><strong>Save over 40% when you secure your tickets today to TNW Conference 💥 Prices will increase on November 22 →</strong></p>
+</div>
+</a>
+<div class="o-page" id="main">
+<div class="o-page__main">
+<main class="c-channel c-channel--latest o-page__main" id="article_container">
+<div class="c-articles">
+<div class="c-articles__backdrop"><div class="c-articles__backdrop--sticky"></div></div>
+<div class="c-nav__message c-nav__message--article news" style="top:0">
+<p>This article was published on <strong>February 11, 2020</strong></p>
+</div>
+<header class="c-header">
+<div class="o-wrapper">
+<div class="c-header__text">
+<ul class="c-header__tags c-tags c-tags--centered">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Tech" data-event-non-interaction="false" href="/tech">Tech</a>
+</li>
+</ul>
+<h1 class="c-header__heading">Report: Apple servers ‘intercept’ emails to find child abuse imagery</h1>
+<br/>
+<div>
+<time datetime="February 11, 2020 - 1:57 pm">February 11, 2020 - 1:57 pm</time>
+</div>
+</div>
+<div aria-hidden="true" class="c-share lg:hidden">
+<a class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Report%3A%20Apple%20servers%20%E2%80%98intercept%E2%80%99%20emails%20to%20find%20child%20abuse%20imagery&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;u=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery&amp;t=Report%3A%20Apple%20servers%20%E2%80%98intercept%E2%80%99%20emails%20to%20find%20child%20abuse%20imagery" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Report%3A%20Apple%20servers%20%E2%80%98intercept%E2%80%99%20emails%20to%20find%20child%20abuse%20imagery" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-share__link c-share__link--mail" href="mailto:?subject=Report: Apple servers &amp;#8216;intercept&amp;#8217; emails to find child abuse imagery&amp;body=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+</header>
+<div class="e-empty__hidden"></div>
+<div class="screen-size desktop-screen">
+<div class="tnw-ad tnw-ad--billboard tnw-ad--has-placeholder" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_HEADER","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[320,240],[300,250],[970,250],[970,90],[728,90],[320,50],[300,100],[300,50],[320,100]],"sizeMapping":[[[1024,0],[[970,250],[970,90],[728,90]]],[[0,0],[[300,250],[320,50],[300,50],[300,100],[320,100],[320,240]]]],"targeting":{"postID":["1271139"],"title":["Report: Apple servers ‘intercept’ emails to find child abuse imagery"],"category":["tech"],"isSponsored":["No"]},"lazyLoad":"true","refreshEvery":"","debugMode":false}' id="tnw-next-header"></div>
+</div>
+
+<div class="o-wrapper mb-4xl">
+<article class="c-article js-article mt-m" id="articleOutput" style="margin-top: 0px;">
+<div class="c-article__media c-article__growth-mobile">
+<figure class="o-media o-media--16:9">
+<img alt="Report: Apple servers ‘intercept’ emails to find child abuse imagery" class="js-lazy c-article__mediaImage w-full absolute top-0" data-src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=44d92b912386ac09168f197cebf9d8cf" data-srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=d528512c835085de9eeaa4ab175ad700 576w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=5f0ddcd3d5e75da5f9b6393c15ebbe9d 1152w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=44d92b912386ac09168f197cebf9d8cf 1280w" sizes="(max-width: 1023px) 100vw
+                                               868px"/>
+<noscript>
+<img alt="Report: Apple servers ‘intercept’ emails to find child abuse imagery" class="c-article__mediaImage w-full absolute top-0" sizes="(max-width: 1023px) 100vw
+                                                   868px" src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=44d92b912386ac09168f197cebf9d8cf" srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=d528512c835085de9eeaa4ab175ad700 576w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=5f0ddcd3d5e75da5f9b6393c15ebbe9d 1152w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;signature=44d92b912386ac09168f197cebf9d8cf 1280w"/>
+</noscript>
+</figure>
+</div>
+<div class="screen-size mobile-screen" style="text-align: center"></div>
+
+<div class="c-article__main max-lg:mb-xxl">
+<div class="c-richText c-richText--large" id="article-main-content">
+<p><span style="font-weight: 400;">A</span><a href="https://www.forbes.com/sites/thomasbrewster/2020/02/11/how-apple-intercepts-and-reads-emails-when-it-finds-child-abuse/#54677c8a31c2" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Forbes</span></a><span style="font-weight: 400;">report published today revealed how Apple servers scan and read emails to find child abuse imagery. As the investigators pointed out,</span><a href="https://www.telegraph.co.uk/technology/2020/01/08/apple-scans-icloud-photos-check-child-abuse/" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Apple is known for keeping a tight lid on how it operates</span></a><span style="font-weight: 400;">, especially when it comes to dealing with instances where their software has been exploited for crime.</span></p>
+<p><span style="font-weight: 400;">In a search warrant obtained by Forbes, it found that despite multiple reports of Apple being unhelpful in serious law enforcement cases, the tech giant has played an important role in investigations. Specifically, checking messages when illegal material like child abuse has been flagged and providing data on the iCloud user, including their name, address, and mobile phone number that the user consented to submit when they signed up.</span></p>
+<h2><b>How does Apple detect child abuse in emails?</b></h2>
+<p><span style="font-weight: 400;">It’s worth pointing out that this doesn’t mean an Apple employee manually checks every single one of your emails everyday. Similarly to other tech giants, Apple’s servers use the ‘hashes’ process to detect this kind of criminal activity.</span></p>
+<p>[Read: <a href="https://thenextweb.com/news/twitter-lets-pedophiles-publicly-discuss-their-sexual-attraction-to-minors-scholar-argues" rel="noopener" target="_blank"><em>Twitter lets pedophiles publicly discuss their sexual ‘attraction to minors,’ scholar argues</em></a>]</p>
+<div class="inarticle-wrapper channel-cta"><div class="ica-text"><a data-event-action="In Article Block" data-event-category="Article" data-event-label="Webinar: Unicorn DNA: The Blueprint for Scaling Success" href="https://thenextweb.com/conference/tnw-webinar-series?utm_source=google&amp;utm_medium=display&amp;utm_campaign=global_tnw_media_leads_retargeting_bau_2025-tnw-conference-amsterdam_TNW" target="_blank"><p class="ica-text__title">Webinar: Unicorn DNA: The Blueprint for Scaling Success</p><p>What does it take to build a unicorn? On November 19, 3pm CET, top executives of unicorn companies will reveal the mindset, strategies, and innovative thinking that propelled their companies to the top.</p></a></div><div class="ica-button">
+<a class="c-button c-button--primary" data-event-action="In Article Block" data-event-category="Article" data-event-label="Register Now" href="https://thenextweb.com/conference/tnw-webinar-series?utm_source=google&amp;utm_medium=display&amp;utm_campaign=global_tnw_media_leads_retargeting_bau_2025-tnw-conference-amsterdam_TNW" target="_blank">Register Now</a>
+</div></div><p><span style="font-weight: 400;">As</span><a href="https://www.forbes.com/sites/thomasbrewster/2020/02/11/how-apple-intercepts-and-reads-emails-when-it-finds-child-abuse/#54677c8a31c2" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">Forbes</span></a><span style="font-weight: 400;">explained, a ‘hash’ has been likened to a signature attached to a previously-identified child abuse image or video. If an image that’s been previously confirmed as illegal is sent via email on an Apple device, the company’s servers will automatically flag the content to be checked by a staff member. Once confirmed as illegal, it will be sent to relevant authorities, such as the National Center for Missing and Exploited Children (NCMEC).</span></p>
+<p><span style="font-weight: 400;">While pedophilia and child abuse isn’t a new crime, technology has played a deadly role in its accessibility and acceleration over the past decade. Last year, The New York Times reported that</span><a href="https://www.nytimes.com/interactive/2019/09/28/us/child-sex-abuse.html" rel="nofollow noopener" target="_blank"><span style="font-weight: 400;">major tech companies reported over 45 million online photos and videos</span></a><span style="font-weight: 400;">of children being sexually abused — more than double what they found the previous year.</span></p>
+<p><span style="font-weight: 400;">This process of ‘hashing’ has been deemed successful by other tech giants such as Facebook. Last year, the social media platform was responsible for almost 12 million of the 18 million reports of child abuse material to the national center — an uncomfortable win and realization.</span></p>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">facebook messenger was responsible for nearly ?12 MILLION? of the 18 million reports to the national center last year. earlier this year the company announced it was going to encrypt the service. 9/</p>
+<p>— gabriel dance (@gabrieldance) <a href="https://twitter.com/gabrieldance/status/1178368821045993472?ref_src=twsrc%5Etfw" rel="nofollow noopener" target="_blank">September 29, 2019</a></p></blockquote>
+<p></p>
+<p><span style="font-weight: 400;">While it’s promising to see platforms like Apple and Facebook dramatically step up their efforts to discover and report instances of child abuse, the stats are still troubling and much more needs to be done to counteract the child abuse content currently available online right.</span></p>
+</div>
+<aside class="c-contributor latest">
+<a data-event-action="Author" data-event-category="Article" data-event-label="Cara Curtis" data-event-non-interaction="false" href="/author/cara-curtis" rel="noopener" target="_blank">
+<img alt="Cara Curtis" class="c-contributor__photo js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fe406efc77198868e91b320256046a420%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=8d9284be8f687a9d2d3ada3bc0f7d361"/>
+<noscript>
+<img alt="Cara Curtis" class="c-contributor__photo" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fe406efc77198868e91b320256046a420%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=8d9284be8f687a9d2d3ada3bc0f7d361"/>
+</noscript>
+</a>
+<div aria-label="Author Bio" class="c-contributor__main">
+<h2 class="c-contributor__wrapper">
+<span class="c-contributor__heading">Story by</span>
+<span class="c-contributor__name" style="margin-bottom: 0">
+<a class="latest" href="/author/cara-curtis">Cara Curtis</a>
+</span>
+</h2>
+<span class="c-contributor__credentials">Former TNW writer</span>
+</div>
+</aside>
+<div class="c-channel__cta" id="nl-container">
+<h2 class="c-channel__ctaHeading text-dark">Get the TNW newsletter</h2>
+<p class="c-channel__ctaDescription text-white">Get the most important tech news in your inbox each week.</p>
+<div id="in-article-newsletter" style="color: #fff"></div>
+</div>
+<h2 class="alsoTaggedIn">Also tagged with</h2>
+<br/>
+<ul class="c-header__tags c-tags c-tags--left">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Facebook" data-event-non-interaction="false" href="/topic/facebook">Facebook</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Email" data-event-non-interaction="false" href="/topic/email-2">Email</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Child abuse" data-event-non-interaction="false" href="/topic/child-abuse">Child abuse</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Apple" data-event-non-interaction="false" href="/topic/apple">Apple</a>
+</li>
+</ul>
+<footer class="c-article__pubDate md:flex md:justify-between">
+<div>
+                                Published <time datetime="2019-02-11 12:07:00">February 11, 2020 - 1:57 pm UTC</time>
+</div>
+<a class="scrolly latest" data-event-action="Back to top" data-event-category="Article" data-event-label="Back to top - click" data-event-non-interaction="true" data-target="#next-top" href="#">Back to top</a>
+</footer>
+<div aria-label="Social share options" class="c-share lg:hidden">
+<a aria-label="Share on Facebook" class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Report%3A%20Apple%20servers%20%E2%80%98intercept%E2%80%99%20emails%20to%20find%20child%20abuse%20imagery&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;u=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery&amp;t=Report%3A%20Apple%20servers%20%E2%80%98intercept%E2%80%99%20emails%20to%20find%20child%20abuse%20imagery" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a aria-label="Share on Twitter" class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Report%3A%20Apple%20servers%20%E2%80%98intercept%E2%80%99%20emails%20to%20find%20child%20abuse%20imagery" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a aria-label="Share on Flipboard" class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a aria-label="Share on Linkedin" class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a aria-label="Share on Telegram" class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a aria-label="Share via Email" class="c-share__link c-share__link--mail" href="mailto:?subject=Report: Apple servers &amp;#8216;intercept&amp;#8217; emails to find child abuse imagery&amp;body=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+<aside aria-hidden="true" class="c-article__side">
+<aside class="c-article__author">
+<a class="tech" data-event-action="Author" data-event-category="Article" data-event-label="Cara Curtis" data-event-non-interaction="false" href="/author/cara-curtis">
+<img alt="Cara Curtis" class="c-article__authorImage blend-blue-dark js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fe406efc77198868e91b320256046a420%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=8d9284be8f687a9d2d3ada3bc0f7d361" height="96" id="duotone" width="96"/>
+<noscript>
+<img alt="Cara Curtis" class="c-article__authorImage blend-blue-dark" height="96" id="duotone" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Fe406efc77198868e91b320256046a420%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=8d9284be8f687a9d2d3ada3bc0f7d361" width="96"/>
+</noscript>
+<span class="c-article__authorHeading">Story by</span>
+<span class="c-article__authorName latest">Cara Curtis</span>
+</a>
+</aside>
+<div class="c-engage">
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Facebook" data-event-non-interaction="false" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Report%3A%20Apple%20servers%20%E2%80%98intercept%E2%80%99%20emails%20to%20find%20child%20abuse%20imagery&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F02%2FCopy-of-...-3.png&amp;u=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery&amp;t=Report%3A%20Apple%20servers%20%E2%80%98intercept%E2%80%99%20emails%20to%20find%20child%20abuse%20imagery" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Twitter" data-event-non-interaction="false" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Report%3A%20Apple%20servers%20%E2%80%98intercept%E2%80%99%20emails%20to%20find%20child%20abuse%20imagery" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Linkedin" data-event-non-interaction="false" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Flipboard" data-event-non-interaction="false" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Telegram" data-event-non-interaction="false" href="https://t.me/share/url?url=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Email" data-event-non-interaction="false" href="mailto:?subject=Report: Apple servers &amp;#8216;intercept&amp;#8217; emails to find child abuse imagery&amp;body=https://thenextweb.com/news/report-apple-servers-intercept-emails-to-find-child-abuse-imagery%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</aside>
+<aside class="c-split__side mb-m" id="sidebar">
+<div class="c-split__sticky channel_cta_if_subnav">
+<div class="tnw-ad tnw-ad--article-mpu" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_ATF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,50],[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1271139"],"title":["Report: Apple servers ‘intercept’ emails to find child abuse imagery"],"category":["tech"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-atf"></div>
+<div class="jobbioapp sticky top-4xl" id="sidebarJobbio"></div>
+<div class="tnw-ad tnw-ad--article-mpu-btf" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_BTF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1271139"],"title":["Report: Apple servers ‘intercept’ emails to find child abuse imagery"],"category":["tech"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-btf"></div>
+</div>
+</aside>
+</article>
+</div>
+</div>
+<aside aria-label="Related Articles" class="c-article__suggested">
+<div class="c-nextRelatedGrid">
+<section class="o-wrapper o-wrapper--wide">
+<header class="c-bodyNews__header">
+<h2 class="c-bodyNews__heading">Related Articles</h2>
+</header>
+<div class="c-showcase__grid">
+<section class="c-showcase__grid c-showcase__scroller js-parallaxRoot">
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/eu-tells-apple-open-gates-to-competitors">
+<img alt="EU tells Apple to &amp;#8216;open gates&amp;#8217; to competitors" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=e44a6aa715d3ce210dae252ae5703892" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=ba41566ef3f704cf154db658d640dffd 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=1c884f449df9c73e8767e92685e5b6d4 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=174349a10a8a28017730cce3f97d5bb7 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=6479d9f8d5c63547c86b333f928cc634 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=0fdeff9c35134074f8ddd38001b8a2a9 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=0a64b8886836c503e72ad58f0db95986 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=34b752842c3be144a5d08611c71e9f7b 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=315e35c064dcf714c2f17cdd03d8424a 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=d79501575352c736c996c24736683899 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=f5f96c814c4991bfcdea933828612a9e 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=649b56d91e480556c3c5ac87388ff19f 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=269f95a9873be37c6f4823a1574ed6ae 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=28483a04118e28d8992288e808220251 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=eb9859b224f2d88aa7f3ea5323bb6f78 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=e44a6aa715d3ce210dae252ae5703892 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="EU tells Apple to ‘open gates’ to competitors" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=e44a6aa715d3ce210dae252ae5703892" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=ba41566ef3f704cf154db658d640dffd 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=1c884f449df9c73e8767e92685e5b6d4 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=174349a10a8a28017730cce3f97d5bb7 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=6479d9f8d5c63547c86b333f928cc634 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=0fdeff9c35134074f8ddd38001b8a2a9 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=0a64b8886836c503e72ad58f0db95986 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=34b752842c3be144a5d08611c71e9f7b 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=315e35c064dcf714c2f17cdd03d8424a 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=d79501575352c736c996c24736683899 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=f5f96c814c4991bfcdea933828612a9e 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=649b56d91e480556c3c5ac87388ff19f 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=269f95a9873be37c6f4823a1574ed6ae 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=28483a04118e28d8992288e808220251 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=eb9859b224f2d88aa7f3ea5323bb6f78 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FUntitled-design-16.jpg&amp;signature=e44a6aa715d3ce210dae252ae5703892 2361w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">ecosystems</span>
+<h3 class="c-card__heading">
+<a href="/news/eu-tells-apple-open-gates-to-competitors" tabindex="-1">EU tells Apple to ‘open gates’ to competitors</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/swedish-startup-cemvision-green-cement-vattenfall">
+<img alt="Swedish startup Cemvision cements deal with Vattenfall for greener concrete" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=3337eefc037639bee98f270e84b58fbf" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=dfba09fa56c1b8ceb7131965d37fa14c 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=d8cb6d6bd40e6fc2da2a66b9aecfafbb 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=32bb31b99301d57f45c735ea47a00781 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=531cb348a1c1ccf369bdbee6eb0ebd0e 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=bb1112bef223a1cf3b5418a6134e9b00 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=6cd0a5509919ae4c062b603c6d510a0a 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=892c54268bef8fee0641d2583b742caa 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=f61054f31d190c0694ede11159bb01e4 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=25716453a18ba7d529c1870c92f1fada 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=88573f5f5905350b0980a4157bf97fb9 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=d123d07df63aab65c8c8257d5934107a 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=648b7a0fed0c6eab923dc89e64b9fb64 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=a9e94a0e713f655509767f53a57931da 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=6f485512f3456a634bed25125b8bc152 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=3337eefc037639bee98f270e84b58fbf 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="Swedish startup Cemvision cements deal with Vattenfall for greener concrete" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=3337eefc037639bee98f270e84b58fbf" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=dfba09fa56c1b8ceb7131965d37fa14c 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=d8cb6d6bd40e6fc2da2a66b9aecfafbb 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=32bb31b99301d57f45c735ea47a00781 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=531cb348a1c1ccf369bdbee6eb0ebd0e 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=bb1112bef223a1cf3b5418a6134e9b00 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=6cd0a5509919ae4c062b603c6d510a0a 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=892c54268bef8fee0641d2583b742caa 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=f61054f31d190c0694ede11159bb01e4 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=25716453a18ba7d529c1870c92f1fada 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=88573f5f5905350b0980a4157bf97fb9 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=d123d07df63aab65c8c8257d5934107a 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=648b7a0fed0c6eab923dc89e64b9fb64 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=a9e94a0e713f655509767f53a57931da 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=6f485512f3456a634bed25125b8bc152 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2Fcemvision-green-cement-startup-funding.jpg&amp;signature=3337eefc037639bee98f270e84b58fbf 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">sustainability</span>
+<h3 class="c-card__heading">
+<a href="/news/swedish-startup-cemvision-green-cement-vattenfall" tabindex="-1">Swedish startup Cemvision cements deal with Vattenfall for greener concrete</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/conference" tabindex="-1">
+<img alt="Discover TNW All Access" class="c-card__imageImage js-parallaxLayer o-parallax__layer" src="https://img-cdn.tnwcdn.com/image?fit=684%2C248&amp;url=https%3A%2F%2Fs3.eu-west-1.amazonaws.com%2Ftnw.events%2Fhardfork-2018%2Fuploads%2Fvisuals%2FConference-Nebula.png&amp;signature=1bb74f9f4b26d485f2fe5f2b8add03f8"></img></a>
+<header class="c-card__header advertPane">
+<h3 class="ad-title">Discover TNW All Access</h3>
+<span class="ad-description">Watch videos of our inspiring Talks for free</span>
+<a class="c-button adpanel c-button--rounded" data-event-action="Related articles Static Advert" data-event-category="Article" data-event-label="Article" data-event-non-interaction="false" href="https://thenextweb.com/auth/tnw/login-required" rel="noopener noreferrer" target="_blank">Sign up now</a>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/apple-france-strike-iphone-15-launch">
+<img alt="Apple store workers in France to strike during iPhone 15 launch" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=2d40387055eddbe8a9114e2188979c42" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=6058fe7e89a5eb07c405c09beb8a9734 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=1f0a7f22c2914d12aad06132af73c064 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=fcb5d597e6efb78c270a566a536c5223 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=fd0ea3b73c111959351654b237ddc5d8 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=fb27cb5a7767e089ed23b359b83358d6 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=71139f23502ebd35102fb6e8e359ab5c 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=fa67bb36dfdd2819faf6108a458e6edf 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=8d2b05336fed321dfd59f11663e0879f 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=5f69050b1f2678130d457f862772e926 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=5ae2ea4aabe53af903a1521989f94432 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=09f6f054d17d72c73a603e04d7f670bd 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=6b65c868b7f7b63a98e7f1f7b4d50dc6 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=4c1e4f8e7cb5d544481a3bbec1d5bec8 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=16b975a027f591da4a6a683cb6366492 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=2d40387055eddbe8a9114e2188979c42 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="Apple store workers in France to strike during iPhone 15 launch" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=2d40387055eddbe8a9114e2188979c42" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=6058fe7e89a5eb07c405c09beb8a9734 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=1f0a7f22c2914d12aad06132af73c064 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=fcb5d597e6efb78c270a566a536c5223 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=fd0ea3b73c111959351654b237ddc5d8 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=fb27cb5a7767e089ed23b359b83358d6 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=71139f23502ebd35102fb6e8e359ab5c 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=fa67bb36dfdd2819faf6108a458e6edf 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=8d2b05336fed321dfd59f11663e0879f 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=5f69050b1f2678130d457f862772e926 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=5ae2ea4aabe53af903a1521989f94432 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=09f6f054d17d72c73a603e04d7f670bd 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=6b65c868b7f7b63a98e7f1f7b4d50dc6 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=4c1e4f8e7cb5d544481a3bbec1d5bec8 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=16b975a027f591da4a6a683cb6366492 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F09%2FApple-iPhone-15-Pro-lineup-hero-230912.jpg&amp;signature=2d40387055eddbe8a9114e2188979c42 1167w  "/>
+</noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">ecosystems</span>
+<h3 class="c-card__heading">
+<a href="/news/apple-france-strike-iphone-15-launch" tabindex="-1">Apple store workers in France to strike during iPhone 15 launch</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/eu-investigates-apple-google-meta-first-ever-probe-dma">
+<img alt="EU investigates Apple, Google, Meta in first-ever probe under DMA competition law" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=d85aee765d6b6d0544a23a139a130ffe" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=9c294b9e8e15652316210f20a26ffe78 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=62cbd535df7ffcd386a372e51740fb72 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=71a92ec751ed870313cf08e080c81395 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=012de5f48dd4e11ececa68a90056993b 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=1398bea2c1cf0444c105cc4f3e78d422 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=187ed8aacca771d35edf9095a5620e06 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=d9b49927633b707f3c34f3456dbcdce1 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=2e6cb5099265b6c4c088bcb1f85f1959 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=6a3e2af8f70d85748ed9b0bc23418a69 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=87f035d87e5f7dfe01034ce9933c66fb 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=f355e5a730333da11e6e404154bbd14b 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=fef5820f41b8a1341a4b221d5c1e43b2 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=1cc42fe5719c7d29d713531e2e474c7a 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=2ce9268c0ea1af1e25df27ccb235cf80 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=d85aee765d6b6d0544a23a139a130ffe 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px"/>
+<noscript>
+<img alt="EU investigates Apple, Google, Meta in first-ever probe under DMA competition law" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=d85aee765d6b6d0544a23a139a130ffe" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=9c294b9e8e15652316210f20a26ffe78 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=62cbd535df7ffcd386a372e51740fb72 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=71a92ec751ed870313cf08e080c81395 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=012de5f48dd4e11ececa68a90056993b 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=1398bea2c1cf0444c105cc4f3e78d422 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=187ed8aacca771d35edf9095a5620e06 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=d9b49927633b707f3c34f3456dbcdce1 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=2e6cb5099265b6c4c088bcb1f85f1959 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=6a3e2af8f70d85748ed9b0bc23418a69 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=87f035d87e5f7dfe01034ce9933c66fb 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=f355e5a730333da11e6e404154bbd14b 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=fef5820f41b8a1341a4b221d5c1e43b2 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=1cc42fe5719c7d29d713531e2e474c7a 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=2ce9268c0ea1af1e25df27ccb235cf80 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F03%2FEU-DMA-investigation.jpg&amp;signature=d85aee765d6b6d0544a23a139a130ffe 2361w  "/>
+</noscript>
+</a>
+<header class="c-card__header">
+<span class="c-card__label">fintech ecommerce</span>
+<h3 class="c-card__heading">
+<a href="/news/eu-investigates-apple-google-meta-first-ever-probe-dma" tabindex="-1">EU investigates Apple, Google, Meta in first-ever probe under DMA competition law</a>
+</h3>
+</header>
+</div>
+</article>
+</section>
+</div>
+</section>
+</div>
+</aside>
+</main>
+
+</div>
+</div>
+<footer class="c-footer">
+<div class="o-wrapper">
+<div class="o-grid o-grid--gap-l">
+<div class="o-grid__col lg:o-grid__col--1/2">
+<div class="c-footer__logoContact">
+<div>
+<a class="c-footer__logo" data-event-action="TNW Logo" data-event-category="Footer" data-event-label="Navigation" data-event-non-interaction="false" href="https://thenextweb.com/" tabindex="-1" title="TNW">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z" fill="#fff"></path>
+</svg>
+</a>
+<p class="c-footer__tagline">The heart of tech</p>
+</div>
+<div>
+<ul class="c-footer__contact">
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Faaaaebook" href="https://facebook.com/thenextweb" name="Facebook Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Instagram" href="https://www.instagram.com/thenextweb/" name="Instagram Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Twitter" href="https://twitter.com/thenextweb" name="Twitter Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Youtube" href="https://youtube.com/user/thenextweb" name="Youtube Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Flipboard" href="https://flipboard.com/@thenextweb" name="Flipboard Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Mail" href="/newsletters" name="Email Footer Link"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Linkedin" href="https://www.linkedin.com/company/the-next-web" name="LinkedIn Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg></a></li>
+</ul>
+</div>
+</div>
+</div>
+<br/>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 more">
+<h2 class="c-footer__heading">More TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Media" data-event-non-interaction="false" href="/latest">Media</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Events" data-event-non-interaction="false" href="/events">Events</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Programs" data-event-non-interaction="false" href="/programs">Programs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Spaces" data-event-non-interaction="false" href="/spaces">Spaces</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Newsletters" data-event-non-interaction="false" href="/newsletters">Newsletters</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://talent.thenextweb.com/job-board?source=footer&amp;utm_source=footer&amp;utm_medium=partner_referral" rel="noopener" target="_blank">Jobs in tech</a></li>
+</ul>
+</div>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 about">
+<h2 class="c-footer__heading">About TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Partner with us" data-event-non-interaction="false" href="/partnerships" name="Partner with us">Partner with us</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://thenextweb.homerun.co/" name="Jobs" rel="noopener noreferrer" target="_blank">Jobs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Terms &amp; Conditions" data-event-non-interaction="false" href="/terms-and-conditions" name="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Cookie Statement" data-event-non-interaction="false" href="/cookie-statement" name="Cookie Statement">Cookie Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Privacy Statement" data-event-non-interaction="false" href="/privacy-statement " name="Privacy Statement">Privacy Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Editorial Policy" data-event-non-interaction="false" href="https://s3.eu-west-1.amazonaws.com/tnw.uploads/uploads/FT-EDITORIAL-CODE-OF-PRACTICE-15-Jan-2024.pdf" name="Editorial Policy" rel="noopener noreferrer" target="_blank">Editorial Policy</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Masthead" data-event-non-interaction="false" href="/masthead" name="Editorial Policy" rel="noopener">Masthead</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="c-footer__legal max-md:px-l">
+<a class="feedback" data-event-action="Financial Times" data-event-category="Footer" data-event-label="Financial Times" data-event-non-interaction="false" href="https://www.ft.com/" rel="noopener nofollow" target="_blank">
+<svg viewbox="0 0 367 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.97826,19.58347H5.20213L2.77475,26H0L8.32426,4.7043H10.89L19.21428,26H16.43953ZM6.10446,17.19h6.97148L9.57254,8.1032Z" fill="#fff"></path><path d="M29.98145,26V4.7043h13.597V7.89421H33.58934v6.31344H42.919v3.156H33.58934V26Z" fill="#fff"></path><path d="M48.686,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,48.686,8.06789ZM50.42,26H46.95193V10.59977H50.42Z" fill="#fff"></path><path d="M54.72547,10.59977h3.46809V12.057a5.4558,5.4558,0,0,1,4.16284-1.80323c3.46808,0,5.445,2.289,5.445,5.72178V26H64.33332V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26275,3.26275,0,0,0-3.22521,2.46268V26H54.72547Z" fill="#fff"></path><path d="M80.43536,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38126-.97152-1.734-1.56036-3.12071-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12071-1.56036Z" fill="#fff"></path><path d="M87.86718,10.59977h3.46809V12.057a5.45578,5.45578,0,0,1,4.16283-1.80323c3.46809,0,5.445,2.289,5.445,5.72178V26H97.475V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26274,3.26274,0,0,0-3.22521,2.46268V26H87.86718Z" fill="#fff"></path><path d="M111.63545,10.25381a6.50162,6.50162,0,0,1,4.19672,1.28217v3.40031a5.4709,5.4709,0,0,0-3.95385-1.59566c-2.46268,0-4.4396,1.97692-4.4396,4.95925,0,2.98375,1.97692,4.96067,4.4396,4.96067a5.47663,5.47663,0,0,0,3.95385-1.59566v3.3989a6.50259,6.50259,0,0,1-4.19672,1.28358c-4.232,0-7.66623-3.12212-7.66623-8.04749S107.40342,10.25381,111.63545,10.25381Z" fill="#fff"></path><path d="M120.93828,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,120.93828,8.06789ZM122.67233,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M135.50962,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38127-.97152-1.73405-1.56036-3.12072-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12072-1.56036Z" fill="#fff"></path><path d="M146.40811,26H142.94V3.4546h3.46808Z" fill="#fff"></path><path d="M157.27413,4.7043h17.75842V7.89421h-7.076V26H164.3501V7.89421h-7.076Z" fill="#fff"></path><path d="M179.9678,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,179.9678,8.06789ZM181.70184,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M201.96248,10.25381c3.12072,0,4.99456,2.2198,4.99456,5.72178V26h-3.4695V16.53054c0-1.90632-.83172-3.156-2.53188-3.156a2.70093,2.70093,0,0,0-2.73945,2.289V26h-3.46809V16.53054c0-1.90632-.83313-3.156-2.53187-3.156a2.70231,2.70231,0,0,0-2.74086,2.289V26H186.0073V10.59977h3.46809v1.28359a4.67951,4.67951,0,0,1,3.85076-1.62955,5.07645,5.07645,0,0,1,4.05693,2.04611A5.6743,5.6743,0,0,1,201.96248,10.25381Z" fill="#fff"></path><path d="M217.61689,26.34737c-4.47349,0-7.63092-3.08682-7.63092-7.9091,0-4.78557,2.98374-8.18446,7.076-8.18446,4.232,0,6.48572,3.01763,6.48572,7.56032v1.24969H213.38627a4.36215,4.36215,0,0,0,4.71638,4.29981,7.11212,7.11212,0,0,0,4.4043-1.422v3.05293A8.13643,8.13643,0,0,1,217.61689,26.34737Zm-4.05834-9.91991h6.69471a3.10814,3.10814,0,0,0-3.156-3.26052A3.588,3.588,0,0,0,213.55855,16.42746Z" fill="#fff"></path><path d="M226.26311,21.213a7.9172,7.9172,0,0,0,5.20213,2.25511c1.49116,0,2.67026-.52106,2.67026-1.631,0-1.03929-.76253-1.38667-2.04612-1.80323l-1.66485-.51965c-2.63637-.83313-4.16142-2.01223-4.16142-4.64859,0-2.77476,2.49657-4.61188,5.79238-4.61188a8.38994,8.38994,0,0,1,4.61188,1.35278v3.502a6.95868,6.95868,0,0,0-4.61188-1.97692c-1.38808,0-2.46268.59025-2.46268,1.59566,0,1.00682.58884,1.35278,1.97692,1.76935l2.01082.62414c2.56717.83313,3.92,2.1845,3.92,4.5441,0,2.94844-2.63637,4.68248-6.07056,4.68248a8.48739,8.48739,0,0,1-5.16683-1.59566Z" fill="#fff"></path><path d="M249.82521,12.47361a7.08924,7.08924,0,0,1,5.27132-2.18591,6.30818,6.30818,0,0,1,4.12754,1.28358v2.63637a5.38989,5.38989,0,0,0-3.95385-1.59566,4.72822,4.72822,0,0,0-3.50339,1.52647,5.73715,5.73715,0,0,0-1.45728,4.16142,5.743,5.743,0,0,0,1.45728,4.16284,4.732,4.732,0,0,0,3.50339,1.52505,5.38853,5.38853,0,0,0,3.95385-1.59424v2.635a6.30813,6.30813,0,0,1-4.12754,1.28359,7.1933,7.1933,0,0,1-5.27132-2.15061,8.01492,8.01492,0,0,1-2.15061-5.86158A7.87619,7.87619,0,0,1,249.82521,12.47361Z" fill="#fff"></path><path d="M273.90272,24.057a6.93067,6.93067,0,0,1-10.232,0,8.56076,8.56076,0,0,1-1.94162-5.75709,8.56075,8.56075,0,0,1,1.94162-5.75708,6.93067,6.93067,0,0,1,10.232,0,8.41292,8.41292,0,0,1,1.97692,5.75708A8.41293,8.41293,0,0,1,273.90272,24.057Zm-5.099-11.48028c-2.77475,0-4.4396,2.39349-4.4396,5.72319s1.66485,5.7232,4.4396,5.7232,4.43961-2.39349,4.43961-5.7232S271.57842,12.57669,268.80367,12.57669Z" fill="#fff"></path><path d="M295.03462,10.2877c3.08682,0,4.85617,2.18591,4.85617,5.51561V26h-2.63637V16.21847c0-2.11531-.93621-3.57259-2.91314-3.57259a3.56186,3.56186,0,0,0-3.4003,2.74087V26h-2.60107V16.21847c0-2.11531-.93622-3.57259-2.91314-3.57259a3.5603,3.5603,0,0,0-3.39889,2.74087V26h-2.60107V10.59977h2.60107v1.80465a4.77136,4.77136,0,0,1,4.16142-2.11672,4.56953,4.56953,0,0,1,4.16283,2.46268A5.61944,5.61944,0,0,1,295.03462,10.2877Z" fill="#fff"></path><path d="M306.91028,31.89688h-2.60107V10.59977h2.60107v1.80465a5.47521,5.47521,0,0,1,4.33511-2.11672,5.97708,5.97708,0,0,1,5.16824,2.42879,9.16121,9.16121,0,0,1,1.76935,5.58339,9.34026,9.34026,0,0,1-1.76935,5.6187,6.039,6.039,0,0,1-5.16824,2.39349,5.4743,5.4743,0,0,1-4.33511-2.11531Zm0-10.47487a4.49749,4.49749,0,0,0,3.95385,2.53187c2.91313,0,4.68248-2.42879,4.68248-5.654s-1.76935-5.654-4.68248-5.654a4.4975,4.4975,0,0,0-3.95385,2.53188Z" fill="#fff"></path><path d="M330.29728,15.768c0-1.90773-1.422-3.08682-3.67708-3.08682a7.75913,7.75913,0,0,0-4.37041,1.35278V11.57128a8.82,8.82,0,0,1,4.787-1.28358c3.60647,0,5.79239,2.04611,5.79239,5.27273V26h-2.53188V24.8548a6.22354,6.22354,0,0,1-3.98915,1.422,6.54463,6.54463,0,0,1-4.05834-1.31748,4.33611,4.33611,0,0,1-1.66485-3.60647,4.1488,4.1488,0,0,1,1.70015-3.4695,6.8181,6.8181,0,0,1,8.01219-.10308Zm0,4.82087c-.41656-1.14379-1.943-1.90773-3.57258-1.90773a4.84209,4.84209,0,0,0-2.53188.65944,2.11057,2.11057,0,0,0-1.1452,2.01223,2.24887,2.24887,0,0,0,1.1452,2.08,4.82881,4.82881,0,0,0,2.53188.65945c1.62955,0,3.156-.76253,3.57258-1.90773Z" fill="#fff"></path><path d="M337.27723,10.59977h2.60107v1.943a5.69746,5.69746,0,0,1,4.5441-2.2551c3.46809,0,5.40971,2.289,5.40971,5.61869V26h-2.635V16.323c0-2.11531-1.076-3.64177-3.40031-3.64177a4.178,4.178,0,0,0-3.91854,2.87924V26h-2.60107Z" fill="#fff"></path><path d="M356.05094,31.89688l2.32289-5.79239-6-15.50472h2.81l4.54269,12.13972,4.47491-12.13972h2.70556l-8.29037,21.29711Z" fill="#fff"></path>
+</svg>
+</a>
+<p>
+                    Copyright © 2006—2024, The Next Web B.V.
+                    Made with &lt;3 in Amsterdam.
+                    <br/>
+</p>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<div class="cookie-consent-banner" data-args='{"cookieName":"__tnw_cookieConsent","cookieExpirationDays":"365","consentChoices":["ad_storage","analytics_storage"],"redirectOnSave":true,"honorDoNotTrack":false,"stylesheet":"https:\/\/thenextweb.com\/cpresources\/1abce43c\/style.css?v=1725957748","titleText":"Cookies","descriptionText":"&lt;p&gt;We use &lt;a href=\"\/cookie-statement\"&gt;cookies&lt;\/a&gt; and other data for a number of reasons, such as keeping TNW sites reliable and secure, personalizing content and ads, providing social media features and to analyze how our sites are used.&lt;\/p&gt;","linkColor":"6644ff","linkHoverColor":"7755ff","primaryBtnText":"Accept &amp; continue","primaryBtnBgColor":"","primaryBtnBgHoverColor":"","primaryBtnColor":"","primaryBtnHoverColor":"","secondaryBtnText":"Manage cookies","secondaryBtnURL":"\/cookie-statement","secondaryBtnRedirectURL":"https:\/\/thenextweb.com\/news\/report-apple-servers-intercept-emails-to-find-child-abuse-imagery","secondaryBtnColor":"6644ff","secondaryBtnHoverColor":"7755ff","debugMode":false}' id="cookie-consent-banner"></div>
+</body>
+</html>

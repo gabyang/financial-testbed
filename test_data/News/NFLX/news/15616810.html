@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+<!--
+Development:
+JULIO FOULQUIE, @j3j5@hachyderm.io, ✈Montevideo, UY
+MARC TORAL, ✈Amsterdam, NL
+JULIAN SZNAIDER, ✈Buenos Aires, AR
+——————————
+Concept and Design by:
+ALEXANDER GRIFFIOEN, @oscaralexander, ✈Amsterdam, NL
+SÄINA SEEDORF, ✈Amsterdam, NL
+——————————
+Alumni:
+JACK DUNN, ✈Amsterdam, NL
+JULIAN AIJAL, @Jaijal, ✈Amsterdam, NL
+SAM BLOK, ✈Amsterdam, NL
+LAURA GENNO, ✈Amsterdam, NL
+IRENE DE NICOLO, ✈Amsterdam, NL
+DANIEL TARA, ✈Amsterdam, NL
+EVGENY ASTAPOV, ✈Rotterdam, NL
+RONAN O'LEARY, @ro_oleary, ✈Amsterdam, NL
+PABLO ROMÁN, ✈Amsterdam, NL
+JAMES SCOTT, ✈Amsterdam, NL
+JELLE VAN WIJHE, ✈Amsterdam, NL
+MATTHEW ELWORTHY, ✈Amsterdam, NL
+OSCAR VAN ZIJVERDEN, ✈Amsterdam, NL
+STEPHAN LAGERWAARD, ✈Amsterdam, NL
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="unsafe-url" name="referrer"/>
+<meta content="The Next Web" name="apple-mobile-web-app-title"/>
+
+<link as="style" href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="script" href="//next.tnwcdn.com/assets/next/js/base.js?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="style" href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="font" crossorigin="anonymous" href="https://next.tnwcdn.com/assets/next/fonts/graphik-wide-black.woff2" rel="preload" type="font/woff2"/>
+<link as="image" href="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=398c4177aec077a6e555f731679bb733" imagesrcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=9931cad5a953a4f8e0f442b18c270d27 576w,
+                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=c221822296c14e8fab8f513bc39313f3 1152w,
+                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=398c4177aec077a6e555f731679bb733 1280w" media="(min-width: 361px) and (min-height: 651px)" rel="preload"/>
+<title>Cookies Tell You A Lot About Your Audience, But Most of it is Wrong</title>
+<!-- OpenGraph -->
+<meta content="Jonathan Lakin" name="author"/>
+<meta content="https://thenextweb.com/news/cookies-tell-lot-audience-wrong" name="original-source">
+<meta content="TNW | Dd" property="og:site_name">
+<meta content="Cookies Tell You A Lot About Your Audience, But Most of it is Wrong" property="og:title">
+<meta content="Online targeted advertising are mostly cookie-based. Although a large profile can be built about an individual, this data is not necessarily represent you." name="description" property="description">
+<meta content="Online targeted advertising are mostly cookie-based. Although a large profile can be built about an individual, this data is not necessarily represent you." property="og:description">
+<meta content="https://thenextweb.com/news/cookies-tell-lot-audience-wrong" property="og:url">
+<meta content="640" property="og:image:height">
+<meta content="1280" property="og:image:width"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=c3ead2902de6421d4e677590567efab9" property="og:image"/>
+<meta content="article" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="2014-01-02T22:00:09+00:00" property="og:updated_time">
+<meta content="2014-01-02T22:00:09+00:00" property="article:published_time"/>
+<meta content="2014-01-02T22:00:09+00:00" property="article:modified_time"/>
+<meta content="Design &amp;amp; Dev" property="article:section"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@thenextweb" name="twitter:site"/>
+<meta content="@thenextweb" name="twitter:creator"/>
+<meta content="Cookies Tell You A Lot About Your Audience, But Most of it is Wrong" name="twitter:title"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=c3ead2902de6421d4e677590567efab9" name="twitter:image"/>
+<meta content="Online targeted advertising are mostly cookie-based. Although a large profile can be built about an individual, this data is not necessarily represent you." name="twitter:description"/>
+<!-- General Meta -->
+<meta content="max-image-preview:large" name="robots"/>
+<meta content="Cookies Tell You A Lot About Your Audience, But Most of it is Wrong" property="title">
+<meta content="Online targeted advertising are mostly cookie-based. Although a large profile can be built about an individual, this data is not necessarily represent you." property="description"/>
+<meta content="https://thenextweb.com/news/cookies-tell-lot-audience-wrong" property="url"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon"/>
+
+<link href="/manifest.json" rel="manifest"/>
+
+
+
+
+<link href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<noscript>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+</noscript>
+<meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<link href="//cdn0.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//next.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//img-cdn.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//cdnjs.cloudflare.com/" rel="dns-prefetch"/>
+<link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+<link href="//cdn0.tnwcdn.com/" rel="preconnect"/>
+<link href="//next.tnwcdn.com/" rel="preconnect"/>
+<link href="//img-cdn.tnwcdn.com/" rel="preconnect"/>
+<link href="//www.googletagmanager.com" rel="preconnect"/>
+<link href="//cdnjs.cloudflare.com/" rel="preconnect"/>
+<link as="style" async="" crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet preload"/>
+<link href="https://thenextweb.com/news/cookies-tell-lot-audience-wrong" rel="canonical">
+
+<!-- JSON-LD Breadcrumbs -->
+
+<!-- JSON-LD schema -->
+
+
+
+</link></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></head>
+<body class="site-tnwNext preload" id="next-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+<div id="fb-root"></div>
+<div class="dd" id="_progress"></div>
+<nav class="c-nav has-level2" id="nav" role="navigation" style="top: 0;">
+<div class="c-nav__level1">
+<button aria-controls="overlay__hook" aria-expanded="false" aria-haspopup="true" class="c-nav__menuToggle c-nav__menuToggle--level-1 js-menuToggleLevel" data-nav-level="1" id="nav-menuLevel1" type="button">
+<span class="visually-hidden">Toggle Navigation</span>
+</button>
+<div class="navLabel_dt">
+<a class="c-nav__logo" data-event-action="Navigation bar" data-event-category="Article" data-event-label="TNW Logo" data-event-non-interaction="false" href="/" name="TNW Logo">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path>
+</svg>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--1" id="overlay__hook">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="News" data-event-category="Navigation bar" data-event-label="/" data-event-non-interaction="false" href="/">News</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">Events</button>
+<ul class="c-nav__submenu" role="menu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false" href="/conference">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false">TNW Conference</span>
+<span class="c-nav__submenuLinkNote">June 19 &amp; 20, 2025</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false" href="https://thenextweb.com/conference/the-soonicorn-summit">
+<span class="c-nav__submenuLinkTitle" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false">The Soonicorn Summit</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false" href="https://thenextweb.com/conference/tnw-webinar-series">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false">TNW Webinars</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false" href="/events">
+<span class="c-nav__submenuLinkTitle" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false">All events</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+</ul>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Spaces" data-event-category="Navigation bar" data-event-label="/spaces" data-event-non-interaction="false" href="/spaces">Spaces</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Programs" data-event-category="Navigation bar" data-event-label="/programs" data-event-non-interaction="false" href="/programs">Programs</a>
+</li>
+</ul>
+<hr class="mobile_menu_divider"/>
+<ul class="c-nav__menu c-nav__icons">
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" data-event-action="Newsletter" data-event-category="Navigation bar" data-event-label="Newsletters top right - click" data-event-non-interaction="false" href="/newsletters">
+<span class="c-nav__iconsItem--label" data-event-action="Newsletters" data-event-category="Navigation bar" data-event-label="/newsletters" data-event-non-interaction="false">Newsletters</span>
+</a>
+</li>
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" href="/partnerships">
+<span class="c-nav__iconsItem--label" data-event-action="Partner with us" data-event-category="Navigation bar" data-event-label="/partnerships" data-event-non-interaction="false">Partner with us</span>
+</a>
+</li>
+</ul>
+<footer class="c-nav__footer">
+<ul class="c-nav__social">
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://facebook.com/thenextweb" name="Facebook Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://www.instagram.com/thenextweb" name="Instagram Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://twitter.com/thenextweb" name="Twitter Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://youtube.com/user/thenextweb" name="Youtube Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://flipboard.com/@thenextweb" name="Flipboard Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="/newsletters" name="Email Social Link">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</li>
+</ul>
+<ul class="c-nav__company">
+<li class="c-nav__companyItem">
+<a class="c-nav__companyLink" href="https://thenextweb.homerun.co/" rel="noopener noreferrer" target="_blank">Jobs</a>
+</li>
+<li class="c-nav__companyItem"><a class="c-nav__companyLink" href="mailto:conference@thenextweb.com">Contact</a></li>
+</ul>
+</footer>
+</div>
+</div>
+<div class="c-nav__level2 tnw news">
+<div class="c-nav__pwd">
+<a class="c-nav__pwdLogo" href="/"><svg class="tnwLogo__tnwNews"><title>The Next Web</title><use xlink:href="/assets/next/img/icons.svg#tnw"></use></svg></a>
+<a class="c-nav__pwdLogoUkraine" href="/ukraine">
+<img alt="We stand with Ukraine" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/companies/ukraine.png"/>
+</a>
+<span class="c-nav__pwdSection">News</span>
+<a class="c-nav__pwdSite" href="/" title="">
+<span class="sm:hidden" id="channelName_abbr">news</span>
+<span class="max-sm:hidden xl:hidden">news</span>
+<span class="max-xl:hidden" id="channelName_mob">news</span>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--2">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Latest" data-event-category="Navigation bar" data-event-label="/latest" data-event-non-interaction="false" href="/latest">Latest</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Deep tech" data-event-category="Navigation bar" data-event-label="/deep-tech" data-event-non-interaction="false" href="/deep-tech">Deep tech</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Sustainability" data-event-category="Navigation bar" data-event-label="/sustainability" data-event-non-interaction="false" href="/sustainability">Sustainability</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Ecosystems" data-event-category="Navigation bar" data-event-label="/ecosystems" data-event-non-interaction="false" href="/ecosystems">Ecosystems</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Data and security" data-event-category="Navigation bar" data-event-label="/data-security" data-event-non-interaction="false" href="/data-security">Data and security</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Fintech and ecommerce" data-event-category="Navigation bar" data-event-label="/fintech-ecommerce" data-event-non-interaction="false" href="/fintech-ecommerce">Fintech and ecommerce</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Future of work" data-event-category="Navigation bar" data-event-label="/future-of-work" data-event-non-interaction="false" href="/future-of-work">Future of work</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Podcast" data-event-category="Navigation bar" data-event-label="https://podcast.thenextweb.com" data-event-non-interaction="false" href="https://podcast.thenextweb.com">Podcast</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">More</button>
+<ul class="c-nav__submenu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="https://thenextweb.com/tnw-conference-2024">
+<span class="c-nav__submenuLinkTitle" data-event-action="Conference media hub" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/tnw-conference-2024" data-event-non-interaction="false">Conference media hub</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/startups-technology">
+<span class="c-nav__submenuLinkTitle" data-event-action="Startups and technology" data-event-category="Navigation bar" data-event-label="/startups-technology" data-event-non-interaction="false">Startups and technology</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/investors-funding">
+<span class="c-nav__submenuLinkTitle" data-event-action="Investors and funding" data-event-category="Navigation bar" data-event-label="/investors-funding" data-event-non-interaction="false">Investors and funding</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/government-policy">
+<span class="c-nav__submenuLinkTitle" data-event-action="Government and policy" data-event-category="Navigation bar" data-event-label="/government-policy" data-event-non-interaction="false">Government and policy</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/corporates-innovation">
+<span class="c-nav__submenuLinkTitle" data-event-action="Corporates and innovation" data-event-category="Navigation bar" data-event-label="/corporates-innovation" data-event-non-interaction="false">Corporates and innovation</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/plugged">
+<span class="c-nav__submenuLinkTitle" data-event-action="Gadgets &amp; apps" data-event-category="Navigation bar" data-event-label="/plugged" data-event-non-interaction="false">Gadgets &amp; apps</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<button aria-hidden="true" class="c-nav__menuScroller" type="button"></button>
+</div>
+</div>
+</nav>
+<a class="c-nav__yellow-bar" href="https://thenextweb.com/conference/tickets" id="cross-site-notification" rel="noopener" target="_blank">
+<div class="c-nav__message c-nav__message--global" data-event-action="Yellow bar" data-event-category="Yellow bar" data-event-label="Yellow bar - click">
+<p><strong>Save over 40% when you secure your tickets today to TNW Conference 💥 Prices will increase on November 22 →</strong></p>
+</div>
+</a>
+<div class="o-page" id="main">
+<div class="o-page__main">
+<main class="c-channel c-channel--latest o-page__main" id="article_container">
+<div class="c-articles">
+<div class="c-articles__backdrop"><div class="c-articles__backdrop--sticky"></div></div>
+<div class="c-nav__message c-nav__message--article news" style="top:0">
+<p>This article was published on <strong>January 2, 2014</strong></p>
+</div>
+<header class="c-header">
+<div class="o-wrapper">
+<div class="c-header__text">
+<ul class="c-header__tags c-tags c-tags--centered">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Design &amp; Dev" data-event-non-interaction="false" href="/dd">Design &amp; Dev</a>
+</li>
+</ul>
+<h1 class="c-header__heading">Cookies tell you a lot about your audience, but most of it is wrong</h1>
+<br/>
+<div>
+<time datetime="January 2, 2014 - 10:00 pm">January 2, 2014 - 10:00 pm</time>
+</div>
+</div>
+<div aria-hidden="true" class="c-share lg:hidden">
+<a class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Cookies%20tell%20you%20a%20lot%20about%20your%20audience%2C%20but%20most%20of%20it%20is%20wrong&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;u=https://thenextweb.com/news/cookies-tell-lot-audience-wrong&amp;t=Cookies%20tell%20you%20a%20lot%20about%20your%20audience%2C%20but%20most%20of%20it%20is%20wrong" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Cookies%20tell%20you%20a%20lot%20about%20your%20audience%2C%20but%20most%20of%20it%20is%20wrong" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-share__link c-share__link--mail" href="mailto:?subject=Cookies tell you a lot about your audience, but most of it is wrong&amp;body=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+</header>
+<div class="e-empty__hidden"></div>
+<div class="screen-size desktop-screen">
+<div class="tnw-ad tnw-ad--billboard tnw-ad--has-placeholder" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_HEADER","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[320,240],[300,250],[970,250],[970,90],[728,90],[320,50],[300,100],[300,50],[320,100]],"sizeMapping":[[[1024,0],[[970,250],[970,90],[728,90]]],[[0,0],[[300,250],[320,50],[300,50],[300,100],[320,100],[320,240]]]],"targeting":{"postID":["722942"],"title":["Cookies tell you a lot about your audience, but most of it is wrong"],"category":["dd"],"isSponsored":["No"]},"lazyLoad":"true","refreshEvery":"","debugMode":false}' id="tnw-next-header"></div>
+</div>
+
+<div class="o-wrapper mb-4xl">
+<article class="c-article js-article mt-m" id="articleOutput" style="margin-top: 0px;">
+<div class="c-article__media c-article__growth-mobile">
+<figure class="o-media o-media--16:9">
+<img alt="Cookies tell you a lot about your audience, but most of it is wrong" class="js-lazy c-article__mediaImage w-full absolute top-0" data-src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=398c4177aec077a6e555f731679bb733" data-srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=9931cad5a953a4f8e0f442b18c270d27 576w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=c221822296c14e8fab8f513bc39313f3 1152w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=398c4177aec077a6e555f731679bb733 1280w" sizes="(max-width: 1023px) 100vw
+                                               868px"/>
+<noscript>
+<img alt="Cookies tell you a lot about your audience, but most of it is wrong" class="c-article__mediaImage w-full absolute top-0" sizes="(max-width: 1023px) 100vw
+                                                   868px" src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=398c4177aec077a6e555f731679bb733" srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=9931cad5a953a4f8e0f442b18c270d27 576w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=c221822296c14e8fab8f513bc39313f3 1152w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;signature=398c4177aec077a6e555f731679bb733 1280w"/>
+</noscript>
+</figure>
+</div>
+<div class="screen-size mobile-screen" style="text-align: center"></div>
+
+<div class="c-article__main max-lg:mb-xxl">
+<div class="c-richText c-richText--large" id="article-main-content">
+<p><em><span style="line-height: 1.5em;">Jonathan Lakin is the CEO of <a href="https://www.intenthq.com/" rel="nofollow noopener" target="_blank">Intent HQ</a>, an audience intelligence company that helps turns social data into revenue with customised user experiences. </span></em></p>
+<hr/>
+<p>Most online advertising and audience targeting mediums – ones that are used to target the ads you see on Web pages – are cookie-based. This means that although a large profile can be built about an individual, it is all based on behavioural data.</p>
+<p>This should be fine, right? Your past behaviour on the Web is likely to be similar to future behaviour.</p>
+<p>That sounds like a fair assumption, but it hides a <i>lot</i> of inaccuracy. Think about the reasons you search for something online. They could range from work research to gift buying for your 13-year-old niece over this past Christmas. The data will show <i>what</i>you are doing, but not <i>why.</i></p>
+<h3>Behaviour versus interests</h3>
+<p>Can we expect an algorithm to understand the reasons behind your online behaviour, in order to get an accurate picture of who you are? Yes, but not based solely on behavioural data.</p><div class="inarticle-wrapper latest channel-cta hs-embed-tnw"><div class="channel-cta-wrapper" id="hs-embed-tnw"><div class="channel-cta-img"><img class="js-lazy" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/visuals/tnw-newsletter.png"/></div><noscript><img src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/visuals/tnw-newsletter.png"/></noscript><div class="channel-cta-input"><p class="channel-cta-title">The 💜 of EU tech</p><p class="channel-cta-tagline">The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox. Sign up now!</p><div id="hs-inarticle-embed"><div id="latest-inarticle-embed"></div></div></div></div></div>
+<p>The best way to get an accurate picture is to focus on your interests; you may be searching for a Justin Bieber album, but if we know Justin’s music is not one of your interests we can start to understand why you’re looking for him, and why you probably won’t do it again in the near future.</p>
+<p>We can also start to create a Web experience that is based on <i>your</i> interests, and not your 13-year-old niece’s.</p>
+<h3>Cookies and the filter bubble</h3>
+<p>One of the negative impacts of the cookie driven, behaviour-based personalised Web, as it has existed so far, is the filter bubble effect.</p>
+<p>If your personalised Web experience is based purely on your past behaviour, you are going to get more of what you’ve seen before. As a user, you are doomed to repeat yourself.</p>
+<p>The only way out of the bubble is to create some kind of serendipity, and that cannot be achieved with the data that cookies give us.</p>
+<h3>Serendipity and interests</h3>
+<p>Have you ever found yourself looking at your Netflix recommendations or Last.fm play queue, wanting to tell the service that you are more than the product of an algorithm?</p>
+<p>You may have watched three or four sombre documentaries, but that isn’t to say you can’t appreciate a light-hearted comedy every now and again. And just because you were very into ambient electronica last week, doesn’t mean you wouldn’t like to hear some hard rock, depending on the occasion.</p>
+<h3>Creating serendipitous Web experiences</h3>
+<p>Social networks represent by far the largest amount of time spent on the Web. Here we share vast volumes of data on our interests. By tapping into this data, it is possible to create serendipitous Web experiences.</p>
+<p>Simply knowing what your interests are is not enough, as there are still limitations that could lead to a filter bubble effect.</p>
+<p>As human beings, we have a very complex understanding of the affinity between topics. In order for a machine to make these kinds of connections, it needs to have a human-like understanding of these affinities.</p>
+<p>This means going beyond simple relationships like <i>‘1,000 people who liked Ernest Hemingway also liked F Scott Fitzgerald’</i>, towards relationships like: <i>‘Hemingway was a writer of a similar era and style to Fitzgerald’</i>.</p>
+<p>This kind of data can be used to create a complete, real picture of an individual that identifies complex affinities between interests. A picture of an individual who can like Metallica <i>and</i>TLC, or might enjoy “Shawshank Redemption” <i>and</i>“A Bug’s Life.”</p>
+<p>A large part of this is the ability to understand and interpret context, what something means to you at one moment may well be different at another moment in time. Understanding context requires the ability to understand the relationships between things, which is why social networks are built on graph databases, where understanding relationships is more important than transactions.</p>
+<p>Google is using all of its data assets, from email to search to maps, to develop a better understanding of context, and you can see this in  its latest algorithm update, <a href="https://thenextweb.com/news/google-unveils-search-updates-for-mobile-new-page-rank-algorithm-and-knowledge-graph-comparisons" rel="noopener" target="_blank">Hummingbird</a>.</p>
+<p>Using Google’s voice search on your mobile device, hit the microphone icon and say ‘Chelsea Football Club’, the phone will tell you (verbally as well as in text) the team’s latest score and next fixture. Hit the icon again and ask ‘where do they play?’ and it will say ‘Stamford Bridge’. Google is using its huge wealth of data here to predict what you might actually want to know, and make the kind of connections a human might when you ask a second question.</p>
+<p>Another approach for developers is to use Wikipedia. As the largest database of fully referenced human curated (relatively) reliable information ever created, it is a fantastic basis for an algorithm with a human like understanding.</p>
+<p>Looking at the way Wikipedia’s own pages link to and reference each other creates a very near complete replication of human-like understanding of topic affinity.</p>
+<p>This kind of data, when married to the personal interest data shared on social networks, can be used to go far beyond the kind of Web experiences that cookie-based data has ever allowed us to create.</p>
+</div>
+<aside class="c-contributor latest">
+<a data-event-action="Author" data-event-category="Article" data-event-label="Jonathan Lakin" data-event-non-interaction="false" href="/author/jonathanlakin" rel="noopener" target="_blank">
+<img alt="Jonathan Lakin" class="c-contributor__photo js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Ff1581a0025d32dbb2c2db70f8b7fbcb1%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=e27b62fb1ae9e3d15ad63129b838690e"/>
+<noscript>
+<img alt="Jonathan Lakin" class="c-contributor__photo" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Ff1581a0025d32dbb2c2db70f8b7fbcb1%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=e27b62fb1ae9e3d15ad63129b838690e"/>
+</noscript>
+</a>
+<div aria-label="Author Bio" class="c-contributor__main">
+<h2 class="c-contributor__wrapper">
+<span class="c-contributor__heading">Story by</span>
+<span class="c-contributor__name">
+<a class="latest" href="/author/jonathanlakin">Jonathan Lakin</a>
+</span>
+</h2>
+<p class="c-contributor__text">
+<input class="c-contributor__expandInput" id="contributorExpandInput123" name="expand" type="checkbox"/>
+<span class="c-contributor__bio c-contributor__bio--truncated">Jonathan Lakin is the CEO of Intent HQ.</span>
+<span class="c-contributor__bio c-contributor__bio--full">Jonathan Lakin is the CEO of Intent HQ.</span>
+</p>
+</div>
+</aside>
+<div class="c-channel__cta" id="nl-container">
+<h2 class="c-channel__ctaHeading text-dark">Get the TNW newsletter</h2>
+<p class="c-channel__ctaDescription text-white">Get the most important tech news in your inbox each week.</p>
+<div id="in-article-newsletter" style="color: #fff"></div>
+</div>
+<footer class="c-article__pubDate md:flex md:justify-between">
+<div>
+                                Published <time datetime="2019-02-11 12:07:00">January 2, 2014 - 10:00 pm UTC</time>
+</div>
+<a class="scrolly latest" data-event-action="Back to top" data-event-category="Article" data-event-label="Back to top - click" data-event-non-interaction="true" data-target="#next-top" href="#">Back to top</a>
+</footer>
+<div aria-label="Social share options" class="c-share lg:hidden">
+<a aria-label="Share on Facebook" class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Cookies%20tell%20you%20a%20lot%20about%20your%20audience%2C%20but%20most%20of%20it%20is%20wrong&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;u=https://thenextweb.com/news/cookies-tell-lot-audience-wrong&amp;t=Cookies%20tell%20you%20a%20lot%20about%20your%20audience%2C%20but%20most%20of%20it%20is%20wrong" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a aria-label="Share on Twitter" class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Cookies%20tell%20you%20a%20lot%20about%20your%20audience%2C%20but%20most%20of%20it%20is%20wrong" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a aria-label="Share on Flipboard" class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a aria-label="Share on Linkedin" class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a aria-label="Share on Telegram" class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a aria-label="Share via Email" class="c-share__link c-share__link--mail" href="mailto:?subject=Cookies tell you a lot about your audience, but most of it is wrong&amp;body=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+<aside aria-hidden="true" class="c-article__side">
+<aside class="c-article__author">
+<a class="dd" data-event-action="Author" data-event-category="Article" data-event-label="Jonathan Lakin" data-event-non-interaction="false" href="/author/jonathanlakin">
+<img alt="Jonathan Lakin" class="c-article__authorImage blend-blue-dark js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Ff1581a0025d32dbb2c2db70f8b7fbcb1%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=e27b62fb1ae9e3d15ad63129b838690e" height="96" id="duotone" width="96"/>
+<noscript>
+<img alt="Jonathan Lakin" class="c-article__authorImage blend-blue-dark" height="96" id="duotone" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2Ff1581a0025d32dbb2c2db70f8b7fbcb1%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=e27b62fb1ae9e3d15ad63129b838690e" width="96"/>
+</noscript>
+<span class="c-article__authorHeading">Story by</span>
+<span class="c-article__authorName latest">Jonathan Lakin</span>
+</a>
+</aside>
+<div class="c-engage">
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Facebook" data-event-non-interaction="false" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Cookies%20tell%20you%20a%20lot%20about%20your%20audience%2C%20but%20most%20of%20it%20is%20wrong&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2013%2F01%2FCookies1.jpg&amp;u=https://thenextweb.com/news/cookies-tell-lot-audience-wrong&amp;t=Cookies%20tell%20you%20a%20lot%20about%20your%20audience%2C%20but%20most%20of%20it%20is%20wrong" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Twitter" data-event-non-interaction="false" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Cookies%20tell%20you%20a%20lot%20about%20your%20audience%2C%20but%20most%20of%20it%20is%20wrong" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Linkedin" data-event-non-interaction="false" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Flipboard" data-event-non-interaction="false" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Telegram" data-event-non-interaction="false" href="https://t.me/share/url?url=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Email" data-event-non-interaction="false" href="mailto:?subject=Cookies tell you a lot about your audience, but most of it is wrong&amp;body=https://thenextweb.com/news/cookies-tell-lot-audience-wrong%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</aside>
+<aside class="c-split__side mb-m" id="sidebar">
+<div class="c-split__sticky channel_cta_if_subnav">
+<div class="tnw-ad tnw-ad--article-mpu" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_ATF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,50],[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["722942"],"title":["Cookies tell you a lot about your audience, but most of it is wrong"],"category":["dd"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-atf"></div>
+<div class="jobbioapp sticky top-4xl" id="sidebarJobbio"></div>
+<div class="tnw-ad tnw-ad--article-mpu-btf" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_BTF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["722942"],"title":["Cookies tell you a lot about your audience, but most of it is wrong"],"category":["dd"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-btf"></div>
+</div>
+</aside>
+</article>
+</div>
+</div>
+<aside aria-label="Related Articles" class="c-article__suggested">
+<div class="c-nextRelatedGrid">
+<section class="o-wrapper o-wrapper--wide">
+<header class="c-bodyNews__header">
+<h2 class="c-bodyNews__heading">Related Articles</h2>
+</header>
+<div class="c-showcase__grid">
+<section class="c-showcase__grid c-showcase__scroller js-parallaxRoot">
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/ai-startup-gendo-midjourney-architecture-funding">
+<img alt="AI startup Gendo — the Midjourney for architecture — secures fresh capital" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=be2bdb49dc25e536a36192e23cd9b0a4" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=272b9f6aab5d3f811d7121090f231eca 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=0da7941126937aa661c8c857f898c965 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=2ac2e224c63ddb1370c1ae4e74bd0576 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=d6d7248491adf77415c14e0051ea8865 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=37c8c5b7355f5995bf2ed79a710ceacc 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=95d3842fd335e1355be48dfc002dc610 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=c8108ae77394a76aa6085c1b017009ae 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=eb7a1e9338550db10808075755899f6c 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=91134c987fa6f8b675da875d03f8c4d4 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=6e4aa5558d0ebcfdb02291514faa9dbe 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=6638bdfb6331a0698f8ea499084a519a 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=6c209d618f77463ca382ecbdf6a9af36 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=74a35b15018c8ca23725adb412e2f841 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=9a74309209b8cc1502a5c55cfbd36e83 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=be2bdb49dc25e536a36192e23cd9b0a4 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="AI startup Gendo — the Midjourney for architecture — secures fresh capital" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=be2bdb49dc25e536a36192e23cd9b0a4" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=272b9f6aab5d3f811d7121090f231eca 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=0da7941126937aa661c8c857f898c965 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=2ac2e224c63ddb1370c1ae4e74bd0576 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=d6d7248491adf77415c14e0051ea8865 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=37c8c5b7355f5995bf2ed79a710ceacc 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=95d3842fd335e1355be48dfc002dc610 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=c8108ae77394a76aa6085c1b017009ae 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=eb7a1e9338550db10808075755899f6c 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=91134c987fa6f8b675da875d03f8c4d4 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=6e4aa5558d0ebcfdb02291514faa9dbe 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=6638bdfb6331a0698f8ea499084a519a 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=6c209d618f77463ca382ecbdf6a9af36 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=74a35b15018c8ca23725adb412e2f841 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=9a74309209b8cc1502a5c55cfbd36e83 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=be2bdb49dc25e536a36192e23cd9b0a4 2361w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">deep tech</span>
+<h3 class="c-card__heading">
+<a href="/news/ai-startup-gendo-midjourney-architecture-funding" tabindex="-1">AI startup Gendo — the Midjourney for architecture — secures fresh capital</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/ai-smartphone-selling-point-apple-tech-giants">
+<img alt="AI probably isn’t the big smartphone selling point that Apple and other tech giants think it is" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=9d4b3ef42d142146426ca7771700cc0f" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=39423a77c51209ff38f20f8925693070 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=ff5b5b62e70817f5675d705e0a81231c 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=78be53bfb959241e91dd24def5d80593 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=12b36bd7508d438b41990dd30bd0a096 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=6e73ea785f2dddc78eeb006f3283f23b 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=593ec03f74f635a746904778be56c314 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=4e65fc538f1d10b51e2cd82f3a4687bb 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=edc2b3834ddb70e3c6d825cdbdfaffcf 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=104822ad09cac4a0628e730ab55f0a9a 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=584a93791778aa8282a7fd37aaad1727 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=076f7f9a7f35a49a681268b78d0a76b4 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=a9c4cd9f28af86478c9a31c3b080a729 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=edcf0d4567bfe180b5ef5cc7c3283d86 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=537ec5f8e88813ce7fc798bc0266bf49 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=9d4b3ef42d142146426ca7771700cc0f 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="AI probably isn’t the big smartphone selling point that Apple and other tech giants think it is" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=9d4b3ef42d142146426ca7771700cc0f" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=39423a77c51209ff38f20f8925693070 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=ff5b5b62e70817f5675d705e0a81231c 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=78be53bfb959241e91dd24def5d80593 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=12b36bd7508d438b41990dd30bd0a096 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=6e73ea785f2dddc78eeb006f3283f23b 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=593ec03f74f635a746904778be56c314 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=4e65fc538f1d10b51e2cd82f3a4687bb 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=edc2b3834ddb70e3c6d825cdbdfaffcf 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=104822ad09cac4a0628e730ab55f0a9a 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=584a93791778aa8282a7fd37aaad1727 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=076f7f9a7f35a49a681268b78d0a76b4 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=a9c4cd9f28af86478c9a31c3b080a729 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=edcf0d4567bfe180b5ef5cc7c3283d86 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=537ec5f8e88813ce7fc798bc0266bf49 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-4-1.jpg&amp;signature=9d4b3ef42d142146426ca7771700cc0f 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">future of work</span>
+<h3 class="c-card__heading">
+<a href="/news/ai-smartphone-selling-point-apple-tech-giants" tabindex="-1">AI probably isn’t the big smartphone selling point that Apple and other tech giants think it is</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/conference" tabindex="-1">
+<img alt="Discover TNW All Access" class="c-card__imageImage js-parallaxLayer o-parallax__layer" src="https://img-cdn.tnwcdn.com/image?fit=684%2C248&amp;url=https%3A%2F%2Fs3.eu-west-1.amazonaws.com%2Ftnw.events%2Fhardfork-2018%2Fuploads%2Fvisuals%2FConference-Nebula.png&amp;signature=1bb74f9f4b26d485f2fe5f2b8add03f8"></img></a>
+<header class="c-card__header advertPane">
+<h3 class="ad-title">Discover TNW All Access</h3>
+<span class="ad-description">Watch videos of our inspiring Talks for free</span>
+<a class="c-button adpanel c-button--rounded" data-event-action="Related articles Static Advert" data-event-category="Article" data-event-label="Article" data-event-non-interaction="false" href="https://thenextweb.com/auth/tnw/login-required" rel="noopener noreferrer" target="_blank">Sign up now</a>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/how-close-are-we-to-an-accurate-ai-fake-news-detector">
+<img alt="How close are we to an accurate AI fake news detector?" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6c4478a6ceaa055f47a54975a8bdafda" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=dac9a46ecd1aee572d3cc916c3e58573 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6f617b47301ba7e43d98d0c0ec3a43c1 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6ef9ea7ca0750574a4ac6cf90aa56e68 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=5963fb87214390d0cca8aff62c01fc60 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=d8ebb1aec7d8f33b38edba819f10103e 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=fd2e00088ac4fc6a52403fc386b46020 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=f3bd29cafdd922d436ef7ba82dd6e602 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=1196e6120ef733e3f3dc60cb5078ed50 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=8de53c9e4c210250a93ac13f50b20f52 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=95bfed9d1718fe168ff829bd3bcfa179 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=8fedd08ed72d3d1b8bfedf5095776f21 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=0c00ebe439b7fe8e881c03e4e949ee23 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=61256e21293c2b3d71bab9622778da03 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=a3295186a79be37bb364bbdf6bc8b09b 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6c4478a6ceaa055f47a54975a8bdafda 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="How close are we to an accurate AI fake news detector?" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6c4478a6ceaa055f47a54975a8bdafda" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=dac9a46ecd1aee572d3cc916c3e58573 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6f617b47301ba7e43d98d0c0ec3a43c1 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6ef9ea7ca0750574a4ac6cf90aa56e68 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=5963fb87214390d0cca8aff62c01fc60 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=d8ebb1aec7d8f33b38edba819f10103e 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=fd2e00088ac4fc6a52403fc386b46020 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=f3bd29cafdd922d436ef7ba82dd6e602 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=1196e6120ef733e3f3dc60cb5078ed50 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=8de53c9e4c210250a93ac13f50b20f52 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=95bfed9d1718fe168ff829bd3bcfa179 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=8fedd08ed72d3d1b8bfedf5095776f21 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=0c00ebe439b7fe8e881c03e4e949ee23 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=61256e21293c2b3d71bab9622778da03 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=a3295186a79be37bb364bbdf6bc8b09b 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6c4478a6ceaa055f47a54975a8bdafda 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">deep tech</span>
+<h3 class="c-card__heading">
+<a href="/news/how-close-are-we-to-an-accurate-ai-fake-news-detector" tabindex="-1">How close are we to an accurate AI fake news detector?</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/robot-developers-housebots-decades-away">
+<img alt="Robot developers keep making it seem like housebots are imminent when they’re decades away" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=d5c37770600914fbe2d5e6f648936c92" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=cdb66524c75e4ddea471d21da34de190 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=d00b9491ac5ac35fc499fdaba8bc2041 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=7400bae1877723b777d661a42421ed7e 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=af1ac1e7c6dd83d749c1d4b219b7075b 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=3ac77609713b3df536d22e98bce21d6a 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=9fcb2fb2669087757578d6dde0f1d74b 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=6fc0d779663ff2b7582cc4fb7301043a 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=29dbe9f361f2282c1b9efa07bc2d6dd4 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=b7b022269ba74a861ffd75f20e2efa90 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=cfca957d98f85c78d801d0c43be86499 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=061c85c545e3d11212635ea319b01b29 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=641aff22a73da34073fc1a0b36491bc2 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=a430563f3dd411af04393f13e01505fa 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=aaaf9b78874aaa81322adf4116f81c3b 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=d5c37770600914fbe2d5e6f648936c92 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="Robot developers keep making it seem like housebots are imminent when they’re decades away" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=d5c37770600914fbe2d5e6f648936c92" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=cdb66524c75e4ddea471d21da34de190 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=d00b9491ac5ac35fc499fdaba8bc2041 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=7400bae1877723b777d661a42421ed7e 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=af1ac1e7c6dd83d749c1d4b219b7075b 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=3ac77609713b3df536d22e98bce21d6a 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=9fcb2fb2669087757578d6dde0f1d74b 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=6fc0d779663ff2b7582cc4fb7301043a 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=29dbe9f361f2282c1b9efa07bc2d6dd4 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=b7b022269ba74a861ffd75f20e2efa90 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=cfca957d98f85c78d801d0c43be86499 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=061c85c545e3d11212635ea319b01b29 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=641aff22a73da34073fc1a0b36491bc2 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=a430563f3dd411af04393f13e01505fa 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=aaaf9b78874aaa81322adf4116f81c3b 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3-1.jpg&amp;signature=d5c37770600914fbe2d5e6f648936c92 2361w  "/>
+</noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">future of work</span>
+<h3 class="c-card__heading">
+<a href="/news/robot-developers-housebots-decades-away" tabindex="-1">Robot developers keep making it seem like housebots are imminent when they’re decades away</a>
+</h3>
+</header>
+</div>
+</article>
+</section>
+</div>
+</section>
+</div>
+</aside>
+</main>
+
+</div>
+</div>
+<footer class="c-footer">
+<div class="o-wrapper">
+<div class="o-grid o-grid--gap-l">
+<div class="o-grid__col lg:o-grid__col--1/2">
+<div class="c-footer__logoContact">
+<div>
+<a class="c-footer__logo" data-event-action="TNW Logo" data-event-category="Footer" data-event-label="Navigation" data-event-non-interaction="false" href="https://thenextweb.com/" tabindex="-1" title="TNW">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z" fill="#fff"></path>
+</svg>
+</a>
+<p class="c-footer__tagline">The heart of tech</p>
+</div>
+<div>
+<ul class="c-footer__contact">
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Faaaaebook" href="https://facebook.com/thenextweb" name="Facebook Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Instagram" href="https://www.instagram.com/thenextweb/" name="Instagram Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Twitter" href="https://twitter.com/thenextweb" name="Twitter Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Youtube" href="https://youtube.com/user/thenextweb" name="Youtube Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Flipboard" href="https://flipboard.com/@thenextweb" name="Flipboard Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Mail" href="/newsletters" name="Email Footer Link"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Linkedin" href="https://www.linkedin.com/company/the-next-web" name="LinkedIn Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg></a></li>
+</ul>
+</div>
+</div>
+</div>
+<br/>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 more">
+<h2 class="c-footer__heading">More TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Media" data-event-non-interaction="false" href="/latest">Media</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Events" data-event-non-interaction="false" href="/events">Events</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Programs" data-event-non-interaction="false" href="/programs">Programs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Spaces" data-event-non-interaction="false" href="/spaces">Spaces</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Newsletters" data-event-non-interaction="false" href="/newsletters">Newsletters</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://talent.thenextweb.com/job-board?source=footer&amp;utm_source=footer&amp;utm_medium=partner_referral" rel="noopener" target="_blank">Jobs in tech</a></li>
+</ul>
+</div>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 about">
+<h2 class="c-footer__heading">About TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Partner with us" data-event-non-interaction="false" href="/partnerships" name="Partner with us">Partner with us</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://thenextweb.homerun.co/" name="Jobs" rel="noopener noreferrer" target="_blank">Jobs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Terms &amp; Conditions" data-event-non-interaction="false" href="/terms-and-conditions" name="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Cookie Statement" data-event-non-interaction="false" href="/cookie-statement" name="Cookie Statement">Cookie Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Privacy Statement" data-event-non-interaction="false" href="/privacy-statement " name="Privacy Statement">Privacy Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Editorial Policy" data-event-non-interaction="false" href="https://s3.eu-west-1.amazonaws.com/tnw.uploads/uploads/FT-EDITORIAL-CODE-OF-PRACTICE-15-Jan-2024.pdf" name="Editorial Policy" rel="noopener noreferrer" target="_blank">Editorial Policy</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Masthead" data-event-non-interaction="false" href="/masthead" name="Editorial Policy" rel="noopener">Masthead</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="c-footer__legal max-md:px-l">
+<a class="feedback" data-event-action="Financial Times" data-event-category="Footer" data-event-label="Financial Times" data-event-non-interaction="false" href="https://www.ft.com/" rel="noopener nofollow" target="_blank">
+<svg viewbox="0 0 367 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.97826,19.58347H5.20213L2.77475,26H0L8.32426,4.7043H10.89L19.21428,26H16.43953ZM6.10446,17.19h6.97148L9.57254,8.1032Z" fill="#fff"></path><path d="M29.98145,26V4.7043h13.597V7.89421H33.58934v6.31344H42.919v3.156H33.58934V26Z" fill="#fff"></path><path d="M48.686,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,48.686,8.06789ZM50.42,26H46.95193V10.59977H50.42Z" fill="#fff"></path><path d="M54.72547,10.59977h3.46809V12.057a5.4558,5.4558,0,0,1,4.16284-1.80323c3.46808,0,5.445,2.289,5.445,5.72178V26H64.33332V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26275,3.26275,0,0,0-3.22521,2.46268V26H54.72547Z" fill="#fff"></path><path d="M80.43536,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38126-.97152-1.734-1.56036-3.12071-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12071-1.56036Z" fill="#fff"></path><path d="M87.86718,10.59977h3.46809V12.057a5.45578,5.45578,0,0,1,4.16283-1.80323c3.46809,0,5.445,2.289,5.445,5.72178V26H97.475V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26274,3.26274,0,0,0-3.22521,2.46268V26H87.86718Z" fill="#fff"></path><path d="M111.63545,10.25381a6.50162,6.50162,0,0,1,4.19672,1.28217v3.40031a5.4709,5.4709,0,0,0-3.95385-1.59566c-2.46268,0-4.4396,1.97692-4.4396,4.95925,0,2.98375,1.97692,4.96067,4.4396,4.96067a5.47663,5.47663,0,0,0,3.95385-1.59566v3.3989a6.50259,6.50259,0,0,1-4.19672,1.28358c-4.232,0-7.66623-3.12212-7.66623-8.04749S107.40342,10.25381,111.63545,10.25381Z" fill="#fff"></path><path d="M120.93828,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,120.93828,8.06789ZM122.67233,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M135.50962,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38127-.97152-1.73405-1.56036-3.12072-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12072-1.56036Z" fill="#fff"></path><path d="M146.40811,26H142.94V3.4546h3.46808Z" fill="#fff"></path><path d="M157.27413,4.7043h17.75842V7.89421h-7.076V26H164.3501V7.89421h-7.076Z" fill="#fff"></path><path d="M179.9678,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,179.9678,8.06789ZM181.70184,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M201.96248,10.25381c3.12072,0,4.99456,2.2198,4.99456,5.72178V26h-3.4695V16.53054c0-1.90632-.83172-3.156-2.53188-3.156a2.70093,2.70093,0,0,0-2.73945,2.289V26h-3.46809V16.53054c0-1.90632-.83313-3.156-2.53187-3.156a2.70231,2.70231,0,0,0-2.74086,2.289V26H186.0073V10.59977h3.46809v1.28359a4.67951,4.67951,0,0,1,3.85076-1.62955,5.07645,5.07645,0,0,1,4.05693,2.04611A5.6743,5.6743,0,0,1,201.96248,10.25381Z" fill="#fff"></path><path d="M217.61689,26.34737c-4.47349,0-7.63092-3.08682-7.63092-7.9091,0-4.78557,2.98374-8.18446,7.076-8.18446,4.232,0,6.48572,3.01763,6.48572,7.56032v1.24969H213.38627a4.36215,4.36215,0,0,0,4.71638,4.29981,7.11212,7.11212,0,0,0,4.4043-1.422v3.05293A8.13643,8.13643,0,0,1,217.61689,26.34737Zm-4.05834-9.91991h6.69471a3.10814,3.10814,0,0,0-3.156-3.26052A3.588,3.588,0,0,0,213.55855,16.42746Z" fill="#fff"></path><path d="M226.26311,21.213a7.9172,7.9172,0,0,0,5.20213,2.25511c1.49116,0,2.67026-.52106,2.67026-1.631,0-1.03929-.76253-1.38667-2.04612-1.80323l-1.66485-.51965c-2.63637-.83313-4.16142-2.01223-4.16142-4.64859,0-2.77476,2.49657-4.61188,5.79238-4.61188a8.38994,8.38994,0,0,1,4.61188,1.35278v3.502a6.95868,6.95868,0,0,0-4.61188-1.97692c-1.38808,0-2.46268.59025-2.46268,1.59566,0,1.00682.58884,1.35278,1.97692,1.76935l2.01082.62414c2.56717.83313,3.92,2.1845,3.92,4.5441,0,2.94844-2.63637,4.68248-6.07056,4.68248a8.48739,8.48739,0,0,1-5.16683-1.59566Z" fill="#fff"></path><path d="M249.82521,12.47361a7.08924,7.08924,0,0,1,5.27132-2.18591,6.30818,6.30818,0,0,1,4.12754,1.28358v2.63637a5.38989,5.38989,0,0,0-3.95385-1.59566,4.72822,4.72822,0,0,0-3.50339,1.52647,5.73715,5.73715,0,0,0-1.45728,4.16142,5.743,5.743,0,0,0,1.45728,4.16284,4.732,4.732,0,0,0,3.50339,1.52505,5.38853,5.38853,0,0,0,3.95385-1.59424v2.635a6.30813,6.30813,0,0,1-4.12754,1.28359,7.1933,7.1933,0,0,1-5.27132-2.15061,8.01492,8.01492,0,0,1-2.15061-5.86158A7.87619,7.87619,0,0,1,249.82521,12.47361Z" fill="#fff"></path><path d="M273.90272,24.057a6.93067,6.93067,0,0,1-10.232,0,8.56076,8.56076,0,0,1-1.94162-5.75709,8.56075,8.56075,0,0,1,1.94162-5.75708,6.93067,6.93067,0,0,1,10.232,0,8.41292,8.41292,0,0,1,1.97692,5.75708A8.41293,8.41293,0,0,1,273.90272,24.057Zm-5.099-11.48028c-2.77475,0-4.4396,2.39349-4.4396,5.72319s1.66485,5.7232,4.4396,5.7232,4.43961-2.39349,4.43961-5.7232S271.57842,12.57669,268.80367,12.57669Z" fill="#fff"></path><path d="M295.03462,10.2877c3.08682,0,4.85617,2.18591,4.85617,5.51561V26h-2.63637V16.21847c0-2.11531-.93621-3.57259-2.91314-3.57259a3.56186,3.56186,0,0,0-3.4003,2.74087V26h-2.60107V16.21847c0-2.11531-.93622-3.57259-2.91314-3.57259a3.5603,3.5603,0,0,0-3.39889,2.74087V26h-2.60107V10.59977h2.60107v1.80465a4.77136,4.77136,0,0,1,4.16142-2.11672,4.56953,4.56953,0,0,1,4.16283,2.46268A5.61944,5.61944,0,0,1,295.03462,10.2877Z" fill="#fff"></path><path d="M306.91028,31.89688h-2.60107V10.59977h2.60107v1.80465a5.47521,5.47521,0,0,1,4.33511-2.11672,5.97708,5.97708,0,0,1,5.16824,2.42879,9.16121,9.16121,0,0,1,1.76935,5.58339,9.34026,9.34026,0,0,1-1.76935,5.6187,6.039,6.039,0,0,1-5.16824,2.39349,5.4743,5.4743,0,0,1-4.33511-2.11531Zm0-10.47487a4.49749,4.49749,0,0,0,3.95385,2.53187c2.91313,0,4.68248-2.42879,4.68248-5.654s-1.76935-5.654-4.68248-5.654a4.4975,4.4975,0,0,0-3.95385,2.53188Z" fill="#fff"></path><path d="M330.29728,15.768c0-1.90773-1.422-3.08682-3.67708-3.08682a7.75913,7.75913,0,0,0-4.37041,1.35278V11.57128a8.82,8.82,0,0,1,4.787-1.28358c3.60647,0,5.79239,2.04611,5.79239,5.27273V26h-2.53188V24.8548a6.22354,6.22354,0,0,1-3.98915,1.422,6.54463,6.54463,0,0,1-4.05834-1.31748,4.33611,4.33611,0,0,1-1.66485-3.60647,4.1488,4.1488,0,0,1,1.70015-3.4695,6.8181,6.8181,0,0,1,8.01219-.10308Zm0,4.82087c-.41656-1.14379-1.943-1.90773-3.57258-1.90773a4.84209,4.84209,0,0,0-2.53188.65944,2.11057,2.11057,0,0,0-1.1452,2.01223,2.24887,2.24887,0,0,0,1.1452,2.08,4.82881,4.82881,0,0,0,2.53188.65945c1.62955,0,3.156-.76253,3.57258-1.90773Z" fill="#fff"></path><path d="M337.27723,10.59977h2.60107v1.943a5.69746,5.69746,0,0,1,4.5441-2.2551c3.46809,0,5.40971,2.289,5.40971,5.61869V26h-2.635V16.323c0-2.11531-1.076-3.64177-3.40031-3.64177a4.178,4.178,0,0,0-3.91854,2.87924V26h-2.60107Z" fill="#fff"></path><path d="M356.05094,31.89688l2.32289-5.79239-6-15.50472h2.81l4.54269,12.13972,4.47491-12.13972h2.70556l-8.29037,21.29711Z" fill="#fff"></path>
+</svg>
+</a>
+<p>
+                    Copyright © 2006—2024, The Next Web B.V.
+                    Made with &lt;3 in Amsterdam.
+                    <br/>
+</p>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<div class="cookie-consent-banner" data-args='{"cookieName":"__tnw_cookieConsent","cookieExpirationDays":"365","consentChoices":["ad_storage","analytics_storage"],"redirectOnSave":true,"honorDoNotTrack":false,"stylesheet":"https:\/\/thenextweb.com\/cpresources\/1abce43c\/style.css?v=1725957748","titleText":"Cookies","descriptionText":"&lt;p&gt;We use &lt;a href=\"\/cookie-statement\"&gt;cookies&lt;\/a&gt; and other data for a number of reasons, such as keeping TNW sites reliable and secure, personalizing content and ads, providing social media features and to analyze how our sites are used.&lt;\/p&gt;","linkColor":"6644ff","linkHoverColor":"7755ff","primaryBtnText":"Accept &amp; continue","primaryBtnBgColor":"","primaryBtnBgHoverColor":"","primaryBtnColor":"","primaryBtnHoverColor":"","secondaryBtnText":"Manage cookies","secondaryBtnURL":"\/cookie-statement","secondaryBtnRedirectURL":"https:\/\/thenextweb.com\/news\/cookies-tell-lot-audience-wrong","secondaryBtnColor":"6644ff","secondaryBtnHoverColor":"7755ff","debugMode":false}' id="cookie-consent-banner"></div>
+</body>
+</html>

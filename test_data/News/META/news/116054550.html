@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" id="viewport" name="viewport">
+<meta content="24f74793c661b3abcd4dbc5a116aa12a8ad718528289dde6bbaa76c881b0f667" name="ahrefs-site-verification"/>
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v23.4 (Yoast SEO v23.8) - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Serious Breach at Uber Spotlights Hacker Social Deception - SecurityWeek</title>
+<meta content="A hacker apparently gained access to theUber's cloud-based systems where it stores sensitive customer and financial data." name="description"/>
+<link href="https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/" rel="canonical">
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Serious Breach at Uber Spotlights Hacker Social Deception" property="og:title"/>
+<meta content="A hacker apparently gained access to theUber's cloud-based systems where it stores sensitive customer and financial data." property="og:description"/>
+<meta content="https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/" property="og:url"/>
+<meta content="SecurityWeek" property="og:site_name"/>
+<meta content="https://www.facebook.com/SecurityWeekCom-366251913615/" property="article:publisher"/>
+<meta content="2022-09-17T16:14:00+00:00" property="article:published_time"/>
+<meta content="https://www.securityweek.com/sites/default/files/Uber_Data-Breach.jpg" property="og:image"/>
+<meta content="Associated Press" name="author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@SecurityWeek" name="twitter:creator"/>
+<meta content="@SecurityWeek" name="twitter:site"/>
+<meta content="Written by" name="twitter:label1"/>
+<meta content="Associated Press" name="twitter:data1"/>
+<meta content="Est. reading time" name="twitter:label2"/>
+<meta content="5 minutes" name="twitter:data2"/>
+
+<!-- / Yoast SEO Premium plugin. -->
+<link href="//ajax.googleapis.com" rel="dns-prefetch"/>
+<link href="//use.fontawesome.com" rel="dns-prefetch"/>
+<link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+<link href="https://www.securityweek.com/feed/" rel="alternate" title="SecurityWeek » Feed" type="application/rss+xml"/>
+<link href="https://www.securityweek.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+<link href="https://www.securityweek.com/wp-content/plugins/securityweek-chartoftheday/css/chartsofday.css?ver=1.0.0" id="chartsofday_style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.securityweek.com/wp-content/plugins/securityweek/assets/css/security-week.css?ver=1.3.0" id="security_week_style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css?ver=6.6.2" id="ql-jquery-ui-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.securityweek.com/wp-content/themes/zoxpress-child/features/industry-moves/assets/industry-moves.css?ver=1.1.10" id="industry-moves-styles-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.securityweek.com/wp-content/themes/zoxpress-child/features/newsletter/assets/newsletter.css?ver=1.0.22" id="security-newsletter-styles-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.securityweek.com/wp-content/themes/zoxpress/style.css?ver=6.6.2" id="zox-custom-style-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css?ver=6.6.2" id="fontawesome-child-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.securityweek.com/wp-content/themes/zoxpress-child/style.css?ver=1.1.26" id="zox-custom-child-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.securityweek.com/wp-content/themes/zoxpress-child/assets/css/search.css?ver=1.1.26" id="sw-algolia-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.securityweek.com/wp-content/themes/zoxpress-child/font-awesome/css/all.css?ver=6.6.2" id="fontawesome-css" media="all" rel="stylesheet" type="text/css"/>
+<link crossorigin="anonymous" href="//fonts.googleapis.com/css?family=Heebo%3A300%2C400%2C500%2C700%2C800%2C900%7CAlegreya%3A400%2C500%2C700%2C800%2C900%7CJosefin+Sans%3A300%2C400%2C600%2C700%7CLibre+Franklin%3A300%2C400%2C500%2C600%2C700%2C800%2C900%7CFrank+Ruhl+Libre%3A300%2C400%2C500%2C700%2C900%7CNunito+Sans%3A300%2C400%2C600%2C700%2C800%2C900%7CMontserrat%3A300%2C400%2C500%2C600%2C700%2C800%2C900%7CAnton%3A400%7CNoto+Serif%3A400%2C700%7CNunito%3A300%2C400%2C600%2C700%2C800%2C900%7CRajdhani%3A300%2C400%2C500%2C600%2C700%7CTitillium+Web%3A300%2C400%2C600%2C700%2C900%7CPT+Serif%3A400%2C400i%2C700%2C700i%7CAmiri%3A400%2C400i%2C700%2C700i%7COswald%3A300%2C400%2C500%2C600%2C700%7CRoboto+Mono%3A400%2C700%7CBarlow+Semi+Condensed%3A700%2C800%2C900%7CPoppins%3A300%2C400%2C500%2C600%2C700%2C800%2C900%7CRoboto+Condensed%3A300%2C400%2C700%7CRoboto%3A300%2C400%2C500%2C700%2C900%7CPT+Serif%3A400%2C700%7COpen+Sans+Condensed%3A300%2C700%7COpen+Sans%3A700%7CSource+Serif+Pro%3A400%2C600%2C700%7CIM+Fell+French+Canon%3A400%2C400i%7COswald%3A100%2C100i%2C200%2C+200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i%7CTitillium+Web%3A100%2C100i%2C200%2C+200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i%7COswald%3A100%2C100i%2C200%2C+200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i%7COswald%3A100%2C100i%2C200%2C+200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i%7COswald%3A100%2C100i%2C200%2C+200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i%7COswald%3A100%2C100i%2C200%2C+200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i%7CBarlow+Condensed%3A100%2C100i%2C200%2C+200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i%26subset%3Dlatin%2Clatin-ext%2Ccyrillic%2Ccyrillic-ext%2Cgreek-ext%2Cgreek%2Cvietnamese" id="zox-fonts-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.securityweek.com/wp-content/themes/zoxpress/css/media-queries.css?ver=6.6.2" id="zox-media-queries-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//www.securityweek.com/wp-content/uploads/3db08ec670500470708f9f051eee5622.css?generated=1728105803&amp;ver=1.20.2" id="popup-maker-site-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+<link href="https://www.securityweek.com/?p=25567" rel="shortlink"/>
+<meta content="#fff" name="theme-color"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/" property="og:url"/>
+<meta content="Serious Breach at Uber Spotlights Hacker Social Deception" property="og:title"/>
+<meta content="The ride-hailing service Uber said Friday that all its services were operational following what security professionals are calling a major data breach, claiming there was no evidence the hacker got access to sensitive user data." property="og:description"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/" name="twitter:url"/>
+<meta content="Serious Breach at Uber Spotlights Hacker Social Deception" name="twitter:title"/>
+<meta content="The ride-hailing service Uber said Friday that all its services were operational following what security professionals are calling a major data breach, claiming there was no evidence the hacker got access to sensitive user data." name="twitter:description"/>
+
+<link href="https://www.securityweek.com/xmlrpc.php" rel="pingback"/> 
+
+<link href="https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/amp/" rel="amphtml"/><link href="https://www.securityweek.com/wp-content/uploads/2023/01/cropped-SecurityWeek-Icon-32x32.jpeg" rel="icon" sizes="32x32">
+<link href="https://www.securityweek.com/wp-content/uploads/2023/01/cropped-SecurityWeek-Icon-192x192.jpeg" rel="icon" sizes="192x192">
+<link href="https://www.securityweek.com/wp-content/uploads/2023/01/cropped-SecurityWeek-Icon-180x180.jpeg" rel="apple-touch-icon"/>
+<meta content="https://www.securityweek.com/wp-content/uploads/2023/01/cropped-SecurityWeek-Icon-270x270.jpeg" name="msapplication-TileImage">
+
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+
+
+</meta></link></link></link></meta></meta></head>
+<body class="post-template-default single single-post postid-25567 single-format-standard custom-background wp-embed-responsive zox-tech2 zox-s6">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-TMP64CK" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="sw-bulletin sw-bulletin-hide sw-bulletin-custom" style="color: #ffffff; background-color: #dd3333;">
+<div class="zox-head-width">
+<a class="sw-url" href="https://virtual.cisoforum.com/" style="color:#ffffff !important;" target="_blank">
+<span class="sw-type">Now on Demand:</span>
+<span class="sw-title">CISO Forum Virtual Summit - All Sessions Available to Watch Instantly</span>
+</a>
+<span class="sw-bulletin-close">
+<i class="fas fa-times" cstyle="color: #ffffff;"></i>
+</span>
+</div>
+</div>
+<div class="sw-top-bar sw-live">
+<div class="zox-head-width">
+<div class="block block-left">
+<h3 class="sw-top-title">SECURITYWEEK NETWORK:</h3>
+<div class="menu-securityweek-network-container"><ul class="menu" id="menu-securityweek-network"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-26493" id="menu-item-26493"><a href="https://www.securityweek.com" title="Cybersecurity news and information">Cybersecurity News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26494" id="menu-item-26494"><a href="https://gateway.on24.com/wcc/eh/1220486/securityweek-webcast-library" rel="noopener" target="_blank" title="SecurityWeek cybersecurity webcast library on demand">Webcasts</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26496" id="menu-item-26496"><a href="https://www.securitysummits.com/" rel="noopener" target="_blank" title="Virtual Cybersecurity Events">Virtual Events</a></li>
+</ul></div> </div>
+<div class="block block-right">
+<h3 class="sw-top-title">ICS:</h3>
+<div class="menu-ics-container"><ul class="menu" id="menu-ics"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26495" id="menu-item-26495"><a href="https://www.icscybersecurityconference.com/" rel="noopener" target="_blank" title="ICS Cybersecurity Conference">ICS Cybersecurity Conference</a></li>
+</ul></div> </div>
+</div>
+</div>
+<div class="left zoxrel" id="zox-site">
+<div id="zox-fly-wrap">
+<div class="left relative" id="zox-fly-menu-top">
+<div class="left relative" id="zox-fly-logo">
+<a href="https://www.securityweek.com/"><img alt="SecurityWeek" data-rjs="2" src="https://www.securityweek.com/wp-content/uploads/2022/04/SecurityWeek-Small-Dark.png"/></a>
+</div><!--zox-fly-logo-->
+<div class="zox-fly-but-wrap zox-fly-but-menu zox-fly-but-click">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div><!--zox-fly-but-wrap-->
+</div><!--zox-fly-menu-top-->
+<div id="zox-fly-menu-wrap">
+<nav class="zox-fly-nav-menu left relative">
+<div class="menu-security-week-main-menu-container"><ul class="menu" id="menu-security-week-main-menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26540" id="menu-item-26540"><a href="https://www.securityweek.com/category/malware-cyber-threats/">Malware &amp; Threats</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32047" id="menu-item-32047"><a href="https://www.securityweek.com/category/cyberwarfare/">Cyberwarfare</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26524" id="menu-item-26524"><a href="https://www.securityweek.com/category/cybercrime/">Cybercrime</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26526" id="menu-item-26526"><a href="https://www.securityweek.com/category/data-breaches/">Data Breaches</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32055" id="menu-item-32055"><a href="https://www.securityweek.com/category/fraud-identity-theft/">Fraud &amp; Identity Theft</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26527" id="menu-item-26527"><a href="https://www.securityweek.com/category/nation-state/">Nation-State</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26525" id="menu-item-26525"><a href="https://www.securityweek.com/category/ransomware/">Ransomware</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26523" id="menu-item-26523"><a href="https://www.securityweek.com/category/vulnerabilities/">Vulnerabilities</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26528" id="menu-item-26528"><a>Security Operations</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26529" id="menu-item-26529"><a href="https://www.securityweek.com/category/threat-intelligence/">Threat Intelligence</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-26530" id="menu-item-26530"><a href="https://www.securityweek.com/category/incident-response/">Incident Response</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32048" id="menu-item-32048"><a href="https://www.securityweek.com/category/tracking-law-enforcement/">Tracking &amp; Law Enforcement</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-38068" id="menu-item-38068"><a href="https://www.securityweek.com/category/security-architecture/">Security Architecture</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26537" id="menu-item-26537"><a href="https://www.securityweek.com/category/application-security/">Application Security</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26533" id="menu-item-26533"><a href="https://www.securityweek.com/category/cloud-security/">Cloud Security</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26534" id="menu-item-26534"><a href="https://www.securityweek.com/category/endpoint-security/">Endpoint Security</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32054" id="menu-item-32054"><a href="https://www.securityweek.com/category/identity-access/">Identity &amp; Access</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26536" id="menu-item-26536"><a href="https://www.securityweek.com/category/iot-security/">IoT Security</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26535" id="menu-item-26535"><a href="https://www.securityweek.com/category/mobile-wireless/">Mobile &amp; Wireless</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32049" id="menu-item-32049"><a href="https://www.securityweek.com/category/network-security/">Network Security</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26538" id="menu-item-26538"><a href="https://www.securityweek.com/category/risk-management/">Risk Management</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26548" id="menu-item-26548"><a href="https://www.securityweek.com/category/cyber-insurance/">Cyber Insurance</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32050" id="menu-item-32050"><a href="https://www.securityweek.com/category/data-protection/">Data Protection</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32053" id="menu-item-32053"><a href="https://www.securityweek.com/category/privacy-compliance/">Privacy &amp; Compliance</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26539" id="menu-item-26539"><a href="https://www.securityweek.com/category/supply-chain-security/">Supply Chain Security</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26542" id="menu-item-26542"><a href="https://www.securityweek.com/category/ciso-strategy/">CISO Strategy</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26547" id="menu-item-26547"><a href="https://www.securityweek.com/category/cyber-insurance/">Cyber Insurance</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26549" id="menu-item-26549"><a href="https://www.securityweek.com/category/ciso-conversations/">CISO Conversations</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26543" id="menu-item-26543"><a href="https://www.cisoforum.com/" rel="noopener" target="_blank">CISO Forum</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26544" id="menu-item-26544"><a href="https://www.securityweek.com/category/ics-ot/">ICS/OT</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32052" id="menu-item-32052"><a href="https://www.securityweek.com/category/ics-ot/">Industrial Cybersecurity</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32051" id="menu-item-32051"><a href="https://www.icscybersecurityconference.com/" rel="noopener" target="_blank">ICS Cybersecurity Conference</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26663" id="menu-item-26663"><a href="https://www.securityweek.com/category/cybersecurity-funding-news/">Funding/M&amp;A</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26664" id="menu-item-26664"><a href="https://www.securityweek.com/category/cybersecurity-funding-news/cybersecurity-funding-reports/">Cybersecurity Funding</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26546" id="menu-item-26546"><a href="https://www.securityweek.com/category/cybersecurity-funding-news/ma/">M&amp;A Tracker</a></li>
+</ul>
+</li>
+</ul></div> <div class="menu-securityweek-network-container"><ul class="menu" id="menu-securityweek-network-1"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-26493"><a href="https://www.securityweek.com" title="Cybersecurity news and information">Cybersecurity News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26494"><a href="https://gateway.on24.com/wcc/eh/1220486/securityweek-webcast-library" rel="noopener" target="_blank" title="SecurityWeek cybersecurity webcast library on demand">Webcasts</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26496"><a href="https://www.securitysummits.com/" rel="noopener" target="_blank" title="Virtual Cybersecurity Events">Virtual Events</a></li>
+</ul></div> <div class="menu-ics-container"><ul class="menu" id="menu-ics-1"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26495"><a href="https://www.icscybersecurityconference.com/" rel="noopener" target="_blank" title="ICS Cybersecurity Conference">ICS Cybersecurity Conference</a></li>
+</ul></div> </nav>
+</div><!--zox-fly-menu-wrap-->
+<div id="zox-fly-soc-wrap">
+<span class="zox-fly-soc-head">Connect with us</span>
+<ul class="zox-fly-soc-list left relative">
+<li><a class="fab fa-facebook-f" href="https://www.facebook.com/SecurityWeekCom-366251913615/" target="_blank"></a></li>
+<li><a class="fab fa-twitter" href="https://twitter.com/securityweek" target="_blank"></a></li>
+<li><a class="fab fa-linkedin-in" href="https://www.linkedin.com/company/securityweek/" target="_blank"></a></li>
+</ul>
+</div><!--zox-fly-soc-wrap-->
+</div><!--zox-fly-wrap--> <div id="zox-search-wrap">
+<div class="zox-search-cont">
+<p class="zox-search-p">Hi, what are you looking for?</p>
+<div class="zox-search-box">
+<form action="https://www.securityweek.com/" id="zox-search-form" method="get">
+<input data-cf-modified-67b78db04701d80957604917-="" id="zox-search-input" name="s" onblur='if (!window.__cfRLUnblockHandlers) return false; if (this.value == "Search") { this.value = ""; }' onfocus='if (!window.__cfRLUnblockHandlers) return false; if (this.value == "Search") { this.value = ""; }' type="text" value="Search"/>
+<input id="zox-search-submit" type="submit" value="Search"/>
+</form> </div><!--zox-search-box-->
+</div><!--zox-serach-cont-->
+<div class="zox-search-but-wrap zox-search-click">
+<span></span>
+<span></span>
+</div><!--zox-search-but-wrap-->
+</div><!--zox-search-wrap-->
+<div class="left zoxrel" id="zox-site-wall">
+<div id="zox-lead-top-wrap">
+<div id="zox-lead-top-in">
+<div id="zox-lead-top"></div><!--zox-lead-top-->
+</div><!--zox-lead-top-in-->
+</div><!--zox-lead-top-wrap-->
+<div class="left zoxrel" id="zox-site-main">
+<header class="left zoxrel zox-trans-head" id="zox-main-head-wrap">
+<div class="left relative" id="zox-top-head-wrap">
+<div class="zox-head-width">
+<div class="relative" id="zox-top-head">
+<div id="zox-top-head-left">
+<div class="zox-top-soc-wrap">
+<a href="https://www.facebook.com/SecurityWeekCom-366251913615/" target="_blank"><span class="zox-top-soc-but fab fa-facebook-f"></span></a>
+<a href="https://twitter.com/securityweek" target="_blank"><span class="zox-top-soc-but fab fa-twitter"></span></a>
+<a href="https://www.linkedin.com/company/securityweek/" target="_blank"><span class="zox-top-soc-but fab fa-linkedin-in"></span></a>
+</div><!--zox-top-soc-wrap--> </div><!--zox-top-head-left-->
+<div class="sw-logo-area" id="zox-top-head-mid">
+<a href="https://www.securityweek.com/"><img alt="SecurityWeek" class="zox-logo-stand" data-rjs="2" src="https://www.securityweek.com/wp-content/uploads/2022/01/SecurityWeek_Dark_News.png"/><img alt="SecurityWeek" class="zox-logo-dark" data-rjs="2" src="https://www.securityweek.com/wp-content/uploads/2022/01/SecurityWeek_Dark_News.png"/></a>
+</div><!--zox-top-head-mid-->
+<div id="zox-top-head-right"></div><!--zox-top-head-right-->
+</div><!--zox-top-head-->
+</div><!--zox-head-width-->
+</div><!--zox-top-head-wrap--> <div class="left zoxrel" id="zox-bot-head-wrap">
+<div class="zox-head-width">
+<div id="zox-bot-head">
+<div id="zox-bot-head-left">
+<div class="zox-fly-but-wrap zoxrel zox-fly-but-click">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div><!--zox-fly-but-wrap-->
+</div><!--zox-bot-head-left-->
+<div class="relative" id="zox-bot-head-mid">
+<div class="zox-bot-head-logo">
+<div class="zox-bot-head-logo-main">
+<a href="https://www.securityweek.com/"><img alt="SecurityWeek" class="zox-logo-stand" data-rjs="2" src="https://www.securityweek.com/wp-content/uploads/2022/04/SecurityWeek-Small-Dark.png"/><img alt="SecurityWeek" class="zox-logo-dark" data-rjs="2" src="https://www.securityweek.com/wp-content/uploads/2022/01/SecurityWeek_Dark-Small.png"/></a>
+</div><!--zox-bot-head-logo-main-->
+<h2 class="zox-logo-title">SecurityWeek</h2>
+</div><!--zox-bot-head-logo-->
+<div class="zox-bot-head-menu">
+<div class="zox-nav-menu">
+<div class="menu-security-week-main-menu-container"><ul class="menu" id="menu-security-week-main-menu-1"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26540"><a href="https://www.securityweek.com/category/malware-cyber-threats/">Malware &amp; Threats</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32047"><a href="https://www.securityweek.com/category/cyberwarfare/">Cyberwarfare</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26524"><a href="https://www.securityweek.com/category/cybercrime/">Cybercrime</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26526"><a href="https://www.securityweek.com/category/data-breaches/">Data Breaches</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32055"><a href="https://www.securityweek.com/category/fraud-identity-theft/">Fraud &amp; Identity Theft</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26527"><a href="https://www.securityweek.com/category/nation-state/">Nation-State</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26525"><a href="https://www.securityweek.com/category/ransomware/">Ransomware</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26523"><a href="https://www.securityweek.com/category/vulnerabilities/">Vulnerabilities</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26528"><a>Security Operations</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26529"><a href="https://www.securityweek.com/category/threat-intelligence/">Threat Intelligence</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-26530"><a href="https://www.securityweek.com/category/incident-response/">Incident Response</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32048"><a href="https://www.securityweek.com/category/tracking-law-enforcement/">Tracking &amp; Law Enforcement</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-38068"><a href="https://www.securityweek.com/category/security-architecture/">Security Architecture</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26537"><a href="https://www.securityweek.com/category/application-security/">Application Security</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26533"><a href="https://www.securityweek.com/category/cloud-security/">Cloud Security</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26534"><a href="https://www.securityweek.com/category/endpoint-security/">Endpoint Security</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32054"><a href="https://www.securityweek.com/category/identity-access/">Identity &amp; Access</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26536"><a href="https://www.securityweek.com/category/iot-security/">IoT Security</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26535"><a href="https://www.securityweek.com/category/mobile-wireless/">Mobile &amp; Wireless</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32049"><a href="https://www.securityweek.com/category/network-security/">Network Security</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26538"><a href="https://www.securityweek.com/category/risk-management/">Risk Management</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26548"><a href="https://www.securityweek.com/category/cyber-insurance/">Cyber Insurance</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32050"><a href="https://www.securityweek.com/category/data-protection/">Data Protection</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32053"><a href="https://www.securityweek.com/category/privacy-compliance/">Privacy &amp; Compliance</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26539"><a href="https://www.securityweek.com/category/supply-chain-security/">Supply Chain Security</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26542"><a href="https://www.securityweek.com/category/ciso-strategy/">CISO Strategy</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26547"><a href="https://www.securityweek.com/category/cyber-insurance/">Cyber Insurance</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26549"><a href="https://www.securityweek.com/category/ciso-conversations/">CISO Conversations</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26543"><a href="https://www.cisoforum.com/" rel="noopener" target="_blank">CISO Forum</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26544"><a href="https://www.securityweek.com/category/ics-ot/">ICS/OT</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32052"><a href="https://www.securityweek.com/category/ics-ot/">Industrial Cybersecurity</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32051"><a href="https://www.icscybersecurityconference.com/" rel="noopener" target="_blank">ICS Cybersecurity Conference</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-26663"><a href="https://www.securityweek.com/category/cybersecurity-funding-news/">Funding/M&amp;A</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26664"><a href="https://www.securityweek.com/category/cybersecurity-funding-news/cybersecurity-funding-reports/">Cybersecurity Funding</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-26546"><a href="https://www.securityweek.com/category/cybersecurity-funding-news/ma/">M&amp;A Tracker</a></li>
+</ul>
+</li>
+</ul></div> </div><!--zox-nav-menu-->
+</div><!--zox-bot-head-menu-->
+</div><!--zox-bot-head-mid-->
+<div id="zox-bot-head-right">
+<span class="zox-night zox-night-mode fas fa-moon"></span>
+<span class="zox-nav-search-but fas fa-search zox-search-click"></span>
+</div><!--zox-bot-head-right-->
+</div><!--zox-bot-head-->
+</div><!--zox-head-width-->
+</div><!--zox-bot-head-wrap--> </header><!---zox-main-header-wrap-->
+<div class="sw-page-header" id="zox-site-grid">
+<div id="zox-site-wall-small">
+<div class="left relative" id="zox-main-body-wrap"> <div class="zoxrel text-center sw-ads-top">
+<!-- NewSW-970x250-Article [async] -->
+
+
+</div>
+<article class="post-25567 post type-post status-publish format-standard hentry category-incident-response" id="post-25567" itemscope="" itemtype="http://schema.org/NewsArticle">
+<div class="zox-article-wrap zoxrel left zox100">
+<meta itemid="https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/" itemprop="mainEntityOfPage" itemscope="" itemtype="https://schema.org/WebPage">
+<div class="zox-post-top-wrap zoxrel left zox100">
+<div class="zox-post-title-wrap zox-tit2">
+<div class="zox-post-width">
+<header class="zox-post-head-wrap left zoxrel zox100">
+<div class="zox-post-head zoxrel">
+<h3 class="zox-post-cat">
+<a class="zox-post-cat-link" href="https://www.securityweek.com/category/incident-response/"><span class="zox-post-cat">Incident Response</span></a>
+</h3>
+<h1 class="zox-post-title left entry-title" itemprop="headline">Serious Breach at Uber Spotlights Hacker Social Deception</h1>
+<span class="zox-post-excerpt"><p><span><span><strong>The ride-hailing service Uber said Friday that all its services were operational following what security professionals are calling <a href="https://www.securityweek.com/uber-investigating-data-breach-after-hacker-claims-extensive-compromise" title="Uber Breach">a major data breach</a>, claiming there was no evidence the hacker got access to sensitive user data.</strong></span></span></p>
+</span>
+<div class="zox-post-info-wrap">
+<div class="zox-post-byline-wrap sw-user-profile">
+<div class="zox-author-thumb">
+<img class="avatar avatar-80 photo" height="80" loading="lazy" src="https://www.securityweek.com/wp-content/uploads/2023/01/SecurityWeek-Icon.jpeg" width="80"/>
+</div><!--zox-author-thumb-->
+<div class="zox-author-info-wrap">
+<div class="zox-author-name-wrap" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<p>By</p><span class="zox-author-name vcard fn author" itemprop="name"><a href="https://www.securityweek.com/contributors/associated-press/" rel="author" title="Posts by Associated Press">Associated Press</a></span>
+</div><!--zox-author-name-wrap-->
+<br/>
+<div class="zox-post-date-wrap">
+<span class="zox-post-date updated">
+<time class="post-date updated" datetime="2022-09-17" itemprop="datePublished">September 17, 2022</time>
+</span>
+<meta content="2022-09-17" itemprop="dateModified"></meta></div><!--zox-post-date-wrap-->
+</div><!--zox-author-info-wrap-->
+</div><!--zox-post-byline-wrap-->
+<div class="zox-post-soc-top-wrap">
+<div class="zox-post-soc-stat">
+<ul class="zox-post-soc-stat-list left zoxrel">
+<a data-cf-modified-67b78db04701d80957604917-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://www.facebook.com/sharer.php?u=https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/&amp;t=Serious Breach at Uber Spotlights Hacker Social Deception', 'facebookShare', 'width=626,height=436'); return false;" title="Share on Facebook">
+<li class="zox-post-soc-fb">
+<i class="fab fa-facebook-f"></i>
+</li>
+</a>
+<a data-cf-modified-67b78db04701d80957604917-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://twitter.com/share?text=Serious Breach at Uber Spotlights Hacker Social Deception -&amp;url=https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/', 'twitterShare', 'width=626,height=436'); return false;" title="Tweet This Post">
+<li class="zox-post-soc-twit">
+<i class="fab fa-twitter"></i>
+</li>
+</a>
+<li class="zox-post-soc-copy">
+<i class="fas fa-link"></i>
+</li>
+<a href="https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/#respond">
+<li class="zox-post-soc-com zox-com-click">
+<i class="far fa-comment"></i>
+</li>
+</a>
+<li class="zox-post-soc-more zox-soc-stat-click-25567">
+<i class="fas fa-ellipsis-h"></i>
+<div class="zox-soc-more-stat zox-more-click-25567">
+<ul class="zox-soc-more-list">
+<a data-cf-modified-67b78db04701d80957604917-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://share.flipboard.com/bookmarklet/popout?v=Serious Breach at Uber Spotlights Hacker Social Deception&amp;url=https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/&amp;utm_medium=article-share&amp;utm_campaign=tools&amp;utm_source=SecurityWeek', 'flipboardShare', 'width=626,height=436'); return false;" title="Share on Flipboard">
+<li class="zox-post-soc-flip">
+<p>Flipboard</p>
+<i class="fab fa-flipboard"></i>
+</li>
+</a>
+<a data-cf-modified-67b78db04701d80957604917-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://www.reddit.com/submit?url=https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/&amp;title=Serious Breach at Uber Spotlights Hacker Social Deception', 'redditShare', 'width=626,height=436'); return false;" title="Share on Reddit">
+<li class="zox-post-soc-redd">
+<p>Reddit</p>
+<i class="fab fa-reddit-alien"></i>
+</li>
+</a>
+<a class="zox-whats-main" href="https://web.whatsapp.com/send?text=Serious Breach at Uber Spotlights Hacker Social Deception https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/">
+<li class="zox-post-soc-what">
+<p>Whatsapp</p>
+<i class="fab fa-whatsapp"></i>
+</li>
+</a>
+<a class="zox-whats-mob" href="whatsapp://send?text=Serious Breach at Uber Spotlights Hacker Social Deception https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/">
+<li class="zox-post-soc-what">
+<p>Whatsapp</p>
+<i class="fab fa-whatsapp"></i>
+</li>
+</a>
+<a href="/cdn-cgi/l/email-protection#f3cc80869199969087cea096819a9c8680d3b1819692909bd39287d3a6919681d3a0839c879f9a949b8780d3bb9290989681d3a09c909a929fd3b796909683879a9c9dd5929e83c8b1bcb7aacebad3959c869d97d3879b9a80d39281879a909f96d39a9d8796819680879a9d94d3929d97d3879b9c86949b87d39c95d3809b92819a9d94d39a87d3849a879bd38a9c86ddd3b09b969098d39a87d39c8687c9d39b87878380c9dcdc848484dd80969086819a878a84969698dd909c9edc8096819a9c8680de91819692909bde86919681de80839c879f9a949b8780de9b9290989681de809c909a929fde9796909683879a9c9ddc">
+<li class="zox-post-soc-email">
+<p>Email</p>
+<i class="fas fa-envelope"></i>
+</li>
+</a>
+</ul>
+</div><!--zox-soc-more-stat-->
+</li>
+</ul>
+</div><!--zox-post-soc-stat-->
+</div><!--zox-post-soc-top-wrap-->
+</div><!--zox-post-info-wrap-->
+</div><!--zox-post-head-->
+</header><!--zox-post-head-wrap--> </div><!--zox-post-width-->
+</div><!--zox-post-title-wrap-->
+</div><!--zox-post-top-wrap-->
+<div class="zox-post-main-grid">
+<div class="zox-post-width">
+<div class="zox-post-main-wrap zoxrel left zox100">
+<div class="zox-post-main">
+<div class="zox-post-bot-wrap">
+<div class="zox-post-img-wrap"></div><!--zox-post-img-wrap-->
+</div><!--zox-post-bot-wrap-->
+<div class="zox-post-body-wrap left zoxrel">
+<div class="zox-post-body left zoxrel zox100">
+<p><span><span><strong>The ride-hailing service Uber said Friday that all its services were operational following what security professionals are calling <a href="https://www.securityweek.com/uber-investigating-data-breach-after-hacker-claims-extensive-compromise/" title="Uber Breach">a major data breach</a>, claiming there was no evidence the hacker got access to sensitive user data.</strong></span></span>
+<p><span><span>But the breach, apparently by a lone hacker, put the spotlight on an increasingly effective break-in routine involving social engineering: The hacker apparently gained access posing as a colleague, tricking an Uber employee into surrendering their credentials.</span></span>
+<p><span><span>They were then able to locate passwords on the network that got them the level of privileged access reserved for system administrators.</span></span>
+<p><span><span>The potential damage was serious: Screenshots the hacker shared with security researchers indicate they obtained full access to the cloud-based systems where Uber stores sensitive customer and financial data.</span></span>
+<p><span><span><img alt="Uber Breach Details" decoding="async" fetchpriority="high" height="207" src="https://www.securityweek.com/sites/default/files/Uber_Data-Breach.jpg" style="margin: 5px 10px; float: right;" title="Uber Breach Details" width="350">It is not known how much data the hacker stole or how long they were inside Uber’s network. Two researchers who communicated directly with the person — who self-identified as an 18-year-old to one of them — said they appeared interested in publicity. There was no indication they destroyed data.</img></span></span>
+<p><span><span>But files shared with the researchers and posted widely on Twitter and other social media indicated the hacker was able to access Uber’s most crucial internal systems.</span></span>
+<p><span><span>“It was really bad the access he had. It’s awful,” said Corben Leo, one of the researchers who chatted with the hacker online.</span></span>
+<p><span><span>The cybersecurity community’s online reaction — Uber also suffered a serious 2016 breach — was harsh.</span></span>
+<p><span><span>The hack “wasn’t sophisticated or complicated and clearly hinged on multiple big systemic security culture and engineering failures,” tweeted Lesley Carhart, incident response director of Dragos Inc., which specializes in an industrial-control systems.</span></span><div class="zox-post-ad-wrap"><span class="zox-ad-label">Advertisement. Scroll to continue reading.</span><div class="zox-post-ad"><div class="zox-post-ad-in1"><div class="zox-post-ad-in2"><!-- 300x250-Embedded_Article [async] -->
+
+</div></div></div></div>
+<p><span><span>Leo said screenshots the hacker shared showed the intruder got access to systems stored on Amazon and Google cloud-based servers where Uber keeps source code, financial data and customer data such as driver’s licenses.</span></span>
+<p><span><span>“If he had keys to the kingdom he could start stopping services. He could delete stuff. He could download customer data, change people’s passwords,” said Leo, a researcher and head of business development at the security company Zellic.</span></span>
+<p><span><span>Screenshots the hacker shared — many of which found their way online — showed sensitive financial data and internal databases accessed. Also widely circulating online: The hacker announcing the breach Thursday on Uber’s internal Slack collaboration system.</span></span>
+<p><span><span>Leo, along with Sam Curry, an engineer with Yuga Labs who also communicated with the hacker, said there was no indication that the hacker had done any damage or was interested in anything more than publicity.</span></span>
+<p><span><span>“It’s pretty clear he’s a young hacker because he wants what 99% of what young hackers want, which is fame,” Leo said.</span></span>
+<p><span><span>Curry said he spoke to several Uber employees Thursday who said they were “working to lock down everything internally” to restrict the hacker’s access. That included the San Francisco company’s Slack network, he said.</span></span>
+<p><span><span>In a statement posted online Friday, Uber said “internal software tools that we took down as a precaution yesterday are coming back online.”</span></span>
+<p><span><span>It said all its services — including Uber Eats and Uber Freight — were operational and that it had notified law enforcement. The FBI said via email that it is “aware of the cyber incident involving Uber, and our assistance to the company is ongoing.”</span></span>
+<p><span><span>Uber said there was no evidence that the intruder accessed “sensitive user data” such as trip history but did not respond to questions from The Associated Press including about whether data was stored encrypted.</span></span>
+<p><span><span>Curry and Leo said the hacker did not indicate how much data was copied. Uber did not recommend any specific actions for its users, such as changing passwords.</span></span>
+<p><span><span>The hacker <a href="https://twitter.com/samwcyo/status/1570577801790783493?" rel="noopener" target="_blank">alerted the researchers</a> to the intrusion Thursday by using an internal Uber account on the company’s network used to post vulnerabilities identified through its bug-bounty program, which pays ethical hackers to ferret out network weaknesses.</span></span>
+<p><span><span>After commenting on those posts, the hacker provided a Telegram account address. Curry and other researchers then engaged them in a separate conversation, where the intruder provided the screenshots as proof.</span></span>
+<p><span><span>The AP attempted to contact the hacker at the Telegram account, but received no response.</span></span>
+<p><span><span>Screenshots posted online appeared to confirm what the researchers said the hacker claimed: That they obtained privileged access to Uber’s most critical systems through social engineering.</span></span>
+<p><span><strong><span>The apparent scenario:</span></strong></span>
+<p><span><span>The hacker first obtained the password of an Uber employee, likely through phishing. The hacker then bombarded the employee with push notifications asking they confirm a remote log-in to their account. When the employee did not respond, the hacker reached out via WhatsApp, posing as a fellow worker from the IT department and expressing urgency. Ultimately, the employee caved and confirmed with a mouse click.</span></span>
+<p><span><span>Social engineering is a popular hacking strategy, as humans tend to be the weakest link in any network. Teenagers used it in 2020 to hack Twitter and it has more recently been used in hacks of the tech companies Twilio and Cloudflare, said Rachel Tobac, CEO of SocialProof Security, which specializes in training workers not to fall victim to social engineering.</span></span>
+<p><span><span>“The hard truth is that most orgs in the world could be hacked in the exact way Uber was just hacked,” Tobac tweeted. In an interview, she said “even super tech savvy people fall for social engineering methods every day.”</span></span>
+<p><span><span>“Attackers are getting better at by-passing or hi-jacking MFA (multi-factor authentication),” said Ryan Sherstobitoff, a senior threat analyst at SecurityScorecard.</span></span>
+<p><span><span>That’s why many security professionals advocate the use of so-called FIDO physical security keys for user authentication. Adoption of such hardware has been spotty among tech companies, however.</span></span>
+<p><span><span>The hack also highlighted the need for real-time monitoring in cloud-based systems to better detect intruders, said Tom Kellermann of Contrast Security. “Much more attention must be paid to protecting clouds from within” because a single master key can typically unlock all their doors.</span></span>
+<p><span><span>Some experts questioned how much cybersecurity has improved at Uber since it was <a href="https://www.securityweek.com/hackers-florida-canada-behind-2016-uber-breach/">hacked in 2016</a>.</span></span>
+<p><span><span>Its former chief security officer, Joseph Sullivan, is <a href="https://www.securityweek.com/former-uber-cso-charged-over-2016-data-breach-cover/">currently on trial for allegedly arranging to pay hackers</a> $100,000 to cover up that high-tech heist, when the personal information of about 57 million customers and drivers was stolen.</span></span>
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></div><!--zox-post-body-->
+<div class="zox-post-body-bot left zoxrel zox100">
+<div class="zox-post-body-width">
+<div class="zox-posts-nav-link"></div><!--zox-posts-nav-link-->
+<div class="zox-author-box-wrap left zoxrel">
+<div class="zox-author-box-img zoxrel">
+<img class="avatar avatar-150 photo" loading="lazy" src="https://www.securityweek.com/wp-content/uploads/2023/01/SecurityWeek-Icon.jpeg"/>
+</div><!--zox-author-box-img-->
+<div class="zox-author-box-right">
+<div class="zox-author-box-head zoxrel">
+<div class="zox-author-box-name-wrap">
+<span class="zox-author-box-name-head zoxrel">Written By</span>
+<span class="zox-author-box-name zoxrel"><a href="https://www.securityweek.com/contributors/associated-press/" rel="author" title="Posts by Associated Press">Associated Press</a></span>
+</div><!--zox-author-box-name-wrap-->
+</div><!--zox-author-box-head-->
+<div class="zox-author-box-text left zoxrel">
+<p></p>
+</div><!--zox-author-box-text-->
+<div class="sw-author-social-media"></div>
+</div><!--zox-author-box-right-->
+</div><!--zox-author-box-wrap-->
+<div class="sw-author-posts">
+<h2>More from <a href="https://www.securityweek.com/contributors/associated-press/" rel="author" title="Posts by Associated Press">Associated Press</a></h2>
+<ul>
+<li><a href="https://www.securityweek.com/chinese-hackers-target-tibetan-websites-in-malware-attack-cybersecurity-group-says/">Chinese Hackers Target Tibetan Websites in Malware Attack, Cybersecurity Group Says</a></li><li><a href="https://www.securityweek.com/pentagon-secrets-leaker-jack-teixeira-sentenced-to-15-years-in-prison-by-a-federal-judge/">Pentagon Secrets Leaker Jack Teixeira Sentenced to 15 Years in Prison by a Federal Judge</a></li><li><a href="https://www.securityweek.com/canada-orders-tiktoks-canadian-business-to-be-dissolved-but-wont-block-app/">Canada Orders TikTok’s Canadian Business to Be Dissolved but Won’t Block App</a></li><li><a href="https://www.securityweek.com/south-korea-fines-meta-15-million-for-illegally-collecting-information-on-facebook-users/">South Korea Fines Meta $15 Million for Illegally Collecting Information on Facebook Users</a></li><li><a href="https://www.securityweek.com/ex-disney-worker-accused-of-hacking-computer-menus-to-add-profanities-errors/">Ex-Disney Worker Accused of Hacking Computer Menus to Add Profanities, Errors</a></li><li><a href="https://www.securityweek.com/prosecutors-seek-a-17-year-prison-term-for-pentagon-secrets-leaker-jack-teixeira/">Prosecutors Seek a 17-Year Prison Term for Pentagon Secrets Leaker Jack Teixeira</a></li><li><a href="https://www.securityweek.com/colorado-accidentally-put-voting-system-passwords-online-but-officials-say-election-is-secure/">Colorado Accidentally Put Voting System Passwords Online, but Officials Say Election Is Secure</a></li><li><a href="https://www.securityweek.com/italian-politicians-express-alarm-at-latest-data-breach-allegedly-affecting-800000-citizens/">Italian Politicians Express Alarm at Latest Data Breach Allegedly Affecting 800,000 Citizens</a></li> </ul>
+<h2>Latest News</h2>
+<ul>
+<li><a href="https://www.securityweek.com/homeland-security-department-releases-framework-for-using-ai-in-critical-infrastructure/">Homeland Security Department Releases Framework for Using AI in Critical Infrastructure</a></li><li><a href="https://www.securityweek.com/surepath-ai-raises-5-2-million-for-gen-ai-governance-solution/">SurePath AI Raises $5.2 Million for Gen-AI Governance Solution</a></li><li><a href="https://www.securityweek.com/glove-stealer-malware-bypasses-chromes-app-bound-encryption/">Glove Stealer Malware Bypasses Chrome’s App-Bound Encryption</a></li><li><a href="https://www.securityweek.com/in-other-news-tsa-wants-new-cyber-rules-scam-call-detection-in-android-sim-swappers-arrested/">In Other News: TSA Wants New Cyber Rules, Scam Call Detection in Android, SIM Swappers Arrested</a></li><li><a href="https://www.securityweek.com/known-brand-government-domains-hijacked-via-sitting-ducks-attacks/">Known Brand, Government Domains Hijacked via Sitting Ducks Attacks</a></li><li><a href="https://www.securityweek.com/ciso-forum-virtual-summit-is-today/">CISO Forum Virtual Summit: Full Session List On Demand</a></li><li><a href="https://www.securityweek.com/man-who-stole-and-laundered-roughly-1b-in-bitcoin-is-sentenced-to-5-years-in-prison/">Man Who Stole and Laundered Roughly $1B in Bitcoin Is Sentenced to 5 Years in Prison</a></li><li><a href="https://www.securityweek.com/cisa-warns-of-two-more-palo-alto-expedition-flaws-exploited-in-attacks/">CISA Warns of Two More Palo Alto Expedition Flaws Exploited in Attacks</a></li> </ul>
+</div>
+<div class="zox-org-wrap" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+<div class="zox-org-logo" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+<img src="https://www.securityweek.com/wp-content/uploads/2022/04/SecurityWeek-Small-Dark.png">
+<meta content="https://www.securityweek.com/wp-content/uploads/2022/04/SecurityWeek-Small-Dark.png" itemprop="url"/>
+</img></div><!--zox-org-logo-->
+<meta content="SecurityWeek" itemprop="name"/>
+</div><!--zox-org-wrap-->
+<div class="left zoxrel zox-com-click-25567 zox-com-but-25567" id="zox-comments-button">
+<span class="zox-comment-but-text"><i class="fas fa-comment"></i> <span class="dsq-postid" data-dsqidentifier="25567 https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/">Click to comment</span></span>
+</div><!--zox-comments-button-->
+<div id="disqus_thread"></div>
+</div><!--zox-post-body-width-->
+</div><!--zox-post-body-bot-->
+</div><!--zox-post-body-wrap--> </div><!--zox-post-main-->
+<div class="zox-post-side-wrap zox-post-side-noalp zoxrel zox-sticky-side">
+<div class="zoxrel zox-divs" id="zox-side-wrap">
+<div class="zox-side-widget widget_text" id="text-7"> <div class="textwidget"><div class="zox-widget-side-head"><h4 class="zox-widget-side-title"><span class="zox-widget-side-title">Trending</span></h4><div class="wpp-shortcode"><div class="wpp-shortcode-placeholder"></div></div>
+</div>
+</div><div class="zox-side-widget widget_text" id="text-5"> <div class="textwidget"><!-- Article Pages 300,600 [async] -->
+</div>
+</div><div class="widget_text zox-side-widget widget_custom_html" id="custom_html-5"><div class="textwidget custom-html-widget"><div class="sw-newsletter" style="margin: 0">
+<h2 class="zox-s-title2">Daily Briefing Newsletter</h2>
+<p class="zox-s-graph">Subscribe to the SecurityWeek Email Briefing to stay informed on the latest threats, trends, and technology, along with insightful columns from industry experts.</p>
+<form action="https://visitor.constantcontact.com/d.jsp" class="sw-newsletter-cc" method="post" name="ccoptin" style="" target="_blank">
+<input name="m" type="hidden" value="1102592012458"/>
+<input name="p" type="hidden" value="oi"/>
+<div class="form-item">
+<input class="form-text required" maxlength="128" name="ea" placeholder="Business Email Address..." size="60" type="text" value=""/>
+<input class="submit" name="go" type="submit" value="Subscribe"/>
+</div> </form> </div></div></div>
+<div class="sw-block-webinar">
+<div class="sw-webinar">
+<div class="zox-art-title">
+<a href="https://event.on24.com/wcc/r/4777305/4E3EE8EDF8ECC5851DBCE93DEFB4A51A?partnerref=hwidget" rel="bookmark" target="_blank">
+<h2 class="zox-s-title3"><span>Webinar:</span> Inside a Hacker’s Playbook: How Cybercriminals Use Deepfakes and BEC to Steal Company Funds</h2>
+</a>
+<div class="zox-byline-wrap">
+<span class="zox-byline-date">
+<i class="far fa-clock"></i>December 10, 2024 
+						</span>
+</div>
+</div>
+<p class="zox-s-graph">Don’t miss this Live Attack demonstration to learn how hackers operate and gain the knowledge to strengthen your defenses.</p>
+<a class="register-btn" href="https://event.on24.com/wcc/r/4777305/4E3EE8EDF8ECC5851DBCE93DEFB4A51A?partnerref=hwidget" target="_blank">Register</a>
+</div>
+</div>
+<div class="sw-block-webinar">
+<div class="sw-webinar">
+<div class="zox-art-title">
+<a href="https://www.icscybersecurityconference.com" rel="bookmark" target="_blank">
+<h2 class="zox-s-title3"><span>Event:</span> ICS Cybersecurity Conference</h2>
+</a>
+<div class="zox-byline-wrap">
+<span class="zox-byline-date">
+<i class="far fa-clock"></i>Oct. 21-24, 2024 | Atlanta
+						</span>
+</div>
+</div>
+<p class="zox-s-graph">The leading industrial cybersecurity conference for Operations, Control Systems and IT/OT Security professionals to connect on SCADA, DCS PLC and field controller cybersecurity.</p>
+<a class="register-btn" href="https://www.icscybersecurityconference.com" target="_blank">Watch Sessions</a>
+</div>
+</div><div class="zox-side-widget widget_sw_widget_moves" id="sw_widget_moves-2"><div class="zox-widget-side-head"><h4 class="zox-widget-side-title"><span class="zox-widget-side-title">People on the Move</span></h4></div><div class="industry-moves"><div class="sw-block-moves"><div class="zox-art-text sw-art-textsimple"><div class="zox-art-text-cont"><div class="zox-s-graph"><p>Erica Smith will become CFO at CyberArk, effective January 1, 2025.</p></div></div></div></div><div class="sw-block-moves"><div class="zox-art-text sw-art-textsimple"><div class="zox-art-text-cont"><div class="zox-s-graph"><p>AI-powered identity verification provider Vouched has appointed Neal Oman as CTO and Patrick Williams as Senior Director of Marketing.</p></div></div></div></div><div class="sw-block-moves"><div class="zox-art-text sw-art-textsimple"><div class="zox-art-text-cont"><div class="zox-s-graph"><p>Todd Chronert has joined MDR company Red Canary as its Chief Revenue Officer (CRO).</p></div></div></div></div><a class="learn-more more-expert-insights" href="/industry-moves">More People On The Move</a></div></div><div class="zox-side-widget widget_sw_widget_industryexperts" id="sw_widget_industryexperts-3"><div class="zox-widget-side-head"><h4 class="zox-widget-side-title"><span class="zox-widget-side-title">Expert Insights</span></h4></div><div class="sw-industry-experts sw-industry-experts-widget"><article class="zox-art-wrap zoxrel zox-art-main">
+<div class="sw-industry-experts-container">
+<div class="zox-art-title">
+<a href="https://www.securityweek.com/the-biggest-inhibitor-of-cybersecurity-the-human-element/" rel="bookmark">
+<h2 class="zox-s-title2">The Biggest Inhibitor of Cybersecurity: The Human Element</h2>
+</a>
+</div><!--zox-art-title-->
+<div class="zox-art-text sw-art-textsimple">
+<div class="zox-art-text-cont">
+<p class="zox-s-graph">
+<img class="avatar avatar-120 photo expert-profile-picture" height="120" loading="lazy" src="https://www.securityweek.com/wp-content/uploads/2023/01/Torsten-George.jpeg" width="120"/>
+<span>Essential steps such as security awareness training, MFA, and Zero Trust identity management help organizations reduce the human element and stay ahead in the cybersecurity curve.</span>
+<a class="expert-profile-name" href="https://www.securityweek.com/contributors/torsten-george/" rel="author">(Torsten George)</a>
+</p>
+</div><!--zox-art-text-cont-->
+</div><!--zox-art-text-->
+</div><!--zox-art-grid-->
+</article><article class="zox-art-wrap zoxrel zox-art-main">
+<div class="sw-industry-experts-container">
+<div class="zox-art-title">
+<a href="https://www.securityweek.com/designing-a-future-focused-cybersecurity-investment-strategy/" rel="bookmark">
+<h2 class="zox-s-title2">Designing a Future-focused Cybersecurity Investment Strategy</h2>
+</a>
+</div><!--zox-art-title-->
+<div class="zox-art-text sw-art-textsimple">
+<div class="zox-art-text-cont">
+<p class="zox-s-graph">
+<img class="avatar avatar-120 photo expert-profile-picture" height="120" loading="lazy" src="https://www.securityweek.com/wp-content/uploads/2022/04/Marc-Solomon_Bio.jpeg" width="120"/>
+<span>CISOs must attempt to define a strategic approach to technology investment that will protect the business over the long term.</span>
+<a class="expert-profile-name" href="https://www.securityweek.com/contributors/marc-solomon/" rel="author">(Marc Solomon)</a>
+</p>
+</div><!--zox-art-text-cont-->
+</div><!--zox-art-text-->
+</div><!--zox-art-grid-->
+</article><article class="zox-art-wrap zoxrel zox-art-main">
+<div class="sw-industry-experts-container">
+<div class="zox-art-title">
+<a href="https://www.securityweek.com/api-security-matters-the-risks-of-turning-a-blind-eye/" rel="bookmark">
+<h2 class="zox-s-title2">API Security Matters: The Risks of Turning a Blind Eye</h2>
+</a>
+</div><!--zox-art-title-->
+<div class="zox-art-text sw-art-textsimple">
+<div class="zox-art-text-cont">
+<p class="zox-s-graph">
+<img class="avatar avatar-120 photo expert-profile-picture" height="120" loading="lazy" src="https://www.securityweek.com/wp-content/uploads/2022/04/Josh-Goldfarb-F5.jpeg" width="120"/>
+<span>Willfully ignoring important security issues to make our lives easier is, unfortunately, something that does happen in the security field.</span>
+<a class="expert-profile-name" href="https://www.securityweek.com/contributors/joshua-goldfarb/" rel="author">(Joshua Goldfarb)</a>
+</p>
+</div><!--zox-art-text-cont-->
+</div><!--zox-art-text-->
+</div><!--zox-art-grid-->
+</article><article class="zox-art-wrap zoxrel zox-art-main">
+<div class="sw-industry-experts-container">
+<div class="zox-art-title">
+<a href="https://www.securityweek.com/back-to-the-future-securing-generative-ai/" rel="bookmark">
+<h2 class="zox-s-title2">Back to the Future, Securing Generative AI</h2>
+</a>
+</div><!--zox-art-title-->
+<div class="zox-art-text sw-art-textsimple">
+<div class="zox-art-text-cont">
+<p class="zox-s-graph">
+<img class="avatar avatar-120 photo expert-profile-picture" height="120" loading="lazy" src="https://www.securityweek.com/wp-content/uploads/2023/05/Matt-Honea.jpg" width="120"/>
+<span>While there are similar security challenges that parallel traditional security, we must understand that AI requires new ways to approach security.</span>
+<a class="expert-profile-name" href="https://www.securityweek.com/contributors/matt-honea/" rel="author">(Matt Honea)</a>
+</p>
+</div><!--zox-art-text-cont-->
+</div><!--zox-art-text-->
+</div><!--zox-art-grid-->
+</article><article class="zox-art-wrap zoxrel zox-art-main">
+<div class="sw-industry-experts-container">
+<div class="zox-art-title">
+<a href="https://www.securityweek.com/how-to-improve-the-security-of-ai-assisted-software-development/" rel="bookmark">
+<h2 class="zox-s-title2">How to Improve the Security of AI-Assisted Software Development</h2>
+</a>
+</div><!--zox-art-title-->
+<div class="zox-art-text sw-art-textsimple">
+<div class="zox-art-text-cont">
+<p class="zox-s-graph">
+<img class="avatar avatar-120 photo expert-profile-picture" height="120" loading="lazy" src="https://www.securityweek.com/wp-content/uploads/2024/08/Matias_Madou.jpg" width="120"/>
+<span>CISOs need an AI visibility and KPI plan that supports a “just right” balance to enable optimal security and productivity outcomes.</span>
+<a class="expert-profile-name" href="https://www.securityweek.com/contributors/matias-madou/" rel="author">(Matias Madou)</a>
+</p>
+</div><!--zox-art-text-cont-->
+</div><!--zox-art-text-->
+</div><!--zox-art-grid-->
+</article></div></div> </div><!--zox-side-wrap-->
+</div><!--zox-post-side-wrap-->
+</div><!--zox-post-main-wrap-->
+</div><!--zox-post-width-->
+</div><!--zox-post-main-grid-->
+<div class="zox-post-soc-scroll">
+<ul class="zox-post-soc-list left zoxrel">
+<a data-cf-modified-67b78db04701d80957604917-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://www.facebook.com/sharer.php?u=https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/&amp;t=Serious Breach at Uber Spotlights Hacker Social Deception', 'facebookShare', 'width=626,height=436'); return false;" title="Share on Facebook">
+<li class="zox-post-soc-fb">
+<i class="fab fa-facebook-f"></i>
+</li>
+</a>
+<a data-cf-modified-67b78db04701d80957604917-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://twitter.com/share?text=Serious Breach at Uber Spotlights Hacker Social Deception -&amp;url=https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/', 'twitterShare', 'width=626,height=436'); return false;" title="Tweet This Post">
+<li class="zox-post-soc-twit">
+<i class="fab fa-twitter"></i>
+</li>
+</a>
+<li class="zox-post-soc-copy">
+<i class="fas fa-link"></i>
+</li>
+<a href="https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/#respond">
+<li class="zox-post-soc-com zox-com-click">
+<i class="far fa-comment"></i>
+</li>
+</a>
+<li class="zox-post-soc-more zox-soc-scroll-click">
+<i class="fas fa-ellipsis-h"></i>
+<div class="zox-soc-more-scroll">
+<ul class="zox-soc-more-list">
+<a data-cf-modified-67b78db04701d80957604917-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://share.flipboard.com/bookmarklet/popout?v=Serious Breach at Uber Spotlights Hacker Social Deception&amp;url=https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/&amp;utm_medium=article-share&amp;utm_campaign=tools&amp;utm_source=SecurityWeek', 'flipboardShare', 'width=626,height=436'); return false;" title="Share on Flipboard">
+<li class="zox-post-soc-flip">
+<p>Flipboard</p>
+<i class="fab fa-flipboard"></i>
+</li>
+</a>
+<a data-cf-modified-67b78db04701d80957604917-="" href="#" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://www.reddit.com/submit?url=https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/&amp;title=Serious Breach at Uber Spotlights Hacker Social Deception', 'redditShare', 'width=626,height=436'); return false;" title="Share on Reddit">
+<li class="zox-post-soc-redd">
+<p>Reddit</p>
+<i class="fab fa-reddit-alien"></i>
+</li>
+</a>
+<a class="zox-whats-main" href="https://web.whatsapp.com/send?text=Serious Breach at Uber Spotlights Hacker Social Deception https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/">
+<li class="zox-post-soc-what">
+<p>Whatsapp</p>
+<i class="fab fa-whatsapp"></i>
+</li>
+</a>
+<a class="zox-whats-mob" href="whatsapp://send?text=Serious Breach at Uber Spotlights Hacker Social Deception https://www.securityweek.com/serious-breach-uber-spotlights-hacker-social-deception/">
+<li class="zox-post-soc-what">
+<p>Whatsapp</p>
+<i class="fab fa-whatsapp"></i>
+</li>
+</a>
+<a href="/cdn-cgi/l/email-protection#ad92ded8cfc7c8ced990fec8dfc4c2d8de8defdfc8cccec58dccd98df8cfc8df8dfeddc2d9c1c4cac5d9de8de5cccec6c8df8dfec2cec4ccc18de9c8cec8ddd9c4c2c38bccc0dd96efe2e9f490e48dcbc2d8c3c98dd9c5c4de8dccdfd9c4cec1c88dc4c3d9c8dfc8ded9c4c3ca8dccc3c98dd9c5c2d8cac5d98dc2cb8ddec5ccdfc4c3ca8dc4d98ddac4d9c58dd4c2d8838deec5c8cec68dc4d98dc2d8d9978dc5d9d9ddde978282dadada83dec8ced8dfc4d9d4dac8c8c683cec2c082dec8dfc4c2d8de80cfdfc8cccec580d8cfc8df80deddc2d9c1c4cac5d9de80c5cccec6c8df80dec2cec4ccc180c9c8cec8ddd9c4c2c382">
+<li class="zox-post-soc-email">
+<p>Email</p>
+<i class="fas fa-envelope"></i>
+</li>
+</a>
+</ul>
+</div><!--zox-soc-more-scroll-->
+</li>
+</ul>
+</div><!--zox-post-soc-scroll-->
+</div><!--zox-article-wrap-->
+<div class="zox-post-more-wrap left zoxrel zox100"></div><!--zox-post-more-wrap-->
+ </meta></div></article><!--zox-post-wrap-->
+</div><!--zox-main-body-wrap-->
+<footer class="left zoxrel zox100" id="zox-foot-wrap">
+<div class="zox-head-width">
+<div class="sw-footer-top">
+<div class="sw-footer-top-logo">
+<a href="https://www.securityweek.com/"><img alt="SecurityWeek" data-rjs="2" src="https://www.securityweek.com/wp-content/uploads/2022/04/SecurityWeek-Small-Dark@2x.png"/></a>
+</div>
+<div class="sw-footer-top-social-media">
+<div class="zox-foot-soc right relative">
+<ul class="zox-foot-soc-list left relative">
+<li><a class="fab fa-facebook-f" href="https://www.facebook.com/SecurityWeekCom-366251913615/" target="_blank"></a></li>
+<li><a class="fab fa-twitter" href="https://twitter.com/securityweek" target="_blank"></a></li>
+<li><a class="fab fa-linkedin-in" href="https://www.linkedin.com/company/securityweek/" target="_blank"></a></li>
+</ul>
+</div><!--zox-foot-soc-->
+</div>
+</div>
+</div>
+<div class="zox-head-width">
+<div class="sw-footer">
+<div class="sw-footer-menus">
+<div class="menu-left">
+<h3 class="sw-menu-title">Popular Topics</h3>
+<div class="menu-popular-topics-container"><ul class="menu" id="menu-popular-topics"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-26610" id="menu-item-26610"><a href="https://www.securityweek.com/">Cybersecurity News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32022" id="menu-item-32022"><a href="https://www.icscybersecurityconference.com/">Industrial Cybersecurity</a></li>
+</ul></div> </div>
+<div class="menu-middle-left">
+<h3 class="sw-menu-title">Security Community</h3>
+<div class="menu-security-community-container"><ul class="menu" id="menu-security-community"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26497" id="menu-item-26497"><a href="https://www.securitysummits.com" rel="noopener" target="_blank">Virtual Cybersecurity Events</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26499" id="menu-item-26499"><a href="https://gateway.on24.com/wcc/eh/1220486/securityweek-webcast-library" rel="noopener" target="_blank">Webcast Library</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26500" id="menu-item-26500"><a href="https://www.cisoforum.com/" rel="noopener" target="_blank">CISO Forum</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36934" id="menu-item-36934"><a href="https://www.airisksummit.com/?utm_source=securityweek" rel="noopener" target="_blank">AI Risk Summit</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26518" id="menu-item-26518"><a href="https://www.icscybersecurityconference.com/" rel="noopener" target="_blank" title="ICS Cybersecurity Conference">ICS Cybersecurity Conference</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26521" id="menu-item-26521"><a href="https://www.securityweek.com/subscribe/">Cybersecurity Newsletters</a></li>
+</ul></div> </div>
+<div class="menu-middle-right">
+<h3 class="sw-menu-title">Stay Intouch</h3>
+<div class="menu-stay-intouch-container"><ul class="menu" id="menu-stay-intouch"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26501" id="menu-item-26501"><a href="https://www.linkedin.com/groups?mostPopular=&amp;gid=3551517">Cyber Weapon Discussion Group</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26504" id="menu-item-26504"><a href="/feed">RSS Feed</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26503" id="menu-item-26503"><a href="https://www.linkedin.com/groups/?gid=4439585">Security Intelligence Group</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35239" id="menu-item-35239"><a href="https://www.linkedin.com/company/securityweek/">Follow SecurityWeek on LinkedIn</a></li>
+</ul></div> </div>
+<div class="menu-right">
+<h3 class="sw-menu-title">About SecurityWeek</h3>
+<div class="menu-about-securityweek-container"><ul class="menu" id="menu-about-securityweek"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26506" id="menu-item-26506"><a href="https://advertise.securityweek.com/info" rel="noopener" target="_blank">Advertising</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26507" id="menu-item-26507"><a href="https://advertise.securityweek.com/events" rel="noopener" target="_blank">Event Sponsorships</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26508" id="menu-item-26508"><a href="https://advertise.securityweek.com/contact-securityweek" rel="noopener" target="_blank">Writing Opportunities</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26509" id="menu-item-26509"><a href="https://advertise.securityweek.com/contact-securityweek" rel="noopener" target="_blank">Feedback/Contact Us</a></li>
+</ul></div> </div>
+</div>
+<div class="sw-footer-showcase sw-footer-tips">
+<div class="sw-footer-showcase">
+<h3 class="sw-menu-title">News Tips</h3>
+<p>Got a confidential news tip? We want to hear from you.</p>
+<a href="/submit-tip">Submit Tip</a>
+</div>
+<div class="sw-footer-showcase">
+<h3 class="sw-menu-title">Advertising</h3>
+<p>Reach a large audience of enterprise cybersecurity professionals</p>
+<a href="https://advertise.securityweek.com/info">Contact Us</a>
+</div>
+</div>
+<div class="sw-footer-newsletter">
+<div class="sw-footer-showcase">
+<h3 class="sw-menu-title">Daily Briefing Newsletter</h3>
+<p>Subscribe to the SecurityWeek Daily Briefing and get the latest content delivered to your inbox.</p>
+<form action="https://visitor.constantcontact.com/d.jsp" class="sw-newsletter-cc" method="post" name="ccoptin" style="" target="_blank">
+<input name="m" type="hidden" value="1102592012458"/>
+<input name="p" type="hidden" value="oi"/>
+<div class="form-item">
+<input class="form-text required" maxlength="128" name="ea" placeholder="Business Email Address..." size="60" type="text" value=""/>
+<input class="submit" name="go" type="submit" value="Subscribe"/>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="zox-head-width">
+<div class="sw-footer-copyright">
+<div class="menu-footer-menu-legal-container"><ul class="menu" id="menu-footer-menu-legal"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-26522" id="menu-item-26522"><a href="https://www.securityweek.com/privacy-policy/" rel="privacy-policy">Privacy Policy</a></li>
+</ul></div> <p>Copyright © 2024 SecurityWeek ®, a Wired Business Media Publication. All Rights Reserved.</p>
+</div>
+</div>
+</footer><!--zox-foot-wrap-->
+</div><!--zox-site-wall-small-->
+</div><!--zox-site-grid-->
+</div><!--zox-site-main-->
+</div><!--zox-site-wall-->
+<div class="zox-fly-top back-to-top">
+<span class="fas fa-angle-up"></span>
+</div><!--zox-fly-top-->
+</div><!--zox-site-->
+<div class="zox-fly-fade zox-fly-but-click"></div><!--zox-fly-fade-->
+<div class="security-newsletter-container fade-up">
+<div class="security-newsletter-signup">
+<div>
+<h2>Daily Briefing Newsletter</h2>
+<p class="security-newsletter-text">Subscribe to the SecurityWeek Email Briefing to stay informed on the latest cybersecurity news, threats, and expert insights. Unsubscribe at any time.</p>
+</div>
+<form action="https://visitor.constantcontact.com/d.jsp" class="sw-newsletter-cc" method="post" name="ccoptin" target="_blank">
+<input name="m" type="hidden" value="1102592012458"/>
+<input name="p" type="hidden" value="oi"/>
+<div class="form-item">
+<input class="form-text required" maxlength="128" name="ea" placeholder="Business Email Address..." required="" type="text">
+<input class="submit" name="go" type="submit" value="Subscribe"/>
+</input></div>
+</form>
+<span class="far fa-times-circle security-newsletter-close" id="closeDbn"></span>
+</div>
+</div>
+
+<div aria-modal="false" class="pum pum-overlay pum-theme-33990 pum-theme-content-only popmake-overlay pum-click-to-close auto_open click_open" data-popmake='{"id":33999,"slug":"welcome-popup-ad","theme_id":33990,"cookies":[{"event":"on_popup_close","settings":{"name":"pum-33999","key":"","session":null,"path":true,"time":"1 day"}}],"triggers":[{"type":"auto_open","settings":{"cookie_name":["pum-33999"],"delay":"2000"}},{"type":"click_open","settings":{"extra_selectors":"","cookie_name":null}}],"mobile_disabled":true,"tablet_disabled":null,"meta":{"display":{"stackable":false,"overlay_disabled":false,"scrollable_content":false,"disable_reposition":false,"size":"medium","responsive_min_width":"280px","responsive_min_width_unit":false,"responsive_max_width":"640px","responsive_max_width_unit":false,"custom_width":"640px","custom_width_unit":false,"custom_height":"380px","custom_height_unit":false,"custom_height_auto":false,"location":"center","position_from_trigger":false,"position_top":"100","position_left":"0","position_bottom":"0","position_right":"0","position_fixed":false,"animation_type":"fade","animation_speed":"250","animation_origin":"center top","overlay_zindex":false,"zindex":"1999999999"},"close":{"text":"Close","button_delay":"3000","overlay_click":"1","esc_press":false,"f4_press":false},"click_open":[]}}' id="pum-33999" role="dialog">
+<div class="pum-container popmake theme-33990 pum-responsive pum-responsive-medium responsive size-medium" id="popmake-33999">
+<div class="pum-content popmake-content" tabindex="0">
+<p><!-- Welcome-640x480 [async] --><br/>
+<br/>
+</p>
+</div>
+<button aria-label="Close" class="pum-close popmake-close" type="button">Close</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CFWA -->
+
+<!-- End CFWA -->
+
+</body>
+</html>

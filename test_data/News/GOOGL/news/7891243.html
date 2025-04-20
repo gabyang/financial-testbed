@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Troy Hunt: Are your apps giving one device a favourable security position over the other?</title>
+<meta content="" name="description"/>
+<meta content="True" name="HandheldFriendly">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://www.troyhunt.com/assets/css/main.min.css?v=c2030c538c" rel="stylesheet"/>
+
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" referrerpolicy="no-referrer" rel="stylesheet">
+<link href="https://www.troyhunt.com/content/images/size/w256h256/2021/12/Troy-Hunt-LM-0059_square.png" rel="icon" type="image/png"/>
+<link href="https://www.troyhunt.com/are-your-apps-giving-one-device/" rel="canonical"/>
+<meta content="no-referrer-when-downgrade" name="referrer"/>
+<meta content="Troy Hunt" property="og:site_name"/>
+<meta content="article" property="og:type"/>
+<meta content="Are your apps giving one device a favourable security position over the other?" property="og:title"/>
+<meta content="I run a workshop which I often do privately for organisations or as a part of
+various conferences which I title “Hack Yourself First”. I wrote about what I do
+in these recently in relation to my upcoming US workshops next month
+[https://www.troyhunt.com/2015/07/its-app-sec-in-usa-and-hack-yourself.html]" property="og:description"/>
+<meta content="https://www.troyhunt.com/are-your-apps-giving-one-device/" property="og:url"/>
+<meta content="https://www.troyhunt.com/content/images/2016/02/57585757image11.png" property="og:image"/>
+<meta content="2015-08-13T23:00:00.000Z" property="article:published_time"/>
+<meta content="2015-08-13T23:00:00.000Z" property="article:modified_time"/>
+<meta content="Security" property="article:tag"/>
+<meta content="https://www.facebook.com/troyahunt" property="article:publisher"/>
+<meta content="https://www.facebook.com/troyahunt" property="article:author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Are your apps giving one device a favourable security position over the other?" name="twitter:title"/>
+<meta content="I run a workshop which I often do privately for organisations or as a part of
+various conferences which I title “Hack Yourself First”. I wrote about what I do
+in these recently in relation to my upcoming US workshops next month
+[https://www.troyhunt.com/2015/07/its-app-sec-in-usa-and-hack-yourself.html]" name="twitter:description"/>
+<meta content="https://www.troyhunt.com/are-your-apps-giving-one-device/" name="twitter:url"/>
+<meta content="https://www.troyhunt.com/content/images/2016/02/57585757image11.png" name="twitter:image"/>
+<meta content="Written by" name="twitter:label1"/>
+<meta content="Troy Hunt" name="twitter:data1"/>
+<meta content="Filed under" name="twitter:label2"/>
+<meta content="Security" name="twitter:data2"/>
+<meta content="@troyhunt" name="twitter:site"/>
+<meta content="@troyhunt" name="twitter:creator"/>
+<meta content="287" property="og:image:width"/>
+<meta content="151" property="og:image:height"/>
+
+<meta content="Ghost 5.101" name="generator"/>
+<link href="https://www.troyhunt.com/rss/" rel="alternate" title="Troy Hunt" type="application/rss+xml"/>
+
+
+<link href="https://www.troyhunt.com/webmentions/receive/" rel="webmention"/>
+
+<link href="/public/cards.min.css?v=c2030c538c" rel="stylesheet" type="text/css"/>
+
+<a href="https://infosec.exchange/@troyhunt" rel="me">Mastodon</a>
+
+
+</link></meta></head>
+<body class="post-template tag-security">
+<div id="container">
+<div class="header_block container">
+<div class="header">
+<button class="header_navMenu_button i-menu" id="open-button"></button>
+<div class="header_navMenu_wrap">
+<nav role="navigation">
+<ul class="header_navMenu">
+<li class="navMenu_list" role="presentation">
+<a class="navMenu_link" href="https://www.troyhunt.com/">Home</a>
+</li>
+<li class="navMenu_list" role="presentation">
+<a class="navMenu_link" href="https://www.troyhunt.com/workshops/">Workshops</a>
+</li>
+<li class="navMenu_list" role="presentation">
+<a class="navMenu_link" href="https://www.troyhunt.com/speaking/">Speaking</a>
+</li>
+<li class="navMenu_list" role="presentation">
+<a class="navMenu_link" href="https://www.troyhunt.com/media/">Media</a>
+</li>
+<li class="navMenu_list" role="presentation">
+<a class="navMenu_link" href="https://www.troyhunt.com/about/">About</a>
+</li>
+<li class="navMenu_list" role="presentation">
+<a class="navMenu_link" href="https://www.troyhunt.com/contact/">Contact</a>
+</li>
+<li class="navMenu_list" role="presentation">
+<a class="navMenu_link" href="https://www.troyhunt.com/sponsorship/">Sponsor</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="header_socialIcons light">
+<ul>
+<li class="socialIcons_link">
+<a class="fa-brands fa-x-twitter" href="https://twitter.com/troyhunt"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa-brands fa-facebook-f" href="https://www.facebook.com/troyahunt"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/troyhunt"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa-brands fa-youtube" href="https://www.youtube.com/user/troyhuntdotcom"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa fa-rss" href="https://feeds.feedburner.com/TroyHunt"></a>
+</li>
+</ul> </div>
+</div>
+</div>
+<div class="sponsor_bar content">
+<p id="sponsor_message"><strong>Sponsored by:</strong> <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i></p>
+</div>
+<div class="post_header container" style="background-image: url(/content/images/2016/02/57585757image11.png)">
+<div class="hover"></div>
+</div>
+<div class="main-wrapper">
+<div class="content-wrapper">
+<div class="article-open container no-cover">
+<div class="hover"></div>
+<article class="article-open_item wrap">
+<header class="post_head">
+<h1>Are your apps giving one device a favourable security position over the other?</h1>
+<div class="post_socialIcons">
+<ul>
+<li class="socialIcons_link">
+<a class="fa-brands fa-x-twitter article-open_window" href="https://twitter.com/share?url=https://www.troyhunt.com/are-your-apps-giving-one-device/&amp;text=Troy%20Hunt%3A%20Are%20your%20apps%20giving%20one%20device%20a%20favourable%20security%20position%20over%20the%20other%3F"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa-brands fa-facebook-f article-open_window" href="https://www.facebook.com/sharer/sharer.php?u=https://www.troyhunt.com/are-your-apps-giving-one-device/"></a>
+</li>
+<li class="socialIcons_link linkedin">
+<a class="fa-brands fa-linkedin-in article-open_window" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.troyhunt.com/are-your-apps-giving-one-device/"></a>
+</li>
+<li class="socialIcons_link reddit article-open_window">
+<a class="fa-brands fa-reddit-alien" href="https://reddit.com/submit?url=https://www.troyhunt.com/are-your-apps-giving-one-device/&amp;title=Troy%20Hunt%3A%20Are%20your%20apps%20giving%20one%20device%20a%20favourable%20security%20position%20over%20the%20other%3F"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa fa-envelope" href="mailto:?subject=Troy%20Hunt%3A%20Are%20your%20apps%20giving%20one%20device%20a%20favourable%20security%20position%20over%20the%20other%3F&amp;body=https://www.troyhunt.com/are-your-apps-giving-one-device/"></a>
+</li>
+</ul>
+</div>
+<span class="post_info">14 August 2015</span>
+</header>
+</article>
+</div>
+<main class="article-open_content container">
+<article class="wrap">
+<section class="article_text post">
+<!--kg-card-begin: markdown--><p>I run a workshop which I often do privately for organisations or as a part of various conferences which I title “Hack Yourself First”. I wrote about what I do in these recently in relation to <a href="https://www.troyhunt.com/2015/07/its-app-sec-in-usa-and-hack-yourself.html">my upcoming US workshops next month</a> and <a href="https://www.troyhunt.com/2015/07/its-time-to-visit-london.html">the ones I’ll be doing in London in Jan</a> but in short, it’s a couple of days of very hands-on exercises where we look at a heap of different aspects of security in a way that’s designed to really resonate with developers. I did a massively compressed version of this at the <a href="https://www.dddmelbourne.com/?ref=troyhunt.com">DDD Melbourne</a> event on the weekend and there was an outcome which I thought was worth sharing. It’s both an interesting illustration of a risk and an exemplary example of how the organisation involved dealt with it.</p> <p>One of the exercises I do (and the one we focussed on at DDD) involves looking at how mobile apps communicate across the web. We look at how to intercept traffic (both HTTP and HTTPS) using <a href="http://www.telerik.com/fiddler?ref=troyhunt.com">Fiddler</a> (we use <a href="http://www.charlesproxy.com/?ref=troyhunt.com">Charles</a> for the Mac folks) and identify common security anti-patterns in the way apps talk to APIs. Participants do this with their own devices and use their usual apps installed on the device; they just use them in the way they were intended to be used and simply watch the traffic. There’s often some pretty interesting stuff found and this session didn’t disappoint.</p> <p>One of the guys opened up the <a href="http://www.realestate.com.au/?ref=troyhunt.com">realestate.com.au</a> app which is one of our leading property rental and sales services down here in Australia. This is what it looks like:</p> <p><img alt="image" border="0" height="506" src="https://www.troyhunt.com/content/images/2016/02/57465745image11.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" title="image" width="287"/></p> <p>You may notice this is on an Android – more on the significance of that shortly. Anyway, he puts in a username and password, hits the “Sign in” button and sees this in Fiddler:</p><a name="more"></a> <p><img alt="image" border="0" height="151" src="https://www.troyhunt.com/content/images/2016/02/57425741image2.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" title="image" width="465"/></p> <p>He immediately spotted that the first request to /login/session was sent over HTTP or in other words, an unencrypted connection. Here’s the raw request itself:</p><pre>POST http://www.realestate.com.au/login/session HTTP/1.1
+Content-Type: application/json; charset=utf-8
+Content-Length: 46
+Host: www.realestate.com.au
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Cookie: reauid=1b834768611900008756c5557abb0b00636d0000
+User-Agent: okhttp/2.2.0
+<p>{"<a href="mailto:email%22:%22david@smith.com">email":"david@smith.com</a>","password":"aaaaa"}<br/>
+</p></pre>
+<p>So there you have it – credentials sent over an unencrypted connection! Actually, that’s what happens in the first request in that Fiddler trace above. That request results in a 301 “permanent redirect” which then causes the client to post the creds to the secure scheme in the third request (the second one is an <a href="https://groups.google.com/forum/?ref=troyhunt.com#!topic/httpfiddler/RCkzE3HhhxY">HTTP CONNECT tunnel</a>). The account is invalid hence the 400 response but the point is that they went out across the wire insecurely in the first place.</p>
+<p>But here’s what I found most interesting and worthy of writing about – I then tried doing the same thing from my iPhone where the app looks like this:</p>
+<p><img alt="image" border="0" height="506" src="https://www.troyhunt.com/content/images/2016/02/57405739image8.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" title="image" width="287"/></p>
+<p>Obviously it’s a different app running on iOS rather than on ‘droid but clearly it has the same intended purpose. Here’s what happens when you attempt to login from iOS:</p>
+<p><img alt="image" border="0" height="151" src="https://www.troyhunt.com/content/images/2016/02/57445743image5.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" title="image" width="465"/></p>
+<p>The first request is for Omniture analytics (now part of Adobe) which is not unusual. It then creates the tunnel after which the interesting one is the request to /login/session which looks like this:</p><pre>POST https://www.realestate.com.au/login/session HTTP/1.1
+Host: www.realestate.com.au
+Content-Type: application/json
+X-NewRelic-ID: UAQDUF9WGwsAVFBQDgY=
+Cookie: mid=8145197813623482640; reauid=55b107ca49590000e890c655010d0500f68d0300
+Connection: keep-alive
+Proxy-Connection: keep-alive
+Accept: application/json
+User-Agent: realestate.com.au/2.11.0 (iPhone; iOS 8.4; Scale/3.00)
+Accept-Language: en;q=1
+Accept-Encoding: gzip, deflate
+Content-Length: 46
+<p>{"<a href="mailto:email%22:%22david@smith.com">email":"david@smith.com</a>","password":"aaaaa"}<br/>
+</p></pre>
+<p>Just in case it’s not already obvious what the significance is in this request versus the Android one, let’s do a diff on the two:</p>
+<p><img alt="image" border="0" height="505" src="https://www.troyhunt.com/content/images/2016/02/57365735image14.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; border-left: 0px; display: inline; padding-right: 0px" title="image" width="884"/></p>
+<p><strong>By default, the iOS app goes out over HTTPS from the very beginning compared to the Android app that begins communicating insecurely and <em>then</em> redirects to the secure scheme.</strong> It’s exactly the same resource being requested, it’s just not secure by default with the Android app.</p>
+<p>Let me quickly clarify <em>why</em>I’m able to see traffic sent over HTTPS in the that iOS request: my iPhone was <a href="http://docs.telerik.com/fiddler/configure-fiddler/tasks/ConfigureForiOS?ref=troyhunt.com">configured to use Fiddler as a proxy</a> which meant all HTTP/S requests pass through it. Now under normal circumstances, a proxy like this (which is effectively a man in the middle) can’t see the <em>contents</em>of HTTPS traffic and indeed that’s precisely why we have SSL in the first place. However, if you install Fiddler’s root certificate on the device as explained in that link, Fiddler can now go backwards and forwards with the server using the legitimate certificate and also go backwards and forwards with the device using it’s own self-signed certificate <em>which the device now trusts because of the installed root certificate</em>. The request above from iOS is secure, but that doesn’t mean that I can’t intercept, read and manipulate it when I also control the device. That in itself is a poignant observation that often comes as news to developers.</p>
+<p>Here’s why I find the Android app situation significant: it’s a dead easy mistake to make. There is literally one character missing in someone’s config file for the Android app and that makes the difference between having a strongly encrypted connection from the device to the server versus having zero encryption at all on the first request. The fact that the login page simply redirects the insecure request then hides the misconfiguration, but it’s an understandable pattern because that’s what we normally do when we want to enforce HTTPS on a website – we 301 to the secure scheme if it’s accessed over HTTP.</p>
+<p>There are multiple things that can be done to greatly reduce the risk of something like this making it through into the wild:</p>
+<ol>
+<li><strong>Don’t support the insecure scheme on POST requests to sensitive resources.</strong> This one could have easily been averted on the server side simply by not redirecting the request. Identifying that a sensitive resource like a login should <em>only ever</em> be called securely and failing immediately if it’s not would have caused this problem to bubble up much sooner. Fail early – the developer will quickly work out why their request isn’t working during build time.</li>
+<li><strong>Lock down APIs to precisely the way you expect them to be called.</strong> References to APIs are coded into consuming apps so it’s not like you need to cater for the user typing in http://… or the browser defaulting to the HTTP scheme. In fact I’d take it a step further and even put those APIs on their own domain (or subdomain). You could then turn off the HTTP scheme for the entire thing and also get some other benefits in terms of how you might tune and scale the API independently of the companion website.</li>
+<li><strong>Always proxy your apps and look at the traffic.</strong> It took one guy a few minutes to identify this problem just by knowing the pattern to look for. It’s much easier for risks like this to be hidden behind rich client apps because there’s not the same visibility of requests as in the browser where you can easily see them in the URL or the dev tools.</li></ol>
+<p>But I also want to give credit to the REA Group who runs realestate.com.au. I emailed the details of this to a contact I have in the security team on Sunday morning and I had a response <em>seven minutes later</em>. On a Sunday! The very next day they had the issue fixed and an updated app in the Google Play store. I also told them I was going to write this up once the issue was resolved and they were absolutely fine with it. An issue like this is so easy to slip through into production, how it’s handled is the real test of the organisation IMHO.</p>
+<p>So check your apps folks, most of the time when I run these workshops people find something of a similar nature just because it’s so easy to make the mistake. Then again, it’s just as easy for you – or anyone else – to find those mistakes!</p>
+<!--kg-card-end: markdown-->
+<section class="article-open_tag">
+<a class="tag" href="/tag/security/">Security</a>
+</section>
+</section>
+<footer class="post">
+<section class="article-open_shere">
+<a class="article-open_shere-twitter article-open_window" href="https://twitter.com/share?text=Troy%20Hunt%3A%20Are%20your%20apps%20giving%20one%20device%20a%20favourable%20security%20position%20over%20the%20other%3F&amp;url=https://www.troyhunt.com/are-your-apps-giving-one-device/"><i class="fa-brands fa-x-twitter"></i> Tweet</a>
+<a class="article-open_shere-facebook article-open_window" href="https://www.facebook.com/sharer/sharer.php?u=https://www.troyhunt.com/are-your-apps-giving-one-device/"><i class="fa-brands fa-facebook-f"></i> Post</a>
+<a class="article-open_shere-linkedin article-open_window" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.troyhunt.com/are-your-apps-giving-one-device/"><i class="fa-brands fa-linkedin-in"></i> Update</a>
+<a class="article-open_shere-email" href="mailto:?subject=Troy%20Hunt%3A%20Are%20your%20apps%20giving%20one%20device%20a%20favourable%20security%20position%20over%20the%20other%3F&amp;body=https://www.troyhunt.com/are-your-apps-giving-one-device/"><i class="fa fa-envelope"></i> Email</a>
+<a class="article-open_shere-feed" href="https://feeds.feedburner.com/TroyHunt"><i class="fa fa-rss"></i> RSS</a>
+</section>
+<section class="article-open_author">
+<figure class="article-open_author_image">
+<div class="img" style="background-image: url(//www.gravatar.com/avatar/c5531bfb7d76cdaa370c7baf6053288d?s=250&amp;d=mm&amp;r=x)"><span class="hidden">Troy Hunt's Picture</span></div>
+</figure>
+<div class="article-open_author_bio">
+<h5 itemprop="author" itemscope="" itemtype="http://schema.org/Person">Troy Hunt</h5>
+<p>Hi, I'm Troy Hunt, I write this blog, create courses for Pluralsight and am a Microsoft Regional Director and MVP who travels the world speaking at events and training technology professionals <a class="article_link-more fa fa-long-arrow-right" href="/about"></a></p>
+</div>
+</section>
+<div id="disqus_thread"></div>
+<div data="https://www.troyhunt.com/are-your-apps-giving-one-device/" id="disqus_post_url"></div>
+<div data="ghost-1840" id="disqus_post_identifier"></div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</footer>
+</article>
+</main>
+</div>
+<div class="content-sidebar">
+<div class="widget sidebar-featured">
+<h4 class="sidebar-featured-header">Troy Hunt</h4>
+<p>Hi, I'm Troy Hunt, I write this blog, run "Have I Been Pwned" and am a Microsoft Regional Director and MVP who travels the world speaking at events and training technology professionals <a class="article_link-more fa fa-long-arrow-right" href="/about"></a></p>
+</div>
+<div class="widget sidebar-featured">
+<h4 class="sidebar-featured-header">Upcoming Events</h4>
+<p>I often run <a href="/workshops">private workshops</a> around these, here's upcoming events I'll be at:</p>
+<div id="events_list"><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i></div>
+</div>
+<div class="widget sidebar-featured">
+<h4 class="sidebar-featured-header">Must Read</h4>
+<ul>
+<li><a href="/data-breach-disclosure-101-how-to-succeed-after-youve-failed/">Data breach disclosure 101: How to succeed after you've failed</a></li>
+<li><a href="/data-from-connected-cloudpets-teddy-bears-leaked-and-ransomed-exposing-kids-voice-messages/">Data from connected CloudPets teddy bears leaked and ransomed, exposing kids' voice messages</a></li>
+<li><a href="/heres-how-i-verify-data-breaches/">Here's how I verify data breaches</a></li>
+<li><a href="/when-nation-is-hacked-understanding/">When a nation is hacked: Understanding the ginormous Philippines data breach</a></li>
+<li><a href="/how-i-optimised-my-life-to-make-my-job/">How I optimised my life to make my job redundant</a></li>
+</ul>
+</div>
+<div class="widget sidebar-featured">
+<a class="pluralsight-logo" href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2F">
+<svg viewbox="0 0 344.3 74.3" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"><g><g><g><lineargradient gradientunits="userSpaceOnUse" id="SVGID_1_" x1="37.3433" x2="37.3433" y1="2.431" y2="73.614"><stop offset="0" style="stop-color:#F05A28"></stop><stop offset="1" style="stop-color:#EB008B"></stop></lineargradient><circle cx="37.3" cy="37.3" fill="url(#SVGID_1_)" r="36"></circle></g><g><path d="M31.2,24l23.1,13.3L31.2,50.6L31.2,24 M28.1,18.6l0,37.4l32.4-18.7L28.1,18.6L28.1,18.6z" fill="#FFFFFF"></path><path d="M23.7,28l16,9.3l-16,9.3V28 M20.6,22.7v29.2L46,37.3L20.6,22.7L20.6,22.7z" fill="#FFFFFF"></path></g></g><g><g><path d="M100.3,37.7c2.6,0,4.2-1.4,4.2-3.5v-0.1c0-2.3-1.6-3.5-4.2-3.5h-4v7H100.3z M92.9,27.5h7.7c4.5,0,7.4,2.6,7.4,6.5v0.1c0,4.4-3.5,6.7-7.8,6.7h-3.9V47h-3.4V27.5z" fill="#231F20"></path></g><polygon fill="#231F20" points="116.5,27.5 119.9,27.5 119.9,43.9 130.2,43.9 130.2,47 116.5,47 "></polygon><g><path d="M137.9,38.8V27.5h3.4v11.1c0,3.6,1.9,5.6,4.9,5.6c3,0,4.9-1.8,4.9-5.4V27.5h3.4v11.1c0,5.8-3.3,8.8-8.4,8.8C141.1,47.4,137.9,44.4,137.9,38.8" fill="#231F20"></path><path d="M172.7,37.2c2.5,0,4-1.3,4-3.3v-0.1c0-2.1-1.5-3.2-4-3.2h-5v6.6H172.7z M164.3,27.5h8.7c2.5,0,4.4,0.7,5.6,2c1,1.1,1.6,2.5,1.6,4.2v0.1c0,3.2-1.9,5.1-4.7,5.9l5.3,7.4h-4l-4.8-6.8h-4.3V47h-3.4V27.5z" fill="#231F20"></path></g><path d="M201.2,39.3l-3.4-7.8l-3.3,7.8H201.2z M196.3,27.4h3.2l8.6,19.6h-3.6l-2-4.7h-9.2l-2,4.7h-3.5L196.3,27.4z" fill="#231F20"></path><polygon fill="#231F20" points="216.4,27.5 219.9,27.5 219.9,43.9 230.1,43.9 230.1,47 216.4,47 "></polygon><g><path d="M237.4,44.2l2.1-2.5c1.9,1.6,3.7,2.5,6.2,2.5c2.1,0,3.5-1,3.5-2.5v-0.1c0-1.4-0.8-2.1-4.4-3c-4.2-1-6.5-2.2-6.5-5.8v-0.1c0-3.3,2.8-5.7,6.7-5.7c2.8,0,5.1,0.9,7.1,2.5l-1.8,2.6c-1.8-1.3-3.5-2-5.3-2c-2,0-3.2,1-3.2,2.3v0.1c0,1.5,0.9,2.2,4.6,3.1c4.1,1,6.3,2.5,6.3,5.7v0.1c0,3.7-2.9,5.8-7,5.8C242.5,47.3,239.7,46.3,237.4,44.2" fill="#231F20"></path></g><rect fill="#231F20" height="19.5" width="3.4" x="261.7" y="27.5"></rect><g><path d="M274.5,37.4L274.5,37.4c0-5.5,4.2-10.1,10.1-10.1c3.4,0,5.5,0.9,7.5,2.6l-2.2,2.6c-1.5-1.3-3-2.1-5.5-2.1c-3.6,0-6.3,3.2-6.3,6.9v0.1c0,4,2.6,7,6.6,7c1.8,0,3.5-0.6,4.7-1.5v-3.7h-5v-3h8.3v8.2c-1.9,1.6-4.7,3-8.1,3C278.5,47.4,274.5,43,274.5,37.4" fill="#231F20"></path></g><polygon fill="#231F20" points="302.2,27.5 305.6,27.5 305.6,35.7 315,35.7 315,27.5 318.4,27.5 318.4,47 315,47 315,38.8 305.6,38.8 305.6,47 302.2,47 "></polygon><polygon fill="#231F20" points="327,27.5 327,30.7 333.2,30.7 333.2,47 336.6,47 336.6,30.7 342.8,30.7 342.8,27.5 "></polygon></g></g></svg>
+</a>
+<p>Don't have Pluralsight already? <a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fbilling.pluralsight.com%2Findividual%2Fcheckout">How about a 10 day free trial?</a> That'll get you access to thousands of courses amongst which are dozens of my own including:</p>
+<ol>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fowasp-top10-aspdotnet-application-security-risks">OWASP Top 10 Web Application Security Risks for ASP.NET</a></li>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fhttps-every-developer-must-know">What Every Developer Must Know About HTTPS</a></li>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fhack-yourself-first">Hack Yourself First: How to go on the Cyber-Offense</a></li>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Finformation-security-big-picture">The Information Security Big Picture</a></li>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fethical-hacking-social-engineering">Ethical Hacking: Social Engineering</a></li>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fmodernizing-websites-microsoft-azure">Modernizing Your Websites with Azure Platform as a Service</a></li>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fbrowser-security-headers">Introduction to Browser Security Headers</a></li>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fethical-hacking-sql-injection">Ethical Hacking: SQL Injection</a></li>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fweb-security-owasp-top10-big-picture">Web Security and the OWASP Top 10: The Big Picture</a></li>
+<li><a href="https://pluralsight.pxf.io/c/1196446/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fethical-hacking-web-applications">Ethical Hacking: Hacking Web Applications</a></li>
+</ol>
+</div>
+</div>
+</div>
+<aside class="article_readNext">
+<a class="article_readNext_story col-2" href="/ashley-madison-data-breach-q/">
+<section class="post">
+<h4>Ashley Madison data breach Q&amp;A</h4>
+</section>
+</a>
+<a class="article_readNext_story prev col-2" href="/azure-websites-ssl-goes-grade/">
+<section class="post">
+<h4>Azure websites SSL goes “A” grade</h4>
+</section>
+</a>
+</aside>
+</div>
+<footer id="footer">
+<div class="footer_block" id="floating_subscribe">
+<div class="footer">
+<a href="#subscribe" id="subscribe_link">Subscribe <i aria-hidden="true" class="fa fa-envelope-o"></i></a>
+<div class="subscribe_close">
+<a href="#" id="close_floating_subscribe"><i aria-hidden="true" class="fa fa-times"></i></a>
+</div>
+</div>
+</div>
+<div class="footer_subscription_block container">
+<div class="footer_subscription wrap">
+<div class="footer_subscription_formGroup">
+<a id="subscribe"></a>
+<h4>Subscribe Now!</h4>
+<form id="subscribe_form" name="subscribe_form">
+<div id="new_subscription">
+<div id="subscribe_unsuccessful"></div>
+<p>
+            Send new blog posts:<br>
+<div class="radio_button_group"><input checked="" id="Daily" name="email_cadence" type="radio" value="Daily"/> <label for="Daily">daily</label></div>
+<div class="radio_button_group"><input id="Weekly" name="email_cadence" type="radio" value="Weekly"/> <label for="Weekly">weekly</label></div>
+</br></p>
+<input id="email_to_subscribe" name="email_to_subscribe" placeholder="email address" required="" type="email" value=""/>
+<input id="submit_subscribe" type="submit" value="go!"></input></div>
+<div id="confirm_captcha"><p>Hey, just quickly confirm you're not a robot:</p></div>
+<div id="subscribe_loading"><p><i aria-hidden="true" class="fa fa-cog fa-spin"></i> Submitting...</p></div>
+<div id="subscribe_successful"><p>Got it! Check your email, click the confirmation link I just sent you and we're done.</p></div>
+</form>
+</div>
+</div>
+</div>
+<div class="footer_informations_block container">
+<div class="footer_informations wrap">
+<div class="footer_information-1 col-3">
+<h6>Copyright 2024, Troy Hunt</h6>
+<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>. In other words, share generously but provide attribution.</p>
+</div>
+<div class="footer_information-2 col-3">
+<h6>Disclaimer</h6>
+<p>Opinions expressed here are my own and may not reflect those of others. Unless I'm quoting someone, they're just my own views.</p>
+</div>
+<div class="footer_information-3 col-3">
+<h6>Published with Ghost</h6>
+<p>This site runs entirely on <a href="https://ghost.org/">Ghost</a> and is made possible thanks to their kind support. Read more about <a href="https://www.troyhunt.com/its-a-new-blog/">why I chose to use Ghost</a>.</p>
+</div>
+</div>
+</div>
+<div class="footer_info_block container">
+<div class="footer_info wrap">
+<div class="footer_socialIcons">
+<ul>
+<li class="socialIcons_link">
+<a class="fa-brands fa-x-twitter" href="https://twitter.com/troyhunt"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa-brands fa-facebook-f" href="https://www.facebook.com/troyahunt"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/troyhunt"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa-brands fa-youtube" href="https://www.youtube.com/user/troyhuntdotcom"></a>
+</li>
+<li class="socialIcons_link">
+<a class="fa fa-rss" href="https://feeds.feedburner.com/TroyHunt"></a>
+</li>
+</ul> </div>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>

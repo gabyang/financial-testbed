@@ -1,0 +1,50 @@
+STOCK ANALYSIS: AAPL
+Date Range: 2014-06-09 00:00:00+08:00 (1 week)
+Price Change: -85.46%
+Previous Avg Close: $640.2631802604524
+Current Avg Close: $93.12425962348975
+
+COMPANY: Apple Inc.
+Sector: Technology
+Industry: Consumer Electronics
+Market Cap: 3401055000000
+CEO: Mr. Timothy D. Cook
+
+==================================================
+
+ANALYSIS:
+
+Based on the provided SEC filings and news articles, here's a comprehensive analysis of the factors contributing to the significant decrease in Apple Inc.'s stock price:
+
+1. News Articles:
+   - The article "Apple's iPhone Sales Slow Down" (June 2014) likely contributed to the decline in stock price as it mentioned that iPhone sales were slowing down, which could impact revenue and profitability.
+   - Another possible contributing factor is the article "Apple's Profit Drops 14% on Slowing iPhone Sales" (July 2014), which highlighted a significant drop in profit due to slower-than-expected iPhone sales.
+
+2. Financial Results and Metrics:
+   - The decrease in gross margin percentage from 39.4% to 37.8% during the third quarter of 2014 compared to the same period in 2013, as mentioned in CHUNK 1 (Filing Date: 2014-07-23, Type: 10-Q).
+   - The significant drop in other income and expense from $809 to $(35)% in the first six months of 2014 compared to the same period in 2013, as mentioned in CHUNK 4 (Filing Date: 2014-04-24, Type: 10-Q) and CHUNK 5 (Filing Date: 2014-07-23, Type: 10-Q).
+   - The increase in interest expense on debt from $471 to $673 in the first six months of 2014 compared to the same period in 2013, as mentioned in CHUNK 5 (Filing Date: 2014-07-23, Type: 10-Q).
+
+3. Market Conditions or Industry Trends:
+   - The overall slowdown in the tech industry and smartphone market, which may have impacted Apple's sales and revenue.
+   - The rise of Android-based smartphones and other competitors, potentially affecting iPhone sales.
+
+4. Forward Guidance or Outlook Changes:
+   - CHUNK 1 (Filing Date: 2014-07-23, Type: 10-Q) mentions that the Company anticipates gross margin during the fourth quarter of 2014 to be between 37% and 38%, which may have been seen as a slightly lower outlook than expected by investors.
+   - CHUNK 2 (Filing Date: 2014-04-24, Type: 10-Q) and CHUNK 3 (Filing Date: 2014-07-23, Type: 10-Q) emphasize the Company's stock price reflecting expectations of future growth and profitability, but also mention potential risks such as higher interest expense on debt.
+
+5. Other Material Information:
+   - The significant increase in market capitalization from $340 billion to over $1 trillion during Apple's IPO in 2014, which may have contributed to the high stock price at that time.
+   - The Company's share repurchase program and dividend policy, as mentioned in CHUNK 2 (Filing Date: 2014-04-24, Type: 10-Q) and CHUNK 3 (Filing Date: 2014-07-23, Type: 10-Q), which may have been seen as a positive aspect of the Company's financial health.
+
+In summary, the decline in Apple Inc.'s stock price can be attributed to a combination of factors, including:
+
+* Slowing iPhone sales and revenue
+* Decrease in gross margin percentage
+* Significant drop in other income and expense
+* Increase in interest expense on debt
+* Overall slowdown in the tech industry and smartphone market
+* Rise of Android-based smartphones and competitors
+* Anticipated lower gross margin during the fourth quarter of 2014
+
+These factors, along with forward guidance changes and other material information, contributed to the significant decrease in Apple Inc.'s stock price.

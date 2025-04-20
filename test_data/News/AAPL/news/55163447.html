@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+
+<!--
+Development:
+JULIO FOULQUIE, @j3j5@hachyderm.io, ✈Montevideo, UY
+MARC TORAL, ✈Amsterdam, NL
+JULIAN SZNAIDER, ✈Buenos Aires, AR
+——————————
+Concept and Design by:
+ALEXANDER GRIFFIOEN, @oscaralexander, ✈Amsterdam, NL
+SÄINA SEEDORF, ✈Amsterdam, NL
+——————————
+Alumni:
+JACK DUNN, ✈Amsterdam, NL
+JULIAN AIJAL, @Jaijal, ✈Amsterdam, NL
+SAM BLOK, ✈Amsterdam, NL
+LAURA GENNO, ✈Amsterdam, NL
+IRENE DE NICOLO, ✈Amsterdam, NL
+DANIEL TARA, ✈Amsterdam, NL
+EVGENY ASTAPOV, ✈Rotterdam, NL
+RONAN O'LEARY, @ro_oleary, ✈Amsterdam, NL
+PABLO ROMÁN, ✈Amsterdam, NL
+JAMES SCOTT, ✈Amsterdam, NL
+JELLE VAN WIJHE, ✈Amsterdam, NL
+MATTHEW ELWORTHY, ✈Amsterdam, NL
+OSCAR VAN ZIJVERDEN, ✈Amsterdam, NL
+STEPHAN LAGERWAARD, ✈Amsterdam, NL
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="unsafe-url" name="referrer"/>
+<meta content="The Next Web" name="apple-mobile-web-app-title"/>
+
+<link as="style" href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="script" href="//next.tnwcdn.com/assets/next/js/base.js?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="style" href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="font" crossorigin="anonymous" href="https://next.tnwcdn.com/assets/next/fonts/graphik-wide-black.woff2" rel="preload" type="font/woff2"/>
+<link as="image" href="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=c52c7618d7c6794b500afc340f9a9d25" imagesrcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=2641095922c5ce4d8f41fce56ef68779 576w,
+                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=6e7a0165bb6c81b0cd0c5e44b5f609ec 1152w,
+                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=c52c7618d7c6794b500afc340f9a9d25 1280w" media="(min-width: 361px) and (min-height: 651px)" rel="preload"/>
+<title>Inside FIDO Alliance’s vision of a future free of passwords</title>
+<!-- OpenGraph -->
+<meta content="Ivan Mehta" name="author"/>
+<meta content="https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords" name="original-source">
+<meta content="TNW | Security" property="og:site_name">
+<meta content="Inside FIDO Alliance’s vision of a future free of passwords" property="og:title">
+<meta content="Most services you use on your phone or laptop, from email providers to food delivery providers, require you to have a password. With so many services and websites, it’s hard to come up with unique passwords and remember all of them.
+So, a l" name="description" property="description">
+<meta content="Most services you use on your phone or laptop, from email providers to food delivery providers, require you to have a password. With so many services and websites, it’s hard to come up with unique passwords and remember all of them.
+So, a l" property="og:description">
+<meta content="https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords" property="og:url">
+<meta content="640" property="og:image:height">
+<meta content="1280" property="og:image:width"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=72365b338dc5370b3c3ee45b8615878c" property="og:image"/>
+<meta content="article" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="2020-10-09T11:32:26+00:00" property="og:updated_time">
+<meta content="2020-10-09T11:32:24+00:00" property="article:published_time"/>
+<meta content="2020-10-09T11:32:26+00:00" property="article:modified_time"/>
+<meta content="Security" property="article:section"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@thenextweb" name="twitter:site"/>
+<meta content="@thenextweb" name="twitter:creator"/>
+<meta content="Inside FIDO Alliance&amp;#8217;s vision of a future free of passwords" name="twitter:title"/>
+<meta content="https://img-cdn.tnwcdn.com/image/tnw-blurple?filter_last=1&amp;fit=1280%2C640&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=72365b338dc5370b3c3ee45b8615878c" name="twitter:image"/>
+<meta content="Most services you use on your phone or laptop, from email providers to food delivery providers, require you to have a password. With so many services and websites, it’s hard to come up with unique passwords and remember all of them.
+So, a l" name="twitter:description"/>
+<!-- General Meta -->
+<meta content="max-image-preview:large" name="robots"/>
+<meta content="Inside FIDO Alliance&amp;#8217;s vision of a future free of passwords" property="title">
+<meta content="Most services you use on your phone or laptop, from email providers to food delivery providers, require you to have a password. With so many services and websites, it’s hard to come up with unique passwords and remember all of them.
+So, a l" property="description"/>
+<meta content="https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords" property="url"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon"/>
+
+<link href="/manifest.json" rel="manifest"/>
+
+
+
+
+<link href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<noscript>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+</noscript>
+<meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<link href="//cdn0.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//next.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//img-cdn.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//cdnjs.cloudflare.com/" rel="dns-prefetch"/>
+<link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+<link href="//cdn0.tnwcdn.com/" rel="preconnect"/>
+<link href="//next.tnwcdn.com/" rel="preconnect"/>
+<link href="//img-cdn.tnwcdn.com/" rel="preconnect"/>
+<link href="//www.googletagmanager.com" rel="preconnect"/>
+<link href="//cdnjs.cloudflare.com/" rel="preconnect"/>
+<link as="style" async="" crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet preload"/>
+<link href="https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords" rel="canonical">
+
+<!-- JSON-LD Breadcrumbs -->
+
+<!-- JSON-LD schema -->
+
+
+
+</link></meta></meta></meta></meta></meta></meta></meta></meta></meta></meta></head>
+<body class="site-tnwNext preload" id="next-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+<div id="fb-root"></div>
+<div class="security" id="_progress"></div>
+<nav class="c-nav has-level2" id="nav" role="navigation" style="top: 0;">
+<div class="c-nav__level1">
+<button aria-controls="overlay__hook" aria-expanded="false" aria-haspopup="true" class="c-nav__menuToggle c-nav__menuToggle--level-1 js-menuToggleLevel" data-nav-level="1" id="nav-menuLevel1" type="button">
+<span class="visually-hidden">Toggle Navigation</span>
+</button>
+<div class="navLabel_dt">
+<a class="c-nav__logo" data-event-action="Navigation bar" data-event-category="Article" data-event-label="TNW Logo" data-event-non-interaction="false" href="/" name="TNW Logo">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path>
+</svg>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--1" id="overlay__hook">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="News" data-event-category="Navigation bar" data-event-label="/" data-event-non-interaction="false" href="/">News</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">Events</button>
+<ul class="c-nav__submenu" role="menu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false" href="/conference">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false">TNW Conference</span>
+<span class="c-nav__submenuLinkNote">June 19 &amp; 20, 2025</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false" href="https://thenextweb.com/conference/the-soonicorn-summit">
+<span class="c-nav__submenuLinkTitle" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false">The Soonicorn Summit</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false" href="https://thenextweb.com/conference/tnw-webinar-series">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false">TNW Webinars</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false" href="/events">
+<span class="c-nav__submenuLinkTitle" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false">All events</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+</ul>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Spaces" data-event-category="Navigation bar" data-event-label="/spaces" data-event-non-interaction="false" href="/spaces">Spaces</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Programs" data-event-category="Navigation bar" data-event-label="/programs" data-event-non-interaction="false" href="/programs">Programs</a>
+</li>
+</ul>
+<hr class="mobile_menu_divider"/>
+<ul class="c-nav__menu c-nav__icons">
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" data-event-action="Newsletter" data-event-category="Navigation bar" data-event-label="Newsletters top right - click" data-event-non-interaction="false" href="/newsletters">
+<span class="c-nav__iconsItem--label" data-event-action="Newsletters" data-event-category="Navigation bar" data-event-label="/newsletters" data-event-non-interaction="false">Newsletters</span>
+</a>
+</li>
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" href="/partnerships">
+<span class="c-nav__iconsItem--label" data-event-action="Partner with us" data-event-category="Navigation bar" data-event-label="/partnerships" data-event-non-interaction="false">Partner with us</span>
+</a>
+</li>
+</ul>
+<footer class="c-nav__footer">
+<ul class="c-nav__social">
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://facebook.com/thenextweb" name="Facebook Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://www.instagram.com/thenextweb" name="Instagram Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://twitter.com/thenextweb" name="Twitter Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://youtube.com/user/thenextweb" name="Youtube Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://flipboard.com/@thenextweb" name="Flipboard Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="/newsletters" name="Email Social Link">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</li>
+</ul>
+<ul class="c-nav__company">
+<li class="c-nav__companyItem">
+<a class="c-nav__companyLink" href="https://thenextweb.homerun.co/" rel="noopener noreferrer" target="_blank">Jobs</a>
+</li>
+<li class="c-nav__companyItem"><a class="c-nav__companyLink" href="mailto:conference@thenextweb.com">Contact</a></li>
+</ul>
+</footer>
+</div>
+</div>
+<div class="c-nav__level2 tnw news">
+<div class="c-nav__pwd">
+<a class="c-nav__pwdLogo" href="/"><svg class="tnwLogo__tnwNews"><title>The Next Web</title><use xlink:href="/assets/next/img/icons.svg#tnw"></use></svg></a>
+<a class="c-nav__pwdLogoUkraine" href="/ukraine">
+<img alt="We stand with Ukraine" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/companies/ukraine.png"/>
+</a>
+<span class="c-nav__pwdSection">News</span>
+<a class="c-nav__pwdSite" href="/" title="">
+<span class="sm:hidden" id="channelName_abbr">news</span>
+<span class="max-sm:hidden xl:hidden">news</span>
+<span class="max-xl:hidden" id="channelName_mob">news</span>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--2">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Latest" data-event-category="Navigation bar" data-event-label="/latest" data-event-non-interaction="false" href="/latest">Latest</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Deep tech" data-event-category="Navigation bar" data-event-label="/deep-tech" data-event-non-interaction="false" href="/deep-tech">Deep tech</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Sustainability" data-event-category="Navigation bar" data-event-label="/sustainability" data-event-non-interaction="false" href="/sustainability">Sustainability</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Ecosystems" data-event-category="Navigation bar" data-event-label="/ecosystems" data-event-non-interaction="false" href="/ecosystems">Ecosystems</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Data and security" data-event-category="Navigation bar" data-event-label="/data-security" data-event-non-interaction="false" href="/data-security">Data and security</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Fintech and ecommerce" data-event-category="Navigation bar" data-event-label="/fintech-ecommerce" data-event-non-interaction="false" href="/fintech-ecommerce">Fintech and ecommerce</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Future of work" data-event-category="Navigation bar" data-event-label="/future-of-work" data-event-non-interaction="false" href="/future-of-work">Future of work</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Podcast" data-event-category="Navigation bar" data-event-label="https://podcast.thenextweb.com" data-event-non-interaction="false" href="https://podcast.thenextweb.com">Podcast</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">More</button>
+<ul class="c-nav__submenu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="https://thenextweb.com/tnw-conference-2024">
+<span class="c-nav__submenuLinkTitle" data-event-action="Conference media hub" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/tnw-conference-2024" data-event-non-interaction="false">Conference media hub</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/startups-technology">
+<span class="c-nav__submenuLinkTitle" data-event-action="Startups and technology" data-event-category="Navigation bar" data-event-label="/startups-technology" data-event-non-interaction="false">Startups and technology</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/investors-funding">
+<span class="c-nav__submenuLinkTitle" data-event-action="Investors and funding" data-event-category="Navigation bar" data-event-label="/investors-funding" data-event-non-interaction="false">Investors and funding</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/government-policy">
+<span class="c-nav__submenuLinkTitle" data-event-action="Government and policy" data-event-category="Navigation bar" data-event-label="/government-policy" data-event-non-interaction="false">Government and policy</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/corporates-innovation">
+<span class="c-nav__submenuLinkTitle" data-event-action="Corporates and innovation" data-event-category="Navigation bar" data-event-label="/corporates-innovation" data-event-non-interaction="false">Corporates and innovation</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/plugged">
+<span class="c-nav__submenuLinkTitle" data-event-action="Gadgets &amp; apps" data-event-category="Navigation bar" data-event-label="/plugged" data-event-non-interaction="false">Gadgets &amp; apps</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<button aria-hidden="true" class="c-nav__menuScroller" type="button"></button>
+</div>
+</div>
+</nav>
+<a class="c-nav__yellow-bar" href="https://thenextweb.com/conference/tickets" id="cross-site-notification" rel="noopener" target="_blank">
+<div class="c-nav__message c-nav__message--global" data-event-action="Yellow bar" data-event-category="Yellow bar" data-event-label="Yellow bar - click">
+<p><strong>Save over 40% when you secure your tickets today to TNW Conference 💥 Prices will increase on November 22 →</strong></p>
+</div>
+</a>
+<div class="o-page" id="main">
+<div class="o-page__main">
+<main class="c-channel c-channel--latest o-page__main" id="article_container">
+<div class="c-articles">
+<div class="c-articles__backdrop"><div class="c-articles__backdrop--sticky"></div></div>
+<div class="c-nav__message c-nav__message--article news" style="top:0">
+<p>This article was published on <strong>October 9, 2020</strong></p>
+</div>
+<header class="c-header">
+<div class="o-wrapper">
+<div class="c-header__text">
+<ul class="c-header__tags c-tags c-tags--centered">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Security" data-event-non-interaction="false" href="/security">Security</a>
+</li>
+</ul>
+<h1 class="c-header__heading">Inside FIDO Alliance’s vision of a future free of passwords</h1>
+<br/>
+<div>
+<time datetime="October 9, 2020 - 11:32 am">October 9, 2020 - 11:32 am</time>
+</div>
+</div>
+<div aria-hidden="true" class="c-share lg:hidden">
+<a class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Inside%20FIDO%20Alliance%E2%80%99s%20vision%20of%20a%20future%20free%20of%20passwords&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;u=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords&amp;t=Inside%20FIDO%20Alliance%E2%80%99s%20vision%20of%20a%20future%20free%20of%20passwords" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Inside%20FIDO%20Alliance%E2%80%99s%20vision%20of%20a%20future%20free%20of%20passwords" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-share__link c-share__link--mail" href="mailto:?subject=Inside FIDO Alliance&amp;#8217;s vision of a future free of passwords&amp;body=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+</header>
+<div class="e-empty__hidden"></div>
+<div class="screen-size desktop-screen">
+<div class="tnw-ad tnw-ad--billboard tnw-ad--has-placeholder" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_HEADER","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[320,240],[300,250],[970,250],[970,90],[728,90],[320,50],[300,100],[300,50],[320,100]],"sizeMapping":[[[1024,0],[[970,250],[970,90],[728,90]]],[[0,0],[[300,250],[320,50],[300,50],[300,100],[320,100],[320,240]]]],"targeting":{"postID":["1322565"],"title":["Inside FIDO Alliance’s vision of a future free of passwords"],"category":["security"],"isSponsored":["No"]},"lazyLoad":"true","refreshEvery":"","debugMode":false}' id="tnw-next-header"></div>
+</div>
+
+<div class="o-wrapper mb-4xl">
+<article class="c-article js-article mt-m" id="articleOutput" style="margin-top: 0px;">
+<div class="c-article__media c-article__growth-mobile">
+<figure class="o-media o-media--16:9">
+<img alt="Inside FIDO Alliance’s vision of a future free of passwords" class="js-lazy c-article__mediaImage w-full absolute top-0" data-src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=c52c7618d7c6794b500afc340f9a9d25" data-srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=2641095922c5ce4d8f41fce56ef68779 576w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=6e7a0165bb6c81b0cd0c5e44b5f609ec 1152w,
+                                                     https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=c52c7618d7c6794b500afc340f9a9d25 1280w" sizes="(max-width: 1023px) 100vw
+                                               868px"/>
+<noscript>
+<img alt="Inside FIDO Alliance’s vision of a future free of passwords" class="c-article__mediaImage w-full absolute top-0" sizes="(max-width: 1023px) 100vw
+                                                   868px" src="https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=c52c7618d7c6794b500afc340f9a9d25" srcset="https://img-cdn.tnwcdn.com/image?fit=576%2C324&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=2641095922c5ce4d8f41fce56ef68779 576w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1152%2C648&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=6e7a0165bb6c81b0cd0c5e44b5f609ec 1152w,
+                                                    https://img-cdn.tnwcdn.com/image?fit=1280%2C720&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;signature=c52c7618d7c6794b500afc340f9a9d25 1280w"/>
+</noscript>
+<a class="c-article__mediaCredit" href="https://pixabay.com/illustrations/password-app-application-business-2781614/">
+<svg class="c-article__mediaCreditIcon"><use xlink:href="/assets/next/img/icons.svg#camera"></use></svg>
+<span class="c-article__mediaCreditText">Image by: Pixabay</span>
+</a>
+</figure>
+</div>
+<div class="screen-size mobile-screen" style="text-align: center"></div>
+
+<div class="c-article__main max-lg:mb-xxl">
+<div class="c-richText c-richText--large" id="article-main-content">
+<p>Most services you use on your phone or laptop, from email providers to food delivery providers, require you to have a password. With so many services and websites, it’s hard to come up with unique passwords and remember all of them.</p>
+<p>So, a lot of people end up using the same password for multiple services — and that’s a threat. If one website is compromised, your other accounts can be at risk too. A 2019 Verizon report suggests that <a href="https://www.infosecurity-magazine.com/blogs/pwned-passwords-business-risk/#:~:text=The%20Verizon%202019%20Data%20Breach,were%20utilizing%20already%20compromised%20passwords." rel="nofollow noopener" target="_blank">80% of hacking-related breaches</a> are caused by using weak or compromised passwords.</p>
+<p>That’s why the <a href="https://fidoalliance.org/" rel="nofollow noopener" target="_blank">FIDO (Fast IDentity Online) Alliance</a> is trying to get rid of passwords altogether.</p>
+<p>The organization was founded in 2013 by Lenovo, Agnitio, Infineon, Nok Nok Labs, PayPal, and Validity Sensors. Since then a number of big-name partners such as Google, Apple, Microsoft, and Intel have joined the organization to support a password-less future.</p>
+<div class="inarticle-wrapper latest channel-cta hs-embed-tnw"><div class="channel-cta-wrapper" id="hs-embed-tnw"><div class="channel-cta-img"><img class="js-lazy" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/visuals/tnw-newsletter.png"/></div><noscript><img src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/visuals/tnw-newsletter.png"/></noscript><div class="channel-cta-input"><p class="channel-cta-title">The 💜 of EU tech</p><p class="channel-cta-tagline">The latest rumblings from the EU tech scene, a story from our wise ol' founder Boris, and some questionable AI art. It's free, every week, in your inbox. Sign up now!</p><div id="hs-inarticle-embed"><div id="latest-inarticle-embed"></div></div></div></div></div><p>I talked to Andrew Shikiar, executive director of the FIDO Alliance, and its partner and hardware security key maker Yubico, about authentication without passwords through the FIDO2 standard. But before we look at what companies are doing to allow users to login to services in different ways, let’s look at what FIDO2 is and how it works.</p>
+<h2>What is FIDO2?</h2>
+<p>To solve the problem of authentication through passwords, the World Wide Web Consortium (W3C) and FIDO Alliance came up with the FIDO2 standard. It’s a combination of W3C’s Web Authentication (WebAuthn) specification and FIDO Alliance’s corresponding Client-to-Authenticator Protocol (CTAP). This allows you to use your phone or laptop to identify yourself safely to a web service.</p>
+<p>To reduce the risk of phishing or any other attacks, the FIDO2 method doesn’t involve storing your credentials on a server. Instead, it uses features such as biometric authentication to validate your identity so the password never leaves your device.</p>
+<figure class="post-image post-mediaBleed aligncenter"><img alt="" class="size-full wp-image-1322571 js-lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3.jpg 1024w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3-280x107.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3-540x206.jpg 540w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3-270x103.jpg 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3-796x304.jpg 796w" height="391" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="1024"/><figcaption>Credit: FIDO</figcaption><figcaption><a class="post-image-share popitup" data-height="500" data-title="Share FIDO2 flow with WebAuthn and CTAP on Twitter" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Feditorial.thenextweb.com%2Fsecurity%2F2020%2F10%2F09%2Finside-fido-alliances-vision-of-a-future-free-of-passwords%2F&amp;via=thenextweb&amp;related=thenextweb&amp;text=Check out this picture on: FIDO2 flow with WebAuthn and CTAP" data-width="685" href="#" title="Share FIDO2 flow with WebAuthn and CTAP on Twitter"><i class="icon icon--inline icon--twitter--dark"></i></a>FIDO2 flow with WebAuthn and CTAP</figcaption><noscript><img alt="" class="size-full wp-image-1322571" height="391" loading="lazy" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3.jpg" srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3.jpg 1024w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3-280x107.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3-540x206.jpg 540w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3-270x103.jpg 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/FIDO2-Graphic-v3-796x304.jpg 796w" width="1024"/></noscript></figure>
+<p>As shown in the diagram below, the WebAuthn part handles talking to services through browser or web services in a secure way. And CTAP allows you to use your phone to talk to WebAuthn and complete your authentication.</p>
+<p>FIDO2 is also compatible with FIDO UAF and FIDO U2F-based hardware security keys. So, you can use a hardware key to login to services through your laptop or your phone. I’ve been using Yubico’s 5c NFC key for over a month to login to some services such as Microsoft accounts and Twitter through my phone and laptop.</p>
+<h2>How the alliance is working with companies to spread FIDO2</h2>
+<p>Andrew Shikiar, executive director of the FIDO alliance, believes that everyday devices such as phones play an important role in creating a password-less future:</p>
+<blockquote><p>Industry has found that public-key cryptography that allows consumers to use everyday devices is the preferred mechanism for stronger user authentication.</p></blockquote>
+<p>He said that if the authentication method is too hard, you’ll opt-out or find a way around it, and that’s the challenge FIDO is trying to overcome. It helps its partners with best practices and user-friendly ways to implement authentication through FIDO2 and other compatible standards.</p>
+<p>Earlier this year, during its World Wide Developer Conference (WWDC), Apple announced that it was going to support the <a href="https://thenextweb.com/news/safari-will-soon-log-you-into-websites-with-face-id-and-touch-id" rel="noopener" target="_blank">FIDO2 standard on iOS and macOS through Safari 14</a>.</p>
+<figure class="post-image post-mediaBleed aligncenter"><img alt="" class="size-full wp-image-1322575 js-lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0.jpeg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0.jpeg 500w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-96x96.jpeg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-210x210.jpeg 210w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-270x270.jpeg 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-135x135.jpeg 135w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-192x192.jpeg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-470x470.jpeg 470w" height="500" loading="lazy" sizes="(max-width: 500px) 100vw, 500px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="500"/><figcaption>Credit: LinkedIN</figcaption><figcaption><a class="post-image-share popitup" data-height="500" data-title="Share Andrew Shikiar, executive director at FIDO Alliance on Twitter" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Feditorial.thenextweb.com%2Fsecurity%2F2020%2F10%2F09%2Finside-fido-alliances-vision-of-a-future-free-of-passwords%2F&amp;via=thenextweb&amp;related=thenextweb&amp;text=Check out this picture on: Andrew Shikiar, executive director at FIDO Alliance" data-width="685" href="#" title="Share Andrew Shikiar, executive director at FIDO Alliance on Twitter"><i class="icon icon--inline icon--twitter--dark"></i></a>Andrew Shikiar, executive director at FIDO Alliance</figcaption><noscript><img alt="" class="size-full wp-image-1322575" height="500" loading="lazy" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0.jpeg" srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0.jpeg 500w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-96x96.jpeg 96w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-210x210.jpeg 210w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-270x270.jpeg 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-135x135.jpeg 135w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-192x192.jpeg 192w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/0-470x470.jpeg 470w" width="500"/></noscript></figure>
+<p>What that means is that you can use biometric methods (such as FaceID and Touch ID) or hardware keys (such as the ones from Yubico) to login to websites without a password.</p>
+<p>Apple’s not the only one to adopt this, Google Chrome, Mozilla Firefox, and Microsoft Edge already support WebAuthn, and to some extent FIDO2.</p>
+<p>Last year, <a href="https://fidoalliance.org/android-now-fido2-certified-accelerating-global-migration-beyond-passwords/" rel="nofollow noopener" target="_blank">FIDO Alliance declared Android as FIDO2 certified</a>, paving the way for many devices to be used for authentication and allow users to login to services through biometrics. Later, Google started allowing users to <a href="https://thenextweb.com/news/google-will-let-you-sign-in-to-some-services-with-fingerprint-on-android" rel="noopener" target="_blank">login through biometric authentication</a> to some of its services on Chrome for Android.</p>
+<p>In addition to this, Microsoft’s Windows 10 is also FIDO2 approved. So, you can use its Windows Hello to login to a machine through facial recognition or a fingerprint scanner.</p>
+<h2>Security and productivity benefits</h2>
+<p>A lot of us use two-factor authentication (2FA) to login to our accounts. However, we still rely on SMS-based authentication, and that’s prone to attacks. Instead of that, FIDO2-based authentication allows you to use your phone or a hardware key, saving users a lot of time and effort. Plus, it’s more reliable and secure than SMS.</p>
+<p>Often when I am logging into services like Twitter, I don’t get an authentication SMS for a long time. In these cases, if I use a hardware key as my secondary authentication, the whole process is very fast.</p>
+<figure class="post-image post-mediaBleed aligncenter"><img alt="" class="size-full wp-image-1322573 js-lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM.png 579w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM-280x203.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM-373x270.png 373w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM-187x135.png 187w" height="419" loading="lazy" sizes="(max-width: 579px) 100vw, 579px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="579"/><figcaption><a class="post-image-share popitup" data-height="500" data-title="Share Yubico’s 5 series of Yubikey hardware authentication devices on Twitter" data-url="https://twitter.com/intent/tweet?url=https%3A%2F%2Feditorial.thenextweb.com%2Fsecurity%2F2020%2F10%2F09%2Finside-fido-alliances-vision-of-a-future-free-of-passwords%2F&amp;via=thenextweb&amp;related=thenextweb&amp;text=Check out this picture on: Yubico’s 5 series of Yubikey hardware authentication devices" data-width="685" href="#" title="Share Yubico’s 5 series of Yubikey hardware authentication devices on Twitter"><i class="icon icon--inline icon--twitter--dark"></i></a>Yubico’s 5 series of Yubikey hardware authentication devices</figcaption><noscript><img alt="" class="size-full wp-image-1322573" height="419" loading="lazy" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM.png" srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM.png 579w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM-280x203.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM-373x270.png 373w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Screenshot-2020-10-09-at-3.57.29-PM-187x135.png 187w" width="579"/></noscript></figure>
+<p>Shikiar said that FIDO2-based authentication is seeing a lot of traction with enterprise customers as well. Because of the COVID-19 pandemic, a lot of people have to work from home in an environment that might not be as secure as the office. Plus, with the rising number of cyberattacks this year, it’s important for companies to protect their data.</p>
+<p>John Gilbert, General Manager, UK&amp;I at <a href="https://www.yubico.com/" rel="nofollow noopener" target="_blank">Yubico</a>, a company that makes FIDO-certified hardware security key, agrees:</p>
+<blockquote><p>Because of the pandemic, convergence between our work lives and our home is happening in a much more concentrated way. So there’s the need to ensure that we have the same sort of levels of security available to us. I think what Yubico does and what we’ve always done is to provide something that is very simple and easy to use.</p></blockquote>
+<p>The FIDO Alliance executive said that while it’s hard to know exactly what happened when <a href="https://thenextweb.com/news/everything-we-know-about-how-twitters-biggest-hack-went-down" rel="noopener" target="_blank">Twitter was hacked in</a><a href="https://thenextweb.com/news/everything-we-know-about-how-twitters-biggest-hack-went-down" rel="noopener" target="_blank">July</a>, and accounts belonging to Elon Musk and Jeff Bezos were compromised, he believes that if the company had used security keys for sensitive programs, the breach wouldn’t have taken place.</p>
+<p>Gilbert told me that hardware security keys are one of the most secure ways of authentication because they’re off the network and, unlike your phone, a hacker can’t attack them. Plus, these keys don’t rely on any kind of network or battery life. So, you can use them at any time.</p>
+<p>A study from Yubico released last year suggested that <a href="https://www.yubico.com/wp-content/uploads/2019/01/Ponemon-Authentication-Report.pdf" rel="nofollow noopener" target="_blank">an average employee spends almost 11 hours per year entering or resetting passwords</a>, resulting in a productivity loss of millions of dollars. That figure can make a lot of enterprises think about going password-less.</p>
+<h2>Challenges to adopting a password-less future</h2>
+<p>Until now, FIDO’s standards have mostly been used as a second-factor authentication method in tandem with passwords. The alliance’s next challenge is to completely get rid of password or knowledge-based (login methods asking for details such as your pet’s name) mechanisms.</p>
+<p>Some companies are now allowing customers to get rid of passwords. Last year, Japan’s networking giant <a href="https://fidoalliance.org/ntt-docomo-introduces-passwordless-authentication-for-d-account/" rel="nofollow noopener" target="_blank">NTT DOCOMO introduced password-less logins</a> for its customers. CVS Health now has over <a href="https://www.hypr.com/cvs-health-h-isac-webcast/" rel="nofollow noopener" target="_blank">10 million customers</a> who don’t use any password to attain its services.</p>
+<p>Microsoft also allows customers to <a href="https://thenextweb.com/news/passwordless-web-gets-a-boost-from-windows-hello-fido2-certification" rel="noopener" target="_blank">use biometric authentication or security keys on Windows 10</a> to login to some of its services such as Microsoft online accounts without passwords. I’ve used this service with Yubico’s key on a Windows machine and it works efficiently. eBay is also allowing customers to login using biometric authentication on iOS and Android.</p>
+<p><figure class="post-image post-mediaBleed aligncenter"><img alt="" class="aligncenter size-full wp-image-1205458 js-lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed.jpg 1200w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed-796x417.jpg 796w" height="628" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="1200"/><figcaption>Credit: <a href="https://www.microsoft.com/en-za/windows/windows-hello" rel="nofollow noopener" target="_blank">Windows Hello</a></figcaption><noscript><img alt="" class="aligncenter size-full wp-image-1205458" height="628" loading="lazy" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed.jpg" srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed.jpg 1200w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/windows-hello-hed-796x417.jpg 796w" width="1200"/></noscript></figure></p>
+<p>While we’re starting to see some services adopting this kind of login, the majority of websites and apps still rely on passwords.</p>
+<p>Another challenge is that not all desktop systems have biometric authentication. A lot of Windows 10-based laptops and Chromebooks allow you to login using a fingerprint scanner or a face recognition system that can be leveraged for authentication on websites too.</p>
+<p>Apple has also started to include TouchID in recently released MacBooks. However, there’s a long way to go until the majority of desktop computers would feature some kind of biometric authentication.</p>
+<p>It’s also important to convince users to move away from passwords, and it’s hard to change a habit that’s been instilled for years. That’s why FIDO is putting out <a href="https://youtu.be/k55tRpnI-6o" rel="nofollow noopener" target="_blank">educational material</a> to instruct consumers and enterprises.</p>
+<p>Gilbert believes that within the next year or so, we’ll see the industry consistently move towards embedding FIDO2 standards in operating systems and a range of applications it controls.</p>
+<p>Shikiar is optimistic about the password-less future. He expects 90% of major web services to offer authentication that don’t require passwords within the next five years.</p>
+<p>If this happens, it would be easier and far more secure for people to log in to services.</p>
+<p>“What’s interesting is, I’m seeing that companies are quickly adopting password-less authentication, they’re looking at this not just as a security component, but also as a usability and brand building component. In the near future, it might put service to a competitive disadvantage if it doesn’t have a password-less login option,” he said.</p>
+</div>
+<aside class="c-contributor latest">
+<a data-event-action="Author" data-event-category="Article" data-event-label="Ivan Mehta" data-event-non-interaction="false" href="/author/ivanmehta" rel="noopener" target="_blank">
+<img alt="Ivan Mehta" class="c-contributor__photo js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F936a789cfed4db63a0841a65b718a332%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=546fb13de03f99ddf130f12e5f8021fb"/>
+<noscript>
+<img alt="Ivan Mehta" class="c-contributor__photo" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F936a789cfed4db63a0841a65b718a332%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=546fb13de03f99ddf130f12e5f8021fb"/>
+</noscript>
+</a>
+<div aria-label="Author Bio" class="c-contributor__main">
+<h2 class="c-contributor__wrapper">
+<span class="c-contributor__heading">Story by</span>
+<span class="c-contributor__name">
+<a class="latest" href="/author/ivanmehta">Ivan Mehta</a>
+</span>
+</h2>
+<p class="c-contributor__text">
+<input class="c-contributor__expandInput" id="contributorExpandInput123" name="expand" type="checkbox"/>
+<span class="c-contributor__bio c-contributor__bio--truncated">Ivan covers Big Tech, India, policy, AI, security, platforms, and apps for TNW. That's one heck of a mixed bag. He likes to say "Bleh."</span>
+<span class="c-contributor__bio c-contributor__bio--full">Ivan covers Big Tech, India, policy, AI, security, platforms, and apps for TNW. That's one heck of a mixed bag. He likes to say "Bleh."</span>
+</p>
+</div>
+</aside>
+<div class="c-channel__cta" id="nl-container">
+<h2 class="c-channel__ctaHeading text-dark">Get the TNW newsletter</h2>
+<p class="c-channel__ctaDescription text-white">Get the most important tech news in your inbox each week.</p>
+<div id="in-article-newsletter" style="color: #fff"></div>
+</div>
+<h2 class="alsoTaggedIn">Also tagged with</h2>
+<br/>
+<ul class="c-header__tags c-tags c-tags--left">
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Windows 10" data-event-non-interaction="false" href="/topic/windows-10">Windows 10</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Multi-factor authentication" data-event-non-interaction="false" href="/topic/multi-factor-authentication">Multi-factor authentication</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Credential" data-event-non-interaction="false" href="/topic/credential">Credential</a>
+</li>
+<li class="c-tags__tag">
+<a class="c-tags__link c-article-leadtag" data-event-action="Tags" data-event-category="Article" data-event-label="Biometrics" data-event-non-interaction="false" href="/topic/biometrics">Biometrics</a>
+</li>
+</ul>
+<footer class="c-article__pubDate md:flex md:justify-between">
+<div>
+                                Published <time datetime="2019-02-11 12:07:00">October 9, 2020 - 11:32 am UTC</time>
+</div>
+<a class="scrolly latest" data-event-action="Back to top" data-event-category="Article" data-event-label="Back to top - click" data-event-non-interaction="true" data-target="#next-top" href="#">Back to top</a>
+</footer>
+<div aria-label="Social share options" class="c-share lg:hidden">
+<a aria-label="Share on Facebook" class="c-share__link c-share__link--facebook" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Inside%20FIDO%20Alliance%E2%80%99s%20vision%20of%20a%20future%20free%20of%20passwords&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;u=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords&amp;t=Inside%20FIDO%20Alliance%E2%80%99s%20vision%20of%20a%20future%20free%20of%20passwords" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a aria-label="Share on Twitter" class="c-share__link c-share__link--twitter" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Inside%20FIDO%20Alliance%E2%80%99s%20vision%20of%20a%20future%20free%20of%20passwords" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a aria-label="Share on Flipboard" class="c-share__link c-share__link--flipboard" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a aria-label="Share on Linkedin" class="c-share__link c-share__link--linkedin" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a aria-label="Share on Telegram" class="c-share__link c-share__link--telegram" href="https://t.me/share/url?url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a aria-label="Share via Email" class="c-share__link c-share__link--mail" href="mailto:?subject=Inside FIDO Alliance&amp;#8217;s vision of a future free of passwords&amp;body=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-share__icon" style="fill: #fff"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</div>
+<aside aria-hidden="true" class="c-article__side">
+<aside class="c-article__author">
+<a class="security" data-event-action="Author" data-event-category="Article" data-event-label="Ivan Mehta" data-event-non-interaction="false" href="/author/ivanmehta">
+<img alt="Ivan Mehta" class="c-article__authorImage blend-blue-dark js-lazy" data-src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F936a789cfed4db63a0841a65b718a332%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=546fb13de03f99ddf130f12e5f8021fb" height="96" id="duotone" width="96"/>
+<noscript>
+<img alt="Ivan Mehta" class="c-article__authorImage blend-blue-dark" height="96" id="duotone" src="https://img-cdn.tnwcdn.com/image/duotone?fit=240%2C240&amp;gradient=%23660099-%2300CCAA&amp;url=https%3A%2F%2Fsecure.gravatar.com%2Favatar%2F936a789cfed4db63a0841a65b718a332%3Fs%3D96%26d%3Dblank%26r%3Dg&amp;signature=546fb13de03f99ddf130f12e5f8021fb" width="96"/>
+</noscript>
+<span class="c-article__authorHeading">Story by</span>
+<span class="c-article__authorName latest">Ivan Mehta</span>
+</a>
+</aside>
+<div class="c-engage">
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Facebook" data-event-non-interaction="false" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dfacebook%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button&amp;p[title]=Inside%20FIDO%20Alliance%E2%80%99s%20vision%20of%20a%20future%20free%20of%20passwords&amp;p[images][0]=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F10%2Fpassword-2781614_1920-e1602240354825.jpg&amp;u=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords&amp;t=Inside%20FIDO%20Alliance%E2%80%99s%20vision%20of%20a%20future%20free%20of%20passwords" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Twitter" data-event-non-interaction="false" href="https://twitter.com/intent/tweet?url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dtwitter%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button%26referral&amp;via=thenextweb&amp;related=thenextweb&amp;text=Inside%20FIDO%20Alliance%E2%80%99s%20vision%20of%20a%20future%20free%20of%20passwords" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Linkedin" data-event-non-interaction="false" href="https://www.linkedin.com/shareArticle/?mini=true&amp;url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dlinkedin%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Flipboard" data-event-non-interaction="false" href="https://share.flipboard.com/bookmarklet/popout?url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dflipboard%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Telegram" data-event-non-interaction="false" href="https://t.me/share/url?url=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Dtelegram%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" rel="noopener" target="_blank">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#telegram"></use></svg>
+</a>
+<a class="c-engage__link" data-event-action="Share" data-event-category="Article" data-event-label="Email" data-event-non-interaction="false" href="mailto:?subject=Inside FIDO Alliance&amp;#8217;s vision of a future free of passwords&amp;body=https://thenextweb.com/news/inside-fido-alliances-vision-of-a-future-free-of-passwords%3Futm_source%3Demail%26utm_medium%3Dshare%26utm_campaign%3Darticle-share-button">
+<svg class="c-engage__icon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</div>
+</aside>
+<aside class="c-split__side mb-m" id="sidebar">
+<div class="c-split__sticky channel_cta_if_subnav">
+<div class="tnw-ad tnw-ad--article-mpu" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_ATF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,50],[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1322565"],"title":["Inside FIDO Alliance’s vision of a future free of passwords"],"category":["security"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-atf"></div>
+<div class="jobbioapp sticky top-4xl" id="sidebarJobbio"></div>
+<div class="tnw-ad tnw-ad--article-mpu-btf" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_BTF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,250],[300,600]],"sizeMapping":[],"targeting":{"postID":["1322565"],"title":["Inside FIDO Alliance’s vision of a future free of passwords"],"category":["security"],"isSponsored":["No"],"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-btf"></div>
+</div>
+</aside>
+</article>
+</div>
+</div>
+<aside aria-label="Related Articles" class="c-article__suggested">
+<div class="c-nextRelatedGrid">
+<section class="o-wrapper o-wrapper--wide">
+<header class="c-bodyNews__header">
+<h2 class="c-bodyNews__heading">Related Articles</h2>
+</header>
+<div class="c-showcase__grid">
+<section class="c-showcase__grid c-showcase__scroller js-parallaxRoot">
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/windows-11-best-new-features">
+<img alt="Windows 11 announcement: Everything you need to know" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=dcbc30e798ccefaf52fd8adce0ed6bdd" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=4ff2e86a912c7b5b512eb0517b44627d 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=38c166f76d1ae5040f9a62f26f6c9a2f 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=f0c3c38d2e67e0f38ba797900393479f 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=daf20a2255fe2661beb392ce0482fbbb 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=b664559709b82b0e328cd0a6e5152865 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=f9ef1417720bf840ad4f6aa1663ed484 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=8cda76047d11920657b9f77b3a1faa94 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=86ab0221bf3509947de5b201196b5089 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=70e76954e5e0e7e22b51cd6867b0db3d 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=39eb3b1e236f88c79a2313001affa36d 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=598331f4401e83f1c520db86cb7d9545 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=fa6613428a0ff842b76252513f578cae 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=6db33bb9a241783c6d30fa134401290c 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=8a1d28a596f845830fda34b27a4aa566 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=dcbc30e798ccefaf52fd8adce0ed6bdd 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="Windows 11 announcement: Everything you need to know" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 660px,
+                    (min-width:768px) and (max-width:1023px) 922px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=dcbc30e798ccefaf52fd8adce0ed6bdd" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=4ff2e86a912c7b5b512eb0517b44627d 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=38c166f76d1ae5040f9a62f26f6c9a2f 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=f0c3c38d2e67e0f38ba797900393479f 2457w ,   https://img-cdn.tnwcdn.com/image?fit=660%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=daf20a2255fe2661beb392ce0482fbbb 660w ,   https://img-cdn.tnwcdn.com/image?fit=1320%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=b664559709b82b0e328cd0a6e5152865 1320w ,   https://img-cdn.tnwcdn.com/image?fit=1980%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=f9ef1417720bf840ad4f6aa1663ed484 1980w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C404&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=8cda76047d11920657b9f77b3a1faa94 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C808&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=86ab0221bf3509947de5b201196b5089 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1212&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=70e76954e5e0e7e22b51cd6867b0db3d 2766w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=39eb3b1e236f88c79a2313001affa36d 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=598331f4401e83f1c520db86cb7d9545 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=fa6613428a0ff842b76252513f578cae 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=6db33bb9a241783c6d30fa134401290c 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=8a1d28a596f845830fda34b27a4aa566 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=dcbc30e798ccefaf52fd8adce0ed6bdd 2361w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">plugged</span>
+<h3 class="c-card__heading">
+<a href="/news/windows-11-best-new-features" tabindex="-1">Windows 11 announcement: Everything you need to know</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/goodbye-internet-explorer-you-wont-be-missed-but-youll-be-remembered">
+<img alt="Goodbye, Internet Explorer. You won’t be missed (but you’ll be remembered)" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=5d9b1a28bb023df4feae8204d729f08f" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=891d009f2b1ee6b4e4d286a1fb519bde 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=f9f39d49c4327ed2960509e6773e616e 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=5b7c54bdafaf4f8f00e11daf26ae5a5e 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=27b1eefd0b86ce2249839c92b3438c8f 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=d48babd73c07dadb53dd38476196695d 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=21b0342cd5db871a5c230a5f7b7ffe21 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=14f10636799076ffa688df0df34ba7cf 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=1df1d529e814c89884183e114a73931e 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=dce21af88f2c75b1dbc01725b4f87b03 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=a8d00bf60b337a48e03de8d355d3cbec 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=7c34f940875012a92e692edb7094b4cf 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=27167c96ffc759f47c98c7573fe61ee7 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=f42cf57b532b5df539ef5841c2653159 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=8e8bb68d11f82a431d6e71296b77a96e 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=5d9b1a28bb023df4feae8204d729f08f 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="Goodbye, Internet Explorer. You won’t be missed (but you’ll be remembered)" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=5d9b1a28bb023df4feae8204d729f08f" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=891d009f2b1ee6b4e4d286a1fb519bde 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=f9f39d49c4327ed2960509e6773e616e 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=5b7c54bdafaf4f8f00e11daf26ae5a5e 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=27b1eefd0b86ce2249839c92b3438c8f 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=d48babd73c07dadb53dd38476196695d 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=21b0342cd5db871a5c230a5f7b7ffe21 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=14f10636799076ffa688df0df34ba7cf 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=1df1d529e814c89884183e114a73931e 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=dce21af88f2c75b1dbc01725b4f87b03 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=a8d00bf60b337a48e03de8d355d3cbec 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=7c34f940875012a92e692edb7094b4cf 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=27167c96ffc759f47c98c7573fe61ee7 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=f42cf57b532b5df539ef5841c2653159 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=8e8bb68d11f82a431d6e71296b77a96e 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F06%2Fgoodbye_internet_explorer.jpeg&amp;signature=5d9b1a28bb023df4feae8204d729f08f 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">plugged</span>
+<h3 class="c-card__heading">
+<a href="/news/goodbye-internet-explorer-you-wont-be-missed-but-youll-be-remembered" tabindex="-1">Goodbye, Internet Explorer. You won’t be missed (but you’ll be remembered)</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/conference" tabindex="-1">
+<img alt="Discover TNW All Access" class="c-card__imageImage js-parallaxLayer o-parallax__layer" src="https://img-cdn.tnwcdn.com/image?fit=684%2C248&amp;url=https%3A%2F%2Fs3.eu-west-1.amazonaws.com%2Ftnw.events%2Fhardfork-2018%2Fuploads%2Fvisuals%2FConference-Nebula.png&amp;signature=1bb74f9f4b26d485f2fe5f2b8add03f8"></img></a>
+<header class="c-card__header advertPane">
+<h3 class="ad-title">Discover TNW All Access</h3>
+<span class="ad-description">Watch videos of our inspiring Talks for free</span>
+<a class="c-button adpanel c-button--rounded" data-event-action="Related articles Static Advert" data-event-category="Article" data-event-label="Article" data-event-non-interaction="false" href="https://thenextweb.com/auth/tnw/login-required" rel="noopener noreferrer" target="_blank">Sign up now</a>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/windows-11-widgets-on-desktop">
+<img alt="Dear Microsoft, please let me pin Windows 11 widgets to the desktop" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=0576e8dce41ef8b49309f1e21d5120c0" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=44055b3e9228486ee4e3c559f79191d5 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=3df3753684bf32141bf3a4fc77c9f290 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=68291343869a23b97da460062b83abd1 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=281e97d668910679b8e966f1cacb3304 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=8950590c597b83749ab72eadd04dd659 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=bc9c35a70211ef23d5b48e92dee66321 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=6996f4c88baed4d7413fc8373fd0ddda 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=7a497128096b4aedbdf85e87b024165c 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=2344ea70d68b9413ea90070b0b015fd3 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=32e16be15e7de46296b44473c08e1204 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=9e812d82dd2556a7ecc1fa9ae04a4798 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=47cc1ade34cca9af218bf1d1a44ac6d0 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=866875f004c9f04b130f43db8163e4a1 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=31e03fa1bb997f08f10eb9118311f2f6 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=0576e8dce41ef8b49309f1e21d5120c0 1167w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px">
+<noscript>
+<img alt="Dear Microsoft, please let me pin Windows 11 widgets to the desktop" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 241px,
+                    389px" src="https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=0576e8dce41ef8b49309f1e21d5120c0" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=44055b3e9228486ee4e3c559f79191d5 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=3df3753684bf32141bf3a4fc77c9f290 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=68291343869a23b97da460062b83abd1 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=281e97d668910679b8e966f1cacb3304 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=8950590c597b83749ab72eadd04dd659 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=bc9c35a70211ef23d5b48e92dee66321 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=6996f4c88baed4d7413fc8373fd0ddda 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=7a497128096b4aedbdf85e87b024165c 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=2344ea70d68b9413ea90070b0b015fd3 1371w ,   https://img-cdn.tnwcdn.com/image?fit=241%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=32e16be15e7de46296b44473c08e1204 241w ,   https://img-cdn.tnwcdn.com/image?fit=482%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=9e812d82dd2556a7ecc1fa9ae04a4798 482w ,   https://img-cdn.tnwcdn.com/image?fit=723%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=47cc1ade34cca9af218bf1d1a44ac6d0 723w ,   https://img-cdn.tnwcdn.com/image?fit=389%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=866875f004c9f04b130f43db8163e4a1 389w ,   https://img-cdn.tnwcdn.com/image?fit=778%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=31e03fa1bb997f08f10eb9118311f2f6 778w ,   https://img-cdn.tnwcdn.com/image?fit=1167%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FWindows-11-widgets-copy.jpg&amp;signature=0576e8dce41ef8b49309f1e21d5120c0 1167w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">plugged</span>
+<h3 class="c-card__heading">
+<a href="/news/windows-11-widgets-on-desktop" tabindex="-1">Dear Microsoft, please let me pin Windows 11 widgets to the desktop</a>
+</h3>
+</header>
+</div>
+</article>
+<article class="c-showcase__article">
+<div class="c-card c-card--visual">
+<a class="c-card__image js-parallax o-media md:o-media--stretch relcon_link_fix" data-event-non-interaction="false" href="/news/next-gen-windows-coming-soon">
+<img alt="Microsoft CEO promises next-gen Windows will be revealed &amp;#8216;very soon&amp;#8217;" class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=205917dce2436c46a2fce08421d513a8" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=11815f308ffd0ab1b08ee5274a3e434c 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=187e1d42bdc189724fbd97165bd2df29 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=f7a674ca062aa8583710d3fddb22f03e 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=e13e824c54f0a57ffc88ad066ef4b9a1 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=139f61a38ffccefd0b7d5a442a3a92f1 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=a83146b4db4aaed03ad2e25b7b34e5bb 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=b9c8db8b879010345371352324ac2339 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=8367e199e7f88fb10895be1474a873c9 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=2b384eaf4225e33d8eb8c27cca77b24f 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=8df242ec7f75e7422027e07e8d97e908 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=a9a4f8a432f8eb78ea7f138c1d16c7ac 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=87a95411150fdbf6f880d6c119bb145e 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=7becd1a4519c375216e8567a4ed2654b 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=b74be236ca633d81793bf909b2188892 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=205917dce2436c46a2fce08421d513a8 2361w  " sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px">
+<noscript>
+<img alt="Microsoft CEO promises next-gen Windows will be revealed ‘very soon’" class="c-card__imageImage js-parallaxLayer o-parallax__layer" sizes="(max-width:767px) 819px,
+                    (width: 768px) 326px,
+                    (min-width:768px) and (max-width:1023px) 457px,
+                    (width: 1024px) 490px,
+                    787px" src="https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=205917dce2436c46a2fce08421d513a8" srcset=" https://img-cdn.tnwcdn.com/image?fit=819%2C655&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=11815f308ffd0ab1b08ee5274a3e434c 819w ,   https://img-cdn.tnwcdn.com/image?fit=1638%2C1310&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=187e1d42bdc189724fbd97165bd2df29 1638w ,   https://img-cdn.tnwcdn.com/image?fit=2457%2C1965&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=f7a674ca062aa8583710d3fddb22f03e 2457w ,   https://img-cdn.tnwcdn.com/image?fit=326%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=e13e824c54f0a57ffc88ad066ef4b9a1 326w ,   https://img-cdn.tnwcdn.com/image?fit=652%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=139f61a38ffccefd0b7d5a442a3a92f1 652w ,   https://img-cdn.tnwcdn.com/image?fit=978%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=a83146b4db4aaed03ad2e25b7b34e5bb 978w ,   https://img-cdn.tnwcdn.com/image?fit=457%2C198&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=b9c8db8b879010345371352324ac2339 457w ,   https://img-cdn.tnwcdn.com/image?fit=914%2C396&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=8367e199e7f88fb10895be1474a873c9 914w ,   https://img-cdn.tnwcdn.com/image?fit=1371%2C594&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=2b384eaf4225e33d8eb8c27cca77b24f 1371w ,   https://img-cdn.tnwcdn.com/image?fit=490%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=8df242ec7f75e7422027e07e8d97e908 490w ,   https://img-cdn.tnwcdn.com/image?fit=980%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=a9a4f8a432f8eb78ea7f138c1d16c7ac 980w ,   https://img-cdn.tnwcdn.com/image?fit=1470%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=87a95411150fdbf6f880d6c119bb145e 1470w ,   https://img-cdn.tnwcdn.com/image?fit=787%2C387&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=7becd1a4519c375216e8567a4ed2654b 787w ,   https://img-cdn.tnwcdn.com/image?fit=1574%2C774&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=b74be236ca633d81793bf909b2188892 1574w ,   https://img-cdn.tnwcdn.com/image?fit=2361%2C1161&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2017%2F04%2FMicrosoft-Build-2016-UWP-Dramatic-Blue-Windows-10-796x448.jpg&amp;signature=205917dce2436c46a2fce08421d513a8 2361w  "></img></noscript>
+</img></a>
+<header class="c-card__header">
+<span class="c-card__label">plugged</span>
+<h3 class="c-card__heading">
+<a href="/news/next-gen-windows-coming-soon" tabindex="-1">Microsoft CEO promises next-gen Windows will be revealed ‘very soon’</a>
+</h3>
+</header>
+</div>
+</article>
+</section>
+</div>
+</section>
+</div>
+</aside>
+</main>
+
+</div>
+</div>
+<footer class="c-footer">
+<div class="o-wrapper">
+<div class="o-grid o-grid--gap-l">
+<div class="o-grid__col lg:o-grid__col--1/2">
+<div class="c-footer__logoContact">
+<div>
+<a class="c-footer__logo" data-event-action="TNW Logo" data-event-category="Footer" data-event-label="Navigation" data-event-non-interaction="false" href="https://thenextweb.com/" tabindex="-1" title="TNW">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z" fill="#fff"></path>
+</svg>
+</a>
+<p class="c-footer__tagline">The heart of tech</p>
+</div>
+<div>
+<ul class="c-footer__contact">
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Faaaaebook" href="https://facebook.com/thenextweb" name="Facebook Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Instagram" href="https://www.instagram.com/thenextweb/" name="Instagram Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Twitter" href="https://twitter.com/thenextweb" name="Twitter Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Youtube" href="https://youtube.com/user/thenextweb" name="Youtube Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Flipboard" href="https://flipboard.com/@thenextweb" name="Flipboard Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Mail" href="/newsletters" name="Email Footer Link"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Linkedin" href="https://www.linkedin.com/company/the-next-web" name="LinkedIn Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg></a></li>
+</ul>
+</div>
+</div>
+</div>
+<br/>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 more">
+<h2 class="c-footer__heading">More TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Media" data-event-non-interaction="false" href="/latest">Media</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Events" data-event-non-interaction="false" href="/events">Events</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Programs" data-event-non-interaction="false" href="/programs">Programs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Spaces" data-event-non-interaction="false" href="/spaces">Spaces</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Newsletters" data-event-non-interaction="false" href="/newsletters">Newsletters</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://talent.thenextweb.com/job-board?source=footer&amp;utm_source=footer&amp;utm_medium=partner_referral" rel="noopener" target="_blank">Jobs in tech</a></li>
+</ul>
+</div>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 about">
+<h2 class="c-footer__heading">About TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Partner with us" data-event-non-interaction="false" href="/partnerships" name="Partner with us">Partner with us</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://thenextweb.homerun.co/" name="Jobs" rel="noopener noreferrer" target="_blank">Jobs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Terms &amp; Conditions" data-event-non-interaction="false" href="/terms-and-conditions" name="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Cookie Statement" data-event-non-interaction="false" href="/cookie-statement" name="Cookie Statement">Cookie Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Privacy Statement" data-event-non-interaction="false" href="/privacy-statement " name="Privacy Statement">Privacy Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Editorial Policy" data-event-non-interaction="false" href="https://s3.eu-west-1.amazonaws.com/tnw.uploads/uploads/FT-EDITORIAL-CODE-OF-PRACTICE-15-Jan-2024.pdf" name="Editorial Policy" rel="noopener noreferrer" target="_blank">Editorial Policy</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Masthead" data-event-non-interaction="false" href="/masthead" name="Editorial Policy" rel="noopener">Masthead</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="c-footer__legal max-md:px-l">
+<a class="feedback" data-event-action="Financial Times" data-event-category="Footer" data-event-label="Financial Times" data-event-non-interaction="false" href="https://www.ft.com/" rel="noopener nofollow" target="_blank">
+<svg viewbox="0 0 367 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.97826,19.58347H5.20213L2.77475,26H0L8.32426,4.7043H10.89L19.21428,26H16.43953ZM6.10446,17.19h6.97148L9.57254,8.1032Z" fill="#fff"></path><path d="M29.98145,26V4.7043h13.597V7.89421H33.58934v6.31344H42.919v3.156H33.58934V26Z" fill="#fff"></path><path d="M48.686,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,48.686,8.06789ZM50.42,26H46.95193V10.59977H50.42Z" fill="#fff"></path><path d="M54.72547,10.59977h3.46809V12.057a5.4558,5.4558,0,0,1,4.16284-1.80323c3.46808,0,5.445,2.289,5.445,5.72178V26H64.33332V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26275,3.26275,0,0,0-3.22521,2.46268V26H54.72547Z" fill="#fff"></path><path d="M80.43536,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38126-.97152-1.734-1.56036-3.12071-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12071-1.56036Z" fill="#fff"></path><path d="M87.86718,10.59977h3.46809V12.057a5.45578,5.45578,0,0,1,4.16283-1.80323c3.46809,0,5.445,2.289,5.445,5.72178V26H97.475V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26274,3.26274,0,0,0-3.22521,2.46268V26H87.86718Z" fill="#fff"></path><path d="M111.63545,10.25381a6.50162,6.50162,0,0,1,4.19672,1.28217v3.40031a5.4709,5.4709,0,0,0-3.95385-1.59566c-2.46268,0-4.4396,1.97692-4.4396,4.95925,0,2.98375,1.97692,4.96067,4.4396,4.96067a5.47663,5.47663,0,0,0,3.95385-1.59566v3.3989a6.50259,6.50259,0,0,1-4.19672,1.28358c-4.232,0-7.66623-3.12212-7.66623-8.04749S107.40342,10.25381,111.63545,10.25381Z" fill="#fff"></path><path d="M120.93828,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,120.93828,8.06789ZM122.67233,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M135.50962,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38127-.97152-1.73405-1.56036-3.12072-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12072-1.56036Z" fill="#fff"></path><path d="M146.40811,26H142.94V3.4546h3.46808Z" fill="#fff"></path><path d="M157.27413,4.7043h17.75842V7.89421h-7.076V26H164.3501V7.89421h-7.076Z" fill="#fff"></path><path d="M179.9678,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,179.9678,8.06789ZM181.70184,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M201.96248,10.25381c3.12072,0,4.99456,2.2198,4.99456,5.72178V26h-3.4695V16.53054c0-1.90632-.83172-3.156-2.53188-3.156a2.70093,2.70093,0,0,0-2.73945,2.289V26h-3.46809V16.53054c0-1.90632-.83313-3.156-2.53187-3.156a2.70231,2.70231,0,0,0-2.74086,2.289V26H186.0073V10.59977h3.46809v1.28359a4.67951,4.67951,0,0,1,3.85076-1.62955,5.07645,5.07645,0,0,1,4.05693,2.04611A5.6743,5.6743,0,0,1,201.96248,10.25381Z" fill="#fff"></path><path d="M217.61689,26.34737c-4.47349,0-7.63092-3.08682-7.63092-7.9091,0-4.78557,2.98374-8.18446,7.076-8.18446,4.232,0,6.48572,3.01763,6.48572,7.56032v1.24969H213.38627a4.36215,4.36215,0,0,0,4.71638,4.29981,7.11212,7.11212,0,0,0,4.4043-1.422v3.05293A8.13643,8.13643,0,0,1,217.61689,26.34737Zm-4.05834-9.91991h6.69471a3.10814,3.10814,0,0,0-3.156-3.26052A3.588,3.588,0,0,0,213.55855,16.42746Z" fill="#fff"></path><path d="M226.26311,21.213a7.9172,7.9172,0,0,0,5.20213,2.25511c1.49116,0,2.67026-.52106,2.67026-1.631,0-1.03929-.76253-1.38667-2.04612-1.80323l-1.66485-.51965c-2.63637-.83313-4.16142-2.01223-4.16142-4.64859,0-2.77476,2.49657-4.61188,5.79238-4.61188a8.38994,8.38994,0,0,1,4.61188,1.35278v3.502a6.95868,6.95868,0,0,0-4.61188-1.97692c-1.38808,0-2.46268.59025-2.46268,1.59566,0,1.00682.58884,1.35278,1.97692,1.76935l2.01082.62414c2.56717.83313,3.92,2.1845,3.92,4.5441,0,2.94844-2.63637,4.68248-6.07056,4.68248a8.48739,8.48739,0,0,1-5.16683-1.59566Z" fill="#fff"></path><path d="M249.82521,12.47361a7.08924,7.08924,0,0,1,5.27132-2.18591,6.30818,6.30818,0,0,1,4.12754,1.28358v2.63637a5.38989,5.38989,0,0,0-3.95385-1.59566,4.72822,4.72822,0,0,0-3.50339,1.52647,5.73715,5.73715,0,0,0-1.45728,4.16142,5.743,5.743,0,0,0,1.45728,4.16284,4.732,4.732,0,0,0,3.50339,1.52505,5.38853,5.38853,0,0,0,3.95385-1.59424v2.635a6.30813,6.30813,0,0,1-4.12754,1.28359,7.1933,7.1933,0,0,1-5.27132-2.15061,8.01492,8.01492,0,0,1-2.15061-5.86158A7.87619,7.87619,0,0,1,249.82521,12.47361Z" fill="#fff"></path><path d="M273.90272,24.057a6.93067,6.93067,0,0,1-10.232,0,8.56076,8.56076,0,0,1-1.94162-5.75709,8.56075,8.56075,0,0,1,1.94162-5.75708,6.93067,6.93067,0,0,1,10.232,0,8.41292,8.41292,0,0,1,1.97692,5.75708A8.41293,8.41293,0,0,1,273.90272,24.057Zm-5.099-11.48028c-2.77475,0-4.4396,2.39349-4.4396,5.72319s1.66485,5.7232,4.4396,5.7232,4.43961-2.39349,4.43961-5.7232S271.57842,12.57669,268.80367,12.57669Z" fill="#fff"></path><path d="M295.03462,10.2877c3.08682,0,4.85617,2.18591,4.85617,5.51561V26h-2.63637V16.21847c0-2.11531-.93621-3.57259-2.91314-3.57259a3.56186,3.56186,0,0,0-3.4003,2.74087V26h-2.60107V16.21847c0-2.11531-.93622-3.57259-2.91314-3.57259a3.5603,3.5603,0,0,0-3.39889,2.74087V26h-2.60107V10.59977h2.60107v1.80465a4.77136,4.77136,0,0,1,4.16142-2.11672,4.56953,4.56953,0,0,1,4.16283,2.46268A5.61944,5.61944,0,0,1,295.03462,10.2877Z" fill="#fff"></path><path d="M306.91028,31.89688h-2.60107V10.59977h2.60107v1.80465a5.47521,5.47521,0,0,1,4.33511-2.11672,5.97708,5.97708,0,0,1,5.16824,2.42879,9.16121,9.16121,0,0,1,1.76935,5.58339,9.34026,9.34026,0,0,1-1.76935,5.6187,6.039,6.039,0,0,1-5.16824,2.39349,5.4743,5.4743,0,0,1-4.33511-2.11531Zm0-10.47487a4.49749,4.49749,0,0,0,3.95385,2.53187c2.91313,0,4.68248-2.42879,4.68248-5.654s-1.76935-5.654-4.68248-5.654a4.4975,4.4975,0,0,0-3.95385,2.53188Z" fill="#fff"></path><path d="M330.29728,15.768c0-1.90773-1.422-3.08682-3.67708-3.08682a7.75913,7.75913,0,0,0-4.37041,1.35278V11.57128a8.82,8.82,0,0,1,4.787-1.28358c3.60647,0,5.79239,2.04611,5.79239,5.27273V26h-2.53188V24.8548a6.22354,6.22354,0,0,1-3.98915,1.422,6.54463,6.54463,0,0,1-4.05834-1.31748,4.33611,4.33611,0,0,1-1.66485-3.60647,4.1488,4.1488,0,0,1,1.70015-3.4695,6.8181,6.8181,0,0,1,8.01219-.10308Zm0,4.82087c-.41656-1.14379-1.943-1.90773-3.57258-1.90773a4.84209,4.84209,0,0,0-2.53188.65944,2.11057,2.11057,0,0,0-1.1452,2.01223,2.24887,2.24887,0,0,0,1.1452,2.08,4.82881,4.82881,0,0,0,2.53188.65945c1.62955,0,3.156-.76253,3.57258-1.90773Z" fill="#fff"></path><path d="M337.27723,10.59977h2.60107v1.943a5.69746,5.69746,0,0,1,4.5441-2.2551c3.46809,0,5.40971,2.289,5.40971,5.61869V26h-2.635V16.323c0-2.11531-1.076-3.64177-3.40031-3.64177a4.178,4.178,0,0,0-3.91854,2.87924V26h-2.60107Z" fill="#fff"></path><path d="M356.05094,31.89688l2.32289-5.79239-6-15.50472h2.81l4.54269,12.13972,4.47491-12.13972h2.70556l-8.29037,21.29711Z" fill="#fff"></path>
+</svg>
+</a>
+<p>
+                    Copyright © 2006—2024, The Next Web B.V.
+                    Made with &lt;3 in Amsterdam.
+                    <br/>
+</p>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<div class="cookie-consent-banner" data-args='{"cookieName":"__tnw_cookieConsent","cookieExpirationDays":"365","consentChoices":["ad_storage","analytics_storage"],"redirectOnSave":true,"honorDoNotTrack":false,"stylesheet":"https:\/\/thenextweb.com\/cpresources\/1abce43c\/style.css?v=1725957748","titleText":"Cookies","descriptionText":"&lt;p&gt;We use &lt;a href=\"\/cookie-statement\"&gt;cookies&lt;\/a&gt; and other data for a number of reasons, such as keeping TNW sites reliable and secure, personalizing content and ads, providing social media features and to analyze how our sites are used.&lt;\/p&gt;","linkColor":"6644ff","linkHoverColor":"7755ff","primaryBtnText":"Accept &amp; continue","primaryBtnBgColor":"","primaryBtnBgHoverColor":"","primaryBtnColor":"","primaryBtnHoverColor":"","secondaryBtnText":"Manage cookies","secondaryBtnURL":"\/cookie-statement","secondaryBtnRedirectURL":"https:\/\/thenextweb.com\/news\/inside-fido-alliances-vision-of-a-future-free-of-passwords","secondaryBtnColor":"6644ff","secondaryBtnHoverColor":"7755ff","debugMode":false}' id="cookie-consent-banner"></div>
+</body>
+</html>

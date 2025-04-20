@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link class="user" href="https://www.vmware.com/content/dam/vmwaredesigns/scrapercontent/responsive.css" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/vmware-japan/wp-content/themes/vmware-blog-1.9.7/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<!-- This site is optimized with the Yoast SEO Premium plugin v20.8 (Yoast SEO v21.5) - https://yoast.com/wordpress/plugins/seo/ -->
+<title>解説！ AVS とオンプレミスの接続方法 - VMware Japan Blog</title>
+<link href="https://blogs.vmware.com/vmware-japan/2021/03/avs-networking.html" rel="canonical"/>
+<meta content="ja_JP" property="og:locale">
+<meta content="article" property="og:type">
+<meta content="解説！ AVS とオンプレミスの接続方法" property="og:title"/>
+<meta content="みなさま、こんにちは！ マイクロソフトの前島です。 最初にご報告ですが、2/3にVMwareさんと共同で「ついに国内での提供が始まった Azure VMware Solution とは？」と題し、Webinarを開催させて頂きました。AVSの最新情報に加え、導入検討で活用できるツールについてもご紹介しています。是非ご覧ください。オンデマンドで視聴が可能です。また、AVSの環境構築プロセスを体験頂けるHands-on Labs (HOL)もオープンしています。合わせてご活用頂ければと思います。 さて、前回は Azure VMware Solution (AVS) の全体システム構造を解説しました。その中でも少し触れましたが、AVS システム構成の検討で最も重要な項目の一つが、オンプレミスと AVS 間の接続方法です。第4回となる今回は、このネットワーク接続方法を詳しく見ていきます。 1. コンセプト AVS のネットワーク接続方法を理解する上で、最初にぜひ押さえておいていただきたいコンセプトがあります。それは、AVS のネットワーク接続は“既存の Azure ネットワークサービスを最大限活用して実装されている”という点です。 多くの実績がある Azure ネットワークサービスを活用することで、Azureを既に活用されているお客様が大きく構成を変えることなく AVS もご利用できる他、（AVS 独自の実装を極力排除することで）他の Azure サービスとのシームレスな連携を実現できたり、Azure ネットワークサービスの絶え間ない進化を AVS 環境でも例外なく享受できるようになります。 2. Azure ネットワークの基礎知識 ただし見方を変えると、Azure に馴染みのない方にとっては、初めて聞く “Azure 用語” に戸惑ってしまうかもしれません。 そこでまずは、AVS を検討する上で押さえておいてほしい Azure ネットワーク関連用語を紹介します。 用語 解説 仮想ネットワーク (VNET) Azure 内の論理的なプライベートネットワーク空間。特に Azure … 続き" property="og:description"/>
+<meta content="https://blogs.vmware.com/vmware-japan/2021/03/avs-networking.html" property="og:url"/>
+<meta content="VMware Japan Blog" property="og:site_name"/>
+<meta content="https://www.facebook.com/vmwarejapan/" property="article:publisher"/>
+<meta content="2021-03-05T09:30:25+00:00" property="article:published_time"/>
+<meta content="2021-10-14T04:43:12+00:00" property="article:modified_time"/>
+<meta content="https://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide7.png" property="og:image"/>
+<meta content="1306" property="og:image:width"/>
+<meta content="734" property="og:image:height"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="Bhaskar Singh" name="author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@VMware_Japan" name="twitter:creator"/>
+<meta content="@VMware_Japan" name="twitter:site"/>
+<meta content="Written by" name="twitter:label1"/>
+<meta content="Bhaskar Singh" name="twitter:data1"/>
+<meta content="Est. reading time" name="twitter:label2"/>
+<meta content="1 minute" name="twitter:data2"/>
+
+<!-- / Yoast SEO Premium plugin. -->
+
+
+<link href="https://blogs.vmware.com/vmware-japan/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/vmware-japan/wp-includes/css/classic-themes.min.css?ver=6.2.2" id="classic-theme-styles-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://blogs.vmware.com/vmware-japan/wp-content/plugins/better-click-to-tweet/assets/css/styles.css?ver=3.0" id="bcct_style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/vmware-japan/wp-content/plugins/onetrust-vmware-mu/css/g_onetrust.css?ver=6.2.2" id="g-onetrust-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/vmware-japan/wp-content/plugins/meks-smart-author-widget/css/style.css?ver=1.1.1" id="meks-author-widget-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blogs.vmware.com/vmware-japan/wp-content/themes/vmware-blog-1.9.7/dist/styles/main-e628cfdf43.css" id="sage/css-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+<link href="https://blogs.vmware.com/vmware-japan/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://blogs.vmware.com/vmware-japan/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+<meta content="WordPress 6.2.2" name="generator"/>
+<link href="https://blogs.vmware.com/vmware-japan/?p=25826" rel="shortlink"/>
+<link href="https://blogs.vmware.com/vmware-japan/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogs.vmware.com%2Fvmware-japan%2F2021%2F03%2Favs-networking.html" rel="alternate" type="application/json+oembed"/>
+<link href="https://blogs.vmware.com/vmware-japan/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogs.vmware.com%2Fvmware-japan%2F2021%2F03%2Favs-networking.html&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager --> 
+</meta></meta></meta></link></head>
+<body class="post-template-default single single-post postid-25826 single-format-standard avs-networking.html sidebar-primary">
+<!--[if IE]>
+      <div class="alert alert-warning">
+        <strong>古い</strong>ブラウザーが使用されています。エクスペリエンス向上のため、<a href="http://browsehappy.com/">ブラウザーをアップグレード</a>してください。      </div>
+    <![endif]-->
+<header class="banner">
+<nav class="global-nav">
+<div class="container">
+<div class="row">
+<div class="col-12 col-md-10 col-lg-8 col-xl-9">
+<div class="brand-links">
+<button aria-controls="primaryNavigation" aria-expanded="false" aria-label="メニューの切り替え" class="hamburger mobile-trigger" type="button">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span class="label">メニュー</span>
+</button>
+<a href="https://www.vmware.com/"><img alt="VMware" src="//blogs.vmware.com/vmware-japan/wp-content/themes/vmware-blog-1.9.7/dist/images/VMware-by-Broadcom-Logo_color.svg"/></a>
+<a class="name" href="https://blogs.vmware.com/vmware-japan/">VMware Japan Blog</a>
+</div>
+</div>
+<div class="col-md-2 col-lg-4 col-xl-3 text-right right-nav">
+<div class="search-wrap">
+<form action="https://blogs.vmware.com/vmware-japan/" class="search-form" method="get">
+<label class="sr-only" for="s">検索</label>
+<input class="search-field" name="s" placeholder="検索"/>
+<input class="search-submit btn" type="submit" value="検索を実行"/>
+</form>
+<button aria-expanded="false" aria-label="Toggle search" class="search-btn mobile-trigger" type="button">
+<span class="sr-only">検索</span>
+</button> </div>
+<button aria-controls="globalNavigation" aria-expanded="false" aria-label="メニューの切り替え" class="dots mobile-trigger" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<div class="links-wrap" id="globalNavigation">
+<ul class="links">
+<li><a href="https://blogs.vmware.com/">VMware Blogs</a></li>
+<li><a href="https://communities.vmware.com/">コミュニティ</a></li>
+</ul>
+<ul class="social-links d-lg-none">
+<li class="icon icon-rss">
+<a href="https://blogs.vmware.com/vmware-japan/feed" rel="noopener noreferrer" target="_rss">
+<span class="sr-only">RSS</span>
+</a>
+</li>
+<li class="icon icon-twitter">
+<a href="https://twitter.com/VMware_Japan" rel="noopener noreferrer" target="_twitter">
+<span class="sr-only">Twitter</span>
+</a>
+</li>
+<li class="icon icon-youtube">
+<a href="https://www.youtube.com/channel/UC5kqwQxcbTE8E0R8bDqCi6g?" rel="noopener noreferrer" target="_youtube">
+<span class="sr-only">YouTube</span>
+</a>
+</li>
+<li class="icon icon-fb">
+<a href="https://www.facebook.com/vmwarejapan/" rel="noopener noreferrer" target="_facebook">
+<span class="sr-only">Facebook</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav> <nav class="primary-nav" role="navigation">
+<div class="container">
+<div class="row">
+<div aria-label="メイン メニュー" class="col-12 col-lg-9 main-nav" id="primaryNavigation">
+<div class="gradient-mask-wrap">
+<div class="gradient-menu-wrap">
+<ul class="menu-top-nav" id="menu-main-menu" role="menubar"><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-20698" id="menu-item-20698"><a aria-expanded="false" aria-haspopup="true" href="https://blogs.vmware.com/vmware-japan/product" role="menuitem">製品</a><button aria-controls="submenu-20698" aria-expanded="false"><span class="sr-only">サブメニューの切り替え</span></button><div class="gradient-mask"><div class="arrow"></div></div>
+<ul class="sub-menu" id="submenu-20698" role="menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35567" id="menu-item-35567"><a href="https://blogs.vmware.com/vmware-japan/product/vmware-blockchain" role="menuitem">VMware Blockchain</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-30337" id="menu-item-30337"><a href="https://blogs.vmware.com/vmware-japan/product/vmware-carbon-black" role="menuitem">VMware Carbon Black</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20727" id="menu-item-20727"><a href="https://blogs.vmware.com/vmware-japan/product/vmware-cloud-foundation" role="menuitem">VMware Cloud Foundation</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23631" id="menu-item-23631"><a href="https://blogs.vmware.com/vmware-japan/product/vmware-cloud-on-aws" role="menuitem">VMware Cloud on AWS</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20699" id="menu-item-20699"><a href="https://blogs.vmware.com/vmware-japan/product/horizon" role="menuitem">VMware Horizon</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20750" id="menu-item-20750"><a href="https://blogs.vmware.com/vmware-japan/product/nsx" role="menuitem">VMware NSX</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20726" id="menu-item-20726"><a href="https://blogs.vmware.com/vmware-japan/product/sd-wan" role="menuitem">VMware SD-WAN</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23174" id="menu-item-23174"><a href="https://blogs.vmware.com/vmware-japan/product/tanzu" role="menuitem">VMware Tanzu</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20700" id="menu-item-20700"><a href="https://blogs.vmware.com/vmware-japan/product/vsan" role="menuitem">VMware vSAN</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20701" id="menu-item-20701"><a href="https://blogs.vmware.com/vmware-japan/product/vsphere" role="menuitem">VMware vSphere</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20728" id="menu-item-20728"><a href="https://blogs.vmware.com/vmware-japan/product/vxrail" role="menuitem">VxRail</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20702" id="menu-item-20702"><a href="https://blogs.vmware.com/vmware-japan/product/workspace-one" role="menuitem">VMware Workspace ONE</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20963" id="menu-item-20963"><a href="https://blogs.vmware.com/vmware-japan/product/cloud-ops-management" role="menuitem">クラウド運用・管理</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-20703" id="menu-item-20703"><a aria-expanded="false" aria-haspopup="true" href="https://blogs.vmware.com/vmware-japan/solution" role="menuitem">ソリューション</a><button aria-controls="submenu-20703" aria-expanded="false"><span class="sr-only">サブメニューの切り替え</span></button><div class="gradient-mask"><div class="arrow"></div></div>
+<ul class="sub-menu" id="submenu-20703" role="menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20704" id="menu-item-20704"><a href="https://blogs.vmware.com/vmware-japan/solution/app-modernization" role="menuitem">アプリケーションのモダナイゼーション</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-20705" id="menu-item-20705"><a href="https://blogs.vmware.com/vmware-japan/solution/cloud" role="menuitem">クラウド</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20706" id="menu-item-20706"><a href="https://blogs.vmware.com/vmware-japan/solution/security" role="menuitem">セキュリティ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20707" id="menu-item-20707"><a href="https://blogs.vmware.com/vmware-japan/solution/digital-workspace" role="menuitem">デジタル ワークスペース</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20708" id="menu-item-20708"><a href="https://blogs.vmware.com/vmware-japan/solution/network" role="menuitem">ネットワーク</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-20710" id="menu-item-20710"><a aria-expanded="false" aria-haspopup="true" href="https://blogs.vmware.com/vmware-japan/support-service" role="menuitem">サポート＆サービス</a><button aria-controls="submenu-20710" aria-expanded="false"><span class="sr-only">サブメニューの切り替え</span></button><div class="gradient-mask"><div class="arrow"></div></div>
+<ul class="sub-menu" id="submenu-20710" role="menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20712" id="menu-item-20712"><a href="https://blogs.vmware.com/vmware-japan/support-service/tam" role="menuitem">TAM サービス</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20711" id="menu-item-20711"><a href="https://blogs.vmware.com/vmware-japan/support-service/learning" role="menuitem">ラーニング</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27577" id="menu-item-27577"><a href="https://blogs.vmware.com/vmware-japan/support-service/global-support" role="menuitem">グローバルサポート</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-47159" id="menu-item-47159"><a href="https://blogs.vmware.com/vmware-japan/support-service/success-desk" role="menuitem">サクセスデスク</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-20714" id="menu-item-20714"><a aria-expanded="false" aria-haspopup="true" href="https://blogs.vmware.com/vmware-japan/partner" role="menuitem">パートナー</a><button aria-controls="submenu-20714" aria-expanded="false"><span class="sr-only">サブメニューの切り替え</span></button><div class="gradient-mask"><div class="arrow"></div></div>
+<ul class="sub-menu" id="submenu-20714" role="menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-46028" id="menu-item-46028"><a href="https://blogs.vmware.com/vmware-japan/partner" role="menuitem">セミナー</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-39068" id="menu-item-39068"><a aria-expanded="false" aria-haspopup="true" href="https://blogs.vmware.com/vmware-japan/partner/partner-newsletter" role="menuitem">Partner Newsletter</a><button aria-controls="submenu-39068" aria-expanded="false"><span class="sr-only">サブメニューの切り替え</span></button>
+<ul class="tertiary-menu" id="submenu-39068" role="menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39318" id="menu-item-39318"><a href="https://blogs.vmware.com/vmware-japan/partner/partner-newsletter/cloud-partner-newsletter" role="menuitem">Cloud</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39316" id="menu-item-39316"><a href="https://blogs.vmware.com/vmware-japan/partner/partner-newsletter/enablement" role="menuitem">Enablement</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39319" id="menu-item-39319"><a href="https://blogs.vmware.com/vmware-japan/partner/partner-newsletter/news-events" role="menuitem">News &amp; Events</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39320" id="menu-item-39320"><a href="https://blogs.vmware.com/vmware-japan/partner/partner-newsletter/programs" role="menuitem">Programs</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39321" id="menu-item-39321"><a href="https://blogs.vmware.com/vmware-japan/partner/partner-newsletter/solutions" role="menuitem">Solutions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-32788" id="menu-item-32788"><a aria-expanded="false" aria-haspopup="true" href="https://blogs.vmware.com/vmware-japan/company" role="menuitem">Company</a><button aria-controls="submenu-32788" aria-expanded="false"><span class="sr-only">サブメニューの切り替え</span></button><div class="gradient-mask"><div class="arrow"></div></div>
+<ul class="sub-menu" id="submenu-32788" role="menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20715" id="menu-item-20715"><a href="https://blogs.vmware.com/vmware-japan/thought-leadership" role="menuitem">Thought Leadership</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32790" id="menu-item-32790"><a href="https://blogs.vmware.com/vmware-japan/sustainability" role="menuitem">Sustainability</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-34562" id="menu-item-34562"><a href="https://blogs.vmware.com/vmware-japan/company/vmware-japan-culture" role="menuitem">VMware Japan Culture</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37508" id="menu-item-37508"><a href="https://blogs.vmware.com/vmware-japan/company/vmware-sakura" role="menuitem">VMware Sakura</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33201" id="menu-item-33201"><a href="https://blogs.vmware.com/vmware-japan/company/dei" role="menuitem">ダイバーシティ、エクイティ、インクルージョン</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-20716" id="menu-item-20716"><a aria-expanded="false" aria-haspopup="true" href="https://blogs.vmware.com/vmware-japan/resource" role="menuitem">リソース</a><button aria-controls="submenu-20716" aria-expanded="false"><span class="sr-only">サブメニューの切り替え</span></button><div class="gradient-mask"><div class="arrow"></div></div>
+<ul class="sub-menu" id="submenu-20716" role="menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20717" id="menu-item-20717"><a href="https://blogs.vmware.com/vmware-japan/resource/tips-information" role="menuitem">TIPS &amp; Information</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20718" id="menu-item-20718"><a href="https://blogs.vmware.com/vmware-japan/hol" role="menuitem">ハンズオンラボ</a></li>
+</ul>
+</li>
+</ul> </div>
+<div class="gradient-menu-mask"></div>
+</div>
+</div>
+<div class="col-12 col-lg-3">
+<ul class="social-links">
+<li class="icon icon-rss">
+<a href="https://blogs.vmware.com/vmware-japan/feed" rel="noopener noreferrer" target="_rss">
+<span class="sr-only">RSS</span>
+</a>
+</li>
+<li class="icon icon-twitter">
+<a href="https://twitter.com/VMware_Japan" rel="noopener noreferrer" target="_twitter">
+<span class="sr-only">Twitter</span>
+</a>
+</li>
+<li class="icon icon-youtube">
+<a href="https://www.youtube.com/channel/UC5kqwQxcbTE8E0R8bDqCi6g?" rel="noopener noreferrer" target="_youtube">
+<span class="sr-only">YouTube</span>
+</a>
+</li>
+<li class="icon icon-fb">
+<a href="https://www.facebook.com/vmwarejapan/" rel="noopener noreferrer" target="_facebook">
+<span class="sr-only">Facebook</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="gradient-bar">
+<div class="container">
+<div class="row">
+<div class="col-9">
+<div class="gradient-mask"></div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="wrap" role="document">
+<div class="content">
+<main>
+<div class="progress" style="display: none;">
+<div aria-valuemax="100" aria-valuemin="0" aria-valuenow="0" class="progress-bar" role="progressbar"></div>
+</div>
+<article class="background-off-white">
+<div class="container background-white mb-4">
+<div class="row">
+<div class="col-12">
+<header class="post-header">
+<div class="post-header-inner">
+<div class="post-featured-image">
+<img alt="" class="img-fluid" src="https://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide7-576x324.png"/>
+</div>
+<div class="post-headline">
+<a class="category-label" href="https://blogs.vmware.com/vmware-japan/partner">パートナー</a>
+<a class="category-label" href="https://blogs.vmware.com/vmware-japan/product/vmware-cloud-foundation">VMware Cloud Foundation</a>
+<a class="category-label" href="https://blogs.vmware.com/vmware-japan/solution/cloud">クラウド</a>
+<h1 class="entry-title">解説！ AVS とオンプレミスの接続方法</h1>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//secure.gravatar.com/avatar/a99a06e54cf78b9aff34f682e35e3380?s=30&amp;d=https%3A%2F%2Fuser-images.githubusercontent.com%2F969755%2F61500768-7d535780-a981-11e9-8578-dc6bf989ffb2.png&amp;r=g"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/vmware-japan/author/bhsinghvmware-com" rel="author">Bhaskar Singh</a>
+</div>
+<time class="updated" datetime="2021-03-05" pubdate="">March 5, 2021</time>
+</div> </div>
+</div>
+<div class="gradient-border"></div>
+</header> </div>
+</div>
+<div class="row">
+<div class="col-md-4 col-lg-2">
+<aside class="sharing d-none d-md-block">
+<strong>共有：</strong>
+<ul class="social-links">
+<li class="icon icon-twitter">
+<a href="https://twitter.com/intent/tweet?url=https://blogs.vmware.com/vmware-japan/2021/03/avs-networking.html&amp;text=解説！ AVS とオンプレミスの接続方法" rel="noopener noreferrer" target="_blank">
+<span class="sr-only">Twitter で共有</span>
+</a>
+</li>
+<li class="icon icon-linkedin">
+<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://blogs.vmware.com/vmware-japan/2021/03/avs-networking.html" target="_blank">
+<span class="sr-only">LinkedIn で共有</span>
+</a>
+</li>
+<li class="icon icon-fb">
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://blogs.vmware.com/vmware-japan/2021/03/avs-networking.html" target="_blank">
+<span class="sr-only">Facebook で共有</span>
+</a>
+</li>
+<li class="icon icon-mail">
+<a href="/cdn-cgi/l/email-protection#37084442555d5254430adf9094df9d9bd88bb61776616417d4b69fd4b59dd4b484d4b4a0d4b49bd4b4a8d4b58ed4b699d1b992d081add1a18ed184a2115558534e0a5f434347440d1818555b58504419415a405645521954585a18415a405645521a5d564756591805070506180704185641441a5952434058455c5e5950195f435a5b" target="_blank">
+<span class="sr-only">この記事をメールで送信</span>
+</a>
+</li>
+</ul>
+</aside> </div>
+<div class="col-md-8">
+<div class="entry-content" data-langdir="">
+<p>みなさま、こんにちは！ マイクロソフトの前島です。</p>
+<p>最初にご報告ですが、2/3にVMwareさんと共同で「ついに国内での提供が始まった Azure VMware Solution とは？」と題し、<a href="https://info.microsoft.com/JA-HCSAzureHybridInfra-WBNR-FY21-02Feb-03-AzureVMwareSolution-SRDEM56960_LP02OnDemandRegistration-ForminBody.html"><strong>Webinar</strong></a>を開催させて頂きました。AVSの最新情報に加え、導入検討で活用できるツールについてもご紹介しています。是非ご覧ください。オンデマンドで視聴が可能です。また、AVSの環境構築プロセスを体験頂ける<a href="https://web.hol.vmware.com/landingPages/index.aspx?id=PN5RRQA9"><strong>Hands-on Labs (HOL)</strong></a>もオープンしています。合わせてご活用頂ければと思います。</p>
+<p>さて、<a href="https://blogs.vmware.com/vmware-japan/2021/02/avs-architecture.html">前回</a>は Azure VMware Solution (AVS) の全体システム構造を解説しました。その中でも少し触れましたが、AVS システム構成の検討で最も重要な項目の一つが、<strong>オンプレミスと AVS 間の接続方法</strong>です。第4回となる今回は、このネットワーク接続方法を詳しく見ていきます。</p>
+<h2 class="wp-block-heading">1. <strong>コンセプト</strong></h2>
+<p>AVS のネットワーク接続方法を理解する上で、最初にぜひ押さえておいていただきたいコンセプトがあります。それは、AVS のネットワーク接続は<strong>“既存の Azure ネットワークサービスを最大限活用して実装されている”</strong>という点です。</p>
+<p>多くの実績がある Azure ネットワークサービスを活用することで、Azureを既に活用されているお客様が大きく構成を変えることなく AVS もご利用できる他、（AVS 独自の実装を極力排除することで）他の Azure サービスとのシームレスな連携を実現できたり、Azure ネットワークサービスの絶え間ない進化を AVS 環境でも例外なく享受できるようになります。</p>
+<h2 class="wp-block-heading">2. <strong>Azure ネットワークの基礎知識</strong></h2>
+<hr class="wp-block-separator"/>
+<p>ただし見方を変えると、Azure に馴染みのない方にとっては、初めて聞く “Azure 用語” に戸惑ってしまうかもしれません。</p>
+<p>そこでまずは、AVS を検討する上で押さえておいてほしい <strong>Azure ネットワーク関連用語</strong>を紹介します。</p>
+<figure class="wp-block-table is-style-stripes">
+<table>
+<thead>
+<tr>
+<th class="has-text-align-left" data-align="left" style="text-align: center;">用語</th>
+<th class="has-text-align-left" data-align="left" style="text-align: center;">解説</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="has-text-align-left" data-align="left">仮想ネットワーク (VNET)</td>
+<td class="has-text-align-left" data-align="left">Azure 内の論理的なプライベートネットワーク空間。<br/>特に Azure IaaS を利用する場合は必須の構成要素であり、仮想マシンはいずれかの VNET 内で稼働する。</td>
+</tr>
+<tr>
+<td class="has-text-align-left" data-align="left">ExpressRoute</td>
+<td class="has-text-align-left" data-align="left">オンプレミスと Azure データセンターのプライベート接続を確立するためのサービス。</td>
+</tr>
+<tr>
+<td class="has-text-align-left" data-align="left">Microsoft Enterprise Edge (MSEE)</td>
+<td class="has-text-align-left" data-align="left"><a href="https://docs.microsoft.com/ja-jp/azure/expressroute/expressroute-locations#expressroute-locations">ExpressRoute 接続拠点</a>にある、Microsoft が管理するエッジルーター。<br/>ExpressRoute を利用する際は、任意の拠点にある MSEE 経由で Azure リージョンに接続する。</td>
+</tr>
+<tr>
+<td class="has-text-align-left" data-align="left">Customer Edge (CE)</td>
+<td class="has-text-align-left" data-align="left">上記 MSEE の対向となる、ExpressRoute 接続におけるお客様拠点のエッジルーター。</td>
+</tr>
+<tr>
+<td class="has-text-align-left" data-align="left">仮想ネットワーク ゲートウェイ (VNET Gateway)</td>
+<td class="has-text-align-left" data-align="left">VNET への接続ポイントとなるゲートウェイサービス。 <br/>VNET には ExpressRoute および IPSec VPN による接続が可能であり、ゲートウェイ も ExpressRoute Gateway と VPN Gateway の2種類が存在する。</td>
+</tr>
+</tbody>
+</table>
+</figure>
+<p>ここまでが、オンプレミスと Azure IaaS 間を接続する典型的なシナリオで登場する基本用語です。イメージで表すと、下図のようになります。</p>
+<figure class="wp-block-image size-large"><img alt="" class="aligncenter wp-image-322" decoding="async" src="http://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide1.png"/>
+<figcaption style="text-align: center;">図1: オンプレミスと Azure IaaS 間での接続</figcaption>
+</figure>
+<p>これらに加えて、AVS ネットワークを理解するためにもう一つ知っておいていただきたいサービスが、<a href="https://docs.microsoft.com/ja-jp/azure/expressroute/expressroute-global-reach">ExpressRoute Global Reach</a> です。</p>
+<p><strong>Global Reach</strong> は ExpressRoute の拡張機能であり、別々の ExpressRoute 接続拠点 (MSEE) に接続された複数のオンプレミスネットワークを、Microsoft バックボーン経由で通信可能にするサービスです。たとえば東京とロンドンに拠点を持つ企業が、それぞれの場所でExpressRoute を接続しただけでは、お互いのオンプレミス間は通信できませんが、Global Reachを有効化すると双方の MSEE が BGP で経路を学習し、Microsoft バックボーン経由で通信できるようになります。</p>
+<figure class="wp-block-image size-large"><img alt="" class="aligncenter wp-image-323" decoding="async" src="http://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide2.png"/>
+<figcaption style="text-align: center;">図2: ExpressRoute Global Reach 概要</figcaption>
+</figure>
+<p>一見 AVSとは関係ない話に聞こえるかもしれませんが、これが AVS にとってなぜ重要かは後で解説します。</p>
+<h2 class="wp-block-heading">３. ExpressRoute で <strong><strong>AVS と接続する仕組み</strong></strong></h2>
+<hr class="wp-block-separator"/>
+<p>それでは、AVS がどのようなアーキテクチャーでオンプレミスや他の Azure (VNET) と接続するかを見ていきます。</p>
+<p>AVS はその特徴と一つとして、お客様ごとに完全に占有・分離されたプライベートクラウド環境を提供するサービスです。また、オーバーレイネットワークは VMware のネットワーク仮想化技術である NSX-T を採用しています。そのため、Azure VNET とは完全に別の空間として AVS ネットワークが構成されます。</p>
+<figure class="wp-block-image size-large"><img alt="" class="aligncenter wp-image-326" decoding="async" src="http://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide3.png"/>
+<figcaption style="text-align: center;">図3: 初期展開直後の AVS ネットワーク</figcaption>
+</figure>
+<p>ですが、この状態では AVS 上の仮想マシンが外部と通信できません。そこで、AVS ではプライベートクラウドを展開するお客様ごとに<strong>占有のエッジルーター (D-MSEE)</strong>を提供します。D-MSEE は AVS の基本サービスに含まれており、個別費用が発生したりお客様が明示的に展開・管理する必要はありません。</p>
+<figure class="wp-block-image size-large"><img alt="" class="aligncenter wp-image-328" decoding="async" src="http://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide4.png"/>
+<figcaption style="text-align: center;">図4: AVS 用 Dedicated MSEE の提供</figcaption>
+</figure>
+<p>D-MSEE は物理的には Azure データセンター内にありますが、AVS というプライベートクラウド側にある CE (Customer Edge) と考えていただくとよいでしょう。オンプレミスから ExpressRoute 接続するのと同様の感覚で、D-MSEE と 任意の MSEE 間を接続でき、これによって AVS / VNET 間で疎通できるようになります。</p>
+<figure class="wp-block-image size-large"><img alt="" class="aligncenter wp-image-330" decoding="async" src="http://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide5.png"/>
+<figcaption style="text-align: center;">図5: MSEE 経由での AVS/VNET 間の接続</figcaption>
+</figure>
+<p>ただ、この状態では一つ問題があります。オンプレミスと AVS ネットワーク間は、2つの異なる ExpressRoute によって接続されているためお互いのネットワーク経路を広報できないのです。そこで登場するのが <strong>Global Reach</strong> です。<a href="https://docs.microsoft.com/ja-jp/azure/azure-vmware/tutorial-expressroute-global-reach-private-cloud">所定の手順</a>で Global Reach を有効化すると、オンプレミス/VNET/AVS ネットワーク間すべての経路で通信可能になります。</p>
+<p>なお Global Reach は本来有償のサービスですが、AVS では基本パッケージに含まれており別途費用が発生することはありません。また、Global Reach は ExpressRoute の上位エディション (Premium SKU) でのみ提供される機能ですが、Global Reach の有効化は AVS 側で行うため、オンプレミス側で構成する ExpressRoute に関しては、より安価な Standard SKU でも構いません。</p>
+<figure class="wp-block-image size-large"><img alt="" class="aligncenter wp-image-331" decoding="async" src="http://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide6.png"/>
+<figcaption style="text-align: center;">図6: Global Reach によるオンプレミスとの接続</figcaption>
+</figure>
+<p>さて、これで AVS がオンプレミスや Azure VNET と通信できるようになりましたが、AVS/VNET間の通信に関してはもう一つ検討余地があります。</p>
+<p>マイクロソフトでは、お客様が世界中どこからでも Azure に接続できるように <a href="https://docs.microsoft.com/ja-jp/azure/expressroute/expressroute-locations#azure-regions-to-expressroute-locations-within-a-geopolitical-region">ExpressRoute 接続拠点（MSEE）</a>を世界中で展開しています。たとえば日本では、大阪、東京、東京2という接続拠点を提供しており、これらは Microsoft Azure のデータセンターとは別の場所にあります。</p>
+<p>国内であればそもそも距離が短いので問題になるケースは少ないと考えられますが、Global Reach 経由で行われる AVS/VNET 間の通信は、一旦 Azure データセンターを抜けて ExpressRoute 接続拠点を経由して戻ってくる形になり、多少なりともレイテンシーが発生します。そのためネットワーク遅延に対する要件が厳しい場合は、追加の構成として AVS と VNET 側 ExpressRoute ゲートウェイの間で直接通信経路を確保させることができます。</p>
+<figure class="wp-block-image size-large"><img alt="" class="aligncenter wp-image-335" decoding="async" src="http://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide7.png"/>
+<figcaption style="text-align: center;">図7: ExpressRoute ゲートウェイ経由で接続</figcaption>
+</figure>
+<p>以上が、AVS/オンプレミス/VNET 間の通信経路を確保するための一般的なアプローチになります。</p>
+<p>文章で解説するとどうしても長くなってしまいますが、AVS という<strong>“プライベートクラウド空間”</strong>を外部接続するために “<strong>Azure がもともと提供する ExpressRoute や Global Reach を活用している</strong>“というコンセプトを押さえていただければ正しく実装いただけるはずです。</p>
+<h2 class="wp-block-heading">4. <strong>ExpressRouteなし (=VPN) で接続する方法</strong></h2>
+<hr class="wp-block-separator"/>
+<p>ここまで ExpressRoute を前提に解説してきましたが、AVS への接続に ExpressRoute を敷設するのが難しい、というケースもあるかと思います。そこで登場するのが、さらに別の Azure ネットワークサービスである <a href="https://docs.microsoft.com/ja-jp/azure/virtual-wan/virtual-wan-about">Azure VirtualWAN</a> です。</p>
+<p><strong>Azure VirtualWAN</strong> は、ネットワーク、セキュリティ、ルーティングなどのさまざまな機能をまとめて提供するソリューションです。たとえば任意の Azure リージョン内に <strong>VirtualWAN Hub</strong> と呼ばれるネットワークを構成し、ExpressRoute / サイト間VPN / ポイント対サイトVPN など様々な形態で Hub に接続した拠点間での相互通信を可能にする機能を提供します。</p>
+<p>オンプレミスから VPN 接続したい場合は、この VirtualWAN Hub の機能を活用します。具体的には、オンプレミスからは Hub に対して VPN 接続する一方、AVS からは同じ Hub に ExpressRoute 接続させます。その結果、VirtualWAN Hub 経由でトランジットされ、オンプレミスと AVS 間で疎通できるようになります。</p>
+<figure class="wp-block-image size-large"><img alt="" class="aligncenter wp-image-341" decoding="async" src="http://blogs.vmware.com/vmware-japan/files/2021/03/AVS_blog004_Slide8.png"/>
+<figcaption style="text-align: center;">図8: Azure VirtualWAN 経由での AVS への接続</figcaption>
+</figure>
+<p>このように、オンプレミスから ExpressRoute を敷設することなく AVS へ接続する方法も提供されています。ただし注意点として、VMware では VPN でカプセル化された環境で <strong>HCX</strong>を利用することをサポートしておらず、AVS も例外ではありません。</p>
+<p>HCX を利用しない環境であれば問題ありませんが、本構成で HCX を利用することは非サポートとなりますのでご注意ください。</p>
+<h2 class="wp-block-heading">5. まとめ</h2>
+<p>今回は 、Azure VMware Solution とオンプレス間でのネットワーク接続方式を中心にご紹介しました。</p>
+<p>慣れない用語等が多くて難しく感じられた方もいらっしゃるかと思いますが、正しく設計・活用いただくことで、ほかの Azure サービスともシームレスに連携できる環境を構成できますので、ぜひ設計時に検討してみてください。</p> </div>
+<footer class="entry-footer">
+<div class="author-footer">
+<div class="author-avatar">
+<a href="https://blogs.vmware.com/vmware-japan/author/bhsinghvmware-com">
+<img alt="" class="rounded-circle img-fluid" src="//secure.gravatar.com/avatar/a99a06e54cf78b9aff34f682e35e3380?s=70&amp;d=https%3A%2F%2Fuser-images.githubusercontent.com%2F969755%2F61500768-7d535780-a981-11e9-8578-dc6bf989ffb2.png&amp;r=g"/>
+</a>
+</div>
+<div class="author-details">
+<h4><a href="https://blogs.vmware.com/vmware-japan/author/bhsinghvmware-com">Bhaskar Singh</a></h4>
+<p></p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+<div class="container background-white pl-4 pr-4 related-posts">
+<div class="row">
+<div class="col-12">
+<h2 class="mt-4 mb-3">関連記事</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-12 col-md-4 stacked-posts">
+<article class="card post-25826 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware-cloud-foundation category-cloud category-partner tag-avs tag-azure-vmware-solution">
+<div class="image-wrap">
+<a href="https://blogs.vmware.com/vmware-japan/2024/11/llama3-%e3%81%ae-private-ai-model-gallery-%e3%81%b8%e3%81%ae%e3%82%aa%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%87%e3%82%a3%e3%83%b3%e3%82%b0.html" title="Llama3 の Private AI Model Gallery へのオンボーディング">
+<picture>
+<source media="(max-width: 768px)" srcset="https://blogs.vmware.com/vmware-japan/files/2024/11/Feature.png"/>
+<source media="(max-width: 992px)" srcset="https://blogs.vmware.com/vmware-japan/files/2024/11/Feature.png"/>
+<img alt="" class="" src="https://blogs.vmware.com/vmware-japan/files/2024/11/Feature.png"></img></picture>
+</a>
+</div>
+<div class="content-wrap">
+<div class="content-inner">
+<a class="category-label" href="https://blogs.vmware.com/vmware-japan/product/vmware-cloud-foundation">VMware Cloud Foundation</a>
+<h2 class="title"><a href="https://blogs.vmware.com/vmware-japan/2024/11/llama3-%e3%81%ae-private-ai-model-gallery-%e3%81%b8%e3%81%ae%e3%82%aa%e3%83%b3%e3%83%9c%e3%83%bc%e3%83%87%e3%82%a3%e3%83%b3%e3%82%b0.html">Llama3 の Private AI Model Gallery へのオンボーディング</a></h2>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//secure.gravatar.com/avatar/07fb555e27832ca4195eccf3a79dd93d?s=30&amp;d=https%3A%2F%2Fuser-images.githubusercontent.com%2F969755%2F61500768-7d535780-a981-11e9-8578-dc6bf989ffb2.png&amp;r=g"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/vmware-japan/author/ytsukamoto" rel="author">VMware Japan Blog 編集部</a>
+</div>
+<time class="updated" datetime="2024-11-14" pubdate="">November 14, 2024</time>
+</div> </div>
+</div>
+</article>
+</div>
+<div class="col-12 col-md-4 stacked-posts">
+<article class="card post-25826 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware-cloud-foundation category-cloud category-partner tag-avs tag-azure-vmware-solution">
+<div class="image-wrap">
+<a href="https://blogs.vmware.com/vmware-japan/2024/10/vmware-cloud-foundation-5-2-%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e3%83%8d%e3%83%83%e3%83%88%e3%83%af%e3%83%bc%e3%82%af%e6%a9%9f%e8%83%bd%e3%81%ae%e5%bc%b7%e5%8c%96.html" title="VMware Cloud Foundation 5.2 におけるネットワーク機能の強化">
+<picture>
+<source media="(max-width: 768px)" srcset="https://blogs.vmware.com/vmware-japan/files/2024/10/Feature.png"/>
+<source media="(max-width: 992px)" srcset="https://blogs.vmware.com/vmware-japan/files/2024/10/Feature.png"/>
+<img alt="" class="" src="https://blogs.vmware.com/vmware-japan/files/2024/10/Feature.png"/>
+</picture>
+</a>
+</div>
+<div class="content-wrap">
+<div class="content-inner">
+<a class="category-label" href="https://blogs.vmware.com/vmware-japan/product/vmware-cloud-foundation">VMware Cloud Foundation</a>
+<h2 class="title"><a href="https://blogs.vmware.com/vmware-japan/2024/10/vmware-cloud-foundation-5-2-%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e3%83%8d%e3%83%83%e3%83%88%e3%83%af%e3%83%bc%e3%82%af%e6%a9%9f%e8%83%bd%e3%81%ae%e5%bc%b7%e5%8c%96.html">VMware Cloud Foundation 5.2 におけるネットワーク機能の強化</a></h2>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//secure.gravatar.com/avatar/07fb555e27832ca4195eccf3a79dd93d?s=30&amp;d=https%3A%2F%2Fuser-images.githubusercontent.com%2F969755%2F61500768-7d535780-a981-11e9-8578-dc6bf989ffb2.png&amp;r=g"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/vmware-japan/author/ytsukamoto" rel="author">VMware Japan Blog 編集部</a>
+</div>
+<time class="updated" datetime="2024-10-31" pubdate="">October 31, 2024</time>
+</div> </div>
+</div>
+</article>
+</div>
+<div class="col-12 col-md-4 stacked-posts">
+<article class="card post-25826 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware-cloud-foundation category-cloud category-partner tag-avs tag-azure-vmware-solution">
+<div class="image-wrap image-too-narrow">
+<a href="https://blogs.vmware.com/vmware-japan/2024/10/networks-sample.html" title="全通信ログを集めるとここまでできる！VMware 通信フロー解析サンプル集">
+<picture>
+<source media="(max-width: 768px)" srcset="https://blogs.vmware.com/vmware-japan/files/2024/10/Screenshot-2024-10-11-at-11.51.01-372x324.png"/>
+<source media="(max-width: 992px)" srcset="https://blogs.vmware.com/vmware-japan/files/2024/10/Screenshot-2024-10-11-at-11.51.01.png"/>
+<img alt="" class="" src="https://blogs.vmware.com/vmware-japan/files/2024/10/Screenshot-2024-10-11-at-11.51.01-372x324.png"/>
+</picture>
+</a>
+</div>
+<div class="content-wrap">
+<div class="content-inner">
+<a class="category-label" href="https://blogs.vmware.com/vmware-japan/solution/network/aria-operations-for-networks">Aria Operations for Networks</a>
+<h2 class="title"><a href="https://blogs.vmware.com/vmware-japan/2024/10/networks-sample.html">全通信ログを集めるとここまでできる！VMware 通信フロー解析サンプル集</a></h2>
+<div class="entry-meta">
+<img alt="" class="avatar" src="//blogs.vmware.com/vmware-japan/files/2021/02/image-3-30x30.png"/>
+<div class="author-list">
+<a class="author" href="https://blogs.vmware.com/vmware-japan/author/snagatoishivmware-com" rel="author">Susumu Nagatoishi</a>
+</div>
+<time class="updated" datetime="2024-10-30" pubdate="">October 30, 2024</time>
+</div> </div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</article>
+</main><!-- /.main -->
+</div><!-- /.content -->
+</div><!-- /.wrap -->
+<footer class="content-info">
+<div id="page-footer"></div>
+</footer>
+<div class="personalization_div_1" style="min-height: 1px;"></div><div class="personalization_div_2" style="min-height: 1px;"></div>
+
+
+</body>
+</html>

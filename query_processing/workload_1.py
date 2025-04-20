@@ -2,6 +2,7 @@ import psycopg2
 import itertools
 import pandas as pd
 from datetime import datetime
+import time  # ⏱️
 
 DB_CONFIG = {
     'dbname': 'financial_db',
@@ -11,44 +12,31 @@ DB_CONFIG = {
     'port': '5432'
 }
 
-# Define parameters for significant price movement threshold ratios and window options.
 RATIOS = [0.05, 0.10, 0.15]
 WINDOWS = ['1 week', '2 weeks']
-
-# Set grouping option. Choose 'symbol' to compute results per symbol,
-# or 'industry' to aggregate significant changes by industry.
-GROUP_BY_OPTION = 'industry'  # or change to 'industry'
+GROUP_BY_OPTION = 'industry'  # or 'symbol'
+SHOW_QUERY_TIMING = True  # ⏱️ Toggle this to show/hide individual query timing
 
 def get_symbols(conn):
-    """Retrieve a list of symbols from the profiles table."""
     cur = conn.cursor()
-    cur.execute("SELECT symbol FROM profiles;")
+    cur.execute("SELECT DISTINCT symbol FROM stock_ticks;")
     symbols = [row[0] for row in cur.fetchall()]
     cur.close()
     return symbols
 
-def get_industries(conn):
-    """Retrieve a list of distinct industries from the profiles table."""
+def get_industries_from_symbols(conn):
     cur = conn.cursor()
-    cur.execute("SELECT DISTINCT industry FROM profiles;")
+    cur.execute("""
+        SELECT DISTINCT p.industry
+        FROM profiles p
+        JOIN stock_ticks s ON p.symbol = s.symbol
+        WHERE p.industry IS NOT NULL;
+    """)
     industries = [row[0] for row in cur.fetchall()]
     cur.close()
     return industries
 
 def generate_query(filter_value, ratio, window, grouping='symbol'):
-    """
-    Generate the SQL query for computing significant price movements.
-    
-    When grouping by symbol:
-      - filter_value is a single symbol (e.g., 'AAPL').
-      - The query filters stock data for that symbol.
-      
-    When grouping by industry:
-      - filter_value is an industry name.
-      - The query filters stock data to include only symbols belonging to that industry.
-      
-    WINDOW is either '1 week' or '2 weeks' and determines how the time series is windowed.
-    """
     if window == '1 week':
         group_expr = "date_trunc('week', time)"
     elif window == '2 weeks':
@@ -57,12 +45,11 @@ def generate_query(filter_value, ratio, window, grouping='symbol'):
     else:
         raise ValueError(f"Unsupported window: {window}")
 
-    # Build the WHERE clause based on grouping method.
     if grouping == 'symbol':
-        base_filter = f"symbol = '{filter_value}' AND time >= '2013-01-01'"
+        base_filter = f"symbol = '{filter_value}' AND time >= '2014-01-01'"
     elif grouping == 'industry':
         base_filter = (f"symbol IN (SELECT symbol FROM profiles WHERE industry = '{filter_value}') "
-                       f"AND time >= '2013-01-01'")
+                       f"AND time >= '2014-01-01'")
     else:
         raise ValueError("Grouping must be either 'symbol' or 'industry'.")
 
@@ -96,9 +83,8 @@ def generate_query(filter_value, ratio, window, grouping='symbol'):
           AND ABS((avg_close - prev_avg_close) / prev_avg_close) >= {ratio}
     )
     """
-    
+
     if grouping == 'symbol':
-        # Join each change with the company's profile info.
         query = base_query + """
         SELECT ch.symbol,
                ch.window_start,
@@ -111,7 +97,6 @@ def generate_query(filter_value, ratio, window, grouping='symbol'):
         LEFT JOIN profiles p ON ch.symbol = p.symbol;
         """
     elif grouping == 'industry':
-        # Group by industry and aggregate the significant changes.
         query = base_query + """
         SELECT p.industry,
                array_agg(ROW(ch.symbol, ch.window_start, ch.avg_close, ch.prev_avg_close, ch.pct_change)::text) AS changes,
@@ -123,21 +108,26 @@ def generate_query(filter_value, ratio, window, grouping='symbol'):
     return query
 
 def run_batch():
+    start_time = time.time()  # ⏱️ start timing the entire run
+
     conn = psycopg2.connect(**DB_CONFIG)
     cur = conn.cursor()
-    results = []
-    
+    results_symbol = []
+    results_industry = []
+
     if GROUP_BY_OPTION == 'symbol':
-        # Retrieve all symbols from the profiles table.
         symbols = get_symbols(conn)
         for symbol, ratio, window in itertools.product(symbols, RATIOS, WINDOWS):
             try:
                 query = generate_query(symbol, ratio, window, grouping='symbol')
                 print(f"Running query for SYMBOL={symbol}, RATIO={ratio}, WINDOW={window}")
+                t0 = time.time()  # ⏱️
                 cur.execute(query)
                 rows = cur.fetchall()
+                if SHOW_QUERY_TIMING:
+                    print(f"⏱️ Query took {time.time() - t0:.2f} seconds")  # ⏱️
                 for row in rows:
-                    results.append({
+                    results_symbol.append({
                         'symbol': row[0],
                         'window': window,
                         'ratio': ratio,
@@ -149,22 +139,23 @@ def run_batch():
                         'companyName': row[6]
                     })
             except Exception as e:
-                print(f"Error running query for {symbol}, {ratio}, {window}: {e}")
+                print(f"❌ Error running query for {symbol}, {ratio}, {window}: {e}")
                 continue
     elif GROUP_BY_OPTION == 'industry':
-        # Retrieve all distinct industries from the profiles table.
-        industries = get_industries(conn)
+        industries = get_industries_from_symbols(conn)
         for industry, ratio, window in itertools.product(industries, RATIOS, WINDOWS):
             try:
                 query = generate_query(industry, ratio, window, grouping='industry')
                 print(f"Running query for INDUSTRY={industry}, RATIO={ratio}, WINDOW={window}")
+                t0 = time.time()  # ⏱️
                 cur.execute(query)
                 rows = cur.fetchall()
+                if SHOW_QUERY_TIMING:
+                    print(f"⏱️ Query took {time.time() - t0:.2f} seconds")  # ⏱️
                 for row in rows:
                     changes_array = row[1] if row[1] is not None else []
-                    # Join aggregated change records for display.
                     changes_str = " | ".join(changes_array)
-                    results.append({
+                    results_industry.append({
                         'industry': row[0],
                         'ratio': ratio,
                         'window': window,
@@ -172,16 +163,24 @@ def run_batch():
                         'aggregated_changes': changes_str
                     })
             except Exception as e:
-                print(f"Error running grouped query for {industry}, {ratio}, {window}: {e}")
+                print(f"❌ Error running grouped query for {industry}, {ratio}, {window}: {e}")
                 continue
-    
+
     cur.close()
     conn.close()
-    
-    output_file = "significant_changes_grouped.csv"
-    df = pd.DataFrame(results)
-    df.to_csv(output_file, index=False)
-    print(f"Saved results to {output_file}")
+
+    if results_symbol:
+        df_sym = pd.DataFrame(results_symbol)
+        df_sym.to_csv("significant_changes_symbol.csv", index=False)
+        print("✅ Saved symbol-level results to significant_changes_symbol.csv")
+
+    if results_industry:
+        df_ind = pd.DataFrame(results_industry)
+        df_ind.to_csv("significant_changes_industry.csv", index=False)
+        print("✅ Saved industry-level results to significant_changes_industry.csv")
+
+    end_time = time.time()  # ⏱️
+    print(f"\n⏱️ Total processing time: {end_time - start_time:.2f} seconds")
 
 if __name__ == "__main__":
     run_batch()

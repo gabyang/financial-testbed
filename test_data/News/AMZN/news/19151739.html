@@ -1,0 +1,452 @@
+<!DOCTYPE html >
+
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+<title>AWS Outposts: You can have any hybrid cloud you want...as long as it is Amazon – Blocks and Files</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://blocksandfiles.com/xmlrpc.php" rel="pingback"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<link href="https://blocksandfiles.com/wp-content/uploads/2018/10/BANDF_Finalised-logo_icon.png" rel="icon" type="image/png"/>
+<!-- This site is optimized with the Yoast SEO plugin v23.8 - https://yoast.com/wordpress/plugins/seo/ -->
+<link href="https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/" rel="canonical">
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="AWS Outposts: You can have any hybrid cloud you want...as long as it is Amazon – Blocks and Files" property="og:title"/>
+<meta content="AWS Outposts is a converged infrastructure rack, announced at re:Invent in Las Vegas this week. In effect this is Amazon’s public cloud in a box, delivering an all-AWS hybrid computing environment within the customer’s data centre. By coupling Outposts so tightly to AWS, Amazon is taking a different approach than other converged infrastructure rack vendors […]" property="og:description"/>
+<meta content="https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/" property="og:url"/>
+<meta content="Blocks and Files" property="og:site_name"/>
+<meta content="2019-12-06T15:00:00+00:00" property="article:published_time"/>
+<meta content="2020-01-12T15:16:50+00:00" property="article:modified_time"/>
+<meta content="https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack-SIDE.jpg" property="og:image"/>
+<meta content="650" property="og:image:width"/>
+<meta content="322" property="og:image:height"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="Chris Mellor" name="author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@https://twitter.com/Chris_Mellor" name="twitter:creator"/>
+<meta content="Written by" name="twitter:label1"/>
+<meta content="Chris Mellor" name="twitter:data1"/>
+<meta content="Est. reading time" name="twitter:label2"/>
+<meta content="5 minutes" name="twitter:data2"/>
+
+<!-- / Yoast SEO plugin. -->
+<link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+<link href="https://blocksandfiles.com/feed/" rel="alternate" title="Blocks and Files » Feed" type="application/rss+xml"/>
+<link href="https://blocksandfiles.com/comments/feed/" rel="alternate" title="Blocks and Files » Comments Feed" type="application/rss+xml"/>
+
+
+<link href="https://blocksandfiles.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.1" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+<link href="https://blocksandfiles.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0" id="contact-form-7-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blocksandfiles.com/wp-content/plugins/widget-options/assets/css/widget-options.css?ver=4.0.7" id="widgetopts-styles-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blocksandfiles.com/wp-content/plugins/td-composer/td-multi-purpose/style.css?ver=e12b81d6cbdf467845997a891495df2cx" id="td-plugin-multi-purpose-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700%2C600%7CMontserrat%3A400%2C600&amp;display=swap&amp;ver=12.5.1" id="google-fonts-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blocksandfiles.com/wp-content/themes/Newspaper/style.css?ver=12.5.1" id="td-theme-css" media="all" rel="stylesheet" type="text/css"/>
+
+<link href="https://blocksandfiles.com/wp-content/themes/situation-publishing/style.css?ver=12.5.1c" id="td-theme-child-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blocksandfiles.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=8.0" id="js_composer_front-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blocksandfiles.com/wp-content/plugins/td-composer/legacy/Newspaper/assets/css/td_legacy_main.css?ver=e12b81d6cbdf467845997a891495df2cx" id="td-legacy-framework-front-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blocksandfiles.com/wp-content/plugins/td-standard-pack/Newspaper/assets/css/td_standard_pack_main.css?ver=ea43e379b839e31c21a92e9daeba4b6d" id="td-standard-pack-framework-front-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blocksandfiles.com/wp-content/plugins/td-composer/legacy/Newspaper/includes/demos/lifestyle/demo_style.css?ver=12.5.1" id="td-theme-demo-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://blocksandfiles.com/wp-content/plugins/td-cloud-library/assets/css/tdb_main.css?ver=0390de2d4222fae8efaeae107c326a4e" id="tdb_style_cloud_templates_front-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+<link href="https://blocksandfiles.com/wp-json/" rel="https://api.w.org/"/><link href="https://blocksandfiles.com/wp-json/wp/v2/posts/11901" rel="alternate" title="JSON" type="application/json"/><link href="https://blocksandfiles.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://blocksandfiles.com/?p=11901" rel="shortlink"/>
+<link href="https://blocksandfiles.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblocksandfiles.com%2F2019%2F12%2F06%2Famazon-outposts-converged-infrastructure-hybrid-cloud%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="https://blocksandfiles.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblocksandfiles.com%2F2019%2F12%2F06%2Famazon-outposts-converged-infrastructure-hybrid-cloud%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+<!-- BEGIN GAM SETUP -->
+
+
+
+
+<!-- END GAM SETUP -->
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+
+
+<meta content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." name="generator"/>
+<!-- JS generated by theme -->
+
+<!-- Header style compiled by theme -->
+
+<!-- Google tag (gtag.js) -->
+
+
+
+
+<!-- Button style compiled by theme -->
+
+<noscript></noscript> </link></meta></head>
+<body class="post-template-default single single-post postid-11901 single-format-standard td-standard-pack amazon-outposts-converged-infrastructure-hybrid-cloud global-block-template-8 td-lifestyle wpb-js-composer js-comp-ver-8.0 vc_responsive tdc-header-template tdc-footer-template td-animation-stack-type0 td-full-layout" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+<div class="td-scroll-up td-hide-scroll-up-on-mob" style="display:none;"><i class="td-icon-menu-up"></i></div>
+<div class="td-menu-background" style="visibility:hidden"></div>
+<div id="td-mobile-nav" style="visibility:hidden">
+<div class="td-mobile-container">
+<!-- mobile menu top section -->
+<div class="td-menu-socials-wrap">
+<!-- socials -->
+<div class="td-menu-socials">
+<span class="td-social-icon-wrap">
+<a href="https://blocksandfiles.com/feed/" target="_blank" title="RSS">
+<i class="td-icon-font td-icon-rss"></i>
+<span style="display: none">RSS</span>
+</a>
+</span>
+<span class="td-social-icon-wrap">
+<a href="https://twitter.com/blocksandfiles/" target="_blank" title="Twitter">
+<i class="td-icon-font td-icon-twitter"></i>
+<span style="display: none">Twitter</span>
+</a>
+</span> </div>
+<!-- close button -->
+<div class="td-mobile-close">
+<span><i class="td-icon-close-mobile"></i></span>
+</div>
+</div>
+<!-- login section -->
+<!-- menu section -->
+<div class="td-mobile-content">
+<div class="menu-td-demo-top-menu-container"><ul class="td-mobile-main-menu" id="menu-td-demo-top-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-first menu-item-13469" id="menu-item-13469"><a href="https://blocksandfiles.com/about/">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-401" id="menu-item-401"><a href="https://blocksandfiles.com/newsletter-sign-up/">Newsletter</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19459" id="menu-item-19459"><a href="https://www.theregister.com/">The Register</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19463" id="menu-item-19463"><a href="https://devclass.com">DevClass</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19465" id="menu-item-19465"><a href="https://www.nextplatform.com/">The Next Platform</a></li>
+</ul></div> </div>
+</div>
+<!-- register/login section -->
+</div> <div class="td-search-background" style="visibility:hidden"></div>
+<div class="td-search-wrap-mob" style="visibility:hidden">
+<div class="td-drop-down-search">
+<form action="https://blocksandfiles.com/" class="td-search-form" method="get">
+<!-- close button -->
+<div class="td-search-close">
+<span><i class="td-icon-close-mobile"></i></span>
+</div>
+<div class="td-search-input" role="search">
+<span>Search</span>
+<input autocomplete="off" id="td-header-search-mob" name="s" type="text" value=""/>
+</div>
+</form>
+<div class="td-ajax-search-flex" id="td-aj-search-mob"></div>
+</div>
+</div>
+<div class="td-theme-wrap" id="td-outer-wrap">
+<div class="td-header-template-wrap" style="position: relative">
+<div class="td-header-mobile-wrap">
+<div class="tdc-zone" id="tdi_1"><div class="tdc_zone tdi_2 wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_1_rand_style td-element-style"></div><div class="tdc-row" id="tdi_3"><div class="vc_row tdi_4 wpb_row td-pb-row">
+<div class="vc_column tdi_6 wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_mobile_menu tdi_7 td-pb-border-top td_block_template_8 tdb-header-align" data-td-block-uid="tdi_7">
+
+<div class="tdb-block-inner td-fix-index"><span class="tdb-mobile-menu-button"><i class="tdb-mobile-menu-icon td-icon-mobile"></i></span></div></div> <!-- ./block --></div></div><div class="vc_column tdi_9 wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_logo tdi_10 td-pb-border-top mobile_logo td_block_template_8 tdb-header-align" data-td-block-uid="tdi_10">
+<div class="tdb-block-inner td-fix-index"><a class="tdb-logo-a" href="https://blocksandfiles.com/"><span class="tdb-logo-img-wrap"><img alt="Logo" class="tdb-logo-img" height="177" src="https://blocksandfiles.com/wp-content/uploads/2018/10/BF-white.png" title="" width="579"/></span><span class="tdb-logo-text-wrap"><span class="tdb-logo-text-title">NewsPaper</span><span class="tdb-logo-text-tagline">Storages and File System News</span></span></a></div></div> <!-- ./block --></div></div><div class="vc_column tdi_12 wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_mobile_search tdi_13 td-pb-border-top td_block_template_8 tdb-header-align" data-td-block-uid="tdi_13">
+
+<div class="tdb-block-inner td-fix-index"><span class="tdb-header-search-button-mob dropdown-toggle" data-toggle="dropdown"><i class="tdb-mobile-search-icon td-icon-search"></i></span></div></div> <!-- ./block --></div></div></div></div></div></div> </div>
+<div class="td-header-mobile-sticky-wrap tdc-zone-sticky-invisible tdc-zone-sticky-inactive" style="display: none">
+<div class="tdc-zone" id="tdi_14"><div class="tdc_zone tdi_15 wpb_row td-pb-row" data-sticky-offset="0">
+<div class="tdc-row" id="tdi_16"><div class="vc_row tdi_17 wpb_row td-pb-row">
+<div class="vc_column tdi_19 wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"></div></div></div></div></div></div> </div>
+<div class="td-header-desktop-wrap">
+<div class="tdc-zone" id="tdi_20"><div class="tdc_zone tdi_21 wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_20_rand_style td-element-style"></div><div class="tdc-row stretch_row" id="tdi_22"><div class="vc_row tdi_23 top_header_wrap wpb_row td-pb-row tdc-element-style tdc-row-content-vert-center">
+
+<div class="tdi_22_rand_style td-element-style"></div><div class="vc_column tdi_25 wpb_column vc_column_container tdc-column td-pb-span9">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_mobile_horiz_menu tdi_26 td-pb-border-top td_block_template_8 tdb-header-align" data-td-block-uid="tdi_26" style=" z-index: 999;">
+
+<div class="td_block_inner td-fix-index" id="tdi_26"><div class="menu-td-demo-top-menu-container"><ul class="tdb-horiz-menu" id="menu-td-demo-top-menu-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13469"><a href="https://blocksandfiles.com/about/"><div class="tdb-menu-item-text">About</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-401"><a href="https://blocksandfiles.com/newsletter-sign-up/"><div class="tdb-menu-item-text">Newsletter</div></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19459"><a href="https://www.theregister.com/"><div class="tdb-menu-item-text">The Register</div></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19463"><a href="https://devclass.com"><div class="tdb-menu-item-text">DevClass</div></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19465"><a href="https://www.nextplatform.com/"><div class="tdb-menu-item-text">The Next Platform</div></a></li>
+</ul></div></div></div></div></div><div class="vc_column tdi_28 wpb_column vc_column_container tdc-column td-pb-span3">
+<div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_socials tdi_29 tdm-inline-block tdm-content-horiz-left td-pb-border-top td_block_template_8" data-td-block-uid="tdi_29">
+
+<div class="tdm-social-wrapper tds-social1 tdi_30"><div class="tdm-social-item-wrap"><a class="tdm-social-item" href="#" title="Rss"><i class="td-icon-font td-icon-rss"></i><span style="display: none">Rss</span></a></div><div class="tdm-social-item-wrap"><a class="tdm-social-item" href="#" title="Twitter"><i class="td-icon-font td-icon-twitter"></i><span style="display: none">Twitter</span></a></div></div></div></div></div></div></div><div class="tdc-row stretch_row" id="tdi_31"><div class="vc_row tdi_32 header_wrap wpb_row td-pb-row tdc-element-style tdc-row-content-vert-center">
+
+<div class="tdi_31_rand_style td-element-style"></div><div class="vc_column tdi_34 wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_logo tdi_35 td-pb-border-top td_block_template_8 tdb-header-align" data-td-block-uid="tdi_35">
+
+
+<div class="tdi_35_rand_style td-element-style">
+<div class="td-element-style-before"></div></div><div class="tdb-block-inner td-fix-index"><a class="tdb-logo-a" href="https://blocksandfiles.com/"><span class="tdb-logo-img-wrap"><img alt="Logo" class="tdb-logo-img" height="177" src="https://blocksandfiles.com/wp-content/uploads/2018/10/BF-black.png" title="" width="579"/></span><span class="tdb-logo-text-wrap"><span class="tdb-logo-text-title">NewsPaper</span><span class="tdb-logo-text-tagline">Storages and File System News</span></span></a></div></div> <!-- ./block --><div class="td_block_wrap tdb_header_menu tdi_36 tds_menu_active1 tds_menu_sub_active1 tdb-mm-align-screen td-pb-border-top td_block_template_8 tdb-header-align" data-td-block-uid="tdi_36" style=" z-index: 999;">
+
+
+<div class="td_block_inner td-fix-index" id="tdi_36"><div class="tdb-main-sub-icon-fake"><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></div><div class="tdb-sub-icon-fake"><i class="tdb-sub-menu-icon td-icon-right-arrow"></i></div><ul class="tdb-block-menu tdb-menu tdb-menu-items-visible" id="menu-td-demo-header-menu-1"><li class="menu-item menu-item-type-post_type menu-item-object-page tdb-cur-menu-item menu-item-first tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-443"><a href="https://blocksandfiles.com/block/"><div class="tdb-menu-item-text">Block</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-444"><a href="https://blocksandfiles.com/file/"><div class="tdb-menu-item-text">File</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-445"><a href="https://blocksandfiles.com/object/"><div class="tdb-menu-item-text">Object</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-446"><a href="https://blocksandfiles.com/disk/"><div class="tdb-menu-item-text">Disk</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-447"><a href="https://blocksandfiles.com/tape/"><div class="tdb-menu-item-text">Tape</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-448"><a href="https://blocksandfiles.com/flash/"><div class="tdb-menu-item-text">Flash</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-449"><a href="https://blocksandfiles.com/nvme/"><div class="tdb-menu-item-text">NVMe</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-450"><a href="https://blocksandfiles.com/scm/"><div class="tdb-menu-item-text">SCM</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-451"><a href="https://blocksandfiles.com/hci/"><div class="tdb-menu-item-text">HCI</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-455"><a href="https://blocksandfiles.com/composable/"><div class="tdb-menu-item-text">Composable</div></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-51325"><a href="https://blocksandfiles.com/2022/04/15/storage-glossary/"><div class="tdb-menu-item-text">Glossary</div></a></li>
+</ul></div></div><div class="td_block_wrap tdb_header_search tdi_39 tdb-header-search-trigger-enabled td-pb-border-top td_block_template_8 tdb-header-align" data-td-block-uid="tdi_39">
+<div class="tdb-block-inner td-fix-index"><div aria-labelledby="td-header-search-button" class="tdb-drop-down-search"><div class="tdb-drop-down-search-inner"><form action="https://blocksandfiles.com/" class="tdb-search-form" method="get"><div class="tdb-search-form-inner"><input autocomplete="off" class="tdb-head-search-form-input" name="s" placeholder=" " type="text" value=""/><button class="wpb_button wpb_btn-inverse btn tdb-head-search-form-btn" type="submit"><span>Search</span></button></div></form><div class="tdb-aj-search"></div></div></div><a aria-label="Search" class="tdb-head-search-btn dropdown-toggle" data-toggle="dropdown" href="#" role="button"><i class="tdb-search-icon td-icon-search"></i></a></div></div> <!-- ./block --></div></div></div></div><div class="tdc-row" id="tdi_40"><div class="vc_row tdi_41 wpb_row td-pb-row tdc-row-content-vert-center">
+<div class="vc_column tdi_43 wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"></div></div></div></div></div></div> </div>
+<div class="td-header-desktop-sticky-wrap tdc-zone-sticky-invisible tdc-zone-sticky-inactive" style="display: none">
+<div class="tdc-zone" id="tdi_45"><div class="tdc_zone tdi_46 wpb_row td-pb-row" data-sticky-offset="0">
+<div class="tdc-row" id="tdi_47"><div class="vc_row tdi_48 wpb_row td-pb-row">
+<div class="vc_column tdi_50 wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"></div></div></div></div></div></div> </div>
+</div>
+<div class="td-main-content-wrap td-container-wrap">
+<!-- KITE & CONDOR via get_header_ads() in functions.php -->
+<div class="adu" id="ad-kite">
+
+</div>
+<div class="adu" id="ad-condor">
+
+</div>
+<div class="td-container td-post-template-default">
+<div class="td-crumb-container"><div class="entry-crumbs"><span><a class="entry-crumb" href="https://blocksandfiles.com/" title="">Home</a></span> <i class="td-icon-right td-bread-sep"></i> <span><a class="entry-crumb" href="https://blocksandfiles.com/category/data-management/" title="View all posts in Data Management">Data Management</a></span> <i class="td-icon-right td-bread-sep td-bred-no-url-last"></i> <span class="td-bred-no-url-last">AWS Outposts: You can have any hybrid cloud you want…as long as...</span></div></div>
+<div class="td-pb-row">
+<div class="td-pb-span8 td-main-content" role="main">
+<div class="td-ss-main-content">
+<article class="post-11901 post type-post status-publish format-standard has-post-thumbnail category-data-management tag-aws tag-vmware" id="post-11901" itemscope="" itemtype="https://schema.org/Article">
+<div class="td-post-header">
+<!-- category --><ul class="td-category"><li class="entry-category"><a href="https://blocksandfiles.com/category/data-management/">Data Management</a></li></ul>
+<header class="td-post-title">
+<h1 class="entry-title">AWS Outposts: You can have any hybrid cloud you want…as long as it is Amazon</h1>
+<div class="td-module-meta-info">
+<!-- author --><div class="td-post-author-name"><div class="td-author-by">By</div> <a href="https://blocksandfiles.com/author/chris-mellor/">Chris Mellor</a><div class="td-author-line">-</div> </div> <!-- date --><span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-12-06T15:00:00+00:00">December 6, 2019</time></span> <!-- comments --> <!-- views --> </div>
+</header>
+</div>
+<div class="td-post-sharing-top"><div class="td-post-sharing td-ps-bg td-ps-notext td-ps-rounded td-post-sharing-style3" id="td_social_sharing_article_top">
+
+<div class="td-post-sharing-visible"><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=AWS+Outposts%3A+You+can+have+any+hybrid+cloud+you+want%E2%80%A6as+long+as+it+is+Amazon&amp;url=https%3A%2F%2Fblocksandfiles.com%2F2019%2F12%2F06%2Famazon-outposts-converged-infrastructure-hybrid-cloud%2F&amp;via=BlocksandFiles" title="Twitter"><div class="td-social-but-icon"><i class="td-icon-twitter"></i></div><div class="td-social-but-text">Twitter</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-whatsapp" href="https://api.whatsapp.com/send?text=AWS+Outposts%3A+You+can+have+any+hybrid+cloud+you+want%E2%80%A6as+long+as+it+is+Amazon %0A%0A https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/" title="WhatsApp"><div class="td-social-but-icon"><i class="td-icon-whatsapp"></i></div><div class="td-social-but-text">WhatsApp</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/&amp;title=AWS+Outposts%3A+You+can+have+any+hybrid+cloud+you+want%E2%80%A6as+long+as+it+is+Amazon" title="Linkedin"><div class="td-social-but-icon"><i class="td-icon-linkedin"></i></div><div class="td-social-but-text">Linkedin</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-reddit" href="https://reddit.com/submit?url=https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/&amp;title=AWS+Outposts%3A+You+can+have+any+hybrid+cloud+you+want%E2%80%A6as+long+as+it+is+Amazon" title="ReddIt"><div class="td-social-but-icon"><i class="td-icon-reddit"></i></div><div class="td-social-but-text">ReddIt</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-mail" href="mailto:?subject=AWS Outposts: You can have any hybrid cloud you want…as long as it is Amazon&amp;body=https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/" title="Email"><div class="td-social-but-icon"><i class="td-icon-mail"></i></div><div class="td-social-but-text">Email</div></a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" data-block-uid="td_social_sharing_article_top" href="#" title="More">
+<div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+</a></div></div></div>
+<div class="td-post-content tagdiv-type">
+<!-- image --><div class="td-post-featured-image"><a data-caption="" href="https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack-SIDE.jpg"><img alt="" class="entry-thumb td-modal-image" height="322" sizes="(max-width: 650px) 100vw, 650px" src="https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack-SIDE.jpg" srcset="https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack-SIDE.jpg 650w, https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack-SIDE-300x149.jpg 300w, https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack-SIDE-324x160.jpg 324w" title="AWS Outposts rack SIDE" width="650"/></a></div>
+<!-- content -->
+<p>AWS Outposts is a converged infrastructure rack, announced at re:Invent in Las Vegas this week. In effect this is Amazon’s public cloud in a box, delivering an all-AWS hybrid computing environment within the customer’s data centre.</p>
+<p>By coupling Outposts so tightly to AWS, Amazon is taking a different approach than other converged infrastructure rack vendors such as Dell EMC.</p>
+<p><a href="https://blocksandfiles.com/2019/12/04/amazon-redshift-upgrade/">AWS Outposts</a> is a fully-managed compute, networking and storage rack built with AWS-designed hardware that allow customers to run AWS services on-premises or in co-location sites and is connected to the AWS public cloud. </p>
+<div class="wp-block-image"><figure class="alignleft size-large is-resized"><img alt="" class="wp-image-11904" decoding="async" fetchpriority="high" height="488" sizes="(max-width: 242px) 100vw, 242px" src="https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack.jpg" srcset="https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack.jpg 322w, https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack-149x300.jpg 149w, https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack-208x420.jpg 208w" width="242"/><figcaption>AWS Outposts rack</figcaption></figure></div>
+<p>An Outpost rack is conceptually equivalent to a converged infrastructure (CI) rack such as Dell EMC’s <a href="https://blocksandfiles.com/2019/11/12/dell-powerone-converged-infrastructure-launch/">PowerONE</a> and VxBlock systems. </p><div class="td-a-rec td-a-rec-id-content_inlineleft tdi_51 td_block_template_8">
+<!-- FALCON via Article Inline -->
+<div class="adu" id="ad-falcon" style="text-align:center">
+
+</div></div>
+<p>The Outposts rack contains servers, storage, AWS software, redundant power supplies and built-in top-of-rack network switches. The switch supports 1/10/40/100 Gbit/s uplinks. There are Outposts compute and storage capacity options. Customers can also work with Amazon to create a custom combination with their desired EC2 and EBS capacity. This combo is pre-tested and validated by Amazon before delivery.</p>
+<p>An AWS Outposts <a href="https://aws.amazon.com/outposts/faqs/">FAQ states</a>: “AWS Outposts leverages AWS designed infrastructure, and is only supported on AWS-designed hardware.” For example, EBS snapshots created on an Outposts rack are stored in the connected region’s S3 vault.</p>
+<p>The Outposts rack must be connected across the public internet to a parent AWS region with a high-availability link. AWS uploads and executes software upgrades and patches across this link.</p>
+<h2 class="wp-block-heading"><strong>Configurations</strong></h2>
+<p>Outposts racks are configured by available EC2 and EBS capacities. For example: Compute optimised – 11 c5.24xlarge EC2 capacity and 11+ TB of EBS capacity. There are options for memory optimised, graphics large units, general purpose units. Here is a sample from a <a href="https://us-east-2.console.aws.amazon.com/outposts/home?region=us-east-2#Catalog">trial configuration process</a>.</p>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-11903" decoding="async" height="502" sizes="(max-width: 650px) 100vw, 650px" src="https://blocksandfiles.com/wp-content/uploads/2019/12/Example-Outposts-configs.jpg" srcset="https://blocksandfiles.com/wp-content/uploads/2019/12/Example-Outposts-configs.jpg 650w, https://blocksandfiles.com/wp-content/uploads/2019/12/Example-Outposts-configs-300x232.jpg 300w, https://blocksandfiles.com/wp-content/uploads/2019/12/Example-Outposts-configs-544x420.jpg 544w" width="650"/><figcaption>Outposts configuration presents a near ‘black box’ defined by its deliverable ECS and EBS resources</figcaption></figure>
+<p>There is no option to select specific server CPU models with their cores and clock rating. You cannot specify the amount of memory nor the amount and type of storage media. We saw no option to specify particular software or Amazon services.</p>
+<p><a href="https://aws.amazon.com/outposts/pricing/">Prices</a> lists EBS storage tiers – 2.7TB, 11TB, 33TB and 55TB – with per GB/month prices ranging from $0.25 to $0.55.</p>
+<p>Customers can pay all upfront, make a partial upfront payment or pay through monthly subscription. For example, an OR-FWTFFXJ compute-optimised unit with a three-year term costs $239,761.41 upfront, $123.650.18 partial upfront payment and $3,434.73 monthly or $7,148.67 monthly.</p>
+<p>The most costly Outposts rack, an OR-HSZHMMF memory-optimised large unit, costs $1,079,998.31 upfront or $33,869.12 per month.</p>
+<p>These prices do not include operating system usage, which is charged by the second per instance.</p>
+<p>AWS Services on Outposts are priced based on usage by the hour per instance and excludes underlying EC2 instance and EBS storage charges. Available AWS services include RDS, ECS, EKS, EMR and App Mesh and their prices are explained in their service web pages. For example, this is the <a href="https://aws.amazon.com/eks/pricing/">EKS pricing page</a>.</p>
+<p>VMware intends to launch VMware Cloud on AWS Outposts next year so users can have VMware on their own in-premises gear, in the AWS public cloud and on the Outposts rack.</p>
+<p>Cohesity, Druva and Veritas have each announced that their protection products support AWS Outposts.</p>
+<p>Let’s now explore how AWS Outposts differs from Dell EMC’s PowerOne and VxBlock CI systems.</p>
+<h2 class="wp-block-heading"><strong>Dell EMC PowerOne and VxBlock</strong></h2>
+<p><a href="https://blocksandfiles.com/2019/11/12/dell-powerone-converged-infrastructure-launch/">PowerOne</a> is a converged infrastructure system comprising compute, storage, networking, VMware virtualization software, and data protection in a single rack. All components come from Dell Technologies. The <a href="https://www.dellemc.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/powerone-spec-sheet.pdf">technical specifications</a> list the components in each category:</p>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-11902" decoding="async" height="845" sizes="(max-width: 650px) 100vw, 650px" src="https://blocksandfiles.com/wp-content/uploads/2019/12/PowerOne-Tech-Specs.jpg" srcset="https://blocksandfiles.com/wp-content/uploads/2019/12/PowerOne-Tech-Specs.jpg 650w, https://blocksandfiles.com/wp-content/uploads/2019/12/PowerOne-Tech-Specs-231x300.jpg 231w, https://blocksandfiles.com/wp-content/uploads/2019/12/PowerOne-Tech-Specs-323x420.jpg 323w" width="650"/><figcaption>PowerOne configuration</figcaption></figure>
+<p>The customer has to understand their workload and what it needs in terms of compute, storage, networking and protection capacity. On delivery it has to be set up and an automation engine helps with this and with provisioning resources for application workloads.</p>
+<p>The PowerOne selection language is different from that of AWS Outposts which is specified in terms of EC2 instance types and EBS capacity.</p>
+<p>Dell EMC’s <a href="https://www.dellemc.com/resources/en-us/asset/data-sheets/products/converged-infrastructure/vxblock-1000-product-overview.pdf">VxBlocks</a> are also specified by components and use Dell EMC storage, VMware virtualization software and Cisco servers and networking. </p>
+<p>Customers can run a VMware environment in Amazon but there is no easy way to port VxBlock applications to run in AWS. Typically, VxBlock hybrid cloud entails backing up VxBlock data to AWS, not application portability.</p>
+<p>When – or if – VMware Cloud Foundation runs on VxBlock and PowerOne we can look forward to an all-VMware hybrid cloud that embraces CI systems from Dell EMC and AWS Outposts.</p>
+<p>Pricing for PowerOne and VxBlocks is not publicly available.</p>
+<h2 class="wp-block-heading"><strong>This way to the hybrid cloud</strong></h2>
+<p>Ideally a hybrid on-premises public cloud environment would have a simpler management plane and application portability between the on-premises and public cloud systems.</p>
+<p>AWS Outposts enables customers to run an all-Amazon hybrid cloud with Outposts on-premises linking to the AWS public cloud under a single AWS management facility.</p>
+<p>Amazon sees hybrid cloud as the AWS public cloud connected to AWS Outposts.</p>
+<p>Dell EMC envisages the hybrid cloud as its on-premises infrastructure extended out and linked to multiple clouds, for backup or storage tiering, for example. Customers should be able to run virtual machines that run on-premises in the public cloud and also containers.</p>
+<p>With this model, the on-premises supplier calls the shots and helps itself and its customers to avoid cloud lock-in.</p>
+<p>By contrast, AWS Outposts shows Amazon constructing the hybrid cloud as an entirely in-house affair with a unified on-premises and public cloud AWS environment managed from AWS. With the notable exception of <a href="https://blocksandfiles.com/2019/08/27/vmware-cloud-on-dell-emc/">VMware Cloud Foundation,</a> this vision does not accommodate third party vendors or integrate with non-Amazon environments. At least, not at the moment.<br/></p>
+</div>
+<footer>
+<!-- post pagination --> <!-- review -->
+<div class="td-post-source-tags">
+<!-- source via --> <!-- tags --><ul class="td-tags td-post-small-box clearfix"><li><span>TAGS</span></li><li><a href="https://blocksandfiles.com/tag/aws/">AWS</a></li><li><a href="https://blocksandfiles.com/tag/vmware/">VMware</a></li></ul> </div>
+<div class="td-post-sharing-bottom"><div class="td-post-sharing-classic"><iframe frameborder="0" src="https://www.facebook.com/plugins/like.php?href=https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/&amp;layout=button_count&amp;show_faces=false&amp;width=105&amp;action=like&amp;colorscheme=light&amp;height=21" style="border:none; overflow:hidden; width:auto; height:21px; background-color:transparent;"></iframe></div><div class="td-post-sharing td-ps-bg td-ps-notext td-ps-rounded td-post-sharing-style3" id="td_social_sharing_article_bottom"><div class="td-post-sharing-visible"><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=AWS+Outposts%3A+You+can+have+any+hybrid+cloud+you+want%E2%80%A6as+long+as+it+is+Amazon&amp;url=https%3A%2F%2Fblocksandfiles.com%2F2019%2F12%2F06%2Famazon-outposts-converged-infrastructure-hybrid-cloud%2F&amp;via=BlocksandFiles" title="Twitter"><div class="td-social-but-icon"><i class="td-icon-twitter"></i></div><div class="td-social-but-text">Twitter</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-whatsapp" href="https://api.whatsapp.com/send?text=AWS+Outposts%3A+You+can+have+any+hybrid+cloud+you+want%E2%80%A6as+long+as+it+is+Amazon %0A%0A https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/" title="WhatsApp"><div class="td-social-but-icon"><i class="td-icon-whatsapp"></i></div><div class="td-social-but-text">WhatsApp</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/&amp;title=AWS+Outposts%3A+You+can+have+any+hybrid+cloud+you+want%E2%80%A6as+long+as+it+is+Amazon" title="Linkedin"><div class="td-social-but-icon"><i class="td-icon-linkedin"></i></div><div class="td-social-but-text">Linkedin</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-reddit" href="https://reddit.com/submit?url=https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/&amp;title=AWS+Outposts%3A+You+can+have+any+hybrid+cloud+you+want%E2%80%A6as+long+as+it+is+Amazon" title="ReddIt"><div class="td-social-but-icon"><i class="td-icon-reddit"></i></div><div class="td-social-but-text">ReddIt</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-mail" href="mailto:?subject=AWS Outposts: You can have any hybrid cloud you want…as long as it is Amazon&amp;body=https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/" title="Email"><div class="td-social-but-icon"><i class="td-icon-mail"></i></div><div class="td-social-but-text">Email</div></a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" data-block-uid="td_social_sharing_article_bottom" href="#" title="More">
+<div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+</a></div></div></div> <!-- next prev --><div class="td-block-row td-post-next-prev"><div class="td-block-span6 td-post-prev-post"><div class="td-post-next-prev-content"><span>Previous article</span><a href="https://blocksandfiles.com/2019/12/06/idc-external-storage-market-q3-2020/">Dell retains external storage crown, NetApp is down – and Huawei is climbing fast</a></div></div><div class="td-next-prev-separator"></div><div class="td-block-span6 td-post-next-post"><div class="td-post-next-prev-content"><span>Next article</span><a href="https://blocksandfiles.com/2019/12/07/memsql-7-database-launch/">Meatier MemSQL database munches more data in memory and goes faster on disk</a></div></div></div> <!-- author box --><div class="td-author-name vcard author" style="display: none"><span class="fn"><a href="https://blocksandfiles.com/author/chris-mellor/">Chris Mellor</a></span></div> <!-- meta --><span class="td-page-meta" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><meta content="Chris Mellor" itemprop="name"/><meta content="https://blocksandfiles.com/author/chris-mellor/" itemprop="url"/></span><meta content="2019-12-06T15:00:00+00:00" itemprop="datePublished"/><meta content="2020-01-12T15:16:50+00:00" itemprop="dateModified"/><meta itemid="https://blocksandfiles.com/2019/12/06/amazon-outposts-converged-infrastructure-hybrid-cloud/" itemprop="mainEntityOfPage" itemscope="" itemtype="https://schema.org/WebPage"><span class="td-page-meta" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><span class="td-page-meta" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta content="https://blocksandfiles.com/wp-content/uploads/2018/10/BF-black-300x92.png" itemprop="url"/></span><meta content="Blocks and Files" itemprop="name"/></span><meta content="AWS Outposts: You can have any hybrid cloud you want...as long as it is Amazon" itemprop="headline "/><span class="td-page-meta" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><meta content="https://blocksandfiles.com/wp-content/uploads/2019/12/AWS-Outposts-rack-SIDE.jpg" itemprop="url"/><meta content="650" itemprop="width"/><meta content="322" itemprop="height"/></span> </meta></footer>
+</article> <!-- /.post -->
+<div class="td_block_wrap td_block_related_posts tdi_52 td_with_ajax_pagination td-pb-border-top td_block_template_8" data-td-block-uid="tdi_52"><h4 class="td-related-title td-block-title"><a class="td-related-left td-cur-simple-item" data-td_block_id="tdi_52" data-td_filter_value="" href="#" id="tdi_53">RELATED ARTICLES</a><a class="td-related-right" data-td_block_id="tdi_52" data-td_filter_value="td_related_more_from_author" href="#" id="tdi_54">MORE FROM AUTHOR</a></h4><div class="td_block_inner" id="tdi_52">
+<div class="td-related-row">
+<div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a class="td-image-wrap" href="https://blocksandfiles.com/2024/11/18/dell-amplifies-lakehouse-and-ai-server-offerings-at-sc24/" rel="bookmark" title="Dell expands lakehouse and AI server range at SC24"><img alt="" class="entry-thumb" data-img-url="https://blocksandfiles.com/wp-content/uploads/2024/11/Dell-AI-Factory-teaser-218x150.jpg" data-type="image_tag" height="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" title="Dell expands lakehouse and AI server range at SC24" width="218"/></a></div> </div>
+<div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://blocksandfiles.com/2024/11/18/dell-amplifies-lakehouse-and-ai-server-offerings-at-sc24/" rel="bookmark" title="Dell expands lakehouse and AI server range at SC24">Dell expands lakehouse and AI server range at SC24</a></h3> </div>
+</div>
+</div> <!-- ./td-related-span4 -->
+<div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a class="td-image-wrap" href="https://blocksandfiles.com/2024/11/15/arcitecta-wasabi-cloud-storage/" rel="bookmark" title="Arcitecta and Wasabi team up to simplify cloud storage"><img alt="" class="entry-thumb" data-img-url="https://blocksandfiles.com/wp-content/uploads/2024/11/Arcitecta-Wasabi-teaser-218x150.jpg" data-type="image_tag" height="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" title="Arcitecta and Wasabi team up to simplify cloud storage" width="218"/></a></div> </div>
+<div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://blocksandfiles.com/2024/11/15/arcitecta-wasabi-cloud-storage/" rel="bookmark" title="Arcitecta and Wasabi team up to simplify cloud storage">Arcitecta and Wasabi team up to simplify cloud storage</a></h3> </div>
+</div>
+</div> <!-- ./td-related-span4 -->
+<div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a class="td-image-wrap" href="https://blocksandfiles.com/2024/11/11/apache-cassandra-database-survey/" rel="bookmark" title="Apache Cassandra survey highlights growing adoption for AI workloads"><img alt="" class="entry-thumb" data-img-url="https://blocksandfiles.com/wp-content/uploads/2024/11/Cassandra-teaser-218x150.jpg" data-type="image_tag" height="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" title="Apache Cassandra survey highlights growing adoption for AI workloads" width="218"/></a></div> </div>
+<div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://blocksandfiles.com/2024/11/11/apache-cassandra-database-survey/" rel="bookmark" title="Apache Cassandra survey highlights growing adoption for AI workloads">Apache Cassandra survey highlights growing adoption for AI workloads</a></h3> </div>
+</div>
+</div> <!-- ./td-related-span4 --></div><!--./row-fluid-->
+<div class="td-related-row">
+<div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a class="td-image-wrap" href="https://blocksandfiles.com/2024/11/07/datadobi-storagemap-v71/" rel="bookmark" title="Datadobi boosts StorageMAP with faster data mobility"><img alt="" class="entry-thumb" data-img-url="https://blocksandfiles.com/wp-content/uploads/2024/11/Datadobi-StorageMap-teaser-218x150.jpg" data-type="image_tag" height="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" title="Datadobi boosts StorageMAP with faster data mobility" width="218"/></a></div> </div>
+<div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://blocksandfiles.com/2024/11/07/datadobi-storagemap-v71/" rel="bookmark" title="Datadobi boosts StorageMAP with faster data mobility">Datadobi boosts StorageMAP with faster data mobility</a></h3> </div>
+</div>
+</div> <!-- ./td-related-span4 -->
+<div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a class="td-image-wrap" href="https://blocksandfiles.com/2024/11/01/kevin-campbell-syniti/" rel="bookmark" title="Syniti CEO discusses company’s evolution and Capgemini acquisition"><img alt="" class="entry-thumb" data-img-url="https://blocksandfiles.com/wp-content/uploads/2024/07/Kevin-Campbell-218x150.jpg" data-type="image_tag" height="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" title="Syniti CEO discusses company’s evolution and Capgemini acquisition" width="218"/></a></div> </div>
+<div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://blocksandfiles.com/2024/11/01/kevin-campbell-syniti/" rel="bookmark" title="Syniti CEO discusses company’s evolution and Capgemini acquisition">Syniti CEO discusses company’s evolution and Capgemini acquisition</a></h3> </div>
+</div>
+</div> <!-- ./td-related-span4 -->
+<div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a class="td-image-wrap" href="https://blocksandfiles.com/2024/11/01/chorology-claims-it-has-an-ace-system-to-deal-with-sensitive-data/" rel="bookmark" title="Chorology claims it has an ACE system to deal with sensitive data"><img alt="" class="entry-thumb" data-img-url="https://blocksandfiles.com/wp-content/uploads/2024/10/Chorology-teaser-218x150.jpg" data-type="image_tag" height="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" title="Chorology claims it has an ACE system to deal with sensitive data" width="218"/></a></div> </div>
+<div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://blocksandfiles.com/2024/11/01/chorology-claims-it-has-an-ace-system-to-deal-with-sensitive-data/" rel="bookmark" title="Chorology claims it has an ACE system to deal with sensitive data">Chorology claims it has an ACE system to deal with sensitive data</a></h3> </div>
+</div>
+</div> <!-- ./td-related-span4 --></div><!--./row-fluid--></div><div class="td-next-prev-wrap"><a aria-label="prev-page" class="td-ajax-prev-page ajax-page-disabled" data-td_block_id="tdi_52" href="#" id="prev-page-tdi_52"><i class="td-next-prev-icon td-icon-font td-icon-menu-left"></i></a><a aria-label="next-page" class="td-ajax-next-page" data-td_block_id="tdi_52" href="#" id="next-page-tdi_52"><i class="td-next-prev-icon td-icon-font td-icon-menu-right"></i></a></div></div> <!-- ./block -->
+</div>
+</div>
+<div class="td-pb-span4 td-main-sidebar" role="complementary">
+<div class="td-ss-main-sidebar">
+<div class="td-a-rec td-a-rec-id-custom_ad_1 tdi_55 td_block_template_8">
+<!-- EAGLE via CA1 -->
+<div class="adu" id="ad-eagle">
+
+</div></div><div class="td-a-rec td-a-rec-id-custom_ad_4 tdi_56 td_block_template_8">
+<!-- FALCON via CA 4 -->
+<div class="adu" id="ad-falcon">
+
+</div></div> </div>
+</div>
+</div> <!-- /.td-pb-row -->
+</div> <!-- /.td-container -->
+</div> <!-- /.td-main-content-wrap -->
+<!-- Instagram -->
+<div class="td-footer-template-wrap" style="position: relative">
+<div class="td-footer-wrap">
+<div class="tdc-zone" id="tdi_57"><div class="tdc_zone tdi_58 wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_57_rand_style td-element-style"></div><div class="tdc-row stretch_row" id="tdi_59"><div class="vc_row tdi_60 wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_59_rand_style td-element-style"><div class="td-element-style-before"></div></div><div class="vc_column tdi_62 wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"><div class="vc_row_inner tdi_64 vc_row vc_inner wpb_row td-pb-row">
+<div class="vc_column_inner tdi_66 wpb_column vc_column_container tdc-inner-column td-pb-span4">
+<div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="vc_column_inner tdi_68 wpb_column vc_column_container tdc-inner-column td-pb-span4">
+<div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="vc_column_inner tdi_70 wpb_column vc_column_container tdc-inner-column td-pb-span4">
+<div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row_inner tdi_72 vc_row vc_inner wpb_row td-pb-row">
+<div class="vc_column_inner tdi_74 wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpb_wrapper td_block_separator td_block_wrap vc_separator tdi_76 td_separator_solid td_separator_center"><span style="border-color:rgba(255,255,255,0.1);border-width:1px;width:80%;"></span>
+</div></div></div></div></div><div class="vc_row_inner tdi_78 vc_row vc_inner wpb_row td-pb-row">
+<div class="vc_column_inner tdi_80 wpb_column vc_column_container tdc-inner-column td-pb-span3">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="td_block_wrap tdb_header_logo tdi_81 td-pb-border-top td_block_template_8 tdb-header-align" data-td-block-uid="tdi_81">
+
+<div class="tdb-block-inner td-fix-index"><a class="tdb-logo-a" href="https://blocksandfiles.com/"><span class="tdb-logo-img-wrap"><img alt="Logo" class="tdb-logo-img td-retina-data" data-retina="https://blocksandfiles.com/wp-content/uploads/2018/10/BF-white.png" height="177" src="https://blocksandfiles.com/wp-content/uploads/2018/10/BF-white.png" title="" width="579"/></span><span class="tdb-logo-text-wrap"><span class="tdb-logo-text-title">Blocks and Files</span><span class="tdb-logo-text-tagline">Storages and File System News</span></span></a></div></div> <!-- ./block --></div></div></div><div class="vc_column_inner tdi_83 wpb_column vc_column_container tdc-inner-column td-pb-span6">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title tdi_84 tdm-content-horiz-left td-pb-border-top td_block_template_8" data-td-block-uid="tdi_84">
+
+<div class="td-block-row"><div class="td-block-span12 tdm-col">
+<div class="tds-title tds-title1 td-fix-index tdi_85"><h3 class="tdm-title tdm-title-md">ABOUT US</h3></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_inline_text tdi_86 td-pb-border-top td_block_template_8" data-td-block-uid="tdi_86">
+
+<p class="tdm-descr">Blocks &amp; Files is a storage news, information and analysis site covering storage media, devices from drives through arrays to server-based storage, cloud storage, networking and protocols, data management, suppliers and standards. We publish news, views, opinions and analysis of storage industry events and developments, aiming to keep storage users, developers, consultants, marketeers, salespeople, support staff, analysts and everyone else involved in IT storage up to date with what’s going on.</p></div></div></div></div><div class="vc_column_inner tdi_88 wpb_column vc_column_container tdc-inner-column td-pb-span3">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title tdi_89 tdm-content-horiz-left td-pb-border-top td_block_template_8" data-td-block-uid="tdi_89">
+<div class="td-block-row"><div class="td-block-span12 tdm-col">
+<div class="tds-title tds-title1 td-fix-index tdi_90"><h3 class="tdm-title tdm-title-md">FOLLOW US</h3></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_socials tdi_91 tdm-content-horiz-left td-pb-border-top td-footer-edit-social td_block_template_8" data-td-block-uid="tdi_91">
+
+<div class="tdm-social-wrapper tds-social4 tdi_92"><div class="tdm-social-item-wrap"><a class="tdm-social-item" href="https://blocksandfiles.com/feed/" title="Rss"><i class="td-icon-font td-icon-rss"></i><span style="display: none">Rss</span></a></div><div class="tdm-social-item-wrap"><a class="tdm-social-item" href="https://twitter.com/blocksandfiles/" title="Twitter"><i class="td-icon-font td-icon-twitter"></i><span style="display: none">Twitter</span></a></div></div></div></div></div></div></div></div></div></div></div><div class="tdc-row stretch_row" id="tdi_93"><div class="vc_row tdi_94 wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_93_rand_style td-element-style"></div><div class="vc_column tdi_96 wpb_column vc_column_container tdc-column td-pb-span3">
+<div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_text tdi_97 td-pb-border-top td_block_template_8" data-td-block-uid="tdi_97">
+
+<p class="tdm-descr">© Situation Publishing, 2018-2024</p></div></div></div><div class="vc_column tdi_99 wpb_column vc_column_container tdc-column td-pb-span9">
+<div class="wpb_wrapper"><div class="td_block_wrap td_block_list_menu tdi_100 td-blm-display-horizontal td-pb-border-top td-list-lastchild-edit td_block_template_8 widget" data-td-block-uid="tdi_100">
+
+<div class="td-block-title-wrap"></div><div class="td_block_inner td-fix-index" id="tdi_100"><div class="menu-td-demo-footer-menu-container"><ul class="menu" id="menu-td-demo-footer-menu-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a href="https://blocksandfiles.com/about/"><span class="td-blm-menu-item-txt">About</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href="https://blocksandfiles.com/contribute/"><span class="td-blm-menu-item-txt">Contribute</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247"><a href="https://blocksandfiles.com/contact-us/"><span class="td-blm-menu-item-txt">Contact</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19271"><a href="https://situationpublishing.com/home/contact-us/"><span class="td-blm-menu-item-txt">Sales</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-245"><a href="https://blocksandfiles.com/privacy/"><span class="td-blm-menu-item-txt">Privacy</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="https://blocksandfiles.com/cookies/"><span class="td-blm-menu-item-txt">Cookies</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="https://blocksandfiles.com/tc/"><span class="td-blm-menu-item-txt">Ts&amp;Cs</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13467"><a href="https://blocksandfiles.com/blocksfiles-privacy-policy-for-california-residents/"><span class="td-blm-menu-item-txt">Do not sell my personal information</span></a></li>
+</ul></div></div></div></div></div></div></div></div></div> </div>
+</div>
+</div><!--close td-outer-wrap-->
+<div class="td-more-articles-box">
+<i class="td-icon-close td-close-more-articles-box"></i>
+<span class="td-more-articles-box-title">MORE STORIES</span>
+<div class="td-content-more-articles-box">
+<div class="td_module_8 td_module_wrap">
+<div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://blocksandfiles.com/2024/11/18/pure-flashblade-superpod-certification/" rel="bookmark" title="Pure Storage’s FlashBlade//S500 gains Nvidia SuperPOD certification">Pure Storage’s FlashBlade//S500 gains Nvidia SuperPOD certification</a></h3>
+<div class="td-module-meta-info">
+<span class="td-post-author-name"><a href="https://blocksandfiles.com/author/chris-mellor/">Chris Mellor</a> <span>-</span> </span> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2024-11-18T20:45:00+00:00">November 18, 2024</time></span> <span class="td-module-comments"><a href="https://blocksandfiles.com/2024/11/18/pure-flashblade-superpod-certification/#respond">0</a></span> </div>
+</div>
+</div>
+<div class="td_module_8 td_module_wrap">
+<div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://blocksandfiles.com/2024/11/18/ddn-increases-a3i-data-platform-speed/" rel="bookmark" title="DDN boosts A³I IO speeds and IOPS for Nvidia AI workloads">DDN boosts A³I IO speeds and IOPS for Nvidia AI workloads</a></h3>
+<div class="td-module-meta-info">
+<span class="td-post-author-name"><a href="https://blocksandfiles.com/author/chris-mellor/">Chris Mellor</a> <span>-</span> </span> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2024-11-18T19:30:00+00:00">November 18, 2024</time></span> <span class="td-module-comments"><a href="https://blocksandfiles.com/2024/11/18/ddn-increases-a3i-data-platform-speed/#respond">0</a></span> </div>
+</div>
+</div>
+<div class="td_module_8 td_module_wrap">
+<div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://blocksandfiles.com/2024/11/18/cloudian-supporting-nvidia-gpudirect-acceleration-for-object-storage/" rel="bookmark" title="Cloudian integrates Nvidia GPUDirect acceleration for object storage">Cloudian integrates Nvidia GPUDirect acceleration for object storage</a></h3>
+<div class="td-module-meta-info">
+<span class="td-post-author-name"><a href="https://blocksandfiles.com/author/chris-mellor/">Chris Mellor</a> <span>-</span> </span> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2024-11-18T16:19:00+00:00">November 18, 2024</time></span> <span class="td-module-comments"><a href="https://blocksandfiles.com/2024/11/18/cloudian-supporting-nvidia-gpudirect-acceleration-for-object-storage/#respond">0</a></span> </div>
+</div>
+</div>
+</div>
+</div>
+<!--
+
+        Theme: Newspaper by tagDiv.com 2023
+        Version: 12.5.1 (rara)
+        Deploy mode: deploy
+        
+        uid: 673c70796512b
+    -->
+<!-- Custom css from theme panel -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS generated by theme -->
+
+</body>
+</html>

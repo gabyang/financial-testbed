@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+
+<!--
+Development:
+JULIO FOULQUIE, @j3j5@hachyderm.io, ✈Montevideo, UY
+MARC TORAL, ✈Amsterdam, NL
+JULIAN SZNAIDER, ✈Buenos Aires, AR
+——————————
+Concept and Design by:
+ALEXANDER GRIFFIOEN, @oscaralexander, ✈Amsterdam, NL
+SÄINA SEEDORF, ✈Amsterdam, NL
+——————————
+Alumni:
+JACK DUNN, ✈Amsterdam, NL
+JULIAN AIJAL, @Jaijal, ✈Amsterdam, NL
+SAM BLOK, ✈Amsterdam, NL
+LAURA GENNO, ✈Amsterdam, NL
+IRENE DE NICOLO, ✈Amsterdam, NL
+DANIEL TARA, ✈Amsterdam, NL
+EVGENY ASTAPOV, ✈Rotterdam, NL
+RONAN O'LEARY, @ro_oleary, ✈Amsterdam, NL
+PABLO ROMÁN, ✈Amsterdam, NL
+JAMES SCOTT, ✈Amsterdam, NL
+JELLE VAN WIJHE, ✈Amsterdam, NL
+MATTHEW ELWORTHY, ✈Amsterdam, NL
+OSCAR VAN ZIJVERDEN, ✈Amsterdam, NL
+STEPHAN LAGERWAARD, ✈Amsterdam, NL
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="unsafe-url" name="referrer"/>
+<meta content="The Next Web" name="apple-mobile-web-app-title"/>
+
+<link as="style" href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="script" href="//next.tnwcdn.com/assets/next/js/base.js?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="style" href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="preload"/>
+<link as="font" crossorigin="anonymous" href="https://next.tnwcdn.com/assets/next/fonts/graphik-wide-black.woff2" rel="preload" type="font/woff2"/>
+<title>Latest tech news | TNW</title>
+<!-- OpenGraph -->
+<meta content="latest" property="og:site_name">
+<meta content="Latest news | TNW" property="og:title">
+<meta content="https://thenextweb.com/latest" property="og:url">
+<meta content="" property="og:description">
+<meta content="630" property="og:image:height">
+<meta content="1200" property="og:image:width">
+<meta content="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/05/ftimg-tnw_general.jpg" property="og:image"/>
+<meta content="website" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@thenextweb" name="twitter:site"/>
+<meta content="@thenextweb" name="twitter:creator"/>
+<meta content="latest" name="twitter:title"/>
+<meta content="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/05/ftimg-tnw_general.jpg" name="twitter:image"/>
+<meta content="" name="twitter:description"/>
+<!-- General Meta -->
+<meta content="latest" property="title"/>
+<meta content="" property="description"/>
+<meta content="https://thenextweb.com/latest" property="url"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-194x194.png" rel="icon" sizes="194x194" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon"/>
+
+<link href="/manifest.json" rel="manifest"/>
+
+
+
+<link href="//next.tnwcdn.com/assets/next/css/base.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+<noscript>
+<link href="//next.tnwcdn.com/assets/next/css/media.css?8cf8e37a993276082dfa83220568bc50ec7ebf4b" rel="stylesheet" type="text/css"/>
+</noscript>
+<meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<link href="//cdn0.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//next.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//img-cdn.tnwcdn.com/" rel="dns-prefetch"/>
+<link href="//cdnjs.cloudflare.com/" rel="dns-prefetch"/>
+<link href="//www.googletagmanager.com" rel="dns-prefetch"/>
+<link href="//cdn0.tnwcdn.com/" rel="preconnect"/>
+<link href="//next.tnwcdn.com/" rel="preconnect"/>
+<link href="//img-cdn.tnwcdn.com/" rel="preconnect"/>
+<link href="//www.googletagmanager.com" rel="preconnect"/>
+<link href="//cdnjs.cloudflare.com/" rel="preconnect"/>
+<link as="style" async="" crossorigin="anonymous" href="//use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet preload"/>
+<link href="https://thenextweb.com/latest" rel="canonical">
+<link href="https://thenextweb.com/latest/page/2" rel="next">
+
+
+
+</link></link></meta></meta></meta></meta></meta></meta></meta></head>
+<body class="site-tnwNext" id="next-top">
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- Google Tag Manager -->
+<noscript>
+<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+<div id="fb-root"></div>
+<nav class="c-nav has-level2" id="nav" role="navigation" style="top: 0;">
+<div class="c-nav__level1">
+<button aria-controls="overlay__hook" aria-expanded="false" aria-haspopup="true" class="c-nav__menuToggle c-nav__menuToggle--level-1 js-menuToggleLevel" data-nav-level="1" id="nav-menuLevel1" type="button">
+<span class="visually-hidden">Toggle Navigation</span>
+</button>
+<div class="navLabel_dt">
+<a class="c-nav__logo" data-event-action="Navigation bar" data-event-category="Article" data-event-label="TNW Logo" data-event-non-interaction="false" href="/" name="TNW Logo">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path>
+</svg>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--1" id="overlay__hook">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="News" data-event-category="Navigation bar" data-event-label="/" data-event-non-interaction="false" href="/">News</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">Events</button>
+<ul class="c-nav__submenu" role="menu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false" href="/conference">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Conference" data-event-category="Navigation bar" data-event-label="/conference" data-event-non-interaction="false">TNW Conference</span>
+<span class="c-nav__submenuLinkNote">June 19 &amp; 20, 2025</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false" href="https://thenextweb.com/conference/the-soonicorn-summit">
+<span class="c-nav__submenuLinkTitle" data-event-action="The Soonicorn Summit" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/the-soonicorn-summit" data-event-non-interaction="false">The Soonicorn Summit</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false" href="https://thenextweb.com/conference/tnw-webinar-series">
+<span class="c-nav__submenuLinkTitle" data-event-action="TNW Webinars" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/conference/tnw-webinar-series" data-event-non-interaction="false">TNW Webinars</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false" href="/events">
+<span class="c-nav__submenuLinkTitle" data-event-action="All events" data-event-category="Navigation bar" data-event-label="/events" data-event-non-interaction="false">All events</span>
+<span class="c-nav__submenuLinkNote"></span>
+</a>
+</li>
+</ul>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Spaces" data-event-category="Navigation bar" data-event-label="/spaces" data-event-non-interaction="false" href="/spaces">Spaces</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Programs" data-event-category="Navigation bar" data-event-label="/programs" data-event-non-interaction="false" href="/programs">Programs</a>
+</li>
+</ul>
+<hr class="mobile_menu_divider"/>
+<ul class="c-nav__menu c-nav__icons">
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" data-event-action="Newsletter" data-event-category="Navigation bar" data-event-label="Newsletters top right - click" data-event-non-interaction="false" href="/newsletters">
+<span class="c-nav__iconsItem--label" data-event-action="Newsletters" data-event-category="Navigation bar" data-event-label="/newsletters" data-event-non-interaction="false">Newsletters</span>
+</a>
+</li>
+<li class="c-nav__menuItem c-nav__iconsItem">
+<a class="c-nav__menuLink" href="/partnerships">
+<span class="c-nav__iconsItem--label" data-event-action="Partner with us" data-event-category="Navigation bar" data-event-label="/partnerships" data-event-non-interaction="false">Partner with us</span>
+</a>
+</li>
+</ul>
+<footer class="c-nav__footer">
+<ul class="c-nav__social">
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://facebook.com/thenextweb" name="Facebook Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://www.instagram.com/thenextweb" name="Instagram Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://twitter.com/thenextweb" name="Twitter Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://youtube.com/user/thenextweb" name="Youtube Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="https://flipboard.com/@thenextweb" name="Flipboard Social Link" rel="noopener noreferrer" target="_blank">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg>
+</a>
+</li>
+<li class="c-nav__socialItem">
+<a class="c-nav__socialLink" href="/newsletters" name="Email Social Link">
+<svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg>
+</a>
+</li>
+</ul>
+<ul class="c-nav__company">
+<li class="c-nav__companyItem">
+<a class="c-nav__companyLink" href="https://thenextweb.homerun.co/" rel="noopener noreferrer" target="_blank">Jobs</a>
+</li>
+<li class="c-nav__companyItem"><a class="c-nav__companyLink" href="mailto:conference@thenextweb.com">Contact</a></li>
+</ul>
+</footer>
+</div>
+</div>
+<div class="c-nav__level2 tnw news">
+<div class="c-nav__pwd">
+<a class="c-nav__pwdLogo" href="/"><svg class="tnwLogo__tnwNews"><title>The Next Web</title><use xlink:href="/assets/next/img/icons.svg#tnw"></use></svg></a>
+<a class="c-nav__pwdLogoUkraine" href="/ukraine">
+<img alt="We stand with Ukraine" src="https://s3.eu-west-1.amazonaws.com/tnw.events/hardfork-2018/uploads/companies/ukraine.png"/>
+</a>
+<span class="c-nav__pwdSection">News</span>
+<a class="c-nav__pwdSite" href="/" title="">
+<span class="sm:hidden" id="channelName_abbr">latest</span>
+<span class="max-sm:hidden xl:hidden">latest</span>
+<span class="max-xl:hidden" id="channelName_mob">latest</span>
+</a>
+</div>
+<div class="c-nav__menuContainer c-nav__menuContainer--2">
+<ul class="c-nav__menu">
+<li class="c-nav__menuItem c-nav__menuItem--current">
+<a class="c-nav__menuLink" data-event-action="Latest" data-event-category="Navigation bar" data-event-label="/latest" data-event-non-interaction="false" href="/latest">Latest</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Deep tech" data-event-category="Navigation bar" data-event-label="/deep-tech" data-event-non-interaction="false" href="/deep-tech">Deep tech</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Sustainability" data-event-category="Navigation bar" data-event-label="/sustainability" data-event-non-interaction="false" href="/sustainability">Sustainability</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Ecosystems" data-event-category="Navigation bar" data-event-label="/ecosystems" data-event-non-interaction="false" href="/ecosystems">Ecosystems</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Data and security" data-event-category="Navigation bar" data-event-label="/data-security" data-event-non-interaction="false" href="/data-security">Data and security</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Fintech and ecommerce" data-event-category="Navigation bar" data-event-label="/fintech-ecommerce" data-event-non-interaction="false" href="/fintech-ecommerce">Fintech and ecommerce</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Future of work" data-event-category="Navigation bar" data-event-label="/future-of-work" data-event-non-interaction="false" href="/future-of-work">Future of work</a>
+</li>
+<li class="c-nav__menuItem">
+<a class="c-nav__menuLink" data-event-action="Podcast" data-event-category="Navigation bar" data-event-label="https://podcast.thenextweb.com" data-event-non-interaction="false" href="https://podcast.thenextweb.com">Podcast</a>
+</li>
+<li class="c-nav__menuItem has-menu">
+<button aria-expanded="false" aria-haspopup="true" class="c-nav__menuLink" type="button">More</button>
+<ul class="c-nav__submenu">
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="https://thenextweb.com/tnw-conference-2024">
+<span class="c-nav__submenuLinkTitle" data-event-action="Conference media hub" data-event-category="Navigation bar" data-event-label="https://thenextweb.com/tnw-conference-2024" data-event-non-interaction="false">Conference media hub</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/startups-technology">
+<span class="c-nav__submenuLinkTitle" data-event-action="Startups and technology" data-event-category="Navigation bar" data-event-label="/startups-technology" data-event-non-interaction="false">Startups and technology</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/investors-funding">
+<span class="c-nav__submenuLinkTitle" data-event-action="Investors and funding" data-event-category="Navigation bar" data-event-label="/investors-funding" data-event-non-interaction="false">Investors and funding</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/government-policy">
+<span class="c-nav__submenuLinkTitle" data-event-action="Government and policy" data-event-category="Navigation bar" data-event-label="/government-policy" data-event-non-interaction="false">Government and policy</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/corporates-innovation">
+<span class="c-nav__submenuLinkTitle" data-event-action="Corporates and innovation" data-event-category="Navigation bar" data-event-label="/corporates-innovation" data-event-non-interaction="false">Corporates and innovation</span>
+</a>
+</li>
+<li class="c-nav__submenuItem">
+<a class="c-nav__submenuLink" href="/plugged">
+<span class="c-nav__submenuLinkTitle" data-event-action="Gadgets &amp; apps" data-event-category="Navigation bar" data-event-label="/plugged" data-event-non-interaction="false">Gadgets &amp; apps</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<button aria-hidden="true" class="c-nav__menuScroller" type="button"></button>
+</div>
+</div>
+</nav>
+<a class="c-nav__yellow-bar" href="https://thenextweb.com/conference/tickets" id="cross-site-notification" rel="noopener" target="_blank">
+<div class="c-nav__message c-nav__message--global" data-event-action="Yellow bar" data-event-category="Yellow bar" data-event-label="Yellow bar - click">
+<p><strong>Save over 40% when you secure your tickets today to TNW Conference 💥 Prices will increase on November 22 →</strong></p>
+</div>
+</a>
+<div class="o-page" id="main">
+<div class="o-page__main">
+<div class="c-channel c-channel--latest o-page__main" id="channelArticlesList">
+<header class="c-channel__header latest_news_header">
+<div class="o-wrapper">
+<div class="c-channel__logos">
+<div class="c-index__logo">
+<h1 class="c-channel__tagline latest_index" style="line-height: 1.1">Latest tech news</h1>
+</div>
+</div>
+</div>
+</header></div>
+
+<div class="o-wrapper latestMobileHeader">
+<ol class="c-split">
+<main class="c-split__main">
+<div class="c-topArticles o-grid o-grid--gap-m">
+<article class="c-topArticles__article o-grid__col">
+<div class="c-card c-card--visual">
+<a class="c-card__image o-media o-media--1:1 md:o-media--16:9" data-event-action="Top story" data-event-category="Category" data-event-label="UK startup taps last-mile delivery algorithms to bring a nurse to you" data-event-non-interaction="false" href="/news/heim-health-last-mile-delivery-algorithms-to-healthcare">
+<img alt="UK startup taps last-mile delivery algorithms to bring a nurse to you" class="c-card__imageImage" sizes="
+                                            (max-width:  767px) 741px,
+                                            (width: 768px) 659px,
+                                            (min-width:  769px) and (max-width: 1023px) 922px,
+                                            (width: 1024px) 630px,
+                                            894px" src="https://img-cdn.tnwcdn.com/image?fit=2682%2C1509&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=42724e5cfd5b776047aba7a23119e0ab" srcset=" https://img-cdn.tnwcdn.com/image?fit=741%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=ea0635696a8087ebe88e319b68da1e32 741w ,   https://img-cdn.tnwcdn.com/image?fit=1482%2C1482&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=00b7a229f9cf4a2f31e1eb293f8c5638 1482w ,   https://img-cdn.tnwcdn.com/image?fit=2223%2C2223&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=c23f7da53f7e1db8ed87ec18398594ef 2223w ,   https://img-cdn.tnwcdn.com/image?fit=659%2C371&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=7c1cb8edc601018c6e7a6ddec30d7e97 659w ,   https://img-cdn.tnwcdn.com/image?fit=1318%2C742&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=e0059b302cee417d5d902f5691e4d48f 1318w ,   https://img-cdn.tnwcdn.com/image?fit=1977%2C1113&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=ae7d85acbd778cfeb36e001c225afd3d 1977w ,   https://img-cdn.tnwcdn.com/image?fit=922%2C519&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=c61689c91510243fab2ecc7524c0a19a 922w ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C1038&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=b9c54605827f07e3318f5580991f94a0 1844w ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1557&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=9748a7f70fbbbf9a5fd96a74ebf0a2dd 2766w ,   https://img-cdn.tnwcdn.com/image?fit=630%2C355&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=57b777cf5ed6edd4c0016b9880a0808a 630w ,   https://img-cdn.tnwcdn.com/image?fit=1260%2C710&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=7877216be5c1e61d3512b8eb40f9a383 1260w ,   https://img-cdn.tnwcdn.com/image?fit=1890%2C1065&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=66f6bc8bde9606b1bad2e6416622b7a5 1890w ,   https://img-cdn.tnwcdn.com/image?fit=894%2C503&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=8151a73500484fb1113011e1a76d9c51 894w ,   https://img-cdn.tnwcdn.com/image?fit=1788%2C1006&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=7ae74a9df25ca111c8cd63bc8073b6a2 1788w ,   https://img-cdn.tnwcdn.com/image?fit=2682%2C1509&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=42724e5cfd5b776047aba7a23119e0ab 2682w  "/>
+<noscript>
+<img alt="UK startup taps last-mile delivery algorithms to bring a nurse to you" class="c-card__imageImage" sizes="
+                                                (max-width:  767px) 741px,
+                                                (width: 768px) 659px,
+                                                (min-width:  769px) and (max-width: 1023px) 922px,
+                                                (width: 1024px) 630px,
+                                                894px" src="https://img-cdn.tnwcdn.com/image?fit=2682%2C1509&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=42724e5cfd5b776047aba7a23119e0ab" srcset=" https://img-cdn.tnwcdn.com/image?fit=741%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=ea0635696a8087ebe88e319b68da1e32 741ww ,   https://img-cdn.tnwcdn.com/image?fit=1482%2C1482&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=00b7a229f9cf4a2f31e1eb293f8c5638 1482ww ,   https://img-cdn.tnwcdn.com/image?fit=2223%2C2223&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=c23f7da53f7e1db8ed87ec18398594ef 2223ww ,   https://img-cdn.tnwcdn.com/image?fit=659%2C371&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=7c1cb8edc601018c6e7a6ddec30d7e97 659ww ,   https://img-cdn.tnwcdn.com/image?fit=1318%2C742&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=e0059b302cee417d5d902f5691e4d48f 1318ww ,   https://img-cdn.tnwcdn.com/image?fit=1977%2C1113&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=ae7d85acbd778cfeb36e001c225afd3d 1977ww ,   https://img-cdn.tnwcdn.com/image?fit=922%2C519&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=c61689c91510243fab2ecc7524c0a19a 922ww ,   https://img-cdn.tnwcdn.com/image?fit=1844%2C1038&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=b9c54605827f07e3318f5580991f94a0 1844ww ,   https://img-cdn.tnwcdn.com/image?fit=2766%2C1557&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=9748a7f70fbbbf9a5fd96a74ebf0a2dd 2766ww ,   https://img-cdn.tnwcdn.com/image?fit=630%2C355&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=57b777cf5ed6edd4c0016b9880a0808a 630ww ,   https://img-cdn.tnwcdn.com/image?fit=1260%2C710&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=7877216be5c1e61d3512b8eb40f9a383 1260ww ,   https://img-cdn.tnwcdn.com/image?fit=1890%2C1065&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=66f6bc8bde9606b1bad2e6416622b7a5 1890ww ,   https://img-cdn.tnwcdn.com/image?fit=894%2C503&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=8151a73500484fb1113011e1a76d9c51 894ww ,   https://img-cdn.tnwcdn.com/image?fit=1788%2C1006&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=7ae74a9df25ca111c8cd63bc8073b6a2 1788ww ,   https://img-cdn.tnwcdn.com/image?fit=2682%2C1509&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FHeim-Health-co-founders-Kelly-Klifa-CEO-and-Sasha-Tory-CGO-1.jpg&amp;signature=42724e5cfd5b776047aba7a23119e0ab 2682ww  "/>
+</noscript>
+</a>
+<header class="c-card__header">
+<h2 class="c-card__heading c-card__heading--large c-card__heading--graphik"><a data-event-action="Top story" data-event-category="Category" data-event-label="UK startup taps last-mile delivery algorithms to bring a nurse to you" data-event-non-interaction="false" href="/news/heim-health-last-mile-delivery-algorithms-to-healthcare" tabindex="-1">UK startup taps last-mile delivery algorithms to bring a nurse to you</a></h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="Siôn Geschwindt" data-event-non-interaction="false" href="/author/sion">Siôn Geschwindt</a></li>
+<li class="c-meta__item">4 minutes ago</li>
+</ul>
+</header>
+</div>
+</article>
+<article class="c-topArticles__article o-grid__col md:o-grid__col--1/2">
+<div class="c-card c-card--visual">
+<a class="c-card__image o-media o-media--1:1 md:o-media--16:9" data-event-action="Top story" data-event-category="Category" data-event-label="AI startup Gendo — the Midjourney for architecture — secures fresh capital" data-event-non-interaction="false" href="/news/ai-startup-gendo-midjourney-architecture-funding">
+<img alt="AI startup Gendo — the Midjourney for architecture — secures fresh capital" class="c-card__imageImage js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1317%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=3abb29a79afb1cf019d7eca0d38a6aba" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=741%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=6e8a42bdcf5b55c5ffe09d98384eb374 741w ,   https://img-cdn.tnwcdn.com/image?fit=1482%2C1482&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=1eedba5431c30f3bf6e779f6ba6b87f5 1482w ,   https://img-cdn.tnwcdn.com/image?fit=2223%2C2223&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=88ce455bdd7e03c770cb0f99a6faa7bd 2223w ,   https://img-cdn.tnwcdn.com/image?fit=321%2C181&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=d3aa0e4dd3f46d406a6be2f2c23a7518 321w ,   https://img-cdn.tnwcdn.com/image?fit=642%2C362&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=2f5db46241011c487676a92401813565 642w ,   https://img-cdn.tnwcdn.com/image?fit=963%2C543&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=b86920dc6f5d30f6e58f80728c351675 963w ,   https://img-cdn.tnwcdn.com/image?fit=453%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=b78304f62a2e5be673a8b510c5c987e6 453w ,   https://img-cdn.tnwcdn.com/image?fit=906%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=ec8d7eb0f6c3e1093f057969247e8fe3 906w ,   https://img-cdn.tnwcdn.com/image?fit=1359%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=ede84fb7de18151a970e7666a2657b5a 1359w ,   https://img-cdn.tnwcdn.com/image?fit=307%2C173&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=f04f7cbaabfafc0d37af56041c1cbea8 307w ,   https://img-cdn.tnwcdn.com/image?fit=614%2C346&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=b93e5d1c1122922c3f6ee0dacb42e5a4 614w ,   https://img-cdn.tnwcdn.com/image?fit=921%2C519&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=5205dbd8d0c262960bf75fc4d319b26d 921w ,   https://img-cdn.tnwcdn.com/image?fit=439%2C247&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=4e7726ec6620e6d0bf8ccd2f078ec033 439w ,   https://img-cdn.tnwcdn.com/image?fit=878%2C494&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=b58dc0f48e115a471bc14a6c458f21d3 878w ,   https://img-cdn.tnwcdn.com/image?fit=1317%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=3abb29a79afb1cf019d7eca0d38a6aba 1317w  " sizes="
+                                            (max-width:  767px) 741px,
+                                            (width: 768px) 321px,
+                                            (min-width:  769px) and (max-width: 1023px) 453px,
+                                            (width: 1024px) 307px,
+                                            439px"/>
+<noscript>
+<img alt="AI startup Gendo — the Midjourney for architecture — secures fresh capital" class="c-card__imageImage" sizes="
+                                                (max-width:  767px) 741px,
+                                                (width: 768px) 321px,
+                                                (min-width:  769px) and (max-width: 1023px) 453px,
+                                                (width: 1024px) 307px,
+                                                439px" src="https://img-cdn.tnwcdn.com/image?fit=1317%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=3abb29a79afb1cf019d7eca0d38a6aba" srcset=" https://img-cdn.tnwcdn.com/image?fit=741%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=6e8a42bdcf5b55c5ffe09d98384eb374 741ww ,   https://img-cdn.tnwcdn.com/image?fit=1482%2C1482&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=1eedba5431c30f3bf6e779f6ba6b87f5 1482ww ,   https://img-cdn.tnwcdn.com/image?fit=2223%2C2223&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=88ce455bdd7e03c770cb0f99a6faa7bd 2223ww ,   https://img-cdn.tnwcdn.com/image?fit=321%2C181&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=d3aa0e4dd3f46d406a6be2f2c23a7518 321ww ,   https://img-cdn.tnwcdn.com/image?fit=642%2C362&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=2f5db46241011c487676a92401813565 642ww ,   https://img-cdn.tnwcdn.com/image?fit=963%2C543&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=b86920dc6f5d30f6e58f80728c351675 963ww ,   https://img-cdn.tnwcdn.com/image?fit=453%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=b78304f62a2e5be673a8b510c5c987e6 453ww ,   https://img-cdn.tnwcdn.com/image?fit=906%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=ec8d7eb0f6c3e1093f057969247e8fe3 906ww ,   https://img-cdn.tnwcdn.com/image?fit=1359%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=ede84fb7de18151a970e7666a2657b5a 1359ww ,   https://img-cdn.tnwcdn.com/image?fit=307%2C173&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=f04f7cbaabfafc0d37af56041c1cbea8 307ww ,   https://img-cdn.tnwcdn.com/image?fit=614%2C346&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=b93e5d1c1122922c3f6ee0dacb42e5a4 614ww ,   https://img-cdn.tnwcdn.com/image?fit=921%2C519&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=5205dbd8d0c262960bf75fc4d319b26d 921ww ,   https://img-cdn.tnwcdn.com/image?fit=439%2C247&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=4e7726ec6620e6d0bf8ccd2f078ec033 439ww ,   https://img-cdn.tnwcdn.com/image?fit=878%2C494&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=b58dc0f48e115a471bc14a6c458f21d3 878ww ,   https://img-cdn.tnwcdn.com/image?fit=1317%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FGendo-AI-fundraise.jpg&amp;signature=3abb29a79afb1cf019d7eca0d38a6aba 1317ww  "/>
+</noscript>
+</a>
+<header class="c-card__header">
+<h2 class="c-card__heading c-card__heading--sub_headers"><a data-event-action="Top story" data-event-category="Category" data-event-label="AI startup Gendo — the Midjourney for architecture — secures fresh capital" data-event-non-interaction="false" href="/news/ai-startup-gendo-midjourney-architecture-funding" tabindex="-1">AI startup Gendo — the Midjourney for architecture — secures fresh capital</a></h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="Siôn Geschwindt" data-event-non-interaction="false" href="/author/sion">Siôn Geschwindt</a></li>
+<li class="c-meta__item">3 days ago</li>
+</ul>
+</header>
+</div>
+</article>
+<article class="c-topArticles__article o-grid__col md:o-grid__col--1/2">
+<div class="c-card c-card--visual">
+<a class="c-card__image o-media o-media--1:1 md:o-media--16:9" data-event-action="Top story" data-event-category="Category" data-event-label="Founderful raises $140M fund as Switzerland vies for Europe’s tech top spot" data-event-non-interaction="false" href="/news/founderful-140m-fund-switzerland-tech-europe-startups">
+<img alt="Founderful raises $140M fund as Switzerland vies for Europe’s tech top spot" class="c-card__imageImage js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=1317%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=f2a1ac618b79e0aeac4ecbc1e1854f00" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=741%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=9a97c51b35b56cac1a4311cc876007f9 741w ,   https://img-cdn.tnwcdn.com/image?fit=1482%2C1482&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=497dd4e5b8619882df4508fdc03252a4 1482w ,   https://img-cdn.tnwcdn.com/image?fit=2223%2C2223&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=c5b782be5eae3ff4a984f55de0ee143f 2223w ,   https://img-cdn.tnwcdn.com/image?fit=321%2C181&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=af23808d673353d1c27441ccac2df32f 321w ,   https://img-cdn.tnwcdn.com/image?fit=642%2C362&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=e2d6b78e28db0e2c88b84cc8370c9ecb 642w ,   https://img-cdn.tnwcdn.com/image?fit=963%2C543&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=ce1e8708ba13df920248fc3fb8c6f6bd 963w ,   https://img-cdn.tnwcdn.com/image?fit=453%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=e049040b7b3c93e05d1f8d8478991293 453w ,   https://img-cdn.tnwcdn.com/image?fit=906%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=7cb28e73faca4f7f867f26b90057e797 906w ,   https://img-cdn.tnwcdn.com/image?fit=1359%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=58926e39a3926c4efaa35110bdd20654 1359w ,   https://img-cdn.tnwcdn.com/image?fit=307%2C173&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=2414e82ab2f805ab9cecec8158d415aa 307w ,   https://img-cdn.tnwcdn.com/image?fit=614%2C346&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=2ce233b8179c0a05f82dff1995ba2780 614w ,   https://img-cdn.tnwcdn.com/image?fit=921%2C519&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=65bc3650e6583adb4cf602221e17f90b 921w ,   https://img-cdn.tnwcdn.com/image?fit=439%2C247&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=034c7659c820cecd5780b6c4507dcc86 439w ,   https://img-cdn.tnwcdn.com/image?fit=878%2C494&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=103262a4bcd02d43d142eaebdc276456 878w ,   https://img-cdn.tnwcdn.com/image?fit=1317%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=f2a1ac618b79e0aeac4ecbc1e1854f00 1317w  " sizes="
+                                            (max-width:  767px) 741px,
+                                            (width: 768px) 321px,
+                                            (min-width:  769px) and (max-width: 1023px) 453px,
+                                            (width: 1024px) 307px,
+                                            439px"/>
+<noscript>
+<img alt="Founderful raises $140M fund as Switzerland vies for Europe’s tech top spot" class="c-card__imageImage" sizes="
+                                                (max-width:  767px) 741px,
+                                                (width: 768px) 321px,
+                                                (min-width:  769px) and (max-width: 1023px) 453px,
+                                                (width: 1024px) 307px,
+                                                439px" src="https://img-cdn.tnwcdn.com/image?fit=1317%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=f2a1ac618b79e0aeac4ecbc1e1854f00" srcset=" https://img-cdn.tnwcdn.com/image?fit=741%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=9a97c51b35b56cac1a4311cc876007f9 741ww ,   https://img-cdn.tnwcdn.com/image?fit=1482%2C1482&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=497dd4e5b8619882df4508fdc03252a4 1482ww ,   https://img-cdn.tnwcdn.com/image?fit=2223%2C2223&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=c5b782be5eae3ff4a984f55de0ee143f 2223ww ,   https://img-cdn.tnwcdn.com/image?fit=321%2C181&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=af23808d673353d1c27441ccac2df32f 321ww ,   https://img-cdn.tnwcdn.com/image?fit=642%2C362&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=e2d6b78e28db0e2c88b84cc8370c9ecb 642ww ,   https://img-cdn.tnwcdn.com/image?fit=963%2C543&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=ce1e8708ba13df920248fc3fb8c6f6bd 963ww ,   https://img-cdn.tnwcdn.com/image?fit=453%2C255&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=e049040b7b3c93e05d1f8d8478991293 453ww ,   https://img-cdn.tnwcdn.com/image?fit=906%2C510&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=7cb28e73faca4f7f867f26b90057e797 906ww ,   https://img-cdn.tnwcdn.com/image?fit=1359%2C765&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=58926e39a3926c4efaa35110bdd20654 1359ww ,   https://img-cdn.tnwcdn.com/image?fit=307%2C173&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=2414e82ab2f805ab9cecec8158d415aa 307ww ,   https://img-cdn.tnwcdn.com/image?fit=614%2C346&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=2ce233b8179c0a05f82dff1995ba2780 614ww ,   https://img-cdn.tnwcdn.com/image?fit=921%2C519&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=65bc3650e6583adb4cf602221e17f90b 921ww ,   https://img-cdn.tnwcdn.com/image?fit=439%2C247&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=034c7659c820cecd5780b6c4507dcc86 439ww ,   https://img-cdn.tnwcdn.com/image?fit=878%2C494&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=103262a4bcd02d43d142eaebdc276456 878ww ,   https://img-cdn.tnwcdn.com/image?fit=1317%2C741&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounderful-team-1.jpg&amp;signature=f2a1ac618b79e0aeac4ecbc1e1854f00 1317ww  "/>
+</noscript>
+</a>
+<header class="c-card__header">
+<h2 class="c-card__heading c-card__heading--sub_headers"><a data-event-action="Top story" data-event-category="Category" data-event-label="Founderful raises $140M fund as Switzerland vies for Europe’s tech top spot" data-event-non-interaction="false" href="/news/founderful-140m-fund-switzerland-tech-europe-startups" tabindex="-1">Founderful raises $140M fund as Switzerland vies for Europe’s tech top spot</a></h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="Siôn Geschwindt" data-event-non-interaction="false" href="/author/sion">Siôn Geschwindt</a></li>
+<li class="c-meta__item">4 days ago</li>
+</ul>
+</header>
+</div>
+</article>
+</div>
+<div class="tnw-ad tnw-ad--channel-top" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_TOP","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,250],[300,50],[320,100],[728,90]],"sizeMapping":[[[1024,0],[[728,90]]],[[0,0],[[300,250],[300,50],[320,100]]]],"targeting":{"nsc":["false"]},"lazyLoad":"true","refreshEvery":"","debugMode":false}' id="tnw-next-top"></div>
+<div class="c-articleList" id="articleList">
+<article class="c-listArticle">
+<figure class="c-listArticle__image">
+<a class="o-media xs:o-media--1:1 md:o-media--16:9" data-event-action="Latest stories" data-event-category="Category" data-event-label="US firm Realwear acquires Swiss startup Almer amid XR market consolidation" data-event-non-interaction="false" href="/news/realwear-acquires-swiss-startup-almer-ar" tabindex="-1">
+<img alt="US firm Realwear acquires Swiss startup Almer amid XR market consolidation" class="js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=2c97b33f01171eb27ca041092cb3cd57" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=9570678859a63365ba90201050bbc5c1 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=641300807a79a616f803c2ac021946b3 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=16b9db226a3f7e8735f1f005133a0787 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=2ef5ce921baeb4f2aa01c1c9e0f4daab 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=b0784a203fd0bb00e77cf10720dec8c2 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=48e6eae9af0de91bebf1fcc6a7477dc9 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=4927afecc851cdaedd88f5dcfd1d364e 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=2244aeba95a523a9d781f82ffe302ffe 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=092f59af42f256a45dac5eb4fe64948d 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=f6aa1938a66e1b30bd4892e15526bc51 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=a486b89896a95f9d8af36406e17a1e27 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=ea37d4802249241181d125da4d2ee90f 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=a2be7aa4ead4afa92639412f69df21b9 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=55b2cccc5f5bb5a98ce635ad00e98cab 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=2c97b33f01171eb27ca041092cb3cd57 651w  " sizes="
+                                            (max-width:  767px) 144px,
+                                            (width: 768px) 160px,
+                                            (min-width:  769px) and (max-width: 1023px) 224px,
+                                            (width: 1024px) 153px,
+                                            217px"/>
+<noscript>
+<img alt="US firm Realwear acquires Swiss startup Almer amid XR market consolidation" sizes="
+                                                (max-width:  767px) 144px,
+                                                (width: 768px) 160px,
+                                                (min-width:  769px) and (max-width: 1023px) 224px,
+                                                (width: 1024px) 153px,
+                                                217px" src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=2c97b33f01171eb27ca041092cb3cd57" srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=9570678859a63365ba90201050bbc5c1 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=641300807a79a616f803c2ac021946b3 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=16b9db226a3f7e8735f1f005133a0787 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=2ef5ce921baeb4f2aa01c1c9e0f4daab 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=b0784a203fd0bb00e77cf10720dec8c2 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=48e6eae9af0de91bebf1fcc6a7477dc9 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=4927afecc851cdaedd88f5dcfd1d364e 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=2244aeba95a523a9d781f82ffe302ffe 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=092f59af42f256a45dac5eb4fe64948d 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=f6aa1938a66e1b30bd4892e15526bc51 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=a486b89896a95f9d8af36406e17a1e27 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=ea37d4802249241181d125da4d2ee90f 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=a2be7aa4ead4afa92639412f69df21b9 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=55b2cccc5f5bb5a98ce635ad00e98cab 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Falmer-realwear-founders.jpg&amp;signature=2c97b33f01171eb27ca041092cb3cd57 651w  "/>
+</noscript>
+</a>
+</figure>
+<div class="c-listArticle__text">
+<h2 class="c-listArticle__heading">
+<a class="title_link" data-event-action="Latest stories" data-event-category="Category" data-event-label="US firm Realwear acquires Swiss startup Almer amid XR market consolidation" data-event-non-interaction="false" href="/news/realwear-acquires-swiss-startup-almer-ar">US firm Realwear acquires Swiss startup Almer amid XR market consolidation</a>
+</h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="Siôn Geschwindt" data-event-non-interaction="false" href="/author/sion">Siôn Geschwindt</a></li>
+<li class="c-meta__item">4 days ago</li>
+</ul>
+</div>
+</article>
+<article class="c-listArticle">
+<figure class="c-listArticle__image">
+<a class="o-media xs:o-media--1:1 md:o-media--16:9" data-event-action="Latest stories" data-event-category="Category" data-event-label="DeepL takes on ‘next frontier’ in AI translation with DeepL Voice" data-event-non-interaction="false" href="/news/deepl-voice-ai-translation" tabindex="-1">
+<img alt="DeepL takes on ‘next frontier’ in AI translation with DeepL Voice" class="js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=98ade3f17aeb9ffd86840333ba4fe181" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=849827256f0fba3e1809482b6133a11d 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=227bdb6e7986d14760523a130260523f 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=796cb8d1c8041c645f85f87d4b50837c 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=a472824a6dff711f77fc90febe95420c 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=cf13aa05903109dc94a3d0501d4f5ccd 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=fb1c8efa29581cbe82925519af8310d0 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=864541c20ebcd04cdd139bb871678b11 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=723914177b085663dd1bc0078e15f75a 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=cf85af355454b8145dec7817055ad633 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=a7434deea5b759879a3de1baa8ba5509 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=67a51b328a4ce779df9baf64ee65f757 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=3b83f68d4cb33faac1a900291501712e 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=bfde6f5e3a553b4302b4e99e7d2f9340 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=e9180398bab479254a1a86b36dc585b6 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=98ade3f17aeb9ffd86840333ba4fe181 651w  " sizes="
+                                            (max-width:  767px) 144px,
+                                            (width: 768px) 160px,
+                                            (min-width:  769px) and (max-width: 1023px) 224px,
+                                            (width: 1024px) 153px,
+                                            217px"/>
+<noscript>
+<img alt="DeepL takes on ‘next frontier’ in AI translation with DeepL Voice" sizes="
+                                                (max-width:  767px) 144px,
+                                                (width: 768px) 160px,
+                                                (min-width:  769px) and (max-width: 1023px) 224px,
+                                                (width: 1024px) 153px,
+                                                217px" src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=98ade3f17aeb9ffd86840333ba4fe181" srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=849827256f0fba3e1809482b6133a11d 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=227bdb6e7986d14760523a130260523f 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=796cb8d1c8041c645f85f87d4b50837c 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=a472824a6dff711f77fc90febe95420c 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=cf13aa05903109dc94a3d0501d4f5ccd 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=fb1c8efa29581cbe82925519af8310d0 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=864541c20ebcd04cdd139bb871678b11 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=723914177b085663dd1bc0078e15f75a 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=cf85af355454b8145dec7817055ad633 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=a7434deea5b759879a3de1baa8ba5509 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=67a51b328a4ce779df9baf64ee65f757 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=3b83f68d4cb33faac1a900291501712e 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=bfde6f5e3a553b4302b4e99e7d2f9340 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=e9180398bab479254a1a86b36dc585b6 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fdeepl-voice-translator.jpg&amp;signature=98ade3f17aeb9ffd86840333ba4fe181 651w  "/>
+</noscript>
+</a>
+</figure>
+<div class="c-listArticle__text">
+<h2 class="c-listArticle__heading">
+<a class="title_link" data-event-action="Latest stories" data-event-category="Category" data-event-label="DeepL takes on ‘next frontier’ in AI translation with DeepL Voice" data-event-non-interaction="false" href="/news/deepl-voice-ai-translation">DeepL takes on ‘next frontier’ in AI translation with DeepL Voice</a>
+</h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="Siôn Geschwindt" data-event-non-interaction="false" href="/author/sion">Siôn Geschwindt</a></li>
+<li class="c-meta__item">4 days ago</li>
+</ul>
+</div>
+</article>
+<article class="c-listArticle">
+<figure class="c-listArticle__image">
+<a class="o-media xs:o-media--1:1 md:o-media--16:9" data-event-action="Latest stories" data-event-category="Category" data-event-label="Dutch startup Sympower secures €21M to balance out the energy grid" data-event-non-interaction="false" href="/news/dutch-startup-sympower-secures-e21m-to-balance-out-the-energy-grid" tabindex="-1">
+<img alt="Dutch startup Sympower secures €21M to balance out the energy grid" class="js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=776ada8dc6d87ecc5851742078af6a0b" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=03a11ce0e43eae3b94e432f1ac467756 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=63f7c4367e5c524c7ad194b998a7705f 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=ded5a53ce0b329cc2eb255d1932b6708 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=01ebe608ff6741f47e4f2a5c5164362e 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=4278f93ee16f37a9063396c8f1d9bad5 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=ed56f4bdf2783138718d35ada7beb377 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=c4b3ec78c51f63280c152e40d8fe9987 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=b171461a02fe0f52ed649da48b03d416 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=9adf1ff72a352f25e35c737b0637f6c0 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=31b68a14d902f1258054ff77a20b2b1c 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=259b02fffbd769a5a7741a50b6f517db 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=c892dfbc92bfd6ab7ada35c559f81962 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=f15e569d390ef668ee3d916a292fb13e 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=222f8e3049b1999cdeaed7a60e32711d 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=776ada8dc6d87ecc5851742078af6a0b 651w  " sizes="
+                                            (max-width:  767px) 144px,
+                                            (width: 768px) 160px,
+                                            (min-width:  769px) and (max-width: 1023px) 224px,
+                                            (width: 1024px) 153px,
+                                            217px"/>
+<noscript>
+<img alt="Dutch startup Sympower secures €21M to balance out the energy grid" sizes="
+                                                (max-width:  767px) 144px,
+                                                (width: 768px) 160px,
+                                                (min-width:  769px) and (max-width: 1023px) 224px,
+                                                (width: 1024px) 153px,
+                                                217px" src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=776ada8dc6d87ecc5851742078af6a0b" srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=03a11ce0e43eae3b94e432f1ac467756 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=63f7c4367e5c524c7ad194b998a7705f 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=ded5a53ce0b329cc2eb255d1932b6708 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=01ebe608ff6741f47e4f2a5c5164362e 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=4278f93ee16f37a9063396c8f1d9bad5 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=ed56f4bdf2783138718d35ada7beb377 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=c4b3ec78c51f63280c152e40d8fe9987 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=b171461a02fe0f52ed649da48b03d416 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=9adf1ff72a352f25e35c737b0637f6c0 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=31b68a14d902f1258054ff77a20b2b1c 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=259b02fffbd769a5a7741a50b6f517db 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=c892dfbc92bfd6ab7ada35c559f81962 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=f15e569d390ef668ee3d916a292fb13e 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=222f8e3049b1999cdeaed7a60e32711d 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fsympower-electricity-grid-startup.jpg&amp;signature=776ada8dc6d87ecc5851742078af6a0b 651w  "/>
+</noscript>
+</a>
+</figure>
+<div class="c-listArticle__text">
+<h2 class="c-listArticle__heading">
+<a class="title_link" data-event-action="Latest stories" data-event-category="Category" data-event-label="Dutch startup Sympower secures €21M to balance out the energy grid" data-event-non-interaction="false" href="/news/dutch-startup-sympower-secures-e21m-to-balance-out-the-energy-grid">Dutch startup Sympower secures €21M to balance out the energy grid</a>
+</h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="Siôn Geschwindt" data-event-non-interaction="false" href="/author/sion">Siôn Geschwindt</a></li>
+<li class="c-meta__item">5 days ago</li>
+</ul>
+</div>
+</article>
+<article class="c-listArticle">
+<figure class="c-listArticle__image">
+<a class="o-media xs:o-media--1:1 md:o-media--16:9" data-event-action="Latest stories" data-event-category="Category" data-event-label="Battery recycling startup Tozero bags €11M to boost Europe’s lithium supply" data-event-non-interaction="false" href="/news/battery-recycling-startup-tozero-bags-e11m-to-boost-europes-lithium-supply" tabindex="-1">
+<img alt="Battery recycling startup Tozero bags €11M to boost Europe’s lithium supply" class="js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=e7a842bf9c0e1daaff792356bf347c78" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=0cce85a98c8b4638abaeee75fda8809e 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=7a31e115ce73a6efbfe2281dad9fe7be 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=163c384cd6c801c17690e967f36fc841 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=5b848caf8e763eaad656a1d509ee0ce0 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=def7e4c815e1ee5bd0c3ce48e602c4c1 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=c612cc176713fcdc5ddfb36ab710b07f 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=207c0ca7fb4c2f08daff28222789f802 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=2dc838c4836fc3069fe62223da395331 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=4097966e54f66bfedf5be768e78f5b0a 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=86fa14684ae0648c1bdd8036bcf80351 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=1479b2bb8794d900e829ad2d59cd1cc3 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=3ca5b67790019440923b74a8f980ee19 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=da4d949eea8c8b65c348f538937b7dea 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=e3aa5f3e6c80f12c5485b9a5986ccdd0 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=e7a842bf9c0e1daaff792356bf347c78 651w  " sizes="
+                                            (max-width:  767px) 144px,
+                                            (width: 768px) 160px,
+                                            (min-width:  769px) and (max-width: 1023px) 224px,
+                                            (width: 1024px) 153px,
+                                            217px"/>
+<noscript>
+<img alt="Battery recycling startup Tozero bags €11M to boost Europe’s lithium supply" sizes="
+                                                (max-width:  767px) 144px,
+                                                (width: 768px) 160px,
+                                                (min-width:  769px) and (max-width: 1023px) 224px,
+                                                (width: 1024px) 153px,
+                                                217px" src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=e7a842bf9c0e1daaff792356bf347c78" srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=0cce85a98c8b4638abaeee75fda8809e 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=7a31e115ce73a6efbfe2281dad9fe7be 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=163c384cd6c801c17690e967f36fc841 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=5b848caf8e763eaad656a1d509ee0ce0 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=def7e4c815e1ee5bd0c3ce48e602c4c1 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=c612cc176713fcdc5ddfb36ab710b07f 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=207c0ca7fb4c2f08daff28222789f802 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=2dc838c4836fc3069fe62223da395331 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=4097966e54f66bfedf5be768e78f5b0a 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=86fa14684ae0648c1bdd8036bcf80351 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=1479b2bb8794d900e829ad2d59cd1cc3 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=3ca5b67790019440923b74a8f980ee19 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=da4d949eea8c8b65c348f538937b7dea 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=e3aa5f3e6c80f12c5485b9a5986ccdd0 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Ffounders-tozero-battery-recycling-startup.jpg&amp;signature=e7a842bf9c0e1daaff792356bf347c78 651w  "/>
+</noscript>
+</a>
+</figure>
+<div class="c-listArticle__text">
+<h2 class="c-listArticle__heading">
+<a class="title_link" data-event-action="Latest stories" data-event-category="Category" data-event-label="Battery recycling startup Tozero bags €11M to boost Europe’s lithium supply" data-event-non-interaction="false" href="/news/battery-recycling-startup-tozero-bags-e11m-to-boost-europes-lithium-supply">Battery recycling startup Tozero bags €11M to boost Europe’s lithium supply</a>
+</h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="Siôn Geschwindt" data-event-non-interaction="false" href="/author/sion">Siôn Geschwindt</a></li>
+<li class="c-meta__item">6 days ago</li>
+</ul>
+</div>
+</article>
+<article class="c-listArticle">
+<figure class="c-listArticle__image">
+<a class="o-media xs:o-media--1:1 md:o-media--16:9" data-event-action="Latest stories" data-event-category="Category" data-event-label="Why learning 10 programming languages doesn’t make you a more interesting job candidate" data-event-non-interaction="false" href="/news/learning-10-programing-languages-job-candidate" tabindex="-1">
+<img alt="Why learning 10 programming languages doesn’t make you a more interesting job candidate" class="js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=98f215e58e8c28372b70b66c1a131a63" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=6d513b107c20a9fefbde16c895e6c1c9 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=37578d3514f4052f897d76135af848b3 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=18c24d3028c53af63d26f5e6eda7cd21 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=fe2648435666775bf788ace55bfd3e6f 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=01b447b1157bf38383fa65799b13edd5 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=5e965c6b4870f6d7c02533297d0a503d 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=03314ee4df8eaa460584cc7039a44f09 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=32db77178379f032907da2e9b18b090c 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=2d11c91d9d7856ccf7df682f7cc2bec2 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=2c2c38158860633b4507b7639379915b 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=db255ce3b9ccaccdf09eb68590b683bc 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=8a2c70fd573ccbdf4d1db86a78e4c667 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=e4eabb75f931586cb4ffcda884c19ad0 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=3e890027baaf78d1f5859f03dd6c56a0 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=98f215e58e8c28372b70b66c1a131a63 651w  " sizes="
+                                            (max-width:  767px) 144px,
+                                            (width: 768px) 160px,
+                                            (min-width:  769px) and (max-width: 1023px) 224px,
+                                            (width: 1024px) 153px,
+                                            217px"/>
+<noscript>
+<img alt="Why learning 10 programming languages doesn’t make you a more interesting job candidate" sizes="
+                                                (max-width:  767px) 144px,
+                                                (width: 768px) 160px,
+                                                (min-width:  769px) and (max-width: 1023px) 224px,
+                                                (width: 1024px) 153px,
+                                                217px" src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=98f215e58e8c28372b70b66c1a131a63" srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=6d513b107c20a9fefbde16c895e6c1c9 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=37578d3514f4052f897d76135af848b3 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=18c24d3028c53af63d26f5e6eda7cd21 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=fe2648435666775bf788ace55bfd3e6f 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=01b447b1157bf38383fa65799b13edd5 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=5e965c6b4870f6d7c02533297d0a503d 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=03314ee4df8eaa460584cc7039a44f09 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=32db77178379f032907da2e9b18b090c 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=2d11c91d9d7856ccf7df682f7cc2bec2 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=2c2c38158860633b4507b7639379915b 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=db255ce3b9ccaccdf09eb68590b683bc 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=8a2c70fd573ccbdf4d1db86a78e4c667 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=e4eabb75f931586cb4ffcda884c19ad0 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=3e890027baaf78d1f5859f03dd6c56a0 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2Fcode-question-dev-gq.png&amp;signature=98f215e58e8c28372b70b66c1a131a63 651w  "/>
+</noscript>
+</a>
+</figure>
+<div class="c-listArticle__text">
+<h2 class="c-listArticle__heading">
+<a class="title_link" data-event-action="Latest stories" data-event-category="Category" data-event-label="Why learning 10 programming languages doesn’t make you a more interesting job candidate" data-event-non-interaction="false" href="/news/learning-10-programing-languages-job-candidate">Why learning 10 programming languages doesn’t make you a more interesting job candidate</a>
+</h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="Kirstie McDermott" data-event-non-interaction="false" href="/author/kirstie-mcdermott">Kirstie McDermott</a></li>
+<li class="c-meta__item">6 days ago</li>
+</ul>
+</div>
+</article>
+<article class="c-listArticle">
+<figure class="c-listArticle__image">
+<a class="o-media xs:o-media--1:1 md:o-media--16:9" data-event-action="Latest stories" data-event-category="Category" data-event-label="How close are we to an accurate AI fake news detector?" data-event-non-interaction="false" href="/news/how-close-are-we-to-an-accurate-ai-fake-news-detector" tabindex="-1">
+<img alt="How close are we to an accurate AI fake news detector?" class="js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=d5c768d4e2018fb59780aa7d70c22be2" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=e11eb581dd56ddd9d67685bfbc4cce92 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=3f492cbb65253dba93baab4c63deb172 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=61cb90f2b335eb07f4438dafa19449ac 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=69dfa6f13499f882cb664fdc69b553bc 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=3990aada7224d254fc249cf606025554 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=673880d937e2fef648f682bf3498baf1 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=9c53effc49359298878c5c12caa4daa0 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=bee8301ed1d3733732ec2375ce502b35 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=7b39aced69f5ff5688a9fa83ed8d170c 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6330e0b16fd66f38791f586a25308187 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=c274dfc3d5ed5aa73deee4569ae51b5d 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=588226abd88d9167219f124bb32ceeed 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=1ba339fe8219e48a1b37638d065b9117 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=8c082bd4ed822a6c2658bd76f8451314 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=d5c768d4e2018fb59780aa7d70c22be2 651w  " sizes="
+                                            (max-width:  767px) 144px,
+                                            (width: 768px) 160px,
+                                            (min-width:  769px) and (max-width: 1023px) 224px,
+                                            (width: 1024px) 153px,
+                                            217px"/>
+<noscript>
+<img alt="How close are we to an accurate AI fake news detector?" sizes="
+                                                (max-width:  767px) 144px,
+                                                (width: 768px) 160px,
+                                                (min-width:  769px) and (max-width: 1023px) 224px,
+                                                (width: 1024px) 153px,
+                                                217px" src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=d5c768d4e2018fb59780aa7d70c22be2" srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=e11eb581dd56ddd9d67685bfbc4cce92 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=3f492cbb65253dba93baab4c63deb172 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=61cb90f2b335eb07f4438dafa19449ac 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=69dfa6f13499f882cb664fdc69b553bc 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=3990aada7224d254fc249cf606025554 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=673880d937e2fef648f682bf3498baf1 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=9c53effc49359298878c5c12caa4daa0 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=bee8301ed1d3733732ec2375ce502b35 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=7b39aced69f5ff5688a9fa83ed8d170c 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=6330e0b16fd66f38791f586a25308187 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=c274dfc3d5ed5aa73deee4569ae51b5d 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=588226abd88d9167219f124bb32ceeed 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=1ba339fe8219e48a1b37638d065b9117 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=8c082bd4ed822a6c2658bd76f8451314 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner-1.jpeg&amp;signature=d5c768d4e2018fb59780aa7d70c22be2 651w  "/>
+</noscript>
+</a>
+</figure>
+<div class="c-listArticle__text">
+<h2 class="c-listArticle__heading">
+<a class="title_link" data-event-action="Latest stories" data-event-category="Category" data-event-label="How close are we to an accurate AI fake news detector?" data-event-non-interaction="false" href="/news/how-close-are-we-to-an-accurate-ai-fake-news-detector">How close are we to an accurate AI fake news detector?</a>
+</h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="The Conversation" data-event-non-interaction="false" href="/author/theconversation">The Conversation</a></li>
+<li class="c-meta__item">7 days ago</li>
+</ul>
+</div>
+</article>
+<article class="c-listArticle">
+<figure class="c-listArticle__image">
+<a class="o-media xs:o-media--1:1 md:o-media--16:9" data-event-action="Latest stories" data-event-category="Category" data-event-label="At 30 years old, is Ruby in a mid-life crisis or a renaissance?" data-event-non-interaction="false" href="/news/at-30-years-old-is-ruby-in-a-mid-life-crisis-or-a-renaissance" tabindex="-1">
+<img alt="At 30 years old, is Ruby in a mid-life crisis or a renaissance?" class="js-lazy" data-src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=f276753bef2128f7784e1754bbde3616" data-srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=56ad4e9d1b922b84b443aea5cdaa8c72 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=aa62b35d4aa836acb6d53b8084c31316 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=5eb940c655073bc6000b9d7ac55f214c 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=cb4fdbf999d11b417bcf4f04b3336125 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=b4f88efffcd034c7f67284f3ece45999 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=4c5e0279ec74392fb1ffc92acf970b8e 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=d313c49e466e901e3f915f104eab8551 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=01f913435bd72cb474f981d39b383d78 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=7658e125b847464fe1734103d99120f3 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=3443344a7e0d0733ea28337f950dc41f 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=15b1490bb583e0d529ef755c1af257e7 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=2a9284b87e69d97c50798c5a02e8d08e 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=5040ef99dc60783d26b86273e34fad41 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=3ff4e2a2da2f9cc1e7c09f0a3f4f118a 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=f276753bef2128f7784e1754bbde3616 651w  " sizes="
+                                            (max-width:  767px) 144px,
+                                            (width: 768px) 160px,
+                                            (min-width:  769px) and (max-width: 1023px) 224px,
+                                            (width: 1024px) 153px,
+                                            217px"/>
+<noscript>
+<img alt="At 30 years old, is Ruby in a mid-life crisis or a renaissance?" sizes="
+                                                (max-width:  767px) 144px,
+                                                (width: 768px) 160px,
+                                                (min-width:  769px) and (max-width: 1023px) 224px,
+                                                (width: 1024px) 153px,
+                                                217px" src="https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=f276753bef2128f7784e1754bbde3616" srcset=" https://img-cdn.tnwcdn.com/image?fit=144%2C144&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=56ad4e9d1b922b84b443aea5cdaa8c72 144w ,   https://img-cdn.tnwcdn.com/image?fit=288%2C288&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=aa62b35d4aa836acb6d53b8084c31316 288w ,   https://img-cdn.tnwcdn.com/image?fit=432%2C432&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=5eb940c655073bc6000b9d7ac55f214c 432w ,   https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=cb4fdbf999d11b417bcf4f04b3336125 160w ,   https://img-cdn.tnwcdn.com/image?fit=320%2C180&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=b4f88efffcd034c7f67284f3ece45999 320w ,   https://img-cdn.tnwcdn.com/image?fit=480%2C270&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=4c5e0279ec74392fb1ffc92acf970b8e 480w ,   https://img-cdn.tnwcdn.com/image?fit=224%2C126&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=d313c49e466e901e3f915f104eab8551 224w ,   https://img-cdn.tnwcdn.com/image?fit=448%2C252&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=01f913435bd72cb474f981d39b383d78 448w ,   https://img-cdn.tnwcdn.com/image?fit=672%2C378&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=7658e125b847464fe1734103d99120f3 672w ,   https://img-cdn.tnwcdn.com/image?fit=153%2C86&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=3443344a7e0d0733ea28337f950dc41f 153w ,   https://img-cdn.tnwcdn.com/image?fit=306%2C172&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=15b1490bb583e0d529ef755c1af257e7 306w ,   https://img-cdn.tnwcdn.com/image?fit=459%2C258&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=2a9284b87e69d97c50798c5a02e8d08e 459w ,   https://img-cdn.tnwcdn.com/image?fit=217%2C122&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=5040ef99dc60783d26b86273e34fad41 217w ,   https://img-cdn.tnwcdn.com/image?fit=434%2C244&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=3ff4e2a2da2f9cc1e7c09f0a3f4f118a 434w ,   https://img-cdn.tnwcdn.com/image?fit=651%2C366&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F11%2FDesigner.jpeg&amp;signature=f276753bef2128f7784e1754bbde3616 651w  "/>
+</noscript>
+</a>
+</figure>
+<div class="c-listArticle__text">
+<h2 class="c-listArticle__heading">
+<a class="title_link" data-event-action="Latest stories" data-event-category="Category" data-event-label="At 30 years old, is Ruby in a mid-life crisis or a renaissance?" data-event-non-interaction="false" href="/news/at-30-years-old-is-ruby-in-a-mid-life-crisis-or-a-renaissance">At 30 years old, is Ruby in a mid-life crisis or a renaissance?</a>
+</h2>
+<ul class="c-meta">
+<li class="c-meta__item"><a class="c-meta__link" data-event-action="Author" data-event-category="Category" data-event-label="Chris Chinchilla" data-event-non-interaction="false" href="/author/chris-ward">Chris Chinchilla</a></li>
+<li class="c-meta__item">7 days ago</li>
+</ul>
+</div>
+</article>
+<div id="morePosts"></div>
+<button class="c-button c-button--block c-button--spinner c-articleList__button block" data-channel="latest" data-event-action="Load more" data-event-category="Category" data-event-label="Load more - click" data-event-non-interaction="false" data-page="1" id="articleListButton" style="display: block;">Load more</button>
+<noscript>
+<div class="wrapper-paging">
+<a class="c-button c-button--block" href="https://thenextweb.com/latest/page/2" rel="next">Next Page</a>
+</div>
+</noscript>
+</div>
+</main>
+<aside class="c-split__side">
+<div class="c-channel__cta"></div>
+<div class="c-split__sticky channel_cta_if_subnav">
+<div aria-label="Popular articles" class="sidebarRelated">
+<h2 class="c-bodyNews__heading mb-l">Popular articles</h2>
+<ol>
+<li class="c-listItem">
+<span class="relatedIndex tnw">1</span>
+<div class="c-listItem__text">
+<h3 class="c-listItem__heading">
+<a class="title_link" href="/news/learning-10-programing-languages-job-candidate">Why learning 10 programming languages doesn’t make you a more interesting job candidate</a>
+</h3>
+</div>
+</li>
+<li class="c-listItem">
+<span class="relatedIndex tnw">2</span>
+<div class="c-listItem__text">
+<h3 class="c-listItem__heading">
+<a class="title_link" href="/news/3-hardest-3-easiest-programming-languages-learn">These are 3 of the hardest and 3 of the easiest programming languages to learn</a>
+</h3>
+</div>
+</li>
+<li class="c-listItem">
+<span class="relatedIndex tnw">3</span>
+<div class="c-listItem__text">
+<h3 class="c-listItem__heading">
+<a class="title_link" href="/news/founderful-140m-fund-switzerland-tech-europe-startups">Founderful raises $140M fund as Switzerland vies for Europe’s tech top spot</a>
+</h3>
+</div>
+</li>
+<li class="c-listItem">
+<span class="relatedIndex tnw">4</span>
+<div class="c-listItem__text">
+<h3 class="c-listItem__heading">
+<a class="title_link" href="/news/battery-recycling-startup-tozero-bags-e11m-to-boost-europes-lithium-supply">Battery recycling startup Tozero bags €11M to boost Europe’s lithium supply</a>
+</h3>
+</div>
+</li>
+<li class="c-listItem">
+<span class="relatedIndex tnw">5</span>
+<div class="c-listItem__text">
+<h3 class="c-listItem__heading">
+<a class="title_link" href="/news/dutch-startup-sympower-secures-e21m-to-balance-out-the-energy-grid">Dutch startup Sympower secures €21M to balance out the energy grid</a>
+</h3>
+</div>
+</li>
+</ol>
+</div>
+<div class="tnw-ad tnw-ad--channel-mpu" data-args='{"networkCode":5117602,"slot":"TNW_NEXT_MPU_ATF","googletagAttempts":20,"animate":false,"fallback":false,"sizes":[[300,50],[300,250],[300,600]],"sizeMapping":[],"targeting":{"nsc":["false"]},"lazyLoad":"false","refreshEvery":"","debugMode":false}' id="tnw-next-mpu-atf"></div>
+</div>
+</aside>
+</ol></div>
+</div>
+</div>
+
+
+<footer class="c-footer">
+<div class="o-wrapper">
+<div class="o-grid o-grid--gap-l">
+<div class="o-grid__col lg:o-grid__col--1/2">
+<div class="c-footer__logoContact">
+<div>
+<a class="c-footer__logo" data-event-action="TNW Logo" data-event-category="Footer" data-event-label="Navigation" data-event-non-interaction="false" href="https://thenextweb.com/" tabindex="-1" title="TNW">
+<svg preserveaspectratio="xMidYMid meet" viewbox="0 0 66 16">
+<path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z" fill="#fff"></path>
+</svg>
+</a>
+<p class="c-footer__tagline">The heart of tech</p>
+</div>
+<div>
+<ul class="c-footer__contact">
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Faaaaebook" href="https://facebook.com/thenextweb" name="Facebook Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Instagram" href="https://www.instagram.com/thenextweb/" name="Instagram Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Twitter" href="https://twitter.com/thenextweb" name="Twitter Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Youtube" href="https://youtube.com/user/thenextweb" name="Youtube Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Flipboard" href="https://flipboard.com/@thenextweb" name="Flipboard Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Mail" href="/newsletters" name="Email Footer Link"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li>
+<li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-action="Socials" data-event-category="Footer" data-event-label="Linkedin" href="https://www.linkedin.com/company/the-next-web" name="LinkedIn Contact Icon" rel="noopener noreferrer" target="_blank"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg></a></li>
+</ul>
+</div>
+</div>
+</div>
+<br/>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 more">
+<h2 class="c-footer__heading">More TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Media" data-event-non-interaction="false" href="/latest">Media</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Events" data-event-non-interaction="false" href="/events">Events</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Programs" data-event-non-interaction="false" href="/programs">Programs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Spaces" data-event-non-interaction="false" href="/spaces">Spaces</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Newsletters" data-event-non-interaction="false" href="/newsletters">Newsletters</a></li>
+<li><a class="c-footer__menuLink" data-event-action="More TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://talent.thenextweb.com/job-board?source=footer&amp;utm_source=footer&amp;utm_medium=partner_referral" rel="noopener" target="_blank">Jobs in tech</a></li>
+</ul>
+</div>
+<div class="o-grid__col--1/2 lg:o-grid__col--1/4 about">
+<h2 class="c-footer__heading">About TNW</h2>
+<ul class="c-footer__menu">
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Partner with us" data-event-non-interaction="false" href="/partnerships" name="Partner with us">Partner with us</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Jobs" data-event-non-interaction="false" href="https://thenextweb.homerun.co/" name="Jobs" rel="noopener noreferrer" target="_blank">Jobs</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Terms &amp; Conditions" data-event-non-interaction="false" href="/terms-and-conditions" name="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Cookie Statement" data-event-non-interaction="false" href="/cookie-statement" name="Cookie Statement">Cookie Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Privacy Statement" data-event-non-interaction="false" href="/privacy-statement " name="Privacy Statement">Privacy Statement</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Editorial Policy" data-event-non-interaction="false" href="https://s3.eu-west-1.amazonaws.com/tnw.uploads/uploads/FT-EDITORIAL-CODE-OF-PRACTICE-15-Jan-2024.pdf" name="Editorial Policy" rel="noopener noreferrer" target="_blank">Editorial Policy</a></li>
+<li><a class="c-footer__menuLink" data-event-action="About TNW" data-event-category="Footer" data-event-label="Masthead" data-event-non-interaction="false" href="/masthead" name="Editorial Policy" rel="noopener">Masthead</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="c-footer__legal max-md:px-l">
+<a class="feedback" data-event-action="Financial Times" data-event-category="Footer" data-event-label="Financial Times" data-event-non-interaction="false" href="https://www.ft.com/" rel="noopener nofollow" target="_blank">
+<svg viewbox="0 0 367 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.97826,19.58347H5.20213L2.77475,26H0L8.32426,4.7043H10.89L19.21428,26H16.43953ZM6.10446,17.19h6.97148L9.57254,8.1032Z" fill="#fff"></path><path d="M29.98145,26V4.7043h13.597V7.89421H33.58934v6.31344H42.919v3.156H33.58934V26Z" fill="#fff"></path><path d="M48.686,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,48.686,8.06789ZM50.42,26H46.95193V10.59977H50.42Z" fill="#fff"></path><path d="M54.72547,10.59977h3.46809V12.057a5.4558,5.4558,0,0,1,4.16284-1.80323c3.46808,0,5.445,2.289,5.445,5.72178V26H64.33332V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26275,3.26275,0,0,0-3.22521,2.46268V26H54.72547Z" fill="#fff"></path><path d="M80.43536,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38126-.97152-1.734-1.56036-3.12071-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12071-1.56036Z" fill="#fff"></path><path d="M87.86718,10.59977h3.46809V12.057a5.45578,5.45578,0,0,1,4.16283-1.80323c3.46809,0,5.445,2.289,5.445,5.72178V26H97.475V16.56584c0-1.90773-.93763-3.156-2.91455-3.156a3.26274,3.26274,0,0,0-3.22521,2.46268V26H87.86718Z" fill="#fff"></path><path d="M111.63545,10.25381a6.50162,6.50162,0,0,1,4.19672,1.28217v3.40031a5.4709,5.4709,0,0,0-3.95385-1.59566c-2.46268,0-4.4396,1.97692-4.4396,4.95925,0,2.98375,1.97692,4.96067,4.4396,4.96067a5.47663,5.47663,0,0,0,3.95385-1.59566v3.3989a6.50259,6.50259,0,0,1-4.19672,1.28358c-4.232,0-7.66623-3.12212-7.66623-8.04749S107.40342,10.25381,111.63545,10.25381Z" fill="#fff"></path><path d="M120.93828,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,120.93828,8.06789ZM122.67233,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M135.50962,16.14927c0-1.734-1.38667-2.73945-3.53728-2.73945a7.59209,7.59209,0,0,0-4.26592,1.35278V11.57128a9.19852,9.19852,0,0,1,4.89006-1.31747c3.98915,0,6.24284,2.15061,6.24284,5.65258V26h-3.3297v-.867a6.23474,6.23474,0,0,1-3.78016,1.14379c-3.19132,0-5.75708-1.94162-5.75708-5.02845,0-2.91313,2.60106-4.96066,6-4.96066a7.1758,7.1758,0,0,1,3.53728.93762Zm0,4.47491c-.38127-.97152-1.73405-1.56036-3.12072-1.56036-1.59566,0-3.19132.69334-3.19132,2.1845,0,1.52647,1.59566,2.21981,3.19132,2.21981,1.38667,0,2.73945-.59026,3.12072-1.56036Z" fill="#fff"></path><path d="M146.40811,26H142.94V3.4546h3.46808Z" fill="#fff"></path><path d="M157.27413,4.7043h17.75842V7.89421h-7.076V26H164.3501V7.89421h-7.076Z" fill="#fff"></path><path d="M179.9678,8.06789a2.15357,2.15357,0,0,1-2.15061-2.1153,2.1509,2.1509,0,0,1,4.30122,0A2.15357,2.15357,0,0,1,179.9678,8.06789ZM181.70184,26h-3.46809V10.59977h3.46809Z" fill="#fff"></path><path d="M201.96248,10.25381c3.12072,0,4.99456,2.2198,4.99456,5.72178V26h-3.4695V16.53054c0-1.90632-.83172-3.156-2.53188-3.156a2.70093,2.70093,0,0,0-2.73945,2.289V26h-3.46809V16.53054c0-1.90632-.83313-3.156-2.53187-3.156a2.70231,2.70231,0,0,0-2.74086,2.289V26H186.0073V10.59977h3.46809v1.28359a4.67951,4.67951,0,0,1,3.85076-1.62955,5.07645,5.07645,0,0,1,4.05693,2.04611A5.6743,5.6743,0,0,1,201.96248,10.25381Z" fill="#fff"></path><path d="M217.61689,26.34737c-4.47349,0-7.63092-3.08682-7.63092-7.9091,0-4.78557,2.98374-8.18446,7.076-8.18446,4.232,0,6.48572,3.01763,6.48572,7.56032v1.24969H213.38627a4.36215,4.36215,0,0,0,4.71638,4.29981,7.11212,7.11212,0,0,0,4.4043-1.422v3.05293A8.13643,8.13643,0,0,1,217.61689,26.34737Zm-4.05834-9.91991h6.69471a3.10814,3.10814,0,0,0-3.156-3.26052A3.588,3.588,0,0,0,213.55855,16.42746Z" fill="#fff"></path><path d="M226.26311,21.213a7.9172,7.9172,0,0,0,5.20213,2.25511c1.49116,0,2.67026-.52106,2.67026-1.631,0-1.03929-.76253-1.38667-2.04612-1.80323l-1.66485-.51965c-2.63637-.83313-4.16142-2.01223-4.16142-4.64859,0-2.77476,2.49657-4.61188,5.79238-4.61188a8.38994,8.38994,0,0,1,4.61188,1.35278v3.502a6.95868,6.95868,0,0,0-4.61188-1.97692c-1.38808,0-2.46268.59025-2.46268,1.59566,0,1.00682.58884,1.35278,1.97692,1.76935l2.01082.62414c2.56717.83313,3.92,2.1845,3.92,4.5441,0,2.94844-2.63637,4.68248-6.07056,4.68248a8.48739,8.48739,0,0,1-5.16683-1.59566Z" fill="#fff"></path><path d="M249.82521,12.47361a7.08924,7.08924,0,0,1,5.27132-2.18591,6.30818,6.30818,0,0,1,4.12754,1.28358v2.63637a5.38989,5.38989,0,0,0-3.95385-1.59566,4.72822,4.72822,0,0,0-3.50339,1.52647,5.73715,5.73715,0,0,0-1.45728,4.16142,5.743,5.743,0,0,0,1.45728,4.16284,4.732,4.732,0,0,0,3.50339,1.52505,5.38853,5.38853,0,0,0,3.95385-1.59424v2.635a6.30813,6.30813,0,0,1-4.12754,1.28359,7.1933,7.1933,0,0,1-5.27132-2.15061,8.01492,8.01492,0,0,1-2.15061-5.86158A7.87619,7.87619,0,0,1,249.82521,12.47361Z" fill="#fff"></path><path d="M273.90272,24.057a6.93067,6.93067,0,0,1-10.232,0,8.56076,8.56076,0,0,1-1.94162-5.75709,8.56075,8.56075,0,0,1,1.94162-5.75708,6.93067,6.93067,0,0,1,10.232,0,8.41292,8.41292,0,0,1,1.97692,5.75708A8.41293,8.41293,0,0,1,273.90272,24.057Zm-5.099-11.48028c-2.77475,0-4.4396,2.39349-4.4396,5.72319s1.66485,5.7232,4.4396,5.7232,4.43961-2.39349,4.43961-5.7232S271.57842,12.57669,268.80367,12.57669Z" fill="#fff"></path><path d="M295.03462,10.2877c3.08682,0,4.85617,2.18591,4.85617,5.51561V26h-2.63637V16.21847c0-2.11531-.93621-3.57259-2.91314-3.57259a3.56186,3.56186,0,0,0-3.4003,2.74087V26h-2.60107V16.21847c0-2.11531-.93622-3.57259-2.91314-3.57259a3.5603,3.5603,0,0,0-3.39889,2.74087V26h-2.60107V10.59977h2.60107v1.80465a4.77136,4.77136,0,0,1,4.16142-2.11672,4.56953,4.56953,0,0,1,4.16283,2.46268A5.61944,5.61944,0,0,1,295.03462,10.2877Z" fill="#fff"></path><path d="M306.91028,31.89688h-2.60107V10.59977h2.60107v1.80465a5.47521,5.47521,0,0,1,4.33511-2.11672,5.97708,5.97708,0,0,1,5.16824,2.42879,9.16121,9.16121,0,0,1,1.76935,5.58339,9.34026,9.34026,0,0,1-1.76935,5.6187,6.039,6.039,0,0,1-5.16824,2.39349,5.4743,5.4743,0,0,1-4.33511-2.11531Zm0-10.47487a4.49749,4.49749,0,0,0,3.95385,2.53187c2.91313,0,4.68248-2.42879,4.68248-5.654s-1.76935-5.654-4.68248-5.654a4.4975,4.4975,0,0,0-3.95385,2.53188Z" fill="#fff"></path><path d="M330.29728,15.768c0-1.90773-1.422-3.08682-3.67708-3.08682a7.75913,7.75913,0,0,0-4.37041,1.35278V11.57128a8.82,8.82,0,0,1,4.787-1.28358c3.60647,0,5.79239,2.04611,5.79239,5.27273V26h-2.53188V24.8548a6.22354,6.22354,0,0,1-3.98915,1.422,6.54463,6.54463,0,0,1-4.05834-1.31748,4.33611,4.33611,0,0,1-1.66485-3.60647,4.1488,4.1488,0,0,1,1.70015-3.4695,6.8181,6.8181,0,0,1,8.01219-.10308Zm0,4.82087c-.41656-1.14379-1.943-1.90773-3.57258-1.90773a4.84209,4.84209,0,0,0-2.53188.65944,2.11057,2.11057,0,0,0-1.1452,2.01223,2.24887,2.24887,0,0,0,1.1452,2.08,4.82881,4.82881,0,0,0,2.53188.65945c1.62955,0,3.156-.76253,3.57258-1.90773Z" fill="#fff"></path><path d="M337.27723,10.59977h2.60107v1.943a5.69746,5.69746,0,0,1,4.5441-2.2551c3.46809,0,5.40971,2.289,5.40971,5.61869V26h-2.635V16.323c0-2.11531-1.076-3.64177-3.40031-3.64177a4.178,4.178,0,0,0-3.91854,2.87924V26h-2.60107Z" fill="#fff"></path><path d="M356.05094,31.89688l2.32289-5.79239-6-15.50472h2.81l4.54269,12.13972,4.47491-12.13972h2.70556l-8.29037,21.29711Z" fill="#fff"></path>
+</svg>
+</a>
+<p>
+                    Copyright © 2006—2024, The Next Web B.V.
+                    Made with &lt;3 in Amsterdam.
+                    <br/>
+</p>
+</div>
+</footer>
+
+
+
+
+
+<div class="cookie-consent-banner" data-args='{"cookieName":"__tnw_cookieConsent","cookieExpirationDays":"365","consentChoices":["ad_storage","analytics_storage"],"redirectOnSave":true,"honorDoNotTrack":false,"stylesheet":"https:\/\/thenextweb.com\/cpresources\/1abce43c\/style.css?v=1725957748","titleText":"Cookies","descriptionText":"&lt;p&gt;We use &lt;a href=\"\/cookie-statement\"&gt;cookies&lt;\/a&gt; and other data for a number of reasons, such as keeping TNW sites reliable and secure, personalizing content and ads, providing social media features and to analyze how our sites are used.&lt;\/p&gt;","linkColor":"6644ff","linkHoverColor":"7755ff","primaryBtnText":"Accept &amp; continue","primaryBtnBgColor":"","primaryBtnBgHoverColor":"","primaryBtnColor":"","primaryBtnHoverColor":"","secondaryBtnText":"Manage cookies","secondaryBtnURL":"\/cookie-statement","secondaryBtnRedirectURL":"https:\/\/thenextweb.com\/latest","secondaryBtnColor":"6644ff","secondaryBtnHoverColor":"7755ff","debugMode":false}' id="cookie-consent-banner"></div>
+</body>
+</html>

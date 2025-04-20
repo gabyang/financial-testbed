@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<!-- Use the latest IE engine to render the page and execute JavaScript -->
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="http://gmpg.org/xfn/11" rel="profile"/>
+<link href="https://stratechery.com/xmlrpc.php" rel="pingback"/>
+<!-- Typekit -->
+
+
+<!-- Favicon -->
+<link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/favicon/site.webmanifest" rel="manifest"/>
+<link color="#e9ab59" href="/favicon/safari-pinned-tab.svg" rel="mask-icon"/>
+<link href="/favicon/favicon.ico" rel="shortcut icon"/>
+<meta content="#e9ab59" name="msapplication-TileColor"/>
+<meta content="/favicon/browserconfig.xml" name="msapplication-config"/>
+<meta content="#ffffff" name="theme-color"/>
+<!-- Google Analytics -->
+
+<title>Lessons From Spotify – Stratechery by Ben Thompson</title>
+<meta content="max-image-preview:large" name="robots">
+<link href="//stats.wp.com" rel="dns-prefetch">
+<link href="//i0.wp.com" rel="preconnect">
+<link href="//c0.wp.com" rel="preconnect">
+
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/jetpack/modules/related-posts/related-posts.css?ver=20240116" id="jetpack_related-posts-css" media="all" rel="stylesheet" type="text/css">
+
+<link href="https://c0.wp.com/c/6.7/wp-includes/css/dist/block-library/style.min.css" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css">
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/a-z-listing/css/a-z-listing-default.css?ver=4.3.1" id="a-z-listing-block-css" media="all" rel="stylesheet" type="text/css">
+<link href="https://c0.wp.com/c/6.7/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" id="mediaelement-css" media="all" rel="stylesheet" type="text/css">
+<link href="https://c0.wp.com/c/6.7/wp-includes/js/mediaelement/wp-mediaelement.min.css" id="wp-mediaelement-css" media="all" rel="stylesheet" type="text/css">
+
+
+
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/atomic-wp/views/atomic.css?ver=1713114610" id="atomic-wp-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/css/checkbox.css?wp=3&amp;ver=1.0" id="stratechery-theme-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/css/bigfoot.css?ver=1.0" id="stratechery-bigfoot-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/css/membership.css?wp=3&amp;ver=1.0" id="stratechery-membership-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/css/decanter.css?wp=64&amp;ver=1.0" id="decanter-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/style.css?ver=20230202" id="stratechery-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css?ver=14.1-a.3" id="sharedaddy-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=14.1-a.3" id="social-logos-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+<link href="https://stratechery.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://stratechery.com/2018/lessons-from-spotify/" rel="canonical"/>
+<link href="https://stratechery.com/?p=3099" rel="shortlink"/>
+<link href="https://stratechery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstratechery.com%2F2018%2Flessons-from-spotify%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="https://stratechery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstratechery.com%2F2018%2Flessons-from-spotify%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+
+
+<!-- Jetpack Open Graph Tags -->
+<meta content="article" property="og:type">
+<meta content="Lessons From Spotify" property="og:title">
+<meta content="https://stratechery.com/2018/lessons-from-spotify/" property="og:url">
+<meta content="Spotify has a marginal cost problem, but while the cause is unique to Spotify, the challenges are more applicable than it seems." property="og:description">
+<meta content="2018-03-05T14:45:29+00:00" property="article:published_time">
+<meta content="2018-06-15T19:41:28+00:00" property="article:modified_time"/>
+<meta content="Stratechery by Ben Thompson" property="og:site_name"/>
+<meta content="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?fit=1200%2C860&amp;ssl=1" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="860" property="og:image:height"/>
+<meta content="A drawing of a Graph of Company with Marginal Costs Linked to Revenue" property="og:image:alt"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="@stratechery" name="twitter:site"/>
+<meta content="Lessons From Spotify" name="twitter:text:title"/>
+<meta content="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?fit=1200%2C860&amp;ssl=1&amp;w=640" name="twitter:image"/>
+<meta content="A drawing of a Graph of Company with Marginal Costs Linked to Revenue" name="twitter:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<!-- End Jetpack Open Graph Tags -->
+<link href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=32%2C32&amp;ssl=1" rel="icon" sizes="32x32"/>
+<link href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=192%2C192&amp;ssl=1" rel="icon" sizes="192x192"/>
+<link href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=180%2C180&amp;ssl=1" rel="apple-touch-icon"/>
+<meta content="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=270%2C270&amp;ssl=1" name="msapplication-TileImage"/>
+
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></link></link></meta></head>
+<body class="post-template-default single single-post postid-3099 single-format-standard jps-theme-stratechery-theme">
+<div class="hfeed site" id="page">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header class="site-header" id="masthead" role="banner">
+<div class="grid">
+<div class="row">
+<div class="twelve column">
+<div class="site-branding">
+<h1 class="site-title">
+<a href="https://stratechery.com/" rel="home">
+<span>Stratechery by Ben Thompson</span>
+</a>
+</h1><!-- .site-title -->
+<p class="site-description">On the business, strategy, and impact of technology.</p>
+</div><!-- .site-branding -->
+<nav class="main-navigation" id="site-navigation" role="navigation">
+<button aria-controls="primary-menu" aria-expanded="false" class="menu-toggle"><span>Menu</span></button>
+<div class="menu-primary-container"><ul class="menu" id="primary-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1611" id="menu-item-1611"><a href="http://stratechery.com/about/" title="Information about Ben Thompson and Stratechery">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1613" id="menu-item-1613"><a href="https://stratechery.passport.online/member/plan/FU88mU4RBhdMq8yDRbssHs" title="Receive free Stratechery content">Email | Podcast | RSS | SMS</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1645" id="menu-item-1645"><a href="mailto:support@stratechery.com" title="Contact support for help with your subscription">Contact Support</a></li>
+</ul></div> </nav><!-- #site-navigation -->
+<div class="widget-area">
+<aside class="widget widget_search" id="search-2">
+<form action="https://stratechery.com/" class="search-form" method="get" role="search">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input class="search-field" name="s" placeholder="Search …" type="search" value=""/>
+</label>
+<input class="search-submit" type="submit" value="Search"/>
+<section class="wpcom-search-dropdown">
+<div class="wpcom-search-dropdown__direct-search"></div>
+<div class="wpcom-search-dropdown__posts">
+<h2>Posts</h2>
+<ul class="wpcom-search-dropdown__results"></ul>
+</div>
+<div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__topics" data-taxonomy="topics"><h2>Topics</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div><div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__concepts" data-taxonomy="concepts"><h2>Concepts</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div><div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__companies" data-taxonomy="companies"><h2>Companies</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div>
+</section>
+</form>
+</aside><aside class="widget_text widget widget_custom_html" id="custom_html-5"><h1 class="widget-title">By Ben Thompson</h1><div class="textwidget custom-html-widget"><a href="https://stratechery.com/about">About Ben</a><br/><a href="https://stratechery.passport.online/member/" title="Follow Stratechery">Follow via Email/RSS</a><br/><a href="https://twitter.com/benthompson" title="Twitter">Twitter</a></div></aside><aside class="widget_text widget widget_custom_html" id="custom_html-6"><h1 class="widget-title">Stratechery Plus</h1><div class="textwidget custom-html-widget"><a href="https://stratechery.com/stratechery-plus/">About Stratechery Plus</a><br/><a href="https://stratechery.passport.online/member/plan/4ycW4SE71Cy6ryrijywbTG" title="Subscribe to Stratechery Plus">Subscribe</a><br/><a href="https://forum.stratechery.com/" title="Member-only Forum">Member Forum</a></div></aside><aside class="widget widget_atomic_login_widget" id="atomic_login_widget-2"><h1 class="widget-title">Account</h1><ul class="atomic-widget__loggedin" style="display: none;">
+<li><div class="atomic-widget__username">Member</div></li>
+<li><a href="https://stratechery.passport.online/member/account/delivery">Delivery Preferences</a></li>
+<li><a href="https://stratechery.passport.online/member/account/prefs">Manage Account</a></li>
+<li><a href="https://stratechery.passport.online/member/logout?redirect_uri=https%3A%2F%2Fstratechery.com%2Fwp-json%2FatomicPlugin%2Fv1%2Flogout&amp;client_id=UzZShQMUtptvnZQjTc6xpZ">Sign Out</a></li>
+</ul>
+<ul class="atomic-widget__loggedout" style="display: none;">
+<li><a href="https://stratechery.com/wp-json/atomicPlugin/v1/authlogin">Log In</a></li>
+<li><a href="https://stratechery.passport.online/member/signup">Sign Up</a></li>
+</ul>
+<p class="atomic-widget__loading">Loading</p>
+</aside><aside class="widget widget_nav_menu" id="nav_menu-6"><h1 class="widget-title">Explore Stratechery</h1><div class="menu-explore-container"><ul class="menu" id="menu-explore"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3386" id="menu-item-3386"><a href="https://stratechery.com/concepts/" title="An overview of the key concepts covered by Stratechery">Concepts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3387" id="menu-item-3387"><a href="https://stratechery.com/companies/" title="An index of the companies covered by Stratechery">Companies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3388" id="menu-item-3388"><a href="https://stratechery.com/topics/" title="An index of the topic covered by Stratechery">Topics</a></li>
+</ul></div></aside><aside class="widget widget_nav_menu" id="nav_menu-7"><h1 class="widget-title">Archives</h1><div class="menu-archives-container"><ul class="menu" id="menu-archives"><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1772" id="menu-item-1772"><a href="https://stratechery.com/category/articles/" title="Free Weekly Articles from the front page of Stratechery">Articles</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1773" id="menu-item-1773"><a href="https://stratechery.com/category/daily-email/" title="Subscriber-only Updates">Updates</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-topics menu-item-9736" id="menu-item-9736"><a href="https://stratechery.com/topic/events/interview/" title="Stratechery interviews with CEOs, founders, and analysts">Interviews</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775" id="menu-item-1775"><a href="https://stratechery.com/category/year-in-review/" title="The best of Stratechery, organized by year">Years in Review</a></li>
+</ul></div></aside><aside class="widget widget_block widget_media_image" id="block-2">
+<figure class="wp-block-image size-full"><a href="https://stratechery.com/category/daily-email/"><img alt="The Stratechery Update" class="wp-image-9733" decoding="async" fetchpriority="high" height="600" sizes="(max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/stratechery-update-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-3">
+<figure class="wp-block-image size-full"><a href="https://stratechery.com/topic/events/interview/"><img alt="Stratechery Interviews" class="wp-image-9732" decoding="async" height="600" sizes="(max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-5">
+<figure class="wp-block-image size-full"><a href="https://dithering.fm"><img alt="Dithering" class="wp-image-9730" decoding="async" height="600" sizes="(max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/dithering-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-4">
+<figure class="wp-block-image size-full"><a href="https://sharptech.fm/"><img alt="Sharp Tech with Ben Thompson" class="wp-image-9731" decoding="async" height="600" sizes="(max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/sharptech-marketing-2.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-8">
+<figure class="wp-block-image"><a href="https://sharpchina.fm"><img alt="Sharp China with Sinocism's Bill Bishop" class="wp-image-9926" decoding="async" height="1024" sizes="(max-width: 1024px) 100vw, 1024px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/10/Sharp-China-Yellow-1024x1024.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=1536%2C1536&amp;ssl=1 1536w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=2048%2C2048&amp;ssl=1 2048w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=630%2C630&amp;ssl=1 630w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?w=1280&amp;ssl=1 1280w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?w=1920&amp;ssl=1 1920w" width="1024"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-7">
+<figure class="wp-block-image size-large"><a href="https://goat.passport.online/member"><img alt="" class="wp-image-10306" decoding="async" height="1024" sizes="(max-width: 1024px) 100vw, 1024px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2023/01/goat-podcast-cover-crop-1024x1024.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=630%2C630&amp;ssl=1 630w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?w=1500&amp;ssl=1 1500w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?w=1280&amp;ssl=1 1280w" width="1024"/></a></figure>
+</aside> </div>
+</div><!-- .twelve -->
+</div><!-- .row -->
+</div><!-- .grid -->
+</header><!-- #masthead -->
+<div class="site-content" id="content">
+<div class="grid">
+<div class="row">
+<div class="nine column content-area">
+<div id="primary">
+<main class="site-main" id="main" role="main">
+<article class="post-3099 post type-post status-publish format-standard has-post-thumbnail hentry category-articles topics-audio topics-music-streaming topics-venture-capital concepts-advertising concepts-aggregation-theory concepts-business-models concepts-customer-acquisition concepts-media concepts-media-and-advertising concepts-media-and-subscriptions concepts-owning-customer-relationship concepts-product-management concepts-saas concepts-subscriptions companies-spotify" id="post-3099">
+<header class="entry-header">
+<h1 class="entry-title">Lessons From Spotify</h1>
+<div class="entry-meta">
+<span class="posted-on"><span class="screen-reader-text">Posted on</span><time class="entry-date published" datetime="2018-03-05T06:45:29-05:00">Monday, March 5, 2018</time><time class="updated" datetime="2018-06-15T12:41:28-04:00">Friday, June 15, 2018</time></span> <span class="byline"><span class="author vcard"><span class="screen-reader-text">Author</span> by <a class="url fn n" href="https://stratechery.com/author/stratechery/">Ben Thompson</a></span></span> </div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-content">
+<p>The two dominant business models for venture-backed startups are advertising for consumer-focused companies, and Software-as-a-Service (SaaS) for business-focused ones. On one level, these business models are quite different: the former gives away software for free with the hope of convincing a third party to pay for access to users; the latter charges some portion of users directly. The underlying economics of both, though, are more similar than you might think — indeed, both are very much in line with venture-backed startups of the past.</p>
+<h4>Venture Outcomes</h4>
+<p>Silicon Valley is, unsurprisingly given the name, built on silicon-based computer chips, and that goes for Silicon Valley venture capital, as well. Silicon-based chips have minimal marginal costs — sand is cheap! — but massive fixed costs: R&amp;D on one hand, and the equipment to actually make the chips on the other. And while those two costs live on different parts of the income statement — the latter is a cost of revenue that impacts gross margins, while the former is “under the line” and an operational cost that only impacts overall profitability — the fundamental economic rationale for taking on venture capital is the same: spend a lot of money up-front to develop and build a product, and take advantage of minimal marginal costs to make it up in volume.</p>
+<p>You can see how this model translated perfectly to software: marginal costs were even lower, and an even greater percentage of costs were R&amp;D. Companies needed lots of money to get started, but those that succeeded could generate returns that vastly exceeded the amount of investment. This is certainly the case for today’s business models.</p>
+<p>Advertising-based consumer companies spend huge amounts on R&amp;D building products that appeal to users, although usually not a lot on sales and marketing to acquire users; consumer companies that break through to the scale necessary to support advertising rely on viral network effects. Where the sales and marketing spend comes is in courting advertisers; however, the most valuable consumers companies of all — the <a href="https://stratechery.com/2017/defining-aggregators/">super-aggregators</a> — generate the same sort of network effects allowing them to add advertisers in a scalable way as well.</p>
+<p>This produces the ideal venture outcome: a company where users and revenue grow far more quickly than costs.</p>
+<p><a href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.341.jpg?ssl=1"><img alt="Graph of a Venture Company's Costs" class="aligncenter size-large wp-image-3108" data-recalc-dims="1" decoding="async" height="466" loading="lazy" sizes="auto, (max-width: 640px) 100vw, 640px" src="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.341.jpg?resize=640%2C466&amp;ssl=1" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.341.jpg?w=2393&amp;ssl=1 2393w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.341.jpg?resize=300%2C219&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.341.jpg?resize=768%2C559&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.341.jpg?resize=1024%2C746&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.341.jpg?resize=865%2C630&amp;ssl=1 865w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.341.jpg?w=1280&amp;ssl=1 1280w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.341.jpg?w=1920&amp;ssl=1 1920w" width="640"/></a></p>
+<p>Again, this is possible because there are minimal marginal costs — more users are not necessarily more expensive. Of course fixed costs grow over time, but they only grow linearly — earning ever-increasing revenue on a relatively stable cost basis is the definition of scale.</p>
+<p>SaaS businesses have the same sort of profile — the big difference is that revenue comes from users, and thus sales and marketing expenses are spent on gaining said users, not advertisers, but minimal marginal costs are the common thread.</p>
+<h4>Spotify’s Operational Costs</h4>
+<p>In <a href="https://stripe.com/atlas/guides/business-of-saas">The Business of SaaS</a>, one of the guides offered by <a href="https://stripe.com/atlas">Stripe Atlas</a>, <a href="https://twitter.com/patio11">Patrick McKenzie</a> writes:</p>
+<blockquote><p>Margins, to a first approximation, don’t matter. Most businesses care quite a bit about their cost-of-goods-sold (COGS), the cost to satisfy a marginal customer. While some platform businesses (like AWS) have material COGS, at the typical SaaS company, the primary source of value is the software and it can be replicated at an extremely low COGS. SaaS companies frequently spend less than 5~10% of their marginal revenue per customer on delivering the underlying service.</p>
+<p>This allows SaaS entrepreneurs to almost ignore every factor of their unit economics except customer acquisition cost (CAC; the marginal spending on marketing and sales per customer added). If they’re quickly growing, the company can ignore every expense that doesn’t scale directly with the number of customers (i.e. engineering costs, general and administrative expenses, etc), on the assumption that growth at a sensible CAC will outrun anything on the expenses side of the ledger.</p></blockquote>
+<p>In other words, operational costs don’t matter in the long run, which is good news for Spotify, a venture-backed company with definite SaaS characteristics that <a href="https://www.sec.gov/Archives/edgar/data/1639920/000119312518063434/d494294df1.htm">filed for a direct listing last week</a>. Spotify has increased monthly active users by 43% over the last three years and revenue by 448% over the last five; its fixed costs have largely tracked revenue:</p>
+<div align="center">SPOTIFY REVENUE AND FIXED COSTS (IN MILLIONS OF EUROS)</div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Revenue</th>
+<th>R&amp;D (% Rev)</th>
+<th>S&amp;M (% Rev)</th>
+<th>G&amp;A (% Rev)</th>
+<th>Total (% Rev)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2013</td>
+<td>746</td>
+<td>73 (10%)</td>
+<td>111 (15%)</td>
+<td>42 (6%)</td>
+<td>226 (30%)</td>
+</tr>
+<tr>
+<td>2014</td>
+<td>1,085</td>
+<td>114 (11%)</td>
+<td>184 (17%)</td>
+<td>67 (6%)</td>
+<td>365 (34%)</td>
+</tr>
+<tr>
+<td>2015</td>
+<td>1,940</td>
+<td>136 (7%)</td>
+<td>219 (11%)</td>
+<td>106 (5%)</td>
+<td>461 (26%)</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>2,952</td>
+<td>207 (7%)</td>
+<td>368 (12%)</td>
+<td>175 (6%)</td>
+<td>750 (25%)</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>4,090</td>
+<td>396 (10%)</td>
+<td>567 (14%)</td>
+<td>264 (6%)</td>
+<td>1,227 (30%)</td>
+</tr>
+</tbody>
+</table>
+<p>This looks like a well-managed SaaS company:</p>
+<p><a href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.59-PM.png?ssl=1"><img alt="Spotify Revenue and Operational Costs" class="aligncenter size-large wp-image-3106" data-recalc-dims="1" decoding="async" height="351" loading="lazy" sizes="auto, (max-width: 640px) 100vw, 640px" src="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.59-PM.png?resize=640%2C351&amp;ssl=1" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.59-PM.png?w=1770&amp;ssl=1 1770w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.59-PM.png?resize=300%2C164&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.59-PM.png?resize=768%2C421&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.59-PM.png?resize=1024%2C561&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.59-PM.png?resize=1150%2C630&amp;ssl=1 1150w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.59-PM.png?w=1280&amp;ssl=1 1280w" width="640"/></a></p>
+<p>There’s just one problem: Spotify’s marginal costs.</p>
+<h4>Spotify’s Marginal Cost Problem</h4>
+<p>It is not exactly groundbreaking analysis to note that Spotify has significant marginal costs — specifically, the royalties it pays the music industry (not just record labels but also songwriters and publishers). Those are represented by Spotify’s Cost of Revenue:</p>
+<p><a href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.16-PM.png?ssl=1"><img alt="Spotify Revenue and Cost of Revenue" class="aligncenter size-large wp-image-3103" data-recalc-dims="1" decoding="async" height="354" loading="lazy" sizes="auto, (max-width: 640px) 100vw, 640px" src="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.16-PM.png?resize=640%2C354&amp;ssl=1" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.16-PM.png?w=1766&amp;ssl=1 1766w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.16-PM.png?resize=300%2C166&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.16-PM.png?resize=768%2C424&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.16-PM.png?resize=1024%2C566&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.16-PM.png?resize=1140%2C630&amp;ssl=1 1140w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.08.16-PM.png?w=1280&amp;ssl=1 1280w" width="640"/></a></p>
+<p>Spotify <a href="https://stratechery.com/2017/spacex-reuses-a-rocket-the-music-industry-winning-and-whining-spotify-universal-agree-to-new-deal/">negotiated new deals with the record labels</a> last summer that resulted in lower royalty rates in exchange for guaranteed subscriber growth and the ability for the labels to make some releases exclusive to Spotify’s paid tier; you can see those lower rates reflected in Spotify’s increased margins.</p>
+<h4>Spotify’s Missing Profit Potential</h4>
+<p>That, though, is precisely the problem: Spotify’s margins are completely at the mercy of the record labels, and even after the rate change, the company is not just unprofitable, its losses are growing, at least in absolute euro terms:</p>
+<p><a href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.11.01-PM.png?ssl=1"><img alt="Spotify Gross and Net Profit" class="aligncenter size-large wp-image-3107" data-recalc-dims="1" decoding="async" height="544" loading="lazy" sizes="auto, (max-width: 640px) 100vw, 640px" src="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.11.01-PM.png?resize=640%2C544&amp;ssl=1" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.11.01-PM.png?w=1766&amp;ssl=1 1766w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.11.01-PM.png?resize=300%2C255&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.11.01-PM.png?resize=768%2C653&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.11.01-PM.png?resize=1024%2C871&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.11.01-PM.png?resize=741%2C630&amp;ssl=1 741w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-10.11.01-PM.png?w=1280&amp;ssl=1 1280w" width="640"/></a></p>
+<p>Moreover, it seems highly unlikely Spotify’s Cost of Revenue will improve much in the short-term: those record deals are locked in until at least next year, and they include “most-favored nation” provisions, which means that Spotify has to get Universal Music Group, Sony Music Entertainment, Warner Music Group, and Merlin (the representative for many independent labels), which own 85% of the music on Spotify as measured by streams, to all agree to reduce rates collectively. Making matters worse, the U.S. Copyright Royalty Board just increased the amount to be paid out to songwriters; Spotify said the change isn’t material, but it certainly isn’t in the right direction either.</p>
+<p>That leaves two options:</p>
+<ul>
+<li>Most obviously Spotify could try and lower its operational costs. This, though, is harder than it might seem for two reasons: first, Spotify is already a pretty frugal company; Dropbox, for example, <a href="https://stratechery.com/2018/the-dropbox-comp/">which filed its S-1 the same week</a>, spends 77% of revenue on operational costs as compared to Spotify’s 30%. </li>
+<li>Spotify could grow its revenue without increasing its operational costs. How, though, will it grow revenue if it cannot increase its spending on R&amp;D and Sales &amp; Marketing? The typical pattern for non-social network companies is for Sales &amp; Marketing to grow less efficient over time, which means it would need to <em>increase</em> as a percentage of revenue, not decrease (and remember, Spotify can’t afford to miss its growth numbers or its royalty rates go up).</li>
+</ul>
+<p>There is one more possibility: Spotify could one day cut out the labels altogether — the idea certainly makes sense on a conceptual level. Spotify is in one sense an aggregator, in that it increasingly controls access to music listeners, and to the company’s credit, it has <a href="https://stratechery.com/2017/music-versus-publishing-spotifys-increasing-power/">demonstrated the ability to exercise power</a> via its control of music discovery and popular playlists.</p>
+<p>The problem is that the music labels, as I wrote in <a href="https://stratechery.com/2017/the-great-unbundling/">The Great Unbundling</a>, have been strengthened by Spotify as well:</p>
+<blockquote><p>The music industry, meanwhile, has, at least relative to newspapers, come out of the shift to the Internet in relatively good shape; while piracy drove the music labels into the arms of Apple, which unbundled the album into the song, streaming has rewarded the integration of back catalogs and new music with bundle economics: more and more users are willing to pay $10/month for access to everything, significantly increasing the average revenue per customer. The result is an industry that looks remarkably similar to the pre-Internet era:</p>
+<p> <a href="https://stratechery.com/2017/the-great-unbundling/"><img alt="" class="aligncenter size-large wp-image-2412" data-recalc-dims="1" decoding="async" height="224" loading="lazy" sizes="auto, (max-width: 640px) 100vw, 640px" src="https://i0.wp.com/stratechery.com/wp-content/uploads/2017/01/IMG_0112.png?resize=640%2C224&amp;ssl=1" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2017/01/IMG_0112.png?w=2158&amp;ssl=1 2158w, https://i0.wp.com/stratechery.com/wp-content/uploads/2017/01/IMG_0112.png?resize=300%2C105&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2017/01/IMG_0112.png?resize=768%2C269&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2017/01/IMG_0112.png?resize=1024%2C358&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2017/01/IMG_0112.png?resize=1200%2C420&amp;ssl=1 1200w, https://i0.wp.com/stratechery.com/wp-content/uploads/2017/01/IMG_0112.png?w=1280&amp;ssl=1 1280w, https://i0.wp.com/stratechery.com/wp-content/uploads/2017/01/IMG_0112.png?w=1920&amp;ssl=1 1920w" width="640"/></a></p>
+<p>Notice how little power Spotify and Apple Music have; neither has a sufficient user base to attract suppliers (artists) based on pure economics, in part because they don’t have access to back catalogs. Unlike newspapers, music labels built an integration that transcends distribution.</p></blockquote>
+<p>Spotify is an impressive product and company, and CEO Daniel Ek and team deserve credit for reaching this point. Being a true aggregator, though, means gaining power over supply; Spotify doesn’t have that — the company doesn’t even have control over its marginal costs — and it’s hard to see where the profits come from.</p>
+<h4>Lessons from Spotify</h4>
+<p>The power of the record labels and the resultant linkage of Spotify’s marginal costs to its overall revenue certainly makes Spotify a unique case compared to most zero marginal cost venture-backed companies:</p>
+<p><a href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?ssl=1"><img alt="Graph of Company with Marginal Costs Linked to Revenue" class="aligncenter size-large wp-image-3109" data-recalc-dims="1" decoding="async" height="459" loading="lazy" sizes="auto, (max-width: 640px) 100vw, 640px" src="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?resize=640%2C459&amp;ssl=1" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?w=2430&amp;ssl=1 2430w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?resize=300%2C215&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?resize=768%2C551&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?resize=1024%2C734&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?resize=879%2C630&amp;ssl=1 879w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?w=1280&amp;ssl=1 1280w, https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/Paper.stratechery-Year-One.340.jpg?w=1920&amp;ssl=1 1920w" width="640"/></a></p>
+<p>It’s worth noting, though, that Spotify is hardly the only well-known startup that has its cost of revenue linked to total revenue — at least from a certain perspective. Over the last few years there has been a third model of startup that has emerged: the so-called sharing economy, or Assets-as-a-Service (AaaS). When you spend $10 on an Uber or Lyft ride, around $7 goes to the driver; when you spend $100 on an Airbnb, $85 goes to the host,<sup id="rf1-3099"><a href="#fn1-3099" rel="footnote" title="Minus service fees to cover payment processing">1</a></sup> and so on and so forth.</p>
+<p>This isn’t how these companies necessarily keep their books, to be clear: the top line number should exclude whatever is paid out to the driver or host etc. When thinking about how these companies should be managed, though, the situation isn’t much different than Spotify. Specifically:</p>
+<ul>
+<li>AaaS companies can’t assume that operational expenses are “free”, because gross marginal costs are going to eat up a huge portion of gross revenue growth.</li>
+<li>AaaS companies should focus Sales &amp; Marketing spending on increasing demand, and allow demand to draw supply. Doing it the other way — spending Sales &amp; Marketing to increase supply in the hope of drawing demand — may make sense competitively, but it is a disaster financially, as the company is basically spending to increase its costs (imagine if Spotify were paying millions to court the record labels!)</li>
+<li>AaaS companies that can’t lower their operational costs or grow revenue relatively faster than Sales &amp; Marketing will be left rolling the dice on eliminating marginal costs entirely. Granted, self-driving cars or <a href="https://stratechery.com/2017/airbnb-reportedly-building-apartments-apple-hires-new-general-counsel-ubers-board-saga-ends/">owned-and-operated apartments</a> may both be more viable than getting rid of the record labels, but it still seems a better bet to become far more disciplined when it comes to operational costs.</li>
+</ul>
+<p>I still believe in a future where <a href="https://stratechery.com/2016/everything-as-a-service/">Everything is a Service</a>, and there’s no question that creating networks for everything will need a lot of venture capital. And make no mistake — there will continue to be capital available, because a network, once made, absolutely offers the sort of scalable revenue generation that makes generating significant profits an inevitability.</p>
+<p>To that end, it is surely Spotify’s hope that the streaming market ends up being so big that the company’s low gross margin in percentage terms ends up large in absolute ones; even then those profits will come from operational excellence and efficient customer acquisition, not simply top-line growth.</p>
+<p><em>I wrote a follow-up to this article in <a href="https://stratechery.com/2018/could-spotify-be-netflix-calculating-spotifys-ltv-and-cac/">this Daily Update</a>.</em></p>
+<hr class="footnotes"/><ol class="footnotes" style="list-style-type:decimal"><li id="fn1-3099"><p>Minus service fees to cover payment processing <a class="backlink" href="#rf1-3099" title="Return to footnote 1.">↩</a></p></li></ol><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share</h3><div class="sd-content"><ul><li class="share-facebook"><a class="share-facebook sd-button share-icon" data-shared="sharing-facebook-3099" href="https://stratechery.com/2018/lessons-from-spotify/?share=facebook" rel="nofollow noopener noreferrer" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a class="share-twitter sd-button share-icon" data-shared="sharing-twitter-3099" href="https://stratechery.com/2018/lessons-from-spotify/?share=twitter" rel="nofollow noopener noreferrer" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-linkedin"><a class="share-linkedin sd-button share-icon" data-shared="sharing-linkedin-3099" href="https://stratechery.com/2018/lessons-from-spotify/?share=linkedin" rel="nofollow noopener noreferrer" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-email"><a class="share-email sd-button share-icon" data-email-share-error-text="If you're having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-error-title="Do you have email set up?" data-email-share-nonce="1955544757" data-email-share-track-url="https://stratechery.com/2018/lessons-from-spotify/?share=email" data-shared="" href="mailto:?subject=%5BShared%20Post%5D%20Lessons%20From%20Spotify&amp;body=https%3A%2F%2Fstratechery.com%2F2018%2Flessons-from-spotify%2F&amp;share=email" rel="nofollow noopener noreferrer" target="_blank" title="Click to email a link to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div><!-- .entry-content -->
+</article><!-- #post-## -->
+<nav aria-label="Post navigation" class="navigation post-navigation">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://stratechery.com/2018/exponent-podcast-dilly-dallying-dropbox/" rel="prev"><span class="screen-reader-text">Previous post:</span> <span class="post-title">Exponent Podcast: Dilly-Dallying Dropbox</span></a></div><div class="nav-next"><a href="https://stratechery.com/2018/exponent-podcast-90s-alt-forever/" rel="next"><span class="screen-reader-text">Next post:</span> <span class="post-title">Exponent Podcast: 90’s Alt Forever</span></a></div></div>
+</nav>
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- .nine -->
+<div class="three column widget-area">
+<div id="secondary" role="complementary">
+<aside class="widget widget_search" id="search-2">
+<form action="https://stratechery.com/" class="search-form" method="get" role="search">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input class="search-field" name="s" placeholder="Search …" type="search" value=""/>
+</label>
+<input class="search-submit" type="submit" value="Search"/>
+<section class="wpcom-search-dropdown">
+<div class="wpcom-search-dropdown__direct-search"></div>
+<div class="wpcom-search-dropdown__posts">
+<h2>Posts</h2>
+<ul class="wpcom-search-dropdown__results"></ul>
+</div>
+<div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__topics" data-taxonomy="topics"><h2>Topics</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div><div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__concepts" data-taxonomy="concepts"><h2>Concepts</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div><div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__companies" data-taxonomy="companies"><h2>Companies</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div>
+</section>
+</form>
+</aside><aside class="widget_text widget widget_custom_html" id="custom_html-5"><h1 class="widget-title">By Ben Thompson</h1><div class="textwidget custom-html-widget"><a href="https://stratechery.com/about">About Ben</a><br/><a href="https://stratechery.passport.online/member/" title="Follow Stratechery">Follow via Email/RSS</a><br/><a href="https://twitter.com/benthompson" title="Twitter">Twitter</a></div></aside><aside class="widget_text widget widget_custom_html" id="custom_html-6"><h1 class="widget-title">Stratechery Plus</h1><div class="textwidget custom-html-widget"><a href="https://stratechery.com/stratechery-plus/">About Stratechery Plus</a><br/><a href="https://stratechery.passport.online/member/plan/4ycW4SE71Cy6ryrijywbTG" title="Subscribe to Stratechery Plus">Subscribe</a><br/><a href="https://forum.stratechery.com/" title="Member-only Forum">Member Forum</a></div></aside><aside class="widget widget_atomic_login_widget" id="atomic_login_widget-2"><h1 class="widget-title">Account</h1><ul class="atomic-widget__loggedin" style="display: none;">
+<li><div class="atomic-widget__username">Member</div></li>
+<li><a href="https://stratechery.passport.online/member/account/delivery">Delivery Preferences</a></li>
+<li><a href="https://stratechery.passport.online/member/account/prefs">Manage Account</a></li>
+<li><a href="https://stratechery.passport.online/member/logout?redirect_uri=https%3A%2F%2Fstratechery.com%2Fwp-json%2FatomicPlugin%2Fv1%2Flogout&amp;client_id=UzZShQMUtptvnZQjTc6xpZ">Sign Out</a></li>
+</ul>
+<ul class="atomic-widget__loggedout" style="display: none;">
+<li><a href="https://stratechery.com/wp-json/atomicPlugin/v1/authlogin">Log In</a></li>
+<li><a href="https://stratechery.passport.online/member/signup">Sign Up</a></li>
+</ul>
+<p class="atomic-widget__loading">Loading</p>
+</aside><aside class="widget widget_nav_menu" id="nav_menu-6"><h1 class="widget-title">Explore Stratechery</h1><div class="menu-explore-container"><ul class="menu" id="menu-explore-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3386"><a href="https://stratechery.com/concepts/" title="An overview of the key concepts covered by Stratechery">Concepts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3387"><a href="https://stratechery.com/companies/" title="An index of the companies covered by Stratechery">Companies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3388"><a href="https://stratechery.com/topics/" title="An index of the topic covered by Stratechery">Topics</a></li>
+</ul></div></aside><aside class="widget widget_nav_menu" id="nav_menu-7"><h1 class="widget-title">Archives</h1><div class="menu-archives-container"><ul class="menu" id="menu-archives-1"><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1772"><a href="https://stratechery.com/category/articles/" title="Free Weekly Articles from the front page of Stratechery">Articles</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1773"><a href="https://stratechery.com/category/daily-email/" title="Subscriber-only Updates">Updates</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-topics menu-item-9736"><a href="https://stratechery.com/topic/events/interview/" title="Stratechery interviews with CEOs, founders, and analysts">Interviews</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775"><a href="https://stratechery.com/category/year-in-review/" title="The best of Stratechery, organized by year">Years in Review</a></li>
+</ul></div></aside><aside class="widget widget_block widget_media_image" id="block-2">
+<figure class="wp-block-image size-full"><a href="https://stratechery.com/category/daily-email/"><img alt="The Stratechery Update" class="wp-image-9733" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/stratechery-update-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-3">
+<figure class="wp-block-image size-full"><a href="https://stratechery.com/topic/events/interview/"><img alt="Stratechery Interviews" class="wp-image-9732" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-5">
+<figure class="wp-block-image size-full"><a href="https://dithering.fm"><img alt="Dithering" class="wp-image-9730" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/dithering-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-4">
+<figure class="wp-block-image size-full"><a href="https://sharptech.fm/"><img alt="Sharp Tech with Ben Thompson" class="wp-image-9731" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/sharptech-marketing-2.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-8">
+<figure class="wp-block-image"><a href="https://sharpchina.fm"><img alt="Sharp China with Sinocism's Bill Bishop" class="wp-image-9926" decoding="async" height="1024" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/10/Sharp-China-Yellow-1024x1024.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=1536%2C1536&amp;ssl=1 1536w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=2048%2C2048&amp;ssl=1 2048w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=630%2C630&amp;ssl=1 630w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?w=1280&amp;ssl=1 1280w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?w=1920&amp;ssl=1 1920w" width="1024"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-7">
+<figure class="wp-block-image size-large"><a href="https://goat.passport.online/member"><img alt="" class="wp-image-10306" decoding="async" height="1024" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2023/01/goat-podcast-cover-crop-1024x1024.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=630%2C630&amp;ssl=1 630w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?w=1500&amp;ssl=1 1500w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?w=1280&amp;ssl=1 1280w" width="1024"/></a></figure>
+</aside> </div><!-- #secondary -->
+</div><!-- .widget-area --> </div><!-- .row -->
+</div><!-- .grid -->
+</div><!-- #content -->
+<section id="daily-updates">
+<div class="grid">
+<div class="row">
+<h1><strong>Subscriber’s Daily Update</strong></h1>
+<div class="post-13911 post type-post status-publish format-standard hentry category-daily-email topics-sports topics-streaming topics-video concepts-advertising concepts-business-models concepts-customer-acquisition concepts-product-management concepts-subscriptions companies-netflix companies-nfl" id="post-13911">
+<span class="entry-meta">Tuesday, November 19, 2024</span>
+<h1 class="entry-title"><a href="https://stratechery.com/2024/netflixs-boxing-event-customer-acquisition-vs-churn-mitigation-accounting-for-events/" rel="bookmark">Netflix’s Boxing Event, Customer Acquisition vs. Churn Mitigation, Accounting for Events</a></h1> </div>
+<div class="post-13890 post type-post status-publish format-standard hentry category-daily-email category-interviews topics-ai-machine-learning topics-aws topics-china topics-chips topics-cloud-computing topics-countries topics-digital topics-events topics-google-cloud topics-interview topics-memory topics-publishing topics-technologies concepts-business-models concepts-company-culture concepts-company-structure concepts-enterprise concepts-incentives concepts-making-money companies-amazon companies-anthropic companies-asml companies-broadcom companies-google companies-intel companies-microsoft companies-nvidia companies-openai companies-passport companies-qualcomm companies-semianalysis companies-tsmc" id="post-13890">
+<span class="entry-meta">Thursday, November 14, 2024</span>
+<h1 class="entry-title"><a href="https://stratechery.com/2024/an-interview-with-dylan-patel-and-doug-olaughlin-about-the-current-state-of-semiconductors-and-semianalysis/" rel="bookmark">An Interview with Dylan Patel and Doug O’Laughlin About the Current State of Semiconductors and SemiAnalysis</a></h1> </div>
+<div class="post-13881 post type-post status-publish format-standard hentry category-daily-email topics-app-tracking-transparency-att topics-earnings topics-events topics-logistics concepts-business-models concepts-e-commerce concepts-product-management concepts-product-market-fit companies-meta companies-shopify" id="post-13881">
+<span class="entry-meta">Wednesday, November 13, 2024</span>
+<h1 class="entry-title"><a href="https://stratechery.com/2024/shopify-earnings-software-self-awareness-rebels-and-the-arms-dealer/" rel="bookmark">Shopify Earnings, Software Self-Awareness, Rebels and the Arms Dealer</a></h1> </div>
+<div class="post-13873 post type-post status-publish format-standard hentry category-daily-email topics-ai-machine-learning topics-apple-vision topics-ar-vr topics-earnings topics-events topics-wearables companies-apple" id="post-13873">
+<span class="entry-meta">Tuesday, November 12, 2024</span>
+<h1 class="entry-title"><a href="https://stratechery.com/2024/apple-earnings-ai-capex-and-r-the-vision-pro-gets-a-killer-app/" rel="bookmark">Apple Earnings; AI, Capex, and R&amp;D; The Vision Pro Gets a Killer App</a></h1> </div>
+</div><!-- .row -->
+</div><!-- .grid -->
+</section><!-- #daily-updates -->
+<footer class="site-footer" id="colophon" role="contentinfo">
+<div class="grid">
+<div class="row">
+<div class="twelve column">
+<div class="site-info">
+<div class="site-info-container">
+<span class="powered-by">On the business, strategy, and impact of technology.</span><!-- .powered-by -->
+<span class="copyright">
+								© <a href="http://stratechery.com/">Stratechery LLC</a> 2024 | <a href="https://stratechery.com/terms-of-service/">Terms of Service</a> | <a href="https://stratechery.com/privacy-policy/">Privacy Policy</a>
+</span>
+</div><!-- .site-info-container -->
+</div><!-- .site-info -->
+</div><!-- .twelve -->
+</div><!-- .row -->
+</div><!-- .grid -->
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<div class="jetpack-instant-search__widget-area" style="display: none">
+<div class="widget jetpack-filters widget_search" id="jetpack-search-filters-10"> <div class="jetpack-instant-search-wrapper" id="jetpack-search-filters-10-wrapper"></div></div> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<!--
+	generated in 0.293 seconds
+	233777 bytes batcached for 0 seconds
+-->

@@ -1,0 +1,58 @@
+STOCK ANALYSIS: AAPL
+Date Range: 2014-04-28 00:00:00+08:00 (1 week)
+Price Change: 7.81%
+Previous Avg Close: $548.5192784552846
+Current Avg Close: $591.3541451500349
+
+COMPANY: Apple Inc.
+Sector: Technology
+Industry: Consumer Electronics
+Market Cap: 3401055000000
+CEO: Mr. Timothy D. Cook
+
+==================================================
+
+ANALYSIS:
+
+**Comprehensive Analysis**
+
+**1. News Articles Reflecting the Change in Stock Price:**
+The news articles from April 26, 2014, reflect the change in stock price by highlighting Microsoft's acquisition of Nokia's devices business as a challenge to Apple and Samsung's success in the smartphone market. The articles emphasize Microsoft's potential to gain an edge with its Windows operating system and hardware integration.
+
+**2. Financial Results and Metrics Impacting Investor Sentiment:**
+The financial results and metrics that impacted investor sentiment include:
+
+* Microsoft's acquisition of Nokia's devices business for $7.5 billion (Article 1)
+* The fact that around 80% of smartphones running a Windows operating system are already manufactured by Nokia (Article 4)
+* The potential for vertical integration of handset manufacture into Microsoft's smartphone proposition, which could help the company gain an edge in the market (Article 5)
+
+**3. Market Conditions or Industry Trends:**
+The market conditions and industry trends that affected Apple and Samsung include:
+
+* The dominance of Google Android in the smartphone market (78.6% share in 2013)
+* The success of Apple's iOS system
+* The increasing competition in the smartphone market, which led to Microsoft's acquisition of Nokia as a strategic move
+
+**4. Forward Guidance or Outlook Changes:**
+The forward guidance or outlook changes include:
+
+* Microsoft's CEO Satya Nadella stating that the deal with Nokia would help with the company's "transformation" (Article 4)
+* The potential for Microsoft to gain an edge in the smartphone market with its Windows operating system and hardware integration
+* The need for Microsoft to integrate the new business, which could take some time to complete
+
+**5. Other Material Information:**
+Other material information that could explain the price change includes:
+
+* The fact that Microsoft's stock price had been declining before the acquisition announcement (not explicitly stated in the provided articles, but implied by the context)
+* The potential for the acquisition to have a positive impact on Microsoft's revenue and profitability
+* The increased competition in the smartphone market, which could lead to a more challenging environment for Apple and Samsung
+
+**Analysis of Stock Price Change:**
+The stock price change can be attributed to several factors:
+
+1. **Acquisition announcement:** The news of Microsoft's acquisition of Nokia's devices business was announced on April 26, 2014.
+2. **Strategic move:** The acquisition was seen as a strategic move by Microsoft to gain an edge in the smartphone market and challenge Apple and Samsung's dominance.
+3. **Positive sentiment:** The articles convey positive sentiment about Microsoft's potential to succeed in the smartphone market with its Windows operating system and hardware integration.
+4. **Increased competition:** The increased competition in the smartphone market, highlighted by the success of Google Android and Apple's iOS system, may have contributed to a more challenging environment for Apple and Samsung.
+
+Overall, the stock price change can be attributed to a combination of factors, including the acquisition announcement, strategic move, positive sentiment, and increased competition.

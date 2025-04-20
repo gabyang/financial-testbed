@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+
+<html class="PressReleasePage" lang="en">
+<head>
+<meta charset="utf-8"/>
+<link href="https://assets.aboutamazon.com/resource/00000174-78b5-d0f5-a376-7ab552ae0000/styleguide/All.min.c55225aa20d90b629baf888676bae63f.gz.css" rel="stylesheet"/>
+
+
+
+
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/><title>AWS-Announces-Three-New-Amazon-GuardDuty-Capabilities-to-Help-Customers-Protect-Container-Database-and-Serverless-Workloads - US Press Center</title><meta content="Tens of thousands of AWS customers use GuardDuty to protect millions of accounts, including more than half a billion Amazon EC2 instances and millions of Amazon S3 buckets" name="description"/><link href="https://press.aboutamazon.com/2023/4/aws-announces-three-new-amazon-guardduty-capabilities-to-help-customers-protect-container-database-and-serverless-workloads" rel="canonical"/><meta content="00000187-b324-d35a-abf7-f7fd69b70000" name="brightspot.contentId"/>
+<meta content="AWS Announces Three New Amazon GuardDuty Capabilities to Help Customers Protect Container, Database, and Serverless Workloads" property="og:title"/>
+<meta content="https://press.aboutamazon.com/2023/4/aws-announces-three-new-amazon-guardduty-capabilities-to-help-customers-protect-container-database-and-serverless-workloads" property="og:url"/>
+<meta content="https://assets.aboutamazon.com/dims4/default/b79fdfb/2147483647/strip/true/crop/1320x660+0+42/resize/1200x600!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F07%2F08%2F232f7d434fdd9622143a76f5c5f4%2Famazon-smile-og-open-graph.jpeg" property="og:image"/>
+<meta content="https://assets.aboutamazon.com/dims4/default/b79fdfb/2147483647/strip/true/crop/1320x660+0+42/resize/1200x600!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F07%2F08%2F232f7d434fdd9622143a76f5c5f4%2Famazon-smile-og-open-graph.jpeg" property="og:image:url"/>
+<meta content="https://assets.aboutamazon.com/dims4/default/b79fdfb/2147483647/strip/true/crop/1320x660+0+42/resize/1200x600!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F07%2F08%2F232f7d434fdd9622143a76f5c5f4%2Famazon-smile-og-open-graph.jpeg" property="og:image:secure_url"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="600" property="og:image:height"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="amazon-smile-og " property="og:image:alt"/>
+<meta content="Tens of thousands of AWS customers use GuardDuty to protect millions of accounts, including more than half a billion Amazon EC2 instances and millions of Amazon S3 buckets" property="og:description"/>
+<meta content="US Press Center" property="og:site_name"/>
+<meta content="article" property="og:type"/>
+<meta content="2023-04-24T12:00:00" property="article:published_time"/>
+<meta content="2023-07-31T21:50:19.422" property="article:modified_time"/>
+<meta content="AWS" property="article:section"/>
+<meta content="summary_large_image" name="twitter:card">
+<meta content="Tens of thousands of AWS customers use GuardDuty to protect millions of accounts, including more than half a billion Amazon EC2 instances and millions of Amazon S3 buckets" name="twitter:description">
+<meta content="@amazonnews" name="twitter:site">
+<meta content="AWS Announces Three New Amazon GuardDuty Capabilities to Help Customers Protect Container, Database, and Serverless Workloads" name="twitter:title">
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" type="image/png"/>
+<meta content="2023-04-24T12:00:00Z" name="parsely-pub-date">
+<!--This is needed for custom elements to function in browsers that
+    support them natively but that are using es6 code transpiled to es5.
+    This will cause a non-fatal error to show up in the IE11 console.
+    It can be safely ignored. https://github.com/webcomponents/webcomponentsjs/issues/749 -->
+
+
+
+
+</meta></meta></meta></meta></meta></head>
+<body class="PressReleasePage-body" data-with-subnav="" data-with-toggle-menu="">
+<!-- Putting icons here, so we don't have to include in a bunch of -body hbs's -->
+<svg id="iconsMap" style="display:none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="play-icon" viewbox="0 0 8 14">
+<g>
+<path d="M17.338 13.591L25.071 20 17.338 26.409z" transform="translate(-1104 -152) translate(0 30) translate(1060 80) translate(27 29)"></path>
+</g>
+</symbol>
+<symbol id="icon-anchorlink" viewbox="0 0 100 100">
+<path d="M86.5,71.6c0-1.6-0.5-2.9-1.6-4L72.7,55.5c-1-1.1-2.5-1.7-4-1.6c-1.6,0-3,0.6-4.2,1.9l1.1,1.1
+            c0.6,0.6,1,1,1.3,1.3c0.2,0.2,0.5,0.6,0.9,1.1c0.4,0.5,0.6,1,0.8,1.5c0.1,0.5,0.2,1,0.2,1.6c0,1.6-0.5,2.9-1.6,4
+            c-1,1.1-2.5,1.7-4,1.6c-0.6,0-1.1-0.1-1.6-0.2c-0.5-0.2-1-0.4-1.5-0.8c-0.4-0.3-0.8-0.6-1.1-0.9c-0.4-0.4-0.8-0.8-1.3-1.3
+            c-0.4-0.4-0.7-0.7-1.1-1.1c-1.3,1.2-1.9,2.6-1.9,4.3c0,1.6,0.5,2.9,1.6,4l12,12.1c1,1,2.4,1.6,4,1.6c1.6,0,2.9-0.5,4-1.5l8.6-8.5
+            C85.9,74.4,86.5,73.1,86.5,71.6z M45.5,30.5c0-1.6-0.5-2.9-1.6-4l-12-12.1c-1-1.1-2.5-1.7-4-1.6c-1.5,0-2.8,0.5-4,1.6l-8.6,8.5
+            c-1.1,1.1-1.6,2.4-1.6,3.9c0,1.6,0.5,2.9,1.6,4l12.1,12.1c1,1,2.4,1.6,4,1.6c1.6,0,3-0.6,4.2-1.8l-1.1-1.1c-0.4-0.4-0.8-0.8-1.3-1.3
+            c-0.3-0.4-0.6-0.7-0.9-1.1c-0.3-0.4-0.6-0.9-0.8-1.5c-0.1-0.5-0.2-1.1-0.2-1.6c0-1.6,0.5-2.9,1.6-4c1.1-1.1,2.4-1.6,4-1.6
+            c0.6,0,1.1,0.1,1.6,0.2c0.5,0.1,1,0.4,1.5,0.8c0.5,0.4,0.9,0.7,1.1,0.9c0.2,0.2,0.7,0.6,1.3,1.3l1.1,1.1
+            C44.9,33.5,45.5,32.1,45.5,30.5z M92.8,59.7c3.3,3.3,4.9,7.2,4.9,11.9c0,4.7-1.7,8.6-5,11.8l-8.6,8.5c-3.2,3.2-7.2,4.8-11.8,4.8
+            c-4.7,0-8.7-1.7-11.9-4.9l-12-12.1c-3.2-3.2-4.8-7.2-4.8-11.8c0-4.8,1.7-8.8,5.1-12.2l-5.1-5.1c-3.3,3.4-7.4,5.1-12.1,5.1
+            c-4.7,0-8.6-1.6-11.9-4.9L7.5,38.7c-3.3-3.3-4.9-7.2-4.9-11.9c0-4.7,1.7-8.6,5-11.8l8.6-8.5c3.2-3.2,7.2-4.8,11.8-4.8
+            c4.7,0,8.7,1.7,11.9,4.9l12,12.1c3.2,3.2,4.8,7.2,4.8,11.8c0,4.8-1.7,8.8-5.1,12.2l5.1,5.1c3.3-3.4,7.4-5.1,12.1-5.1
+            c4.7,0,8.6,1.6,11.9,4.9C80.7,47.6,92.8,59.7,92.8,59.7z"></path>
+</symbol>
+<symbol id="close-x" viewbox="0 0 14 14">
+<g>
+<path d="M6.336 7L0 .664.664 0 7 6.336 13.336 0 14 .664 7.664 7 14 13.336l-.664.664L7 7.664.664 14 0 13.336 6.336 7z" fill-rule="nonzero"></path>
+</g>
+</symbol>
+<symbol id="icon-copy-link" viewbox="0 0 20 12.783" xmlns="http://www.w3.org/2000/svg">
+<g stroke-linecap="round" stroke-miterlimit="10">
+<path d="m290.23 1604.9c-2.5258 0-4.5944 2.0699-4.5938 4.5957 0 2.5254 2.0684 4.5938 4.5938 4.5938h5.7383c1.1666 0 2.2898-0.4421 3.1406-1.2403a1 1 0 0 0 0.0449-1.414 1 1 0 0 0-1.4141-0.045c-0.47986 0.4502-1.1115 0.7-1.7695 0.6992h-5.7403c-1.4445 0-2.5938-1.1493-2.5938-2.5938-4e-4 -1.4448 1.149-2.5938 2.5938-2.5938h5.7403c0.6545-9e-4 1.2829 0.2472 1.7617 0.6934a1 1 0 0 0 1.4141-0.051 1 1 0 0 0-0.0488-1.4141c-0.84882-0.7908-1.9688-1.2296-3.1289-1.2285z" transform="translate(-285.64 -1601.3)"></path>
+<path d="m295.3 1601.3c-1.2224-1e-3 -2.3965 0.4859-3.2578 1.3535a1 1 0 0 0 6e-3 1.414 1 1 0 0 0 1.4141-0c0.48619-0.4897 1.1478-0.7645 1.8379-0.7636h5.7403c1.4462-0 2.5977 1.1475 2.5977 2.5937-3e-3 1.4454-1.1539 2.5957-2.5996 2.5957h-5.7441c-0.65101 1e-3 -1.278-0.2453-1.7559-0.6875a1 1 0 0 0-1.4121 0.055 1 1 0 0 0 0.0547 1.4141c0.84779 0.7844 1.9602 1.2204 3.1152 1.2187h5.7422c2.5262 0 4.5961-2.0675 4.5996-4.5937 0-2.5276-2.0722-4.5969-4.5996-4.5937h-5.7363z" transform="translate(-285.64 -1601.3)"></path>
+</g>
+</symbol>
+<symbol id="mono-icon-copylink" viewbox="0 0 12 12">
+<g fill-rule="evenodd">
+<path d="M10.199 2.378c.222.205.4.548.465.897.062.332.016.614-.132.774L8.627 6.106c-.187.203-.512.232-.75-.014a.498.498 0 0 0-.706.028.499.499 0 0 0 .026.706 1.509 1.509 0 0 0 2.165-.04l1.903-2.06c.37-.398.506-.98.382-1.636-.105-.557-.392-1.097-.77-1.445L9.968.8C9.591.452 9.03.208 8.467.145 7.803.072 7.233.252 6.864.653L4.958 2.709a1.509 1.509 0 0 0 .126 2.161.5.5 0 1 0 .68-.734c-.264-.218-.26-.545-.071-.747L7.597 1.33c.147-.16.425-.228.76-.19.353.038.71.188.931.394l.91.843.001.001zM1.8 9.623c-.222-.205-.4-.549-.465-.897-.062-.332-.016-.614.132-.774l1.905-2.057c.187-.203.512-.232.75.014a.498.498 0 0 0 .706-.028.499.499 0 0 0-.026-.706 1.508 1.508 0 0 0-2.165.04L.734 7.275c-.37.399-.506.98-.382 1.637.105.557.392 1.097.77 1.445l.91.843c.376.35.937.594 1.5.656.664.073 1.234-.106 1.603-.507L7.04 9.291a1.508 1.508 0 0 0-.126-2.16.5.5 0 0 0-.68.734c.264.218.26.545.071.747l-1.904 2.057c-.147.16-.425.228-.76.191-.353-.038-.71-.188-.931-.394l-.91-.843z"></path>
+<path d="M8.208 3.614a.5.5 0 0 0-.707.028L3.764 7.677a.5.5 0 0 0 .734.68L8.235 4.32a.5.5 0 0 0-.027-.707"></path>
+</g>
+</symbol>
+<symbol height="16px" id="globe" version="1.1" viewbox="0 0 16 16" width="16px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g fill="none" fill-rule="evenodd" id="Press-Center---Final" stroke="none" stroke-width="1">
+<g fill="#13181E" fill-rule="nonzero" id="Press-Center-—-Header-Modified-Translation" transform="translate(-1909.000000, -2933.000000)">
+<g id="Group-25" transform="translate(1840.000000, 2392.000000)">
+<g id="Group-23" transform="translate(0.000000, 48.000000)">
+<g id="Group-15" transform="translate(20.000000, 330.000000)">
+<g id="Group-52" transform="translate(49.000000, 159.000000)">
+<g id="icon/international-" transform="translate(0.000000, 4.000000)">
+<path d="M7.5,16 L7.50052313,15.9846613 C3.31491134,15.7268205 0,12.2505297 0,8 C0,3.74947025 3.31491134,0.273179536 7.50052313,0.0153387493 L7.5,0 L8.5,0 L8.50048204,0.0154007326 C12.6856194,0.273736104 16,3.74981051 16,8 C16,12.2501895 12.6856194,15.7262639 8.50048204,15.9845993 L8.5,16 L7.5,16 Z M7.5,8.5 L4.01039131,8.50049638 C4.15133035,11.8820946 5.70674993,14.5215325 7.50069716,14.9415736 L7.5,8.5 Z M11.9896087,8.50049638 L8.5,8.5 L8.50030116,14.9413397 C10.2938271,14.5205532 11.8486958,11.8814673 11.9896087,8.50049638 Z M3.00963047,8.50061182 L1.01760973,8.50039243 C1.19697839,11.0399107 2.73097773,13.2053765 4.90138673,14.2785689 C3.81934964,12.9095986 3.09995605,10.8412966 3.00963047,8.50061182 Z M14.9823903,8.50039243 L12.9903695,8.50061182 C12.9000439,10.8412966 12.1806504,12.9095986 11.0993784,14.2780145 C13.2690223,13.2053765 14.8030216,11.0399107 14.9823903,8.50039243 Z M8.50030116,1.05866034 L8.5,7.5 L11.9896502,7.50050034 C11.8490014,4.11905137 10.2940033,1.47948814 8.50030116,1.05866034 Z M4.90062158,1.72198554 L4.8636637,1.7402259 C2.71293288,2.81991368 1.19553451,4.97539956 1.01753877,7.50061334 L3.00959209,7.50038354 C3.09975212,5.15928977 3.81919638,3.09059534 4.90062158,1.72198554 Z M4.01034981,7.50050034 L7.5,7.5 L7.50069716,1.05842636 C5.70657368,1.47850879 4.15102472,4.11842405 4.01034981,7.50050034 Z M11.0986133,1.72143108 L11.1089901,1.73418022 C12.1850652,3.10286755 12.9005153,5.1662325 12.9904079,7.50038354 L14.9824612,7.50061334 C14.8034266,4.96066106 13.2693088,2.79476514 11.0986133,1.72143108 Z" id="Combined-Shape"></path>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</symbol>
+<symbol id="icon-plus" viewbox="0 0 448 512">
+<path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"></path>
+</symbol>
+<symbol id="icon-minus" viewbox="0 0 448 512">
+<path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"></path>
+</symbol>
+<symbol height="18" id="icon-download-large" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M11.714 12.75c.159 0 .286-.083.286-.188v-1.125c0-.104-.127-.187-.286-.187H.286c-.159 0-.286.083-.286.187v1.125c0 .105.127.188.286.188h11.428zm.207-8.82c.08-.069.095-.18.064-.277-.048-.097-.16-.153-.27-.153H8.572V.25c0-.139-.127-.25-.286-.25H3.714c-.159 0-.286.111-.286.25V3.5H.285c-.11 0-.222.056-.27.153-.031.097-.016.208.064.278l5.715 5C5.857 8.972 5.92 9 6 9c.08 0 .143-.028.206-.07l5.715-5z" id="3b85j33nxa"></path>
+</defs>
+<g transform="translate(3 2.25)">
+<mask id="pzi5xp81ab">
+<use xlink:href="#3b85j33nxa"></use>
+</mask>
+<use xlink:href="#3b85j33nxa"></use>
+</g>
+</symbol>
+<symbol id="burger-menu" viewbox="0 0 14 10">
+<g>
+<path d="M0 5.5v-1h14v1H0zM0 1V0h14v1H0zm0 9V9h14v1H0z" fill-rule="evenodd"></path>
+</g>
+</symbol>
+<symbol id="icon-facebook" viewbox="0 0 512 512">
+<title>Facebook</title>
+<path d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83V256h56.4l7.6-64
+                H288z"></path>
+</symbol>
+<symbol id="icon-googleplus" viewbox="0 0 512 512">
+<title>Google Plus</title>
+<g>
+<path d="M242.1,275.6l-18.2-13.7l-0.1-0.1c-5.8-4.6-10-8.3-10-14.7c0-7,5-11.8,10.9-17.4l0.5-0.4c20-15.2,44.7-34.3,44.7-74.6
+                        c0-26.9-11.9-44.7-23.3-57.7h13L320,64H186.5c-25.3,0-62.7,3.2-94.6,28.6l-0.1,0.3C70,110.9,57,137.4,57,163.5
+                        c0,21.2,8.7,42.2,23.9,57.4c21.4,21.6,48.3,26.1,67.1,26.1c1.5,0,3,0,4.5-0.1c-0.8,3-1.2,6.3-1.2,10.3c0,10.9,3.6,19.3,8.1,26.2
+                        c-24,1.9-58.1,6.5-84.9,22.3C35.1,328.4,32,361.7,32,371.3c0,38.2,35.7,76.8,115.5,76.8c91.6,0,139.5-49.8,139.5-99
+                        C287,312,264.2,293.5,242.1,275.6z M116.7,139.9c0-13.4,3-23.5,9.3-30.9c6.5-7.9,18.2-13.1,29-13.1c19.9,0,32.9,15,40.4,27.6
+                        c9.2,15.5,14.9,36.1,14.9,53.6c0,4.9,0,20-10.2,29.8c-7,6.7-18.7,11.4-28.6,11.4c-20.5,0-33.5-14.7-40.7-27
+                        C120.4,173.5,116.7,153.1,116.7,139.9z M237.8,368c0,27.4-25.2,44.5-65.8,44.5c-48.1,0-80.3-20.6-80.3-51.3
+                        c0-26.1,21.5-36.8,37.8-42.5c18.9-6.1,44.3-7.3,50.1-7.3c3.9,0,6.1,0,8.7,0.2C224.9,336.8,237.8,347.7,237.8,368z"></path>
+<polygon points="402,142 402,64 368,64 368,142 288,142 288,176 368,176 368,257 402,257 402,176 480,176 480,142 	"></polygon>
+</g>
+</symbol>
+<symbol id="icon-instagram" viewbox="0 0 29 28">
+<title>Instagram</title>
+<g>
+<path d="M14.192.061c-3.796 0-4.272.016-5.763.084C6.941.213 5.925.45 5.036.793a6.852 6.852 0 0 0-2.475 1.61 6.834 6.834 0 0 0-1.613 2.47c-.345.887-.582 1.9-.65 3.385-.068 1.488-.084 1.963-.084 5.75 0 3.788.016 4.263.085 5.751.067 1.485.304 2.498.65 3.386a6.835 6.835 0 0 0 1.612 2.47 6.852 6.852 0 0 0 2.475 1.609c.89.344 1.905.58 3.393.648 1.491.068 1.967.084 5.763.084 3.797 0 4.273-.016 5.763-.084 1.488-.068 2.504-.304 3.393-.648a6.852 6.852 0 0 0 2.476-1.609 6.836 6.836 0 0 0 1.612-2.47c.346-.888.582-1.901.65-3.386.068-1.488.084-1.963.084-5.75 0-3.788-.016-4.263-.084-5.75-.068-1.485-.304-2.5-.65-3.387a6.835 6.835 0 0 0-1.612-2.47A6.852 6.852 0 0 0 23.348.793C22.46.45 21.443.213 19.955.145 18.465.077 17.99.061 14.192.061m0 2.513c3.733 0 4.175.014 5.649.081 1.362.062 2.103.29 2.595.48a4.332 4.332 0 0 1 1.607 1.044c.49.488.792.953 1.046 1.604.191.491.419 1.23.481 2.59.067 1.47.082 1.911.082 5.635 0 3.725-.015 4.166-.082 5.636-.062 1.36-.29 2.099-.481 2.59a4.32 4.32 0 0 1-1.046 1.604c-.489.488-.954.79-1.607 1.043-.492.191-1.233.419-2.595.48-1.474.068-1.916.082-5.649.082-3.732 0-4.174-.014-5.648-.081-1.363-.062-2.103-.29-2.595-.48a4.331 4.331 0 0 1-1.608-1.044 4.322 4.322 0 0 1-1.045-1.604c-.192-.491-.42-1.23-.482-2.59-.067-1.47-.081-1.911-.081-5.636 0-3.724.014-4.165.081-5.635.063-1.36.29-2.099.482-2.59A4.321 4.321 0 0 1 4.34 4.179c.49-.488.955-.79 1.608-1.043.492-.191 1.232-.419 2.595-.48 1.474-.068 1.916-.082 5.648-.082"></path>
+<path d="M14.192 18.658a4.654 4.654 0 0 1-4.659-4.65 4.654 4.654 0 0 1 4.66-4.649 4.654 4.654 0 0 1 4.659 4.65 4.654 4.654 0 0 1-4.66 4.649m0-11.812c-3.964 0-7.177 3.207-7.177 7.163 0 3.955 3.213 7.162 7.177 7.162 3.965 0 7.178-3.207 7.178-7.162 0-3.956-3.213-7.163-7.178-7.163M23.331 6.563c0 .925-.75 1.674-1.677 1.674-.926 0-1.678-.75-1.678-1.674 0-.924.752-1.673 1.678-1.673.926 0 1.677.749 1.677 1.673"></path>
+</g>
+</symbol>
+<symbol id="icon-mailto" viewbox="0 0 512 512">
+<title>Mail To</title>
+<g>
+<path d="M67,148.7c11,5.8,163.8,89.1,169.5,92.1c5.7,3,11.5,4.4,20.5,4.4c9,0,14.8-1.4,20.5-4.4c5.7-3,158.5-86.3,169.5-92.1
+                            c4.1-2.1,11-5.9,12.5-10.2c2.6-7.6-0.2-10.5-11.3-10.5H257H65.8c-11.1,0-13.9,3-11.3,10.5C56,142.9,62.9,146.6,67,148.7z"></path>
+<path d="M455.7,153.2c-8.2,4.2-81.8,56.6-130.5,88.1l82.2,92.5c2,2,2.9,4.4,1.8,5.6c-1.2,1.1-3.8,0.5-5.9-1.4l-98.6-83.2
+                                c-14.9,9.6-25.4,16.2-27.2,17.2c-7.7,3.9-13.1,4.4-20.5,4.4c-7.4,0-12.8-0.5-20.5-4.4c-1.9-1-12.3-7.6-27.2-17.2l-98.6,83.2
+                                c-2,2-4.7,2.6-5.9,1.4c-1.2-1.1-0.3-3.6,1.7-5.6l82.1-92.5c-48.7-31.5-123.1-83.9-131.3-88.1c-8.8-4.5-9.3,0.8-9.3,4.9
+                                c0,4.1,0,205,0,205c0,9.3,13.7,20.9,23.5,20.9H257h185.5c9.8,0,21.5-11.7,21.5-20.9c0,0,0-201,0-205
+                                C464,153.9,464.6,148.7,455.7,153.2z"></path>
+</g>
+</symbol>
+<symbol id="icon-linkedin" viewbox="0 0 512 512">
+<title>LinkedIn</title>
+<path d="M417.2,64H96.8C79.3,64,64,76.6,64,93.9v321.1c0,17.4,15.3,32.9,32.8,32.9h320.3c17.6,0,30.8-15.6,30.8-32.9V93.9
+                                C448,76.6,434.7,64,417.2,64z M183,384h-55V213h55V384z M157.4,187H157c-17.6,0-29-13.1-29-29.5c0-16.7,11.7-29.5,29.7-29.5
+                                c18,0,29,12.7,29.4,29.5C187.1,173.9,175.7,187,157.4,187z M384,384h-55v-93.5c0-22.4-8-37.7-27.9-37.7
+                                c-15.2,0-24.2,10.3-28.2,20.3c-1.5,3.6-1.9,8.5-1.9,13.5V384h-55V213h55v23.8c8-11.4,20.5-27.8,49.6-27.8
+                                c36.1,0,63.4,23.8,63.4,75.1V384z"></path>
+</symbol>
+<symbol id="icon-pinterest" viewbox="0 0 512 512">
+<title>Pinterest</title>
+<g>
+<path d="M256,32C132.3,32,32,132.3,32,256c0,91.7,55.2,170.5,134.1,205.2c-0.6-15.6-0.1-34.4,3.9-51.4
+                                        c4.3-18.2,28.8-122.1,28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2,19.2-58,43.2-58c20.4,0,30.2,15.3,30.2,33.6
+                                        c0,20.5-13.1,51.1-19.8,79.5c-5.6,23.8,11.9,43.1,35.4,43.1c42.4,0,71-54.5,71-119.1c0-49.1-33.1-85.8-93.2-85.8
+                                        c-67.9,0-110.3,50.7-110.3,107.3c0,19.5,5.8,33.3,14.8,43.9c4.1,4.9,4.7,6.9,3.2,12.5c-1.1,4.1-3.5,14-4.6,18
+                                        c-1.5,5.7-6.1,7.7-11.2,5.6c-31.3-12.8-45.9-47-45.9-85.6c0-63.6,53.7-139.9,160.1-139.9c85.5,0,141.8,61.9,141.8,128.3
+                                        c0,87.9-48.9,153.5-120.9,153.5c-24.2,0-46.9-13.1-54.7-27.9c0,0-13,51.6-15.8,61.6c-4.7,17.3-14,34.5-22.5,48
+                                        c20.1,5.9,41.4,9.2,63.5,9.2c123.7,0,224-100.3,224-224C480,132.3,379.7,32,256,32z"></path>
+</g>
+</symbol>
+<symbol id="icon-quotation-mark" viewbox="0 0 48 43">
+<title>Quotation Mark</title>
+<path d="M20.271 1.382c-3.89 1.945-7.013 4.505-9.367 7.679-2.355 3.174-3.533 6.5-3.533 9.982 0 2.867 1.152 5.221 3.456 7.064 2.303 1.843 5.554 3.02 9.752 3.532 0 4.198-.87 7.474-2.611 9.829C16.228 41.823 13.873 43 10.904 43c-3.481 0-6.169-1.433-8.063-4.3C.947 35.833 0 31.79 0 26.568c0-5.324 1.203-10.29 3.609-14.897 2.406-4.607 5.605-7.985 9.598-10.135C14.947.512 16.483 0 17.814 0c1.229 0 2.048.46 2.457 1.382zm27.336 0c-3.89 1.945-7.013 4.505-9.368 7.679-2.354 3.174-3.532 6.5-3.532 9.982 0 2.867 1.152 5.221 3.456 7.064 2.303 1.843 5.554 3.02 9.751 3.532 0 4.198-.87 7.474-2.61 9.829C43.564 41.823 41.208 43 38.239 43c-3.48 0-6.168-1.433-8.062-4.3-1.894-2.867-2.841-6.91-2.841-12.132 0-5.324 1.203-10.29 3.609-14.897 2.406-4.607 5.605-7.985 9.598-10.135C42.283.512 43.819 0 45.15 0c1.229 0 2.048.46 2.457 1.382z" fill-rule="evenodd"></path>
+</symbol>
+<symbol id="arrow-right" viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+<path d="m9.153 0 7.37 7.37L18 8.848l-8.855 8.855-1.477-1.476 6.327-6.328H0V7.81h14.009L7.676 1.477 9.153 0z"></path>
+</symbol>
+<symbol id="icon-tumblr" viewbox="0 0 512 512">
+<title>Tumblr</title>
+<g>
+<path d="M321.2,396.3c-11.8,0-22.4-2.8-31.5-8.3c-6.9-4.1-11.5-9.6-14-16.4c-2.6-6.9-3.6-22.3-3.6-46.4V224h96v-64h-96V48h-61.9
+                                            c-2.7,21.5-7.5,44.7-14.5,58.6c-7,13.9-14,25.8-25.6,35.7c-11.6,9.9-25.6,17.9-41.9,23.3V224h48v140.4c0,19,2,33.5,5.9,43.5
+                                            c4,10,11.1,19.5,21.4,28.4c10.3,8.9,22.8,15.7,37.3,20.5c14.6,4.8,31.4,7.2,50.4,7.2c16.7,0,30.3-1.7,44.7-5.1
+                                            c14.4-3.4,30.5-9.3,48.2-17.6v-65.6C363.2,389.4,342.3,396.3,321.2,396.3z"></path>
+</g>
+</symbol>
+<symbol id="icon-twitter" viewbox="0 0 512 512">
+<title>Twitter</title>
+<g>
+<path d="M492,109.5c-17.4,7.7-36,12.9-55.6,15.3c20-12,35.4-31,42.6-53.6c-18.7,11.1-39.4,19.2-61.5,23.5
+                                                C399.8,75.8,374.6,64,346.8,64c-53.5,0-96.8,43.4-96.8,96.9c0,7.6,0.8,15,2.5,22.1c-80.5-4-151.9-42.6-199.6-101.3
+                                                c-8.3,14.3-13.1,31-13.1,48.7c0,33.6,17.2,63.3,43.2,80.7C67,210.7,52,206.3,39,199c0,0.4,0,0.8,0,1.2c0,47,33.4,86.1,77.7,95
+                                                c-8.1,2.2-16.7,3.4-25.5,3.4c-6.2,0-12.3-0.6-18.2-1.8c12.3,38.5,48.1,66.5,90.5,67.3c-33.1,26-74.9,41.5-120.3,41.5
+                                                c-7.8,0-15.5-0.5-23.1-1.4C62.8,432,113.7,448,168.3,448C346.6,448,444,300.3,444,172.2c0-4.2-0.1-8.4-0.3-12.5
+                                                C462.6,146,479,129,492,109.5z"></path>
+</g>
+</symbol>
+<symbol id="icon-youtube" viewbox="0 0 512 512">
+<title>Youtube</title>
+<g>
+<path d="M508.6,148.8c0-45-33.1-81.2-74-81.2C379.2,65,322.7,64,265,64c-3,0-6,0-9,0s-6,0-9,0c-57.6,0-114.2,1-169.6,3.6
+                                                    c-40.8,0-73.9,36.4-73.9,81.4C1,184.6-0.1,220.2,0,255.8C-0.1,291.4,1,327,3.4,362.7c0,45,33.1,81.5,73.9,81.5
+                                                    c58.2,2.7,117.9,3.9,178.6,3.8c60.8,0.2,120.3-1,178.6-3.8c40.9,0,74-36.5,74-81.5c2.4-35.7,3.5-71.3,3.4-107
+                                                    C512.1,220.1,511,184.5,508.6,148.8z M207,353.9V157.4l145,98.2L207,353.9z"></path>
+</g>
+</symbol>
+<symbol id="icon-rss" viewbox="0 -1 28 28">
+<title>RSS</title>
+<path d="M5.857 19.286c.667.666 1 1.476 1 2.428 0 .953-.333 1.762-1 2.429-.667.667-1.476 1-2.428 1-.953 0-1.762-.333-2.429-1-.667-.667-1-1.476-1-2.429 0-.952.333-1.762 1-2.428.667-.667 1.476-1 2.429-1 .952 0 1.761.333 2.428 1zM16 23.91a1.08 1.08 0 0 1-.304.857c-.214.25-.494.375-.839.375h-2.41c-.298 0-.554-.098-.768-.295a1.087 1.087 0 0 1-.358-.74c-.261-2.727-1.36-5.057-3.294-6.992-1.935-1.934-4.265-3.033-6.991-3.295a1.087 1.087 0 0 1-.741-.357A1.097 1.097 0 0 1 0 12.696v-2.41c0-.346.125-.625.375-.84a1.04 1.04 0 0 1 .768-.303h.09c1.904.155 3.725.634 5.463 1.437a15.79 15.79 0 0 1 4.625 3.241 15.79 15.79 0 0 1 3.242 4.625A16.012 16.012 0 0 1 16 23.911zm9.143.035c.024.322-.083.602-.322.84a1.056 1.056 0 0 1-.821.357h-2.554c-.31 0-.574-.104-.794-.313a1.068 1.068 0 0 1-.348-.759 19.963 19.963 0 0 0-1.804-7.294c-1.06-2.304-2.437-4.304-4.134-6-1.696-1.697-3.696-3.075-6-4.134A20.226 20.226 0 0 0 1.071 4.82a1.068 1.068 0 0 1-.758-.348A1.093 1.093 0 0 1 0 3.696V1.143C0 .81.119.536.357.32.571.107.833 0 1.143 0h.053c3.12.155 6.105.869 8.956 2.143a25.033 25.033 0 0 1 7.598 5.25A25.033 25.033 0 0 1 23 14.99a24.778 24.778 0 0 1 2.143 8.955z"></path>
+</symbol>
+<symbol id="icon-search" viewbox="0 0 20 20">
+<g fill="none" fill-rule="evenodd" transform="translate(1.667 1.667)">
+<circle cx="7.708" cy="7.708" r="5.208" stroke="currentColor" stroke-width="1.5" transform="rotate(-45 7.708 7.708)"></circle>
+<path d="M11.243 11.244c.325-.325.853-.325 1.178 0l2.357 2.357c.326.326.326.853 0 1.179-.325.325-.853.325-1.178 0l-2.357-2.357c-.326-.326-.326-.853 0-1.179z" fill="currentColor" fill-rule="nonzero"></path>
+</g>
+</symbol>
+<symbol id="icon-magnify" viewbox="0 0 512 512">
+<title>magnify</title>
+<g>
+<path d="M337.509,305.372h-17.501l-6.571-5.486c20.791-25.232,33.922-57.054,33.922-93.257
+                                                        C347.358,127.632,283.896,64,205.135,64C127.452,64,64,127.632,64,206.629s63.452,142.628,142.225,142.628
+                                                        c35.011,0,67.831-13.167,92.991-34.008l6.561,5.487v17.551L415.18,448L448,415.086L337.509,305.372z M206.225,305.372
+                                                        c-54.702,0-98.463-43.887-98.463-98.743c0-54.858,43.761-98.742,98.463-98.742c54.7,0,98.462,43.884,98.462,98.742
+                                                        C304.687,261.485,260.925,305.372,206.225,305.372z"></path>
+</g>
+</symbol>
+<symbol id="icon-greater-than" viewbox="0 0 202 342">
+<title>greater than</title>
+<g>
+<polygon points="135 171 0.002 312.077 31 342 202 171 31 0 1.078 29.924"></polygon>
+</g>
+</symbol>
+<symbol id="icon-quote" viewbox="0 0 35 31">
+<title>Quote</title>
+<g>
+<path d="M14.966.972c-2.736 1.368-4.932 3.168-6.588 5.4-1.656 2.232-2.484 4.572-2.484 7.02 0 2.016.81 3.672 2.43 4.968 1.62 1.296 3.906 2.124 6.858 2.484 0 2.952-.612 5.256-1.836 6.912-1.224 1.656-2.88 2.484-4.968 2.484-2.448 0-4.338-1.008-5.67-3.024C1.376 25.2.71 22.356.71 18.684c0-3.744.846-7.236 2.538-10.476C4.94 4.968 7.19 2.592 9.998 1.08 11.222.36 12.302 0 13.238 0c.864 0 1.44.324 1.728.972zm19.224 0c-2.736 1.368-4.932 3.168-6.588 5.4-1.656 2.232-2.484 4.572-2.484 7.02 0 2.016.81 3.672 2.43 4.968 1.62 1.296 3.906 2.124 6.858 2.484 0 2.952-.612 5.256-1.836 6.912-1.224 1.656-2.88 2.484-4.968 2.484-2.448 0-4.338-1.008-5.67-3.024-1.332-2.016-1.998-4.86-1.998-8.532 0-3.744.846-7.236 2.538-10.476 1.692-3.24 3.942-5.616 6.75-7.128C30.446.36 31.526 0 32.462 0c.864 0 1.44.324 1.728.972z" fill-rule="evenodd"></path>
+</g>
+</symbol>
+<symbol id="icon-close" viewbox="0 0 512 512">
+<title>Close</title>
+<g>
+<path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5
+                                                            c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9
+                                                            c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"></path>
+</g>
+</symbol>
+<symbol id="icon-menu" viewbox="0 0 512 512">
+<g>
+<rect height="32" width="320" x="96" y="241"></rect>
+<rect height="32" width="320" x="96" y="145"></rect>
+<rect height="32" width="320" x="96" y="337"></rect>
+</g>
+</symbol>
+<symbol id="icon-search" viewbox="0 0 512 512">
+<title>Search</title>
+<g>
+<path d="M337.509,305.372h-17.501l-6.571-5.486c20.791-25.232,33.922-57.054,33.922-93.257
+                                                                C347.358,127.632,283.896,64,205.135,64C127.452,64,64,127.632,64,206.629s63.452,142.628,142.225,142.628
+                                                                c35.011,0,67.831-13.167,92.991-34.008l6.561,5.487v17.551L415.18,448L448,415.086L337.509,305.372z M206.225,305.372
+                                                                c-54.702,0-98.463-43.887-98.463-98.743c0-54.858,43.761-98.742,98.463-98.742c54.7,0,98.462,43.884,98.462,98.742
+                                                                C304.687,261.485,260.925,305.372,206.225,305.372z"></path>
+</g>
+</symbol>
+<symbol id="icon-right-arrow" viewbox="0 0 7 12">
+<title>Right arrow</title>
+<g>
+<path d="M1.845 10.988a.618.618 0 0 1-.452.19.618.618 0 0 1-.452-.19.618.618 0 0 1-.191-.452v-9c0-.174.064-.325.19-.452a.618.618 0 0 1 .453-.191c.174 0 .325.063.452.19l4.5 4.5c.127.128.19.279.19.453a.618.618 0 0 1-.19.452l-4.5 4.5z"></path>
+</g>
+</symbol>
+<symbol id="icon-read-more" viewbox="0 0 2.7714503 4.2333335">
+<title>Icon for read more (cta)</title>
+<g transform="translate(-101.35066,-149.6589)">
+<g transform="matrix(0.41538087,0,0,0.41538087,58.721646,89.938904)">
+<path d="m 109.2984,148.86737 -5.09572,5.09573 -1.57635,-1.57635 3.63749,-3.59025 -3.54299,-3.59024 1.48185,-1.43461 z"></path>
+</g>
+</g>
+</symbol>
+<symbol id="icon-download" viewbox="0 0 24 24">
+<title>Download Icon</title>
+<g fill-rule="evenodd">
+<path d="M23 16.718a1 1 0 0 0-1 1v1.913C22 20.675 21.119 22 20.13 22H3.869C2.88 22 2 20.675 2 19.63v-1.912a1 1 0 0 0-2 0v1.913C0 21.694 1.654 24 3.869 24H20.13c2.215 0 3.87-2.306 3.87-4.37v-1.912a1 1 0 0 0-1-1"></path>
+<path d="M11.292 18.315a1 1 0 0 0 1.415 0l7-6.999a.999.999 0 1 0-1.414-1.414L13 15.195V1a1 1 0 0 0-2 0v14.195L5.707 9.902a.999.999 0 1 0-1.414 1.414l6.999 7z"></path>
+</g>
+</symbol>
+<symbol id="icon-whatsapp" viewbox="0 0 90 90">
+<title>Whatsapp Icon</title>
+<g>
+<path d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522
+                                                                    c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982
+                                                                    c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537
+                                                                    c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938
+                                                                    c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537
+                                                                    c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333
+                                                                    c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882
+                                                                    c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977
+                                                                    c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344
+                                                                    c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223
+                                                                    C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"></path>
+</g>
+</symbol>
+<symbol id="icon-arrow-round-light" viewbox="0 0 26 26">
+<g fill="none" fill-rule="evenodd" id="🂡-Card" stroke="none" stroke-width="1">
+<g id="Mobile/Card/News-letter-sign-up/Small_Full-Bleed_Light-Gray" transform="translate(-485.000000, -167.000000)">
+<g id="Group-2" transform="translate(64.000000, 45.000000)">
+<g id="Field" transform="translate(0.000000, 118.000000)">
+<g id="Group" transform="translate(422.000000, 5.000000)">
+<circle cx="12" cy="12" id="Oval" r="12" stroke="#707379" stroke-width="1"></circle>
+<g id="Arrow" stroke="currentColor" transform="translate(8.000000, 8.000000)">
+<polyline id="Path-2" points="2.14305392 1.18181818 2.14305392 6.63636364 7.59759938 6.63636364" transform="translate(4.870327, 3.909091) rotate(-135.000000) translate(-4.870327, -3.909091) "></polyline>
+<line id="Path-4" x1="8.72727273" x2="0" y1="3.90909091" y2="3.90909091"></line>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</symbol>
+<symbol id="icon-close-light" viewbox="0 0 512 512">
+<path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 464c-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216zm94.8-285.3L281.5 256l69.3 69.3c4.7 4.7 4.7 12.3 0 17l-8.5 8.5c-4.7 4.7-12.3 4.7-17 0L256 281.5l-69.3 69.3c-4.7 4.7-12.3 4.7-17 0l-8.5-8.5c-4.7-4.7-4.7-12.3 0-17l69.3-69.3-69.3-69.3c-4.7-4.7-4.7-12.3 0-17l8.5-8.5c4.7-4.7 12.3-4.7 17 0l69.3 69.3 69.3-69.3c4.7-4.7 12.3-4.7 17 0l8.5 8.5c4.6 4.7 4.6 12.3 0 17z" fill="currentColor"></path>
+</symbol>
+<symbol id="icon-filter" viewbox="0 0 17 9">
+<g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+<g fill="#13181E" transform="translate(-965.000000, -203.000000)">
+<g transform="translate(0.000000, 184.000000)">
+<g transform="translate(973.500000, 23.500000) rotate(-180.000000) translate(-973.500000, -23.500000) translate(965.000000, 19.000000)">
+<path d="M14,8 L14,9 L0,9 L0,8 L14,8 Z M16.5,8 C16.7761424,8 17,8.22385763 17,8.5 C17,8.77614237 16.7761424,9 16.5,9 C16.2238576,9 16,8.77614237 16,8.5 C16,8.22385763 16.2238576,8 16.5,8 Z M14,4 L14,5 L0,5 L0,4 L14,4 Z M16.5,4 C16.7761424,4 17,4.22385763 17,4.5 C17,4.77614237 16.7761424,5 16.5,5 C16.2238576,5 16,4.77614237 16,4.5 C16,4.22385763 16.2238576,4 16.5,4 Z M14,0 L14,1 L0,1 L0,0 L14,0 Z M16.5,0 C16.7761424,0 17,0.223857625 17,0.5 C17,0.776142375 16.7761424,1 16.5,1 C16.2238576,1 16,0.776142375 16,0.5 C16,0.223857625 16.2238576,0 16.5,0 Z"></path>
+</g>
+</g>
+</g>
+</g>
+</symbol>
+<symbol id="icon-close-over-dark" viewbox="0 0 30 30">
+<g fill="none" fill-rule="evenodd">
+<circle cx="15" cy="15" fill="#DBDDE1" r="15"></circle>
+<g fill="#0F1218">
+<path d="M6.136 0L7.5 0 7.5 12.955 6.136 12.955z" transform="rotate(45 .55 20.785)"></path>
+<path d="M6.136 0L7.5 0 7.5 12.955 6.136 12.955z" transform="rotate(45 .55 20.785) rotate(90 6.818 6.477)"></path>
+</g>
+</g>
+</symbol>
+<symbol id="icon-caret-down" viewbox="0 0 256 512">
+<path d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z"></path>
+</symbol>
+<symbol id=".4363539701698864" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<circle cx="20" cy="20" id="aa" r="20"></circle>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<mask fill="#fff" id="ab">
+<use xlink:href="#aa"></use>
+</mask>
+<use fill="#FFF" transform="rotate(-180 20 20)" xlink:href="#aa"></use>
+<g fill="#F90" mask="url(#ab)">
+<path d="M0 0h40v40H0z"></path>
+</g>
+<g mask="url(#ab)" stroke="#232F3E" stroke-width="1.5">
+<path d="M16.416 21.727l3.858 3.857 3.857-3.857M20.295 25.341L20.705 15"></path>
+</g>
+</g>
+</symbol>
+<symbol id=".8156906941245043" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path class="aactive-path" d="M256 0C114.844 0 0 114.844 0 256s114.844 256 256 256 256-114.844 256-256S397.156 0 256 0zm146.207 182.625L217.75 367.083a21.263 21.263 0 0 1-15.083 6.25 21.261 21.261 0 0 1-15.083-6.25L88.46 267.958c-4.167-4.165-4.167-10.919 0-15.085l15.081-15.082c4.167-4.165 10.919-4.165 15.086 0l84.04 84.042L372.04 152.458c4.167-4.165 10.919-4.165 15.086 0l15.081 15.082c4.167 4.166 4.167 10.92 0 15.085z" data-old_color="#000000" data-original="#000000" fill="#232f3e"></path>
+</symbol>
+<symbol class="ahovered-paths" id=".5179882192454841" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<path d="M270.045 333.685L399.02 462.66 512 512l-45.945-107.889-132.37-134.066-63.64 63.64z" data-old_color="#BABAC0" data-original="#BABAC0" fill="#f90"></path>
+<path d="M301.865 301.865l31.82-31.82 132.37 134.066L512 512z" data-old_color="#E7E7E7" data-original="#E7E7E7" fill="#f90"></path>
+<path d="M85.277 191.344l121.128 121.128 106.066-106.066L191.344 85.277 85.277 191.344z" data-old_color="#E10000" data-original="#E10000" fill="#f90"></path>
+<path class="ahovered-path aactive-path" d="M191.346 85.28L312.47 206.403l-53.031 53.032L138.314 138.31z" data-old_color="#F40000" data-original="#F40000" fill="#f90"></path>
+<path class="ahovered-path aactive-path" d="M280.652 195.799l-84.853 84.853c-40.941 40.941-40.941 107.551 0 148.492l10.607 10.607 233.133-233.133-10.394-10.819c-39.033-39.881-109.673-39.67-148.493 0zM0 191.344l10.607 10.607c14.214 14.214 33.305 21.874 53.247 21.874 17.818 0 34.789-5.964 48.365-17.42l47.305-46.88 46.882-46.882v-.425c11.455-13.575 17.418-30.546 17.42-48.365-.001-20.365-7.661-39.032-21.875-53.245L191.344 0 0 191.344z" data-old_color="#F40000" data-original="#F40000" fill="#f90"></path>
+<g>
+<path d="M206.405 112.642l-46.882 46.882-63.851-63.852L191.344 0l10.607 10.607c14.214 14.214 21.874 32.88 21.875 53.245-.001 17.82-5.965 34.79-17.42 48.365l-.001.425zM429.144 195.799l10.394 10.819-116.46 116.46-84.853-84.853 42.426-42.426c38.821-39.67 109.461-39.881 148.493 0z" data-old_color="#FF3636" data-original="#FF3636" fill="#f90"></path>
+</g>
+</symbol>
+</svg>
+
+<header class="PressReleasePage-header">
+<div class="PressReleasePage-header-bottom">
+<ps-header class="Page-header">
+<div class="Page-header-wrapper">
+<div class="Page-header-hamburger-menu">
+<div class="Page-header-hamburger-menu-wrapper">
+<div class="Page-header-hamburger-menu-content">
+<nav class="Navigation">
+<ul class="Navigation-items">
+<li class="Navigation-items-item"><div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-a253-dbf1-abf4-aa5f8ca30000" data-cms-ai="0" href="https://www.aboutamazon.com/about-us">Who We Are</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="1">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-a253-dbf1-abf4-aa5f8ca30000" data-cms-ai="0" href="https://www.aboutamazon.com/about-us">Who We Are</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/about-us/leadership-principles">Amazon Leadership Principles</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/about-us/our-positions">Our Positions</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/about-us/awards-recognition">Awards and Recognition</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/facts">Facts About Amazon</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-b05d-d97b-ab76-be7f403d0000" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do">What We Do</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="1">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-b05d-d97b-ab76-be7f403d0000" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do">What We Do</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/amazon-store">Amazon Store</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/delivery-logistics">Delivery and Logistics</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/devices-services">Devices and Services</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/amazon-web-services">Amazon Web Services</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/entertainment">Entertainment</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-aff2-d61f-a1fc-fffe21da0000" data-cms-ai="0" href="https://www.aboutamazon.com/workplace">Our Workplace</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="2">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-aff2-d61f-a1fc-fffe21da0000" data-cms-ai="0" href="https://www.aboutamazon.com/workplace">Our Workplace</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/our-employees">Our Employees</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/employee-benefits">Employee Benefits</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/diversity-inclusion">Diversity, Equity, and Inclusion</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/upskilling-commitments">Upskilling and Training</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://safety.aboutamazon.com/" target="_blank">Safety at Amazon</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/facilities">Facilities</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/corporate-offices">Corporate Offices</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/tours">Amazon fulfillment center T ours</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-c66a-d559-ab77-c67ac6830025" data-cms-ai="0" href="https://www.aboutamazon.com/impact">Our Impact</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="3">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-c66a-d559-ab77-c67ac6830025" data-cms-ai="0" href="https://www.aboutamazon.com/impact">Our Impact</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle">Economic Impact</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/economy/growth">Economic Growth</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/economy/job-creation">Job Creation</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/economy/community-investments">Community Investments</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle">Empowerment</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/small-businesses">Small Businesses</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/training-for-the-public">Public Skills Training Programs</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/authors">Authors</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/aws-customers">AWS Customers</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/delivery-partners">Delivery Partners</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle">Community Impact</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/community/stem-education">STEM Education</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/community/housing-equity">Housing Equity</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/helpforhunger">Help for Hunger</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/community/disaster-relief">Disaster Relief and Response</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href=""></a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem" data-with-divider="">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-b031-d61f-a1fc-f3bd9c1d0000" data-cms-ai="0" href="https://www.aboutamazon.com/planet">Our Planet</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="1">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-b031-d61f-a1fc-f3bd9c1d0000" data-cms-ai="0" href="https://www.aboutamazon.com/planet">Our Planet</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/planet/climate-pledge">The Climate Pledge</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/planet/sustainable-operations">Sustainable Operations</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/planet/improving-packaging">Improving Packaging</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/planet/supply-chain">Our Supply Chain</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://sustainability.aboutamazon.com/" target="_blank">Sustainability Website</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem" data-social-item="">
+<div class="NavigationItem-text NavigationItem-more">
+<div class="NavigationItem-wrapper">Follow Us</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="5">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text"><span>Follow Us</span></div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Twitter"><svg><use xlink:href="#icon-twitter"></use></svg>Twitter</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://twitter.com/amazonnews" target="_blank">@AmazonNews</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://twitter.com/amazon" target="_blank">@Amazon</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://twitter.com/amazon_policy" target="_blank">@Amazon_Policy</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Linkedin"><svg><use xlink:href="#icon-linkedin"></use></svg>Linkedin</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.linkedin.com/company/amazon" target="_blank">Amazon</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Instagram"><svg><use xlink:href="#icon-instagram"></use></svg>Instagram</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.instagram.com/amazon/" target="_blank">Amazon</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.instagram.com/amazonvestlife/" target="_blank">Amazon Vest Life</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Facebook"><svg><use xlink:href="#icon-facebook"></use></svg>Facebook</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.facebook.com/Amazon/" target="_blank">Amazon</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="YouTube"><svg><use xlink:href="#icon-youtube"></use></svg>YouTube</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.youtube.com/amazonnews" target="_blank">Amazon News</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Blogs and news sites"><svg><use xlink:href="#icon-blogs and news sites"></use></svg>Blogs and news sites</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.amazon.science/" target="_blank">Amazon Science</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://aws.amazon.com/blogs/aws/" target="_blank">AWS News Blog</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://advertising.amazon.com/blog" target="_blank">Amazon Ads</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+</ul>
+</nav>
+<div class="Page-header-signupLink">
+<a class="Link signupLink" data-cms-ai="0" href="https://press.aboutamazon.com/press-center-signup">
+<svg class="icon icon-mailto">
+<use xlink:href="#icon-mailto"></use>
+</svg>
+<span>Subscribe</span></a>
+</div>
+<div class="NavigationItem LanguageHamburgerMenu" data-social-item="">
+<div class="NavigationItem-text NavigationItem-more LanguageHamburgerMenu-text">
+<button class="NavigationItem-icon NavigationItem-more LanguageHamburgerMenu-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</button>
+<div class="LanguagesMenu-toggle">
+<div class="LanguagesMenu-icon" data-flag="en"></div>
+<span>en</span>
+</div>
+</div>
+<ul class="NavigationItem-items LanguageHamburgerMenu-items">
+<li class="NavigationItem-items-item LanguageHamburgerMenu-items-item">
+<div class="NavigationSubnav LanguageHamburgerMenu-Subnav" data-columns="5">
+<div class="NavigationSubnav-bg LanguageHamburgerMenu-Subnav-bg"></div>
+<div class="NavigationSubnav-wrapper LanguageHamburgerMenu-Subnav-wrapper">
+<div class="NavigationSubnav-content LanguageHamburgerMenu-Subnav-content">
+<div class="NavigationSubnav-title LanguageHamburgerMenu-Subnav-title">
+<div class="NavigationSubnav-icon LanguageHamburgerMenu-Subnav-close">
+<svg class="Icon-close">
+<use xlink:href="#icon-close"></use>
+</svg>
+</div>
+<div class="NavigationSubnav-text LanguageHamburgerMenu-Subnav-text"><span>International sites</span></div>
+</div>
+<ul class="NavigationSubnav-items LanguageHamburgerMenu-Subnav-items">
+<li class="NavigationSubnav-items-item NavigationSubnav-social LanguageHamburgerMenu-Subnav-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenu-SubnavItem">
+<div class="NavigationSubnavItem-subtitle region LanguageHamburgerMenu-SubnavItem-subtitle">Asia Pacific</div>
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenu-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="au" href="https://www.aboutamazon.com.au/" target="_blank"><span>Australia</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.com.au/" target="_blank"><span>About Amazon (English)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="in" href="https://www.aboutamazon.in/" target="_blank"><span>India</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.in/" target="_blank"><span>About Amazon (English)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="jp" href="https://www.aboutamazon.jp/" target="_blank"><span>Japan</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.jp/" target="_blank"><span>About Amazon (日本語)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="sg" href="https://www.aboutamazon.sg/" target="_blank"><span>Singapore</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.sg/" target="_blank"><span>About Amazon (English)</span></a>
+</li>
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/sg" target="_blank"><span>Press Centre (English)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social LanguageHamburgerMenu-Subnav-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenu-SubnavItem">
+<div class="NavigationSubnavItem-subtitle region LanguageHamburgerMenu-SubnavItem-subtitle">Europe</div>
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenu-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="eu" href="https://www.aboutamazon.eu/" target="_blank"><span>European Union</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.eu/" target="_blank"><span>About Amazon (English)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="fr" href="http://www.aboutamazon.fr/" target="_blank"><span>France</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="http://www.aboutamazon.fr/" target="_blank"><span>About Amazon (Français)</span></a>
+</li>
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/fr/press-release-archive" target="_blank"><span>Press Center (Français)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="de" href="https://www.aboutamazon.de/" target="_blank"><span>Germany</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.de/" target="_blank"><span>About Amazon (Deutsch)</span></a>
+</li>
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/de/archiv-pressemitteilungen" target="_blank"><span>Newsroom (Deutsch)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="it" href="https://www.aboutamazon.it/" target="_blank"><span>Italy</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.it/" target="_blank"><span>About Amazon (Italiano)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="pl" href="https://aboutamazon.pl" target="_blank"><span>Poland</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://aboutamazon.pl" target="_blank"><span>About Amazon (Polski)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="es" href="https://www.aboutamazon.es/" target="_blank"><span>Spain</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.es/" target="_blank"><span>About Amazon (Español)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="uk" href="http://www.aboutamazon.co.uk/" target="_blank"><span>United Kingdom</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="http://www.aboutamazon.co.uk/" target="_blank"><span>About Amazon (English)</span></a>
+</li>
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/uk/" target="_blank"><span>Press Center (English)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social LanguageHamburgerMenu-Subnav-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenu-SubnavItem">
+<div class="NavigationSubnavItem-subtitle region LanguageHamburgerMenu-SubnavItem-subtitle">Americas</div>
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenu-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="us" href="https://www.aboutamazon.com/" target=""><span>United States</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.com/"><span>About Amazon (English)</span></a>
+</li>
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/press-release-archive" target="_blank"><span>Press Center (English)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="mx" href="https://www.aboutamazon.mx/" target="_blank"><span>México</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.mx/" target="_blank"><span>About Amazon (Español)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="ca" href="http://www.aboutamazon.ca/" target="_blank"><span>Canada</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="http://www.aboutamazon.ca/" target="_blank"><span>About Amazon (English)</span></a>
+</li>
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="http://www.aboutamazon.ca/fr" target="_blank"><span>About Amazon (Français)</span></a>
+</li>
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/canada-press-center" target="_blank"><span>Press Center (English)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="NavigationSubnavItem-items-item LanguageHamburgerMenu-SubnavItem-items-item">
+<div class="NavigationSubnavItem LanguageHamburgerMenuInner-SubnavItem">
+<a class="LanguagesMenuItem-link LanguageHamburgerMenuInner-SubnavItem-link" data-cms-ai="0" data-flag="br" href="https://www.aboutamazon.com.br/" target="_blank"><span>Brazil</span></a>
+<div class="LanguageHamburgerMenuInner-SubnavItem-wrapper">
+<ul class="NavigationSubnavItem-items LanguageHamburgerMenuInner-SubnavItem-items">
+<li class="NavigationSubnavItem-items-item locales LanguageHamburgerMenuInner-SubnavItem-items-item">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.com.br/" target="_blank"><span>About Amazon (Português)</span></a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="Page-header-disclaimer"><span class="Enhancement-inline"><span class="Enhancement-item"><a class="Link" data-cms-ai="0" href="http://amazon.com/" target="_blank"><span>Amazon.com</span></a></span></span> | <span class="Enhancement-inline"><span class="Enhancement-item"><a class="Link" data-cms-ai="0" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088" target="_blank"><span>Conditions of Use</span></a></span></span> | © 1996-2024 Amazon.com, Inc. or its affiliates</div>
+</div>
+</div>
+</div>
+<div class="Page-header-bar">
+<button aria-expanded="false" class="Page-header-menu-trigger" tabindex="1"><svg class="burger-menu">
+<use xlink:href="#burger-menu"></use>
+</svg><svg class="close-x">
+<use xlink:href="#close-x"></use>
+</svg><span class="label">Menu</span></button>
+<div class="Page-header-bar-logo">
+<span data-logo=""><a data-amzn-id="00000174-99e3-da67-a3ff-f9fbe96e0000" data-cms-ai="0" href="https://www.aboutamazon.com/">
+<img alt="" class="PageLogo-image" src="https://amazon-blogs-brightspot-lower.s3.amazonaws.com/about/00/92/0260aab44ee8a2faeafde18ee1da/amazon-logo-inverse.svg" width="117"/>
+</a>
+</span>
+<span data-inverse-logo=""><a data-amzn-id="00000174-99e3-da67-a3ff-f9fbe96e0000" data-cms-ai="0" href="https://www.aboutamazon.com/">
+<img alt="" class="PageLogo-image" src="https://amazon-blogs-brightspot-lower.s3.amazonaws.com/about/a9/af/27a4ef844ac38129d0fa460675fb/amazon-logo.svg" width="117"/>
+</a>
+</span>
+</div>
+<div class="Page-header-end">
+<div class="Page-header-search-large">
+<form action="https://press.aboutamazon.com/search" autocomplete="off" class="Page-header-search-form" novalidate="">
+<span class="Page-header-search-submit"><svg>
+<use xlink:href="#icon-search"></use>
+</svg><span class="sr-only">Submit Search</span></span>
+<label><input class="Page-header-search-input" name="q" placeholder="Search" required="true" type="text"/><span class="sr-only">Search Query</span></label>
+</form>
+<button class="Page-header-search-close"><span>Close</span>
+<span class="Page-header-search-close-border">
+<svg>
+<use xlink:href="#icon-close"></use>
+</svg>
+</span>
+</button>
+</div>
+<div class="Page-header-search-small">
+<span class="Page-header-search-button"><svg class="icon-search">
+<use xlink:href="#icon-search"></use>
+</svg><span class="sr-only">Show Search</span></span>
+</div>
+<div class="Page-header-navinfo">
+<div class="Page-header-main-navigation" data-main-navigation="">
+<nav class="Navigation">
+<ul class="Navigation-items">
+<li class="Navigation-items-item"><div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-a253-dbf1-abf4-aa5f8ca30000" data-cms-ai="0" href="https://www.aboutamazon.com/about-us">Who We Are</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="1">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-a253-dbf1-abf4-aa5f8ca30000" data-cms-ai="0" href="https://www.aboutamazon.com/about-us">Who We Are</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/about-us/leadership-principles">Amazon Leadership Principles</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/about-us/our-positions">Our Positions</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/about-us/awards-recognition">Awards and Recognition</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/facts">Facts About Amazon</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-b05d-d97b-ab76-be7f403d0000" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do">What We Do</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="1">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-b05d-d97b-ab76-be7f403d0000" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do">What We Do</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/amazon-store">Amazon Store</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/delivery-logistics">Delivery and Logistics</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/devices-services">Devices and Services</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/amazon-web-services">Amazon Web Services</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/what-we-do/entertainment">Entertainment</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-aff2-d61f-a1fc-fffe21da0000" data-cms-ai="0" href="https://www.aboutamazon.com/workplace">Our Workplace</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="2">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-aff2-d61f-a1fc-fffe21da0000" data-cms-ai="0" href="https://www.aboutamazon.com/workplace">Our Workplace</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/our-employees">Our Employees</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/employee-benefits">Employee Benefits</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/diversity-inclusion">Diversity, Equity, and Inclusion</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/upskilling-commitments">Upskilling and Training</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://safety.aboutamazon.com/" target="_blank">Safety at Amazon</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/facilities">Facilities</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/corporate-offices">Corporate Offices</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/workplace/tours">Amazon fulfillment center T ours</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-c66a-d559-ab77-c67ac6830025" data-cms-ai="0" href="https://www.aboutamazon.com/impact">Our Impact</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="3">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-c66a-d559-ab77-c67ac6830025" data-cms-ai="0" href="https://www.aboutamazon.com/impact">Our Impact</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle">Economic Impact</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/economy/growth">Economic Growth</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/economy/job-creation">Job Creation</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/economy/community-investments">Community Investments</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle">Empowerment</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/small-businesses">Small Businesses</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/training-for-the-public">Public Skills Training Programs</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/authors">Authors</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/aws-customers">AWS Customers</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/empowerment/delivery-partners">Delivery Partners</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle">Community Impact</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/community/stem-education">STEM Education</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/community/housing-equity">Housing Equity</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/helpforhunger">Help for Hunger</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/impact/community/disaster-relief">Disaster Relief and Response</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href=""></a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem" data-with-divider="">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000174-b031-d61f-a1fc-f3bd9c1d0000" data-cms-ai="0" href="https://www.aboutamazon.com/planet">Our Planet</a>
+</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="1">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text">
+<a data-amzn-id="00000174-b031-d61f-a1fc-f3bd9c1d0000" data-cms-ai="0" href="https://www.aboutamazon.com/planet">Our Planet</a>
+</div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item">
+<div class="NavigationSubnavItem">
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/planet/climate-pledge">The Climate Pledge</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/planet/sustainable-operations">Sustainable Operations</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/planet/improving-packaging">Improving Packaging</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://www.aboutamazon.com/planet/supply-chain">Our Supply Chain</a>
+</li>
+<li class="NavigationSubnavItem-items-item">
+<a class="NavigationLink" data-cms-ai="0" href="https://sustainability.aboutamazon.com/" target="_blank">Sustainability Website</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+<li class="Navigation-items-item"><div class="NavigationItem" data-social-item="">
+<div class="NavigationItem-text NavigationItem-more">
+<div class="NavigationItem-wrapper">Follow Us</div>
+<button class="NavigationItem-icon NavigationItem-more">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+<span class="sr-only">Open Item</span>
+</button>
+</div>
+<ul class="NavigationItem-items">
+<li class="NavigationItem-items-item">
+<div class="NavigationSubnav" data-columns="5">
+<div class="NavigationSubnav-bg"></div>
+<div class="NavigationSubnav-wrapper">
+<div class="NavigationSubnav-content">
+<div class="NavigationSubnav-title">
+<div class="NavigationSubnav-icon">
+<svg><use xlink:href="#icon-greater-than"></use></svg>
+</div>
+<div class="NavigationSubnav-text"><span>Follow Us</span></div>
+</div>
+<ul class="NavigationSubnav-items">
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Twitter"><svg><use xlink:href="#icon-twitter"></use></svg>Twitter</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://twitter.com/amazonnews" target="_blank">@AmazonNews</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://twitter.com/amazon" target="_blank">@Amazon</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://twitter.com/amazon_policy" target="_blank">@Amazon_Policy</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Linkedin"><svg><use xlink:href="#icon-linkedin"></use></svg>Linkedin</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.linkedin.com/company/amazon" target="_blank">Amazon</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Instagram"><svg><use xlink:href="#icon-instagram"></use></svg>Instagram</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.instagram.com/amazon/" target="_blank">Amazon</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.instagram.com/amazonvestlife/" target="_blank">Amazon Vest Life</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Facebook"><svg><use xlink:href="#icon-facebook"></use></svg>Facebook</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.facebook.com/Amazon/" target="_blank">Amazon</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="YouTube"><svg><use xlink:href="#icon-youtube"></use></svg>YouTube</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.youtube.com/amazonnews" target="_blank">Amazon News</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="NavigationSubnav-items-item NavigationSubnav-social">
+<div class="NavigationSubnavItem">
+<div class="NavigationSubnavItem-subtitle" data-social-service="Blogs and news sites"><svg><use xlink:href="#icon-blogs and news sites"></use></svg>Blogs and news sites</div>
+<ul class="NavigationSubnavItem-items">
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.amazon.science/" target="_blank">Amazon Science</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://aws.amazon.com/blogs/aws/" target="_blank">AWS News Blog</a>
+</li>
+<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://advertising.amazon.com/blog" target="_blank">Amazon Ads</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div></li>
+</ul>
+</nav>
+</div>
+<div class="Page-header-signupLink">
+<a class="Link signupLink" data-cms-ai="0" href="https://press.aboutamazon.com/press-center-signup">
+<svg class="icon icon-mailto">
+<use xlink:href="#icon-mailto"></use>
+</svg>
+<span>Subscribe</span></a>
+</div>
+<div class="Page-languages">
+<div class="LanguagesMenu">
+<div class="LanguagesMenu-toggle">
+<div class="LanguagesMenu-icon" data-flag="en"></div>
+<span>en</span>
+<button class="LanguagesMenu-more"><svg><use xlink:href="#icon-greater-than"></use></svg><span class="sr-only">Open Item</span></button>
+</div>
+<div class="LanguagesMenu-dropdown">
+<div class="LanguagesMenu-dropdown-bg"></div>
+<div class="LanguagesMenu-dropdown-content">
+<div class="LanguagesMenu-dropdown-title">International sites</div>
+<div class="LanguagesMenu-dropdown-close">
+<svg>
+<use xlink:href="#icon-close"></use>
+</svg>
+</div>
+<div class="LanguagesMenu-dropdown-items">
+<div class="LanguagesMenu-dropdown-items-item">
+<div class="LanguageMenuList">
+<div class="LanguageMenuList-title"><span>Asia Pacific</span></div>
+<div class="LanguageMenuList-items" data-columns="4">
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="au" href="https://www.aboutamazon.com.au/" target="_blank"><span>Australia</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.com.au/" target="_blank"><span>About Amazon (English)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="in" href="https://www.aboutamazon.in/" target="_blank"><span>India</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.in/" target="_blank"><span>About Amazon (English)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="jp" href="https://www.aboutamazon.jp/" target="_blank"><span>Japan</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.jp/" target="_blank"><span>About Amazon (日本語)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="sg" href="https://www.aboutamazon.sg/" target="_blank"><span>Singapore</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.sg/" target="_blank"><span>About Amazon (English)</span></a>
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/sg" target="_blank"><span>Press Centre (English)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="LanguagesMenu-dropdown-items-item">
+<div class="LanguageMenuList">
+<div class="LanguageMenuList-title"><span>Europe</span></div>
+<div class="LanguageMenuList-items" data-columns="4">
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="eu" href="https://www.aboutamazon.eu/" target="_blank"><span>European Union</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.eu/" target="_blank"><span>About Amazon (English)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="fr" href="http://www.aboutamazon.fr/" target="_blank"><span>France</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="http://www.aboutamazon.fr/" target="_blank"><span>About Amazon (Français)</span></a>
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/fr/press-release-archive" target="_blank"><span>Press Center (Français)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="de" href="https://www.aboutamazon.de/" target="_blank"><span>Germany</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.de/" target="_blank"><span>About Amazon (Deutsch)</span></a>
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/de/archiv-pressemitteilungen" target="_blank"><span>Newsroom (Deutsch)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="it" href="https://www.aboutamazon.it/" target="_blank"><span>Italy</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.it/" target="_blank"><span>About Amazon (Italiano)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="pl" href="https://aboutamazon.pl" target="_blank"><span>Poland</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://aboutamazon.pl" target="_blank"><span>About Amazon (Polski)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="es" href="https://www.aboutamazon.es/" target="_blank"><span>Spain</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.es/" target="_blank"><span>About Amazon (Español)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="uk" href="http://www.aboutamazon.co.uk/" target="_blank"><span>United Kingdom</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="http://www.aboutamazon.co.uk/" target="_blank"><span>About Amazon (English)</span></a>
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/uk/" target="_blank"><span>Press Center (English)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="LanguagesMenu-dropdown-items-item">
+<div class="LanguageMenuList">
+<div class="LanguageMenuList-title"><span>Americas</span></div>
+<div class="LanguageMenuList-items" data-columns="4">
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="us" href="https://www.aboutamazon.com/" target=""><span>United States</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.com/"><span>About Amazon (English)</span></a>
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/press-release-archive" target="_blank"><span>Press Center (English)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="mx" href="https://www.aboutamazon.mx/" target="_blank"><span>México</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.mx/" target="_blank"><span>About Amazon (Español)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="ca" href="http://www.aboutamazon.ca/" target="_blank"><span>Canada</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="http://www.aboutamazon.ca/" target="_blank"><span>About Amazon (English)</span></a>
+<a class="Link" data-cms-ai="0" href="http://www.aboutamazon.ca/fr" target="_blank"><span>About Amazon (Français)</span></a>
+<a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/canada-press-center" target="_blank"><span>Press Center (English)</span></a>
+</div>
+</div>
+<div class="LanguageMenuList-items-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="br" href="https://www.aboutamazon.com.br/" target="_blank"><span>Brazil</span></a>
+<div class="LanguagesMenuItem-languages">
+<a class="Link" data-cms-ai="0" href="https://www.aboutamazon.com.br/" target="_blank"><span>About Amazon (Português)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="Page-header-sub-navigation">
+<bsp-toggler class="PageSubNavigation" data-toggle="page-subnav" data-toggle-in="page-subnav">
+<div class="PageSubNavigation-topper" data-toggle-trigger="page-subnav-dropdown">
+<div class="PageSubNavigation-label">Press Center</div>
+<svg class="PageSubNavigation-icon">
+<use xlink:href="#icon-caret-down"></use>
+</svg>
+</div>
+<bsp-toggler class="PageSubNavigation-dropdown">
+<ul class="PageSubNavigation-items">
+<li class="PageSubNavigation-items-item">
+<div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000183-e7ba-d49c-a7eb-f7bebd140000" data-cms-ai="0" href="https://press.aboutamazon.com/press-release-archive">Press Release Archive</a>
+</div>
+</div>
+</div>
+</li>
+<li class="PageSubNavigation-items-item">
+<div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000183-eb05-dd2a-abe3-ff8f88aa0000" data-cms-ai="0" href="https://press.aboutamazon.com/images-and-videos">Images &amp; Videos</a>
+</div>
+</div>
+</div>
+</li>
+<li class="PageSubNavigation-items-item">
+<div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-cms-ai="0" href="http://ir.aboutamazon.com/overview/default.aspx" target="_blank">Investor Relations</a>
+</div>
+</div>
+</div>
+</li>
+<li class="PageSubNavigation-items-item">
+<div class="NavigationItem">
+<div class="NavigationItem-text">
+<div class="NavigationItem-wrapper">
+<a class="NavigationItem-text-link" data-amzn-id="00000183-ed84-d9a8-a383-fd8635240001" data-cms-ai="0" href="https://press.aboutamazon.com/contact-us">Contact Us</a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</bsp-toggler>
+</bsp-toggler>
+</div>
+</ps-header>
+</div>
+<div class="mood-bgcolorPressReleasePage-header-statusBar"></div>
+</header>
+<div class="PressReleasePage-contentWrapper" data-modulewell="" data-no-lead="">
+<div class="PressReleasePage-inner">
+<div class="PressReleasePage-breadcrumbs"></div>
+<div class="PressReleasePage-dates">
+<bsp-timestamp class="PressReleasePage-datePublished" data-timestamp-iso="2023-04-24T12:00:00Z">
+<template data-date-template="">[monthFull] [dayWithLeadingZero], [year]</template>
+<span data-date=""></span>
+</bsp-timestamp>
+<meta content="2023-04-24T12:00:00Z"/>
+</div>
+<h1 class="PressReleasePage-headline">AWS Announces Three New Amazon GuardDuty Capabilities to Help Customers Protect Container, Database, and Serverless Workloads</h1>
+<div class="PressReleasePage-wrapper">
+<main class="PressReleasePage-main">
+<article class="PressReleasePage-mainContent">
+<div class="PressReleasePage-articleBody articleBody"><div class="RichTextArticleBody mood-color">
+<div class="RichTextArticleBody-body"><div class="q4default"><div class="bw-subheadline-wrapper"><p> <i>Tens of thousands of AWS customers use GuardDuty to protect millions of accounts, including more than half a billion Amazon EC2 instances and millions of Amazon S3 buckets</i> </p><p> <i>Arctic Wolf, Best Buy, GE Digital, Siemens, and Wiz are among the tens of thousands of customers and partners using Amazon GuardDuty</i> </p></div> <p> <br/><span class="bw-dateline-wrapper">SEATTLE--(BUSINESS WIRE)--</span>Amazon Web Services, Inc. (AWS), an Amazon.com, Inc. company (NASDAQ: AMZN), today announced three new capabilities for Amazon GuardDuty, AWS’s threat detection service, that further strengthen customer security through expanded coverage and continuous enhancements in machine learning, anomaly detection, and integrated threat intelligence. GuardDuty is part of a broad set of AWS security services that help customers identify potential security risks, so they can respond quickly, freeing security teams to focus on tasks with the highest value. The three new capabilities expand GuardDuty protection to container runtime behavior, as well as database and serverless environments. EKS Runtime Monitoring deepens threat detection inside customers’ containerized workloads. GuardDuty RDS Protection helps customers protect data stored in Amazon Aurora databases. GuardDuty Lambda Protection helps customers detect threats to their serverless applications. To get started with Amazon GuardDuty, visit <span class="Enhancement-inline"><span class="Enhancement-item"><a class="Link" data-cms-ai="0" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Faws.amazon.com%2Fguardduty%2F&amp;esheet=53386093&amp;newsitemid=20230424005364&amp;lan=en-US&amp;anchor=aws.amazon.com%2Fguardduty&amp;index=1&amp;md5=37a9a37ffa156864ac1e2ab5f13c9d90" target="_blank"><span>aws.amazon.com/guardduty</span></a></span></span>.</p> <p>The ability to gather, synthesize, and alert on security-relevant events is fundamental to any organization’s risk management program. The evolving cybersecurity landscape and multitude of security tools from different vendors, combined with a shortage of IT security professionals, make it challenging for customers to integrate and scale security detection and response across their environments. Many security teams today have to build or integrate multiple tools to detect anomalies, such as web server vulnerabilities, compromised instances used to serve malware or mine cryptocurrency, or compromised access credentials. Integration challenges can lead to inefficiencies, data inconsistencies, and increased costs. In addition, the workplace and threat landscape continue to evolve, requiring chief information security officers (CISOs) to continually raise the bar on enterprise security to account for cloud adoption, remote working, and third-party infrastructure integration. Demand for technologies and services such as cloud threat detection, security analytics, cloud security posture management, and threat intelligence has been rising to tackle new vulnerabilities, misconfigurations, and other IT risks emerging from this digital transformation.</p> <p>GuardDuty helps protect customers from the latest threats through ongoing innovation in machine learning, anomaly detection, and integrated threat intelligence continuously derived from the broad visibility AWS has across the global threat landscape. With a few clicks in the AWS Management Console, customers can activate GuardDuty across multiple accounts in multiple AWS Regions on highly trusted and secure-by-design AWS Cloud infrastructure and mitigate threats early by initiating automated responses. Since its launch in 2017, GuardDuty has added more than 100 new threat detection capabilities, including the ability to detect credential exfiltration and compromise even when highly evasive techniques are used. GuardDuty uses machine learning detections trained to identify highly suspicious data access and any potential Amazon Elastic Compute Cloud (Amazon EC2) compromise, and uses integrated threat intelligence to detect malware and malicious container, database, and serverless access. GuardDuty comes with pre-integrated and continuously updated threat intelligence feeds from AWS and industry-leading, third-party providers such as CrowdStrike, Proofpoint, and Bitdefender. AWS-developed threat intelligence offers customers unique coverage against the latest global threat landscape, including emerging Linux-based malware, evolving credential exfiltration techniques, and new malicious domains identified through machine learning–based reputation models.</p> <p>The three new capabilities added to GuardDuty build on the hundreds of features and enhancements available since its launch and expand security coverage to other AWS workloads and core deployment use cases. The capabilities can all be easily enabled organization-wide with a few steps and no other requirements or prerequisites, resulting in actionable, contextual, and timely security findings with resource-specific details to help quickly investigate and respond. The new capabilities include:</p><p><b>New container runtime protection for Amazon Elastic Kubernetes Service (Amazon EKS):</b> GuardDuty EKS Runtime Monitoring introduces a fully managed, lightweight security agent that profiles and monitors on-host operating system–level behavior such as file access, process execution, and network connections. In tight collaboration with Amazon EKS, the agent performs without requiring customers to deploy, maintain, or update it.This allows GuardDuty to add security coverage comparable to other agent-based solutions, while maintaining easy-on enablement. It deepens GuardDuty protection for Amazon EKS deployments and decreases the operational overhead and complexity often required to achieve this level of coverage, especially in highly dynamic, containerized compute environments. GuardDuty now makes it easier to achieve runtime coverage across all Amazon EKS workloads in an account or organization. Account and data compromise can often start with a single compromised endpoint or container that then escalates to credential compromise and can spread to the broader AWS environment and data stored in it. With GuardDuty's visibility across runtime events, Kubernetes audit logs, and broader AWS control plane and networking logs, customers can identify steps in an attack and are signaled early to contain potential security threats before the threat escalates to broader business-impacting breaches. This capability builds on the initial integration of GuardDuty EKS Protection, which monitors control plane activity by analyzing Kubernetes audit logs from existing and new Amazon EKS clusters in customers’ accounts.</p><p><b>Extended coverage for data stored in Amazon Aurora:</b> GuardDuty RDS Protection identifies potential threats to data stored in Aurora databases without compromising performance, productivity, or availability. GuardDuty RDS Protection profiles and monitors access activity to existing and new databases in customer accounts, and using integrated threat intelligence and a machine learning model that is trained with highly contextual RDS login activity, it can detect suspicious login activity to Aurora databases.</p><p><b>Support for serverless applications in AWS Lambda:</b> GuardDuty Lambda Protection mitigates security risks in customers’ serverless applications, which can be challenging for traditional threat detection methods to identify due to the added abstraction layers in serverless workloads. Once enabled, GuardDuty Lambda Protection continuously monitors serverless workloads, analyzing network communications mapped back to individual Lambda functions to detect malicious communications and popular compromise activity, such as cryptocurrency mining.</p> <p><strong>“</strong>Tens of thousands of organizations across virtually every industry and geography use Amazon GuardDuty, including more than 90% of our 2,000 largest customers, helping to protect more than half a billion EC2 instances and millions of S3 buckets,<strong>”</strong>said Jon Ramsey, vice president for Security Services at AWS. “GuardDuty’s new capabilities build on this powerful foundation to expand security detection and monitoring even further, to where customers tell us they need it most: containers’ runtime monitoring, databases, and serverless applications. We’ve now more than tripled the number of managed detections since we introduced GuardDuty.”</p> <p>Arctic Wolf Networks is a global leader in security operations that provides security monitoring to detect and respond to cyberthreats. “Continuous monitoring is a required component for effective security operations, and as both a customer and partner of AWS, GuardDuty is a service we entrust across all of our AWS workloads,” said Adam Marrè, CISO at Arctic Wolf. “With real-time threat detection, Amazon EKS audit log monitoring, and now database protection provided via RDS Protection, GuardDuty plays a key role in helping us secure our internal security tooling and processes with the most advanced technologies, allowing us to stay focused on our mission of ending cyber risk for our customers.”</p> <p>Best Buy is an American multinational consumer electronics retailer. “Security is always top of mind for us, especially as we expanded our use of Amazon Aurora for our migrated and cloud native applications,” said Vaibhav Sonawane, enterprise risk and compliance cloud security engineer at Best Buy. “With GuardDuty RDS Protection, our security posture around legitimate and nonlegitimate login attempts remains strong thanks to its machine learning and intelligent threat detection capabilities. We are excited to see Amazon GuardDuty expand into new categories in AWS environments like databases because of its seamless integration, cost-effectiveness, and ease of use.”</p> <p>GE Digital, a business unit of General Electric (GE), is an industrial software leader bringing simplicity, speed, and scale to their customers’ digital transformations. “As a longtime customer of GuardDuty, we’re very pleased to see the continued additions of critical detections and increased coverage across AWS’s compute native services,” said Chuck Rees, senior director of cyber engineering and architecture at GE Digital. “We rely on GuardDuty and its machine learning detections to monitor access to our S3 buckets, allowing us to safeguard our sensitive data. Using GuardDuty is an easy choice for us, and the service is an integral part of securing our workloads on AWS.”</p> <p>Siemens, a technology and industrial manufacturing company based in Munich, produces equipment and components for energy, healthcare, and other industries around the world. “We initially selected Amazon GuardDuty to monitor our AWS accounts for malicious activity,” said Scott Schwartz, senior infrastructure engineer at Siemens. “One of the primary drivers of our decision to use AWS was to strengthen our security posture and automate important tasks. We also wanted to have centralized access to all of our information by aggregating it from accounts across the organization. The ease with which we could adopt AWS services and integrate them into our existing tools made GuardDuty a clear choice for us.”</p> <p>Wiz is a cybersecurity startup with a mission to help organizations create secure cloud environments that accelerate their business. “Wiz uses Amazon GuardDuty, fully integrated with the Wiz platform’s Cloud Events &amp; Detection, to continuously monitor our AWS environment,” said Ryan Kazanciyan, CISO at Wiz. “We are excited to see GuardDuty broaden as a comprehensive threat detection solution with the addition of detections for databases and container environments.”</p> <p> <b>About Amazon Web Services</b> </p> <p>Since 2006, Amazon Web Services has been the world’s most comprehensive and broadly adopted cloud. AWS has been continually expanding its services to support virtually any workload, and it now has more than 200 fully featured services for compute, storage, databases, networking, analytics, machine learning and artificial intelligence (AI), Internet of Things (IoT), mobile, security, hybrid, virtual and augmented reality (VR and AR), media, and application development, deployment, and management from 99 Availability Zones within 31 geographic regions, with announced plans for 15 more Availability Zones and five more AWS Regions in Canada, Israel, Malaysia, New Zealand, and Thailand. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—trust AWS to power their infrastructure, become more agile, and lower costs. To learn more about AWS, visit <span class="Enhancement-inline"><span class="Enhancement-item"><a class="Link" data-cms-ai="0" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Faws.amazon.com%2F&amp;esheet=53386093&amp;newsitemid=20230424005364&amp;lan=en-US&amp;anchor=aws.amazon.com&amp;index=2&amp;md5=d8c6b3f79c27e0bcb08e02b9f7cc8410" target="_blank"><span>aws.amazon.com</span></a></span></span>.</p> <p> <b>About Amazon</b> </p> <p>Amazon is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. Amazon strives to be Earth’s Most Customer-Centric Company, Earth’s Best Employer, and Earth’s Safest Place to Work. Customer reviews, 1-Click shopping, personalized recommendations, Prime, Fulfillment by Amazon, AWS, Kindle Direct Publishing, Kindle, Career Choice, Fire tablets, Fire TV, Amazon Echo, Alexa, Just Walk Out technology, Amazon Studios, and The Climate Pledge are some of the things pioneered by Amazon. For more information, visit <span class="Enhancement-inline"><span class="Enhancement-item"><a class="Link" data-cms-ai="0" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Fwww.aboutamazon.com%2F&amp;esheet=53386093&amp;newsitemid=20230424005364&amp;lan=en-US&amp;anchor=amazon.com%2Fabout&amp;index=3&amp;md5=2315bdedbda304d0ddff4326a3526325" target="_blank"><span>amazon.com/about</span></a></span></span> and follow @AmazonNews.</p><p><img alt="" src="https://cts.businesswire.com/ct/CT?id=bwnews&amp;sty=20230424005364r1&amp;sid=q4-prod&amp;distro=nx&amp;lang=en" style="width:0;height:0"/> <span class="bwct31415"></span> <br/> </p> <div class="bw-contact-info-wrapper"><br/>Amazon.com, Inc.<br/>Media Hotline<br/><span class="Enhancement-inline"><span class="Enhancement-item"><a class="Link" data-cms-ai="0" href="mailto:Amazon-pr@amazon.com" target="_blank"><span>Amazon-pr@amazon.com</span></a></span></span><br/><span class="Enhancement-inline"><span class="Enhancement-item"><a class="Link" data-cms-ai="0" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fpr&amp;esheet=53386093&amp;newsitemid=20230424005364&amp;lan=en-US&amp;anchor=www.amazon.com%2Fpr&amp;index=4&amp;md5=d2ce695164683ef1907f767b832cf90f" target="_blank"><span>www.amazon.com/pr</span></a></span></span><br/></div><p><span class="bw-source-text-wrapper">Source: Amazon.com, Inc.</span></p> </div></div>
+</div></div>
+<div class="knotch_placeholder"></div>
+</article>
+</main>
+</div>
+</div>
+</div>
+<ps-scroll-to-top>
+<div class="Page-scrollToTop">
+<svg class="Page-scrollToTop-arrow">
+<use xlink:href="#arrow-right"></use>
+</svg>
+</div>
+</ps-scroll-to-top>
+<footer class="Page-footer">
+<div class="Page-footer-body">
+<div class="Page-footer-body-main">
+<div class="Page-footer-columns">
+<div class="Page-footer-column">
+<div class="Page-footer-logo"><a data-amzn-id="00000174-99e3-da67-a3ff-f9fbe96e0000" data-cms-ai="0" href="https://www.aboutamazon.com/">
+<img alt="" class="PageLogo-image" src="https://amazon-blogs-brightspot-lower.s3.amazonaws.com/about/a9/af/27a4ef844ac38129d0fa460675fb/amazon-logo.svg" width="117"></img></a>
+</div>
+</div>
+<div class="Page-footer-column">
+<div class="Page-footer-navigation">
+<nav class="FooterNavigation">
+<ul class="FooterNavigation-items">
+<li class="FooterNavigation-items-item">
+<div class="FooterNavigationItem">
+<div class="FooterNavigationItem-text"><a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/press-release-archive"><span>Press release archive</span></a></div>
+</div>
+</li>
+<li class="FooterNavigation-items-item">
+<div class="FooterNavigationItem">
+<div class="FooterNavigationItem-text"><a class="Link" data-cms-ai="0" href="https://ir.aboutamazon.com/" target="_blank"><span>Investor Resources</span></a></div>
+</div>
+</li>
+<li class="FooterNavigation-items-item">
+<div class="FooterNavigationItem">
+<div class="FooterNavigationItem-text"><a class="Link" data-cms-ai="0" href="https://www.aboutamazon.com/" target="_blank"><span>About Amazon</span></a></div>
+</div>
+</li>
+<li class="FooterNavigation-items-item">
+<div class="FooterNavigationItem">
+<div class="FooterNavigationItem-text"><a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/images-and-videos"><span>Images and videos</span></a></div>
+</div>
+</li>
+<li class="FooterNavigation-items-item">
+<div class="FooterNavigationItem">
+<div class="FooterNavigationItem-text"><a class="Link" data-cms-ai="0" href="https://press.aboutamazon.com/contact-us"><span>Contact Amazon PR</span></a></div>
+</div>
+</li>
+<li class="FooterNavigation-items-item">
+<div class="FooterNavigationItem">
+<div class="FooterNavigationItem-text"><a class="Link" data-cms-ai="0" href="https://amazon.com/" target="_blank"><span>Shop Amazon.com</span></a></div>
+</div>
+</li>
+<li class="FooterNavigation-items-item">
+<div class="FooterNavigationItem">
+<div class="FooterNavigationItem-text"><a class="Link" data-cms-ai="0" href="https://www.amazon.jobs/?utm_source=amazonblog&amp;utm_medium=footerlink&amp;utm_campaign=footer" target="_blank"><span>Careers</span></a></div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="Page-footer-social"><div class="SocialBar">
+<ul class="SocialBar-items">
+<li class="SocialBar-items-item"><a class="SocialLink" data-cms-ai="0" data-social-service="facebook" href="https://www.facebook.com/Amazon/" target="_blank"><svg><use xlink:href="#icon-facebook"></use></svg></a>
+</li>
+<li class="SocialBar-items-item"><a class="SocialLink" data-cms-ai="0" data-social-service="instagram" href="https://www.instagram.com/insideamazon/" target="_blank"><svg><use xlink:href="#icon-instagram"></use></svg></a>
+</li>
+<li class="SocialBar-items-item"><a class="SocialLink" data-cms-ai="0" data-social-service="linkedin" href="https://www.linkedin.com/company/amazon/" target="_blank"><svg><use xlink:href="#icon-linkedin"></use></svg></a>
+</li>
+<li class="SocialBar-items-item"><a class="SocialLink" data-cms-ai="0" data-social-service="twitter" href="https://twitter.com/amazonnews" target="_blank"><svg><use xlink:href="#icon-twitter"></use></svg></a>
+</li>
+<li class="SocialBar-items-item"><a class="SocialLink" data-cms-ai="0" data-social-service="youtube" href="https://www.youtube.com/amazonnews" target="_blank"><svg><use xlink:href="#icon-youtube"></use></svg></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="Page-footer-disclaimer"><span class="Enhancement-inline"><span class="Enhancement-item"><a class="Link" data-cms-ai="0" href="http://amazon.com/" target="_blank"><span>Amazon.com</span></a></span></span> | <span class="Enhancement-inline"><span class="Enhancement-item"><a class="Link" data-cms-ai="0" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088" target="_blank"><span>Conditions of Use</span></a></span></span> | © 1996-2024 Amazon.com, Inc. or its affiliates</div>
+</div>
+</div>
+</footer>
+<bsp-search-overlay class="SearchOverlay">
+<div class="SearchOverlay-container">
+<div class="SearchOverlay-ajax"></div>
+</div>
+</bsp-search-overlay>
+
+
+
+<span data-bsp-pv="00000182-221a-d9ef-a1f2-ef9bc8a70000"></span><span data-bsp-pv="00000187-b324-d35a-abf7-f7fd69b70000"></span></body>
+</html>

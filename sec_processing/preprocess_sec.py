@@ -30,12 +30,14 @@ def extract_first_document_html(file_path: str) -> Optional[str]:
             content = f.read()
         
         match = re.search(r'<DOCUMENT>(.*?)</DOCUMENT>', content, re.IGNORECASE | re.DOTALL)
-        
+        # Extract the filing date in format "FILED AS OF DATE:\t\t20130124"
+        date_match = re.search(r'FILED AS OF DATE:\s+(\d{8})', content)
+        filing_date = date_match.group(1) if date_match else None
         if match:
             extracted_html = match.group(1).strip()
             elapsed_time = time.time() - start_time
             print(f"Successfully extracted the first <DOCUMENT> block (took {elapsed_time:.2f}s)")
-            return extracted_html
+            return extracted_html, filing_date
         else:
             print("Error: Could not find a <DOCUMENT>...</DOCUMENT> block in the file.")
             return None
@@ -61,6 +63,17 @@ def overwrite_file_with_content(file_path: str, content: str):
         return True
     except Exception as e:
         print(f"\nError overwriting file {file_path}: {e}")
+
+def write_filing_date_file(directory_path: str, date_str: str):
+    try:
+        output_file = Path(directory_path) / "filing-date.txt"
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write(date_str)
+        print(f"✓ Wrote filing date to: {output_file}")
+        return True
+    except Exception as e:
+        print(f"✗ Failed to write filing date file: {e}")
+        return False
 
 def parse_sec_content(content: str):
     print('Starting parse...')
@@ -111,7 +124,7 @@ def process_directory(root_dir: str):
                 print(f"\nProcessing: Symbol={symbol}, Filing={filing_dir.name}")
                 
                 # Extract HTML content
-                extracted_content = extract_first_document_html(str(submission_file))
+                extracted_content, filing_date = extract_first_document_html(str(submission_file))
                 if not extracted_content:
                     print(f"✗ Failed to extract HTML from {submission_file}")
                     error_count += 1
@@ -123,6 +136,10 @@ def process_directory(root_dir: str):
                     print(f"✗ Failed to parse content from {submission_file}")
                     error_count += 1
                     continue
+
+                # Prepend filing date if available
+                if filing_date:
+                    parsed_content = f"FILED AS OF DATE: {filing_date}\n\n{parsed_content}"
 
                 # Overwrite the file
                 if overwrite_file_with_content(str(submission_file), parsed_content):
@@ -150,4 +167,35 @@ def process_directory(root_dir: str):
 if __name__ == "__main__":
     # Replace with your actual root directory
     input_directory = "./test_data/SEC-filings"
-    process_directory(input_directory)
+    #process_directory(input_directory)
+
+    # Optional: Only do date extraction, skip full processing
+    for symbol_dir in Path(input_directory).iterdir():
+        if not symbol_dir.is_dir():
+            continue
+
+        quarterly_dir = symbol_dir / "10-Q"
+        if not quarterly_dir.exists():
+            continue
+
+        for filing_dir in quarterly_dir.iterdir():
+            if not filing_dir.is_dir():
+                continue
+
+            submission_file = filing_dir / "full-submission.txt"
+            if not submission_file.exists():
+                continue
+
+            print(f"\n[DATE EXTRACTION] Symbol={symbol_dir.name}, Filing={filing_dir.name}")
+            result = extract_first_document_html(str(submission_file))
+
+            if not result:
+                print(f"✗ Skipped {submission_file}")
+                continue
+
+            _, filing_date = result
+            if filing_date:
+                write_filing_date_file(filing_dir, filing_date)
+            else:
+                print("✗ No filing date found")
+

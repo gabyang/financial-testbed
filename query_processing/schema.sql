@@ -71,5 +71,66 @@ CREATE TABLE IF NOT EXISTS article_chunks (
     embedding vector(384)
 )
 
+-- Speed up symbol/date filtering
+CREATE INDEX IF NOT EXISTS idx_articles_symbol_date
+ON articles(symbol, date);
 
 
+-- Speed up similarity search (HNSW is ideal for pgvector)
+CREATE INDEX IF NOT EXISTS idx_article_embedding_hnsw
+ON article_chunks
+USING hnsw (embedding vector_cosine_ops);
+
+-- Speed up joins with articles
+CREATE INDEX IF NOT EXISTS idx_article_chunks_article_id
+ON article_chunks(article_id);
+
+CREATE INDEX IF NOT EXISTS idx_embedding_hnsw 
+ON sec_filing_chunks 
+USING hnsw (embedding vector_cosine_ops);
+
+CREATE TABLE IF NOT EXISTS sec_filings (
+    id SERIAL PRIMARY KEY,
+    symbol VARCHAR(10) NOT NULL,
+    filing_type VARCHAR(20) NOT NULL,
+    filing_date DATE,
+    filing_id VARCHAR(100) NOT NULL,
+    content TEXT NOT NULL,
+    metadata JSONB
+);
+
+CREATE INDEX IF NOT EXISTS idx_filings_symbol_type 
+ON sec_filings(symbol, filing_type);
+
+CREATE TABLE IF NOT EXISTS sec_filing_chunks (
+    id SERIAL PRIMARY KEY,
+    filing_id INTEGER REFERENCES sec_filings(id) ON DELETE CASCADE,
+    chunk_index INTEGER NOT NULL,
+    content TEXT NOT NULL,
+    token_count INTEGER,
+    embedding vector({})
+);
+
+CREATE INDEX IF NOT EXISTS idx_embedding_hnsw 
+ON sec_filing_chunks 
+USING hnsw (embedding vector_cosine_ops);
+
+CREATE TABLE IF NOT EXISTS historic_estimates (
+    id SERIAL PRIMARY KEY,
+    symbol VARCHAR(10) NOT NULL,
+    date DATE,
+    eps_estimated NUMERIC,
+    time VARCHAR(10),
+    revenue_estimated NUMERIC,
+    updated_from_date DATE,
+    fiscal_date_ending DATE
+);
+
+-- Optimize estimates
+CREATE INDEX IF NOT EXISTS idx_estimates_symbol_fiscal ON historic_estimates(symbol, fiscal_date_ending);
+
+-- Optimize stock price lookups
+CREATE INDEX IF NOT EXISTS idx_ticks_symbol_time ON stock_ticks(symbol, time);
+
+-- Optional: If you’re joining to a filings table
+CREATE INDEX IF NOT EXISTS idx_sec_symbol_period ON sec_filings(symbol, filing_period);

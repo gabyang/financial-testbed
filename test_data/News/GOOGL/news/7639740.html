@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<!-- Use the latest IE engine to render the page and execute JavaScript -->
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="http://gmpg.org/xfn/11" rel="profile"/>
+<link href="https://stratechery.com/xmlrpc.php" rel="pingback"/>
+<!-- Typekit -->
+
+
+<!-- Favicon -->
+<link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/favicon/site.webmanifest" rel="manifest"/>
+<link color="#e9ab59" href="/favicon/safari-pinned-tab.svg" rel="mask-icon"/>
+<link href="/favicon/favicon.ico" rel="shortcut icon"/>
+<meta content="#e9ab59" name="msapplication-TileColor"/>
+<meta content="/favicon/browserconfig.xml" name="msapplication-config"/>
+<meta content="#ffffff" name="theme-color"/>
+<!-- Google Analytics -->
+
+<title>Defining Aggregators – Stratechery by Ben Thompson</title>
+<meta content="max-image-preview:large" name="robots">
+<link href="//stats.wp.com" rel="dns-prefetch">
+<link href="//i0.wp.com" rel="preconnect">
+<link href="//c0.wp.com" rel="preconnect">
+
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/jetpack/modules/related-posts/related-posts.css?ver=20240116" id="jetpack_related-posts-css" media="all" rel="stylesheet" type="text/css">
+
+<link href="https://c0.wp.com/c/6.7/wp-includes/css/dist/block-library/style.min.css" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css">
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/a-z-listing/css/a-z-listing-default.css?ver=4.3.1" id="a-z-listing-block-css" media="all" rel="stylesheet" type="text/css">
+<link href="https://c0.wp.com/c/6.7/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" id="mediaelement-css" media="all" rel="stylesheet" type="text/css">
+<link href="https://c0.wp.com/c/6.7/wp-includes/js/mediaelement/wp-mediaelement.min.css" id="wp-mediaelement-css" media="all" rel="stylesheet" type="text/css">
+
+
+
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/atomic-wp/views/atomic.css?ver=1713114610" id="atomic-wp-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/css/checkbox.css?wp=3&amp;ver=1.0" id="stratechery-theme-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/css/bigfoot.css?ver=1.0" id="stratechery-bigfoot-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/css/membership.css?wp=3&amp;ver=1.0" id="stratechery-membership-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/css/decanter.css?wp=64&amp;ver=1.0" id="decanter-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/themes/stratechery-theme/style.css?ver=20230202" id="stratechery-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css?ver=14.1-a.3" id="sharedaddy-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://149384716.v2.pressablecdn.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=14.1-a.3" id="social-logos-css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+<link href="https://stratechery.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://stratechery.com/2017/defining-aggregators/" rel="canonical"/>
+<link href="https://stratechery.com/?p=2759" rel="shortlink"/>
+<link href="https://stratechery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstratechery.com%2F2017%2Fdefining-aggregators%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="https://stratechery.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fstratechery.com%2F2017%2Fdefining-aggregators%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+
+
+<!-- Jetpack Open Graph Tags -->
+<meta content="article" property="og:type">
+<meta content="Defining Aggregators" property="og:title">
+<meta content="https://stratechery.com/2017/defining-aggregators/" property="og:url">
+<meta content="Building on Aggregation Theory, this provides a precise definition of the characteristics of aggregators, and a classification system based on suppliers. Plus, how to think about aggregator regulat…" property="og:description">
+<meta content="2017-09-26T14:27:17+00:00" property="article:published_time">
+<meta content="2018-11-07T08:11:45+00:00" property="article:modified_time"/>
+<meta content="Stratechery by Ben Thompson" property="og:site_name"/>
+<meta content="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=512%2C512&amp;ssl=1" property="og:image"/>
+<meta content="512" property="og:image:width"/>
+<meta content="512" property="og:image:height"/>
+<meta content="" property="og:image:alt"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="@stratechery" name="twitter:site"/>
+<meta content="Defining Aggregators" name="twitter:text:title"/>
+<meta content="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=240%2C240&amp;ssl=1" name="twitter:image"/>
+<meta content="summary" name="twitter:card"/>
+<!-- End Jetpack Open Graph Tags -->
+<link href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=32%2C32&amp;ssl=1" rel="icon" sizes="32x32"/>
+<link href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=192%2C192&amp;ssl=1" rel="icon" sizes="192x192"/>
+<link href="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=180%2C180&amp;ssl=1" rel="apple-touch-icon"/>
+<meta content="https://i0.wp.com/stratechery.com/wp-content/uploads/2018/03/cropped-android-chrome-512x512-1.png?fit=270%2C270&amp;ssl=1" name="msapplication-TileImage"/>
+
+</meta></meta></meta></meta></meta></link></link></link></link></link></link></link></link></meta></head>
+<body class="post-template-default single single-post postid-2759 single-format-standard jps-theme-stratechery-theme">
+<div class="hfeed site" id="page">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header class="site-header" id="masthead" role="banner">
+<div class="grid">
+<div class="row">
+<div class="twelve column">
+<div class="site-branding">
+<h1 class="site-title">
+<a href="https://stratechery.com/" rel="home">
+<span>Stratechery by Ben Thompson</span>
+</a>
+</h1><!-- .site-title -->
+<p class="site-description">On the business, strategy, and impact of technology.</p>
+</div><!-- .site-branding -->
+<nav class="main-navigation" id="site-navigation" role="navigation">
+<button aria-controls="primary-menu" aria-expanded="false" class="menu-toggle"><span>Menu</span></button>
+<div class="menu-primary-container"><ul class="menu" id="primary-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1611" id="menu-item-1611"><a href="http://stratechery.com/about/" title="Information about Ben Thompson and Stratechery">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1613" id="menu-item-1613"><a href="https://stratechery.passport.online/member/plan/FU88mU4RBhdMq8yDRbssHs" title="Receive free Stratechery content">Email | Podcast | RSS | SMS</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1645" id="menu-item-1645"><a href="mailto:support@stratechery.com" title="Contact support for help with your subscription">Contact Support</a></li>
+</ul></div> </nav><!-- #site-navigation -->
+<div class="widget-area">
+<aside class="widget widget_search" id="search-2">
+<form action="https://stratechery.com/" class="search-form" method="get" role="search">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input class="search-field" name="s" placeholder="Search …" type="search" value=""/>
+</label>
+<input class="search-submit" type="submit" value="Search"/>
+<section class="wpcom-search-dropdown">
+<div class="wpcom-search-dropdown__direct-search"></div>
+<div class="wpcom-search-dropdown__posts">
+<h2>Posts</h2>
+<ul class="wpcom-search-dropdown__results"></ul>
+</div>
+<div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__topics" data-taxonomy="topics"><h2>Topics</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div><div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__concepts" data-taxonomy="concepts"><h2>Concepts</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div><div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__companies" data-taxonomy="companies"><h2>Companies</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div>
+</section>
+</form>
+</aside><aside class="widget_text widget widget_custom_html" id="custom_html-5"><h1 class="widget-title">By Ben Thompson</h1><div class="textwidget custom-html-widget"><a href="https://stratechery.com/about">About Ben</a><br/><a href="https://stratechery.passport.online/member/" title="Follow Stratechery">Follow via Email/RSS</a><br/><a href="https://twitter.com/benthompson" title="Twitter">Twitter</a></div></aside><aside class="widget_text widget widget_custom_html" id="custom_html-6"><h1 class="widget-title">Stratechery Plus</h1><div class="textwidget custom-html-widget"><a href="https://stratechery.com/stratechery-plus/">About Stratechery Plus</a><br/><a href="https://stratechery.passport.online/member/plan/4ycW4SE71Cy6ryrijywbTG" title="Subscribe to Stratechery Plus">Subscribe</a><br/><a href="https://forum.stratechery.com/" title="Member-only Forum">Member Forum</a></div></aside><aside class="widget widget_atomic_login_widget" id="atomic_login_widget-2"><h1 class="widget-title">Account</h1><ul class="atomic-widget__loggedin" style="display: none;">
+<li><div class="atomic-widget__username">Member</div></li>
+<li><a href="https://stratechery.passport.online/member/account/delivery">Delivery Preferences</a></li>
+<li><a href="https://stratechery.passport.online/member/account/prefs">Manage Account</a></li>
+<li><a href="https://stratechery.passport.online/member/logout?redirect_uri=https%3A%2F%2Fstratechery.com%2Fwp-json%2FatomicPlugin%2Fv1%2Flogout&amp;client_id=UzZShQMUtptvnZQjTc6xpZ">Sign Out</a></li>
+</ul>
+<ul class="atomic-widget__loggedout" style="display: none;">
+<li><a href="https://stratechery.com/wp-json/atomicPlugin/v1/authlogin">Log In</a></li>
+<li><a href="https://stratechery.passport.online/member/signup">Sign Up</a></li>
+</ul>
+<p class="atomic-widget__loading">Loading</p>
+</aside><aside class="widget widget_nav_menu" id="nav_menu-6"><h1 class="widget-title">Explore Stratechery</h1><div class="menu-explore-container"><ul class="menu" id="menu-explore"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3386" id="menu-item-3386"><a href="https://stratechery.com/concepts/" title="An overview of the key concepts covered by Stratechery">Concepts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3387" id="menu-item-3387"><a href="https://stratechery.com/companies/" title="An index of the companies covered by Stratechery">Companies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3388" id="menu-item-3388"><a href="https://stratechery.com/topics/" title="An index of the topic covered by Stratechery">Topics</a></li>
+</ul></div></aside><aside class="widget widget_nav_menu" id="nav_menu-7"><h1 class="widget-title">Archives</h1><div class="menu-archives-container"><ul class="menu" id="menu-archives"><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1772" id="menu-item-1772"><a href="https://stratechery.com/category/articles/" title="Free Weekly Articles from the front page of Stratechery">Articles</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1773" id="menu-item-1773"><a href="https://stratechery.com/category/daily-email/" title="Subscriber-only Updates">Updates</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-topics menu-item-9736" id="menu-item-9736"><a href="https://stratechery.com/topic/events/interview/" title="Stratechery interviews with CEOs, founders, and analysts">Interviews</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775" id="menu-item-1775"><a href="https://stratechery.com/category/year-in-review/" title="The best of Stratechery, organized by year">Years in Review</a></li>
+</ul></div></aside><aside class="widget widget_block widget_media_image" id="block-2">
+<figure class="wp-block-image size-full"><a href="https://stratechery.com/category/daily-email/"><img alt="The Stratechery Update" class="wp-image-9733" decoding="async" fetchpriority="high" height="600" sizes="(max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/stratechery-update-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-3">
+<figure class="wp-block-image size-full"><a href="https://stratechery.com/topic/events/interview/"><img alt="Stratechery Interviews" class="wp-image-9732" decoding="async" height="600" sizes="(max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-5">
+<figure class="wp-block-image size-full"><a href="https://dithering.fm"><img alt="Dithering" class="wp-image-9730" decoding="async" height="600" sizes="(max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/dithering-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-4">
+<figure class="wp-block-image size-full"><a href="https://sharptech.fm/"><img alt="Sharp Tech with Ben Thompson" class="wp-image-9731" decoding="async" height="600" sizes="(max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/sharptech-marketing-2.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-8">
+<figure class="wp-block-image"><a href="https://sharpchina.fm"><img alt="Sharp China with Sinocism's Bill Bishop" class="wp-image-9926" decoding="async" height="1024" sizes="(max-width: 1024px) 100vw, 1024px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/10/Sharp-China-Yellow-1024x1024.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=1536%2C1536&amp;ssl=1 1536w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=2048%2C2048&amp;ssl=1 2048w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=630%2C630&amp;ssl=1 630w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?w=1280&amp;ssl=1 1280w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?w=1920&amp;ssl=1 1920w" width="1024"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-7">
+<figure class="wp-block-image size-large"><a href="https://goat.passport.online/member"><img alt="" class="wp-image-10306" decoding="async" height="1024" sizes="(max-width: 1024px) 100vw, 1024px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2023/01/goat-podcast-cover-crop-1024x1024.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=630%2C630&amp;ssl=1 630w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?w=1500&amp;ssl=1 1500w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?w=1280&amp;ssl=1 1280w" width="1024"/></a></figure>
+</aside> </div>
+</div><!-- .twelve -->
+</div><!-- .row -->
+</div><!-- .grid -->
+</header><!-- #masthead -->
+<div class="site-content" id="content">
+<div class="grid">
+<div class="row">
+<div class="nine column content-area">
+<div id="primary">
+<main class="site-main" id="main" role="main">
+<article class="post-2759 post type-post status-publish format-standard hentry category-articles topics-app-stores topics-apple-app-store topics-networks topics-regulation topics-ride-sharing topics-search topics-social topics-technologies topics-transportation concepts-aggregation-theory concepts-antitrust concepts-commoditizing-suppliers concepts-distribution-and-transaction-costs concepts-owning-customer-relationship concepts-smiling-curve concepts-technology-and-society companies-apple companies-facebook companies-google companies-netflix companies-uber" id="post-2759">
+<header class="entry-header">
+<h1 class="entry-title">Defining Aggregators</h1>
+<div class="entry-meta">
+<span class="posted-on"><span class="screen-reader-text">Posted on</span><time class="entry-date published" datetime="2017-09-26T07:27:17-04:00">Tuesday, September 26, 2017</time><time class="updated" datetime="2018-11-07T00:11:45-05:00">Wednesday, November 7, 2018</time></span> <span class="byline"><span class="author vcard"><span class="screen-reader-text">Author</span> by <a class="url fn n" href="https://stratechery.com/author/stratechery/">Ben Thompson</a></span></span> </div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-content">
+<p>(<em>Note: this is not a typical Stratechery article; there is no over-arching narrative or reference to current news. Rather, the primary goal is to provide a future point of reference</em>)</p>
+<p>Aggregation Theory describes how platforms (i.e. aggregators) come to dominate the industries in which they compete in a systematic and predictable way. Aggregation Theory should serve as a guidebook for aspiring platform companies, a warning for industries predicated on controlling distribution, and a primer for regulators addressing the inevitable antitrust concerns that are the endgame of Aggregation Theory.</p>
+<p>Aggregation Theory was first coined in <a href="https://stratechery.com/2015/aggregation-theory/">this eponymously-titled 2015 article</a>. That article followed on the heels of a series of posts about <a href="https://stratechery.com/2015/airbnb-and-the-internet-revolution/">Airbnb</a>, <a href="https://stratechery.com/2015/netflix-and-the-conservation-of-attractive-profits/">Netflix</a>, and <a href="https://stratechery.com/2015/why-web-pages-suck/">web publishing</a> that, I realized, fit together into a broader framework that was applicable to a range of Internet-enabled companies. Over the ensuing two years I have significantly fleshed out the ideas in that original article, yet subsequent articles necessarily link to an article that marked the beginning of Aggregation Theory, not the current state.</p>
+<p>That noted, <a href="https://stratechery.com/2015/aggregation-theory/">the original article</a> is very much worth reading, particularly its description of how value has shifted away from companies that control the distribution of scarce resources to those that control demand for abundant ones; the purpose of this article is to catalog exactly what the latter look like.</p>
+<h4>The Characteristics of Aggregators</h4>
+<p>Aggregators have all three of the following characteristics; the absence of any one of them can result in a very successful business (in the case of Apple, arguably the most successful business in history), but it means said company is not an aggregator.</p>
+<p><strong>Direct Relationship with Users</strong></p>
+<p>This point is straight-forward, yet the linchpin on which everything else rests: aggregators have a direct relationship with users. This may be a payment-based relationship, an account-based one, or simply one based on regular usage (think Google and non-logged in users).</p>
+<p><strong>Zero Marginal Costs For Serving Users</strong></p>
+<p>Companies traditionally have had to incur (up to) three types of marginal costs when it comes to serving users/customers directly.</p>
+<ul>
+<li>The cost of goods sold (COGS), that is, the cost of producing an item or providing a service</li>
+<li>Distribution costs, that is the cost of getting an item to the customer (usually via retail) or facilitating the provision of a service (usually via real estate)</li>
+<li>Transaction costs, that is the cost of executing a transaction for a good or service, providing customer service, etc.</li>
+</ul>
+<p>Aggregators incur none of these costs:</p>
+<ul>
+<li>The goods “sold” by an aggregator are digital and thus have zero marginal costs (they may, of course, have significant fixed costs)<sup id="rf1-2759"><a href="#fn1-2759" rel="footnote" title="And yes, in the very long run, all fixed costs are marginal costs; that said, while the amount of capital costs for aggregators is massive, their userbase is so large that even over the long run the fixed costs per user are infinitesimal, particularly relative to revenue generated">1</a></sup></li>
+<li>These digital goods are delivered via the Internet, which results in zero distribution costs<sup id="rf2-2759"><a href="#fn2-2759" rel="footnote" title="In terms of the marginal customer; in aggregate there are of course significant bandwidth costs, but see the previous footnote">2</a></sup></li>
+<li>Transactions are handled automatically through automatic account management, credit cards payments, etc.<sup id="rf3-2759"><a href="#fn3-2759" rel="footnote" title="Credit card fees are a significant transaction cost that do limit some types of businesses, but will generally be ignored in this analysis">3</a></sup></li>
+</ul>
+<p>This characteristic means that businesses like Apple hardware and Amazon’s traditional retail operations are not aggregators; both bear significant costs in serving the marginal customer (and, in the case of Amazon in particular, have achieved such scale that the service’s relative cost of distribution is actually a moat).</p>
+<p><strong>Demand-driven Multi-sided Networks with Decreasing Acquisition Costs</strong></p>
+<p>Because aggregators deal with digital goods, there is an abundance of supply; that means users reap value through discovery and curation, and most aggregators get started by delivering superior discovery.</p>
+<p>Then, once an aggregator has gained some number of end users, suppliers will come onto the aggregator’s platform on the aggregator’s terms, effectively commoditizing and modularizing themselves. Those additional suppliers then make the aggregator more attractive to more users, which in turn draws more suppliers, in a virtuous cycle.</p>
+<p>This means that for aggregators, customer acquisition costs decrease over time; marginal customers are attracted to the platform by virtue of the increasing number of suppliers. This further means that aggregators enjoy winner-take-all effects: since the value of an aggregator to end users is continually increasing it is exceedingly difficult for competitors to take away users or win new ones.</p>
+<p>This is in contrast to non-aggregator and non-platform companies that face <em>increasing</em> customer acquisition costs as their user base grows. That is because initial customers are often a perfect product-market fit; however, as that fit decreases, the surplus value from the product decreases as well and quickly turns negative. Generally speaking, any business that creates its customer value in-house is not an aggregator because eventually its customer acquisition costs will limit its growth potential.</p>
+<p>One additional note: the aforementioned Apple and Amazon do have businesses that qualify as aggregators, at least to a degree: for Apple, it is the App Store (as well as the Google Play Store). Apple owns the user relationship, incurs zero marginal costs in serving that user, and has a network of App Developers continually improving supply in response to demand. Amazon, meanwhile, has Amazon Merchant Services, which is a two-sided network where Amazon owns the end user and passes all marginal costs to merchants (i.e. suppliers).</p>
+<h4>Classifying Aggregators</h4>
+<p>Aggregation is fundamentally about owning the user relationship and being able to scale that relationship; that said, there are different levels of aggregation based on the aggregator’s relationship to suppliers:</p>
+<p><strong>Level 1 Aggregators: Supply Acquisition</strong></p>
+<p>Level 1 Aggregators acquire their supply; their market power springs from their relationship with users, but is primarily manifested through superior buying power. That means these aggregators take longer to build and are more precarious in the short-term.</p>
+<p>The best example of a Level 1 Aggregator is Netflix. Netflix owns the user relationship and bears no marginal costs in terms of COGS, distribution costs,<sup id="rf4-2759"><a href="#fn4-2759" rel="footnote" title="Obviously bandwidth in the aggregate is a particularly large cost of Netflix">4</a></sup> or transaction costs.<sup id="rf5-2759"><a href="#fn5-2759" rel="footnote" title="In all cases, credit card fees excepted">5</a></sup> Moreover, Netflix does not create shows, but it does acquire them (increasingly exclusively to Netflix); the more content Netflix acquires, the more its value grows to potential users. And, the more users Netflix gains, the more it can spend on acquiring content in a virtuous cycle.</p>
+<p>Level 1 aggregators typically operate in industries where supply is highly differentiated, and are susceptible to competitors with deeper pockets or orthogonal business models.</p>
+<p><strong>Level 2 Aggregators: Supply Transaction Costs</strong></p>
+<p>Level 2 Aggregators do not own their supply; however, they do incur transaction costs in bringing suppliers onto their platform. That limits the growth rate of Level 2 aggregators absent the incursion of significant supplier acquisition costs.</p>
+<p>Uber is a Level 2 Aggregator (and Airbnb in some jurisdictions due to local regulations). Uber owns the user relationship and bears no marginal costs in terms of COGS, distribution costs, or transaction costs. Moreover, Uber does not own cars; those are supplied by drivers who sign up for the platform directly. At that point, though Uber needs to undertake steps like background checks, vehicle verification, etc. that incur transaction costs both in terms of money as well as time. This limits supply growth which ultimately limits demand growth.</p>
+<p>Level 2 aggregators typically operate in industries with significant regulatory concerns that apply to the quality and safety of suppliers.</p>
+<p><strong>Level 3 Aggregators: Zero Supply Costs</strong></p>
+<p>Level 3 Aggregators do not own their supply and incur no supplier acquisition costs (either in terms of attracting suppliers or on-boarding them).</p>
+<p>Google is the prototypical Level 3 Aggregator: suppliers (that is, websites) are not only accessible by Google by default, but in fact actively make themselves more easily searchable and discoverable (indeed, there is an entire industry — search engine optimization (SEO) — that is predicated on suppliers <em>paying</em> to get themselves onto Google more effectively).</p>
+<p>Social networks are also Level 3 Aggregators: initial supply is provided by users (who are both users and suppliers); over time, as more and more attention is given to the social networks, professional content creators add their content to the social network for free.</p>
+<p>Level 3 aggregators are predicated on massive numbers of users, which means they are usually advertising-based (which means they are free to users). An interesting exception is the aforementioned App Stores: in this case the limited market size (relatively speaking) is made up by the significantly increased revenue-per-customer available to app developers with suitable business models (primarily consumable in-app purchases).</p>
+<p><strong>The Super-Aggregators</strong></p>
+<p>Super-Aggregators operate multi-sided markets with at least <em>three</em> sides — users, suppliers, and advertisers — and have zero marginal costs on all of them. The only two examples are Facebook and Google, which in addition to attracting users and suppliers for free, also have self-serve advertising models that generate revenue without corresponding variable costs (other social networks like Twitter and Snapchat rely to a much greater degree on sales-force driven ad sales).</p>
+<p>For more about Super-Aggregators see <a href="https://stratechery.com/2017/the-super-aggregators-and-the-russians/">this article</a>.</p>
+<h4>Regulating Aggregators</h4>
+<p>Given the winner-take-all nature of Aggregators, there is, at least in theory, a clear relationship between <a href="https://stratechery.com/2016/antitrust-and-aggregation/">Antitrust and Aggregation</a>. However, traditional jurisprudence is limited by three factors:</p>
+<ul>
+<li>The key characteristic of Aggregators is that they own the user relationship. Critically, the user chooses this relationship because the aggregator offers a superior service. This makes it difficult to make antitrust arguments based on consumer welfare (the standard for U.S. jurisprudence for the last 35 years).</li>
+<li>The nature of digital markets is such that aggregators may be inevitable; traditional regulatory relief, like breaking companies up or limiting their addressable markets will likely result in a new aggregator simply taking their place.</li>
+<li>Aggregators make it dramatically simpler and cheaper for suppliers to reach customers (which is why suppliers work so hard to be on their platform). This increases the types of new businesses that can be created by virtue of the aggregators existing (YouTube creators, Amazon merchants, small publications, etc.); regulators should take care to preserve these new opportunities (and even protect them).</li>
+</ul>
+<p>These are guidelines for regulation; determining specifics is an ongoing project for Stratechery, as are the definitions in this article.</p>
+<hr class="footnotes"/><ol class="footnotes" style="list-style-type:decimal"><li id="fn1-2759"><p>And yes, in the very long run, all fixed costs are marginal costs; that said, while the amount of capital costs for aggregators is massive, their userbase is so large that even over the long run the fixed costs per user are infinitesimal, particularly relative to revenue generated <a class="backlink" href="#rf1-2759" title="Return to footnote 1.">↩</a></p></li><li id="fn2-2759"><p>In terms of the marginal customer; in aggregate there are of course significant bandwidth costs, but see the previous footnote <a class="backlink" href="#rf2-2759" title="Return to footnote 2.">↩</a></p></li><li id="fn3-2759"><p>Credit card fees are a significant transaction cost that do limit some types of businesses, but will generally be ignored in this analysis <a class="backlink" href="#rf3-2759" title="Return to footnote 3.">↩</a></p></li><li id="fn4-2759"><p>Obviously bandwidth in the aggregate is a particularly large cost of Netflix <a class="backlink" href="#rf4-2759" title="Return to footnote 4.">↩</a></p></li><li id="fn5-2759"><p>In all cases, credit card fees excepted <a class="backlink" href="#rf5-2759" title="Return to footnote 5.">↩</a></p></li></ol><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share</h3><div class="sd-content"><ul><li class="share-facebook"><a class="share-facebook sd-button share-icon" data-shared="sharing-facebook-2759" href="https://stratechery.com/2017/defining-aggregators/?share=facebook" rel="nofollow noopener noreferrer" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a class="share-twitter sd-button share-icon" data-shared="sharing-twitter-2759" href="https://stratechery.com/2017/defining-aggregators/?share=twitter" rel="nofollow noopener noreferrer" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-linkedin"><a class="share-linkedin sd-button share-icon" data-shared="sharing-linkedin-2759" href="https://stratechery.com/2017/defining-aggregators/?share=linkedin" rel="nofollow noopener noreferrer" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-email"><a class="share-email sd-button share-icon" data-email-share-error-text="If you're having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-error-title="Do you have email set up?" data-email-share-nonce="397a1a0696" data-email-share-track-url="https://stratechery.com/2017/defining-aggregators/?share=email" data-shared="" href="mailto:?subject=%5BShared%20Post%5D%20Defining%20Aggregators&amp;body=https%3A%2F%2Fstratechery.com%2F2017%2Fdefining-aggregators%2F&amp;share=email" rel="nofollow noopener noreferrer" target="_blank" title="Click to email a link to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div> </div><!-- .entry-content -->
+</article><!-- #post-## -->
+<nav aria-label="Post navigation" class="navigation post-navigation">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://stratechery.com/2017/books-and-blogs/" rel="prev"><span class="screen-reader-text">Previous post:</span> <span class="post-title">Books and Blogs</span></a></div><div class="nav-next"><a href="https://stratechery.com/2017/exponent-podcast-getting-to-the-future-faster/" rel="next"><span class="screen-reader-text">Next post:</span> <span class="post-title">Exponent Podcast: Getting to the Future Faster</span></a></div></div>
+</nav>
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- .nine -->
+<div class="three column widget-area">
+<div id="secondary" role="complementary">
+<aside class="widget widget_search" id="search-2">
+<form action="https://stratechery.com/" class="search-form" method="get" role="search">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input class="search-field" name="s" placeholder="Search …" type="search" value=""/>
+</label>
+<input class="search-submit" type="submit" value="Search"/>
+<section class="wpcom-search-dropdown">
+<div class="wpcom-search-dropdown__direct-search"></div>
+<div class="wpcom-search-dropdown__posts">
+<h2>Posts</h2>
+<ul class="wpcom-search-dropdown__results"></ul>
+</div>
+<div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__topics" data-taxonomy="topics"><h2>Topics</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div><div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__concepts" data-taxonomy="concepts"><h2>Concepts</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div><div class="wpcom-search-dropdown__taxonomy wpcom-search-dropdown__companies" data-taxonomy="companies"><h2>Companies</h2><ul class="wpcom-search-dropdown__taxonomy__list"></ul></div>
+</section>
+</form>
+</aside><aside class="widget_text widget widget_custom_html" id="custom_html-5"><h1 class="widget-title">By Ben Thompson</h1><div class="textwidget custom-html-widget"><a href="https://stratechery.com/about">About Ben</a><br/><a href="https://stratechery.passport.online/member/" title="Follow Stratechery">Follow via Email/RSS</a><br/><a href="https://twitter.com/benthompson" title="Twitter">Twitter</a></div></aside><aside class="widget_text widget widget_custom_html" id="custom_html-6"><h1 class="widget-title">Stratechery Plus</h1><div class="textwidget custom-html-widget"><a href="https://stratechery.com/stratechery-plus/">About Stratechery Plus</a><br/><a href="https://stratechery.passport.online/member/plan/4ycW4SE71Cy6ryrijywbTG" title="Subscribe to Stratechery Plus">Subscribe</a><br/><a href="https://forum.stratechery.com/" title="Member-only Forum">Member Forum</a></div></aside><aside class="widget widget_atomic_login_widget" id="atomic_login_widget-2"><h1 class="widget-title">Account</h1><ul class="atomic-widget__loggedin" style="display: none;">
+<li><div class="atomic-widget__username">Member</div></li>
+<li><a href="https://stratechery.passport.online/member/account/delivery">Delivery Preferences</a></li>
+<li><a href="https://stratechery.passport.online/member/account/prefs">Manage Account</a></li>
+<li><a href="https://stratechery.passport.online/member/logout?redirect_uri=https%3A%2F%2Fstratechery.com%2Fwp-json%2FatomicPlugin%2Fv1%2Flogout&amp;client_id=UzZShQMUtptvnZQjTc6xpZ">Sign Out</a></li>
+</ul>
+<ul class="atomic-widget__loggedout" style="display: none;">
+<li><a href="https://stratechery.com/wp-json/atomicPlugin/v1/authlogin">Log In</a></li>
+<li><a href="https://stratechery.passport.online/member/signup">Sign Up</a></li>
+</ul>
+<p class="atomic-widget__loading">Loading</p>
+</aside><aside class="widget widget_nav_menu" id="nav_menu-6"><h1 class="widget-title">Explore Stratechery</h1><div class="menu-explore-container"><ul class="menu" id="menu-explore-1"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3386"><a href="https://stratechery.com/concepts/" title="An overview of the key concepts covered by Stratechery">Concepts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3387"><a href="https://stratechery.com/companies/" title="An index of the companies covered by Stratechery">Companies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3388"><a href="https://stratechery.com/topics/" title="An index of the topic covered by Stratechery">Topics</a></li>
+</ul></div></aside><aside class="widget widget_nav_menu" id="nav_menu-7"><h1 class="widget-title">Archives</h1><div class="menu-archives-container"><ul class="menu" id="menu-archives-1"><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1772"><a href="https://stratechery.com/category/articles/" title="Free Weekly Articles from the front page of Stratechery">Articles</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1773"><a href="https://stratechery.com/category/daily-email/" title="Subscriber-only Updates">Updates</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-topics menu-item-9736"><a href="https://stratechery.com/topic/events/interview/" title="Stratechery interviews with CEOs, founders, and analysts">Interviews</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1775"><a href="https://stratechery.com/category/year-in-review/" title="The best of Stratechery, organized by year">Years in Review</a></li>
+</ul></div></aside><aside class="widget widget_block widget_media_image" id="block-2">
+<figure class="wp-block-image size-full"><a href="https://stratechery.com/category/daily-email/"><img alt="The Stratechery Update" class="wp-image-9733" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/stratechery-update-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-update-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-3">
+<figure class="wp-block-image size-full"><a href="https://stratechery.com/topic/events/interview/"><img alt="Stratechery Interviews" class="wp-image-9732" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/stratechery-interviews-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-5">
+<figure class="wp-block-image size-full"><a href="https://dithering.fm"><img alt="Dithering" class="wp-image-9730" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/dithering-marketing.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/dithering-marketing.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-4">
+<figure class="wp-block-image size-full"><a href="https://sharptech.fm/"><img alt="Sharp Tech with Ben Thompson" class="wp-image-9731" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/09/sharptech-marketing-2.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?w=600&amp;ssl=1 600w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/09/sharptech-marketing-2.png?resize=150%2C150&amp;ssl=1 150w" width="600"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-8">
+<figure class="wp-block-image"><a href="https://sharpchina.fm"><img alt="Sharp China with Sinocism's Bill Bishop" class="wp-image-9926" decoding="async" height="1024" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2022/10/Sharp-China-Yellow-1024x1024.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=1536%2C1536&amp;ssl=1 1536w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=2048%2C2048&amp;ssl=1 2048w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?resize=630%2C630&amp;ssl=1 630w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?w=1280&amp;ssl=1 1280w, https://i0.wp.com/stratechery.com/wp-content/uploads/2022/10/Sharp-China-Yellow.png?w=1920&amp;ssl=1 1920w" width="1024"/></a></figure>
+</aside><aside class="widget widget_block widget_media_image" id="block-7">
+<figure class="wp-block-image size-large"><a href="https://goat.passport.online/member"><img alt="" class="wp-image-10306" decoding="async" height="1024" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="https://149384716.v2.pressablecdn.com/wp-content/uploads/2023/01/goat-podcast-cover-crop-1024x1024.png" srcset="https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?resize=630%2C630&amp;ssl=1 630w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?w=1500&amp;ssl=1 1500w, https://i0.wp.com/stratechery.com/wp-content/uploads/2023/01/goat-podcast-cover-crop.png?w=1280&amp;ssl=1 1280w" width="1024"/></a></figure>
+</aside> </div><!-- #secondary -->
+</div><!-- .widget-area --> </div><!-- .row -->
+</div><!-- .grid -->
+</div><!-- #content -->
+<section id="daily-updates">
+<div class="grid">
+<div class="row">
+<h1><strong>Subscriber’s Daily Update</strong></h1>
+<div class="post-13911 post type-post status-publish format-standard hentry category-daily-email topics-sports topics-streaming topics-video concepts-advertising concepts-business-models concepts-customer-acquisition concepts-product-management concepts-subscriptions companies-netflix companies-nfl" id="post-13911">
+<span class="entry-meta">Tuesday, November 19, 2024</span>
+<h1 class="entry-title"><a href="https://stratechery.com/2024/netflixs-boxing-event-customer-acquisition-vs-churn-mitigation-accounting-for-events/" rel="bookmark">Netflix’s Boxing Event, Customer Acquisition vs. Churn Mitigation, Accounting for Events</a></h1> </div>
+<div class="post-13890 post type-post status-publish format-standard hentry category-daily-email category-interviews topics-ai-machine-learning topics-aws topics-china topics-chips topics-cloud-computing topics-countries topics-digital topics-events topics-google-cloud topics-interview topics-memory topics-publishing topics-technologies concepts-business-models concepts-company-culture concepts-company-structure concepts-enterprise concepts-incentives concepts-making-money companies-amazon companies-anthropic companies-asml companies-broadcom companies-google companies-intel companies-microsoft companies-nvidia companies-openai companies-passport companies-qualcomm companies-semianalysis companies-tsmc" id="post-13890">
+<span class="entry-meta">Thursday, November 14, 2024</span>
+<h1 class="entry-title"><a href="https://stratechery.com/2024/an-interview-with-dylan-patel-and-doug-olaughlin-about-the-current-state-of-semiconductors-and-semianalysis/" rel="bookmark">An Interview with Dylan Patel and Doug O’Laughlin About the Current State of Semiconductors and SemiAnalysis</a></h1> </div>
+<div class="post-13881 post type-post status-publish format-standard hentry category-daily-email topics-app-tracking-transparency-att topics-earnings topics-events topics-logistics concepts-business-models concepts-e-commerce concepts-product-management concepts-product-market-fit companies-meta companies-shopify" id="post-13881">
+<span class="entry-meta">Wednesday, November 13, 2024</span>
+<h1 class="entry-title"><a href="https://stratechery.com/2024/shopify-earnings-software-self-awareness-rebels-and-the-arms-dealer/" rel="bookmark">Shopify Earnings, Software Self-Awareness, Rebels and the Arms Dealer</a></h1> </div>
+<div class="post-13873 post type-post status-publish format-standard hentry category-daily-email topics-ai-machine-learning topics-apple-vision topics-ar-vr topics-earnings topics-events topics-wearables companies-apple" id="post-13873">
+<span class="entry-meta">Tuesday, November 12, 2024</span>
+<h1 class="entry-title"><a href="https://stratechery.com/2024/apple-earnings-ai-capex-and-r-the-vision-pro-gets-a-killer-app/" rel="bookmark">Apple Earnings; AI, Capex, and R&amp;D; The Vision Pro Gets a Killer App</a></h1> </div>
+</div><!-- .row -->
+</div><!-- .grid -->
+</section><!-- #daily-updates -->
+<footer class="site-footer" id="colophon" role="contentinfo">
+<div class="grid">
+<div class="row">
+<div class="twelve column">
+<div class="site-info">
+<div class="site-info-container">
+<span class="powered-by">On the business, strategy, and impact of technology.</span><!-- .powered-by -->
+<span class="copyright">
+								© <a href="http://stratechery.com/">Stratechery LLC</a> 2024 | <a href="https://stratechery.com/terms-of-service/">Terms of Service</a> | <a href="https://stratechery.com/privacy-policy/">Privacy Policy</a>
+</span>
+</div><!-- .site-info-container -->
+</div><!-- .site-info -->
+</div><!-- .twelve -->
+</div><!-- .row -->
+</div><!-- .grid -->
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<div class="jetpack-instant-search__widget-area" style="display: none">
+<div class="widget jetpack-filters widget_search" id="jetpack-search-filters-10"> <div class="jetpack-instant-search-wrapper" id="jetpack-search-filters-10-wrapper"></div></div> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<!--
+	generated in 0.280 seconds
+	226112 bytes batcached for 0 seconds
+-->

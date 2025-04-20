@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Computer Components, Desktop PCs, Gaming, Graphics Cards, Technology Industry" name="category"/>
+<link href="https://gmpg.org/xfn/11" rel="profile"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<!-- This site is optimized with the Yoast SEO Premium plugin v21.7 (Yoast SEO v23.1) - https://yoast.com/wordpress/plugins/seo/ -->
+<title>RDNA 2 deep-dive: What's inside AMD's Radeon RX 6000 graphics cards | PCWorld</title>
+<meta content="Written by" name="twitter:label1">
+<meta content="No Author" name="twitter:data1">
+<meta content="Est. reading time" name="twitter:label2"/>
+<meta content="12 minutes" name="twitter:data2"/>
+<!-- / Yoast SEO Premium plugin. -->
+<link href="//rumcdn.geoedge.be" rel="dns-prefetch">
+<link href="//cdn.onthe.io" rel="dns-prefetch"/>
+<link href="//stats.wp.com" rel="dns-prefetch"/>
+<link href="https://www.pcworld.com/feed" rel="alternate" title="PCWorld » Feed" type="application/rss+xml"/>
+<link href="https://www.pcworld.com/comments/feed" rel="alternate" title="PCWorld » Comments Feed" type="application/rss+xml"/>
+
+
+
+
+<link href="https://www.pcworld.com/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2" id="wp-block-library-css" media="all" rel="stylesheet"/>
+
+
+
+
+
+<link href="https://www.pcworld.com/wp-content/client-mu-plugins/idg-third-party/dist/styles/index.css?ver=1731994471" id="third-party-integrations-style-css" media="all" rel="stylesheet"/>
+<link href="https://www.pcworld.com/wp-content/themes/idg-base-theme/dist/styles/jwplayer.css?ver=1731994471" id="frontend-jwplayer-styles-css" media="all" rel="stylesheet"/>
+<link href="https://www.pcworld.com/wp-content/themes/idg-base-theme/dist/styles/shared.css?ver=1731994471" id="frontend-shared-styles-css" media="all" rel="stylesheet"/>
+<link href="https://www.pcworld.com/wp-content/themes/idg-base-theme/dist/styles/bundle.css?ver=1731994471" id="frontend-styles-css" media="all" rel="stylesheet"/>
+<link href="https://www.pcworld.com/wp-content/themes/pcworld-com-child-theme/dist/styles/theme.css?ver=1731994471" id="pcworld-shared-styles-css" media="all" rel="stylesheet"/>
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+<meta content="article" name="displaytype"/>
+<meta content="https://www.pcworld.com/article/393733/rdna-2-deep-dive-inside-amd-radeon-rx-6000-graphics-cards.html" name="source"/>
+<link href="https://www.pcworld.com/article/393733/rdna-2-deep-dive-inside-amd-radeon-rx-6000-graphics-cards.html" rel="canonical"/>
+<meta content="November 18, 2020" name="date"/>
+<meta content="article" property="og:type"/>
+<meta content="https://www.pcworld.com/article/393733/rdna-2-deep-dive-inside-amd-radeon-rx-6000-graphics-cards.html" property="og:url"/>
+<meta content="PCWorld" property="og:site_name"/>
+<meta content="RDNA 2 deep-dive: What’s inside AMD’s Radeon RX 6000 graphics cards" property="og:title"/>
+<meta content="AMD's new RDNA 2 architecture brings ray tracing, an innovative Infinity Cache, and more to Radeon RX 6000-series GPUs. Here's everything you need to know." property="og:description"/>
+<meta content="https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?quality=50&amp;strip=all&amp;w=1024" property="og:image"/>
+<meta content="1024" property="og:image:width"/>
+<meta content="576" property="og:image:height"/>
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.pcworld.com/article/393733/rdna-2-deep-dive-inside-amd-radeon-rx-6000-graphics-cards.html" property="twitter:url"/>
+<meta content="PCWorld" property="twitter:site"/>
+<meta content="RDNA 2 deep-dive: What’s inside AMD’s Radeon RX 6000 graphics cards" property="twitter:title"/>
+<meta content="AMD's new RDNA 2 architecture brings ray tracing, an innovative Infinity Cache, and more to Radeon RX 6000-series GPUs. Here's everything you need to know." property="twitter:description"/>
+<meta content="https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?quality=50&amp;strip=all&amp;w=1024" property="twitter:image"/>
+<meta content="AMD's new RDNA 2 architecture brings ray tracing, an innovative Infinity Cache, and more to Radeon RX 6000-series GPUs. Here's everything you need to know." name="description"/>
+<link href="https://www.pcworld.com/wp-content/uploads/2021/09/cropped-cropped-PCWorld-Site-Icon.png?w=32" rel="icon" sizes="32x32"/>
+<link href="https://www.pcworld.com/wp-content/uploads/2021/09/cropped-cropped-PCWorld-Site-Icon.png?w=192" rel="icon" sizes="192x192"/>
+<link href="https://www.pcworld.com/wp-content/uploads/2021/09/cropped-cropped-PCWorld-Site-Icon.png?w=180" rel="apple-touch-icon"/>
+<meta content="https://www.pcworld.com/wp-content/uploads/2021/09/cropped-cropped-PCWorld-Site-Icon.png?w=270" name="msapplication-TileImage"/>
+</link></meta></meta></meta></head>
+<body class="post-template-default single single-post postid-393733 single-format-standard sticky-header">
+<div class="ad page-ad has-ad-prefix ad-banner is-sticky" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"ATF"}' data-aaad="true" data-ad-template="banner" data-ofp="false" id="gpt-leaderboard-1"></div>
+<!-- Non AMP markup -->
+<div id="mobileNav">
+<div class="mobileNav-close">
+<!-- AMP markup -->
+<a aria-label="" href="#" id="mobileNav-close-button" role="button">
+<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path></svg> </a>
+</div>
+<div class="mobileNav-menu-wrap"><ul class="mobileNav-menu" id="menu-1-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children inactive" id="menu-item-100000040-menu-1-mobile"><a href="https://www.pcworld.com/news">News</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076039-menu-1-mobile"><a href="https://www.pcworld.com/accessories/news">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076040-menu-1-mobile"><a href="https://www.pcworld.com/business/news">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076041-menu-1-mobile"><a href="https://www.pcworld.com/entertainment/news">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076042-menu-1-mobile"><a href="https://www.pcworld.com/gaming/news">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076043-menu-1-mobile"><a href="https://www.pcworld.com/laptops/news">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076044-menu-1-mobile"><a href="https://www.pcworld.com/mobile/news">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076045-menu-1-mobile"><a href="https://www.pcworld.com/pc-components/news">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076046-menu-1-mobile"><a href="https://www.pcworld.com/security/news">Security</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076047-menu-1-mobile"><a href="https://www.pcworld.com/smart-tech/news">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076048-menu-1-mobile"><a href="https://www.pcworld.com/software/news">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076049-menu-1-mobile"><a href="https://www.pcworld.com/wifi-networks/news">Wi-Fi &amp; Networks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076050-menu-1-mobile"><a href="https://www.pcworld.com/windows/news">Windows</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children inactive" id="menu-item-100000064-menu-1-mobile"><a href="https://www.pcworld.com/best-picks">Best Picks</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076051-menu-1-mobile"><a href="https://www.pcworld.com/accessories/best-picks">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076052-menu-1-mobile"><a href="https://www.pcworld.com/business/best-picks">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076053-menu-1-mobile"><a href="https://www.pcworld.com/entertainment/best-picks">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076054-menu-1-mobile"><a href="https://www.pcworld.com/gaming/best-picks">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076055-menu-1-mobile"><a href="https://www.pcworld.com/laptops/best-picks">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076056-menu-1-mobile"><a href="https://www.pcworld.com/mobile/best-picks">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076057-menu-1-mobile"><a href="https://www.pcworld.com/pc-components/best-picks">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076058-menu-1-mobile"><a href="https://www.pcworld.com/security/best-picks">Security</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076059-menu-1-mobile"><a href="https://www.pcworld.com/smart-tech/best-picks">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076060-menu-1-mobile"><a href="https://www.pcworld.com/software/best-picks">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076061-menu-1-mobile"><a href="https://www.pcworld.com/wifi-networks/best-picks">Wi-Fi &amp; Networks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076062-menu-1-mobile"><a href="https://www.pcworld.com/windows/best-picks">Windows</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children inactive" id="menu-item-100000065-menu-1-mobile"><a href="https://www.pcworld.com/reviews">Reviews</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076063-menu-1-mobile"><a href="https://www.pcworld.com/accessories/reviews">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076064-menu-1-mobile"><a href="https://www.pcworld.com/business/reviews">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076065-menu-1-mobile"><a href="https://www.pcworld.com/entertainment/reviews">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076066-menu-1-mobile"><a href="https://www.pcworld.com/gaming/reviews">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076067-menu-1-mobile"><a href="https://www.pcworld.com/laptops/reviews">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076068-menu-1-mobile"><a href="https://www.pcworld.com/mobile/reviews">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076069-menu-1-mobile"><a href="https://www.pcworld.com/pc-components/reviews">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076070-menu-1-mobile"><a href="https://www.pcworld.com/security/reviews">Security</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076071-menu-1-mobile"><a href="https://www.pcworld.com/smart-tech/reviews">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076072-menu-1-mobile"><a href="https://www.pcworld.com/software/reviews">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076073-menu-1-mobile"><a href="https://www.pcworld.com/wifi-networks/reviews">Wi-Fi &amp; Networks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076074-menu-1-mobile"><a href="https://www.pcworld.com/windows/reviews">Windows</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children inactive" id="menu-item-100000068-menu-1-mobile"><a href="https://www.pcworld.com/howto">How-To</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076075-menu-1-mobile"><a href="https://www.pcworld.com/accessories/how-to">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076076-menu-1-mobile"><a href="https://www.pcworld.com/business/how-to">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076077-menu-1-mobile"><a href="https://www.pcworld.com/entertainment/how-to">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076078-menu-1-mobile"><a href="https://www.pcworld.com/gaming/how-to">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076079-menu-1-mobile"><a href="https://www.pcworld.com/laptops/how-to">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076080-menu-1-mobile"><a href="https://www.pcworld.com/mobile/how-to">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076081-menu-1-mobile"><a href="https://www.pcworld.com/pc-components/how-to">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076082-menu-1-mobile"><a href="https://www.pcworld.com/security/how-to">Security</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076083-menu-1-mobile"><a href="https://www.pcworld.com/smart-tech/how-to">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076084-menu-1-mobile"><a href="https://www.pcworld.com/software/how-to">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076085-menu-1-mobile"><a href="https://www.pcworld.com/wifi-networks/how-to">Wi-Fi &amp; Networks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076086-menu-1-mobile"><a href="https://www.pcworld.com/windows/how-to">Windows</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000069-menu-1-mobile"><a href="https://www.pcworld.com/deals">Deals</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000085-menu-1-mobile"><a href="https://www.pcworld.com/laptops">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000086-menu-1-mobile"><a href="https://www.pcworld.com/windows">Windows</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000087-menu-1-mobile"><a href="https://www.pcworld.com/security">Security</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children inactive" id="menu-item-100000093-menu-1-mobile"><a>More</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000096-menu-1-mobile"><a href="https://www.pcworld.com/accessories">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000097-menu-1-mobile"><a href="https://www.pcworld.com/business">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000101-menu-1-mobile"><a href="https://www.pcworld.com/entertainment">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100015519-menu-1-mobile"><a href="https://www.pcworld.com/gaming">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000103-menu-1-mobile"><a href="https://www.pcworld.com/mobile">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000104-menu-1-mobile"><a href="https://www.pcworld.com/pc-components">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000120-menu-1-mobile"><a href="https://www.pcworld.com/smart-tech">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000136-menu-1-mobile"><a href="https://www.pcworld.com/software">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000122-menu-1-mobile"><a href="https://www.pcworld.com/wifi-networks">Wi-Fi &amp; Networks</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100029490-menu-1-mobile"><a href="https://www.pcworld.com/newsletters/signup">Newsletters</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100000381-menu-1-mobile"><a href="https://simplecirc.com/subscribe/pcworld">Digital Magazine – Subscribe</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100000382-menu-1-mobile"><a href="https://www.pcworld.com/faq">Digital Magazine – Info</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100093030-menu-1-mobile"><a href="https://www.pcworld.com/smart-answers">Smart Answers</a></li>
+</ul></div> <!-- Non AMP markup -->
+</div>
+<div id="site-overlay"></div>
+<div class="site" id="page">
+<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+<header class="site-header" id="masthead">
+<div class="primaryNav--article" id="primaryNav">
+<div class="primaryNav-wrap">
+<div class="primaryNav-left-wrap">
+<ul class="primaryNav-left">
+<li class="primaryNav-left--menu">
+<!-- AMP markup -->
+<a aria-label="Open mobile menu" href="#" id="mobileNav-open-button" role="button">
+<span>Menu</span>
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg> </a>
+</li>
+<li class="primaryNav-left--logo">
+<a href="https://www.pcworld.com">
+<svg data-name="Layer 1" id="Layer_1" viewbox="0 0 169.36 36.72" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><clippath id="clip-path"><rect class="cls-1" height="36.72" width="169.36"></rect></clippath><clippath id="clip-path-2"><rect class="cls-1" height="36.72" width="169.36"></rect></clippath></defs><g data-name="PCWorld (Reverse)" id="PCWorld_Reverse_"><g class="cls-2"><g class="cls-3"><path class="cls-4" d="M6.15,25v11H0V2.4H9.52c9.32,0,14.42,1.45,14.42,10.67,0,9.67-7,11.93-11.78,11.93Zm0-17.45V19.23h5.19c4.47,0,6.35-1.54,6.35-6.11,0-3.84-1.35-5.57-6.49-5.57Z"></path><path class="cls-4" d="M25.16,19.23c0-10.58,7-17.5,16.59-17.5a23,23,0,0,1,9.56,2l-.67,5.87a22.49,22.49,0,0,0-8.89-1.93c-6.54,0-9.86,4.86-9.86,11.59s3.32,11.58,9.86,11.58a22.66,22.66,0,0,0,8.89-1.92l.67,5.86a22.88,22.88,0,0,1-9.56,2c-9.61,0-16.59-6.92-16.59-17.49"></path><polygon class="cls-4" points="87.97 36.05 82.53 36.05 75.03 13.6 67.58 36.05 61.77 36.05 52.3 2.4 58.69 2.4 65.42 26.29 72.92 2.4 77.2 2.4 84.98 25.67 91.43 2.4 97.82 2.4 87.97 36.05"></polygon><path class="cls-4" d="M94.54,24.08c0-6.73,4.47-12.45,12.16-12.45s12.16,5.72,12.16,12.45-4.47,12.45-12.16,12.45S94.54,30.81,94.54,24.08m6.1,0c0,4.47,2.21,7.55,6.06,7.55s6-3.08,6-7.55-2.21-7.54-6-7.54-6.06,3.07-6.06,7.54"></path><path class="cls-4" d="M133.81,17.26H131.6a4.9,4.9,0,0,0-4.37,2.4V36.05h-6V12h5.58l.15,2.55a9.42,9.42,0,0,1,6.39-2.94H135Z"></path><path class="cls-4" d="M144.82,36.53h-2.17c-4.27,0-6.15-2.83-6.15-6.3V0h6V27.78c0,3.85.53,3.85,2.89,3.85Z"></path><path class="cls-4" d="M163.73,36.05l-.09-1.34a9.4,9.4,0,0,1-5.87,1.82c-7.69,0-11.77-5.72-11.77-12.45s4.08-12.45,11.77-12.45a9.51,9.51,0,0,1,5.63,1.59V0h6V36.05Zm-11.63-12c0,4.47,2.21,7.55,6.06,7.55s5.53-3.08,5.53-7.55-1.69-7.54-5.53-7.54-6.06,3.07-6.06,7.54"></path></g></g></g></svg> </a>
+</li>
+</ul>
+</div>
+<div class="primaryNav-menu-wrap"><ul class="primaryNav-menu is-dropdown" id="menu-1-primary"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children inactive" id="menu-item-100000040-menu-1-primary"><a href="https://www.pcworld.com/news">News</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076039-menu-1-primary"><a href="https://www.pcworld.com/accessories/news">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076040-menu-1-primary"><a href="https://www.pcworld.com/business/news">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076041-menu-1-primary"><a href="https://www.pcworld.com/entertainment/news">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076042-menu-1-primary"><a href="https://www.pcworld.com/gaming/news">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076043-menu-1-primary"><a href="https://www.pcworld.com/laptops/news">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076044-menu-1-primary"><a href="https://www.pcworld.com/mobile/news">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076045-menu-1-primary"><a href="https://www.pcworld.com/pc-components/news">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076046-menu-1-primary"><a href="https://www.pcworld.com/security/news">Security</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076047-menu-1-primary"><a href="https://www.pcworld.com/smart-tech/news">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076048-menu-1-primary"><a href="https://www.pcworld.com/software/news">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076049-menu-1-primary"><a href="https://www.pcworld.com/wifi-networks/news">Wi-Fi &amp; Networks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076050-menu-1-primary"><a href="https://www.pcworld.com/windows/news">Windows</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children inactive" id="menu-item-100000064-menu-1-primary"><a href="https://www.pcworld.com/best-picks">Best Picks</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076051-menu-1-primary"><a href="https://www.pcworld.com/accessories/best-picks">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076052-menu-1-primary"><a href="https://www.pcworld.com/business/best-picks">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076053-menu-1-primary"><a href="https://www.pcworld.com/entertainment/best-picks">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076054-menu-1-primary"><a href="https://www.pcworld.com/gaming/best-picks">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076055-menu-1-primary"><a href="https://www.pcworld.com/laptops/best-picks">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076056-menu-1-primary"><a href="https://www.pcworld.com/mobile/best-picks">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076057-menu-1-primary"><a href="https://www.pcworld.com/pc-components/best-picks">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076058-menu-1-primary"><a href="https://www.pcworld.com/security/best-picks">Security</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076059-menu-1-primary"><a href="https://www.pcworld.com/smart-tech/best-picks">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076060-menu-1-primary"><a href="https://www.pcworld.com/software/best-picks">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076061-menu-1-primary"><a href="https://www.pcworld.com/wifi-networks/best-picks">Wi-Fi &amp; Networks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076062-menu-1-primary"><a href="https://www.pcworld.com/windows/best-picks">Windows</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children inactive" id="menu-item-100000065-menu-1-primary"><a href="https://www.pcworld.com/reviews">Reviews</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076063-menu-1-primary"><a href="https://www.pcworld.com/accessories/reviews">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076064-menu-1-primary"><a href="https://www.pcworld.com/business/reviews">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076065-menu-1-primary"><a href="https://www.pcworld.com/entertainment/reviews">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076066-menu-1-primary"><a href="https://www.pcworld.com/gaming/reviews">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076067-menu-1-primary"><a href="https://www.pcworld.com/laptops/reviews">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076068-menu-1-primary"><a href="https://www.pcworld.com/mobile/reviews">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076069-menu-1-primary"><a href="https://www.pcworld.com/pc-components/reviews">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076070-menu-1-primary"><a href="https://www.pcworld.com/security/reviews">Security</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076071-menu-1-primary"><a href="https://www.pcworld.com/smart-tech/reviews">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076072-menu-1-primary"><a href="https://www.pcworld.com/software/reviews">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076073-menu-1-primary"><a href="https://www.pcworld.com/wifi-networks/reviews">Wi-Fi &amp; Networks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076074-menu-1-primary"><a href="https://www.pcworld.com/windows/reviews">Windows</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children inactive" id="menu-item-100000068-menu-1-primary"><a href="https://www.pcworld.com/howto">How-To</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076075-menu-1-primary"><a href="https://www.pcworld.com/accessories/how-to">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076076-menu-1-primary"><a href="https://www.pcworld.com/business/how-to">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076077-menu-1-primary"><a href="https://www.pcworld.com/entertainment/how-to">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076078-menu-1-primary"><a href="https://www.pcworld.com/gaming/how-to">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076079-menu-1-primary"><a href="https://www.pcworld.com/laptops/how-to">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076080-menu-1-primary"><a href="https://www.pcworld.com/mobile/how-to">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076081-menu-1-primary"><a href="https://www.pcworld.com/pc-components/how-to">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076082-menu-1-primary"><a href="https://www.pcworld.com/security/how-to">Security</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076083-menu-1-primary"><a href="https://www.pcworld.com/smart-tech/how-to">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076084-menu-1-primary"><a href="https://www.pcworld.com/software/how-to">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076085-menu-1-primary"><a href="https://www.pcworld.com/wifi-networks/how-to">Wi-Fi &amp; Networks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100076086-menu-1-primary"><a href="https://www.pcworld.com/windows/how-to">Windows</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000069-menu-1-primary"><a href="https://www.pcworld.com/deals">Deals</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000085-menu-1-primary"><a href="https://www.pcworld.com/laptops">Laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000086-menu-1-primary"><a href="https://www.pcworld.com/windows">Windows</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000087-menu-1-primary"><a href="https://www.pcworld.com/security">Security</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children inactive" id="menu-item-100000093-menu-1-primary"><a>More</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000096-menu-1-primary"><a href="https://www.pcworld.com/accessories">Accessories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000097-menu-1-primary"><a href="https://www.pcworld.com/business">Business</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000101-menu-1-primary"><a href="https://www.pcworld.com/entertainment">Entertainment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100015519-menu-1-primary"><a href="https://www.pcworld.com/gaming">Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000103-menu-1-primary"><a href="https://www.pcworld.com/mobile">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000104-menu-1-primary"><a href="https://www.pcworld.com/pc-components">PCs &amp; Components</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000120-menu-1-primary"><a href="https://www.pcworld.com/smart-tech">Smart Tech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000136-menu-1-primary"><a href="https://www.pcworld.com/software">Software</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000122-menu-1-primary"><a href="https://www.pcworld.com/wifi-networks">Wi-Fi &amp; Networks</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100029490-menu-1-primary"><a href="https://www.pcworld.com/newsletters/signup">Newsletters</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100000381-menu-1-primary"><a href="https://simplecirc.com/subscribe/pcworld">Digital Magazine – Subscribe</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100000382-menu-1-primary"><a href="https://www.pcworld.com/faq">Digital Magazine – Info</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100093030-menu-1-primary"><a href="https://www.pcworld.com/smart-answers">Smart Answers</a></li>
+</ul></div> <div class="primaryNav-actions-wrap">
+<ul class="primaryNav-actions">
+<li class="primaryNav-action--search">
+<!-- AMP markup -->
+<a aria-label="Open site search" href="#" id="siteSearch-open-button" role="button">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg> </a>
+</li>
+</ul>
+</div>
+</div>
+<div id="siteSearch">
+<div class="siteSearch-wrap">
+<div class="siteSearch-close">
+<a aria-label="Close site search" href="#" id="siteSearch-close-button" role="button">
+<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path></svg> </a>
+</div>
+<label class="siteSearch-help-text" for="gsc-i-id1">Type your search and hit enter</label>
+<div class="gcse-searchbox-only" data-resultsurl="https://www.pcworld.com/search"></div>
+</div>
+</div>
+</div>
+<div id="secondaryNav">
+<div class="secondaryNav-wrap">
+<div class="secondaryNav-menu-wrap">
+<div class="secondaryNav-container"><ul class="secondaryNav-menu" id="hot-topics"><li class="hot-topics-link menu-item menu-item-type-custom menu-item-object-custom menu-item-100001189" id="menu-item-100001189"><a>Hot Topics</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100106095" id="menu-item-100106095"><a href="https://www.pcworld.com/best-consumer-tech-2024-2025">PCWorld Awards</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100104294" id="menu-item-100104294"><a href="https://www.pcworld.com/ultimate-holiday-shopping-guide">Ultimate Holiday Shopping Guide</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-100038215" id="menu-item-100038215"><a href="https://www.pcworld.com/article/436674/the-best-pc-laptops-of-the-year.html">Best laptops</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-100085838" id="menu-item-100085838"><a href="https://www.pcworld.com/article/406870/best-vpn-services-apps-reviews-buying-advice.html">Best VPN</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-100091502" id="menu-item-100091502"><a href="https://www.pcworld.com/article/407277/best-antivirus-for-windows-pc.html">Best antivirus</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-100039059" id="menu-item-100039059"><a href="https://www.pcworld.com/article/407542/best-ssds.html">Best SSDs</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-100039060" id="menu-item-100039060"><a href="https://www.pcworld.com/article/811315/best-monitors-2.html">Best monitors</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-100031499" id="menu-item-100031499"><a href="https://www.pcworld.com/article/550968/best-laptop-deals-3.html">Laptop deals</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-100081591" id="menu-item-100081591"><a href="https://www.pcworld.com/article/813362/best-pc-computer-deals.html">Desktop PC deals</a></li>
+</ul></div> </div>
+<div class="secondaryNav-social-wrap">
+<ul class="secondaryNav-social">
+<li class="secondaryNav-social--facebook">
+<a href="https://www.facebook.com/PCWorld/" rel="noopener noreferrer nofollow" target="_blank" title="Follow us on Facebook">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg> </a>
+</li>
+<li class="secondaryNav-social--twitter">
+<a href="https://twitter.com/pcworld" rel="noopener noreferrer nofollow" target="_blank" title="Follow us on X">
+<svg id="Layer_1" style="enable-background:new 0 0 49.8 45;" version="1.1" viewbox="0 0 49.8 45" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:graph="ns_graphs;" xmlns:i="ns_ai;" xmlns:x="ns_extend;" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<metadata>
+<sfw xmlns="ns_sfw;">
+<slices></slices>
+<slicesourcebounds bottomleftorigin="true" height="45" width="49.8" x="-67.2" y="-209.8"></slicesourcebounds>
+</sfw>
+</metadata>
+<g>
+<path d="M39.2,0h7.6L30.2,19.1L49.8,45H34.4l-12-15.7L8.6,45H1l17.8-20.4L0,0h15.8l10.9,14.4L39.2,0z M36.5,40.4h4.2L13.5,4.3H8.9
+		L36.5,40.4z"></path>
+</g>
+</svg> </a>
+</li>
+<li class="secondaryNav-social--youtube">
+<a href="https://www.youtube.com/channel/UCDC1Pas1aocEA5HBl7jp0ew" rel="noopener noreferrer nofollow" target="_blank" title="Follow us on YouTube">
+<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg> </a>
+</li>
+<li class="secondaryNav-social--youtube">
+<a href="https://www.linkedin.com/company/pc-world_2/" rel="noopener noreferrer nofollow" target="_blank" title="Follow us on LinkedIn">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg> </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div>
+<div class="affiliate-disclaimer"><p>When you purchase through links in our articles, we may earn a small commission. This doesn't affect our <a href="https://www.pcworld.com/about/affiliate-link-policy" target="_blank"><u>editorial independence</u></a>.</p></div></div>
+</header><!-- #masthead -->
+<div class="ad page-ad has-ad-prefix ad-article ad-contenthubartbanner" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"gpt-contenthub"}' data-aaad="true" data-ad-template="gpt-contenthub-article" data-ofp="false" id="gpt-contenthub-article-1"></div>
+<main class="site-main" id="primary">
+<div class="single-breadcrumb">
+<a href="https://www.pcworld.com">Home /</a><a href="https://www.pcworld.com/news">Feature /</a><a href="https://www.pcworld.com/pc-components/feature">PCs &amp; Components Feature</a> </div>
+<article class="post-legacy post-393733 post type-post status-publish format-standard has-post-thumbnail category-computer-components category-desktop-pcs category-gaming category-components-graphics category-technology-business languages-en publication-pcworld publication-us-default story_types-feature article_type-default origin-onecms" id="post-393733">
+<header class="entry-header">
+<div class="entry-eyebrow entry-eyebrow--default">Feature</div>
+<h1 class="entry-title">RDNA 2 deep-dive: What’s inside AMD’s Radeon RX 6000 graphics cards</h1> <div class="subheadline">AMD's new RDNA 2 architecture brings ray tracing, an innovative Infinity Cache, and more to Radeon RX 6000-series GPUs. Here's everything you need to know.</div>
+<div class="entry-meta">
+<div class="meta-text">
+<div class="meta-text-top">
+<span class="byline"> By <span class="author vcard">Brad Chacos</span> </span> </div>
+<div class="meta-text-bottom">
+<span class="posted-on">Nov 18, 2020 6:00 am PST</span> </div>
+</div>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<!-- <hr class="wp-block-separator" /> -->
+<section class="layout--right-rail">
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<div class="post-thumbnail">
+<img alt="rdna 2 chip logo" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" data-hero="" decoding="async" fetchpriority="high" height="576" sizes="(max-width: 1024px) 100vw, 1024px" src="https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?quality=50&amp;strip=all&amp;w=1024" srcset="https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?quality=50&amp;strip=all 2048w, https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?resize=300%2C168&amp;quality=50&amp;strip=all 300w, https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?resize=768%2C432&amp;quality=50&amp;strip=all 768w, https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?resize=1024%2C576&amp;quality=50&amp;strip=all 1024w, https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?resize=1536%2C864&amp;quality=50&amp;strip=all 1536w, https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?resize=1240%2C697&amp;quality=50&amp;strip=all 1240w, https://www.pcworld.com/wp-content/uploads/2023/04/rdna-2-chip-logo-100864061-orig.jpg?resize=150%2C84&amp;quality=50&amp;strip=all 150w" width="1024"/> <div class="post-thumbnail-text">
+<span class="credit">Image: AMD</span> </div>
+</div><!-- .post-thumbnail -->
+<div class="entry-content">
+<div id="post-toc"></div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<div id="link_wrapped_content">
+<body><section class="wp-block-bigbite-multi-title"><div class="container"></div></section>
+<div class="legacy_content">
+<p>RDNA 2. The graphics architecture at the heart of AMD’s kick-ass new Radeon RX 6000 graphics cards may sound like a simple iteration upon the original “RDNA” GPUs that came before it, but RDNA 2—which also powers the next-gen Xbox Series X and PlayStation 5 consoles—is much more than a mere refresh. Significant tweaking has resulted in a stunning 54-percent increase in power-per-watt over <a href="https://www.pcworld.com/article/3406840/amd-radeon-rx-5700-and-5700-xt-review.html">AMD’s last-gen Radeon RX 5000 GPUs</a>. Perhaps more notably, the Radeon RX introduces an innovative new “Infinity Cache” technology that reimagines how memory behaves in graphics cards. Oh, and ray tracing? AMD does that now, too.</p>
+</div>
+<div class="wp-block-product-widget-block product-widget is-half-width is-float-right">
+<div class="product-widget__block-title-wrapper">
+<h4 class="product-widget__block-title" id="mentioned-in-this-article">Mentioned in this article</h4>
+</div>
+<div class="product-widget__content-wrapper">
+<div class="product-widget__title-wrapper">
+<h3 class="product-widget__title" id="radeon-rx-6800">Radeon RX 6800</h3>
+</div>
+<div class="product-widget__image-outer-wrapper">
+<div class="product-widget__image-wrapper">
+<img alt="Radeon RX 6800" class="product-widget__image" decoding="async" height="4000" loading="lazy" sizes="(max-width: 6000px) 100vw, 6000px" src="https://images.idgesg.net/images/article/2020/11/dsc01267-100866091-orig.jpg?quality=50&amp;strip=all" width="6000"/>
+</div>
+</div>
+<div class="review product-widget__review-details">
+<img alt="Editors' Choice" class="product-widget__review-details--editors-choice-logo" decoding="async" loading="lazy" src="https://www.pcworld.com/wp-content/uploads/2021/09/PC-ED-CHOICE.png"/> <div class="product-widget__rating-and-review-link">
+<div class="product-widget__review-details--rating">
+<div aria-label="Rating of this product is 4.5 out of 5" class="starRating" style="--rating: 4.5;"></div>
+</div> <a class="product-widget__review-link" href="https://www.pcworld.com/article/393729/amd-radeon-rx-6800-rx-6800-xt-review.html" target="_blank">Read our review</a>
+</div>
+</div>
+<div class="product-widget__information">
+<div class="product-widget__information--rrp-wrapper">
+<span class="product-widget__information--rrp-label"></span>
+<span class="product-widget__information--rrp-value"></span>
+</div>
+<div class="product-widget__pricing-details">
+<span class="product-widget__pricing-details--label">Best Prices Today:</span>
+<span class="product-widget__pricing-details--links-wrapper">
+<a class="product-widget__pricing-details--link" data-domain-name="bestbuy" data-product="392734" data-subtag="2-1-393733-5-392734-9919" data-vars-category="Desktop PCs" data-vars-link-position="Product Sidebar" data-vars-link-position-id="005" data-vars-manufacturer="AMD" data-vars-manufacturer-id="9919" data-vars-outbound-link="https://www.bestbuy.com/site/xfx-amd-radeon-rx-6800-16gb-gddr6-pci-express-4-0-gaming-graphics-card-black/6442077.p?skuId=6442077" data-vars-po="" data-vars-product-id="392734" data-vars-product-name="Radeon RX 6800" data-vars-vendor="Best Buy" href="https://shop-links.co/link/?url=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2Fxfx-amd-radeon-rx-6800-16gb-gddr6-pci-express-4-0-gaming-graphics-card-black%2F6442077.p%3FskuId%3D6442077&amp;publisher_slug=pcworld&amp;exclusive=1&amp;article_name=pcworld&amp;article_url=https%3A%2F%2Fwww.pcworld.com%2Farticle%2F393733%2Frdna-2-deep-dive-inside-amd-radeon-rx-6000-graphics-cards.html&amp;u1=2-1-393733-5-392734-9919" rel="nofollow" target="_blank">$580 at Best Buy</a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="legacy_content">
+<p>Add it all up, and the Radeon RX 6800-series graphics debuting today manage to challenge <a href="https://www.pcworld.com/article/3574931/nvidia-geforce-rtx-3080-founders-edition-review.html">Nvidia’s enthusiast-class gaming flagships</a> for the first time in a long time. Head over to our <a href="https://www.pcworld.com/article/3596899/amd-radeon-rx-6800-rx-6800-xt-review.html">Radeon RX 6800 and RX 6800 XT review</a> to see what that means in practical terms. This high-level overview of the RDNA 2 architecture will help you explain how AMD achieved it all. </p><div class="fake_sidebar_front"></div><div class="ad page-ad has-ad-prefix ad-article" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"BTF1"}' data-aaad="true" data-ad-template="article" data-ofp="false" id="gpt-leaderboardmainbod-1"></div>
+<h2 class="toc" id="rdna-2-architecture-changes">RDNA 2 architecture changes</h2>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/ppw-100867213-orig.jpg" rel="nofollow"><img alt="ppw" border="0" data-imageid="100867213" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/ppw-100867213-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="675" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>AMD’s engineers approached RDNA 2 with lofty efficiency goals as their guiding lights. The original RDNA architecture provided a 50-percent performance-per-watt increase over its “GCN”-based predecessors, finally matching Nvidia’s vaunted power efficiency, and the company’s executives wanted RDNA 2 to keep that pace. Spoiler alert: They did. It took a lot of hard work though, as well as close collaboration with the Ryzen CPU architecture team, because RDNA 2 is built using the same TSMC 7nm manufacturing process as RDNA 1. A big part of the original RDNA’s efficiency gains came from the node leap from 14nm to 7nm, but RDNA 2’s improvements required more substantial tweaking.</p>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/rdna-2-arch-100867215-orig.jpg" rel="nofollow"><img alt="rdna 2 arch" border="0" data-imageid="100867215" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/rdna-2-arch-100867215-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="678" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/rdna-2-compute-units-100867216-orig.jpg" rel="nofollow"><img alt="rdna 2 compute units" border="0" data-imageid="100867216" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/rdna-2-compute-units-100867216-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="673" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>Despite the intense rejiggering, the fundamental RDNA 2 building blocks remain largely similar to RDNA 1’s in broad strokes—aside from the addition of dedicated ray accelerator hardware, which we’ll get to later—only scaled up <em>much</em> further.</p><div class="jwPlayer--floatingContainer">
+<div class="jwplayer" data-media-id="Ntle5CNP" id="jwplayer--floatingVideo"></div>
+</div>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/rdna-2-vs-1-100867187-orig.jpg" rel="nofollow"><img alt="rdna 2 vs 1" border="0" data-imageid="100867187" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/rdna-2-vs-1-100867187-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="846" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>AMD stayed modest with last generation’s RDNA 1 products. Its flagship, the Radeon RX 5700 XT, topped out at 40 compute units and 10.3 billion transistors inside its 251mm² die—a surprise considering AMD’s previous GCN architectures scaled up to 64 CU designs. (We’ll get to why that was later as well.) RDNA 2 blows well past that. The $579 Radeon RX 6800 includes 60 CUs, the $649 Radeon RX 6800 XT ups that to 72 CUs, and the flagship $999 Radeon RX 6900 XT will fully double-up last generation’s RX 5700 XT with a whopping 80 CUs inside a massive 519mm² die with over 26 billion transistors. By contrast, the “Ampere” GPU die inside <a href="https://www.pcworld.com/article/3575998/nvidia-geforce-rtx-3090-founders-edition-review.html">Nvidia’s rival $1,500 GeForce RTX 3090</a> packs a hair over 28 billion transistors into a much larger 628mm² die.</p>
+</div>
+<div class="wp-block-product-widget-block product-widget is-half-width is-float-right">
+<div class="product-widget__block-title-wrapper">
+<h4 class="product-widget__block-title" id="mentioned-in-this-article">Mentioned in this article</h4>
+</div>
+<div class="product-widget__content-wrapper">
+<div class="product-widget__title-wrapper">
+<h3 class="product-widget__title" id="amd-ryzen-9-5900x-12-core-24-thread-unlocked-desktop-processor-without-cooler">AMD Ryzen 9 5900X 12-core, 24-Thread Unlocked Desktop Processor Without Cooler</h3>
+</div>
+<div class="product-widget__image-outer-wrapper">
+<div class="product-widget__image-wrapper">
+<img alt="AMD Ryzen 9 5900X 12-core, 24-Thread Unlocked Desktop Processor Without Cooler" class="product-widget__image" decoding="async" loading="lazy" src="https://m.media-amazon.com/images/I/41rLUI4FOAL.jpg?quality=50&amp;strip=all"/>
+</div>
+</div>
+<div class="product-widget__information">
+<div class="product-widget__information--rrp-wrapper">
+<span class="product-widget__information--rrp-label"></span>
+<span class="product-widget__information--rrp-value"></span>
+</div>
+<div class="product-widget__pricing-details">
+<span class="product-widget__pricing-details--label">Best Prices Today:</span>
+<span class="product-widget__pricing-details--links-wrapper">
+<a class="product-widget__pricing-details--link" data-domain-name="amazon" data-product="392719" data-subtag="2-1-393733-5-392719-9919" data-vars-category="Desktop PCs" data-vars-link-position="Product Sidebar" data-vars-link-position-id="005" data-vars-manufacturer="AMD" data-vars-manufacturer-id="9919" data-vars-outbound-link="https://www.amazon.com/dp/B08164VTWH?tag=pcworld02-20&amp;linkCode=ogi&amp;th=1&amp;psc=1" data-vars-po="" data-vars-product-id="392719" data-vars-product-name="AMD Ryzen 9 5900X 12-core, 24-Thread Unlocked Desktop Processor Without Cooler" data-vars-vendor="" href="https://go.skimresources.com?id=111346X1569483&amp;xs=1&amp;url=https://www.amazon.com/dp/B08164VTWH?tag=pcworld02-20&amp;linkCode=ogi&amp;th=1&amp;psc=1&amp;xcust=2-1-393733-5-392719-9919&amp;sref=https://www.pcworld.com/article/393733/rdna-2-deep-dive-inside-amd-radeon-rx-6000-graphics-cards.html" rel="nofollow" target="_blank">$226.94 at Amazon</a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="legacy_content">
+<p>Swiping a page from AMD’s fantastic Ryzen 5000 CPUs, RDNA 2 implements pervasive fine-grain clock gating to allow parts of the GPU to slow down if they aren’t being used, improving power efficiency. RDNA 2 additionally features more robust clock tree splitting and gating (like server CPUs) for the same reason, but more parallelized to hit the higher bandwidths capable with GPUs. The company’s engineers also “aggressively” rebalanced data pipelines and even redesigned entire data paths, honing the architecture for maximum efficiency. Those optimizations accounted for about a third of the up to 54-percent performance-per-watt increase delivered in the Radeon RX 6800 and 6800 XT (and the whopping 65-percent increase promised for the flagship Radeon RX 6900 XT coming December 8).</p><div id="taboola-mid-article-thumbnails"></div>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/high-speed-design-100867206-orig.jpg" rel="nofollow"><img alt="high speed design" border="0" data-imageid="100867206" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/high-speed-design-100867206-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="674" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>Performance-per-watt isn’t all about power efficiency, though—hence the word “performance.” Another third of RDNA 2’s perf-per-watt improvement comes from pushing the pedal to the metal even harder. Once again, AMD’s engineers optimized the microarchitecture, logic, and performance libraries with a focus on speed. The most tangible results of their efforts have to be the insane clock speeds of the Radeon RX 6000 GPUs. AMD’s CPU engineers have spent a long time honing speeds on the 7nm process node by this point, and they shared their expertise with the Radeon team to great effect.</p>
+<p>The Radeon RX 6000-series graphics cards push well past the 2GHz barrier. Company representatives were keen to tout the “unprecedented” speeds in conversations with press. They should be. All three high-end options—the Radeon RX 6800, 6800 XT, and 6900 XT—have boost clock speeds that surpass a whopping <em>2.1GHz</em>. The two XT models go all the way up to 2,250MHz. Those are under ideal conditions, but AMD says the XT cards hit 2,015MHz even in gaming workloads, keeping pace with Nvidia’s staggeringly powerful Ampere GPUs, which can boost to roughly 2GHz during gameplay.</p><div class="ad page-ad has-ad-prefix ad-article" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"BTF2"}' data-aaad="true" data-ad-template="article" data-ofp="false" id="gpt-leaderboardmainbod-2"></div>
+<p>AMD couldn’t have hit such fast speeds or achieved its power efficiency goals without the introduction of RDNA 2’s revolutionary Infinity Cache.</p>
+<h2 class="toc" id="rdna-2-infinity-cache-explained">RDNA 2 Infinity Cache explained</h2>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/infinity-cache-solution-100867212-orig.jpg" rel="nofollow"><img alt="infinity cache solution" border="0" data-imageid="100867212" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/infinity-cache-solution-100867212-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="621" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>RDNA 2’s standout feature also swipes a page from processor design—Epyc server processors, in this case. Traditional GPUs include L1 and L2 caches of various sizes. Radeon RX 6000 graphics cards add an “Infinity Cache” that behaves similarly to the “Game Cache” that helps modern Ryzen processors game so much better than earlier models did. Inspired by Epyc server CPUs, Infinity Cache is basically a massive 128MB L3 cache that has been heavily optimized for gaming workloads. It’s four times denser than the L3 SRAM in Epyc processors to help improve power efficiency, too.</p><div id="miso-smart-answers-faq"></div>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/infinity-cache-100867211-orig.jpg" rel="nofollow"><img alt="infinity cache" border="0" data-imageid="100867211" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/infinity-cache-100867211-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="675" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>Equipping the GPU with such a large, high-speed cache lets it keep most of the working data for any given frame on-die. This saves the GPU from having to keep sending signals all the way across the package to the 16GB of onboard GDDR6 memory in many cases, especially because the cache holds a lot of temporal and spatial data that can be reused in subsequent frames. That makes Infinity Cache much faster and much more power-efficient compared to simply increasing the bus width to the memory modules.</p>
+<p>Sam Naffziger, AMD’s product technology architect, says that even though the Radeon RX 6000 GPUs stick to a modest 256-bit bus, the Infinity Cache helps RDNA 2 deliver massively more bandwidth-per-watt than traditional GDDR6 equipped with even a humongous 512-bit bus. By comparison, Nvidia’s rival high-end RTX 3080 and 3090 graphics cards utilize wider 320-bit and 384-bit buses, respectively, paired with cutting-edge GDDR6X memory that uses “PAM4” signaling technology, which lets them send four possible values per cycle, up from the traditional two. That lets GDDR6X move data at twice the rate of GDDR6, but with higher latency and power demands.</p><div class="ad page-ad has-ad-prefix ad-article" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"BTF3"}' data-aaad="true" data-ad-template="article" data-ofp="false" id="gpt-leaderboardmainbod-3"></div>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/infinity-cache-clock-speeds-100867208-orig.jpg" rel="nofollow"><img alt="infinity cache clock speeds" border="0" data-imageid="100867208" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/infinity-cache-clock-speeds-100867208-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="670" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>The Infinity Cache also helps enable RDNA 2’s sky-high clock speeds. If AMD had tried to force the original RDNA memory subsystem on RDNA 2, Naffziger said, it would have required a massively larger memory configuration to avoid starving the GPU for bandwidth. That would have required upgrading to huge 512-bit buses, and more, faster memory, all of which would have sent the power demands skyrocketing—a no-go given RDNA 2’s design goals.</p>
+<p>The overwhelming bandwidth enabled by Infinity Cache keeps RDNA 2’s CUs amply fed, as you can see in the chart above. When AMD’s engineers disable Infinity Cache in their labs and revert to the standard cache design with 16GB of GDDR6 memory over a 256-bit bus, GPU clock frequencies fall off a cliff.</p><div id="miso-ipp"></div>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/infinity-cache-latency-100867209-orig.jpg" rel="nofollow"><img alt="infinity cache latency" border="0" data-imageid="100867209" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/infinity-cache-latency-100867209-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="657" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>By keeping so much frame data on die, the Infinity Cache helps the Radeon RX 6800 average 34 percent less latency than the older Radeon RX 5700 XT. When a scene fully “hits” the Infinity Cache, the latency reduces further. Naffziger says that AMD’s Infinity Fabric communication technology can scale its speeds up and down to optimize efficiency, ramping up to 550GB/s when the Infinity Cache becomes especially stressed. But even when the GPU needs to access your card’s actual VRAM, latency also improves compared to the last-gen Radeon cards thanks to a general speed increase for Infinity Fabric.</p>
+<figure class="medium right"><a class="zoom" href="https://images.idgesg.net/images/article/2020/10/rdna-2-chip-100864062-orig.jpg" rel="nofollow"><img alt="rdna 2 chip" border="0" data-imageid="100864062" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/10/rdna-2-chip-100864062-medium.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="300" loading="lazy" src="" width="300"/></a> <small class="credit">AMD</small></figure>
+<p>AMD tuned the Infinity Cache on this initial trio of enthusiast-class cards for 4K gaming, which is why it’s configured with an impressive 128MB. Naffziger says the large size lets Infinity Cache achieve a 56 percent “hit rate” across a wide range of titles at 4K resolution, and higher hit rates as the resolution scales down. Part of the reason why these cards perform better than their Nvidia competition at 1440p gaming is due to high Infinity Cache hit rates, AMD’s Laura Smith said.</p><div class="ad page-ad has-ad-prefix ad-article" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"BTF4"}' data-aaad="true" data-ad-template="article" data-ofp="false" id="gpt-leaderboardmainbod-4"></div>
+<p>But the Infinity Cache performance doesn’t scale linearly as resolution decreases, Naffziger warned. When you drop down to 1080p, games often become more CPU- or engine-bound than memory-bound. (I wouldn’t be surprised if more affordable Radeon RX 6000 offerings in the future decreased the Infinity Cache’s size because of that.)</p>
+<p>Likewise, the Infinity Cache spreads its wings the most in applications that are more memory-bound, though its benefits can be felt even when a game needs to access traditional VRAM more often. Naffziger says in those cases, RDNA 2’s overall memory system behaves roughly on a par with what you’d see if you’d equipped these cards with a 512-bit bus.</p><div class="nativo" id="nativo1"></div>
+<p>Infinity Cache greatly helps with ray tracing too.</p>
+<h2 class="toc" id="ray-tracing-with-rdna-2">Ray tracing with RDNA 2</h2>
+<p>Yes, AMD’s Radeon GPUs can handle real-time ray tracing now. Nvidia kicked off the ray tracing party by adding dedicated “RT cores” for handling ray tracing to its older RTX 20-series GPUs. Now AMD is joining the fun by adding a single dedicated “ray accelerator” to each RDNA 2 compute unit. That means as you move up the Radeon RX 6000 stack, more powerful graphics cards with more compute units will also be better at ray tracing, as they’ll have more dedicated ray tracing hardware.</p><div class="ad page-ad has-ad-prefix ad-article" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"BTF5"}' data-aaad="true" data-ad-template="article" data-ofp="false" id="gpt-leaderboardmainbod-5"></div>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/ray-tracing-100867214-orig.jpg" rel="nofollow"><img alt="ray tracing" border="0" data-imageid="100867214" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/ray-tracing-100867214-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="676" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>As you can see in our Radeon RX 6800 and 6800 XT review, RDNA 2 isn’t quite on a par with Nvidia’s second-gen ray tracing implementation. It still delivers surprisingly good ray tracing performance, achieving very playable frame rates at both 1440p and 1080p resolution. You won’t be able to play games at 4K with the intensive lighting technologies enabled, however, and AMD says it targeted 1440p gaming as its ray tracing goal. By and large, it delivered.</p>
+<p>Infinity Cache comes through in the clutch here, too. We delved deeper into how ray tracing works in our original <a href="https://www.pcworld.com/article/3305717/nvidia-turing-gpu-geforce-rtx-2080-ti.html">deep-dive of Nvidia’s Turing architecture</a>, where the technology debuted, but basically it works by having dedicated ray tracing hardware perform calculations of how the light rays behave, using a technique known as bounding volume hierarchy (BVH) traversal. Performing that task is very memory-intensive, which is why VRAM demands leap upward when you enable ray tracing in a game.</p>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2018/09/lkdfghpzhx-1-100771725-orig.jpg" rel="nofollow"><img alt="lkdfghpzhx 1" border="0" data-imageid="100771725" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2018/09/lkdfghpzhx-1-100771725-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="775" loading="lazy" src="" width="1200"/></a> <small class="credit">Nvidia</small>
+<figcaption>
+<p>Nvidia’s BVH algorithim for ray tracing</p>
+</figcaption>
+</figure>
+<p>AMD says it’s able to keep “a very high percentage of the BVH working set” directly inside the Infinity Cache, reducing latency and improving overall performance. The ray accelerator handles intersections in the BVH, while RDNA 2 uses standard shader code in the compute units for ray transversal and shading the actual scene.</p>
+<p>That said, AMD does <em>not</em>have an answer for Nvidia’s Deep Learning Super Sampling (DLSS) technology. Ray tracing is incredibly computationally expensive, and activating it creates a striking performance impact. To counteract the loss in frame rate, DLSS renders games at a lower resolution, then upscales the final image to your game resolution using machine learning to spiff up the image, all powered by Nvidia’s dedicated AI-focused tensor cores.</p><div class="ad page-ad has-ad-prefix ad-article" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"BTF6"}' data-aaad="true" data-ad-template="article" data-ofp="false" id="gpt-leaderboardmainbod-6"></div>
+<p>Early iterations of DLSS could look like Vaseline smeared on your screen, but the DLSS 2.0 technology rolling out in newer games <a href="https://www.pcworld.com/article/3533463/nvidias-faster-better-dlss-20-could-be-a-game-changer.html">works like black magic</a>. It’s wonderful, and truly makes flipping ray tracing on less painful. The tensor cores also handle “denoising” when ray tracing is on to avoid a gritty look common on older, less advanced ray tracing implementations.</p>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/10/dx12u-fidelityfx-100863930-orig.jpg" rel="nofollow"><img alt="dx12u fidelityfx" border="0" data-imageid="100863930" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/10/dx12u-fidelityfx-100863930-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="649" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small>
+<figcaption>
+<p>You can see the mysterious “Super Resolution” listed here.</p>
+</figcaption>
+</figure>
+<p>AMD doesn’t include dedicated AI upscaling hardware in RDNA 2. Denoising is handled by the general compute units, and it works very well by my eye—but there’s no DLSS-like feature to claw back lost frames. During its Radeon RX 6000 reveal, AMD teased some sort of DLSS rival dubbed “Super Resolution” as part of its FidelityFX suite of open-source tools without going into detail. Representatives declined to say more, other than to state that Super Resolution will <em>not</em>be available immediately. That said, because AMD’s RDNA 2 powers both next-gen consoles as well, the company hopes its open-source alternative winds up gaining traction with developers when it does arrive. The company’s FidelityFX toolkit also includes a denoiser solution that developers can implement.</p>
+<h2 class="toc" id="directx-12-ultimate-features-and-more">DirectX 12 Ultimate features and more</h2>
+<p>But wait, there’s more. Like Nvidia’s recent RTX-branded GPUs, RDNA 2 is fully DirectX 12 Ultimate-compliant. Microsoft calls DX12 “a force multiplier for the entire gaming ecosystem” by unifying an array of new features—mostly ones introduced in Nvidia’s Turing-based RTX 20-series, but largely ignored by developers—across all modern PC and next-gen Xbox Series X hardware.</p>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/11/variable-rate-shading-100867217-orig.jpg" rel="nofollow"><img alt="variable rate shading" border="0" data-imageid="100867217" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/11/variable-rate-shading-100867217-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="745" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>That means Radeon RX 6000-series graphics cards also pick up nifty tricks like mesh shading, variable rate shading, and sampler feedback, which we covered in <a href="https://www.pcworld.com/article/3533648/directx-12-ultimate-unifies-ray-tracing-speed-boosting-graphics-tricks-across-pcs-and-xbox.html">our look at DirectX 12 Ultimate</a>. All of the features hold great potential to improve both performance and visual fidelity. AMD optimized various parts of RDNA 2 around them, such as improving the color compression behavior and adding dedicated sampler feedback logic.</p><div class="ad page-ad has-ad-prefix ad-article" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"BTF7"}' data-aaad="true" data-ad-template="article" data-ofp="false" id="gpt-leaderboardmainbod-7"></div>
+</div>
+<div class="wp-block-product-widget-block product-widget is-half-width is-float-right">
+<div class="product-widget__block-title-wrapper">
+<h4 class="product-widget__block-title" id="the-best-nvme-ssd">The best NVMe SSD</h4>
+</div>
+<div class="product-widget__content-wrapper">
+<div class="product-widget__title-wrapper">
+<h3 class="product-widget__title" id="sk-hynix-gold-p31-m-2-nvme-ssd-1tb">SK Hynix Gold P31 M.2 NVMe SSD (1TB)</h3>
+</div>
+<div class="product-widget__image-outer-wrapper">
+<div class="product-widget__image-wrapper">
+<img alt="SK Hynix Gold P31 M.2 NVMe SSD (1TB)" class="product-widget__image" decoding="async" loading="lazy" src="https://m.media-amazon.com/images/I/41X0HJLVlzL.jpg?quality=50&amp;strip=all"/>
+</div>
+</div>
+<div class="review product-widget__review-details">
+<img alt="Editors' Choice" class="product-widget__review-details--editors-choice-logo" decoding="async" loading="lazy" src="https://www.pcworld.com/wp-content/uploads/2021/09/PC-ED-CHOICE.png"/> <div class="product-widget__rating-and-review-link">
+<div class="product-widget__review-details--rating">
+<div aria-label="Rating of this product is 4.5 out of 5" class="starRating" style="--rating: 4.5;"></div>
+</div> <a class="product-widget__review-link" href="https://www.pcworld.com/article/393364/sk-hynix-gold-p31-ssd-review-the-first-128-layer-nand-drive.html" target="_blank">Read our review</a>
+</div>
+</div>
+<div class="product-widget__information">
+<div class="product-widget__information--rrp-wrapper">
+<span class="product-widget__information--rrp-label"></span>
+<span class="product-widget__information--rrp-value"></span>
+</div>
+<div class="product-widget__pricing-details">
+<span class="product-widget__pricing-details--label">Best Prices Today:</span>
+<span class="product-widget__pricing-details--links-wrapper">
+<a class="product-widget__pricing-details--link" data-domain-name="amazon" data-product="392597" data-subtag="2-1-393733-5-392597-17287" data-vars-category="Technology Industry" data-vars-link-position="Product Sidebar" data-vars-link-position-id="005" data-vars-manufacturer="SK Hynix" data-vars-manufacturer-id="17287" data-vars-outbound-link="https://www.amazon.com/dp/B08DKB5LWY?tag=pcworld02-20&amp;linkCode=ogi&amp;th=1&amp;psc=1" data-vars-po="" data-vars-product-id="392597" data-vars-product-name="SK Hynix Gold P31 M.2 NVMe SSD (1TB)" data-vars-vendor="" href="https://go.skimresources.com?id=111346X1569483&amp;xs=1&amp;url=https://www.amazon.com/dp/B08DKB5LWY?tag=pcworld02-20&amp;linkCode=ogi&amp;th=1&amp;psc=1&amp;xcust=2-1-393733-5-392597-17287&amp;sref=https://www.pcworld.com/article/393733/rdna-2-deep-dive-inside-amd-radeon-rx-6000-graphics-cards.html" rel="nofollow" target="_blank">$79.99 at Amazon</a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="legacy_content">
+<p>AMD’s Radeon GPUs will also support Microsoft’s DirectStorage API when it debuts in 2021 (as will Nvidia’s RTX 30-series). DirectStorage lets your NVMe SSD talk directly to your graphics card’s memory for vastly improved loading and asset-streaming performance. Here’s <a href="https://www.pcworld.com/article/3573909/how-microsoft-and-nvidia-plan-to-kill-game-loading-times-on-pcs.html">how DirectStorage aims to kill game-loading times on the PC</a>. It has the potential to be a real game-changer.</p>
+<figure class="large"><a class="zoom" href="https://images.idgesg.net/images/article/2020/10/lisa-su-rdna-2-radeon-chip-100864057-orig.jpg" rel="nofollow"><img alt="lisa su rdna 2 radeon chip" border="0" data-imageid="100864057" data-license="Supplied Art" data-src="https://images.idgesg.net/images/article/2020/10/lisa-su-rdna-2-radeon-chip-100864057-large.jpg?auto=webp&amp;quality=85,70" decoding="async" generic-overlay-domain="idgesg" height="800" loading="lazy" src="" width="1200"/></a> <small class="credit">AMD</small></figure>
+<p>Other aspects of RDNA 2 received upgrades as well. The display engine now supports HDM1 2.1, for example. The multi-media engine can handle AV1 decoding for 8K videos and includes a high-quality 8K HEVC encode accelerator, matching advancements found in Nvidia’s Ampere GPUs. 8K is the most niche of niche cases at this point, though, and this is getting long enough.</p>
+</div>
+<div class="wp-block-product-widget-block product-widget is-half-width is-float-right">
+<div class="product-widget__block-title-wrapper">
+<h4 class="product-widget__block-title" id="mentioned-in-this-article">Mentioned in this article</h4>
+</div>
+<div class="product-widget__content-wrapper">
+<div class="product-widget__title-wrapper">
+<h3 class="product-widget__title" id="radeon-rx-6800-xt">Radeon RX 6800 XT</h3>
+</div>
+<div class="product-widget__image-outer-wrapper">
+<div class="product-widget__image-wrapper">
+<img alt="Radeon RX 6800 XT" class="product-widget__image" decoding="async" height="4000" loading="lazy" sizes="(max-width: 6000px) 100vw, 6000px" src="https://images.idgesg.net/images/article/2020/11/dsc01295-100866113-orig.jpg?quality=50&amp;strip=all" width="6000"/>
+</div>
+</div>
+<div class="product-widget__information">
+<div class="product-widget__information--rrp-wrapper">
+<span class="product-widget__information--rrp-label"></span>
+<span class="product-widget__information--rrp-value"></span>
+</div>
+<div class="product-widget__pricing-details">
+<span class="product-widget__pricing-details--label">Best Prices Today:</span>
+<span class="product-widget__pricing-details--links-wrapper">
+<a class="product-widget__pricing-details--link" data-domain-name="amazon" data-product="392735" data-subtag="2-1-393733-5-392735-9919" data-vars-category="Desktop PCs" data-vars-link-position="Product Sidebar" data-vars-link-position-id="005" data-vars-manufacturer="AMD" data-vars-manufacturer-id="9919" data-vars-outbound-link="https://www.amazon.com/dp/B08TJ2BHCQ?tag=pcworld02-20&amp;linkCode=ogi&amp;th=1&amp;psc=1" data-vars-po="" data-vars-product-id="392735" data-vars-product-name="Radeon RX 6800 XT" data-vars-vendor="" href="https://go.skimresources.com?id=111346X1569483&amp;xs=1&amp;url=https://www.amazon.com/dp/B08TJ2BHCQ?tag=pcworld02-20&amp;linkCode=ogi&amp;th=1&amp;psc=1&amp;xcust=2-1-393733-5-392735-9919&amp;sref=https://www.pcworld.com/article/393733/rdna-2-deep-dive-inside-amd-radeon-rx-6000-graphics-cards.html" rel="nofollow" target="_blank">$699.99 at Amazon</a> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="legacy_content">
+<p>Be sure to check out our full <a href="https://www.pcworld.com/article/3596899/amd-radeon-rx-6800-rx-6800-xt-review.html">Radeon RX 6800 and RX 6800 XT review</a> to see how all these RDNA 2 improvements translate into graphics cards you can actually buy. They’re fantastic, and they truly challenge Nvidia’s high-end gaming options for the first time since 2013’s Radeon R9 290X hit the streets. Whatever else you can say about 2020, it’s a great year to be a gamer.</p></div>
+</body></div>
+<div class="newsletter" id="newsletter-end"></div><div class="nativo" id="nativo2"></div> </div>
+</div>
+<div class="wp-block-column">
+<div class="ad page-ad ad-right-rail is-sticky has-ad-prefix" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"ATF1"}' data-aaad="true" data-ad-template="right_rail" data-ofp="false" id="gpt-rightrail-1"></div> </div>
+</div>
+</section>
+</article><!-- #post-393733 -->
+</main><!-- #main -->
+<div class="ad page-ad has-ad-prefix ad-footer" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"BTF"}' data-aaad="true" data-ad-template="footer" data-ofp="false" id="gpt-leaderboardfoot-1"></div><div class="taboola_container"><div data-src="https://www.pcworld.com/article/393733/rdna-2-deep-dive-inside-amd-radeon-rx-6000-graphics-cards.html" data-widget-id="alternating-thumbnails-a" id="taboola-feed-below-article-thumbnails"></div></div> 
+<footer class="primaryFooter">
+<div class="primaryFooter-wrap">
+<div class="primaryFooter-return-top" title="Return to Top">
+<svg viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M35.5 279.9l148-148.4c4.7-4.7 12.3-4.7 17 0l148 148.4c4.7 4.7 4.7 12.3 0 17l-19.6 19.6c-4.8 4.8-12.5 4.7-17.1-.2L218 219.2V468c0 6.6-5.4 12-12 12h-28c-6.6 0-12-5.4-12-12V219.2l-93.7 97.1c-4.7 4.8-12.4 4.9-17.1.2l-19.6-19.6c-4.8-4.7-4.8-12.3-.1-17zM12 84h360c6.6 0 12-5.4 12-12V44c0-6.6-5.4-12-12-12H12C5.4 32 0 37.4 0 44v28c0 6.6 5.4 12 12 12z"></path>
+</svg></div>
+<div class="primaryFooter-top">
+<div class="primaryFooter-top--logo">
+<a aria-label="PCWorld helps you navigate the PC ecosystem to find the products you want and the advice you need to get the job done." href="https://www.pcworld.com" title="PCWorld">
+<svg data-name="Layer 1" id="Layer_1" viewbox="0 0 169.36 36.72" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><clippath id="clip-path"><rect class="cls-1" height="36.72" width="169.36"></rect></clippath><clippath id="clip-path-2"><rect class="cls-1" height="36.72" width="169.36"></rect></clippath></defs><g data-name="PCWorld (Reverse)" id="PCWorld_Reverse_"><g class="cls-2"><g class="cls-3"><path class="cls-4" d="M6.15,25v11H0V2.4H9.52c9.32,0,14.42,1.45,14.42,10.67,0,9.67-7,11.93-11.78,11.93Zm0-17.45V19.23h5.19c4.47,0,6.35-1.54,6.35-6.11,0-3.84-1.35-5.57-6.49-5.57Z"></path><path class="cls-4" d="M25.16,19.23c0-10.58,7-17.5,16.59-17.5a23,23,0,0,1,9.56,2l-.67,5.87a22.49,22.49,0,0,0-8.89-1.93c-6.54,0-9.86,4.86-9.86,11.59s3.32,11.58,9.86,11.58a22.66,22.66,0,0,0,8.89-1.92l.67,5.86a22.88,22.88,0,0,1-9.56,2c-9.61,0-16.59-6.92-16.59-17.49"></path><polygon class="cls-4" points="87.97 36.05 82.53 36.05 75.03 13.6 67.58 36.05 61.77 36.05 52.3 2.4 58.69 2.4 65.42 26.29 72.92 2.4 77.2 2.4 84.98 25.67 91.43 2.4 97.82 2.4 87.97 36.05"></polygon><path class="cls-4" d="M94.54,24.08c0-6.73,4.47-12.45,12.16-12.45s12.16,5.72,12.16,12.45-4.47,12.45-12.16,12.45S94.54,30.81,94.54,24.08m6.1,0c0,4.47,2.21,7.55,6.06,7.55s6-3.08,6-7.55-2.21-7.54-6-7.54-6.06,3.07-6.06,7.54"></path><path class="cls-4" d="M133.81,17.26H131.6a4.9,4.9,0,0,0-4.37,2.4V36.05h-6V12h5.58l.15,2.55a9.42,9.42,0,0,1,6.39-2.94H135Z"></path><path class="cls-4" d="M144.82,36.53h-2.17c-4.27,0-6.15-2.83-6.15-6.3V0h6V27.78c0,3.85.53,3.85,2.89,3.85Z"></path><path class="cls-4" d="M163.73,36.05l-.09-1.34a9.4,9.4,0,0,1-5.87,1.82c-7.69,0-11.77-5.72-11.77-12.45s4.08-12.45,11.77-12.45a9.51,9.51,0,0,1,5.63,1.59V0h6V36.05Zm-11.63-12c0,4.47,2.21,7.55,6.06,7.55s5.53-3.08,5.53-7.55-1.69-7.54-5.53-7.54-6.06,3.07-6.06,7.54"></path></g></g></g></svg> </a>
+</div>
+<div class="primaryFooter-top--tagline">PCWorld helps you navigate the PC ecosystem to find the products you want and the advice you need to get the job done.</div>
+<div class="primaryFooter-top-social-wrap">
+<ul class="primaryFooter-top-social">
+<li class="primaryFooter-top-social--facebook">
+<a href="https://www.facebook.com/PCWorld/" rel="noopener noreferrer nofollow" target="_blank" title="Follow us on Facebook">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg> </a>
+</li>
+<li class="primaryFooter-top-social--twitter">
+<a href="https://twitter.com/pcworld" rel="noopener noreferrer nofollow" target="_blank" title="Follow us on X">
+<svg id="Layer_1" style="enable-background:new 0 0 49.8 45;" version="1.1" viewbox="0 0 49.8 45" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:graph="ns_graphs;" xmlns:i="ns_ai;" xmlns:x="ns_extend;" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+<metadata>
+<sfw xmlns="ns_sfw;">
+<slices></slices>
+<slicesourcebounds bottomleftorigin="true" height="45" width="49.8" x="-67.2" y="-209.8"></slicesourcebounds>
+</sfw>
+</metadata>
+<g>
+<path d="M39.2,0h7.6L30.2,19.1L49.8,45H34.4l-12-15.7L8.6,45H1l17.8-20.4L0,0h15.8l10.9,14.4L39.2,0z M36.5,40.4h4.2L13.5,4.3H8.9
+		L36.5,40.4z"></path>
+</g>
+</svg> </a>
+</li>
+<li class="primaryFooter-top-social--youtube">
+<a href="https://www.youtube.com/channel/UCDC1Pas1aocEA5HBl7jp0ew" rel="noopener noreferrer nofollow" target="_blank" title="Follow us on YouTube">
+<svg viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg> </a>
+</li>
+<li class="primaryFooter-top-social--linkedin">
+<a href="https://www.linkedin.com/company/pc-world_2/" rel="noopener noreferrer nofollow" target="_blank" title="Follow us on LinkedIn">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg> </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="primaryFooter-bottom">
+<div class="primaryFooter-menu-wrap"><ul class="primaryFooter-menu" id="footer-primary"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children inactive" id="menu-item-100000311-footer-primary"><a>Policies</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000312-footer-primary"><a href="https://www.pcworld.com/about/privacy">Privacy Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000313-footer-primary"><a href="https://www.pcworld.com/about/cookie-policy">Cookie Policy</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100084140-footer-primary"><a href="https://foundryco.com/copyright-notice/">Copyright Notice</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100056491-footer-primary"><a href="https://www.pcworld.com/about/member-preferences#cookie">European Privacy Settings</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000321-footer-primary"><a href="https://www.pcworld.com/about/member-preferences">Member Preferences</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000315-footer-primary"><a href="https://www.pcworld.com/about/affiliate-link-policy">Editorial independence</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100000318-footer-primary"><a href="https://info.wrightsmedia.com/idg-media-licensing">Licensing &amp; Eprints</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000317-footer-primary"><a href="https://www.pcworld.com/about/ccpa">California: Do not Sell my Personal Info</a></li>
+</ul>
+</li>
+</ul></div><div class="primaryFooter-menu-wrap"><ul class="primaryFooter-menu" id="footer-secondary"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children inactive" id="menu-item-100000322-footer-secondary"><a>About</a><button aria-label="open-close" class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button>
+<ul class="sub-menu is-dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000323-footer-secondary"><a href="https://www.pcworld.com/about">About Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100000327-footer-secondary"><a href="https://foundryco.com/our-brands/pcworld/">Advertise</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100000328-footer-secondary"><a href="https://foundryco.com/idg-ad-choices/">Ad Choice</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100000329-footer-secondary"><a href="https://www.pcworld.com/about/contact">Contact Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100000331-footer-secondary"><a href="https://foundryco.com/work-here/">Foundry Careers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom inactive" id="menu-item-100057810-footer-secondary"><a href="/gaming">GamePro</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page inactive" id="menu-item-100080872-footer-secondary"><a href="https://www.pcworld.com/smart-answers">Smart Answers</a></li>
+</ul>
+</li>
+</ul></div> <div class="primaryFooter-menu-wrap">
+<ul class="primaryFooter-menu" id="third-column-footer-menu">
+<li class="menu-item-has-children" id="third-column-footer-menu-item-one">
+				PCWorld Categories<button class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button> <ul class="sub-menu" id="footer_one_image">
+<li>
+<p><a href="https://www.pcworld.com/business">Business</a></p>
+<p><a href="https://www.pcworld.com/laptops">Laptop</a></p>
+<p><a href="https://www.pcworld.com/mobile">Mobile</a></p>
+<p><a href="https://www.pcworld.com/pc-components">PC Hardware</a></p>
+<p><a href="https://www.pcworld.com/deals">Deals</a></p> </li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="primaryFooter-menu-wrap">
+<ul class="primaryFooter-menu" id="forth-column-footer-menu">
+<li class="menu-item-has-children" id="third-column-footer-menu-item">
+					Subscribe<button class="sub-menu-open-button"><svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg></button> <ul class="sub-menu" id="footer_two_image">
+<li id="footer_two_image_item">
+<img alt="Recent cover images of Macworld Digital Magazine" loading="lazy" src="https://www.pcworld.com/wp-content/uploads/2021/09/thumbnail_pcworld-wp-footer-promo.png "></img></li>
+<li>
+<p><a href="https://simplecirc.com/subscribe/pcworld">Digital Magazine - Subscribe</a></p>
+<p><a href="https://www.pcworld.com/faq">Digital Magazine - Info</a></p>
+<p><a href="https://simplecirc.com/give_a_gift/pcworld">Gift Subscription</a></p>
+<p><a href="https://www.pcworld.com/newsletters/signup">Newsletters</a></p> </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-base">
+<div class="footer-base-child foundry-logo">
+<svg viewbox="0 0 338 82" xmlns="http://www.w3.org/2000/svg"><defs></defs><g data-name="Layer 2" id="Layer_2"><g data-name="Layer 1" id="Layer_1-2"><path class="cls-1" d="M167.33,1.09c6.31,0,10,4.11,10,10s-3.65,10-10,10-10-4.18-10-10S160.94,1.09,167.33,1.09Z"></path><path class="cls-1" d="M140.57,58.33c0,4.11-.38,7.68-1.67,10.64-3.42,7.83-10.57,11.94-20.3,11.94-10.11,0-17.26-4.11-20.68-11.94-1.29-3-1.67-6.53-1.67-10.64V26.63h13.68V57.57a15.6,15.6,0,0,0,.84,6c1.44,3.34,4.56,4.56,7.83,4.56a7.72,7.72,0,0,0,7.45-4.56,15.6,15.6,0,0,0,.84-6V26.63h13.68Z"></path><path class="cls-1" d="M189.9,48V79.85H176.22V49a15.53,15.53,0,0,0-.83-6c-1.45-3.35-4.57-4.87-8.06-4.87s-6.62,1.52-8.06,4.87a15.51,15.51,0,0,0-.84,6V79.85H144.75V48c0-4.1.38-7.67,1.67-10.64,3.42-7.83,10.57-12,20.91-12s17.48,4.18,20.9,12C189.52,40.32,189.9,43.89,189.9,48Z"></path><polygon class="cls-1" points="311.23 47.39 322.48 26.63 337 26.63 317.92 61.15 317.92 79.84 303.93 79.84 303.93 61.15 285 26.63 300.06 26.63 311.23 47.39"></polygon><polygon class="cls-1" points="39.09 26.63 1 26.63 1 79.84 14.68 79.84 14.68 61.83 37.41 61.83 37.41 49.51 14.68 49.51 14.68 39.02 39.09 39.02 39.09 26.63"></polygon><path class="cls-1" d="M167.33,1.09c6.31,0,10,4.11,10,10s-3.65,10-10,10-10-4.18-10-10S160.94,1.09,167.33,1.09Z"></path><path class="cls-1" d="M140.57,58.33c0,4.11-.38,7.68-1.67,10.64-3.42,7.83-10.57,11.94-20.3,11.94-10.11,0-17.26-4.11-20.68-11.94-1.29-3-1.67-6.53-1.67-10.64V26.63h13.68V57.57a15.6,15.6,0,0,0,.84,6c1.44,3.34,4.56,4.56,7.83,4.56a7.72,7.72,0,0,0,7.45-4.56,15.6,15.6,0,0,0,.84-6V26.63h13.68Z"></path><path class="cls-1" d="M189.9,48V79.85H176.22V49a15.53,15.53,0,0,0-.83-6c-1.45-3.35-4.57-4.87-8.06-4.87s-6.62,1.52-8.06,4.87a15.51,15.51,0,0,0-.84,6V79.85H144.75V48c0-4.1.38-7.67,1.67-10.64,3.42-7.83,10.57-12,20.91-12s17.48,4.18,20.9,12C189.52,40.32,189.9,43.89,189.9,48Z"></path><polygon class="cls-1" points="311.08 47.39 322.33 26.63 336.85 26.63 317.77 61.15 317.77 79.84 303.78 79.84 303.78 61.15 284.85 26.63 299.9 26.63 311.08 47.39"></polygon><path class="cls-1" d="M267.37,63.05h-8.59v16.8H245.09V26.63h25.39c10.19,0,17.79,6.77,17.79,18.09,0,7-2.89,12.32-7.9,15.51l8.21,19.62H274Zm-8.59-24.63V51.11h8.59c5.09,0,7.3-2.43,7.3-6.39,0-3.72-2.21-6.3-7.3-6.3Zm8.59,24.63h-8.59v16.8H245.09V26.63h25.39c10.19,0,17.79,6.77,17.79,18.09,0,7-2.89,12.32-7.9,15.51l8.21,19.62H274Zm-8.59-24.63V51.11h8.59c5.09,0,7.3-2.43,7.3-6.39,0-3.72-2.21-6.3-7.3-6.3Z"></path><path class="cls-1" d="M194.54,79.85V26.63h19.69c17.26,0,27.37,10.49,27.37,26.61,0,16.34-9,26.61-26.53,26.61Zm13.69-12h5.7c8.89,0,13.68-4.86,13.68-14.59,0-9.5-4.79-14.6-13.68-14.6h-5.7Zm-13.69,12V26.63h19.69c17.26,0,27.37,10.49,27.37,26.61,0,16.34-9,26.61-26.53,26.61Zm13.69-12h5.7c8.89,0,13.68-4.86,13.68-14.59,0-9.5-4.79-14.6-13.68-14.6h-5.7Z"></path><path class="cls-1" d="M67.06,25.57c16,0,25.54,11.78,25.54,27.67,0,16.27-9.88,27.67-25.54,27.67-16,0-25.62-11.71-25.62-27.67C41.44,37.12,51.4,25.57,67.06,25.57ZM67,68.44c7.23,0,11.79-6,11.79-14.82C78.77,43.89,74.21,38,67.36,38c-7.45,0-12,5.85-12,14.82C55.35,62.44,59.91,68.44,67,68.44Zm.08-42.87c16,0,25.54,11.78,25.54,27.67,0,16.27-9.88,27.67-25.54,27.67-16,0-25.62-11.71-25.62-27.67C41.44,37.12,51.4,25.57,67.06,25.57ZM67,68.44c7.23,0,11.79-6,11.79-14.82C78.77,43.89,74.21,38,67.36,38c-7.45,0-12,5.85-12,14.82C55.35,62.44,59.91,68.44,67,68.44Z"></path><polygon class="cls-1" points="39.09 26.63 1 26.63 1 79.84 14.68 79.84 14.68 61.83 37.41 61.83 37.41 49.51 14.68 49.51 14.68 39.02 39.09 39.02 39.09 26.63"></polygon><rect class="cls-2" height="82" width="338"></rect></g></g></svg> </div>
+<div class="footer-base-child idg-copyright">
+<div class="entry-copyright">
+<a href="https://foundryco.com/terms-of-service-agreement/">Copyright © 2024 IDG Communications, Inc.</a> </div>
+</div>
+<div class="footer-base-child related-sites-dropdown">
+<select id="footerSelect">
+<option value="#">Explore the Foundry Network +</option>
+<option value="https://www.techadvisor.com">Tech Advisor</option><option value="https://www.techhive.com">TechHive</option><option value="https://www.macworld.com">Macworld</option> </select>
+</div>
+<div class="footer-base-child return-top-mobile">
+<svg viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M35.5 279.9l148-148.4c4.7-4.7 12.3-4.7 17 0l148 148.4c4.7 4.7 4.7 12.3 0 17l-19.6 19.6c-4.8 4.8-12.5 4.7-17.1-.2L218 219.2V468c0 6.6-5.4 12-12 12h-28c-6.6 0-12-5.4-12-12V219.2l-93.7 97.1c-4.7 4.8-12.4 4.9-17.1.2l-19.6-19.6c-4.8-4.7-4.8-12.3-.1-17zM12 84h360c6.6 0 12-5.4 12-12V44c0-6.6-5.4-12-12-12H12C5.4 32 0 37.4 0 44v28c0 6.6 5.4 12 12 12z"></path>
+<div class="return-top-text">
+<a>Top Of Page</a>
+</div>
+</svg></div>
+<div class="cmp">
+<div id="ccpa-consent-ui">
+<button>Do Not Sell My Info</button>
+</div>
+<div id="eea-consent-ui">
+<button>Privacy Settings</button>
+</div>
+</div>
+</div>
+</footer>
+</div><!-- #page-->
+<!-- Start Subscriber Embed Code -->
+
+
+<!-- End Subscriber Embed Code -->
+<div class="ad ad-overlay" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"gpt-welcome"}' data-aaad="true" data-ad-template="overlay" data-ofp="true" id="gpt-welcome-1"></div><div class="ad ad-skin" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"gpt-skin"}' data-aaad="true" data-ad-template="skin" data-ofp="true" id="gpt-skin-1"></div><div class="ad ad-bouncex" data-aa-adunit="/8456/IDG.US_CSMB_PCWorld.com/computer-components_section" data-aa-targeting='{"pos":"gpt_bouncex"}' data-aaad="true" data-ad-template="bouncex" data-ofp="true" id="gpt_bouncex-1"></div> <!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5JGZ3LH" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<link href="https://use.typekit.net/ykg1nhb.css?ver=1.0.0" id="typekit-styles-css" media="all" rel="stylesheet"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

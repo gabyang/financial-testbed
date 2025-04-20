@@ -1,0 +1,25 @@
+symbol,filing_period,industry,pct_change
+AVGO,2019-02-03,Semiconductors,4.42
+AVGO,2020-02-02,Semiconductors,3.09
+AVGO,2020-08-02,Semiconductors,3.17
+AVGO,2023-07-30,Semiconductors,-3.27
+COST,2019-02-17,Discount Stores,-4.08
+COST,2019-11-24,Discount Stores,3.74
+CRM,2022-10-31,Software - Application,3.58
+CVX,2020-06-30,Oil & Gas Integrated,6.54
+HD,2020-08-02,Home Improvement,3.33
+NVDA,2015-04-26,Semiconductors,-3.24
+NVDA,2019-04-28,Semiconductors,-4.39
+NVDA,2021-08-01,Semiconductors,-4.12
+NVDA,2022-05-01,Semiconductors,4.13
+NVDA,2022-07-31,Semiconductors,3.76
+ORCL,2017-02-28,Software - Infrastructure,-3.56
+TMUS,2015-06-30,Telecommunications Services,3.14
+TSLA,2014-06-30,Auto - Manufacturers,4.6
+TSLA,2018-09-30,Auto - Manufacturers,-7.92
+TSLA,2019-09-30,Auto - Manufacturers,3.86
+TSLA,2024-06-30,Auto - Manufacturers,-3.67
+TSLA,2024-09-30,Auto - Manufacturers,8.84
+UNH,2013-06-30,Medical - Healthcare Plans,7.21
+UNH,2024-06-30,Medical - Healthcare Plans,-6.14
+XOM,2020-06-30,Oil & Gas Integrated,6.86

@@ -8,6 +8,7 @@ import numpy as np
 from datetime import datetime
 import json
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+import time
 
 # PostgreSQL configuration
 DB_CONFIG = {
@@ -107,6 +108,7 @@ def process_news_files():
     """Process all news HTML files in the directory. 
        Each stock symbol folder contains a 'news' subfolder where all HTML files reside.
     """
+    start_time = time.time()
     news_dir = 'test_data/News'
     
     # Initialize the MTEB model
@@ -154,6 +156,10 @@ def process_news_files():
         else:
             print(f"Skipping non-directory entry: {symbol_path}")
 
+    print(f"Started at: {datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Finished at: {datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S')}")
+    
 if __name__ == "__main__":
     print("Starting script...")
     process_news_files()
+    

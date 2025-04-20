@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://gmpg.org/xfn/11" rel="profile"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots">
+<!-- This site is optimized with the Yoast SEO plugin v23.8 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Top Databases Used In Machine Learning Projects</title>
+<meta content="One of the most critical components in machine learning projects is the database management system. With the help of this system," name="description">
+<link href="https://analyticsindiamag.com/ai-mysteries/top-databases-used-in-machine-learning-projects/" rel="canonical">
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Top Databases Used In Machine Learning Projects" property="og:title"/>
+<meta content="One of the most critical components in machine learning projects is the database management system. With the help of this system," property="og:description"/>
+<meta content="https://analyticsindiamag.com/ai-mysteries/top-databases-used-in-machine-learning-projects/" property="og:url"/>
+<meta content="Analytics India Magazine" property="og:site_name"/>
+<meta content="https://www.facebook.com/aimmediahouse" property="article:publisher"/>
+<meta content="2020-02-07T12:09:07+00:00" property="article:published_time"/>
+<meta content="2021-10-07T06:19:38+00:00" property="article:modified_time"/>
+<meta content="https://analyticsindiamag.com/wp-content/uploads/2020/02/aim_database.jpg" property="og:image"/>
+<meta content="721" property="og:image:width"/>
+<meta content="501" property="og:image:height"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="Ambika Choudhury" name="author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@analyticsindiam" name="twitter:creator"/>
+<meta content="@analyticsindiam" name="twitter:site"/>
+<meta content="Written by" name="twitter:label1"/>
+<meta content="Ambika Choudhury" name="twitter:data1"/>
+<meta content="Est. reading time" name="twitter:label2"/>
+<meta content="6 minutes" name="twitter:data2"/>
+
+<!-- / Yoast SEO plugin. -->
+<link href="//accounts.google.com" rel="dns-prefetch"/>
+<link href="https://analyticsindiamag.com/feed/" rel="alternate" title="Analytics India Magazine » Feed" type="application/rss+xml"/>
+<link href="https://analyticsindiamag.com/web-stories/feed/" rel="alternate" title="Analytics India Magazine » Stories Feed" type="application/rss+xml"/>
+
+<link href="https://analyticsindiamag.com/wp-includes/css/dist/block-library/style.min.css?ver=6.7" id="wp-block-library-css" media="all" rel="stylesheet">
+
+
+<link href="https://analyticsindiamag.com/wp-content/themes/hello-elementor/style.min.css?ver=3.1.1" id="hello-elementor-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/themes/hello-elementor/theme.min.css?ver=3.1.1" id="hello-elementor-theme-style-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.1.1" id="hello-elementor-header-footer-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/really-simple-featured-video/includes/Compatibility/Themes/Fallback/styles.css?ver=1730875249" id="rsfv-fallback-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.6" id="elementor-frontend-css" media="all" rel="stylesheet"/>
+
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.25.6" id="widget-image-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.25.6" id="widget-icon-list-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.25.6" id="widget-social-icons-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.25.6" id="e-apple-webkit-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.25.3" id="widget-nav-menu-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor-pro/assets/css/widget-search-form.min.css?ver=3.25.3" id="widget-search-form-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css?ver=3.25.3" id="widget-posts-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.25.6" id="widget-heading-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.6" id="widget-text-editor-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.25.6" id="widget-divider-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor-pro/assets/css/widget-post-info.min.css?ver=3.25.3" id="widget-post-info-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css?ver=3.25.3" id="widget-share-buttons-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor-pro/assets/css/widget-table-of-contents.min.css?ver=3.25.3" id="widget-table-of-contents-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.25.6" id="widget-icon-box-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.25.3" id="widget-form-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/lib/animations/styles/zoomIn.min.css?ver=3.25.6" id="e-animation-zoomIn-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" id="swiper-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.6" id="e-swiper-css" media="all" rel="stylesheet"/>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.25.3" id="e-popup-style-css" media="all" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNoto+Serif%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CExo+2%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CInter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CWork+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.7" id="google-fonts-1-css" media="all" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+
+<link href="https://analyticsindiamag.com/wp-json/" rel="https://api.w.org/"><link href="https://analyticsindiamag.com/wp-json/wp/v2/posts/56217" rel="alternate" title="JSON" type="application/json"/><link href="https://analyticsindiamag.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fanalyticsindiamag.com%2Fai-mysteries%2Ftop-databases-used-in-machine-learning-projects%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="https://analyticsindiamag.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fanalyticsindiamag.com%2Fai-mysteries%2Ftop-databases-used-in-machine-learning-projects%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+<meta content="Elementor 3.25.6; features: e_font_icon_svg, e_optimized_control_loading, e_element_cache; settings: css_print_method-internal, google_font-enabled, font_display-auto" name="generator"/>
+<!-- Google tag (gtag.js) -->
+
+
+<meta content="wordpress-plugin" name="onesignal">
+
+<link href="https://analyticsindiamag.com/wp-content/uploads/2019/11/cropped-aim-new-logo-1-22-3-32x32.jpg" rel="icon" sizes="32x32"/>
+<link href="https://analyticsindiamag.com/wp-content/uploads/2019/11/cropped-aim-new-logo-1-22-3-192x192.jpg" rel="icon" sizes="192x192"/>
+<link href="https://analyticsindiamag.com/wp-content/uploads/2019/11/cropped-aim-new-logo-1-22-3-180x180.jpg" rel="apple-touch-icon"/>
+<meta content="https://analyticsindiamag.com/wp-content/uploads/2019/11/cropped-aim-new-logo-1-22-3-270x270.jpg" name="msapplication-TileImage"/>
+</meta></link></link></link></meta></meta></head>
+<body class="post-template-default single single-post postid-56217 single-format-standard wp-custom-logo elementor-default elementor-template-full-width elementor-kit-10056211 elementor-page-10129266">
+<div class="elementor elementor-10116974 elementor-location-header" data-elementor-id="10116974" data-elementor-post-type="elementor_library" data-elementor-type="header">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-4caa8cd elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="4caa8cd">
+<div class="elementor-container elementor-column-gap-narrow">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a5d6c5c" data-element_type="column" data-id="a5d6c5c">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-e09ea12 elementor-widget-tablet__width-initial elementor-widget__width-initial elementor-widget elementor-widget-image" data-element_type="widget" data-id="e09ea12" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://ad.doubleclick.net/ddm/clk/599481078;407504561;s;gdpr=$GDPR;gdpr_consent=$GDPR_CONSENT_755?https://careers.amgen.com/en/search-jobs?acm=ALL&amp;alrpm=1269750&amp;ascf=%5B%7B%22key%22%3A%22ALL%22%2C%22value%22%3A%22%22%7D%5D&amp;utm_source=analyticsindiamag.com&amp;utm_medium=display&amp;utm_campaign=India&amp;utm_content=print&amp;utm_term=407504561&amp;ss=paid" rel="nofollow" target="_blank">
+<img alt="Amgen-AIM" class="attachment-medium_large size-medium_large wp-image-10140031" height="70" src="https://analyticsindiamag.com/wp-content/uploads/2024/03/Amgen-AIM.gif" width="750"/> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3098f51" data-element_type="column" data-id="3098f51">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-74b3cf2 elementor-widget__width-initial elementor-hidden-mobile elementor-widget elementor-widget-html" data-element_type="widget" data-id="74b3cf2" data-widget_type="html.default">
+<div class="elementor-widget-container">
+<a href="https://ad.doubleclick.net/ddm/jump/N4789.2790902ANALYTICSINDIA/B27062729.399237976;sz=1x1;ord=[timestamp];dc_sdk_apis=[APIFRAMEWORKS];dc_omid_p=[OMIDPARTNER];gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};dc_tdv=1?">
+<img alt="Advertisement" border="0" height="1" src="https://ad.doubleclick.net/ddm/ad/N4789.2790902ANALYTICSINDIA/B27062729.399237976;sz=1x1;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;dc_sdk_apis=[APIFRAMEWORKS];dc_omid_p=[OMIDPARTNER];gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};dc_tdv=1?" width="1"/>
+</a>
+<a href="https://ad.doubleclick.net/ddm/jump/N4789.2790902ANALYTICSINDIA/B32380726.407504561;sz=1x1;ord=[timestamp];dc_sdk_apis=[APIFRAMEWORKS];dc_omid_p=[OMIDPARTNER];gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};dc_tdv=1?">
+<img alt="Advertisement" border="0" height="1" src="https://ad.doubleclick.net/ddm/ad/N4789.2790902ANALYTICSINDIA/B32380726.407504561;sz=1x1;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;dc_sdk_apis=[APIFRAMEWORKS];dc_omid_p=[OMIDPARTNER];gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};dc_tdv=1?" width="1"/></a> </div>
+</div>
+<div class="elementor-element elementor-element-e7a12e7 elementor-widget-tablet__width-initial elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-element_type="widget" data-id="e7a12e7" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://ad.doubleclick.net/ddm/clk/592401306;399237976;u;gdpr=$GDPR;gdpr_consent=$GDPR_CONSENT_755?https://careers.unitedhealthgroup.com/job-search-results/?keyword=%22data%20scientist%22%20OR%20%22ML%22&amp;location=India&amp;country=IN&amp;radius=25&amp;src=UNS-19801&amp;utm_source=analyticsindiamag.com&amp;utm_medium=display&amp;utm_campaign=Enterprise&amp;utm_content=print&amp;utm_term=399237976&amp;ss=paid" rel="nofollow" target="_blank">
+<img alt="UHF-small" class="attachment-medium_large size-medium_large wp-image-10139001" height="67" src="https://analyticsindiamag.com/wp-content/uploads/2024/03/UHF-small.gif" width="720"></img></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<header class="elementor-section elementor-top-section elementor-element elementor-element-82da2d2 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="82da2d2" data-settings='{"background_background":"classic","sticky":"top","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0,"sticky_anchor_link_offset":0}'>
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-677f904f" data-element_type="column" data-id="677f904f">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-21d6f391 elementor-widget elementor-widget-image" data-element_type="widget" data-id="21d6f391" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://analyticsindiamag.com/">
+<img alt="AIM" class="attachment-full size-full wp-image-10056405" height="884" sizes="(max-width: 2033px) 100vw, 2033px" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black.png" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black.png 2033w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black-1024x445.png 1024w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black-768x334.png 768w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black-1536x668.png 1536w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black-150x65.png 150w" width="2033"></img></a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-09d77e4" data-element_type="column" data-id="09d77e4">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-fdecbf0 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="fdecbf0" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items elementor-inline-items">
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://analyticsindiamag.com/our-events/">
+<span class="elementor-icon-list-text">Conferences</span>
+</a>
+</li>
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://aimresearch.co/">
+<span class="elementor-icon-list-text">Research</span>
+</a>
+</li>
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://www.youtube.com/channel/UCAlwrsgeJavG1vw9qSFOUmA?sub_confirmation=1">
+<span class="elementor-icon-list-text">Videos</span>
+</a>
+</li>
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://adasci.org/corporate-trainings/">
+<span class="elementor-icon-list-text">Trainings</span>
+</a>
+</li>
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://analyticsindiamag.com/contact-us/">
+<span class="elementor-icon-list-text">Contact</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4dfd320 elementor-hidden-tablet elementor-hidden-mobile" data-element_type="column" data-id="4dfd320">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-4b71f2b elementor-align-right elementor-tablet-align-right elementor-widget-tablet__width-initial elementor-widget elementor-widget-button" data-element_type="widget" data-id="4b71f2b" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://analyticsindiamag.com/advertise-with-us/" target="_blank">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-icon">
+<svg aria-hidden="true" class="e-font-icon-svg e-far-paper-plane" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"></path></svg> </span>
+<span class="elementor-button-text">Brand Collaborations</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<header class="elementor-section elementor-top-section elementor-element elementor-element-13f9bac elementor-section-content-middle elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="13f9bac" data-settings='{"background_background":"classic"}'>
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-38472b1" data-element_type="column" data-id="38472b1">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-8a58385 e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-element_type="widget" data-id="8a58385" data-widget_type="social-icons.default">
+<div class="elementor-widget-container">
+<div class="elementor-social-icons-wrapper elementor-grid">
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-a72c18f" href="https://www.instagram.com/aim.media.house/" target="_blank">
+<span class="elementor-screen-only">Instagram</span>
+<svg class="e-font-icon-svg e-fab-instagram" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg> </a>
+</span>
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-2e0e357" href="https://www.linkedin.com/company/analytics-india-magazine" target="_blank">
+<span class="elementor-screen-only">Linkedin</span>
+<svg class="e-font-icon-svg e-fab-linkedin" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg> </a>
+</span>
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-9977796" href="https://www.youtube.com/@aimmediahouse" target="_blank">
+<span class="elementor-screen-only">Youtube</span>
+<svg class="e-font-icon-svg e-fab-youtube" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg> </a>
+</span>
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-82a4867" href="https://www.facebook.com/aimmediahouse" target="_blank">
+<span class="elementor-screen-only">Facebook</span>
+<svg class="e-font-icon-svg e-fab-facebook" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg> </a>
+</span>
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-afbc474" href="https://twitter.com/@analyticsindiam" target="_blank">
+<span class="elementor-screen-only">Twitter</span>
+<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> </a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-185d199" data-element_type="column" data-id="185d199">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-b818e70 elementor-nav-menu__align-center elementor-widget-mobile__width-initial elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-element_type="widget" data-id="b818e70" data-settings='{"full_width":"stretch","layout":"horizontal","submenu_icon":{"value":"&lt;svg class=\"e-font-icon-svg e-fas-caret-down\" viewBox=\"0 0 320 512\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"&gt;&lt;path d=\"M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\"&gt;&lt;\/path&gt;&lt;\/svg&gt;","library":"fa-solid"},"toggle":"burger"}' data-widget_type="nav-menu.default">
+<div class="elementor-widget-container">
+<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-overline e--animation-fade">
+<ul class="elementor-nav-menu" id="menu-1-b818e70"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10086065"><a class="elementor-item" href="https://analyticsindiamag.com/about/">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10133676"><a class="elementor-item" href="https://analyticsindiamagazine.substack.com/" target="_blank">Newsletters</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10133677"><a class="elementor-item" href="https://machinehack.com/">MachineHack</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10133678"><a class="elementor-item" href="https://bestfirm.aimresearch.co/">Best Firm</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10133679"><a class="elementor-item" href="https://council.aimresearch.co/">Councils</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10133670"><a class="elementor-item" href="https://analyticsindiamag.com/branded-content/">Branded Content</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10133671"><a class="elementor-sub-item" href="https://analyticsindiamag.com/branded-content/aws/">AWS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10133672"><a class="elementor-sub-item" href="https://analyticsindiamag.com/branded-content/fractal/">Fractal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10133673"><a class="elementor-sub-item" href="https://analyticsindiamag.com/branded-content/intuit/">Intuit</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10133674"><a class="elementor-sub-item" href="https://analyticsindiamag.com/branded-content/nvidia/">Nvidia</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10137718"><a class="elementor-item" href="https://analyticsindiamag.com/cxo-corner/">CXO Corner</a></li>
+</ul> </nav>
+<div aria-expanded="false" aria-label="Menu Toggle" class="elementor-menu-toggle" role="button" tabindex="0">
+<svg aria-hidden="true" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" role="presentation" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" role="presentation" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg> <span class="elementor-screen-only">Menu</span>
+</div>
+<nav aria-hidden="true" class="elementor-nav-menu--dropdown elementor-nav-menu__container">
+<ul class="elementor-nav-menu" id="menu-2-b818e70"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10086065"><a class="elementor-item" href="https://analyticsindiamag.com/about/" tabindex="-1">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10133676"><a class="elementor-item" href="https://analyticsindiamagazine.substack.com/" tabindex="-1" target="_blank">Newsletters</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10133677"><a class="elementor-item" href="https://machinehack.com/" tabindex="-1">MachineHack</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10133678"><a class="elementor-item" href="https://bestfirm.aimresearch.co/" tabindex="-1">Best Firm</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10133679"><a class="elementor-item" href="https://council.aimresearch.co/" tabindex="-1">Councils</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10133670"><a class="elementor-item" href="https://analyticsindiamag.com/branded-content/" tabindex="-1">Branded Content</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10133671"><a class="elementor-sub-item" href="https://analyticsindiamag.com/branded-content/aws/" tabindex="-1">AWS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10133672"><a class="elementor-sub-item" href="https://analyticsindiamag.com/branded-content/fractal/" tabindex="-1">Fractal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10133673"><a class="elementor-sub-item" href="https://analyticsindiamag.com/branded-content/intuit/" tabindex="-1">Intuit</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10133674"><a class="elementor-sub-item" href="https://analyticsindiamag.com/branded-content/nvidia/" tabindex="-1">Nvidia</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10137718"><a class="elementor-item" href="https://analyticsindiamag.com/cxo-corner/" tabindex="-1">CXO Corner</a></li>
+</ul> </nav>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d661ce6" data-element_type="column" data-id="d661ce6">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-0fe75c0 elementor-search-form--skin-full_screen elementor-widget-tablet__width-initial elementor-widget elementor-widget-search-form" data-element_type="widget" data-id="0fe75c0" data-settings='{"skin":"full_screen"}' data-widget_type="search-form.default">
+<div class="elementor-widget-container">
+<search role="search">
+<form action="https://analyticsindiamag.com" class="elementor-search-form" method="get">
+<div class="elementor-search-form__toggle" role="button" tabindex="0">
+<div class="e-font-icon-svg-container"><svg aria-hidden="true" class="e-font-icon-svg e-fas-search" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div> <span class="elementor-screen-only">Search</span>
+</div>
+<div class="elementor-search-form__container">
+<label class="elementor-screen-only" for="elementor-search-form-0fe75c0">Search</label>
+<input class="elementor-search-form__input" id="elementor-search-form-0fe75c0" name="s" placeholder="Search..." type="search" value=""/>
+<div class="dialog-lightbox-close-button dialog-close-button" role="button" tabindex="0">
+<svg aria-hidden="true" class="e-font-icon-svg e-eicon-close" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg> <span class="elementor-screen-only">Close this search box.</span>
+</div>
+</div>
+</form>
+</search>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-eeec096 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="eeec096">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9550309" data-element_type="column" data-id="9550309">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-a193ae9 elementor-widget-mobile__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-image" data-element_type="widget" data-id="a193ae9" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://admissions.gim.ac.in/?utm_source=Analytics+India+Magazine&amp;utm_medium=Roadblock+Banner&amp;utm_campaign=GIM2025-27" rel="nofollow" target="_blank">
+<img alt="AIM GIM" class="attachment-full size-full wp-image-10140217" height="90" src="https://analyticsindiamag.com/wp-content/uploads/2024/03/AIM-GIM.gif" width="970"/> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<main class="elementor elementor-10129266 elementor-location-single post-56217 post type-post status-publish format-standard has-post-thumbnail hentry category-ai-mysteries tag-apache-spark-replacement tag-data-enrichment-ai tag-database-management tag-database-systems tag-deep-learning-projects tag-distributed-graph-database tag-full-stack-project-ideas tag-machine-learning-big-data tag-mapreduce tag-nosql-spark-support tag-object-store-database tag-scikit-learn tag-spark-nosql tag-types-of-databases tag-what-is-database" data-elementor-id="10129266" data-elementor-post-type="elementor_library" data-elementor-type="single-post">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-b137fc1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="b137fc1">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6a24c4c" data-element_type="column" data-id="6a24c4c">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-a922001 elementor-align-left elementor-mobile-align-left elementor-widget elementor-widget-post-info" data-element_type="widget" data-id="a922001" data-widget_type="post-info.default">
+<div class="elementor-widget-container">
+<ul class="elementor-inline-items elementor-icon-list-items elementor-post-info">
+<li class="elementor-icon-list-item elementor-repeater-item-5968d5e elementor-inline-item">
+<span class="elementor-icon-list-icon">
+<i aria-hidden="true" class="far fa-tags"></i> </span>
+<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-custom">Last Updated: October 7, 2021</span>
+</li>
+<li class="elementor-icon-list-item elementor-repeater-item-7ceda99 elementor-inline-item" itemprop="about">
+<span class="elementor-icon-list-icon">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-tags" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg> </span>
+<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-terms">
+<span class="elementor-post-info__item-prefix">In</span>
+<span class="elementor-post-info__terms-list">
+<a class="elementor-post-info__terms-list-item" href="https://analyticsindiamag.com/ai-mysteries/">AI Mysteries</a> </span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="elementor-element elementor-element-b81b94f elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-element_type="widget" data-id="b81b94f" data-widget_type="theme-post-title.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">Top Databases Used In Machine Learning Projects</h1> </div>
+</div>
+<div class="elementor-element elementor-element-18074ab elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="18074ab" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p><strong>Share</strong></p> </div>
+</div>
+<div class="elementor-element elementor-element-c9840c6 elementor-share-buttons--view-icon elementor-share-buttons--skin-framed elementor-share-buttons--shape-circle elementor-share-buttons--align-left elementor-share-buttons--color-custom elementor-share-buttons-mobile--align-center elementor-grid-0 elementor-widget elementor-widget-share-buttons" data-element_type="widget" data-id="c9840c6" data-widget_type="share-buttons.default">
+<div class="elementor-widget-container">
+<div class="elementor-grid">
+<div class="elementor-grid-item">
+<div aria-label="Share on facebook" class="elementor-share-btn elementor-share-btn_facebook" role="button" tabindex="0">
+<span class="elementor-share-btn__icon">
+<svg class="e-font-icon-svg e-fab-facebook" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg> </span>
+</div>
+</div>
+<div class="elementor-grid-item">
+<div aria-label="Share on twitter" class="elementor-share-btn elementor-share-btn_twitter" role="button" tabindex="0">
+<span class="elementor-share-btn__icon">
+<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> </span>
+</div>
+</div>
+<div class="elementor-grid-item">
+<div aria-label="Share on linkedin" class="elementor-share-btn elementor-share-btn_linkedin" role="button" tabindex="0">
+<span class="elementor-share-btn__icon">
+<svg class="e-font-icon-svg e-fab-linkedin" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg> </span>
+</div>
+</div>
+<div class="elementor-grid-item">
+<div aria-label="Share on whatsapp" class="elementor-share-btn elementor-share-btn_whatsapp" role="button" tabindex="0">
+<span class="elementor-share-btn__icon">
+<svg class="e-font-icon-svg e-fab-whatsapp" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg> </span>
+</div>
+</div>
+<div class="elementor-grid-item">
+<div aria-label="Share on email" class="elementor-share-btn elementor-share-btn_email" role="button" tabindex="0">
+<span class="elementor-share-btn__icon">
+<svg class="e-font-icon-svg e-fas-envelope" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg> </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-eed03a9 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-element_type="widget" data-id="eed03a9" data-widget_type="theme-post-featured-image.default">
+<div class="elementor-widget-container">
+<img alt="aim_database" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/elementor/thumbs/aim_database-phtmr33oj4qrr085eiyda2nshhnvqcam7fv9rm4als.jpg" title="aim_database"/> </div>
+</div>
+<div class="elementor-element elementor-element-cd14361 elementor-hidden-mobile elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-element_type="widget" data-id="cd14361" data-widget_type="theme-post-featured-image.default">
+<div class="elementor-widget-container">
+<img alt="" class="attachment-full size-full wp-image-56218" height="501" sizes="(max-width: 721px) 100vw, 721px" src="https://analyticsindiamag.com/wp-content/uploads/2020/02/aim_database.jpg" srcset="https://analyticsindiamag.com/wp-content/uploads/2020/02/aim_database.jpg 721w, https://analyticsindiamag.com/wp-content/uploads/2020/02/aim_database-20x14.jpg 20w, https://analyticsindiamag.com/wp-content/uploads/2020/02/aim_database-385x268.jpg 385w" width="721"/> </div>
+</div>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-b686538 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="b686538">
+<div class="elementor-container elementor-column-gap-narrow">
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b5aeaa3" data-element_type="column" data-id="b5aeaa3">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-07a76a0 elementor-align-left elementor-mobile-align-center elementor-widget-tablet__width-initial elementor-widget elementor-widget-post-info" data-element_type="widget" data-id="07a76a0" data-widget_type="post-info.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items elementor-post-info">
+<li class="elementor-icon-list-item elementor-repeater-item-7ceda99" itemprop="author">
+<span class="elementor-icon-list-icon">
+<svg aria-hidden="true" class="e-font-icon-svg e-far-user-circle" viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"></path></svg> </span>
+<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-author">
+<span class="elementor-post-info__item-prefix">by</span>
+										Ambika Choudhury					</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-646911a" data-element_type="column" data-id="646911a">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-6774e40 elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-element_type="widget" data-id="6774e40" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://whatsapp.com/channel/0029VaCAfcMGehEGsj0COi2R" rel="nofollow" target="_blank">
+<img alt="Join AIM in Whatsapp" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/elementor/thumbs/Join-us-in-Whatsapp-qos569w8opds6cc3c7m4mat6i1n4h0k6dfb2vm6800.png" title="Join AIM in Whatsapp"/> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6b6b82d" data-element_type="column" data-id="6b6b82d">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-817b3b1 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-element_type="widget" data-id="817b3b1" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://news.google.com/publications/CAAqBwgKMIr-hgsw4ZiFAw?ceid=IN:en&amp;oc=3" rel="nofollow" target="_blank">
+<img alt="Follow AIM" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/elementor/thumbs/Follow-AIM-qos561foz7279uodplyhhuy15kstjqmlc9fpk4irk0.png" title="Follow AIM"/> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-58918281 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="58918281">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2e713304" data-element_type="column" data-id="2e713304">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-38df863 elementor-widget elementor-widget-image" data-element_type="widget" data-id="38df863" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://janbtk84urw.typeform.com/to/iSan08Ov">
+<img alt="AWS GenAI PDF" class="attachment-medium_large size-medium_large wp-image-10140368" height="71" sizes="(max-width: 768px) 100vw, 768px" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/AWS-GenAI-PDF-768x71.webp" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/AWS-GenAI-PDF-768x71.webp 768w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AWS-GenAI-PDF-150x14.webp 150w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AWS-GenAI-PDF.webp 970w" width="768"/> </a>
+</div>
+</div>
+<div class="elementor-element elementor-element-fe523e9 elementor-widget elementor-widget-table-of-contents" data-element_type="widget" data-id="fe523e9" data-settings='{"headings_by_tags":["h2","h3"],"exclude_headings_by_selector":[],"marker_view":"bullets","icon":{"value":"","library":""},"no_headings_message":"No headings were found on this page.","hierarchical_view":"yes","min_height":{"unit":"px","size":"","sizes":[]},"min_height_tablet":{"unit":"px","size":"","sizes":[]},"min_height_mobile":{"unit":"px","size":"","sizes":[]}}' data-widget_type="table-of-contents.default">
+<div class="elementor-widget-container">
+<div class="elementor-toc__header">
+<div class="elementor-toc__header-title">Table of Content</div>
+</div>
+<div class="elementor-toc__body" id="elementor-toc__fe523e9">
+<div class="elementor-toc__spinner-container">
+<svg aria-hidden="true" class="elementor-toc__spinner eicon-animation-spin e-font-icon-svg e-eicon-loading" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M500 975V858C696 858 858 696 858 500S696 142 500 142 142 304 142 500H25C25 237 238 25 500 25S975 237 975 500 763 975 500 975Z"></path></svg> </div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-1fdf6bfb elementor-widget elementor-widget-theme-post-content" data-element_type="widget" data-id="1fdf6bfb" data-widget_type="theme-post-content.default">
+<div class="elementor-widget-container">
+<p>One of the most critical components in machine learning projects is the database management system. With the help of this system, a large number of data can be sorted and one can gain meaningful insights from them. According to the Stack Overflow Survey <a href="https://insights.stackoverflow.com/survey/2019#technology">report</a> 2019, Redis is the most loved database, whereas MongoDB is the most wanted database.</p>
+<p>In this article, we list down 10 top databases used in machine learning projects.</p>
+<p><em>(The list is in alphabetical order)</em></p>
+<h3 class="wp-block-heading">1| Apache Cassandra</h3>
+<p><a href="https://analyticsindiamag.com/why-cassandra-and-hive-are-the-best-prospective-big-data-tools-for-ml/">Apache Cassandra</a> is an open-source and highly scalable NoSQL database management system that is designed to manage massive amounts of data in a faster manner. This popular database is being used by GitHub, <a href="https://www.slideshare.net/adrianco/migrating-netflix-from-oracle-to-global-cassandra">Netflix</a>, Instagram, Reddit, among others. Cassandra has Hadoop integration, with MapReduce support. </p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>Fault Tolerance:</strong>In Cassandra, the data is automatically replicated to multiple nodes for fault-tolerance. Also, failed nodes can be replaced with no downtime </li><li><strong>Elastic Scalability:</strong>Cassandra is designed with both read and write throughput, which increases linearly as new machines are added. </li></ul>
+<h3 class="wp-block-heading">2| Couchbase</h3>
+<p><a href="https://www.couchbase.com/">Couchbase Server</a> is an open-source, distributed, NoSQL document-oriented engagement database. It exposes a fast key-value store with managed cache for sub-millisecond data operations, purpose-built indexers for fast queries and a powerful query engine for executing SQL-like queries. </p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>Unified Programming Interface:</strong> The Couchbase Data Platform provides simple, uniform and powerful application development APIs across multiple programming languages, connectors, and tools that make building applications simple and accelerates time to market for applications. </li><li><strong>Big data and SQL Integrations:</strong>Couchbase Data platform includes built-in Big Data and SQL integration which allows a user to leverage tools, processing capacity, and data wherever it may reside. </li><li><strong>Container and Cloud Deployments:</strong>Couchbase supports all cloud platforms as well as a variety of container and virtualisation technologies.</li></ul>
+<h3 class="wp-block-heading">3| DynamoDB</h3>
+<p>Amazon DynamoDb a fully managed, multi-region, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications. This accessible database has been using by Lyft, Airbnb, Toyota, Samsung, among others. DynamoDB offers encryption at rest which eliminates the operational burden and complexity involved in protecting sensitive data.</p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>High Availability and Durability:</strong> DynamoDB automatically spreads the data and traffic for the tables over a sufficient number of servers to handle the throughput and storage requirements while maintaining consistent as well as fast performance.</li><li><strong>Performance at Scale:</strong>DynamoDb provides consistent as well as single-digit millisecond response times at any scale. The DynamoDB global tables replicate the data across multiple AWS regions in order to provide fast and local access to data for globally distributed applications. </li></ul>
+<h3 class="wp-block-heading">4| Elasticsearch</h3>
+<p><a href="https://www.elastic.co/">Elasticsearch</a> is built on Apache Lucene and is a distributed, open-source search and analytics engine for all types of data including textual, numerical, geospatial, structured and unstructured data. Elasticsearch is the central component of the Elastic Stack which is a set of open-source tools for data ingestion, enrichment, storage, analysis, and visualisation.</p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>Extensive Number of Features:</strong> Besides speed, scalability and resiliency, Elasticsearch has several built-in features such as data rollups and index lifecycle management which makes efficient storing and searching data.  </li><li><strong>Faster in Manner:</strong> Elasticsearch excels at full-text search and it is well-suited for time-sensitive use cases such as security analytics, infrastructure monitoring, etc. </li></ul>
+<h3 class="wp-block-heading">5| MLDB</h3>
+<p>The <a href="https://mldb.ai/">Machine Learning Database</a> (MLDB) is an open-source system for solving big data machine learning problems, from data collection and storage through analysis and the training of machine learning models to the deployment of real-time prediction endpoints. In MLDB, machine learning models are applied using Functions, which are parameterised by the output of training Procedures, which run over Datasets containing training data.</p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>Easy to Use:</strong> MLDB provides a comprehensive implementation of the SQL SELECT statement, treating datasets as tables, with rows as relations. This makes the database system easy to learn and use for data analysts familiar with existing Relational Database Management Systems (RDBMS).</li></ul>
+<h3 class="wp-block-heading">6| Microsoft SQL Server</h3>
+<p>Written in C and C++, <a href="https://www.microsoft.com/en-in/sql-server/default.aspx">Microsoft SQL Server</a> is a relational database management system (RDBMS). This database helps in gaining insights from all the data by querying across relational, non-relational, structured as well as unstructured data. </p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>Flexible:</strong> One can use the language and platform of choice with open source support. </li><li><strong>Manage Big Data Environment:</strong>With SQL Server, one can manage big data environment more easily with Big Data Clusters. It provides vital elements of a data lake such as Hadoop Distributed File System (HDFS), Apache Spark and analytics tools which are deeply integrated with SQL Server and fully supported by Microsoft</li></ul>
+<h3 class="wp-block-heading">7| MySQL</h3>
+<p>Written in C and C++, <a href="https://www.mysql.com/">MySQL</a> is one of the most popular open-source relational database management systems (RDBMS) powered by Oracle. It has been used by successful organisations such as Facebook, Twitter, YouTube, among others.</p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>Security and Scalability:</strong>This database management system includes data security layers that protect sensitive data and it offers scalability to handle large amounts of data. </li><li><strong>Backup Software:</strong> mysqldump is a logical backup tool included with both community and enterprise editions of MySQL. It supports backing up from all storage engines.</li></ul>
+<h3 class="wp-block-heading">8| MongoDB</h3>
+<p><a href="https://www.mongodb.com/">MongoDB</a> is a general-purpose, document-based, distributed database which is built for advanced application developers. Since this is a document database, it mainly stores data in JSON-like documents. It provides support for aggregations and other modern use-cases such as geo-based search, graph search, and text search.</p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>Data Store Flexibility:</strong> MongoDB stores data in flexible, JSON-like documents which means fields can vary from document to document and data structure can be changed over time.</li><li><strong>Distributed Database:</strong>MongoDB is a distributed database at its core. Which is why high availability, horizontal scaling, and geographic distribution are built-in and easy to use.</li></ul>
+<h3 class="wp-block-heading">9| PostgreSQL</h3>
+<p><a href="https://www.postgresql.org/">PostgreSQL</a> is a powerful, open-source object-relational database system which uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. This database management system aims to help developers build applications, administrators to protect data integrity, build fault-tolerant environments and much more. </p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>Security:</strong> PostgreSQL has a robust access-control system as well as column and row-level security. </li><li><strong>Extensibility:</strong>This system has foreign data wrappers which connect to other databases or streams with a standard SQL interface. </li></ul>
+<h3 class="wp-block-heading">10| Redis</h3>
+<p><a href="https://redis.io/">Redis</a> is an open-source, in-memory data structure store which is used as a database, cache and message broker. It supports data structures such as strings, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, etc. The database has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence. </p>
+<p>Advantages:</p>
+<ul class="wp-block-list"><li><strong>Automatic Failover:</strong> In Redis Sentinel, a failover process can be started where a replica is promoted to master and the other additional replicas can be reconfigured to use the new master.</li><li><strong>Redis-ML:</strong> Redis-ML is a Redis module which implements several machine learning models as built-in Redis data types. It is simple to load and deploy trained models from any platform (such as Apache Spark and scikit-learn) in a production environment.  </li></ul>
+<div class="tptn_counter" id="tptn_counter_56217">(Total 4,094 views)</div> </div>
+</div>
+<div class="elementor-element elementor-element-806601a elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="806601a" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>📣 Want to advertise in AIM? <a href="https://www.passionfroot.me/aim-media" rel="noopener" target="_blank">Book here</a></p> </div>
+</div>
+<div class="elementor-element elementor-element-52c4097c elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="52c4097c" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator"></span>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-18d121e3 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="18d121e3" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Related Posts</span> </div>
+</div>
+<div class="elementor-element elementor-element-1500db5a elementor-posts--align-left elementor-grid-2 elementor-posts--thumbnail-left elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-widget elementor-widget-posts" data-element_type="widget" data-id="1500db5a" data-settings='{"classic_row_gap":{"unit":"px","size":25,"sizes":[]},"classic_row_gap_mobile":{"unit":"px","size":48,"sizes":[]},"classic_columns":"2","classic_columns_tablet":"2","classic_columns_mobile":"1","classic_row_gap_tablet":{"unit":"px","size":"","sizes":[]}}' data-widget_type="posts.classic">
+<div class="elementor-widget-container">
+<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+<article class="elementor-post elementor-grid-item post-26372 post type-post status-publish format-standard has-post-thumbnail hentry category-ai-mysteries tag-free-datasets-for-analysis tag-full-stack-project-ideas tag-high-paying-jobs-in-india tag-indian-statistical-service">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/ai-mysteries/top-10-indian-government-datasets-that-you-can-use-for-analytics-projects/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-thumbnail size-thumbnail wp-image-26376" height="150" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2018/07/wooden-cabinet-with-drawers-PENV3Y5-150x150.jpg" width="150"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/ai-mysteries/top-10-indian-government-datasets-that-you-can-use-for-analytics-projects/">Top 10 Indian Government Datasets For Analytics Projects</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10005591 post type-post status-publish format-standard has-post-thumbnail hentry category-ai-mysteries tag-decision-tree-algorithm tag-ensemble-method tag-gradient-boosting tag-machine-learning tag-object-store-database tag-random-forest tag-vs-code tag-xgboost">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/ai-mysteries/random-forest-vs-xgboost-comparing-tree-based-algorithms-with-codes/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-thumbnail size-thumbnail wp-image-10005592" height="150" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2020/08/1-3-150x150.jpg" width="150"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/ai-mysteries/random-forest-vs-xgboost-comparing-tree-based-algorithms-with-codes/">Random Forest Vs XGBoost – Comparing Tree-Based Algorithms (With Codes)</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-19470 post type-post status-publish format-standard has-post-thumbnail hentry category-ai-mysteries tag-applications-of-data-mining tag-distributed-graph-database">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/ai-mysteries/nosql-vs-sql-database-type-better-big-data-applications/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-thumbnail size-thumbnail wp-image-19504" height="150" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2017/12/NoSQL-vs-SQL-01-150x150.jpg" width="150"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/ai-mysteries/nosql-vs-sql-database-type-better-big-data-applications/">NoSQL vs SQL — Which is Better For Big Data Applications</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10015829 post type-post status-publish format-standard has-post-thumbnail hentry category-ai-mysteries tag-apache-spark tag-apache-spark-replacement tag-mapreduce tag-types-of-databases">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/ai-mysteries/top-alternatives-to-apache-spark/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-thumbnail size-thumbnail wp-image-10015830" height="150" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2020/12/2020-12-22-150x150.jpg" width="150"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/ai-mysteries/top-alternatives-to-apache-spark/">Top 10 Alternatives To Apache Spark in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10016789 post type-post status-publish format-standard has-post-thumbnail hentry category-top-ai-tools tag-active-learning tag-artificial-intelligence-in-data-science tag-artificial-intelligence-machine-learning-data tag-audio-mining-software tag-automotive-data-analytics tag-big-data-role tag-business-analysis-tools tag-computer-vision tag-data-annotation tag-data-enrichment-ai tag-data-labelling tag-data-science-training tag-data-structure-using-java tag-deep-learning tag-nlp">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/top-ai-tools/top-data-labelling-and-annotation-tools/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-thumbnail size-thumbnail wp-image-10016791" height="150" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2020/12/complete-annotate-150x150.jpg" width="150"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/top-ai-tools/top-data-labelling-and-annotation-tools/">Top 15 Tools for Data Labelling &amp; Annotation</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-63945 post type-post status-publish format-standard has-post-thumbnail hentry category-innovation-in-ai tag-beginner-python-projects tag-full-stack-project-ideas tag-python tag-python-for-machine-learning tag-python-language tag-python-machine-learning tag-python-programming tag-scikit-learn tag-why-is-python-so-popular">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/innovation-in-ai/top-free-9-resources-to-learn-python-for-machine-learning/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-thumbnail size-thumbnail wp-image-63946" height="150" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2020/04/aim_learnpython-150x150.jpeg" width="150"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/innovation-in-ai/top-free-9-resources-to-learn-python-for-machine-learning/">Best Sites and Resources to Learn Python for Free</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10020453 post type-post status-publish format-standard has-post-thumbnail hentry category-innovation-in-ai tag-data-analysis tag-data-analysts tag-data-analytics-jobs tag-data-enrichment-ai tag-data-science-jobs tag-data-science-master tag-master-data-science">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/innovation-in-ai/15-latest-data-analysts-job-openings-at-top-mncs/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-thumbnail size-thumbnail wp-image-10020454" height="150" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2021/02/photo-1612296727716-d6c69d2a2cbb-150x150.jpg" width="150"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/innovation-in-ai/15-latest-data-analysts-job-openings-at-top-mncs/">15 Latest Data Analysts Job Openings At Top MNCs</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-41049 post type-post status-publish format-standard has-post-thumbnail hentry category-ai-mysteries tag-ann tag-classification tag-neural-network tag-scikit-learn">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/ai-mysteries/a-beginners-guide-to-scikit-learns-mlpclassifier/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-thumbnail size-thumbnail wp-image-41051" height="150" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2019/06/Brain-Light-Water-Neural-Connection-Thoughts-2924266-150x150.jpg" width="150"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/ai-mysteries/a-beginners-guide-to-scikit-learns-mlpclassifier/">MLP Classifier – A Beginner’s Guide To SKLearn MLP Classifier</a>
+</span>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7803023d" data-element_type="column" data-id="7803023d">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-94f3b67 elementor-widget elementor-widget-image" data-element_type="widget" data-id="94f3b67" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://analyticsindiamag.com/aws-forefront-of-genai/" rel="nofollow" target="_blank">
+<img alt="AWS GenAI Banner" class="attachment-medium size-medium wp-image-10140367" height="300" loading="lazy" sizes="auto, (max-width: 300px) 100vw, 300px" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/AWS-GenAI-Banner.webp" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/AWS-GenAI-Banner.webp 300w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AWS-GenAI-Banner-150x150.webp 150w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AWS-GenAI-Banner-250x250.webp 250w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AWS-GenAI-Banner-96x96.webp 96w" width="300"/> </a>
+</div>
+</div>
+<div class="elementor-element elementor-element-59541bc elementor-widget elementor-widget-image" data-element_type="widget" data-id="59541bc" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://analyticsindiamag.com/snowpro/snopro-registrations/" rel="nofollow" target="_blank">
+<img alt="Snow Pro Side banner" class="attachment-medium size-medium wp-image-10140475" height="300" loading="lazy" sizes="auto, (max-width: 300px) 100vw, 300px" src="https://analyticsindiamag.com/wp-content/uploads/2024/07/Snow-Pro-Side-banner.webp" srcset="https://analyticsindiamag.com/wp-content/uploads/2024/07/Snow-Pro-Side-banner.webp 300w, https://analyticsindiamag.com/wp-content/uploads/2024/07/Snow-Pro-Side-banner-150x150.webp 150w, https://analyticsindiamag.com/wp-content/uploads/2024/07/Snow-Pro-Side-banner-250x250.webp 250w, https://analyticsindiamag.com/wp-content/uploads/2024/07/Snow-Pro-Side-banner-96x96.webp 96w" width="300"/> </a>
+</div>
+</div>
+<div class="elementor-element elementor-element-4463750 elementor-widget elementor-widget-image" data-element_type="widget" data-id="4463750" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://jobs.carrier.com/en/search-jobs/carrier%20digital/Bengaluru%2C%20Karnataka%2C%20India/29289/1/4/1269750-1267701-1277331-1277333/12x97194/77x59369/50/0" rel="nofollow">
+<img alt="Carrier Nov 2024" class="attachment-full size-full wp-image-10139545" height="250" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/Carrier-Nov-2024.webp" width="300"/> </a>
+</div>
+</div>
+<div class="elementor-element elementor-element-a666023 elementor-widget elementor-widget-image" data-element_type="widget" data-id="a666023" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://business.louisville.edu/learnmore/msba-india?utm_campaign=MSBA-INDIA&amp;utm_source=analyticsindia&amp;utm_medium=display&amp;utm_keyword=analyticsindia&amp;utm_content=falltrip" rel="nofollow" target="_blank">
+<img alt="University of Louisville Banner" class="attachment-full size-full wp-image-10136729" height="250" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/07/University-of-Louisville-Banner.webp" width="300"/> </a>
+</div>
+</div>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-2abf4bb4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="2abf4bb4">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2fc60b1" data-element_type="column" data-id="2fc60b1">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-1b2318e0 elementor-widget elementor-widget-image" data-element_type="widget" data-id="1b2318e0" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://adasci.org/continuous-learning/generative-ai-crash-course/" target="_blank">
+<picture class="attachment-medium_large size-medium_large wp-image-10125860" loading="lazy">
+<source sizes="auto, (max-width: 768px) 100vw, 768px" srcset="https://analyticsindiamag.com/wp-content/uploads/2024/07/Generative-AI-Crash-Course-for-Non-Techies-768x576.jpg.webp 768w, https://analyticsindiamag.com/wp-content/uploads/2024/07/Generative-AI-Crash-Course-for-Non-Techies-1300x975.jpg.webp 1300w, https://analyticsindiamag.com/wp-content/uploads/2024/07/Generative-AI-Crash-Course-for-Non-Techies-150x113.jpg.webp 150w, https://analyticsindiamag.com/wp-content/uploads/2024/07/Generative-AI-Crash-Course-for-Non-Techies.jpg.webp 1408w" type="image/webp"/>
+<img alt="Generative AI Crash Course Adasci" height="576" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="https://analyticsindiamag.com/wp-content/uploads/2024/07/Generative-AI-Crash-Course-for-Non-Techies-768x576.jpg" srcset="https://analyticsindiamag.com/wp-content/uploads/2024/07/Generative-AI-Crash-Course-for-Non-Techies-768x576.jpg 768w, https://analyticsindiamag.com/wp-content/uploads/2024/07/Generative-AI-Crash-Course-for-Non-Techies-1300x975.jpg 1300w, https://analyticsindiamag.com/wp-content/uploads/2024/07/Generative-AI-Crash-Course-for-Non-Techies-150x113.jpg 150w, https://analyticsindiamag.com/wp-content/uploads/2024/07/Generative-AI-Crash-Course-for-Non-Techies.jpg 1408w" width="768"/>
+</picture>
+</a>
+</div>
+</div>
+<div class="elementor-element elementor-element-19befd34 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="19befd34" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">19th - 23rd Aug 2024</span> </div>
+</div>
+<div class="elementor-element elementor-element-1b527742 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="1b527742" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator"></span>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-1ce66ce7 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="1ce66ce7" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Generative AI Crash Course for Non-Techies</span> </div>
+</div>
+<div class="elementor-element elementor-element-50988227 elementor-align-left elementor-widget elementor-widget-button" data-element_type="widget" data-id="50988227" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://adasci.org/continuous-learning/generative-ai-crash-course/">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Register Today &gt;&gt;</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-314017e2 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="314017e2" data-settings='{"background_background":"classic","sticky":"top","sticky_offset":85,"sticky_parent":"yes","sticky_on":["desktop","tablet","mobile"],"sticky_effects_offset":0,"sticky_anchor_link_offset":0}'>
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-13c45417" data-element_type="column" data-id="13c45417">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-65466075 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="65466075" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Upcoming Large format Conference</span> </div>
+</div>
+<div class="elementor-element elementor-element-ac5272e elementor-position-right elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-element_type="widget" data-id="ac5272e" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<a class="elementor-icon elementor-animation-" href="https://cypher.analyticsindiamag.com/" tabindex="-1" target="_blank">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg> </a>
+</div>
+<div class="elementor-icon-box-content">
+<span class="elementor-icon-box-title">
+<a href="https://cypher.analyticsindiamag.com/" target="_blank">
+							Cypher 2024<br/>India's Biggest AI Summit						</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-157d5c3a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="157d5c3a" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator"></span>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-7ea79f52 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="7ea79f52" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Sep 25-27, 2024 | 📍 Bangalore, India</span> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-336546e2 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="336546e2" data-settings='{"background_background":"classic"}'>
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-74b63530" data-element_type="column" data-id="74b63530">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-5240c41a elementor-widget elementor-widget-heading" data-element_type="widget" data-id="5240c41a" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Download the easiest way to <br/>stay informed</span> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6f138683" data-element_type="column" data-id="6f138683">
+<div class="elementor-widget-wrap elementor-element-populated">
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-bbede06 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="bbede06">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2cd146f9" data-element_type="column" data-id="2cd146f9">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-c242a3c elementor-widget elementor-widget-image" data-element_type="widget" data-id="c242a3c" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://apps.apple.com/in/app/analytics-india-magazine/id1502685162" target="_blank">
+<img alt="AIM App for IOS" class="attachment-medium_large size-medium_large wp-image-10121774" height="100" loading="lazy" sizes="auto, (max-width: 300px) 100vw, 300px" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-App-for-IOS.webp" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-App-for-IOS.webp 300w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-App-for-IOS-150x50.webp 150w" width="300"/> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-54d8de7b" data-element_type="column" data-id="54d8de7b">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-dceaeb9 elementor-widget elementor-widget-image" data-element_type="widget" data-id="dceaeb9" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://play.google.com/store/apps/details?id=com.analyticsindiamag" target="_blank">
+<img alt="AIM App for Android" class="attachment-medium_large size-medium_large wp-image-10121773" height="100" loading="lazy" sizes="auto, (max-width: 300px) 100vw, 300px" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-App-for-Android.webp" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-App-for-Android.webp 300w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-App-for-Android-150x50.webp 150w" width="300"/> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-4aed9389 elementor-section-content-top elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="4aed9389">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-71351273" data-element_type="column" data-id="71351273">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-19230f9 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="19230f9" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Recently Published</span> </div>
+</div>
+<div class="elementor-element elementor-element-faf6bf0 elementor-grid-4 elementor-posts--align-left elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-element_type="widget" data-id="faf6bf0" data-settings='{"classic_columns":"4","classic_row_gap":{"unit":"px","size":40,"sizes":[]},"classic_row_gap_mobile":{"unit":"px","size":48,"sizes":[]},"classic_columns_tablet":"2","classic_columns_mobile":"1","classic_row_gap_tablet":{"unit":"px","size":"","sizes":[]}}' data-widget_type="posts.classic">
+<div class="elementor-widget-container">
+<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+<article class="elementor-post elementor-grid-item post-10121862 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-ai-tool">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/best-face-swap-ai-tools/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Best faceswap apps" class="attachment-medium size-medium wp-image-10121884" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/05/Best-faceswap-apps-300x300.webp" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/best-face-swap-ai-tools/">Best Face Swap AI Tools in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10126455 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-ai-tool tag-chatgpt">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/best-chatgpt-alternatives/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Best ChatGPT Alternatives" class="attachment-medium size-medium wp-image-10126779" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/07/Best-ChatGPT-Alternatives-300x300.webp" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/best-chatgpt-alternatives/">The Top 10 ChatGPT Alternatives</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10122991 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-ai-tool">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/best-ai-tool-for-stock-analysis/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="best ai tools for stock analysis" class="attachment-medium size-medium wp-image-10123001" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/06/best-ai-tools-for-stock-analysis-300x300.webp" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/best-ai-tool-for-stock-analysis/">Best AI Tools for Stock Analysis, Trading and Market Prediction in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10125784 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-ai-developers">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/natural-language-processing/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Natural Language Processing" class="attachment-medium size-medium wp-image-10051352" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2021/10/AIM-Illustration-1-300x300.jpg" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/natural-language-processing/">Natural Language Processing (Complete Explaination)</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10120497 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-ai-tool">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/best-ai-search-engines/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Famous AI Search Engines" class="attachment-medium size-medium wp-image-10121414" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/05/Famous-AI-Search-Engines-300x300.webp" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/best-ai-search-engines/">The Best AI Search Engines in 2024 – Perplexity AI Alternatives</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10124029 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-large-language-model topic-category-guides">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/what-is-llm-large-language-model/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="What is Large Language Model" class="attachment-medium size-medium wp-image-10124033" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/06/What-is-Large-Language-Model-300x300.webp" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/what-is-llm-large-language-model/">What is Large Language Model (LLM)</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10120344 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-ai-tool">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/best-ai-image-generator/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="AI image generator platforms" class="attachment-medium size-medium wp-image-10088001" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2023/02/AI-image-generator-platforms-300x300.jpg" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/best-ai-image-generator/">The 10 Best AI Image Generator in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10126058 topics type-topics status-publish format-standard has-post-thumbnail hentry">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/remaker-ai/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Remaker AI faceswap" class="attachment-medium size-medium wp-image-10126060" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/07/Remaker-AI-faceswap-300x300.webp" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/remaker-ai/">Remaker AI – Use, Price Details &amp; Top Alternatives</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10133640 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-artificial-intelligence">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/top-10-programming-languages-to-become-ai-developers/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Top 10 Programming Languages" class="attachment-medium size-medium wp-image-10105218" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2023/12/Top-10-Programming-Languages-on-GitHub-in-2023-by-Kruthika-300x300.jpg" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/top-10-programming-languages-to-become-ai-developers/">Top 10 Programming Languages to Become AI Developers</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10130256 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-ai-developers tag-ai-education tag-it">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/nirf-ranking-2024-top-100-engineering-colleges/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="NIRF Ranking 2024" class="attachment-medium size-medium wp-image-10133357" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/08/NIRF-Ranking-2024-300x300.webp" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/nirf-ranking-2024-top-100-engineering-colleges/">NIRF Ranking 2024 – Top 100 Engineering Colleges</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10120550 topics type-topics status-publish format-standard has-post-thumbnail hentry tag-ai-developers topic-category-guides">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/types-of-classification-model/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Types of Classification Algorithms" class="attachment-medium size-medium wp-image-20791" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2018/01/bigstock-175575391-300x300.jpg" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/types-of-classification-model/">Different Types of Classification Algorithms</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10132870 topics type-topics status-publish format-standard has-post-thumbnail hentry">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/topics/best-ai-ppt-maker-tools/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-medium size-medium wp-image-10132872" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/08/Best-AI-PPT-Maker-Tools-300x300.webp" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/topics/best-ai-ppt-maker-tools/">Best AI Presentation Maker Tools for Free to Try in 2024</a>
+</span>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-58885cc2 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="58885cc2" data-settings='{"background_background":"classic"}'>
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4b22a61a" data-element_type="column" data-id="4b22a61a">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-1fad51b8 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="1fad51b8" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h4 class="elementor-heading-title elementor-size-default">Subscribe to The Belamy: Our Weekly Newsletter</h4> </div>
+</div>
+<div class="elementor-element elementor-element-243a1aba elementor-widget elementor-widget-heading" data-element_type="widget" data-id="243a1aba" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h5 class="elementor-heading-title elementor-size-default">Biggest AI stories, delivered to your inbox every week.</h5> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6c7f365f" data-element_type="column" data-id="6c7f365f">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-e5693aa elementor-button-align-stretch elementor-widget elementor-widget-form" data-element_type="widget" data-id="e5693aa" data-settings='{"step_next_label":"Next","step_previous_label":"Previous","button_width":"100","step_type":"number_text","step_icon_shape":"circle"}' data-widget_type="form.default">
+<div class="elementor-widget-container">
+<form class="elementor-form" method="post" name="New Form">
+<input name="post_id" type="hidden" value="10129266">
+<input name="form_id" type="hidden" value="e5693aa"/>
+<input name="referer_title" type="hidden" value="How to Create Generative AI Agent with Mistral 7B LLM"/>
+<input name="queried_id" type="hidden" value="10120347"/>
+<div class="elementor-form-fields-wrapper elementor-labels-">
+<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
+<label class="elementor-field-label elementor-screen-only" for="form-field-email">Email</label>
+<input aria-required="true" class="elementor-field elementor-size-lg elementor-field-textual" id="form-field-email" name="form_fields[email]" placeholder="Enter you email..." required="required" size="1" type="email"/>
+</div>
+<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+<button class="elementor-button elementor-size-md" type="submit">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Subscribe</span>
+</span>
+</button>
+</div>
+</div>
+</input></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-58c40b5d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="58c40b5d">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-22ee50c1" data-element_type="column" data-id="22ee50c1">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-3e35ccc1 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="3e35ccc1" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Flagship Events</span> </div>
+</div>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-9deaa0e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="9deaa0e">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-792652f5" data-element_type="column" data-id="792652f5">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-4c4cdf26 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4c4cdf26" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Rising 2024 | DE&amp;I in Tech Summit</span> </div>
+</div>
+<div class="elementor-element elementor-element-26567a79 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="26567a79" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">April 4 and 5, 2024 | 📍 Hilton Convention Center, Manyata Tech Park, Bangalore</span> </div>
+</div>
+<div class="elementor-element elementor-element-1c0ffb9e elementor-view-default elementor-widget elementor-widget-icon" data-element_type="widget" data-id="1c0ffb9e" data-widget_type="icon.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-wrapper">
+<a class="elementor-icon" href="https://analyticsindiamag.com/" target="_blank">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-61b69982" data-element_type="column" data-id="61b69982">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-162e9e65 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="162e9e65" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Data Engineering Summit 2024</span> </div>
+</div>
+<div class="elementor-element elementor-element-48d36683 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="48d36683" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">May 30 and 31, 2024 | 📍 Bangalore, India</span> </div>
+</div>
+<div class="elementor-element elementor-element-179719ba elementor-view-default elementor-widget elementor-widget-icon" data-element_type="widget" data-id="179719ba" data-widget_type="icon.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-wrapper">
+<a class="elementor-icon" href="https://des.analyticsindiamag.com/" target="_blank">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1dcd9062" data-element_type="column" data-id="1dcd9062">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-b55a15e elementor-widget elementor-widget-heading" data-element_type="widget" data-id="b55a15e" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">MachineCon USA 2024</span> </div>
+</div>
+<div class="elementor-element elementor-element-2667eb36 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2667eb36" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">26 July 2024 | 583 Park Avenue, New York</span> </div>
+</div>
+<div class="elementor-element elementor-element-17a26638 elementor-view-default elementor-widget elementor-widget-icon" data-element_type="widget" data-id="17a26638" data-widget_type="icon.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-wrapper">
+<a class="elementor-icon" href="https://machinecon.aimresearch.co/" target="_blank">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-245b59d4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="245b59d4">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3ed4f79b" data-element_type="column" data-id="3ed4f79b">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-35ebeb67 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="35ebeb67" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">MachineCon GCC Summit 2024</span> </div>
+</div>
+<div class="elementor-element elementor-element-54ba17a9 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="54ba17a9" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">June 28 2024 | 📍Bangalore, India</span> </div>
+</div>
+<div class="elementor-element elementor-element-1d40e7ad elementor-view-default elementor-widget elementor-widget-icon" data-element_type="widget" data-id="1d40e7ad" data-widget_type="icon.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-wrapper">
+<a class="elementor-icon" href="https://machinecon.analyticsindiamag.com/" target="_blank">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2f3a5fa7" data-element_type="column" data-id="2f3a5fa7">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-5dfa4c7b elementor-widget elementor-widget-heading" data-element_type="widget" data-id="5dfa4c7b" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Cypher USA 2024</span> </div>
+</div>
+<div class="elementor-element elementor-element-2e5176ad elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2e5176ad" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Nov 21-22 2024 | 📍Santa Clara Convention Center, California, USA</span> </div>
+</div>
+<div class="elementor-element elementor-element-6125a4db elementor-view-default elementor-widget elementor-widget-icon" data-element_type="widget" data-id="6125a4db" data-widget_type="icon.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-wrapper">
+<a class="elementor-icon" href="https://cypher.aimresearch.co/" target="_blank">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-50cdb0b8" data-element_type="column" data-id="50cdb0b8" data-settings='{"background_background":"classic"}'>
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-63cdda5b elementor-widget elementor-widget-heading" data-element_type="widget" data-id="63cdda5b" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Cypher India 2024</span> </div>
+</div>
+<div class="elementor-element elementor-element-7c7cb656 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="7c7cb656" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">September 25-27, 2024 | 📍Bangalore, India</span> </div>
+</div>
+<div class="elementor-element elementor-element-4177564b elementor-view-default elementor-widget elementor-widget-icon" data-element_type="widget" data-id="4177564b" data-widget_type="icon.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-wrapper">
+<a class="elementor-icon" href="https://cypher.analyticsindiamag.com/" target="_blank">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-22ff6e2c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="22ff6e2c">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1802d845" data-element_type="column" data-id="1802d845">
+<div class="elementor-widget-wrap elementor-element-populated">
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-736168d1 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="736168d1" data-settings='{"background_background":"classic"}'>
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4e9ba103" data-element_type="column" data-id="4e9ba103">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-1d2397f1 elementor-widget elementor-widget-image" data-element_type="widget" data-id="1d2397f1" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<img alt="discord icon" class="attachment-medium size-medium wp-image-10118614" height="186" loading="lazy" sizes="auto, (max-width: 186px) 100vw, 186px" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/discord-icon-1.png" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/discord-icon-1.png 186w, https://analyticsindiamag.com/wp-content/uploads/2021/12/discord-icon-1-150x150.png 150w, https://analyticsindiamag.com/wp-content/uploads/2021/12/discord-icon-1-96x96.png 96w" width="186"/> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-27c0ae30" data-element_type="column" data-id="27c0ae30">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-47ba6383 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="47ba6383" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">AI Forum for India</span> </div>
+</div>
+<div class="elementor-element elementor-element-2d665446 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="2d665446" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Our Discord Community for AI Ecosystem, In collaboration with NVIDIA.</span> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6758e8e5" data-element_type="column" data-id="6758e8e5">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-5f8a55b4 elementor-align-center elementor-widget elementor-widget-button" data-element_type="widget" data-id="5f8a55b4" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://discord.gg/M6X66Bb3Hz" target="_blank">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Join the Community &gt;&gt;</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-70ac1670 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="70ac1670">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-30db07c4" data-element_type="column" data-id="30db07c4">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-263f84e5 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="263f84e5" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">AI Tools</span> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1e02ef6e" data-element_type="column" data-id="1e02ef6e">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-3a7448b8 elementor-posts--align-left elementor-grid-4 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-element_type="widget" data-id="3a7448b8" data-settings='{"classic_row_gap":{"unit":"px","size":25,"sizes":[]},"classic_row_gap_mobile":{"unit":"px","size":48,"sizes":[]},"classic_columns":"4","classic_columns_tablet":"2","classic_columns_mobile":"1","classic_row_gap_tablet":{"unit":"px","size":"","sizes":[]}}' data-widget_type="posts.classic">
+<div class="elementor-widget-container">
+<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+<article class="elementor-post elementor-grid-item post-10078078 post type-post status-publish format-standard has-post-thumbnail hentry category-top-ai-tools tag-courses tag-top-trend">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/top-ai-tools/top-engineering-colleges-offering-ai-robotics-courses-in-india/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Top Engineering Colleges Offering AI &amp; Robotics Courses in India" class="attachment-medium size-medium wp-image-10078081" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2022/10/robotics-apprentices-using-test-industrial-robots-2022-03-08-00-06-43-utc-300x300.jpg" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/top-ai-tools/top-engineering-colleges-offering-ai-robotics-courses-in-india/">Top Engineering Colleges for AI and Robotics in India 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10120200 post type-post status-publish format-standard has-post-thumbnail hentry category-top-ai-tools tag-ai-open-source tag-ai-tool tag-open-source-ai tag-text-to-image-generation">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/top-ai-tools/top-10-open-source-text-to-image-models-in-2024/" tabindex="-1">
+<div class="elementor-post__thumbnail"><picture class="attachment-medium size-medium wp-image-10120201" loading="lazy">
+<source srcset="https://analyticsindiamag.com/wp-content/uploads/2024/05/10-open-source-text-to-image-model-300x300.jpg.webp" type="image/webp"/>
+<img alt="10 open source text to image model" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/05/10-open-source-text-to-image-model-300x300.jpg" width="300"/>
+</picture>
+</div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/top-ai-tools/top-10-open-source-text-to-image-models-in-2024/">Top 10 Free Text to Image Models in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10008990 post type-post status-publish format-standard has-post-thumbnail hentry category-top-ai-tools tag-ai-chatbot">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/top-ai-tools/meet-my-ai-friend-top-apps-for-virtual-companionship/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Virtual companion apps" class="attachment-medium size-medium wp-image-10008991" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2020/10/AICompanionship_AIM-300x300.jpg" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/top-ai-tools/meet-my-ai-friend-top-apps-for-virtual-companionship/">5 Best AI Chatbot for Virtual Companionship in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-20265 post type-post status-publish format-standard has-post-thumbnail hentry category-top-ai-tools tag-artificial-intelligence tag-top-trend">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/top-ai-tools/popular-presentations-on-artificial-intelligence-and-machine-learning/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-medium size-medium wp-image-20300" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2018/01/F1-5-1-300x300.jpg" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/top-ai-tools/popular-presentations-on-artificial-intelligence-and-machine-learning/">15 Best Presentations On Artificial Intelligence And Machine Learning in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10131838 post type-post status-publish format-standard has-post-thumbnail hentry category-top-ai-tools tag-adasci tag-courses tag-genai">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/top-ai-tools/top-7-genai-courses-for-non-techies/" tabindex="-1">
+<div class="elementor-post__thumbnail"><picture class="attachment-medium size-medium wp-image-10131937" loading="lazy">
+<source srcset="https://analyticsindiamag.com/wp-content/uploads/2024/08/Top-Seven-GenAI-Courses-for-Non-Techies-1-300x300.jpg.webp" type="image/webp"/>
+<img alt="" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/08/Top-Seven-GenAI-Courses-for-Non-Techies-1-300x300.jpg" width="300"/>
+</picture>
+</div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/top-ai-tools/top-7-genai-courses-for-non-techies/">Top 7 GenAI Courses for Non-Techies in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-58260 post type-post status-publish format-standard has-post-thumbnail hentry category-top-ai-tools tag-ai-tool">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/top-ai-tools/here-are-top-five-text-summarization-tools-that-could-be-helpful/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Text summarization" class="attachment-medium size-medium wp-image-58261" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2020/03/seq2seq-text-summarization-300x300.png" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/top-ai-tools/here-are-top-five-text-summarization-tools-that-could-be-helpful/">Top Text Summarization Tools in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10042549 post type-post status-publish format-standard has-post-thumbnail hentry category-top-ai-tools tag-ai-research">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/top-ai-tools/top-10-ml-papers-on-papers-with-code/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="Paper with code" class="attachment-medium size-medium wp-image-10042550" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2021/06/Paper_AIM-300x300.jpg" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/top-ai-tools/top-10-ml-papers-on-papers-with-code/">PaperswithCode: Top 10 ML Papers Codes in 2024</a>
+</span>
+</div>
+</article>
+<article class="elementor-post elementor-grid-item post-10090188 post type-post status-publish format-standard has-post-thumbnail hentry category-top-ai-tools tag-chatgpt tag-gpt-4 tag-openai tag-plugins tag-slack">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/top-ai-tools/12-plugins-that-make-gpt-4-complete/" tabindex="-1">
+<div class="elementor-post__thumbnail"><img alt="" class="attachment-medium size-medium wp-image-10090192" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2023/03/chatgpt-plugin-300x300.jpg" width="300"/></div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/top-ai-tools/12-plugins-that-make-gpt-4-complete/">The 12 Best Plugins for ChatGPT 4 in 2024</a>
+</span>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div class="elementor elementor-10056274 elementor-location-footer" data-elementor-id="10056274" data-elementor-post-type="elementor_library" data-elementor-type="footer">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-6b6a5b01 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="6b6a5b01">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4bc56a36" data-element_type="column" data-id="4bc56a36">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-81aa03b elementor-grid-1 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-element_type="widget" data-id="81aa03b" data-settings='{"classic_columns":"1","classic_columns_tablet":"2","classic_columns_mobile":"1","classic_row_gap":{"unit":"px","size":35,"sizes":[]},"classic_row_gap_tablet":{"unit":"px","size":"","sizes":[]},"classic_row_gap_mobile":{"unit":"px","size":"","sizes":[]}}' data-widget_type="posts.classic">
+<div class="elementor-widget-container">
+<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+<article class="elementor-post elementor-grid-item post-10140799 post type-post status-publish format-standard has-post-thumbnail hentry category-magazine">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/magazine/oct-2024-edition/" tabindex="-1">
+<div class="elementor-post__thumbnail"><picture class="attachment-large size-large wp-image-10140801" loading="lazy">
+<source srcset="https://analyticsindiamag.com/wp-content/uploads/2024/11/AIM-Oct-2024-edition-945x1300.jpg.webp" type="image/webp"/>
+<img alt="" height="1101" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/11/AIM-Oct-2024-edition-945x1300.jpg" width="800"/>
+</picture>
+</div>
+</a>
+<div class="elementor-post__text"></div>
+</article>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-338fc0e7 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="338fc0e7" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">World's Biggest Media &amp; Analyst firm specializing in AI</span> </div>
+</div>
+<div class="elementor-element elementor-element-182e5cf7 elementor-widget elementor-widget-button" data-element_type="widget" data-id="182e5cf7" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://analyticsindiamag.com/contact-us/">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Contact us ⟶</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f443318" data-element_type="column" data-id="f443318">
+<div class="elementor-widget-wrap elementor-element-populated">
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-45ab465 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="45ab465">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-028b565" data-element_type="column" data-id="028b565">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-9112001 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="9112001" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Advertise with us</span> </div>
+</div>
+<div class="elementor-element elementor-element-7f833e8 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="7f833e8" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">AIM publishes every day, and we believe in quality over quantity, honesty over spin. We offer a wide variety of branding and targeting options to make it easy for you to propagate your brand.</span> </div>
+</div>
+<div class="elementor-element elementor-element-50691d4 elementor-widget elementor-widget-button" data-element_type="widget" data-id="50691d4" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://analyticsindiamag.com/advertise-with-us/">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Learn More ⟶</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-85cee5e" data-element_type="column" data-id="85cee5e">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-549ec4c elementor-widget elementor-widget-heading" data-element_type="widget" data-id="549ec4c" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Branded Content</span> </div>
+</div>
+<div class="elementor-element elementor-element-85608ca elementor-widget elementor-widget-heading" data-element_type="widget" data-id="85608ca" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">AIM Brand Solutions, a marketing division within AIM, specializes in creating diverse content such as documentaries, public artworks, podcasts, videos, articles, and more to effectively tell compelling stories.</span> </div>
+</div>
+<div class="elementor-element elementor-element-4f6b273 elementor-widget elementor-widget-button" data-element_type="widget" data-id="4f6b273" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://analyticsindiamag.com/branded-content/">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Learn More ⟶</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-94de6a2" data-element_type="column" data-id="94de6a2">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-4ce3ba2 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4ce3ba2" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Corporate Upskilling</span> </div>
+</div>
+<div class="elementor-element elementor-element-4ed1b92 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="4ed1b92" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">ADaSci Corporate training program on Generative AI provides a unique opportunity to empower, retain and advance your talent</span> </div>
+</div>
+<div class="elementor-element elementor-element-c6a9078 elementor-widget elementor-widget-button" data-element_type="widget" data-id="c6a9078" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://adasci.org/corporate-trainings/">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Learn More ⟶</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-d6d13ce elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="d6d13ce">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-383ce68" data-element_type="column" data-id="383ce68">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-bba9b32 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="bba9b32" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Hackathons</span> </div>
+</div>
+<div class="elementor-element elementor-element-8fcff21 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="8fcff21" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">With MachineHack you can not only find qualified developers with hiring challenges but can also engage the developer community and your internal workforce by hosting hackathons.</span> </div>
+</div>
+<div class="elementor-element elementor-element-82b23b6 elementor-widget elementor-widget-button" data-element_type="widget" data-id="82b23b6" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://business.machinehack.com/assessment/hackathons/">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Learn More ⟶</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2abaf44" data-element_type="column" data-id="2abaf44">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-15b9957 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="15b9957" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Talent Assessment</span> </div>
+</div>
+<div class="elementor-element elementor-element-cebed5e elementor-widget elementor-widget-heading" data-element_type="widget" data-id="cebed5e" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Conduct Customized Online Assessments on our Powerful Cloud-based Platform, Secured with Best-in-class Proctoring</span> </div>
+</div>
+<div class="elementor-element elementor-element-975d189 elementor-widget elementor-widget-button" data-element_type="widget" data-id="975d189" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://business.machinehack.com/assessment/">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Learn More ⟶</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8b6077a" data-element_type="column" data-id="8b6077a">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-00c64c3 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="00c64c3" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Research &amp; Advisory</span> </div>
+</div>
+<div class="elementor-element elementor-element-095f9f0 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="095f9f0" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">AIM Research produces a series of annual reports on AI &amp; Data Science covering every aspect of the industry. Request Customised Reports &amp; AIM Surveys for a study on topics of your interest.</span> </div>
+</div>
+<div class="elementor-element elementor-element-6eba14c elementor-widget elementor-widget-button" data-element_type="widget" data-id="6eba14c" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://aimresearch.co/syndicated-reports">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Learn More ⟶</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-3b58801 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="3b58801">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-969ecfe" data-element_type="column" data-id="969ecfe">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-f3b67cb elementor-widget elementor-widget-heading" data-element_type="widget" data-id="f3b67cb" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Conferences &amp; Events</span> </div>
+</div>
+<div class="elementor-element elementor-element-7aabfa3 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="7aabfa3" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Immerse yourself in AI and business conferences tailored to your role, designed to elevate your performance and empower you to accomplish your organization’s vital objectives.</span> </div>
+</div>
+<div class="elementor-element elementor-element-722167f elementor-widget elementor-widget-button" data-element_type="widget" data-id="722167f" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="https://analyticsindiamag.com/our-events/">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">Learn More ⟶</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-bb9d0f6" data-element_type="column" data-id="bb9d0f6">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-fc08097 elementor-grid-1 elementor-posts--align-left elementor-grid-tablet-1 elementor-posts--thumbnail-left elementor-grid-mobile-1 elementor-widget elementor-widget-posts" data-element_type="widget" data-id="fc08097" data-settings='{"classic_columns":"1","classic_columns_tablet":"1","classic_columns_mobile":"1","classic_row_gap":{"unit":"px","size":35,"sizes":[]},"classic_row_gap_tablet":{"unit":"px","size":"","sizes":[]},"classic_row_gap_mobile":{"unit":"px","size":"","sizes":[]}}' data-widget_type="posts.classic">
+<div class="elementor-widget-container">
+<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+<article class="elementor-post elementor-grid-item post-10138247 post type-post status-publish format-standard has-post-thumbnail hentry category-ai-highlights">
+<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/ai-highlights/mlds-2025-unveiling-indias-biggest-developers-conference-in-bangalore/" tabindex="-1">
+<div class="elementor-post__thumbnail"><picture class="attachment-medium_large size-medium_large wp-image-10140379" loading="lazy">
+<source srcset="https://analyticsindiamag.com/wp-content/uploads/2024/10/Developers-Conference-in-Bangalore-768x432.jpg.webp" type="image/webp"/>
+<img alt="Developers Conference in Bangalore" height="432" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/10/Developers-Conference-in-Bangalore-768x432.jpg" width="768"/>
+</picture>
+</div>
+</a>
+<div class="elementor-post__text">
+<span class="elementor-post__title">
+<a href="https://analyticsindiamag.com/ai-highlights/mlds-2025-unveiling-indias-biggest-developers-conference-in-bangalore/">MLDS 2025: Unveiling India’s Biggest Developers Conference in Bangalore</a>
+</span>
+<div class="elementor-post__excerpt">
+<p>MLDS 2025 is gearing up to be India’s biggest developers conference, uniting over 2,000 tech enthusiasts in Bangalore to explore</p></div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<footer class="elementor-section elementor-top-section elementor-element elementor-element-1368e352 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="1368e352">
+<div class="elementor-container elementor-column-gap-wide">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7a26824a" data-element_type="column" data-id="7a26824a">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-692c999 elementor-widget elementor-widget-image" data-element_type="widget" data-id="692c999" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<img alt="AIM" class="attachment-full size-full wp-image-10056405" height="884" loading="lazy" sizes="auto, (max-width: 2033px) 100vw, 2033px" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black.png" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black.png 2033w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black-1024x445.png 1024w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black-768x334.png 768w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black-1536x668.png 1536w, https://analyticsindiamag.com/wp-content/uploads/2021/12/AIM-logo-black-150x65.png 150w" width="2033"/> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-31dcd9f2" data-element_type="column" data-id="31dcd9f2">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-610157b elementor-widget elementor-widget-heading" data-element_type="widget" data-id="610157b" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Your AI journey starts here</span> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2bd99dcd" data-element_type="column" data-id="2bd99dcd">
+<div class="elementor-widget-wrap elementor-element-populated">
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-d994d4a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="d994d4a">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-25972b3" data-element_type="column" data-id="25972b3">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-3e97111 elementor-widget elementor-widget-image" data-element_type="widget" data-id="3e97111" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://apps.apple.com/in/app/analytics-india-magazine/id1502685162" target="_blank">
+<img alt="AIM Apple store" class="attachment-thumbnail size-thumbnail wp-image-10118598" height="144" loading="lazy" sizes="auto, (max-width: 145px) 100vw, 145px" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/App-store.png" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/App-store.png 145w, https://analyticsindiamag.com/wp-content/uploads/2021/12/App-store-96x96.png 96w" width="145"/> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-60282f0" data-element_type="column" data-id="60282f0">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-c4a420f elementor-widget elementor-widget-image" data-element_type="widget" data-id="c4a420f" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://play.google.com/store/apps/details?id=com.analyticsindiamag" target="_blank">
+<picture class="attachment-thumbnail size-thumbnail wp-image-10118597" loading="lazy">
+<source sizes="auto, (max-width: 145px) 100vw, 145px" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/Playstore.png.webp 145w, https://analyticsindiamag.com/wp-content/uploads/2021/12/Playstore-96x96.png.webp 96w" type="image/webp"/>
+<img alt="AIM Playstore" height="144" loading="lazy" sizes="auto, (max-width: 145px) 100vw, 145px" src="https://analyticsindiamag.com/wp-content/uploads/2021/12/Playstore.png" srcset="https://analyticsindiamag.com/wp-content/uploads/2021/12/Playstore.png 145w, https://analyticsindiamag.com/wp-content/uploads/2021/12/Playstore-96x96.png 96w" width="145"/>
+</picture>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</footer>
+<footer class="elementor-section elementor-top-section elementor-element elementor-element-3731b58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="3731b58" data-settings='{"background_background":"classic"}'>
+<div class="elementor-container elementor-column-gap-wide">
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-40c76b0" data-element_type="column" data-id="40c76b0">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-36b1f96 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="36b1f96" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p><strong>Email:<br/></strong>info@aimmediahouse.com</p><p><span style="text-decoration: underline;"><strong>Our Offices</strong></span></p><p><strong>AIM India</strong><br>1st Floor, Sakti Statesman, Marathahalli – Sarjapur Outer Ring Rd, Green Glen Layout, Bellandur, Bengaluru, Karnataka 560103</br></p><p><strong>AIM Americas<br/></strong>99 South Almaden Blvd. Suite 600 San Jose California 95113 USA</p> </div>
+</div>
+<div class="elementor-element elementor-element-1686bcb elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="1686bcb" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator"></span>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-b49b458 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="b49b458" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Our Social</span> </div>
+</div>
+<div class="elementor-element elementor-element-62a3bfc elementor-shape-square elementor-grid-5 e-grid-align-left e-grid-align-mobile-center elementor-widget elementor-widget-social-icons" data-element_type="widget" data-id="62a3bfc" data-widget_type="social-icons.default">
+<div class="elementor-widget-container">
+<div class="elementor-social-icons-wrapper elementor-grid">
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-1e6414a" href="https://www.facebook.com/aimmediahouse" target="_blank">
+<span class="elementor-screen-only">Facebook</span>
+<svg class="e-font-icon-svg e-fab-facebook" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg> </a>
+</span>
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-dc278bd" href="https://twitter.com/@analyticsindiam" target="_blank">
+<span class="elementor-screen-only">Twitter</span>
+<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> </a>
+</span>
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-64bf194" href="https://www.youtube.com/@aimmediahouse" target="_blank">
+<span class="elementor-screen-only">Youtube</span>
+<svg class="e-font-icon-svg e-fab-youtube" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg> </a>
+</span>
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-5348af2" href="https://www.linkedin.com/company/analytics-india-magazine" target="_blank">
+<span class="elementor-screen-only">Linkedin</span>
+<svg class="e-font-icon-svg e-fab-linkedin" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg> </a>
+</span>
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-e311744" href="https://www.instagram.com/aim.media.house/" target="_blank">
+<span class="elementor-screen-only">Instagram</span>
+<svg class="e-font-icon-svg e-fab-instagram" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg> </a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-9f02ef4" data-element_type="column" data-id="9f02ef4">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-243fbaa elementor-widget elementor-widget-heading" data-element_type="widget" data-id="243fbaa" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Who we are</span> </div>
+</div>
+<div class="elementor-element elementor-element-febeda8 elementor-align-right elementor-tablet-align-left elementor-mobile-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="febeda8" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items">
+<li class="elementor-icon-list-item">
+<a href="https://analyticsindiamag.com/about/">
+<span class="elementor-icon-list-text">About Us</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://analyticsindiamagazine.substack.com/">
+<span class="elementor-icon-list-text">Newsletters</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://www.youtube.com/channel/UCAlwrsgeJavG1vw9qSFOUmA?sub_confirmation=1">
+<span class="elementor-icon-list-text">Videos</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://www.youtube.com/@TheHotSeat-AIM">
+<span class="elementor-icon-list-text">Podcast</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://analyticsindiamag.com/our-events/">
+<span class="elementor-icon-list-text">Events</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://www.linkedin.com/jobs/search/?currentJobId=2595617641&amp;f_C=10283931&amp;f_TPR=r604800&amp;geoId=92000000">
+<span class="elementor-icon-list-text">Careers</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://analyticsindiamag.com/contact-us/">
+<span class="elementor-icon-list-text">Contact Us</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://analyticsindiamag.com/sitemap/">
+<span class="elementor-icon-list-text">Sitemap</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="elementor-element elementor-element-c0e63ac elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="c0e63ac" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a99bb9d" data-element_type="column" data-id="a99bb9d">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-9a30333 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="9a30333" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Our Brands</span> </div>
+</div>
+<div class="elementor-element elementor-element-e6c3dd7 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="e6c3dd7" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items">
+<li class="elementor-icon-list-item">
+<a href="https://aimresearch.co/">
+<span class="elementor-icon-list-text">AIM Research</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://machinehack.com/">
+<span class="elementor-icon-list-text">MachineHack</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://bestfirm.aimresearch.co/">
+<span class="elementor-icon-list-text">Best Firm Certification</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://council.aimresearch.co/">
+<span class="elementor-icon-list-text">Councils</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://www.adasci.org/">
+<span class="elementor-icon-list-text">Association of Data Scientists</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="elementor-element elementor-element-5885942 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="5885942" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator"></span>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-40755b0 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="40755b0" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Collaborate</span> </div>
+</div>
+<div class="elementor-element elementor-element-be23b1d elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="be23b1d" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items">
+<li class="elementor-icon-list-item">
+<a href="https://analyticsindiamag.com/advertise-with-us/">
+<span class="elementor-icon-list-text">Advertise with us</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://analyticsindiamag.com/branded-content/">
+<span class="elementor-icon-list-text">Branded Content</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://analyticsindiamag.com/our-events/aim-custom-events/">
+<span class="elementor-icon-list-text">Bespoke Events</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://machinehack.com/enterprise/rank">
+<span class="elementor-icon-list-text">Hackathons</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://business.machinehack.com/assessment/">
+<span class="elementor-icon-list-text">Talent Assessment</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://aimresearch.co/">
+<span class="elementor-icon-list-text">Research &amp; Advisory</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://adasci.org/corporate-trainings/">
+<span class="elementor-icon-list-text">Corporate Trainings</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3e65aee" data-element_type="column" data-id="3e65aee">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-75f9a1b elementor-widget elementor-widget-heading" data-element_type="widget" data-id="75f9a1b" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Our Conferences</span> </div>
+</div>
+<div class="elementor-element elementor-element-d8ac3fd elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="d8ac3fd" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items">
+<li class="elementor-icon-list-item">
+<a href="https://cypher.analyticsindiamag.com/" target="_blank">
+<span class="elementor-icon-list-text">Cypher India</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://machinecon.aimmediahouse.com/" target="_blank">
+<span class="elementor-icon-list-text">MachineCon USA</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://des.analyticsindiamag.com/" target="_blank">
+<span class="elementor-icon-list-text">Data Engineering Summit</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://machinecon.analyticsindiamag.com/" target="_blank">
+<span class="elementor-icon-list-text">MachineCon GCC Summit</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://mlds.analyticsindiamag.com/" target="_blank">
+<span class="elementor-icon-list-text">MLDS</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://rising.analyticsindiamag.com/" target="_blank">
+<span class="elementor-icon-list-text">The Rising</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="elementor-element elementor-element-0ea7dc8 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-element_type="widget" data-id="0ea7dc8" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator"></span>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-3b355fa elementor-widget elementor-widget-heading" data-element_type="widget" data-id="3b355fa" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<span class="elementor-heading-title elementor-size-default">Data Products</span> </div>
+</div>
+<div class="elementor-element elementor-element-d296a64 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="d296a64" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items">
+<li class="elementor-icon-list-item">
+<a href="https://aimresearch.co/product/vendorai-comprehensive-ai-vendor-database-with-detailed-capabilities-insights" target="_blank">
+<span class="elementor-icon-list-text">VendorAI: AI Vendor Database</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://aimresearch.co/product/the-comprehensive-list-of-global-capability-centers-gccs-in-india" target="_blank">
+<span class="elementor-icon-list-text">GCC Explorer: List of GCCs in India</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://aimresearch.co/product/bot-bazaar-a-comprehensive-database-of-ai-startups-in-the-usa" target="_blank">
+<span class="elementor-icon-list-text">Bot Bazaar: A Comprehensive Database of AI Startups in the USA</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-30120e50 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="30120e50" data-settings='{"background_background":"classic"}'>
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-51aab8aa" data-element_type="column" data-id="51aab8aa">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-6cd769e5 elementor-widget elementor-widget-heading" data-element_type="widget" data-id="6cd769e5" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<p class="elementor-heading-title elementor-size-default">© Analytics India Magazine Pvt Ltd &amp; AIM Media House LLC 2024</p> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f8315eb" data-element_type="column" data-id="f8315eb">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-5d678dd elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="5d678dd" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items elementor-inline-items">
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://analyticsindiamag.com/terms-use/">
+<span class="elementor-icon-list-text">Terms of use</span>
+</a>
+</li>
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://analyticsindiamag.com/privacy-policy/">
+<span class="elementor-icon-list-text">Privacy Policy</span>
+</a>
+</li>
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://analyticsindiamag.com/copyright-trademarks/">
+<span class="elementor-icon-list-text">Copyright</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="elementor elementor-10121040 elementor-location-popup" data-elementor-id="10121040" data-elementor-post-type="elementor_library" data-elementor-settings='{"entrance_animation":"zoomIn","exit_animation":"zoomIn","entrance_animation_duration":{"unit":"px","size":"1","sizes":[]},"avoid_multiple_popups":"yes","open_selector":"a[href=\"#link-popup\"]","a11y_navigation":"yes","triggers":{"page_load_delay":20,"page_load":"yes","exit_intent":"yes"},"timing":{"times_times":1,"times_period":"day","times":"yes"}}' data-elementor-type="popup">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-4271d84d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-element_type="section" data-id="4271d84d">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-97785e0" data-element_type="column" data-id="97785e0">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-dacf06c elementor-widget elementor-widget-image" data-element_type="widget" data-id="dacf06c" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://events.pcisecuritystandards.org/2024-hanoi/" target="_blank">
+<img alt="" class="attachment-large size-large wp-image-10140893" height="300" loading="lazy" src="https://analyticsindiamag.com/wp-content/uploads/2024/05/APCM-600x300-1.gif" width="600"/> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<link href="https://analyticsindiamag.com/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.25.3" id="e-sticky-css" media="all" rel="stylesheet"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div data-auto_select="true" data-client_id="45761317186-g6p490gu4li9mto3ffdc8b75lvijiebq.apps.googleusercontent.com" data-login_uri="https://analyticsindiamag.com/?gotl-signin" data-redirect_uri="https://analyticsindiamag.com/ai-mysteries/top-databases-used-in-machine-learning-projects?ts=1732088994" data-use_fedcm_for_prompt="true" data-wpnonce="fa7f003e14" id="g_id_onload"></div>
+
+</body>
+</html>
+<!--
+	generated in 1.055 seconds
+	377341 bytes batcached for 300 seconds
+-->

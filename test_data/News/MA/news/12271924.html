@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<link href="http://gmpg.org/xfn/11" rel="profile"/>
+<link href="https://glennchan.wordpress.com/xmlrpc.php" rel="pingback"/>
+<!--[if lt IE 9]>
+<script src="https://s2.wp.com/wp-content/themes/pub/misty-lake/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<title>Coinbase is a hot mess (plus MongoDB, Bank of Nova Scotia, MCB, and others) – Glenn Chan's Random Notes on Investing</title>
+<meta content="max-image-preview:large" name="robots"/>
+<link href="//s0.wp.com" rel="dns-prefetch"/>
+<link href="//s2.wp.com" rel="dns-prefetch"/>
+<link href="//s1.wp.com" rel="dns-prefetch"/>
+<link href="//widgets.wp.com" rel="dns-prefetch"/>
+<link href="//fonts-api.wp.com" rel="dns-prefetch"/>
+<link href="https://glennchan.wordpress.com/feed/" rel="alternate" title="Glenn Chan's Random Notes on Investing » Feed" type="application/rss+xml"/>
+<link href="https://glennchan.wordpress.com/comments/feed/" rel="alternate" title="Glenn Chan's Random Notes on Investing » Comments Feed" type="application/rss+xml"/>
+<link href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/feed/" rel="alternate" title="Glenn Chan's Random Notes on Investing » Coinbase is a hot mess (plus MongoDB, Bank of Nova Scotia, MCB, and others) Comments Feed" type="application/rss+xml"/>
+
+
+<link crossorigin="anonymous" href="https://s1.wp.com/_static/??-eJxtzFsKgCAQheENZaMg+BStRXQI80oz0vbDCILo5cAHhx/OJlwtjIUhd9FS30Ih2JGbdfEx5FrH+J6Q4MBkGb1olfij2RFN8J9MIeIbvjXua16UUUZLLY3eL2BkNNM=&amp;cssminify=yes" id="all-css-0-1" media="all" rel="stylesheet" type="text/css"/>
+
+<link crossorigin="anonymous" href="https://s1.wp.com/_static/??-eJydzEEOwiAQheELCSM1xbgwngUoIdQRyMxQw+2tbty5cPny8v3wbCrUIrEINOwpF4bU9+kjpf2hCJu5aKsn8D3jAh5ruCvMnhwNYBkYdWA+wM/QRzGsUZp7czdqF5UoL/8myEkuib/89ria88lYO8/TcX0BOeRP1w==&amp;cssminify=yes" id="all-css-2-1" media="all" rel="stylesheet" type="text/css"/>
+
+<link crossorigin="anonymous" href="https://s2.wp.com/_static/??-eJzTLy/QzcxLzilNSS3WzyrWz01NyUxMzUnNTc0rQeEU5CRWphbp5qSmJyZX6uVm5uklFxfr6OPTDpRD5sM02efaGpoZmFkYGRuZGmQBAHPvL0Y=&amp;cssminify=yes" id="all-css-4-1" media="all" rel="stylesheet" type="text/css"/>
+
+
+<link crossorigin="anonymous" href="https://s1.wp.com/_static/??/wp-content/mu-plugins/core-compat/wp-mediaelement.css,/wp-content/mu-plugins/wpcom-bbpress-premium-themes.css?m=1432920480j&amp;cssminify=yes" id="all-css-8-1" media="all" rel="stylesheet" type="text/css"/>
+
+<link crossorigin="anonymous" href="https://s2.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/moon/vendor/automattic/jetpack-mu-wpcom/src/build/verbum-comments/verbum-comments.css?m=1729082728i&amp;cssminify=yes" id="all-css-10-1" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://widgets.wp.com/verbum-block-editor/block-editor.css?ver=1721244820" id="verbum-gutenberg-css-css" media="all" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://s1.wp.com/wp-content/themes/pub/misty-lake/style.css?m=1579202016i&amp;cssminify=yes" id="all-css-12-1" media="all" rel="stylesheet" type="text/css"/>
+<!--[if IE 8]>
+<link rel='stylesheet' id='mistylake-ie-css' href='https://s2.wp.com/wp-content/themes/pub/misty-lake/ie.css?m=1377549400i&#038;ver=6.7-RC3-59369' media='all' />
+<![endif]-->
+<link href="https://fonts-api.wp.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" id="mistylake-open-sans-css" media="all" rel="stylesheet"/>
+<link href="https://fonts-api.wp.com/css?family=Droid+Serif%3A400%2C400italic%2C400bold&amp;subset=latin&amp;ver=6.7-RC3-59369" id="mistylake-droid-serif-css" media="all" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://s1.wp.com/_static/??-eJzTLy/QTc7PK0nNK9HPLdUtyClNz8wr1i9KTcrJTwcy0/WTi5G5ekCujj52Temp+bo5+cmJJZn5eSgc3bScxMwikFb7XFtDE1NLExMLc0OTLACohS2q&amp;cssminify=yes" id="all-css-18-1" media="all" rel="stylesheet" type="text/css"/>
+<link crossorigin="anonymous" href="https://s1.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035i&amp;cssminify=yes" id="print-css-19-1" media="print" rel="stylesheet" type="text/css"/>
+
+<link crossorigin="anonymous" href="https://s2.wp.com/_static/??-eJyNjcEKwjAQRH/IuA1aehI/ReImJKmb3eAmFP9eW3oRL16GeTC8gaUaFG6BG5RuKvWYWWEOrTp87AxFZA3fKShocs/gnfevrWaOR1Q9wP+mW2YEFcyODEkU/YIfW0uhfH7TGSLJ3dE6uJaLneww2mkYT/MbUOlJHA==&amp;cssminify=yes" id="all-css-22-1" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+<link href="https://glennchan.wordpress.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<meta content="WordPress.com" name="generator"/>
+<link href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/" rel="canonical"/>
+<link href="https://wp.me/p1mOGr-1Kp" rel="shortlink"/>
+<link href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fglennchan.wordpress.com%2F2018%2F02%2F28%2Fcoinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others%2F&amp;for=wpcom-auto-discovery" rel="alternate" type="application/json+oembed"/><link href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fglennchan.wordpress.com%2F2018%2F02%2F28%2Fcoinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others%2F&amp;for=wpcom-auto-discovery" rel="alternate" type="application/xml+oembed"/>
+<!-- Jetpack Open Graph Tags -->
+<meta content="article" property="og:type"/>
+<meta content="Coinbase is a hot mess (plus MongoDB, Bank of Nova Scotia, MCB, and others)" property="og:title"/>
+<meta content="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/" property="og:url"/>
+<meta content="The r/Coinbase subreddit has been flooded with customers complaining about Coinbase: Taking money out of their bank accounts via debit (see comments here).  Adding insult to injury, users are furio…" property="og:description"/>
+<meta content="2018-02-28T05:05:13+00:00" property="article:published_time"/>
+<meta content="2018-03-01T02:43:44+00:00" property="article:modified_time"/>
+<meta content="Glenn Chan's Random Notes on Investing" property="og:site_name"/>
+<meta content="https://glennchan.wordpress.com/wp-content/uploads/2018/02/coinbase-cfpb-complaints.png" property="og:image"/>
+<meta content="632" property="og:image:width"/>
+<meta content="422" property="og:image:height"/>
+<meta content="" property="og:image:alt"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="249643311490" property="fb:app_id"/>
+<meta content="https://www.facebook.com/WordPresscom" property="article:publisher"/>
+<meta content="Coinbase is a hot mess (plus MongoDB, Bank of Nova Scotia, MCB, and others)" name="twitter:text:title"/>
+<meta content="https://glennchan.wordpress.com/wp-content/uploads/2018/02/coinbase-cfpb-complaints.png?w=640" name="twitter:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<!-- End Jetpack Open Graph Tags -->
+<link href="https://s1.wp.com/i/favicon.ico" rel="shortcut icon" sizes="16x16 24x24 32x32 48x48" type="image/x-icon"/>
+<link href="https://s1.wp.com/i/favicon.ico" rel="icon" sizes="16x16 24x24 32x32 48x48" type="image/x-icon"/>
+<link href="https://s2.wp.com/i/webclip.png" rel="apple-touch-icon"/>
+<link href="https://glennchan.wordpress.com/?openidserver=1" rel="openid.server"/>
+<link href="https://glennchan.wordpress.com/" rel="openid.delegate"/>
+<link href="https://glennchan.wordpress.com/osd.xml" rel="search" title="Glenn Chan's Random Notes on Investing" type="application/opensearchdescription+xml"/>
+<link href="https://s1.wp.com/opensearch.xml" rel="search" title="WordPress.com" type="application/opensearchdescription+xml"/>
+<meta content="Glenn Chan's Random Notes on Investing" name="application-name"/><meta content="width=device-width;height=device-height" name="msapplication-window"/><meta content="DISCLAIMER: Some of the information on this site is wrong.  Always do your own research." name="msapplication-tooltip"/><meta content="The r/Coinbase subreddit has been flooded with customers complaining about Coinbase: Taking money out of their bank accounts via debit (see comments here).  Adding insult to injury, users are furious at overdraft fees charged by their bank and not being able to pay rent. Not crediting funds deposited via wire transfer (example) Not being able…" name="description"/>
+</head>
+<body class="post-template-default single single-post postid-6721 single-format-standard customizer-styles-applied jetpack-reblog-enabled">
+<div class="hfeed site" id="page">
+<header class="site-header" id="masthead" role="banner">
+<div class="site-branding">
+<h1 class="site-title"><a href="https://glennchan.wordpress.com/" rel="home" title="Glenn Chan's Random Notes on Investing">Glenn Chan's Random Notes on Investing</a></h1>
+<h2 class="site-description">DISCLAIMER: Some of the information on this site is wrong. Always do your own research.</h2>
+</div>
+<nav class="site-navigation main-navigation" id="nav" role="navigation">
+<h1 class="assistive-text screen-reader-text">Menu</h1>
+<div class="assistive-text skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+<div class="menu"><ul>
+<li><a href="https://glennchan.wordpress.com/">Home</a></li><li class="page_item page-item-2"><a href="https://glennchan.wordpress.com/about/">About</a></li>
+</ul></div>
+</nav><!-- .site-navigation .main-navigation -->
+</header><!-- #masthead .site-header -->
+<div class="site-main" id="main">
+<div class="header-image">
+<a href="https://glennchan.wordpress.com/" rel="home" title="Glenn Chan's Random Notes on Investing">
+<img alt="" height="275" src="https://glennchan.wordpress.com/wp-content/uploads/2015/02/cropped-toronto-skyline3.jpg" width="1015"/>
+</a>
+</div>
+<div class="content-area" id="primary">
+<div class="site-content" id="content" role="main">
+<article class="post-6721 post type-post status-publish format-standard hentry category-stocks tag-bank-of-nova-scotia-bns tag-metropolitan-bank-mcb tag-mongodb-mdb tag-worldpay-group-lonwpg" id="post-6721">
+<header class="entry-header">
+<div class="entry-meta">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/" rel="bookmark" title="5:05 am"><time class="entry-date" datetime="2018-02-28T05:05:13+00:00" pubdate="">February 28, 2018</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://glennchan.wordpress.com/author/glennchan/" rel="author" title="View all posts by GlennC">GlennC</a></span></span> </div><!-- .entry-meta -->
+<h1 class="entry-title">Coinbase is a hot mess (plus MongoDB, Bank of Nova Scotia, MCB, and others)</h1> </header><!-- .entry-header -->
+<div class="entry-content">
+<p>The <a href="https://www.reddit.com/r/CoinBase/top/">r/Coinbase subreddit</a> has been flooded with customers complaining about Coinbase:</p>
+<ol>
+<li>Taking money out of their bank accounts via debit (<a href="https://www.reddit.com/r/CoinBase/comments/7zhcp0/updates_on_multiple_visa_charges/">see comments here</a>).  Adding insult to injury, users are <em>furious</em> at overdraft fees charged by their bank and not being able to pay rent.</li>
+<li>Not crediting funds deposited via wire transfer (<a href="https://www.reddit.com/r/CoinBase/comments/7z5xr2/coinbase_wire_transfer_coverup/">example</a>)</li>
+<li>Not being able to transfer assets out of Coinbase (search <a href="https://www.reddit.com/r/CoinBase/comments/7le4mi/upvote_this_if_you_have_a_transaction_pending/">this thread</a> for “wallet” or “withdrawal”; or <a href="https://twitter.com/h3h3productions/status/960639584349532160">see Twitter</a>)</li>
+</ol>
+<p>The problem I see is that draining bank accounts is not a viable business model.  Those transactions will be reversed.  Eventually, Coinbase will be cut off from accepting credit cards and debit cards because nobody will want to pay for the customer service and fraud investigation costs that erroneous transactions generate.  It is clearly unsustainable.  To be fair, this might simply be a case of buggy software causing the erroneous transactions.  Anti-fraud practices and growing pains might explain some of Coinbase’s other issues.  However, the inappropriate transactions don’t look like the work of shoddy IT.  <strong>So here’s my crazy theory: one of the world’s most popular and reputable exchanges is borrowing money from consumers (without their permission) to stave off a liquidity crisis</strong>.  I can’t definitively prove this so you’re going to have to look at the evidence and make up your own mind.</p>
+<p><span id="more-6721"></span></p>
+<h2>Preamble: CFPB complaint data</h2>
+<p><a href="https://data.consumerfinance.gov/dataset/Consumer-Complaints/s6ew-h6mp">The CFPB database is available to the public</a>.  I’ve copied the data into <a href="https://docs.google.com/spreadsheets/d/11wS2l2hoklQkLrYQEkLEQg5eBqJo_qoU_HT1VJqhvhs/edit?usp=sharing">a Google Spreadsheet (make a copy of it if you’d like to play around with it)</a>.</p>
+<p>CFPB complaints rose in the middle of 2017.  They spiked even more in January following the December peak in <a href="https://www.coindesk.com/price/">Bitcoin’s price</a> and <a href="https://trends.google.com/trends/explore?q=bitcoin">Google Trends search interest</a>.</p>
+<p><a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/coinbase-cfpb-complaints/#main" rel="attachment wp-att-6730"><img alt="" class="alignnone wp-image-6730 size-full" data-attachment-id="6730" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="coinbase-cfpb-complaints" data-large-file="https://glennchan.wordpress.com/wp-content/uploads/2018/02/coinbase-cfpb-complaints.png?w=632" data-medium-file="https://glennchan.wordpress.com/wp-content/uploads/2018/02/coinbase-cfpb-complaints.png?w=300" data-orig-file="https://glennchan.wordpress.com/wp-content/uploads/2018/02/coinbase-cfpb-complaints.png" data-orig-size="632,422" data-permalink="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/coinbase-cfpb-complaints/#main" sizes="(max-width: 632px) 100vw, 632px" src="https://glennchan.wordpress.com/wp-content/uploads/2018/02/coinbase-cfpb-complaints.png?w=660" srcset="https://glennchan.wordpress.com/wp-content/uploads/2018/02/coinbase-cfpb-complaints.png 632w, https://glennchan.wordpress.com/wp-content/uploads/2018/02/coinbase-cfpb-complaints.png?w=150&amp;h=100 150w, https://glennchan.wordpress.com/wp-content/uploads/2018/02/coinbase-cfpb-complaints.png?w=300&amp;h=200 300w"/></a></p>
+<p>Unfortunately, there are no consumer complaint narratives for Dec 25/26, 2017 onwards so there is not much detail on Coinbase’s current woes. Past complaints have covered a wide range of issues:</p>
+<ol>
+<li>The most serious issue are users reporting that they are unable to withdraw assets from Coinbase. Some example complaint IDs are 2724325, 2669635, and 2660137.</li>
+<li>A few instances of double charging.</li>
+<li>Deposits not being credited.</li>
+<li>Compromised accounts.</li>
+<li>Users locked out of their accounts.</li>
+<li>Users being stupid (sending unsupported cryptocurrencies to Coinbase wallets).</li>
+</ol>
+<p>One interesting thing to note is that Coinbase has an unusually high number of complaints. Of all the consumer complaint narratives that mention the word Bitcoin:</p>
+<ul>
+<li>Coinbase accounts for 145 complaints (<strong>92.36%</strong>)</li>
+<li>The only other cryptocurrency exchange with a complaint is Kraken, with 1 complaint (<strong>0.64%</strong>).</li>
+<li>Other financial companies account for the 11 other complaints (<strong>7.01%</strong>).</li>
+</ul>
+<p>Coinbase’s complaint rate is not consistent with its US market share. Unlike its competitors, Coinbase’s customer service has not been responsive to various customer issues.</p>
+<h2>Coinbase is incompetent</h2>
+<h3>MongoDB is inappropriate for financial transactions</h3>
+<p>Coinbase has been criticized for using MongoDB because the database system <strong>loses data</strong> and is therefore inappropriate for financial transactions.  In general, many view MongoDB as overhyped and inferior to PostgreSQL <em>in almost every way</em> (see <a href="https://www.reddit.com/r/javascript/comments/50gx97/can_someone_tell_me_why_a_lot_of_people_do_not/">here</a>, <a href="https://www.reddit.com/r/changemyview/comments/7l4ulr/cmv_mongodb_sucks_and_postgresql_is_better_in/">here</a>, and <a href="http://cryto.net/~joepie91/blog/2015/07/19/why-you-should-never-ever-ever-use-mongodb/">here</a>).  The product is not very good.  Worse still, <a href="http://hackingdistributed.com/2014/04/06/another-one-bites-the-dust-flexcoin/">MongoDB’s flaws have been exploited at other exchanges and led to the downfall of Flexion as well as problems at Poloniex</a>.</p>
+<p>From what I can tell, Coinbase continues to use MongoDB.  Coinbase’s outage reports (for <a href="https://engineering.coinbase.com/may-22-24-downtime-post-mortem-2031b47c82ec">May 22-24</a>, <a href="https://engineering.coinbase.com/november-29th-december-1st-post-mortem-69a1810f9910">November 29 to Dec 1</a>, and <a href="https://engineering.coinbase.com/december-6th-7th-post-mortem-9dddb0bba130">Dec 6-7</a>) cites MongoDB scalability issues as a contributing factor.  Instead of using a commercially-available database system suitable for financial transactions, Coinbase’s blog suggests that <a href="https://engineering.coinbase.com/open-sourcing-our-distributed-toolbox-f0814021039c">it is building its own layer of software</a> (presumably on top of MongoDB) to solve problems.</p>
+<p>It is unclear to me if MongoDB’s theoretical problems (e.g. data loss, etc.) have been solved by Coinbase… Coinbase hasn’t explicitly blamed MongoDB for any bugs affecting the integrity of its database. We do know however that users have reported these bugs on Reddit:</p>
+<ul>
+<li><a href="https://np.reddit.com/r/Bitcoin/comments/45azzi/wtf_coinbase_fix_this_now/czxcmkk/">A negative balance of Bitcoins</a>.  Here’s <a href="https://imgur.com/uRQn327">the screenshot</a>.</li>
+<li><a href="https://www.reddit.com/r/Bitcoin/comments/2ch5dy/beware_coinbase_has_severe_system_error_users/">This user’s balance should have been 2.0 Bitcoins but was displayed as 0 Bitcoins</a>.</li>
+<li><a href="https://www.reddit.com/r/Bitcoin/comments/1wi4dr/coinbase_accidentally_put_20_btc_in_my_account/">Coinbase accidentally put 20 BTC in my account […]</a></li>
+<li><a href="https://www.reddit.com/r/Bitcoin/comments/4rx79w/lovely_coinbase_is_creating_random_vaults_in_my/">Lovely, coinbase is creating random vaults in my account</a></li>
+<li><a href="https://www.reddit.com/r/CoinBase/comments/7z976y/coinbase_just_closed_my_account_after_i_made_a/">[…] $200 transfer never went through.</a></li>
+<li><a href="https://www.reddit.com/r/CoinBase/comments/7xb0s6/ever_been_double_credited/">Double credited</a></li>
+</ul>
+<p>Many of these bugs would be unacceptable if they occurred with NYSE, NASDAQ, or your broker.  But instead of using existing technology with a proven track record, Coinbase’s mentality seems to be to use trendy new technologies such as MongoDB.  And while MongoDB has been hyped as being “web scale” (<a href="https://www.reddit.com/r/ProgrammerHumor/comments/62rsd0/mongodb_is_web_scale/">a Youtube video with half a million hits savagely debunks MongoDB’s “web scale”</a>), Coinbase has struggled with multiple service outages.  <strong>Basically, Coinbase has reinvented the database. Unfortunately, the end result is a database with poor availability and erroneous record-keeping.</strong>Their database is awful.</p>
+<h2>Put on your tinfoil hat</h2>
+<p>While incompetence could very well explain why Coinbase customers are being inappropriately charged, there are some things that don’t add up.  Firstly, individual users have been double or triple billed with Coinbase <em>using different names/accounts</em>.</p>
+<ul>
+<li>The Reddit user Syncfx, <a href="https://www.reddit.com/r/CoinBase/comments/7yyovq/anyone_in_canada_with_scotiabank/">a Scotiabank customer</a>, has a <strong><a href="https://i.imgur.com/XUNl02R.png">screenshot</a> </strong>showing Coinbase withdrawing under “OPOS COINBASE CHEAP” and “OPOS COINBASE UK CHEAP”. (<a href="https://www.reddit.com/r/CoinBase/comments/7tyl0i/how_is_coinbase_allowed_to_double_charge/">link</a>)</li>
+<li>The Reddit user Brandoio, <a href="https://www.reddit.com/r/CoinBase/comments/7v5an0/double_charged_check_here_first/du4y5g6/?context=3">another Scotiabank customer</a>, says that he was charged with three different Coinbase names.  The third variant was “POS Purchase OPOS COINBASE UK TRAV”. (<a href="https://www.reddit.com/r/CoinBase/comments/7xo5bk/they_fixed_my_double_charge_and_then_charged_me/">link</a>) or “[POS] Purchase OPOS COINBASE UK TRAV CHEAP” (<a href="https://www.reddit.com/r/CoinBase/comments/7xo4ii/coinbase_charging_me_again_for_past_transactions/du9vbik/?context=3">link</a>)</li>
+<li>M_sanity reports being charged by COINBASE CHEAPSIDE GB and COINBASE <strong>TRAV FUNDS</strong> CHEAPSIDE GB. (<a href="https://www.reddit.com/r/CoinBase/comments/7xs5s1/lets_collaborate_how_are_the_withdrawspurchases/">link</a>)</li>
+</ul>
+<p>It seems unlikely that a software bug would cause consumers to be billed by different Coinbase accounts.</p>
+<p>Secondly, there are two different types of erroneous billing occurring.</p>
+<ol>
+<li>Double charging within <strong>0-1 days</strong> of the user-authorized transaction.  There were reports of double billing back in <strong>November and December</strong> such as complaint ID 2718918 in <a href="https://docs.google.com/spreadsheets/d/11wS2l2hoklQkLrYQEkLEQg5eBqJo_qoU_HT1VJqhvhs/edit?usp=sharing">the CFPB data</a> (November 2, 2017) and these Reddit posts: <a href="https://www.reddit.com/r/CoinBase/comments/7itzrr/chargeback_buyselltrade_suspended_potential/">aaronts222</a> (Nov 9), <a href="https://www.reddit.com/r/CoinBase/comments/7jef42/coinbase_double_charge/">UTP-OTB-HJ</a> (Dec 12),  <a href="https://www.reddit.com/r/CoinBase/comments/7goyea/coinbase_double_posting_transactions/">L0rth0s</a> (Nov 30), etc.  More cases can be found <a href="https://www.reddit.com/r/CoinBase/search?q=double+charge&amp;include_over_18=on&amp;restrict_sr=on&amp;sort=new&amp;count=101&amp;before=t3_6dk0k1">by searching the Coinbase subreddit</a>.</li>
+<li>What I call ‘zombie charges’, where the consumer is billed <strong>several days or weeks</strong> after the user-authorized transaction.  Old withdrawals come back to life and show up again.  The Reddit user Brandoio says that he was double charged, the double charged was reversed, and then <a href="https://www.reddit.com/r/CoinBase/comments/7xo5bk/they_fixed_my_double_charge_and_then_charged_me/">he was zombie billed a third time</a>.</li>
+</ol>
+<p>Again, it is unlikely that a software error would look like this.  Coinbase would have had plenty of time to fix any software bugs since double charges were happening back in November.  If the same bug were to re-appear, it is unlikely to manifest itself differently with a much longer delay.  As well, <a href="https://www.reddit.com/r/CoinBase/comments/7zhcp0/updates_on_multiple_visa_charges/duokula/">one Reddit user commented that the zombie billing seems to have clustered around February 14 and 20</a>.</p>
+<h3>Coinbase’s response</h3>
+<p>Coinbase’s blog has these relevant posts:</p>
+<ul>
+<li><strong>Feb 15</strong>: <a href="https://blog.coinbase.com/update-on-credit-and-debit-cards-4c08273f0039">Update on credit and debit cards</a></li>
+<li><strong>Feb 16</strong>: <a href="https://blog.coinbase.com/joint-statement-from-visa-and-worldpay-for-coinbase-customers-9a6f2ff5f3b3">Joint Statement from Visa and Worldpay for Coinbase customers</a></li>
+<li><strong>Feb 20</strong>: <a href="https://blog.coinbase.com/coinbase-product-update-february-20-2018-89cc116be16d">Coinbase Product Update — February 20, 2018</a></li>
+<li><strong>Feb 27</strong>: <a href="https://blog.coinbase.com/product-update-segwit-taxes-paypal-and-cards-1715f7e911fd">Product Update: Segwit, Taxes, PayPal and Cards</a></li>
+</ul>
+<p>The earliest post blames the change in the MCC code (Merchant Category Code) used for Coinbase transactions.  The MCC was changed around <strong>January 22 (or 23)</strong>.  However, erroneous billing was occurring <em>well before</em> January 22.  As a sidenote, I would point out that the new MCC code does change the attractiveness of Coinbase’s business model.  The new categorization defaults many credit card issuers into charging ridiculous cash advance fees on Coinbase deposits (while other issuers automatically block the new MCC code and therefore disallow Coinbase).  Consumer outrage at the surprise fees creates a lot of customer service costs for their credit card issuer, which often gives the fees back to the consumer.  It’s a lose-lose-lose situation for the consumer, credit card issuer, and Coinbase.  Coinbase no longer accepts credit cards for new accounts.</p>
+<p>The second Feb 16 post lays the blame on Visa and Worldpay (a publicly-traded payment processor). It doesn’t explain why Mastercard users are also affected. It doesn’t explain the erroneous billing issues that occurred before January and only explains the charges from Feb 14 to 16 (“Over the last two days”). And it doesn’t explain why the issue has not been fixed, as there was a cluster of zombie charges on February 20 after the February 16 statement. On top of that, the statement’s advice seems dubious (emphasis mine).</p>
+<blockquote><p>If you continue to have problems with your credit or debit card account after this reversal period, including issues relating to card fees or charges, <strong>we encourage you to contact your card issuing bank</strong>.</p></blockquote>
+<p>If you are a merchant, you want the customer to go to you first!  This is because payment processors (like Worldpay) tend to charge inflated fees for chargebacks.  If the customer talks to their card issuing bank and requests a chargeback, the merchant does not receive any money <em>and has to pay the payment processor a sizable chargeback fee</em>.  If the merchant initiates a refund for the customer, the merchant does <em>not</em> have to pay a chargeback fee.  The bad advice strikes me as a bizarre public relations move.  Sure, the consumer might confuse their card issuing bank with Visa.  As many consumers say that they “talked to Visa” when they have actually talked to their credit card issuer, the consumer might mistakenly confuse the two and erroneously believe that Visa is to blame.  It is unclear as to how this will help Coinbase unless the company is able to raise more capital from venture capital funds.  Compare all of this to the Feb 15 blog post, which sensibly asks users to contact Coinbase’s support (emphasis mine):</p>
+<blockquote><p>Our processor confirmed that any erroneous charges will be refunded over the next few days; however, if you believe you were affected by this issue or believe you experienced additional, unreimbursed fees or charges, <strong>please contact Coinbase’s support team at support.coinbase.com so we can address your issue</strong>.</p></blockquote>
+<p>So it’s strange that Coinbase has gone from ‘please contact our support’ to ‘please contact your card issuing bank’ overnight. The Feb 20 and 27 posts also ask customers to contact their bank before contacting Coinbase.</p>
+<h3>Coinbase’s non-response</h3>
+<p>Coinbase’s blog is silent on issues users face when trying to withdraw assets from Coinbase.</p>
+<h3>The London virtual office</h3>
+<p>Coinbase uses a London virtual office that’s managed by a company called OHS Secretaries Ltd (<a href="https://www.reddit.com/r/CoinBase/comments/7nqjie/visiting_coinbase_office_in_san_francisco/ds4fg4i/">reddit</a>).  The address is 9th Floor, 107 Cheapside, London, United Kingdom, EC2V 6DN.  This is presumably why the street name <strong>Cheapside</strong> appears on many consumer’s credit or debit card bills.</p>
+<p>Some UK-based Reddit users have reported that they have sued Coinbase and won because Coinbase didn’t show up to court (<a href="https://www.reddit.com/r/CoinBase/comments/7luohc/coinbase_uk_address/">here</a> and <a href="https://www.reddit.com/r/CoinBase/comments/7o1jw0/coinbase_uk_ltd_physical_address/">here</a>).  They are trying to figure out how to collect because they have difficulty tracking down Coinbase assets in London that can be seized.  While Coinbase <a href="https://web.archive.org/web/*/https://www.coinbase.com/careers">is advertising positions in the UK</a> and <a href="https://blog.coinbase.com/https-medium-com-zeeshanf-europe-the-next-chapter-a7076820e38c">stated its intention of opening a London office</a> in <strong>May 2017</strong>, Coinbase does not seem to have offices in the UK.</p>
+<p>Overall, it seems unusual that a company with offices in the United States is billing US customers from a UK-based entity.  On top of that, UK customers that would like to send/receive money to Coinbase must do so through a bank based in Estonia (see <a href="https://web.archive.org/web/20180226184237/https://support.coinbase.com/customer/en/portal/articles/1767231-payment-methods-for-european-customers">Coinbase’s website</a>).</p>
+<p><a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/estonia-eur_deposit/#main" rel="attachment wp-att-6770"><img alt="" class="alignnone size-medium wp-image-6770" data-attachment-id="6770" data-comments-opened="1" data-image-caption="" data-image-description="" data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}' data-image-title="estonia-eur_deposit" data-large-file="https://glennchan.wordpress.com/wp-content/uploads/2018/02/estonia-eur_deposit.png?w=660" data-medium-file="https://glennchan.wordpress.com/wp-content/uploads/2018/02/estonia-eur_deposit.png?w=262" data-orig-file="https://glennchan.wordpress.com/wp-content/uploads/2018/02/estonia-eur_deposit.png" data-orig-size="1200,1374" data-permalink="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/estonia-eur_deposit/#main" height="300" sizes="(max-width: 262px) 100vw, 262px" src="https://glennchan.wordpress.com/wp-content/uploads/2018/02/estonia-eur_deposit.png?w=262&amp;h=300" srcset="https://glennchan.wordpress.com/wp-content/uploads/2018/02/estonia-eur_deposit.png?w=262 262w, https://glennchan.wordpress.com/wp-content/uploads/2018/02/estonia-eur_deposit.png?w=524 524w, https://glennchan.wordpress.com/wp-content/uploads/2018/02/estonia-eur_deposit.png?w=131 131w" width="262"/></a></p>
+<p>I wonder if Metropolitan Bank has figured out that Coinbase may be a compliance nightmare. Coinbase’s structure is unusual and looks like what somebody would do if they wanted to circumvent rules or regulations. While Coinbase’s structure may be legitimate, Metropolitan’s compliance department certainly has its work cut out for them as the onus is on them to verify that Coinbase is in compliance with applicable laws.</p>
+<h3>Scotiabank (Bank of Nova Scotia does business under the Scotiabank name)</h3>
+<p>Scotiabank customers have been disproportionately affected by Coinbase billing issues.</p>
+<ol>
+<li>A Coinbase employee on Reddit (justin_coinbase) has provided a <strong>Feb 22</strong> update for Scotia Bank / Scotiabank customers (<a href="https://www.reddit.com/r/CoinBase/comments/7zhcp0/updates_on_multiple_visa_charges/">current post</a>, <a href="https://web.archive.org/save/https://www.reddit.com/r/CoinBase/comments/7zhcp0/updates_on_multiple_visa_charges/">archive.org</a>).  It specifically notes that Scotiabank is likely a separate issue:<br/>
+<blockquote><p>We are investigating a potential issue for Scotia Bank customers leading to incorrect charges. We believe this to be isolated at this point, and separate from the Worldpay and Visa issue outlined above.</p></blockquote>
+</li>
+<li><a href="https://www.reddit.com/r/CoinBase/comments/7v5an0/double_charged_check_here_first/">A Reddit thread on the double charging issues</a> has an unusual number of USAA and Scotiabank customers.</li>
+</ol>
+<p>I would guess that Scotiabank customers have been hit hard due to Scotiabank’s sloppy business practices.  Instead of helping their customers file disputes, some Scotiabank customer service reps tell customers to talk to Coinbase and/or to <a href="https://www.reddit.com/r/CoinBase/comments/7z7utc/scotiabank_update_users_who_were_double_charged/">wait for Coinbase to reverse erroneous charges</a>.  I have no idea as to why Scotiabank employees do this; it’s possible that Scotiabank trains its employees to avoid refunding overdraft fees as overdrafts are a key profit center for banks.</p>
+<p>My theory is that Scotiabank (and a few other banks) was specifically targeted by Coinbase because Coinbase knows that Scotiabank’s customer service does not have its priorities straight.</p>
+<h3>USAA</h3>
+<p>USAA is pro-crypto (its Coinbase integration helps USAA members buy cryptocurrencies) and <a href="https://www.pymnts.com/news/2015/nyse-usaa-and-bbva-make-75m-coinbase-investment/">is an investor in Coinbase</a>.</p>
+<ul>
+<li>This might explain why Coinbase recognized an issue with Scotiabank but not USAA.</li>
+<li>It can also explain why USAA isn’t blocking Coinbase. USAA customers may be having more issues because USAA isn’t stopping Coinbase shenanigans.</li>
+</ul>
+<h3>Support employees differ somewhat from Coinbase’s official stance</h3>
+<p>On Reddit, coinbase_tom <a href="https://www.reddit.com/r/CoinBase/comments/7v5an0/double_charged_check_here_first/">made a <strong>Feb 4</strong> post asking for customers to report double charges</a>.  Coinbase’s support employees likely saw an influx of double charges prior to Feb 4 (consistent with CFPB and Reddit complaints).  Coinbase_tom’s post notes some possible patterns to the problem, notably: “At this time, this issue only appears to be affecting <strong>a small number of banks</strong>, and only when using cards.”</p>
+<p>Justin_coinbase on Reddit identified an unusual amount of incorrect charges for Scotiabank customers in a <strong>Feb 22</strong> post (<a href="https://www.reddit.com/r/CoinBase/comments/7zhcp0/updates_on_multiple_visa_charges/">current post</a>, <a href="https://web.archive.org/save/https://www.reddit.com/r/CoinBase/comments/7zhcp0/updates_on_multiple_visa_charges/">archive.org</a>).  Coinbase’s Twitter accounts (@coinbase and @CoinbaseSupport) <a href="https://twitter.com/search?src=typd&amp;q=scotiabank%20from%3ACoinbaseSupport%20OR%20from%3Acoinbase">do not mention the word Scotiabank in any of their Tweets</a>.  While the employees have picked up on the pattern, Coinbase did not officially recognize a problem with Scotiabank (Coinbase annoyingly calls it “Scotia Bank”) until <a href="https://blog.coinbase.com/product-update-segwit-taxes-paypal-and-cards-1715f7e911fd">a <strong>Feb 27</strong> blog post</a>.</p>
+<p>While it is very likely that Coinbase has known about incorrect billing problems for a long time, it is difficult for me to believe that these issues were caused by software errors that have gone unfixed for weeks.</p>
+<h2>Fraud may eventually make it even more difficult for Coinbase to operate</h2>
+<p>Bitcoin and other cryptocurrencies naturally attract fraud.  They’re easy to steal and the theft can’t (easily) be reversed.  Not surprisingly, Coinbase has a huge problem with fraud.  If thieves can gain access to a consumer’s credit card or bank account, they can use it to buy cryptocurrency and immediately transfer it out of Coinbase.  There are some safeguards but thieves figure out ways around them.  A Coinbase employee even describes how it loses money- check out <a href="https://vimeo.com/231872219">this half-hour video</a> and watch it with <a href="https://www.slideshare.net/slideshow/embed_code/key/xGmavVk8hjl2oF">its accompanying slides</a>.  The thievery imposes costs onto the traditional financial system (e.g. customer service costs) and makes institutions shy away from allowing cryptocurrency transactions.  So even without the unauthorized billing going on, Coinbase may naturally lose its ability to accept credit and debit cards.  The card issuers may get sick and tired of having to provide customer service to consumers whose accounts have been hacked into.  They may raise their fees to try to compensate, but this generates yet more customer service costs.  Many institutions have decided to outright block cryptocurrency transactions.  I think more and more institutions will join that trend.  The concept of allowing consumers to conveniently buy crypto via credit and debit cards may not be a viable business model to begin with.</p>
+<p>Fraud could also potentially cause Coinbase to experience liquidity issues, although it’s unclear as to how much Coinbase loses to fraud versus how it money it makes.  In the <a href="https://vimeo.com/231872219">video on Coinbase fraud</a> (<a href="https://www.slideshare.net/slideshow/embed_code/key/xGmavVk8hjl2oF">accompanying slides</a>) that I linked to earlier, the presenter mentions that 2-factor authentication via text messages (SMS) to cell phones is easily broken by thieves.  Cell phone carriers have little incentive to make their systems more secure and easily give out access to consumer accounts to thieves.  Yet, Coinbase <em>still allows</em> 2-factor authentication via text messages according to <a href="https://support.coinbase.com/customer/en/portal/articles/2488794-i-have-lost-or-need-to-update-my-phone-or-2-factor-authentication-device#SMS">its online support center</a> (<a href="https://web.archive.org/web/20180228042030/https://support.coinbase.com/customer/en/portal/articles/2488794-i-have-lost-or-need-to-update-my-phone-or-2-factor-authentication-device">archive.org</a>).  Other crypto exchanges <a href="https://support.kraken.com/hc/en-us/articles/203395513-How-do-I-set-up-two-factor-authentication-">like Kraken</a> require stronger security and don’t allow 2-factor authentication methods as weak as text messages.  They don’t allow accounts to be funded via credit or debit cards.  It remains to be seen as to whether or not Coinbase’s approach of higher convenience and lower security will succeed.</p>
+<h2>Arguments against Coinbase having liquidity issues</h2>
+<ol>
+<li>I couldn’t find evidence that Coinbase is continuing this practice at near the same scale. User reports of double charging and zombie charges in the past few days seem to be much lower. If there is a liquidity issue, then one would expect Coinbase to continue shoring up its liquidity.</li>
+<li>Worldpay is oddly silent despite Coinbase insisting that “This issue was not caused by Coinbase” and insisting that Visa and Worldpay are to blame.  If Coinbase is being deceptive, then it doesn’t necessarily make that much sense for Worldpay to stay quiet.  (It’s possible that Worldpay doesn’t want credit risk from Coinbase and therefore doesn’t want to hurt Coinbase’s reputation as it figures out how to avoid becoming the bagholder.)
+<ul>
+<li>Visa has also been somewhat silent.  Various online press outlets (e.g. <a href="https://www.theregister.co.uk/2018/02/20/coinbase_visa_worldpay/">The Register</a>) have reported that a Visa spokesperson stated: “Visa does not reverse or resubmit transactions. That is not Visa’s role in the payment system.”  However, Visa has not refuted Coinbase on its own website, social media accounts, or through a press release.</li>
+</ul>
+</li>
+<li>Maybe Coinbase really is that incompetent and/or crazy.</li>
+<li>The unauthorized withdrawals may have a very different goal (e.g. to influence accounting). This seems highly unlikely though.</li>
+</ol>
+<h2>This bubble is amusing</h2>
+<p>Coinbase is actually one of the <em>better</em> exchanges out there.  It doesn’t allow its customers to trade <a href="https://hackernoon.com/the-curious-tale-of-tethers-6b0031eead87">Tether</a> (unlike the majority of its competitors) and it has tried to comply with banking regulations.  Despite being one of the better exchanges, Coinbase has serious operational issues.  Its multiple service outages, choice of MongoDB, and buggy record-keeping reflects poorly on the company’s engineering.  But thanks to venture capital, Coinbase has plenty of capital to piss away.  Or perhaps it <em>had</em> plenty of capital, since Coinbase’s current liquidity situation is unclear.  Who knows.</p>
+<p>Ultimately, the crypto bubble will collapse because <a href="https://glennchan.wordpress.com/2018/02/20/blockchain-is-a-useless-technology/">blockchain is a useless technology</a>.  The current VC enthusiasm is similar to the early 2000s, except this time around the VCs are backing useless technology and have no chance of finding the next Paypal.  Will Coinbase be one of the first companies to break?  We’ll find out soon.  (I could very well be wrong… we’ll find out soon right?)</p>
+<p><em>*Disclosure: No position in BNS (Bank of Nova Scotia / Scotiabank), MCB (Metropolitan Bank), LON:WPG (Worldpay), or MDB (MongoDB).</em></p>
+<p></p>
+<p></p>
+<h2>Links</h2>
+<p><a href="https://hackernoon.com/the-curious-tale-of-tethers-6b0031eead87">The Curious Tale Of Tethers</a> – An explanation of why it’s unlikely that Tether is backed by USD and is therefore a sketchy cryptocurrency.</p>
+<p><a href="http://hackingdistributed.com/2014/04/06/another-one-bites-the-dust-flexcoin/">NoSQL Meets Bitcoin and Brings Down Two Exchanges: The Story of Flexcoin and Poloniex</a> – A technical explanation of why MongoDB is a dumb idea for crypto exchanges.</p>
+<p><a href="https://blog.circle.com/2018/02/26/circle-acquires-poloniex/">Circle Acquires Poloniex</a> – Circle is a VC-funded startup whose crypto exchange failed.  Circle decided to buy Poloniex.  Poloniex is an exchange that used MongoDB.</p>
+<p></p>
+<h2>Tips for Coinbase customers</h2>
+<ol>
+<li>If you’re worried about Coinbase taking money out of your account, get a new debit card. Or talk to your bank / card issuer to see if there is a way to block Coinbase.</li>
+<li>Removing banking information from Coinbase <a href="https://www.reddit.com/r/CoinBase/comments/7xrq4k/welp_officially_broke_charged_17x1000_on_my/dubg8o1/">did <strong>NOT</strong> stop Coinbase from erroneously billing accounts</a>.  If you really want to do this, do this last.</li>
+<li>Transfer your assets out of Coinbase <em>before</em> disputing Coinbase transactions.  If you talk to your bank to file a chargeback or dispute, Coinbase will likely freeze your account.  So, transfer assets out first.  Cryptocurrency transfers are generally irreversible after enough confirmations.  Wire transfers tend to be irreversible after 1-2 business days.  It is possible to defraud Coinbase and to steal their assets if you transfer too much out of Coinbase.  I would avoid doing that as it would be unethical (and likely illegal) to take what isn’t yours.
+<ul>
+<li>Take into account fluctuations in cryptocurrency prices. Coinbase may/will try to make you pay for their loss on the market value of a cryptocurrency if you dispute a transaction.</li>
+</ul>
+</li>
+<li>Debit and credit card transactions can be reversed. Talk to your card issuer and tell them that you did not make the erroneous transactions in question. They can perform a chargeback or fraud investigation on your behalf. I would be surprised if you don’t win these disputes.</li>
+<li><a href="https://www.consumerfinance.gov/complaint/"><strong>Filing a complaint with the CFPB</strong></a><strong>is likely the fastest way to get a speedy resolution if your problem can’t be solved by your bank</strong>.  Talking about Coinbase on social media is only somewhat effective.  Daniel Fernandez was able to have his issue (partially?) resolved sometime between <a href="https://twitter.com/Danfer22/status/961771092514832384">Feb 8</a> and <a href="https://twitter.com/Danfer22/status/963178001037852672">Feb 12</a>, after the very popular Youtuber Ethan Klein <a href="https://twitter.com/h3h3productions/status/960639584349532160">tweeted to @coinbase on February 5</a>.  Fernandez seems to have <a href="https://twitter.com/search?l=&amp;q=coinbase%20from%3Adanfer22&amp;src=typd">first pinged Coinbase on Dec 7</a>.  Reddit users have had little luck in having their issues resolved.  I wouldn’t rely on social media unless you have hundreds of thousands of followers or if you have very famous friends.</li>
+<li>Cash advance fees, interest on cash advances, overdraft fees, and ATM/international fees go to the company that issued your card. You can talk to your card issuer to get these charges reversed. The customer service representatives may not necessarily want to do this since these fees make money for the card issuer. Politely explain that you should not be paying these fees on transactions you did not make. If that doesn’t work, try talking to a supervisor, another representative, or express interest in cancelling your credit card to talk to the company’s retentions department.</li>
+<li>Cryptocurrencies <a href="https://glennchan.wordpress.com/2018/02/20/blockchain-is-a-useless-technology/">are worse than systems that have been tried in the past</a>.  It is unlikely that the world will use buggy, insecure systems controlled by China as a store of value.  If you would like to speculate on cryptocurrencies, you will likely lose everything.</li>
+</ol>
+<p>US wire transfers not being credited:  <a href="https://www.reddit.com/r/CoinBase/comments/802m05/a_quick_update_to_my_wire_issue_and_how_i_got_it/">Talking to Metropolitan Bank may help</a>.  Have your wire information ready.</p>
+<div class="sharedaddy sd-like-enabled sd-sharing-enabled" id="jp-post-flair"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a class="share-facebook sd-button share-icon" data-shared="sharing-facebook-6721" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?share=facebook" rel="nofollow noopener noreferrer" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-x"><a class="share-x sd-button share-icon" data-shared="sharing-x-6721" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?share=x" rel="nofollow noopener noreferrer" target="_blank" title="Click to share on X"><span>X</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded" data-name="like-post-frame-20214383-6721-673b8377c1a98" data-src="//widgets.wp.com/likes/index.html?ver=20241118#blog_id=20214383&amp;post_id=6721&amp;origin=glennchan.wordpress.com&amp;obj_id=20214383-6721-673b8377c1a98" data-title="Like or Reblog" id="like-post-wrapper-20214383-6721-673b8377c1a98"><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div class="jp-relatedposts" id="jp-relatedposts">
+<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div> </div><!-- .entry-content -->
+<footer class="entry-meta">
+		This entry was posted in <a href="https://glennchan.wordpress.com/category/stocks/" rel="category tag">stocks</a> and tagged <a href="https://glennchan.wordpress.com/tag/bank-of-nova-scotia-bns/" rel="tag">bank of nova scotia BNS</a>, <a href="https://glennchan.wordpress.com/tag/metropolitan-bank-mcb/" rel="tag">metropolitan bank MCB</a>, <a href="https://glennchan.wordpress.com/tag/mongodb-mdb/" rel="tag">mongodb MDB</a>, <a href="https://glennchan.wordpress.com/tag/worldpay-group-lonwpg/" rel="tag">worldpay group LON:WPG</a>. Bookmark the <a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/" rel="bookmark" title="Permalink to Coinbase is a hot mess (plus MongoDB, Bank of Nova Scotia, MCB, and others)">permalink</a>.
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+<nav class="site-navigation post-navigation" id="nav-below" role="navigation">
+<h1 class="assistive-text screen-reader-text">Post navigation</h1>
+<div class="nav-previous"><a href="https://glennchan.wordpress.com/2018/02/20/blockchain-is-a-useless-technology/" rel="prev"><span class="meta-nav">←</span> Blockchain is a useless technology</a></div> <div class="nav-next"><a href="https://glennchan.wordpress.com/2018/03/06/canadians-kfi-sauces-kataria-foods-inc-makes-unsafe-food/" rel="next">Canadians: KFI sauces (Kataria Foods Inc.) makes unsafe food <span class="meta-nav">→</span></a></div>
+</nav><!-- #nav-below -->
+<div class="comments-area" id="comments">
+<h2 class="comments-title">
+			14 thoughts on “<span>Coinbase is a hot mess (plus MongoDB, Bank of Nova Scotia, MCB, and others)</span>”		</h2>
+<ol class="commentlist">
+<li class="comment even thread-even depth-1" id="li-comment-16293">
+<article class="comment" id="comment-16293">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=50&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=50&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=75&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=100&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=150&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=200&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn">Victor</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-16293"><time datetime="2018-02-28T09:33:32+00:00" pubdate="">February 28, 2018 at 9:33 am</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>I appreciate the analysis but you are missing the forest for the tree: cryptocurrency exchanges are CRAZY profitable. Binance, one of the top exchanges, burned $34 million worth of its token as part of its policy to use 20% of its QUARTERLY profit to burn their tokens. That’s $170 million in profit in 3 months.</p>
+<p>Coinbase/GDAX is also one of the top exchanges and has a much higher profit margin than Binance. There is no way they are not profitable or have liquidity issue. Not possible at all.</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to Victor" class="comment-reply-link" data-belowelement="comment-16293" data-commentid="16293" data-postid="6721" data-replyto="Reply to Victor" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=16293#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+<ul class="children">
+<li class="comment odd alt depth-2" id="li-comment-16294">
+<article class="comment" id="comment-16294">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=50&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=50&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=75&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=100&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=150&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://1.gravatar.com/avatar/14c0b8d059d968397de10c2b605130a87d5a6c56af7af9887959a4f7eb75adbf?s=200&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn">Victor</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-16294"><time datetime="2018-02-28T09:40:57+00:00" pubdate="">February 28, 2018 at 9:40 am</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>Another example: Quadriga, a small Canadian exchange, got $18 million worth of cryptocurrency locked up/lost forever in June 2017 and they were able to stay afloat despite the hit. Imagine the profitability of Coinbase which is probably 50-100x the size of Quadriga.</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to Victor" class="comment-reply-link" data-belowelement="comment-16294" data-commentid="16294" data-postid="6721" data-replyto="Reply to Victor" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=16294#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+</li><!-- #comment-## -->
+<li class="comment even depth-2" id="li-comment-32276">
+<article class="comment" id="comment-32276">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50 avatar-default" decoding="async" height="50" loading="lazy" src="https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=50" srcset="https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=50 1x, https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=75 1.5x, https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=100 2x, https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=150 3x, https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=200 4x" width="50"/> <cite class="fn">Anonymous</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-32276"><time datetime="2020-11-10T06:41:05+00:00" pubdate="">November 10, 2020 at 6:41 am</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>Regardless, Coinbase is a fake company and you cannot withdraw your funds, it won’t let you. There no customer service ever to answer your calls , no response from emails ever! This is a serious scam, they’ve worked really hard to look real and set you up for failure, a big money trap for anyone depositing money in them, you’ll never get help or your money back!<br/>
+Crypto is not Protected with regulations it’s an item only!! Call your bank immediately to get the dispute process going, hopefully your bank is a major one to ensure a good outcome. And then you must call and make a complaint with the FBI as soon ASAP.</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to Anonymous" class="comment-reply-link" data-belowelement="comment-32276" data-commentid="32276" data-postid="6721" data-replyto="Reply to Anonymous" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=32276#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-16295">
+<article class="comment" id="comment-16295">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://0.gravatar.com/avatar/ff2a8f54d54dd92be61a985709e8fbf00693e3cdffbae27ef8f86b4e1cbf642e?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://0.gravatar.com/avatar/ff2a8f54d54dd92be61a985709e8fbf00693e3cdffbae27ef8f86b4e1cbf642e?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://0.gravatar.com/avatar/ff2a8f54d54dd92be61a985709e8fbf00693e3cdffbae27ef8f86b4e1cbf642e?s=75&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://0.gravatar.com/avatar/ff2a8f54d54dd92be61a985709e8fbf00693e3cdffbae27ef8f86b4e1cbf642e?s=100&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://0.gravatar.com/avatar/ff2a8f54d54dd92be61a985709e8fbf00693e3cdffbae27ef8f86b4e1cbf642e?s=150&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://0.gravatar.com/avatar/ff2a8f54d54dd92be61a985709e8fbf00693e3cdffbae27ef8f86b4e1cbf642e?s=200&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn">John</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-16295"><time datetime="2018-02-28T09:41:08+00:00" pubdate="">February 28, 2018 at 9:41 am</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>What amazes me with all the problems that this coinbase has , the people do not have or do not close the account . I do not like this coinbase . Also for the arrogance of his CEO who has towards customers. Close the account with coinbase , what are you waiting for?</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to John" class="comment-reply-link" data-belowelement="comment-16295" data-commentid="16295" data-postid="6721" data-replyto="Reply to John" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=16295#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+<ul class="children">
+<li class="comment even depth-2" id="li-comment-16308">
+<article class="comment" id="comment-16308">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50 avatar-default" decoding="async" height="50" loading="lazy" src="https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=50" srcset="https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=50 1x, https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=75 1.5x, https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=100 2x, https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=150 3x, https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=200 4x" width="50"/> <cite class="fn">AvgJoe</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-16308"><time datetime="2018-02-28T20:43:29+00:00" pubdate="">February 28, 2018 at 8:43 pm</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>I’d honestly stop using them if possible, problem is in the US or NY specifically who else do you really have that’s actually better?</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to AvgJoe" class="comment-reply-link" data-belowelement="comment-16308" data-commentid="16308" data-postid="6721" data-replyto="Reply to AvgJoe" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=16308#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+<ul class="children">
+<li class="comment byuser comment-author-sohambhatia odd alt depth-3" id="li-comment-16328">
+<article class="comment" id="comment-16328">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://0.gravatar.com/avatar/ca255821ad1a2dc87c0c037cfe5b030523cfdde7d4fa9ad8011e22fd38c980e6?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://0.gravatar.com/avatar/ca255821ad1a2dc87c0c037cfe5b030523cfdde7d4fa9ad8011e22fd38c980e6?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://0.gravatar.com/avatar/ca255821ad1a2dc87c0c037cfe5b030523cfdde7d4fa9ad8011e22fd38c980e6?s=75&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://0.gravatar.com/avatar/ca255821ad1a2dc87c0c037cfe5b030523cfdde7d4fa9ad8011e22fd38c980e6?s=100&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://0.gravatar.com/avatar/ca255821ad1a2dc87c0c037cfe5b030523cfdde7d4fa9ad8011e22fd38c980e6?s=150&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://0.gravatar.com/avatar/ca255821ad1a2dc87c0c037cfe5b030523cfdde7d4fa9ad8011e22fd38c980e6?s=200&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn">sohambhatia</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-16328"><time datetime="2018-03-01T19:56:37+00:00" pubdate="">March 1, 2018 at 7:56 pm</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>Gemini is far superior</p>
+</div>
+<div class="reply"></div><!-- .reply -->
+</article><!-- #comment-## -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="li-comment-16301">
+<article class="comment" id="comment-16301">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://1.gravatar.com/avatar/1a7c1957bad7bf9c678cea3f97265db938f95b670f7263ccacecf63f9b4a2e30?s=50&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://1.gravatar.com/avatar/1a7c1957bad7bf9c678cea3f97265db938f95b670f7263ccacecf63f9b4a2e30?s=50&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://1.gravatar.com/avatar/1a7c1957bad7bf9c678cea3f97265db938f95b670f7263ccacecf63f9b4a2e30?s=75&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://1.gravatar.com/avatar/1a7c1957bad7bf9c678cea3f97265db938f95b670f7263ccacecf63f9b4a2e30?s=100&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://1.gravatar.com/avatar/1a7c1957bad7bf9c678cea3f97265db938f95b670f7263ccacecf63f9b4a2e30?s=150&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://1.gravatar.com/avatar/1a7c1957bad7bf9c678cea3f97265db938f95b670f7263ccacecf63f9b4a2e30?s=200&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn">Jonathan E. Wazar</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-16301"><time datetime="2018-02-28T13:29:50+00:00" pubdate="">February 28, 2018 at 1:29 pm</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>Just for clarity, how many complaints does coinbase have officially logged against them? And how many users?</p>
+<p>… Look, you make a lot of good points, very detailed. This is what I call actionable information. But I have to be honest – this article is so obviously a hit job on cryptocurrencies in general based on what seems to be the assumption the CoinBase is the genesis domino. I don’t mind this kind of content because I can parse it out, but fear for those with difficulty appraising context.</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to Jonathan E. Wazar" class="comment-reply-link" data-belowelement="comment-16301" data-commentid="16301" data-postid="6721" data-replyto="Reply to Jonathan E. Wazar" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=16301#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+<ul class="children">
+<li class="comment byuser comment-author-glennchan bypostauthor odd alt depth-2" id="li-comment-16303">
+<article class="comment" id="comment-16303">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=50&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=50&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=75&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=100&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=150&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=200&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn"><a class="url" href="https://glennchan.wordpress.com" rel="ugc">GlennC</a></cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-16303"><time datetime="2018-02-28T17:16:53+00:00" pubdate="">February 28, 2018 at 5:16 pm</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>Go to the CFPB website for a current complaint count. If you’re lazy, look at my Google sheet. It’s over 2000 complaints. Coinbase supposedly has over half a million users (I’d believe that)… probably over a million by now.</p>
+<p>For a ‘hit job’ on crypto, see my older post on why blockchain is a useless technology.</p>
+<blockquote class="wp-embedded-content" data-secret="qoAEqWna9Z"><p><a href="https://glennchan.wordpress.com/2018/02/20/blockchain-is-a-useless-technology/">Blockchain is a useless technology</a></p></blockquote>
+<p><iframe class="wp-embedded-content" data-secret="qoAEqWna9Z" frameborder="0" height="338" marginheight="0" marginwidth="0" sandbox="allow-scripts" scrolling="no" security="restricted" src="https://glennchan.wordpress.com/2018/02/20/blockchain-is-a-useless-technology/embed/#?secret=TPVrsPQIEG#?secret=qoAEqWna9Z" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" title="“Blockchain is a useless technology” — Glenn Chan's Random Notes on Investing" width="600"></iframe></p>
+</div>
+<div class="reply">
+<a aria-label="Reply to GlennC" class="comment-reply-link" data-belowelement="comment-16303" data-commentid="16303" data-postid="6721" data-replyto="Reply to GlennC" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=16303#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="li-comment-16373">
+<article class="comment" id="comment-16373">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://1.gravatar.com/avatar/1e31b4d3b08d5de52f15a4e0fb80f22839b9117229235b67a11807604eb83c23?s=50&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://1.gravatar.com/avatar/1e31b4d3b08d5de52f15a4e0fb80f22839b9117229235b67a11807604eb83c23?s=50&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://1.gravatar.com/avatar/1e31b4d3b08d5de52f15a4e0fb80f22839b9117229235b67a11807604eb83c23?s=75&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://1.gravatar.com/avatar/1e31b4d3b08d5de52f15a4e0fb80f22839b9117229235b67a11807604eb83c23?s=100&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://1.gravatar.com/avatar/1e31b4d3b08d5de52f15a4e0fb80f22839b9117229235b67a11807604eb83c23?s=150&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://1.gravatar.com/avatar/1e31b4d3b08d5de52f15a4e0fb80f22839b9117229235b67a11807604eb83c23?s=200&amp;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn">Jay</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-16373"><time datetime="2018-03-03T18:17:25+00:00" pubdate="">March 3, 2018 at 6:17 pm</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>Are you still short EBIX ?</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to Jay" class="comment-reply-link" data-belowelement="comment-16373" data-commentid="16373" data-postid="6721" data-replyto="Reply to Jay" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=16373#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+<ul class="children">
+<li class="comment byuser comment-author-glennchan bypostauthor odd alt depth-2" id="li-comment-16376">
+<article class="comment" id="comment-16376">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=50&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=50&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=75&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=100&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=150&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=200&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn"><a class="url" href="https://glennchan.wordpress.com" rel="ugc">GlennC</a></cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-16376"><time datetime="2018-03-03T22:06:34+00:00" pubdate="">March 3, 2018 at 10:06 pm</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>Hey it looks like you’re setting up for an ad hominem attack. Go on…</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to GlennC" class="comment-reply-link" data-belowelement="comment-16376" data-commentid="16376" data-postid="6721" data-replyto="Reply to GlennC" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=16376#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1" id="li-comment-17107">
+<article class="comment" id="comment-17107">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://2.gravatar.com/avatar/2831556fcb7b81de05b7a96568c50f309812319592c090ad00ea1f28b40b68be?s=50&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://2.gravatar.com/avatar/2831556fcb7b81de05b7a96568c50f309812319592c090ad00ea1f28b40b68be?s=50&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://2.gravatar.com/avatar/2831556fcb7b81de05b7a96568c50f309812319592c090ad00ea1f28b40b68be?s=75&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://2.gravatar.com/avatar/2831556fcb7b81de05b7a96568c50f309812319592c090ad00ea1f28b40b68be?s=100&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://2.gravatar.com/avatar/2831556fcb7b81de05b7a96568c50f309812319592c090ad00ea1f28b40b68be?s=150&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://2.gravatar.com/avatar/2831556fcb7b81de05b7a96568c50f309812319592c090ad00ea1f28b40b68be?s=200&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn">Michael Zimmerman</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-17107"><time datetime="2018-04-03T00:50:25+00:00" pubdate="">April 3, 2018 at 12:50 am</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>Coinbase Global, LLC -[CBG] is an international criminal syndicate of epic proportions.  Involved in Money Laundering, Tax Evasion, Cyber Assaults, blackmail and intimation of victims Thief of over a Million Americans Fiat and Digital Assets.<br/>
+[Ref <a href="https://www.consumerfinance.gov/-" rel="nofollow ugc">https://www.consumerfinance.gov/-</a> over 1,000,313 total complaints as of March 1, 2018 at this agency alone] Corruption of KNOWN US Government Officials, Financial Institutions such as Cross River Bank and USAA Federal Savings and loan Association, BOD, Committee Members and 1000’s of their employees hold multiple “Wallets.” at Coinbase!  I alone have over 3 meters of PROOF.  Since mid-July 2017 when I had filed two ICE Reports that had been confirmed then following January  2018 by Homeland Security! NOT ONE US Federal Official has come to review any of the evidence, Ready for this, “I KNOW WHY, WHO. WHERE “is involved! They KNOW IT! Reference my profile at Linked<br/>
+Michael K, Zimmerman. That is the Platform when an Imposter Profile had been constructed with the data and information that had been  Hacked /stolen from the KNOWN, RECORDED , documented and date timestamped that Coinbase Globe’s software engineers had initiated perpetual cyber assaults and had stolid proprietary data, information and had acquired a multitude of encrypted files and folders. Some propriety of The United States of America. Along with two Sovereign Countries and States!</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to Michael Zimmerman" class="comment-reply-link" data-belowelement="comment-17107" data-commentid="17107" data-postid="6721" data-replyto="Reply to Michael Zimmerman" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=17107#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-17376">
+<article class="comment" id="comment-17376">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://0.gravatar.com/avatar/fc8ad3310253d73d84e00395fdd07f293d3780e4ef15fc354e0f9895cf82beaf?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://0.gravatar.com/avatar/fc8ad3310253d73d84e00395fdd07f293d3780e4ef15fc354e0f9895cf82beaf?s=50&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://0.gravatar.com/avatar/fc8ad3310253d73d84e00395fdd07f293d3780e4ef15fc354e0f9895cf82beaf?s=75&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://0.gravatar.com/avatar/fc8ad3310253d73d84e00395fdd07f293d3780e4ef15fc354e0f9895cf82beaf?s=100&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://0.gravatar.com/avatar/fc8ad3310253d73d84e00395fdd07f293d3780e4ef15fc354e0f9895cf82beaf?s=150&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://0.gravatar.com/avatar/fc8ad3310253d73d84e00395fdd07f293d3780e4ef15fc354e0f9895cf82beaf?s=200&amp;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn">Mike</cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-17376"><time datetime="2018-04-11T19:30:50+00:00" pubdate="">April 11, 2018 at 7:30 pm</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>Its incredible to me how people post such strong opinions, specifically the ones on MongoDB in this article, as fact when they clearly have no idea what they are talking about.</p>
+<p>If you need MongoDB to store transactional data for total durability configure using a proper write concern:<br/>
+<a href="https://docs.mongodb.com/manual/reference/write-concern/" rel="nofollow ugc">https://docs.mongodb.com/manual/reference/write-concern/</a></p>
+<p>Its also well documented that losing data in MongoDB is not a problem:<br/>
+<a href="https://news.ycombinator.com/item?id=13590457" rel="nofollow ugc">https://news.ycombinator.com/item?id=13590457</a></p>
+<p>Do more that 5 seconds of research before spreading misinformation please.</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to Mike" class="comment-reply-link" data-belowelement="comment-17376" data-commentid="17376" data-postid="6721" data-replyto="Reply to Mike" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=17376#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+<ul class="children">
+<li class="comment byuser comment-author-glennchan bypostauthor even depth-2" id="li-comment-17380">
+<article class="comment" id="comment-17380">
+<footer>
+<div class="comment-author vcard">
+<img alt="" class="avatar avatar-50" decoding="async" height="50" loading="lazy" src="https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=50&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G" srcset="https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=50&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G 1x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=75&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D75&amp;r=G 1.5x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=100&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G 2x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=150&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D150&amp;r=G 3x, https://2.gravatar.com/avatar/838de901eed59ada9c03bc0cdac4232f71b9b564575f9f6538059f14f890c904?s=200&amp;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D200&amp;r=G 4x" width="50"/> <cite class="fn"><a class="url" href="https://glennchan.wordpress.com" rel="ugc">GlennC</a></cite> |
+					<span class="comment-meta commentmetadata">
+<a href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comment-17380"><time datetime="2018-04-12T02:02:29+00:00" pubdate="">April 12, 2018 at 2:02 am</time></a>
+</span><!-- .comment-meta .commentmetadata -->
+</div><!-- .comment-author .vcard -->
+</footer>
+<div class="comment-content"><p>So the data issues alluded to in Coinbase’s blog post shouldn’t exist in the first place. Coinbase did not need to implement Redis to implement locks on the database.</p>
+</div>
+<div class="reply">
+<a aria-label="Reply to GlennC" class="comment-reply-link" data-belowelement="comment-17380" data-commentid="17380" data-postid="6721" data-replyto="Reply to GlennC" data-respondelement="respond" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/?replytocom=17380#respond" rel="nofollow">Reply</a> </div><!-- .reply -->
+</article><!-- #comment-## -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="post pingback">
+<p>Pingback: <a class="url" href="https://rennapartners.com/uncategorized/the-pros-and-cons-of-using-bleeding-edge-technology/" rel="ugc external nofollow">The Pros and Cons of Using “Bleeding-Edge” Technology - Renna Partners</a></p>
+</li><!-- #comment-## -->
+</ol><!-- .commentlist -->
+<div class="comment-respond" id="respond">
+<h3 class="comment-reply-title" id="reply-title">Leave a comment <small><a href="/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#respond" id="cancel-comment-reply-link" rel="nofollow" style="display:none;">Cancel reply</a></small></h3><form action="https://glennchan.wordpress.com/wp-comments-post.php" class="comment-form" id="commentform" method="post">
+<div class="transparent" id="comment-form__verbum"></div><div class="verbum-form-meta"><input id="comment_post_ID" name="comment_post_ID" type="hidden" value="6721"/>
+<input id="comment_parent" name="comment_parent" type="hidden" value="0"/>
+<input id="highlander_comment_nonce" name="highlander_comment_nonce" type="hidden" value="e4f01e8110"/>
+<input name="verbum_show_subscription_modal" type="hidden" value=""/></div><p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" type="hidden" value="26be69007b"/></p><p class="akismet-fields-container" data-prefix="ak_" style="display: none !important;"><label>Δ<textarea cols="45" maxlength="100" name="ak_hp_textarea" rows="8"></textarea></label><input id="ak_js_1" name="ak_js" type="hidden" value="95"/></p></form> </div><!-- #respond -->
+<p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" rel="nofollow noopener" target="_blank">Learn how your comment data is processed</a>.</p>
+</div><!-- #comments .comments-area -->
+</div><!-- #content .site-content -->
+</div><!-- #primary .content-area -->
+<div class="updateable widget-area" id="secondary" role="complementary">
+<aside class="widget widget_search" id="search-2"> <form action="https://glennchan.wordpress.com/" id="searchform" method="get" role="search">
+<label class="assistive-text screen-reader-text" for="s">Search</label>
+<input class="field" id="s" name="s" placeholder="Search …" type="text" value=""/>
+<input class="submit" id="searchsubmit" name="submit" type="submit" value="Search"/>
+</form>
+</aside><aside class="widget widget_categories" id="categories-2"><h1 class="widget-title">Categories</h1>
+<ul>
+<li class="cat-item cat-item-3328"><a href="https://glennchan.wordpress.com/category/book-reviews/">book reviews</a> (8)
+</li>
+<li class="cat-item cat-item-220969799"><a href="https://glennchan.wordpress.com/category/foreign-listed-stocks/">foreign listed stocks</a> (22)
+</li>
+<li class="cat-item cat-item-664343"><a href="https://glennchan.wordpress.com/category/general-investing/">general investing</a> (175)
+</li>
+<li class="cat-item cat-item-1625"><a href="https://glennchan.wordpress.com/category/macro/">macro</a> (44)
+</li>
+<li class="cat-item cat-item-54069"><a href="https://glennchan.wordpress.com/category/mining/">mining</a> (123)
+</li>
+<li class="cat-item cat-item-10763"><a href="https://glennchan.wordpress.com/category/oil-and-gas/">oil and gas</a> (29)
+</li>
+<li class="cat-item cat-item-21583"><a href="https://glennchan.wordpress.com/category/pharma/">pharma</a> (10)
+</li>
+<li class="cat-item cat-item-380978"><a href="https://glennchan.wordpress.com/category/portfolio-updates/">portfolio updates</a> (26)
+</li>
+<li class="cat-item cat-item-47"><a href="https://glennchan.wordpress.com/category/rants/">rants</a> (51)
+</li>
+<li class="cat-item cat-item-3225"><a href="https://glennchan.wordpress.com/category/real-estate/">real estate</a> (47)
+</li>
+<li class="cat-item cat-item-13879"><a href="https://glennchan.wordpress.com/category/retail/">retail</a> (31)
+</li>
+<li class="cat-item cat-item-8589"><a href="https://glennchan.wordpress.com/category/stocks/">stocks</a> (555)
+</li>
+<li class="cat-item cat-item-318"><a href="https://glennchan.wordpress.com/category/tech/">tech</a> (50)
+</li>
+<li class="cat-item cat-item-1"><a href="https://glennchan.wordpress.com/category/uncategorized/">Uncategorized</a> (1)
+</li>
+<li class="cat-item cat-item-177539774"><a href="https://glennchan.wordpress.com/category/writeups-longs/">writeups – longs</a> (124)
+</li>
+<li class="cat-item cat-item-177539612"><a href="https://glennchan.wordpress.com/category/writeups-shorts/">writeups – shorts</a> (125)
+</li>
+</ul>
+</aside><aside class="widget widget_blog_subscription jetpack_subscription_widget" id="blog_subscription-3"><h1 class="widget-title"><label for="subscribe-field">Email Subscription</label></h1>
+<div class="wp-block-jetpack-subscriptions__container">
+<form accept-charset="utf-8" action="https://subscribe.wordpress.com" data-blog="20214383" data-post_access_level="everybody" id="subscribe-blog" method="post">
+<p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+<p id="subscribe-email">
+<label class="screen-reader-text" for="subscribe-field" id="subscribe-field-label">Email Address:</label>
+<input id="subscribe-field" name="email" placeholder="Email Address" required="" style="width: 95%; padding: 1px 10px" type="email" value=""/> </p>
+<p id="subscribe-submit">
+<input name="action" type="hidden" value="subscribe"/>
+<input name="blog_id" type="hidden" value="20214383"/>
+<input name="source" type="hidden" value="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/"/>
+<input name="sub-type" type="hidden" value="widget"/>
+<input name="redirect_fragment" type="hidden" value="subscribe-blog"/>
+<input id="_wpnonce" name="_wpnonce" type="hidden" value="41c1629d3b"/> <button class="wp-block-button__link" type="submit">Sign me up!</button>
+</p>
+</form>
+<div class="wp-block-jetpack-subscriptions__subscount">Join 720 other subscribers</div>
+</div>
+</aside><aside class="widget widget_archive" id="archives-2"><h1 class="widget-title">Archives</h1>
+<ul>
+<li><a href="https://glennchan.wordpress.com/2024/07/">July 2024</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2021/11/">November 2021</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2021/08/">August 2021</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2021/07/">July 2021</a> (5)</li>
+<li><a href="https://glennchan.wordpress.com/2021/06/">June 2021</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2021/05/">May 2021</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2021/04/">April 2021</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2021/03/">March 2021</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2021/01/">January 2021</a> (3)</li>
+<li><a href="https://glennchan.wordpress.com/2020/11/">November 2020</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2020/09/">September 2020</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2020/08/">August 2020</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2020/07/">July 2020</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2020/06/">June 2020</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2020/05/">May 2020</a> (6)</li>
+<li><a href="https://glennchan.wordpress.com/2020/04/">April 2020</a> (7)</li>
+<li><a href="https://glennchan.wordpress.com/2020/03/">March 2020</a> (5)</li>
+<li><a href="https://glennchan.wordpress.com/2019/11/">November 2019</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2019/06/">June 2019</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2019/05/">May 2019</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2019/04/">April 2019</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2019/02/">February 2019</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2019/01/">January 2019</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2018/12/">December 2018</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2018/10/">October 2018</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2018/09/">September 2018</a> (5)</li>
+<li><a href="https://glennchan.wordpress.com/2018/08/">August 2018</a> (5)</li>
+<li><a href="https://glennchan.wordpress.com/2018/07/">July 2018</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2018/06/">June 2018</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2018/04/">April 2018</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2018/03/">March 2018</a> (13)</li>
+<li><a href="https://glennchan.wordpress.com/2018/02/">February 2018</a> (5)</li>
+<li><a href="https://glennchan.wordpress.com/2018/01/">January 2018</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2017/12/">December 2017</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2017/11/">November 2017</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2017/09/">September 2017</a> (4)</li>
+<li><a href="https://glennchan.wordpress.com/2017/08/">August 2017</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2017/06/">June 2017</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2017/05/">May 2017</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2017/04/">April 2017</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2017/03/">March 2017</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2017/01/">January 2017</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2016/08/">August 2016</a> (4)</li>
+<li><a href="https://glennchan.wordpress.com/2016/07/">July 2016</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2016/06/">June 2016</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2016/05/">May 2016</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2016/04/">April 2016</a> (3)</li>
+<li><a href="https://glennchan.wordpress.com/2016/03/">March 2016</a> (6)</li>
+<li><a href="https://glennchan.wordpress.com/2016/02/">February 2016</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2016/01/">January 2016</a> (3)</li>
+<li><a href="https://glennchan.wordpress.com/2015/12/">December 2015</a> (3)</li>
+<li><a href="https://glennchan.wordpress.com/2015/11/">November 2015</a> (8)</li>
+<li><a href="https://glennchan.wordpress.com/2015/10/">October 2015</a> (3)</li>
+<li><a href="https://glennchan.wordpress.com/2015/09/">September 2015</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2015/08/">August 2015</a> (3)</li>
+<li><a href="https://glennchan.wordpress.com/2015/07/">July 2015</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2015/06/">June 2015</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2015/05/">May 2015</a> (7)</li>
+<li><a href="https://glennchan.wordpress.com/2015/04/">April 2015</a> (10)</li>
+<li><a href="https://glennchan.wordpress.com/2015/03/">March 2015</a> (14)</li>
+<li><a href="https://glennchan.wordpress.com/2015/02/">February 2015</a> (6)</li>
+<li><a href="https://glennchan.wordpress.com/2015/01/">January 2015</a> (8)</li>
+<li><a href="https://glennchan.wordpress.com/2014/12/">December 2014</a> (7)</li>
+<li><a href="https://glennchan.wordpress.com/2014/11/">November 2014</a> (15)</li>
+<li><a href="https://glennchan.wordpress.com/2014/10/">October 2014</a> (13)</li>
+<li><a href="https://glennchan.wordpress.com/2014/09/">September 2014</a> (14)</li>
+<li><a href="https://glennchan.wordpress.com/2014/08/">August 2014</a> (16)</li>
+<li><a href="https://glennchan.wordpress.com/2014/07/">July 2014</a> (13)</li>
+<li><a href="https://glennchan.wordpress.com/2014/06/">June 2014</a> (16)</li>
+<li><a href="https://glennchan.wordpress.com/2014/05/">May 2014</a> (15)</li>
+<li><a href="https://glennchan.wordpress.com/2014/04/">April 2014</a> (11)</li>
+<li><a href="https://glennchan.wordpress.com/2014/03/">March 2014</a> (14)</li>
+<li><a href="https://glennchan.wordpress.com/2014/02/">February 2014</a> (15)</li>
+<li><a href="https://glennchan.wordpress.com/2014/01/">January 2014</a> (10)</li>
+<li><a href="https://glennchan.wordpress.com/2013/12/">December 2013</a> (23)</li>
+<li><a href="https://glennchan.wordpress.com/2013/11/">November 2013</a> (28)</li>
+<li><a href="https://glennchan.wordpress.com/2013/10/">October 2013</a> (10)</li>
+<li><a href="https://glennchan.wordpress.com/2013/09/">September 2013</a> (9)</li>
+<li><a href="https://glennchan.wordpress.com/2013/08/">August 2013</a> (8)</li>
+<li><a href="https://glennchan.wordpress.com/2013/07/">July 2013</a> (9)</li>
+<li><a href="https://glennchan.wordpress.com/2013/06/">June 2013</a> (12)</li>
+<li><a href="https://glennchan.wordpress.com/2013/05/">May 2013</a> (9)</li>
+<li><a href="https://glennchan.wordpress.com/2013/04/">April 2013</a> (14)</li>
+<li><a href="https://glennchan.wordpress.com/2013/03/">March 2013</a> (3)</li>
+<li><a href="https://glennchan.wordpress.com/2013/02/">February 2013</a> (3)</li>
+<li><a href="https://glennchan.wordpress.com/2013/01/">January 2013</a> (5)</li>
+<li><a href="https://glennchan.wordpress.com/2012/12/">December 2012</a> (9)</li>
+<li><a href="https://glennchan.wordpress.com/2012/11/">November 2012</a> (10)</li>
+<li><a href="https://glennchan.wordpress.com/2012/10/">October 2012</a> (13)</li>
+<li><a href="https://glennchan.wordpress.com/2012/09/">September 2012</a> (11)</li>
+<li><a href="https://glennchan.wordpress.com/2012/08/">August 2012</a> (9)</li>
+<li><a href="https://glennchan.wordpress.com/2012/07/">July 2012</a> (7)</li>
+<li><a href="https://glennchan.wordpress.com/2012/06/">June 2012</a> (1)</li>
+<li><a href="https://glennchan.wordpress.com/2012/05/">May 2012</a> (3)</li>
+<li><a href="https://glennchan.wordpress.com/2012/03/">March 2012</a> (4)</li>
+<li><a href="https://glennchan.wordpress.com/2011/12/">December 2011</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2011/11/">November 2011</a> (4)</li>
+<li><a href="https://glennchan.wordpress.com/2011/09/">September 2011</a> (5)</li>
+<li><a href="https://glennchan.wordpress.com/2011/03/">March 2011</a> (2)</li>
+<li><a href="https://glennchan.wordpress.com/2011/02/">February 2011</a> (9)</li>
+</ul>
+</aside><aside class="widget_text widget widget_custom_html" id="custom_html-5"><div class="textwidget custom-html-widget">Check out <a href="http://sirf-online.org/">SIRF for investigative journalism on corporate fraud and other wrongdoings</a>.
+</div></aside></div><!-- #secondary .widget-area -->
+</div><!-- #main .site-main -->
+<footer class="site-footer" id="colophon" role="contentinfo">
+<div class="site-info"></div><!-- .site-info -->
+</footer><!-- #colophon .site-footer -->
+</div><!-- #page .hfeed .site -->
+<!-- -->
+
+
+
+
+<div style="display:none">
+<div class="grofile-hash-map-5e8becac78c9d39d16875e40ca7d3a2e"></div>
+<div class="grofile-hash-map-d41d8cd98f00b204e9800998ecf8427e"></div>
+<div class="grofile-hash-map-09d8e31df3ca5337b773392a6e814c5a"></div>
+<div class="grofile-hash-map-b6cf0902c483e48f7ec3730ece561d20"></div>
+<div class="grofile-hash-map-bfe5838921bfdf583d99f13c368919d0"></div>
+<div class="grofile-hash-map-a885db4f8022efe6d6fbe64307e71138"></div>
+<div class="grofile-hash-map-a4376f76b916eba5189e43c5953fb8b5"></div>
+<div class="grofile-hash-map-3d11a50f585a3a5fccce95549ff51279"></div>
+<div class="grofile-hash-map-483916feed80482a22f10879bf2d9ded"></div>
+</div>
+<div class="actnbr-pub-misty-lake actnbr-has-follow" id="actionbar" style="display: none;">
+<ul>
+<li class="actnbr-btn actnbr-hidden">
+<a class="actnbr-action actnbr-actn-comment" href="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/#comments">
+<svg class="gridicon gridicons-comment" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><g><path d="M12 16l-5 5v-5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v9c0 1.1-.9 2-2 2h-7z"></path></g></svg> <span>Comment</span>
+</a>
+</li>
+<li class="actnbr-btn actnbr-hidden">
+<a class="actnbr-action actnbr-actn-reblog" href="">
+<svg class="gridicon gridicons-reblog" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><g><path d="M22.086 9.914L20 7.828V18c0 1.105-.895 2-2 2h-7v-2h7V7.828l-2.086 2.086L14.5 8.5 19 4l4.5 4.5-1.414 1.414zM6 16.172V6h7V4H6c-1.105 0-2 .895-2 2v10.172l-2.086-2.086L.5 15.5 5 20l4.5-4.5-1.414-1.414L6 16.172z"></path></g></svg><span>Reblog</span>
+</a>
+</li>
+<li class="actnbr-btn actnbr-hidden">
+<a class="actnbr-action actnbr-actn-follow" href="">
+<svg class="gridicon" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z" fill-rule="evenodd"></path></svg>
+<span>Subscribe</span>
+</a>
+<a class="actnbr-action actnbr-actn-following no-display" href="">
+<svg class="gridicon" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20" fill-rule="evenodd"></path><path class="following-icon-tick" d="M13.5 16L15.5 18L19 14.5" stroke="#008A20" stroke-width="1.5"></path></svg>
+<span>Subscribed</span>
+</a>
+<div class="actnbr-popover tip tip-top-left actnbr-notice" id="follow-bubble">
+<div class="tip-arrow"></div>
+<div class="tip-inner actnbr-follow-bubble">
+<ul>
+<li class="actnbr-sitename">
+<a href="https://glennchan.wordpress.com">
+<img alt="" class="avatar avatar-50" height="50" loading="lazy" src="https://s2.wp.com/i/logo/wpcom-gray-white.png" srcset="https://s2.wp.com/i/logo/wpcom-gray-white.png 1x" width="50"/>				Glenn Chan's Random Notes on Investing			</a>
+</li>
+<div class="actnbr-message no-display"></div>
+<form accept-charset="utf-8" action="https://subscribe.wordpress.com" method="post" style="display: none;">
+<div class="actnbr-follow-count">Join 720 other subscribers</div>
+<div>
+<input aria-label="Enter your email address" class="actnbr-email-field" name="email" placeholder="Enter your email address" type="email"/>
+</div>
+<input name="action" type="hidden" value="subscribe"/>
+<input name="blog_id" type="hidden" value="20214383"/>
+<input name="source" type="hidden" value="https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/"/>
+<input name="sub-type" type="hidden" value="actionbar-follow"/>
+<input id="_wpnonce" name="_wpnonce" type="hidden" value="41c1629d3b"/> <div class="actnbr-button-wrap">
+<button type="submit" value="Sign me up">Sign me up</button>
+</div>
+</form>
+<li class="actnbr-login-nudge">
+<div>
+											Already have a WordPress.com account? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fglennchan.wordpress.com%2F2018%2F02%2F28%2Fcoinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others%2F&amp;signup_flow=account">Log in now.</a> </div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li class="actnbr-ellipsis actnbr-hidden">
+<svg class="gridicon gridicons-ellipsis" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g><path d="M7 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm12-2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-7 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"></path></g></svg> <div class="actnbr-popover tip tip-top-left actnbr-more">
+<div class="tip-arrow"></div>
+<div class="tip-inner">
+<ul>
+<li class="actnbr-sitename">
+<a href="https://glennchan.wordpress.com">
+<img alt="" class="avatar avatar-50" height="50" loading="lazy" src="https://s2.wp.com/i/logo/wpcom-gray-white.png" srcset="https://s2.wp.com/i/logo/wpcom-gray-white.png 1x" width="50"/>				Glenn Chan's Random Notes on Investing			</a>
+</li>
+<li class="actnbr-folded-customize">
+<a href="https://glennchan.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fglennchan.wordpress.com%2F2018%2F02%2F28%2Fcoinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others%2F">
+<svg class="gridicon gridicons-customize" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z"></path></g></svg> <span>Customize</span>
+</a>
+</li>
+<li class="actnbr-folded-follow">
+<a class="actnbr-action actnbr-actn-follow" href="">
+<svg class="gridicon" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z" fill-rule="evenodd"></path></svg>
+<span>Subscribe</span>
+</a>
+<a class="actnbr-action actnbr-actn-following no-display" href="">
+<svg class="gridicon" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V4.5V3H4H16H17.5V4.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H12H13H14.5V11V12V13.5H13H12H10.5V12V11V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20" fill-rule="evenodd"></path><path class="following-icon-tick" d="M13.5 16L15.5 18L19 14.5" stroke="#008A20" stroke-width="1.5"></path></svg>
+<span>Subscribed</span>
+</a>
+</li>
+<li class="actnbr-signup"><a href="https://wordpress.com/start/">Sign up</a></li>
+<li class="actnbr-login"><a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fglennchan.wordpress.com%2F2018%2F02%2F28%2Fcoinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others%2F&amp;signup_flow=account">Log in</a></li>
+<li class="actnbr-shortlink"><a href="https://wp.me/p1mOGr-1Kp">Copy shortlink</a></li>
+<li class="flb-report">
+<a href="https://wordpress.com/abuse/?report_url=https://glennchan.wordpress.com/2018/02/28/coinbase-is-a-hot-mess-plus-mongodb-bank-of-nova-scotia-mcb-and-others/" rel="noopener noreferrer" target="_blank">Report this content</a>
+</li>
+<li class="actnbr-reader">
+<a href="https://wordpress.com/read/blogs/20214383/posts/6721">View post in Reader</a>
+</li>
+<li class="actnbr-subs">
+<a href="https://subscribe.wordpress.com/">Manage subscriptions</a>
+</li>
+<li class="actnbr-fold"><a href="">Collapse this bar</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="jp-carousel-loading-overlay">
+<div id="jp-carousel-loading-wrapper">
+<span id="jp-carousel-library-loading"></span>
+</div>
+</div>
+<div class="jp-carousel-overlay" style="display: none;">
+<div class="jp-carousel-container">
+<!-- The Carousel Swiper -->
+<div class="jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions" itemscope="" itemtype="https://schema.org/ImageGallery">
+<div class="jp-carousel swiper-wrapper"></div>
+<div class="jp-swiper-button-prev swiper-button-prev">
+<svg fill="none" height="24" viewbox="0 0 25 24" width="25" xmlns="http://www.w3.org/2000/svg">
+<mask height="12" id="maskPrev" mask-type="alpha" maskunits="userSpaceOnUse" width="9" x="8" y="6">
+<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"></path>
+</mask>
+<g mask="url(#maskPrev)">
+<rect fill="#FFFFFF" height="24" width="23.8823" x="0.579102"></rect>
+</g>
+</svg>
+</div>
+<div class="jp-swiper-button-next swiper-button-next">
+<svg fill="none" height="24" viewbox="0 0 25 24" width="25" xmlns="http://www.w3.org/2000/svg">
+<mask height="12" id="maskNext" mask-type="alpha" maskunits="userSpaceOnUse" width="8" x="8" y="6">
+<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"></path>
+</mask>
+<g mask="url(#maskNext)">
+<rect fill="#FFFFFF" height="24" width="23.8822" x="0.34375"></rect>
+</g>
+</svg>
+</div>
+</div>
+<!-- The main close buton -->
+<div class="jp-carousel-close-hint">
+<svg fill="none" height="24" viewbox="0 0 25 24" width="25" xmlns="http://www.w3.org/2000/svg">
+<mask height="14" id="maskClose" mask-type="alpha" maskunits="userSpaceOnUse" width="15" x="5" y="5">
+<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"></path>
+</mask>
+<g mask="url(#maskClose)">
+<rect fill="#FFFFFF" height="24" width="23.8823" x="0.409668"></rect>
+</g>
+</svg>
+</div>
+<!-- Image info, comments and meta -->
+<div class="jp-carousel-info">
+<div class="jp-carousel-info-footer">
+<div class="jp-carousel-pagination-container">
+<div class="jp-swiper-pagination swiper-pagination"></div>
+<div class="jp-carousel-pagination"></div>
+</div>
+<div class="jp-carousel-photo-title-container">
+<h2 class="jp-carousel-photo-caption"></h2>
+</div>
+<div class="jp-carousel-photo-icons-container">
+<a aria-label="Toggle photo metadata visibility" class="jp-carousel-icon-btn jp-carousel-icon-info" href="#">
+<span class="jp-carousel-icon">
+<svg fill="none" height="24" viewbox="0 0 25 24" width="25" xmlns="http://www.w3.org/2000/svg">
+<mask height="20" id="maskInfo" mask-type="alpha" maskunits="userSpaceOnUse" width="21" x="2" y="2">
+<path clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white" fill-rule="evenodd"></path>
+</mask>
+<g mask="url(#maskInfo)">
+<rect fill="#FFFFFF" height="24" width="23.8823" x="0.8125"></rect>
+</g>
+</svg>
+</span>
+</a>
+<a aria-label="Toggle photo comments visibility" class="jp-carousel-icon-btn jp-carousel-icon-comments" href="#">
+<span class="jp-carousel-icon">
+<svg fill="none" height="24" viewbox="0 0 25 24" width="25" xmlns="http://www.w3.org/2000/svg">
+<mask height="20" id="maskComments" mask-type="alpha" maskunits="userSpaceOnUse" width="21" x="2" y="2">
+<path clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white" fill-rule="evenodd"></path>
+</mask>
+<g mask="url(#maskComments)">
+<rect fill="#FFFFFF" height="24" width="23.8823" x="0.34668"></rect>
+</g>
+</svg>
+<span aria-label="This image has comments." class="jp-carousel-has-comments-indicator"></span>
+</span>
+</a>
+</div>
+</div>
+<div class="jp-carousel-info-extra">
+<div class="jp-carousel-info-content-wrapper">
+<div class="jp-carousel-photo-title-container">
+<h2 class="jp-carousel-photo-title"></h2>
+</div>
+<div class="jp-carousel-comments-wrapper">
+<div id="jp-carousel-comments-loading">
+<span>Loading Comments...</span>
+</div>
+<div class="jp-carousel-comments"></div>
+<div id="jp-carousel-comment-form-container">
+<span id="jp-carousel-comment-form-spinner"></span>
+<div id="jp-carousel-comment-post-results"></div>
+<form id="jp-carousel-comment-form">
+<label class="screen-reader-text" for="jp-carousel-comment-form-comment-field">Write a Comment...</label>
+<textarea class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea" id="jp-carousel-comment-form-comment-field" name="comment" placeholder="Write a Comment..."></textarea>
+<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+<div id="jp-carousel-comment-form-commenting-as">
+<fieldset>
+<label for="jp-carousel-comment-form-email-field">Email</label>
+<input class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field" name="email" type="text"/>
+</fieldset>
+<fieldset>
+<label for="jp-carousel-comment-form-author-field">Name</label>
+<input class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field" name="author" type="text"/>
+</fieldset>
+<fieldset>
+<label for="jp-carousel-comment-form-url-field">Website</label>
+<input class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field" name="url" type="text"/>
+</fieldset>
+</div>
+<input class="jp-carousel-comment-form-button" id="jp-carousel-comment-form-button-submit" name="submit" type="submit" value="Post Comment"/>
+</div>
+</form>
+</div>
+</div>
+<div class="jp-carousel-image-meta">
+<div class="jp-carousel-title-and-caption">
+<div class="jp-carousel-photo-info">
+<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+</div>
+<div class="jp-carousel-photo-description"></div>
+</div>
+<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+<a class="jp-carousel-image-download" href="#" style="display: none;" target="_blank">
+<svg fill="none" height="24" viewbox="0 0 25 24" width="25" xmlns="http://www.w3.org/2000/svg">
+<mask height="18" id="mask0" mask-type="alpha" maskunits="userSpaceOnUse" width="19" x="3" y="3">
+<path clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white" fill-rule="evenodd"></path>
+</mask>
+<g mask="url(#mask0)">
+<rect fill="#FFFFFF" height="24" width="23.8823" x="0.870605"></rect>
+</g>
+</svg>
+<span class="jp-carousel-download-text"></span>
+</a>
+<div class="jp-carousel-image-map" style="display: none;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<link crossorigin="anonymous" href="https://s0.wp.com/_static/??-eJyljEsKgDAMBS9kDUUquhDPom0Qaz/BNHh9KdgTuBl4w2PgIWVzKpgKRFEU5DgTg8dCm72+DTHnCicBGex2Z2EMwM9JeKtdkgvYW+YOftTaqYkaXOOix8noQU+z8S9MR0BZ&amp;cssminify=yes" id="all-css-0-2" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+ <iframe id="likes-master" name="likes-master" scrolling="no" src="https://widgets.wp.com/likes/master.html?ver=20241118#ver=20241118&amp;origin=https://glennchan.wordpress.com" style="display:none;"></iframe>
+<div aria-hidden="true" class="wpl-new-layout" id="likes-other-gravatars" role="dialog" tabindex="-1">
+<div class="likes-text">
+<span>%d</span> </div>
+<ul class="wpl-avatars sd-like-gravatars"></ul>
+</div>
+ 
+<noscript><img alt="" src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;"/></noscript>
+
+
+
+</body>
+</html>
