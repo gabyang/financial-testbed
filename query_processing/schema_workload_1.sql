@@ -2,47 +2,20 @@ CREATE EXTENSION IF NOT EXISTS timescaledb;
 CREATE EXTENSION IF NOT EXISTS vector;
 
 CREATE TABLE profiles (
-    symbol VARCHAR(5) PRIMARY KEY,
-    price NUMERIC,
-    beta NUMERIC,
-    volAvg BIGINT,
-    mktCap NUMERIC,
-    lastDiv NUMERIC,
-    "range" TEXT,
-    changes NUMERIC,
+    symbol TEXT PRIMARY KEY,
     companyName TEXT,
-    currency VARCHAR(10),
-    cik TEXT,
-    isin VARCHAR(15),
-    cusip VARCHAR(15),
-    exchange TEXT,
-    exchangeShortName VARCHAR(50),
+    exchangeShortName VARCHAR(10),
     industry TEXT,
-    website TEXT,
     description TEXT,
     ceo TEXT,
     sector TEXT,
-    country VARCHAR(5),
-    fullTimeEmployees TEXT,
-    phone TEXT,
-    address TEXT,
-    city TEXT,
-    state VARCHAR(10),
-    zip VARCHAR(10),
-    dcfDiff NUMERIC,
-    dcf NUMERIC,
-    image TEXT,
-    ipoDate DATE,
-    defaultImage BOOLEAN,
-    isEtf BOOLEAN,
-    isActivelyTrading BOOLEAN,
-    isAdr BOOLEAN,
-    isFund BOOLEAN
+    country VARCHAR(5)
 );
 
 CREATE TABLE IF NOT EXISTS stock_ticks (
     time TIMESTAMPTZ NOT NULL,
-    symbol VARCHAR(5) NOT NULL REFERENCES profiles(symbol),
+    symbol TEXT NOT NULL REFERENCES profiles(symbol),
+    industry TEXT,
     open INT NOT NULL,
     high INT NOT NULL,
     low INT NOT NULL,
@@ -51,12 +24,24 @@ CREATE TABLE IF NOT EXISTS stock_ticks (
     PRIMARY KEY (time, symbol)
 );
 
-SELECT create_hypertable('stock_ticks', 'time');
+SELECT create_hypertable(
+       'stock_ticks',
+       'time',
+       chunk_time_interval => INTERVAL '7 days',
+       partitioning_column  => 'symbol',
+       number_partitions    => 8 -- chose this based on laptop’s CPU cores
+);
 
+ALTER TABLE stock_ticks SET (
+  timescaledb.compress,
+  timescaledb.compress_segmentby = 'symbol',
+  timescaledb.compress_orderby   = 'time'
+);
 
 CREATE TABLE IF NOT EXISTS articles (
                 id SERIAL PRIMARY KEY,
                 symbol VARCHAR(5) NOT NULL REFERENCES profiles(symbol),
+                industry TEXT,
                 title TEXT,
                 content TEXT,
                 author TEXT, 
@@ -71,36 +56,20 @@ CREATE TABLE IF NOT EXISTS article_chunks (
     embedding vector(384)
 )
 
--- Speed up symbol/date filtering
-CREATE INDEX IF NOT EXISTS idx_articles_symbol_date
-ON articles(symbol, date);
-
-
--- Speed up similarity search (HNSW is ideal for pgvector)
 CREATE INDEX IF NOT EXISTS idx_article_embedding_hnsw
 ON article_chunks
 USING hnsw (embedding vector_cosine_ops);
 
--- Speed up joins with articles
-CREATE INDEX IF NOT EXISTS idx_article_chunks_article_id
-ON article_chunks(article_id);
-
-CREATE INDEX IF NOT EXISTS idx_embedding_hnsw 
-ON sec_filing_chunks 
-USING hnsw (embedding vector_cosine_ops);
 
 CREATE TABLE IF NOT EXISTS sec_filings (
     id SERIAL PRIMARY KEY,
     symbol VARCHAR(10) NOT NULL,
+    INDUSTRY TEXT,
     filing_type VARCHAR(20) NOT NULL,
     filing_date DATE,
     filing_id VARCHAR(100) NOT NULL,
-    content TEXT NOT NULL,
-    metadata JSONB
+    content TEXT NOT NULL
 );
-
-CREATE INDEX IF NOT EXISTS idx_filings_symbol_type 
-ON sec_filings(symbol, filing_type);
 
 CREATE TABLE IF NOT EXISTS sec_filing_chunks (
     id SERIAL PRIMARY KEY,
@@ -125,12 +94,3 @@ CREATE TABLE IF NOT EXISTS historic_estimates (
     updated_from_date DATE,
     fiscal_date_ending DATE
 );
-
--- Optimize estimates
-CREATE INDEX IF NOT EXISTS idx_estimates_symbol_fiscal ON historic_estimates(symbol, fiscal_date_ending);
-
--- Optimize stock price lookups
-CREATE INDEX IF NOT EXISTS idx_ticks_symbol_time ON stock_ticks(symbol, time);
-
--- Optional: If you’re joining to a filings table
-CREATE INDEX IF NOT EXISTS idx_sec_symbol_period ON sec_filings(symbol, filing_period);

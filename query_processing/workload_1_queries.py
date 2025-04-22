@@ -16,6 +16,7 @@ RATIOS = [0.05, 0.10, 0.15]
 WINDOWS = ['1 week', '2 weeks']
 GROUP_BY_OPTION = 'industry'  # or 'symbol'
 SHOW_QUERY_TIMING = True  # ⏱️ Toggle this to show/hide individual query timing
+SYMBOLS = ["AAPL"]
 
 def get_symbols(conn):
     cur = conn.cursor()
@@ -24,87 +25,101 @@ def get_symbols(conn):
     cur.close()
     return symbols
 
-def get_industries_from_symbols(conn):
+def get_industries(conn):
+    """
+    Given a Python list of symbols, return the distinct industries
+    for those symbols from the profiles table.
+    """
     cur = conn.cursor()
-    cur.execute("""
-        SELECT DISTINCT p.industry
-        FROM profiles p
-        JOIN stock_ticks s ON p.symbol = s.symbol
-        WHERE p.industry IS NOT NULL;
-    """)
+    cur.execute("SELECT DISTINCT industry FROM stock_ticks;")
     industries = [row[0] for row in cur.fetchall()]
     cur.close()
     return industries
 
 def generate_query(filter_value, ratio, window, grouping='symbol'):
-    if window == '1 week':
-        group_expr = "date_trunc('week', time)"
-    elif window == '2 weeks':
-        group_expr = ("date_trunc('week', time) + interval '1 week' * "
-                      "((EXTRACT(WEEK FROM time)::int % 2) * -1)")
+    # 1) build the time‐bucketing expression
+    if window == '1 week' and grouping == 'symbol':
+        group_expr = "time_bucket('1 week', time, '2013-12-25'::timestamptz)"
+        base_filter = f"symbol = '{filter_value}'"
+        aggregate_table = 'ca_weekly_avg'
+    elif window == '2 weeks' and grouping == 'symbol':
+        group_expr = "time_bucket('2 weeks', time, '2013-12-18'::timestamptz)"
+        base_filter = f"symbol = '{filter_value}'"
+        aggregate_table = 'ca_biweekly_avg'
+    elif window == '1 week' and grouping == 'industry':
+        group_expr = "time_bucket('1 week', time, '2013-12-25'::timestamptz)"
+        base_filter = f"industry = '{filter_value}'"
+        aggregate_table = 'industry_weekly_ca'
+    elif window == '2 weeks' and grouping == 'industry':
+        group_expr = "time_bucket('2 weeks', time, '2013-12-18'::timestamptz)"
+        base_filter = f"industry = '{filter_value}'"
+        aggregate_table = 'industry_biweekly_ca'   
     else:
-        raise ValueError(f"Unsupported window: {window}")
+        raise ValueError(f"Unsupported window: {window} or grouping")
 
-    if grouping == 'symbol':
-        base_filter = f"symbol = '{filter_value}' AND time >= '2014-01-01'"
-    elif grouping == 'industry':
-        base_filter = (f"symbol IN (SELECT symbol FROM profiles WHERE industry = '{filter_value}') "
-                       f"AND time >= '2014-01-01'")
-    else:
-        raise ValueError("Grouping must be either 'symbol' or 'industry'.")
-
+    # 2) common CTEs
     base_query = f"""
     WITH window_avg AS (
-        SELECT
-            symbol,
-            {group_expr} AS window_start,
-            AVG(close) AS avg_close
-        FROM stock_ticks
-        WHERE {base_filter}
-        GROUP BY symbol, window_start
+      SELECT
+        {grouping},
+        time_window as window_start,
+         avg_close
+      FROM {aggregate_table}
+      WHERE {base_filter}
     ),
     deltas AS (
-        SELECT
-            symbol,
-            window_start,
-            avg_close,
-            LAG(avg_close) OVER (PARTITION BY symbol ORDER BY window_start) AS prev_avg_close
-        FROM window_avg
+      SELECT
+        {grouping},
+        window_start,
+        avg_close,
+        LAG(avg_close) OVER (
+          PARTITION BY {grouping}
+          ORDER BY window_start
+        ) AS prev_avg_close
+      FROM window_avg
     ),
     changes AS (
-        SELECT
-            symbol,
-            window_start,
-            avg_close,
-            prev_avg_close,
-            ROUND(100.0 * (avg_close - prev_avg_close) / prev_avg_close, 2) AS pct_change
-        FROM deltas
-        WHERE prev_avg_close IS NOT NULL
-          AND ABS((avg_close - prev_avg_close) / prev_avg_close) >= {ratio}
+      SELECT
+        {grouping},
+        window_start,
+        {ratio}            AS ratio,
+        avg_close,
+        prev_avg_close,
+        ROUND(
+          100.0 * (avg_close - prev_avg_close) / prev_avg_close
+        , 2)               AS pct_change
+      FROM deltas
+      WHERE prev_avg_close IS NOT NULL
+        AND ABS((avg_close - prev_avg_close)/prev_avg_close) >= {ratio}
     )
     """
 
+    # 3) final projection
     if grouping == 'symbol':
         query = base_query + """
-        SELECT ch.symbol,
-               ch.window_start,
-               ch.avg_close,
-               ch.prev_avg_close,
-               ch.pct_change,
-               p.industry,
-               p.companyName
-        FROM changes ch
-        LEFT JOIN profiles p ON ch.symbol = p.symbol;
+        SELECT
+          symbol,
+          window_start,
+          avg_close,
+          prev_avg_close,
+          pct_change
+        FROM changes
+        ORDER BY symbol, window_start;
         """
-    elif grouping == 'industry':
+    else:  # industry‐level rollup
         query = base_query + """
-        SELECT p.industry,
-               array_agg(ROW(ch.symbol, ch.window_start, ch.avg_close, ch.prev_avg_close, ch.pct_change)::text) AS changes,
-               MIN(p.companyName) AS representative_company
-        FROM changes ch
-        LEFT JOIN profiles p ON ch.symbol = p.symbol
-        GROUP BY p.industry;
+        SELECT
+          industry,
+          window_start,
+          ratio,
+          ROUND(AVG(avg_close),2) AS avg_close,
+          ROUND(AVG(prev_avg_close),2) AS prev_avg_close,
+          ROUND(AVG(pct_change),2) AS avg_pct_change
+        FROM changes
+        GROUP BY industry, window_start, ratio
+        ORDER BY industry, window_start;
         """
+
     return query
 
 def run_batch():
@@ -134,15 +149,13 @@ def run_batch():
                         'window_start': row[1],
                         'avg_close': row[2],
                         'prev_avg_close': row[3],
-                        'pct_change': row[4],
-                        'industry': row[5],
-                        'companyName': row[6]
+                        'pct_change': row[4]
                     })
             except Exception as e:
                 print(f"❌ Error running query for {symbol}, {ratio}, {window}: {e}")
                 continue
     elif GROUP_BY_OPTION == 'industry':
-        industries = get_industries_from_symbols(conn)
+        industries = get_industries(conn)
         for industry, ratio, window in itertools.product(industries, RATIOS, WINDOWS):
             try:
                 query = generate_query(industry, ratio, window, grouping='industry')
@@ -153,17 +166,17 @@ def run_batch():
                 if SHOW_QUERY_TIMING:
                     print(f"⏱️ Query took {time.time() - t0:.2f} seconds")  # ⏱️
                 for row in rows:
-                    changes_array = row[1] if row[1] is not None else []
-                    changes_str = " | ".join(changes_array)
                     results_industry.append({
                         'industry': row[0],
-                        'ratio': ratio,
                         'window': window,
-                        'representative_company': row[2],
-                        'aggregated_changes': changes_str
+                        'ratio': ratio,
+                        'window_start': row[1],
+                        'avg_close': row[3],
+                        'prev_avg_close': row[4],
+                        'pct_change': row[5]
                     })
             except Exception as e:
-                print(f"❌ Error running grouped query for {industry}, {ratio}, {window}: {e}")
+                print(f"❌ Error running query for {industry}, {ratio}, {window}: {e}")
                 continue
 
     cur.close()

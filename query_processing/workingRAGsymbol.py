@@ -16,6 +16,9 @@ from sentence_transformers import SentenceTransformer
 from langchain_community.chat_models import ChatOllama
 from langchain_core.messages import HumanMessage
 from sentence_transformers import CrossEncoder
+from time import perf_counter
+import pandas as pd
+import matplotlib.pyplot as plt
 
 # Set up logging
 logging.basicConfig(
@@ -36,7 +39,13 @@ class StockAnalyzer:
         self.setup_models()
         self.processed_count = 0
         self.failed_items = []
+        # for benchmarking
+        self._timings = []  # list of per-stock dicts
         self.cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
+        self._initial_sims = []
+        self._rerank_sims  = []
+        self._initial_sims1 = []
+        self._rerank_sims1  = []
         
     def load_config(self, config_path):
         """Load configuration from YAML file"""
@@ -125,8 +134,7 @@ class StockAnalyzer:
             query = """
             SELECT 
                 symbol, companyName, sector, industry, description, 
-                ceo, country, mktCap, beta, volAvg, website, 
-                fullTimeEmployees, exchange, lastDiv
+                ceo
             FROM profiles
             WHERE symbol = %s
             """
@@ -140,15 +148,7 @@ class StockAnalyzer:
                     "sector": profile[2],
                     "industry": profile[3],
                     "description": profile[4],
-                    "ceo": profile[5],
-                    "country": profile[6],
-                    "marketCap": profile[7],
-                    "beta": profile[8],
-                    "avgVolume": profile[9],
-                    "website": profile[10],
-                    "employees": profile[11],
-                    "exchange": profile[12],
-                    "lastDividend": profile[13]
+                    "ceo": profile[5]
                 }
                 logger.debug(f"Retrieved profile for {symbol}")
                 return profile_dict
@@ -172,10 +172,10 @@ class StockAnalyzer:
         
         try:
             # Convert the query window to datetime
-            window_start = pd.to_datetime(window_start) - pd.Timedelta(days=30)
-            window_end = pd.to_datetime(window_start)  + pd.Timedelta(days=30)
+            window_start = pd.to_datetime(window_start) - pd.Timedelta(days=14)
+            window_end = pd.to_datetime(window_start)  + pd.Timedelta(days=14)
 
-            query_text = f"news related to {symbol} stock price movement, earnings, outlook, analyst reactions"
+            query_text = f"news related to {symbol} stock price, earnings, outlook, analyst reactions around {window_start} period"
 
             # Step 1: Vector search using pgvector
             embedding = self.get_embedding(query_text)
@@ -195,6 +195,17 @@ class StockAnalyzer:
             candidates = cur.fetchall()
             if not candidates:
                 return []
+            
+            queries   = [(query_text, c[4]) for c in candidates]
+            reranks   = self.cross_encoder.predict(queries)
+
+            # collect into two parallel lists
+            initial_sims1 = [c[5] for c in candidates]
+            rerank_sims1  = list(reranks)
+
+            # optionally store these on your analyzer instance
+            self._initial_sims1.extend(initial_sims1)
+            self._rerank_sims1.extend(rerank_sims1)
 
             # Step 2: Re-rank using CrossEncoder
             texts_to_score = [(query_text, c[4]) for c in candidates]
@@ -209,40 +220,88 @@ class StockAnalyzer:
         finally:
             cur.close()
     
-    def get_relevant_filings(self, symbol, date_str, conn):
-        """Find relevant 10-Q filings for the current and previous quarters"""
+    def get_relevant_filings(self,symbol,date_str,pct_change, conn,top_n=None) :
+        """
+        1) Finds the most recent 10‑Q filing for `symbol` between date_str and date_str+100d.
+        2) Runs a pgvector similarity search over its chunks.
+        3) Reranks the top `candidate_limit` by CrossEncoder and returns the top `top_n`.
+        """
+        if top_n is None:
+            top_n = self.config["processing"]["top_n_chunks"]
+
         cur = conn.cursor()
-        
         try:
-            # Parse the date from the input
-            target_date = pd.to_datetime(date_str) + pd.Timedelta(days=180)
+            # compute date window
+            start_dt  = pd.to_datetime(date_str)
+            end_dt    = start_dt + pd.Timedelta(days=100)
             
-            # Define a window of 6 months before the target date to find the relevant filings
-            date_range_start = pd.to_datetime(date_str) - pd.Timedelta(days=180)
-            
-            # Query to get the two most recent 10-Q filings before the target date
+            # build the text-to-search and its embedding
+            movement = "decrease" if pct_change < 0 else "increase"
+            qt = f"stock price {movement} of {abs(pct_change):.2f}% factors explanation reasons around {start_dt} period"
+            emb = self.get_embedding(qt)
+            emb_str = "[" + ",".join(map(str, emb)) + "]"
+
+            # Combined query: first get filing.id, then immediately fetch its chunks
             query = """
-            SELECT id, symbol, filing_type, filing_date, filing_id, metadata
-            FROM sec_filings
-            WHERE symbol = %s
-              AND filing_type = '10-Q'
-              AND filing_date BETWEEN %s AND %s
-            ORDER BY filing_date DESC
-            LIMIT 2
+            WITH target_filing AS (
+              SELECT id
+                FROM sec_filings
+               WHERE symbol = %s
+                 AND filing_type = '10-Q'
+                 AND filing_date BETWEEN %s AND %s
+               ORDER BY filing_date ASC
+               LIMIT 1
+            )
+            SELECT
+              c.id,
+              c.content,
+              f.filing_date,
+              f.filing_type,
+              1 - (c.embedding <=> %s::vector) AS similarity
+            FROM sec_filing_chunks c
+            JOIN sec_filings f
+              ON c.filing_id = f.id
+            WHERE f.id = (SELECT id FROM target_filing)
+            ORDER BY similarity DESC
+            LIMIT %s
             """
+            cur.execute(query, (
+                symbol,
+                start_dt, end_dt,
+                emb_str,
+                20
+            ))
+            candidates = cur.fetchall()
+            if not candidates:
+                return []
             
-            cur.execute(query, (symbol, date_range_start, target_date))
-            filings = cur.fetchall()
-            
-            logger.debug(f"Found {len(filings)} 10-Q filings for {symbol}")
-            return filings
+            queries   = [(qt, c[1]) for c in candidates]
+            reranks   = self.cross_encoder.predict(queries)
+
+            # collect into two parallel lists
+            initial_sims = [c[4] for c in candidates]
+            rerank_sims  = list(reranks)
+
+            # optionally store these on your analyzer instance
+            self._initial_sims.extend(initial_sims)
+            self._rerank_sims.extend(rerank_sims)
+
+            # rerank with CrossEncoder
+            pairs = [(qt, chunk[1]) for chunk in candidates]
+            scores = self.cross_encoder.predict(pairs)
+
+            # pick top‑N
+            ranked = sorted(zip(candidates, scores), key=lambda x: -x[1])
+            return [item[0] for item in ranked[:top_n]]
+
         except Exception as e:
-            logger.error(f"Error getting filings for {symbol}: {e}")
+            logger.error(f"Error getting filing chunks for {symbol}: {e}")
             return []
         finally:
             cur.close()
 
-    def get_top_chunks(self, filing_ids, pct_change, conn, top_n=None):
+
+    '''def get_top_chunks(self, filing_ids, pct_change, conn, top_n=None):
         if top_n is None:
             top_n = self.config["processing"]["top_n_chunks"]
         if not filing_ids:
@@ -282,7 +341,7 @@ class StockAnalyzer:
             logger.error(f"Error getting top SEC chunks: {e}")
             return []
         finally:
-            cur.close()
+            cur.close()'''
 
 
     def generate_llm_summary(self, chunks, article_chunks, stock_data, company_profile):
@@ -307,25 +366,14 @@ class StockAnalyzer:
             industry = company_profile['industry']
             sector = company_profile['sector']
             description = company_profile['description']
-            market_cap = company_profile.get('marketCap', 'N/A')
             ceo = company_profile.get('ceo', 'N/A')
         else:
             company_name = stock_data.get('companyName', symbol)
             industry = stock_data.get('industry', 'N/A')
             sector = stock_data.get('sector', 'N/A')
             description = "N/A"
-            market_cap = "N/A"
             ceo = "N/A"
         
-        # Format market cap to be more readable
-        if market_cap != 'N/A' and market_cap is not None:
-            # Convert to billions or millions for readability
-            if float(market_cap) >= 1_000_000_000:
-                market_cap = f"${float(market_cap) / 1_000_000_000:.2f} billion"
-            elif float(market_cap) >= 1_000_000:
-                market_cap = f"${float(market_cap) / 1_000_000:.2f} million"
-            else:
-                market_cap = f"${float(market_cap):,.2f}"
         
         prompt = f"""
         You are analyzing SEC filings & news articles for {company_name} ({symbol}), a company in the {industry} industry and {sector} sector.
@@ -333,7 +381,6 @@ class StockAnalyzer:
         COMPANY PROFILE:
         - Description: {description[:300]}{'...' if len(description or '') > 300 else ''}
         - CEO: {ceo}
-        - Market Cap: {market_cap}
         
         STOCK PRICE MOVEMENT:
         - Previous Window Avg Close: ${prev_avg_close if prev_avg_close != 'N/A' else 'N/A'}
@@ -460,46 +507,72 @@ class StockAnalyzer:
 
     def process_stock(self, stock_data):
         """Process a single stock data row"""
+        t0 = time.perf_counter()
         symbol = stock_data['symbol']
         logger.info(f"Processing {symbol} ({stock_data.get('companyName', 'N/A')})...")
-        
+        symbol = stock_data['symbol']
+        logger.info(f"Processing {symbol} …")
+
         conn = None
         try:
             conn = self.get_db_connection()
             
-            # Get company profile
+            # Re-run profile lookup on real conn
+            t1 = perf_counter()
             company_profile = self.get_company_profile(symbol, conn)
+            t2 = perf_counter()
             if company_profile:
                 logger.info(f"Retrieved company profile for {symbol}")
             else:
                 logger.warning(f"No company profile found for {symbol}")
             
-            # Get relevant SEC filings
-            filings = self.get_relevant_filings(symbol, stock_data['window_start'], conn)
+           # 2) SEC filings lookup
+            t3 = perf_counter()
+            filings = self.get_relevant_filings(symbol, stock_data['window_start'],stock_data['pct_change'], conn)
+            t4 = perf_counter()
             
             if not filings:
                 logger.warning(f"No relevant 10-Q filings found for {symbol}")
                 return {"symbol": symbol, "status": "no_filings"}
             
             # Extract filing IDs
-            filing_ids = [filing[0] for filing in filings]
+            #filing_ids = [filing[0] for filing in filings]
             
-            # Get the most relevant chunks
-            top_chunks = self.get_top_chunks(filing_ids, stock_data['pct_change'], conn)
+            # 3) SEC‐filing chunk retrieval
+            t5 = perf_counter()
+            #top_chunks = self.get_top_chunks(filing_ids, stock_data['pct_change'], conn)
+            t6 = perf_counter()
             
-            if not top_chunks:
-                logger.warning(f"No relevant chunks found for {symbol}")
-                return {"symbol": symbol, "status": "no_chunks"}
+            #if not top_chunks:
+                #logger.warning(f"No relevant chunks found for {symbol}")
+                #return {"symbol": symbol, "status": "no_chunks"}
             
-            # Get top relevant article chunks
+            # 4) News‐article chunk retrieval
+            t7 = perf_counter()
             article_chunks = self.get_relevant_articles(symbol, stock_data['window_start'], conn)
+            t8 = perf_counter()
             
-            # Generate summary with company profile information
-            summary = self.generate_llm_summary(top_chunks, article_chunks, stock_data, company_profile)
-            
-            # Save the summary
+            # 5) LLM summary generation
+            t9 = perf_counter()
+            summary = self.generate_llm_summary(filings, article_chunks, stock_data, company_profile)
+            t10 = perf_counter()
+
+            # 6) summary saving
+            t11 = time.perf_counter()
             self.save_summary(stock_data, summary, company_profile)
+            t12 = time.perf_counter()
             
+            # record all step timings
+            self._timings.append({
+                "symbol":      symbol,
+                "total":       t12 - t0,
+                "profile":     (t2 - t1),
+                "filings":     (t4 - t3),
+                "chunks":      (t6 - t5),
+                "articles":    (t8 - t7),
+                "llm":         (t10 - t9),
+                "save":        (t12 - t11),
+            })
             return {"symbol": symbol, "status": "success"}
             
         except Exception as e:
@@ -508,6 +581,8 @@ class StockAnalyzer:
         finally:
             if conn:
                 self.release_connection(conn)
+
+
 
     def process_batch(self, batch):
         """Process a batch of stocks sequentially"""
@@ -574,8 +649,69 @@ class StockAnalyzer:
                 self.conn_pool.closeall()
                 logger.info("Closed all database connections")
 
+            # --- after all work, print detailed benchmark summary ---
+            if self._timings:
+                import statistics
+                steps = ["profile","filings","chunks","articles","llm","save"]
+                logger.info("\n=== DETAILED BENCHMARK ===")
+                logger.info(f"Stocks processed: {len(self._timings)}")
+                # overall
+                total_all = sum(r["total"] for r in self._timings)
+                logger.info(f"Total run time: {total_all:.2f}s  avg/stock: {total_all/len(self._timings):.2f}s")
+                # per‐step breakdown
+                for step in steps:
+                    times = [r[step] for r in self._timings]
+                    logger.info(f"  {step:8s} | total: {sum(times):6.2f}s | avg: {statistics.mean(times):5.2f}s")
+                logger.info("=========================\n")
+
+            # build a DataFrame
+            df = pd.DataFrame({
+                "initial": self._initial_sims,
+                "rerank":  self._rerank_sims
+            })
+
+            # compute Pearson correlation
+            corr = df["initial"].corr(df["rerank"])
+            print(f"Pearson r = {corr:.3f}")
+
+            # scatter plot
+            plt.figure()
+            plt.scatter(df["initial"], df["rerank"])
+            plt.xlabel("Initial pgvector similarity")
+            plt.ylabel("Cross‑Encoder rerank score")
+            plt.title(f"Initial vs Rerank similarity (r={corr:.2f}, sec_filings)")
+            plt.show()
+            plt.savefig(
+                "similarity_correlation.png",  # filename (use .png, .pdf, .svg, etc)
+                dpi=300,                       # resolution in dots per inch
+                bbox_inches="tight"            # trim excess whitespace
+            )
+
+                        # build a DataFrame
+            df2 = pd.DataFrame({
+                "initial1": self._initial_sims1,
+                "rerank1":  self._rerank_sims1
+            })
+
+            # compute Pearson correlation
+            corr = df2["initial1"].corr(df2["rerank1"])
+            print(f"Pearson r = {corr:.3f}")
+
+            # scatter plot
+            plt.figure()
+            plt.scatter(df2["initial1"], df2["rerank1"])
+            plt.xlabel("Initial pgvector similarity")
+            plt.ylabel("Cross‑Encoder rerank score ")
+            plt.title(f"Initial vs Rerank similarity (r={corr:.2f}, news articles)")
+            plt.show()
+            plt.savefig(
+                "similarity_correlation1.png",  # filename (use .png, .pdf, .svg, etc)
+                dpi=300,                       # resolution in dots per inch
+                bbox_inches="tight"            # trim excess whitespace
+            )
+
 def main():
-    # Set up argument parser
+# Set up argument parser
     parser = argparse.ArgumentParser(description='Process stock data and generate summaries')
     parser.add_argument('csv_file', help='Path to the CSV file containing stock data')
     parser.add_argument('--config', default='config.yaml', help='Path to configuration file')
