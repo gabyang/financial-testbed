@@ -1,0 +1,87 @@
+SELECT test (
+  $$
+  WITH tick_data AS (
+    SELECT
+        st.symbol,
+        st.time::date AS trade_date,
+        MIN(st.open) AS open_price,
+        MAX(st.high) AS high_price,
+        MIN(st.low) AS low_price,
+        MAX(st.close) AS close_price,
+        SUM(st.volume) AS total_volume
+    FROM stock_ticks st
+    WHERE st.symbol IN ('AAPL', 'MSFT', 'NVDA')
+      AND st.time::date BETWEEN '2020-03-25' AND '2020-04-01'
+    GROUP BY st.symbol, trade_date
+),
+
+avg_volume AS (
+    SELECT
+        symbol,
+        AVG(total_volume) AS avg_weekly_volume
+    FROM tick_data
+    GROUP BY symbol
+)
+
+SELECT
+    t.symbol,
+    t.trade_date,
+    EXTRACT(DOW FROM t.trade_date) AS weekday,
+    t.open_price,
+    t.high_price,
+    t.low_price,
+    t.close_price,
+    t.total_volume,
+    a.avg_weekly_volume,
+    CASE 
+        WHEN t.total_volume > a.avg_weekly_volume * 1.5 THEN TRUE
+        ELSE FALSE
+    END AS is_volume_spike
+FROM tick_data t
+JOIN avg_volume a ON t.symbol = a.symbol
+ORDER BY t.symbol, t.trade_date;
+
+  $$, 200
+);
+
+
+WITH tick_data AS (
+    SELECT
+        st.symbol,
+        st.time::date AS trade_date,
+        MIN(st.open) AS open_price,
+        MAX(st.high) AS high_price,
+        MIN(st.low) AS low_price,
+        MAX(st.close) AS close_price,
+        SUM(st.volume) AS total_volume
+    FROM stock_ticks st
+    WHERE st.symbol IN ('AAPL', 'MSFT', 'NVDA')
+      AND st.time::date BETWEEN '2020-03-25' AND '2020-04-01'
+    GROUP BY st.symbol, trade_date
+),
+
+avg_volume AS (
+    SELECT
+        symbol,
+        AVG(total_volume) AS avg_weekly_volume
+    FROM tick_data
+    GROUP BY symbol
+)
+
+SELECT
+    t.symbol,
+    t.trade_date,
+    EXTRACT(DOW FROM t.trade_date) AS weekday,
+    t.open_price,
+    t.high_price,
+    t.low_price,
+    t.close_price,
+    t.total_volume,
+    a.avg_weekly_volume,
+    CASE 
+        WHEN t.total_volume > a.avg_weekly_volume * 1.5 THEN TRUE
+        ELSE FALSE
+    END AS is_volume_spike
+FROM tick_data t
+JOIN avg_volume a ON t.symbol = a.symbol
+ORDER BY t.symbol, t.trade_date;
